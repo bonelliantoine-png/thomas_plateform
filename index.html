@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cordes · livrables du 12 nov. 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#07080b; --grid:#12151c;
+  --panel:#0e1015; --panel-2:#13161d; --hover:#161a23;
+  --line:#1d2029; --line-2:#2b2f3b;
+  --fg:#f2f4f8; --fg-2:#aeb4c2; --fg-3:#7c8394;
+  --accent:#5ee7ff; --accent-ink:#03141a;
+  --sent:#4f7dff; --int:#4dffb5; --no:#ff9ccb; --wait:#e6dcb4; --idle:#5d6477;
+  --f-display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --f-body:"Spectral",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:8px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(var(--grid) 1px,transparent 1px);background-size:22px 22px;color:var(--fg);font-family:var(--f-mono);font-size:13px;line-height:1.5}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;height:52px;display:flex;align-items:center;gap:14px;padding-inline:clamp(16px,3vw,32px);background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{display:grid;grid-template-columns:8px 8px;gap:2px}
+.logo i{width:8px;height:8px;border-radius:2px;border:1px solid var(--line-2)}
+.logo i:nth-child(1){background:var(--accent);border-color:var(--accent)}
+.logo i:nth-child(4){background:var(--int);border-color:var(--int)}
+.crumb{color:var(--fg-3)} .crumb b{color:var(--fg);font-weight:500}
+.bar .state{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--fg-2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--int)}
+main{max-width:1280px;margin:0 auto;padding:40px clamp(16px,3vw,32px) 64px}
+.eyebrow{color:var(--accent);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4vw,40px);margin:8px 0 10px;letter-spacing:.01em}
+.lede{font-family:var(--f-body);font-style:italic;font-weight:300;color:var(--fg-2);font-size:17px;max-width:68ch;margin:0 0 28px}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:36px}
+.meta div{background:var(--panel);padding:14px 16px}
+.meta span{display:block;color:var(--fg-3);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase}
+.meta b{display:block;font-weight:500;font-size:15px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;color:var(--fg)}
+.card:hover{text-decoration:none;border-color:var(--line-2);background:var(--hover)}
+.card header{height:46px;display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--line);font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.card header .sq{width:6px;height:6px;border-radius:1px}
+.card header .n{margin-left:auto;color:var(--fg-3);font-weight:400}
+.card .body{padding:18px 16px 20px;flex:1}
+.card h2{font-family:var(--f-display);font-weight:400;font-size:24px;margin:0 0 8px}
+.card p{font-family:var(--f-body);font-size:15.5px;color:var(--fg-2);margin:0 0 14px;line-height:1.55}
+.card ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.card li{height:22px;display:inline-flex;align-items:center;padding:0 9px;border:1px solid var(--line-2);border-radius:999px;color:var(--fg-2);font-size:11px}
+.card footer{padding:12px 16px;border-top:1px solid var(--line);color:var(--accent);font-size:12px}
+.primary header{color:var(--accent)}
+.note{margin-top:32px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--wait);padding:14px 18px;font-family:var(--f-body);font-size:15.5px;color:var(--fg-2)}
+.note b{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wait);display:block;margin-bottom:4px;font-weight:500}
+.foot{margin-top:40px;color:var(--fg-3);font-size:11.5px}
+@media (max-width:1040px){.grid{grid-template-columns:1fr}.meta{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.meta{grid-template-columns:1fr}.bar .state span{display:none}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="logo" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="crumb">cordes / <b>livrables</b></div>
+  <div class="state"><i class="dot"></i><span>Version du 12 nov. 2026</span></div>
+</div>
+<main>
+  <div class="eyebrow">Prototype V1 · études</div>
+  <h1>Cordes, bilan de compétences de vie</h1>
+  <p class="lede">Un outil utile seul pour faire le point sur ce qu'on sait faire et ce qu'on veut apprendre, puis savoir où, avec qui et comment apprendre ou transmettre. La porte d'entrée de la future plateforme d'échange.</p>
+
+  <div class="meta">
+    <div><span>Statut</span><b>Prototype à itérer</b></div>
+    <div><span>Livrables</span><b>1 app · 3 études</b></div>
+    <div><span>Nom</span><b>Cordes, nom de travail</b></div>
+    <div><span>Terrain</span><b>Paris, puis réseau de villes</b></div>
+  </div>
+
+  <div class="grid">
+    <a class="card primary" href="app/index.html">
+      <header><i class="sq" style="background:var(--accent)"></i>01 · Prototype<span class="n">app/</span></header>
+      <div class="body">
+        <h2>L'application de bilan</h2>
+        <p>Deux parcours, apprendre et transmettre. Inventaire rapide, cartes d'inspiration, plan d'apprentissage, plan de valorisation pour les offreurs avec offres, prix, canaux, statut et simulateur de revenus.</p>
+        <ul><li>Bilan demandeur</li><li>Bilan offreur</li><li>Autour de moi</li><li>Troc entre amis</li><li>Passeport exportable</li><li>Démo</li></ul>
+      </div>
+      <footer>Ouvrir l'app</footer>
+    </a>
+    <a class="card" href="docs/etude-strategique.html">
+      <header><i class="sq" style="background:var(--int)"></i>02 · Stratégie<span class="n">docs/</span></header>
+      <div class="body">
+        <h2>Déploiement, business plan, marketing</h2>
+        <p>Vision, bascule du bilan vers la plateforme, éléments ajoutés au prototype, business plan sur 36 mois avec simulateur, stratégie de niches fonctionnelles et géographiques, concurrence, risques et opportunités.</p>
+        <ul><li>Vision</li><li>Business plan</li><li>Marketing</li><li>Concurrence</li><li>Risques</li></ul>
+      </div>
+      <footer>Lire l'étude</footer>
+    </a>
+    <a class="card" href="docs/niches.html">
+      <header><i class="sq" style="background:var(--sent)"></i>03 · Niches<span class="n">docs/</span></header>
+      <div class="body">
+        <h2>Secteurs, domaines, niches</h2>
+        <p>Diagnostic et bench des 17 grands secteurs, puis arbre secteur, domaine, niche, compétence avec une grille de notation pondérable et les portefeuilles de lancement recommandés.</p>
+        <ul><li>17 secteurs</li><li>Grille pondérable</li><li>Explorateur</li><li>Portefeuilles</li></ul>
+      </div>
+      <footer>Explorer les niches</footer>
+    </a>
+    <a class="card" href="docs/projets-communautaires.html">
+      <header><i class="sq" style="background:var(--wait)"></i>04 · Projets<span class="n">docs/</span></header>
+      <div class="body">
+        <h2>Projets communautaires</h2>
+        <p>Le modèle opérationnel transposé de l'open source, un catalogue de projets types avec budgets et rétroplannings, le plan de lancement du pilote jour par jour et un kit de modèles prêts à copier.</p>
+        <ul><li>Modèle opérationnel</li><li>Fiches projets</li><li>Pilote 30 jours</li><li>Kit</li></ul>
+      </div>
+      <footer>Lire l'étude</footer>
+    </a>
+  </div>
+
+  <div class="note"><b>Point de vigilance</b>Les chiffres des études sont sourcés ou marqués comme estimations. Les taux, seuils et commissions évoluent : à revalider avec un expert-comptable avant tout lancement.</div>
+  <p class="foot">Brief, schéma de données et contexte : <a href="docs/_brief/BRIEF-PRODUIT.md">docs/_brief/</a> · README à la racine du dépôt.</p>
+</main>
+</body>
+</html>

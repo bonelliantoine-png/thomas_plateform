@@ -1,0 +1,602 @@
+ 
+ Atlas des possibles 
+ Benchmark exploratoire · v1 · 4 octobre 2026
+ Ce que l'open source a fait au logiciel, le faire pour tout le reste 
+ Un atlas de tout ce qu'une plateforme peut proposer pour que des gens viennent, restent et paient, quand son but est de leur faire échanger des compétences et construire des choses ensemble. Le document explore large et ne trie pas encore.
+ Objet Explorer, sans trier la faisabilité viendra ensuite 
+ Contraintes Levées ni budget, ni taille d'équipe 
+ Terrain En ligne et local à égalité 
+ Références 97 cas étudiés dont 16 échecs ou reculs 
+ Catalogue 97 possibilités en 10 familles, notées 
+ Visions 4 plateformes assemblées à partir du catalogue 
+ Sommaire
+ § 1 Objet et mode d'emploi 
+ § 2 La thèse 
+ § 3 Panorama des références 
+ § 4 Catalogue des possibilités 
+ A · Construire ensemble 
+ B · Apprendre et transmettre 
+ C · Jouer pour de vrai 
+ D · Identité et preuve 
+ E · Se relier 
+ F · Lieux et présence 
+ G · Outils et IA 
+ H · Financer, partager 
+ I · Gouvernance 
+ J · Rayonner 
+ § 5 Ce que permet la technologie 
+ § 6 Venir, rester, payer 
+ § 7 Quatre visions assemblées 
+ § 8 Le cimetière 
+ § 9 Questions pour trier 
+ § 10 Sources 
+ § 1
+ Objet et mode d'emploi
+ Ce document inventorie les services, fonctionnalités et expériences qu'une plateforme d'échange de compétences et de projets communs peut offrir. Il ne dit pas ce qu'il faut construire. Il montre l'étendue du terrain, avec des preuves, pour que le tri se fasse ensuite en connaissance de cause.
+ Le dossier v2 décrivait un coin de cette carte : des micro-séances locales par abonnement. Ici, toutes les contraintes sont levées. Les quatre types de projets que tu as retenus sont couverts : créatifs et culturels, locaux et d'utilité commune, produits et entreprises, savoirs et science.
+ Comment lire
+ § 2 pose la thèse : ce que l'open source a inventé, et ce qui se transpose.
+ § 3 donne les preuves : 97 références, chacune avec son mécanisme, un repère chiffré et une leçon.
+ § 4 est le cœur : 97 possibilités rangées en dix familles, de A à J.
+ § 5 et § 6 synthétisent ce que la technologie ouvre et ce qui fait venir, rester et payer.
+ § 7 assemble quatre plateformes possibles à partir du catalogue.
+ La notation
+ Chaque possibilité reçoit trois notes de un à trois points : sa capacité à attirer de nouveaux membres, à les retenir , et à faire payer quelqu'un (membre, organisation ou commanditaire). Trois points signifient que des références l'ont prouvé à grande échelle ; un point, que l'effet est faible ou indirect.
+ Ces notes sont mon jugement à partir des références du § 3. Elles ne mesurent ni le coût ni la difficulté.
+ Fiabilité des chiffres Les repères chiffrés viennent de pages publiques relevées le 4 octobre 2026, dont plusieurs fiches Wikipédia et des communiqués d'entreprises. J'ai recoupé directement quatre sources (GitHub, La Fresque du Climat, Repair Café, Timeleft). Prends les autres comme des ordres de grandeur.
+ § 2
+ La thèse
+ L'open source n'est pas une culture du bénévolat. C'est un petit nombre de mécanismes qui permettent à des inconnus de contribuer à un même ouvrage sans se coordonner à l'avance. Ces mécanismes se transposent hors du logiciel, et plusieurs projets l'ont déjà fait.
+ L'échelle atteinte donne la mesure de l'ambition : GitHub compte plus de 180 millions de développeurs et 630 millions de dépôts, dont 63 % publics, et intègre 43 millions de contributions relues par mois.
+ Neuf mécanismes et leur transposition
+ Mécanisme Dans le logiciel Pour un projet multi-compétences Déjà transposé par 
+ Dépôt public Tout le travail est visible par défaut Un chantier ouvert : but, état, besoins, fichiers Wikipédia, Hugging Face 
+ Ticket, « good first issue » Le travail est découpé en unités que chacun peut prendre Des tâches à prendre, triées par compétence et par durée StreetComplete, Open Food Facts 
+ Fork Copier et diverger sans demander la permission Le remix avec crédit automatique Scratch, Thingiverse 
+ Pull request et relecture On propose, un pair relit, un responsable intègre La proposition relue Wikipédia, Stall Catchers 
+ Mainteneur Un petit noyau décide de ce qui entre Un porteur de projet et des relecteurs reconnus La Fresque du Climat 
+ Licence Un contrat standard fixé au départ Des licences types, une marque protégée Museomix, Arduino 
+ Profil de contributions Une réputation publique et portable Le passeport et le générique Kaggle, all-contributors 
+ Version publiée Un résultat utilisable, daté La sortie publique Jams, Kino 
+ Parrainage Un financement volontaire des mainteneurs Cagnottes et partage des recettes GitHub Sponsors, Gitcoin 
+ DÉPÔT Chantier ouvert but, état, besoins 
+ TICKET Tâches à prendre par compétence 
+ COMMIT Contribution seul ou en escouade 
+ RELECTURE Avis des pairs puis intégration 
+ VERSION Sortie publique datée, créditée 
+ Remix : quelqu'un repart de la sortie pour ouvrir un nouveau chantier 
+ EN PETITES CAPITALES, LE TERME D'ORIGINE DANS LE LOGICIEL 
+ Le cycle complet d'un projet ouvert. La plateforme à imaginer doit rendre chaque étape possible pour un film, un jardin, un objet ou une enquête, et pas seulement pour du code. 
+ Pourquoi on contribue
+ Les contributeurs du logiciel libre citent d'abord l'envie d'apprendre (93 %), le plaisir (91 %) et l'altruisme (85 %). La carrière vient ensuite (67 %) et la rémunération loin derrière (28 %), selon une enquête de 2021 . On entre pour répondre à un besoin personnel, on reste pour le plaisir et pour les autres. C'est exactement le public que tu vises.
+ L'effort est très concentré. Sur 263 projets Apache, 3,35 % des contributeurs signent la moitié des contributions. La plateforme doit être conçue pour ce noyau autant que pour la masse.
+ Ce qui rend la transposition difficile
+ Dans le logiciel Hors du logiciel Ce que la plateforme doit ajouter 
+ Le code se copie pour rien La matière, les lieux et les outils coûtent Des nœuds locaux et de la fabrication à la demande (familles F et G) 
+ Un programme se découpe en modules Un film ou un jardin se découpe mal Des recettes de projet et un copilote qui découpe (A5, G2) 
+ Des tests automatiques jugent la contribution La qualité d'une chanson se discute La relecture par plusieurs pairs et un porteur qui tranche (A4, I4) 
+ Tout passe par l'écrit, en différé Beaucoup de savoir-faire sont des gestes Des rendez-vous en présence et la capture des gestes (E3, G8) 
+ La moitié des contributeurs sont payés par leur employeur Les amateurs contribuent sur leur temps libre D'autres raisons de rester : apprendre, appartenir, finir, être crédité (familles B, D, E) 
+ Le dernier point vient d'une enquête de la Linux Foundation et de Harvard : 51,65 % des répondants étaient rémunérés pour leurs contributions.
+ § 3
+ Panorama des références
+ Cinq familles de références, chacune ramenée à son mécanisme, à un repère chiffré et à une leçon. Les échecs sont regroupés au § 8.
+ 3.1 · Communs ouverts hors logiciel
+ Des projets ouverts qui ne produisent pas du code prouvent que les mécanismes du logiciel libre se transposent, avec la même concentration de l'effort sur un petit noyau.
+ Référence Mécanisme Repère chiffré Leçon 
+ Wikipédia Un article commun, un historique, une page de discussion ≈ 633 000 contributeurs actifs pour ≈ 129 millions de comptes (avril 2026) Concevoir pour une fraction de pour cent de membres très actifs 
+ OpenStreetMap Une base cartographique unique sous licence ouverte 10 millions d'inscrits, 2,25 millions ont contribué au moins une fois (2025) La plupart des inscrits ne contribuent jamais 
+ StreetComplete Transforme les trous de la carte en questions posées sur place 14 millions de quêtes résolues ; 100 utilisateurs sur 5 284 en font 30 % (2022) La micro-tâche est la porte d'entrée des non-experts 
+ Open Food Facts On scanne un code-barres, on photographie l'étiquette Plus de 100 000 contributeurs, 4 millions de produits, né en France en 2012 Une contribution de 30 secondes passe à l'échelle 
+ Thingiverse Dépôt d'objets à imprimer, bouton « remix » Plus d'un million de modèles ; revendu en février 2026 Le remix est le fork des objets ; la propriété de la plateforme est fragile 
+ Printables Points gagnés quand d'autres téléchargent et impriment 350 points donnent une bobine de filament Récompenser la réutilisation prouvée, pas le dépôt 
+ MakerWorld Bibliothèque de modèles liée à une marque d'imprimantes 10 millions d'utilisateurs mensuels, 2,6 millions de modèles (2025, déclaratif) Une bibliothèque récompensée fonctionne aussi pour le physique 
+ Precious Plastic Plans ouverts de machines de recyclage, répliquées localement Plus de 400 ateliers et 40 000 participants ; relance annoncée comme une question de survie La réplication large n'a pas financé le cœur du projet 
+ Arduino Plans de cartes ouverts, nom de marque protégé ≈ 30 millions d'utilisateurs (2020) ; racheté par Qualcomm en 2025 Ouvrir les plans, garder la marque 
+ Hugging Face Un « GitHub » des modèles et jeux de données d'IA Plus de 2 millions de modèles, 13 millions d'utilisateurs ; 200 modèles font la moitié des téléchargements Les mécanismes se transposent, la concentration aussi 
+ Ravelry Base de patrons de tricot éditée par la communauté + carnet de projets personnel Près de 9 millions d'inscrits, ≈ 1 million actifs par mois (2020) L'outil personnel d'abord ; le commun en découle 
+ iFixit Guides de réparation en wiki, financés par la vente d'outils et de pièces 1,2 million d'utilisateurs Le contenu gratuit sert de vitrine au commerce 
+ Zooniverse Des chercheurs publient des tâches de classification 1 milliard de classifications, plus de 3 millions de volontaires Les gens viennent quand le résultat sert à quelque chose de visible 
+ Archive of Our Own Archive de fictions tenue par des bénévoles, financée par des dons 18,5 millions d'œuvres, ≈ 700 bénévoles, 290 000 $ de dépenses en 2022 Une échelle immense à petit budget quand la communauté possède l'outil 
+ LEGO Ideas 10 000 soutiens déclenchent l'examen par LEGO ; 1 % de redevance 72 boîtes produites depuis 2008 La foule filtre, l'entreprise décide et fabrique 
+ 3.2 · Création collective
+ Les plateformes de création retiennent quand la reprise du travail d'autrui tient en un geste et quand un calendrier impose de finir. Le partage de revenus existe, mais il se concentre sur très peu de créateurs.
+ Référence Mécanisme Repère chiffré Leçon 
+ Scratch Programmation par blocs, bouton « remix » avec crédit automatique 123 millions de projets partagés ; ≈ 25 % des projets récents sont des remix Le remix en un geste est la mécanique sociale la plus féconde 
+ BandLab Studio de musique gratuit sur mobile, avec reprise de morceaux 100 millions d'inscrits (mars 2024) L'outil gratuit attire ; l'argent vient de services annexes 
+ Splice Né comme outil de collaboration, devenu abonnement à des samples Outil de collaboration fermé en 2023 La bibliothèque d'éléments s'est vendue, la collaboration non 
+ HitRecord Appels ouverts, contributions assemblées en productions, bénéfices partagés ≈ 3 millions de dollars reversés aux contributeurs entre 2010 et 2019 Les revenus venaient de productions pour des clients et dépendaient d'un fondateur célèbre 
+ Wattpad Fiction en feuilleton commentée par les lecteurs 90 millions d'utilisateurs mensuels (2020), vendu 600 millions de dollars La valeur était dans les droits d'adaptation, pas dans la rémunération des auteurs 
+ Roblox Les créateurs de jeux convertissent la monnaie du jeu en argent Plus d'un milliard de dollars reversés en un an ; médiane de 1 575 $ par créateur Le partage de revenus suit une loi de puissance extrême 
+ Fortnite Creative Rémunération des créateurs d'îles selon le temps de jeu 352 millions de dollars en 2024 ; 37 créateurs au-dessus du million Même constat : beaucoup de créateurs, très peu de gagnants 
+ itch.io et ses jams Concours de création en temps limité, notés par les pairs GMTK Jam 2024 : 7 515 jeux et 158 000 notes en quatre jours La notation entre pairs prolonge l'engagement après l'échéance 
+ Global Game Jam Même week-end, même thème, des centaines de sites tenus par des bénévoles 35 371 participants, 795 sites, 97 pays (2025) Le format mondial vit grâce à des lieux physiques locaux 
+ Kino Cellules locales : projections mensuelles et sessions de tournage ouvertes Plus de 70 cellules depuis 1999 Un rituel local récurrent se propage à bas coût 
+ 48 Hour Film Project Un film en 48 heures avec genre, personnage et réplique imposés ≈ 40 000 participants, 76 villes (2009) La contrainte déclenche la création 
+ Museomix Trois jours, équipes mêlant les métiers, prototypes dans un musée, licence ouverte 6 musées en 2012, 10 en 2015, toujours actif Une institution prête son lieu et son public à des équipes multi-compétences 
+ Threadless La communauté propose et vote, les gagnants sont imprimés Prix ramené de 2 500 $ à un bon de 250 $ en 2014 Réduire la récompense casse la motivation 
+ Minted Concours de design votés, prix puis commission continue Plus de 20 000 artistes, 2 000 propositions par semaine Le concours alimente un catalogue vendable 
+ Figma Toile partagée en temps réel, fichiers à dupliquer 13 millions d'utilisateurs mensuels dont deux tiers de non-designers (2025) La toile multijoueur est devenue une habitude grand public 
+ Cohortes payantes Promotions à durée fixe avec rendu final 85 % d'achèvement déclaré, contre 5 à 15 % pour les cours en ligne ouverts Le groupe et l'échéance font finir ; chiffres déclaratifs, biaisés par la sélection 
+ 3.3 · Jeux et défis à impact réel
+ Des millions de joueurs ont produit de la science, des cartes et des dons en jouant. Les formats qui durent placent le jeu d'abord et rendent l'impact visible.
+ Référence Mécanisme Repère chiffré Leçon 
+ Foldit Puzzles de repliement de protéines 57 000 joueurs crédités dans un article de Nature (2010) Créditer les joueurs comme co-découvreurs 
+ Borderlands Science Mini-jeu d'alignement d'ADN dans un jeu commercial 4,5 millions de joueurs ; résultats publiés en 2024 Placer l'impact là où les gens jouent déjà 
+ Sea Hero Quest Jeu de navigation qui produit des données sur la démence 4,3 millions de joueurs, l'équivalent de 17 600 ans de recherche en laboratoire Le jeu lui-même peut être la contribution 
+ EVE Online, Project Discovery Tâches scientifiques récompensées en objets du jeu Plus de 900 000 joueurs depuis 2020 Payer l'effort dans la monnaie de l'univers 
+ Stall Catchers Repérer des vaisseaux bouchés dans des vidéos de recherche ≈ 7 avis par vidéo atteignent le niveau d'un expert Redondance et consensus assurent la qualité 
+ Pokémon Go Collection géolocalisée, événements datés en présentiel 20 millions de joueurs par semaine et 2 millions de billets d'événements en 2024 Les rendez-vous physiques entretiennent la base après l'engouement 
+ Ingress Jeu de territoire par équipes 15 millions de lieux proposés par les joueurs, réutilisés par Pokémon Go Les contributions des joueurs deviennent l'actif de la plateforme 
+ Geocaching Cacher et trouver des boîtes Plus de 3 millions de caches actives (2023) Les membres créent le contenu les uns pour les autres 
+ Kaggle Compétitions de science des données sur des cas réels 23 millions de comptes, 612 « grands maîtres » (2025) Des niveaux visibles valent diplôme 
+ Chess.com Parties classées et problèmes De 100 millions de membres (2022) à 250 millions (2026) Des adversaires de son niveau maintiennent l'envie 
+ Advent of Code Une énigme par jour en décembre Classement mondial supprimé en 2025, classements privés conservés Les classements en petit groupe valent mieux que le classement mondial 
+ Hack The Box Laboratoires d'entraînement à la sécurité informatique 2 millions de membres, 324 000 inscrits à la recherche de talents (2023) Relier le jeu à l'emploi 
+ Freerice Chaque bonne réponse donne 10 grains de riz Plus de 10 millions de repas (2013) Une conversion fixe et visible de l'action en impact 
+ Be My Eyes Micro-bénévolat en appel vidéo 10 millions de volontaires pour 1 million de personnes aidées (2026) L'envie d'aider dépasse la demande ; ce qui manque, ce sont les tâches utiles 
+ Missing Maps Soirées de cartographie humanitaire Plus de 189 000 contributeurs L'événement social sert d'accueil, une organisation réelle utilise le résultat 
+ r/place Un pixel par personne toutes les quelques minutes sur une toile commune 10,5 millions de participants (2022) La rareté par personne oblige à se coordonner 
+ Duolingo Leçons courtes, séries quotidiennes avec jours de grâce Plus de 10 millions d'utilisateurs avec une série d'un an, sur 50 millions actifs par jour (2026) Les séries fonctionnent si elles pardonnent 
+ Zombies, Run! Une fiction audio qui fait courir Plus de 750 000 joueurs (2014) Le récit motive mieux que les points 
+ 3.4 · Local, entraide et communs
+ Les formats locaux attirent par un objet concret et retiennent par un rendez-vous fixe. Les plus contagieux transforment le participant en animateur.
+ Référence Mécanisme Repère chiffré Leçon 
+ La Fresque du Climat Atelier de 3 heures que tout ancien participant peut apprendre à animer 2,3 millions de participants, plus de 100 000 animateurs, 168 pays Chaque atelier recrute ses prochains animateurs ; le bénévolat diffuse, les ateliers en entreprise financent 
+ Repair Café Séances mensuelles de réparation par des bénévoles, sous un nom commun 89 000 bénévoles, 60 000 événements et 1,5 million de visiteurs par an (2026) Un besoin concret attire ; plus de la moitié des bénévoles ont plus de 60 ans 
+ Men's Sheds Ateliers gérés par leurs membres, où chacun enseigne et apprend Près de 3 000 ateliers dans 12 pays ; 33 000 participants par semaine au Royaume-Uni On reste pour faire des choses côte à côte 
+ Benenova Missions de bénévolat courtes et collectives, choisies dans un calendrier Près de 10 000 missions par an Un engagement faible par séance abaisse la barrière d'entrée 
+ Accorderies Une heure donnée vaut une heure reçue 36 Accorderies, 13 134 membres (fin 2022) L'échange de temps pur reste petit et vit de fondations 
+ Réseaux d'échanges réciproques de savoirs Échange de savoirs sans argent, mise en relation par une équipe bénévole Jusqu'à 750 réseaux, quelques centaines en 2018 La mise en relation humaine est indispensable 
+ Tiers-lieux Lieux partagés : travail, fabrication, culture ≈ 3 500 en France (2023) ; 49 % de leurs recettes sont des subventions Les lieux ont besoin d'argent public 
+ Fab labs Ateliers de fabrication numérique en réseau Plus de 1 750 dans plus de 90 pays Un réseau d'ateliers équipés existe déjà 
+ Twiza Chantiers participatifs d'écoconstruction Plus de 50 000 membres, coopérative On apprend un métier en aidant sur le chantier d'un autre 
+ La Louve Supermarché coopératif : seuls les membres achètent, chacun travaille 3 heures par mois Plus de 8 000 membres ; 9,6 M€ de chiffre d'affaires en 2025 Du temps donné contre l'accès : un modèle viable à Paris 
+ Timeleft Dîners entre inconnus à jour fixe 150 000 participants par mois, 18 M€ de revenu annuel récurrent ; passé de 320 à 200 villes (2025) La densité locale passe avant l'étalement géographique 
+ Meetup Groupes d'intérêt ; l'organisateur paie, les membres non 60 millions de membres, 330 000 groupes (2024) Faire payer l'organisateur taxe la ressource la plus rare 
+ Nextdoor Réseau social de voisinage 105 millions de voisins vérifiés, 21 millions actifs par semaine, en perte (2025) Des inscrits ne font pas de l'engagement 
+ AlloVoisins Services et location entre voisins 4,5 millions de membres dont 300 000 professionnels L'argent vient des prestations payantes, pas de l'entraide gratuite 
+ Geev Dons d'objets entre particuliers 6 millions d'utilisateurs, 60 millions d'objets donnés Le don attire en masse 
+ Budget participatif de Paris Les habitants proposent et votent des projets financés par la ville 162 395 votants, 104 projets lauréats (2025) Une collectivité peut financer des projets portés par des habitants 
+ Makesense Formats de mobilisation citoyenne animés par des bénévoles formés 21 000 participants en 2025, budget France supérieur à 6 M€ Une association peut vivre de programmes pour entreprises et institutions 
+ Workaway et WWOOF Des heures d'aide contre le gîte, le couvert et l'apprentissage Plus de 50 000 offres dans 170 pays ; 20 600 membres chez WWOOF France Les compétences s'échangent aussi contre un séjour 
+ 3.5 · Économie, propriété et reconnaissance
+ Les revenus viennent de quatre poches : une minorité d'abonnés, des commissions, des commanditaires et des organisations. Les contributeurs sont récompensés par des redevances, de la propriété, de l'accès ou de la reconnaissance.
+ Référence Mécanisme Repère chiffré Leçon 
+ Kickstarter Préventes en tout ou rien, 5 % de commission 8,7 milliards de dollars engagés, 277 000 projets financés (2025) La foule finance des projets finis, pas des intentions 
+ Ulule Financement participatif avec cofinancement par des marques 4 322 projets et 27,4 M€ en 2024 Les programmes d'entreprises complètent la commission 
+ Patreon Soutien mensuel à des créateurs 25 millions d'abonnements payants, 10 milliards de dollars versés au total Les gens paient des personnes plus volontiers que des plateformes 
+ GitHub Sponsors Dons récurrents aux mainteneurs 100 millions de dollars versés depuis 2019 à plus de 70 000 bénéficiaires Le don reste marginal à l'échelle de la communauté 
+ Gitcoin Cagnotte d'abondement répartie selon le nombre de donateurs, pas les montants Plus de 50 millions de dollars vers 3 715 projets L'abondement exige un commanditaire et un contrôle des faux comptes 
+ Stocksy Banque d'images possédée par ses photographes 50 à 75 % de redevances ; 24,7 millions de dollars versés de 2013 à 2018 Sélection à l'entrée et copropriété tiennent ensemble 
+ SCIC Coopérative à plusieurs collèges : salariés, usagers, collectivités 1 211 en France, 77 % de survie à cinq ans (2022) Un statut français permet d'associer membres et collectivités au capital 
+ Kaggle, compétitions commanditées Des entreprises financent les prix 3,67 millions de dollars sur 68 compétitions (2025) Le commanditaire paie pour un problème résolu 
+ InnoCentive Des entreprises publient des défis rémunérés Plus de 20 millions de dollars de prix, ≈ 20 000 $ en moyenne Les défis ouverts se vendent aux organisations 
+ Strava Réseau gratuit, outils avancés payants ≈ 2 % des inscrits paient, 490 millions de dollars de revenus (estimation 2025) Une petite minorité paie pour tous 
+ Discord Salons persistants en petits groupes 200 millions d'utilisateurs mensuels (2025) On paie pour le statut et l'expression, pas pour l'accès 
+ Open Badges Attestations numériques portables 320 millions de badges émis en 2025, contre 75 millions en 2022 La preuve de compétence portable devient courante 
+ all-contributors Convention pour créditer aussi le travail hors code Adoptée par plus de 2 000 projets Le générique doit citer tous les métiers 
+ Slicing Pie Répartition du capital selon les apports de chacun Le temps compte double, l'argent quadruple Une règle simple et vérifiable suffit aux petites équipes 
+ § 4
+ Catalogue des possibilités
+ 97 possibilités en dix familles. Chacune est identifiée par un code (A1, C3) repris dans les visions du § 7. Les notes vont de un à trois points sur chaque axe.
+ A Construire ensemble
+ Les briques qui transforment une idée en projet ouvert auquel des inconnus peuvent contribuer.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ A1 Chantier ouvert Une page publique par projet : le but, l'état d'avancement, ce qui manque Dépôt GitHub, Wikipédia ●● ○ ●● ○ ● ○○ 
+ A2 Tâches à prendre Le projet est découpé en tâches classées par compétence et par durée : cinq minutes, une heure, une journée « Good first issue », StreetComplete, Open Food Facts ●● ○ ●●● ● ○○ 
+ A3 Remix en un geste Repartir du travail d'un autre, avec crédit automatique à l'original Scratch, Thingiverse, BandLab ●●● ●● ○ ● ○○ 
+ A4 Proposition relue On soumet sa contribution, des pairs la relisent avant intégration Pull request, Stall Catchers ● ○○ ●●● ● ○○ 
+ A5 Recettes de projet Des gabarits reproductibles : un fanzine en quatre semaines, un court-métrage en 48 heures, un atelier de réparation La Fresque du Climat, Precious Plastic, Kino ●●● ●● ○ ●● ○ 
+ A6 Sorties datées Chaque projet aboutit à une sortie publique : concert, expo, mise en vente, publication Releases, journées de démonstration ●● ○ ●●● ●● ○ 
+ A7 Rôles de projet Porteur, relecteur, parrain des nouveaux : des responsabilités reconnues Mainteneurs, ceintures de la Fresque ● ○○ ●●● ● ○○ 
+ A8 Casting de projet Le projet publie les compétences qui lui manquent ; l'IA propose des membres Hack The Box, mise en relation des réseaux d'échanges de savoirs ●●● ●● ○ ●● ○ 
+ A9 Projets fédérés Le même projet mené dans trente villes le même week-end, résultats assemblés Global Game Jam, Museomix, Kino ●●● ●● ○ ●● ○ 
+ A10 Journal de bord automatique L'historique de qui a fait quoi se constitue sans effort Historique Git, pages d'historique de Wikipédia ● ○○ ●● ○ ● ○○ 
+ B Apprendre et transmettre
+ L'échange de compétences du dossier v2, élargi : on apprend aussi en contribuant à un projet.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ B1 Séances d'une heure Micro-groupe de deux à quatre, près de chez soi Dossier v2, Wecandoo ●●● ●● ○ ●● ○ 
+ B2 Troc en crédits Une heure donnée vaut une heure reçue Accorderies, systèmes d'échange locaux ●● ○ ●● ○ ● ○○ 
+ B3 Apprendre en faisant Chaque tâche d'un projet indique ce qu'elle apprend ; un membre expérimenté accompagne Open source (apprendre est le premier motif des contributeurs), Twiza ●● ○ ●●● ● ○○ 
+ B4 Tuteur IA Préparer ou prolonger une séance avec un tuteur conçu pour faire chercher Essai contrôlé de Harvard, Khanmigo ●● ○ ●● ○ ●● ○ 
+ B5 Échelle de transmission Participant, animateur, formateur d'animateurs Ceintures de la Fresque du Climat ●● ○ ●●● ●● ○ 
+ B6 Promotions à échéance Quatre à six semaines en groupe, avec un rendu final Cohortes payantes, Buildspace ●● ○ ●●● ●●● 
+ B7 Binômes et compagnonnage Un débutant et un confirmé sur un même projet, toutes générations Men's Sheds, WWOOF ●● ○ ●● ○ ● ○○ 
+ B8 Fiches remixables Tutoriels et modes d'emploi que chacun peut améliorer iFixit, Instructables ●● ○ ● ○○ ● ○○ 
+ B9 Envies sans réponse Le tableau des compétences demandées que personne n'enseigne encore Dossier v2 ● ○○ ●● ○ ● ○○ 
+ B10 Séjours d'apprentissage Quelques jours chez un membre : aide contre savoir-faire Workaway, WWOOF ●● ○ ● ○○ ●● ○ 
+ C Jouer pour de vrai
+ Des jeux dont le résultat existe hors de l'écran et qui distribuent les rôles selon les compétences de chacun.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ C1 Quêtes de quartier Micro-missions géolocalisées : documenter, réparer, cartographier, aider StreetComplete, Pokémon Go, Geocaching ●●● ●● ○ ● ○○ 
+ C2 Quêtes par compétence Chaque joueur reçoit des missions à sa mesure, qui montent en difficulté Kaggle, Chess.com ●●● ●●● ●● ○ 
+ C3 Jams 48 heures, un thème imposé, une vitrine publique à la fin Global Game Jam, itch.io, 48 Hour Film Project ●●● ● ○○ ●● ○ 
+ C4 Saisons Un grand objectif collectif par trimestre, avec un final en public Événements Pokémon Go, saisons de jeux en ligne ●●● ●●● ●● ○ 
+ C5 Défis commandités Une ville, une association ou une entreprise pose un problème réel et finance le prix Kaggle, InnoCentive, budget participatif ●● ○ ●● ○ ●●● 
+ C6 Œuvre à contribution rare Une création commune où chacun n'a droit qu'à un geste par jour r/place ●●● ●● ○ ● ○○ 
+ C7 Équipes à compétences croisées Des énigmes ou missions qu'aucun métier ne peut résoudre seul Jeux en réalité alternée, Museomix ●●● ●● ○ ● ○○ 
+ C8 Ligues en petit groupe Des classements entre dix ou vingt personnes, jamais mondiaux Advent of Code, Duolingo ●● ○ ●●● ● ○○ 
+ C9 Compteur d'impact Une conversion fixe et vérifiée : tant d'actions, tant de résultats Freerice, Ecosia ●● ○ ●● ○ ●● ○ 
+ C10 Science et enquêtes participatives Classer, mesurer, relever pour des chercheurs ou des journalistes Zooniverse, Foldit, Sea Hero Quest ●● ○ ●● ○ ● ○○ 
+ C11 Séries qui pardonnent Un rythme régulier récompensé, avec des jours de grâce Duolingo ● ○○ ●●● ●● ○ 
+ C12 Récit commun Un univers de fiction qui habille les quêtes et donne un sens à la saison Zombies, Run!, I Love Bees ●● ○ ●● ○ ● ○○ 
+ D Identité, réputation et preuve
+ Ce qui remplace le CV et le nombre d'abonnés : ce qu'on a réellement fait, et avec qui.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ D1 Passeport de compétences Ses savoir-faire prouvés par des séances suivies et des réalisations Dossier v2, Letterboxd ●● ○ ●●● ●● ○ 
+ D2 Graphe de contributions Une vue de son activité dans le temps Profil GitHub ● ○○ ●●● ● ○○ 
+ D3 Générique de projet Chaque sortie crédite tous les contributeurs, tous métiers confondus all-contributors, Foldit ●● ○ ●●● ● ○○ 
+ D4 Badges portables Des attestations vérifiables hors de la plateforme Open Badges, portefeuille d'identité européen ●● ○ ●● ○ ●● ○ 
+ D5 Niveaux de maîtrise Des paliers visibles, attribués par les pairs Kaggle, ceintures de la Fresque ●● ○ ●●● ● ○○ 
+ D6 Portfolio public Une page exportable de ses réalisations Behance, GitHub ●●● ●● ○ ●● ○ 
+ D7 Reconnaissance entre pairs À la fin d'un projet, chacun dit qui l'a le plus aidé Coordinape (sans jetons) ● ○○ ●● ○ ● ○○ 
+ D8 Identité vérifiée Savoir qu'on parle à une vraie personne LinkedIn, portefeuille d'identité européen ● ○○ ● ○○ ●● ○ 
+ D9 Passerelle vers l'emploi Recruteurs et commanditaires accèdent aux profils qui l'acceptent Hack The Box, Dribbble ●● ○ ● ○○ ●●● 
+ E Se relier sans fil d'actualité
+ Des formes de lien qui passent par le faire. Rien à publier, personne à suivre.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ E1 Escouades Des groupes stables de cinq à quinze personnes Discord, nombre de Dunbar ●● ○ ●●● ● ○○ 
+ E2 Guildes Des communautés par métier ou par passion, avec leurs rites Clubs Strava, Ravelry ●● ○ ●●● ●● ○ 
+ E3 Rendez-vous à jour fixe Le même soir chaque semaine, sans avoir à organiser Timeleft, Kino ●●● ●●● ●● ○ 
+ E4 Faire côte à côte Des séances où chacun avance sur son projet en présence des autres Men's Sheds ●● ○ ●●● ● ○○ 
+ E5 Le fil comme sous-produit On ne poste rien : l'activité réelle se publie d'elle-même Strava, Letterboxd ●● ○ ●●● ● ○○ 
+ E6 Carte vivante Voir ce qui se construit autour de soi et où un coup de main est attendu Geocaching, Pokémon Go ●●● ●● ○ ● ○○ 
+ E7 Présentations par l'IA « Vous cherchez la même chose, rencontrez-vous » Timeleft ●● ○ ●● ○ ●● ○ 
+ E8 Traduction en direct Des équipes qui ne parlent pas la même langue travaillent ensemble DeepL Voice, Google Meet ●● ○ ●● ○ ●● ○ 
+ E9 Toile partagée Un espace de travail commun en temps réel plutôt qu'une discussion Figma ● ○○ ●● ○ ● ○○ 
+ E10 Rituels annuels Une fête, un mois, un week-end que tout le monde attend Fête des voisins, NaNoWriMo ●●● ● ○○ ● ○○ 
+ F Lieux et présence
+ Ce qui ancre la plateforme dans le monde physique, là où se fabriquent les objets et les amitiés.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ F1 Lieux partenaires Cafés, bars, studios qui accueillent aux heures creuses Dossier v2, Urban Sports Club ●● ○ ●● ○ ●● ○ 
+ F2 Réseau d'ateliers équipés Accès à des machines et à des établis près de chez soi Fab labs, tiers-lieux ●● ○ ●● ○ ●● ○ 
+ F3 Bibliothèque d'outils Emprunter le matériel au lieu de l'acheter Bibliothèques d'outils ●● ○ ●● ○ ●● ○ 
+ F4 Maisons de la plateforme Des lieux en propre, ouverts aux membres Soho House, TechShop ●●● ●●● ●●● 
+ F5 Nœuds locaux bénévoles Des antennes tenues par des membres formés, sous un nom commun Repair Café, Global Game Jam ●● ○ ●●● ● ○○ 
+ F6 Chantiers participatifs Un week-end pour construire quelque chose chez l'un ou pour le quartier Twiza, jardins partagés ●● ○ ●● ○ ● ○○ 
+ F7 Kits à domicile Le matériel d'un projet envoyé par la poste Box d'activités ●● ○ ● ○○ ●●● 
+ F8 Festival des projets Un grand rendez-vous annuel où tout se montre Journées de démonstration, événements Pokémon Go ●●● ●● ○ ●●● 
+ F9 Institutions hôtes Musées, médiathèques, écoles prêtent leurs murs et leur public Museomix ●● ○ ●● ○ ●● ○ 
+ G Outils de création et IA
+ Ce que la technologie de 2026 permet d'intégrer, pour que le manque d'une compétence n'arrête plus un projet.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ G1 Outil personnel utile seul Un carnet de compétences et de projets qui sert même sans réseau Ravelry, Letterboxd ●●● ●●● ●● ○ 
+ G2 Copilote de projet Découpe le projet en tâches, propose un casting, relance, résume Étude Procter & Gamble sur l'IA comme coéquipier ●● ○ ●●● ●● ○ 
+ G3 Studio partagé Créer à plusieurs sur la même toile, en temps réel Figma, BandLab ●● ○ ●●● ●● ○ 
+ G4 Création assistée Des outils génératifs comblent la compétence qui manque à l'équipe Lovable, Suno ●●● ●● ○ ●●● 
+ G5 Du fichier à l'objet Impression, découpe ou tirage à la demande dans un atelier du réseau MakerWorld, Threadless ●● ○ ●● ○ ●●● 
+ G6 Mémoire du projet Un nouveau venu interroge l'historique et comprend où en est le projet Wikipédia, assistants IA ● ○○ ●●● ● ○○ 
+ G7 Assistant d'animation Aide un hôte à préparer sa séance et sa fiche Dossier v2 ●● ○ ●● ○ ●● ○ 
+ G8 Capture des gestes Filmer ou scanner un savoir-faire pour le transmettre Lunettes connectées, numérisation 3D ● ○○ ● ○○ ● ○○ 
+ G9 Provenance signée Chaque contribution porte la trace vérifiable de son auteur C2PA ● ○○ ●● ○ ● ○○ 
+ G10 Évaluation par l'IA Estimer un niveau à partir d'une réalisation Aucune preuve solide trouvée ● ○○ ● ○○ ●● ○ 
+ H Financer, partager, posséder
+ Toutes les façons de faire entrer de l'argent et de le répartir entre ceux qui contribuent.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ H1 Abonnement à paliers Gratuit pour la masse, payant pour une minorité Dossier v2, Strava, Discord ● ○○ ●● ○ ●●● 
+ H2 Financement des chantiers Une campagne de préventes attachée à un projet Kickstarter, Ulule ●● ○ ● ○○ ●●● 
+ H3 Cagnottes d'abondement Une ville ou une marque complète les soutiens des membres Gitcoin, Ulule ●● ○ ●● ○ ●●● 
+ H4 Partage automatique des recettes Les ventes d'un projet se répartissent selon une règle fixée au départ Stripe, DistroKid, Slicing Pie ●●● ●●● ●●● 
+ H5 Boutique des créations Les objets, œuvres et services nés sur la plateforme s'y vendent Threadless, itch.io, Minted ●● ○ ●● ○ ●●● 
+ H6 Défis payés Des organisations paient pour un problème résolu Kaggle, InnoCentive ●● ○ ●● ○ ●●● 
+ H7 Offre aux organisations Mécénat de compétences, cohésion d'équipe, formation La Fresque du Climat, Makesense ● ○○ ● ○○ ●●● 
+ H8 Coopérative de membres Les membres possèdent la plateforme et votent SCIC, Stocksy ●● ○ ●●● ●● ○ 
+ H9 Temps donné contre accès Quelques heures par mois remplacent tout ou partie de la cotisation La Louve ●● ○ ●●● ●● ○ 
+ H10 Soutien direct aux personnes Parrainer un hôte ou un porteur de projet Patreon, GitHub Sponsors ● ○○ ●● ○ ●● ○ 
+ H11 Services entre membres Des prestations payantes à côté de l'entraide AlloVoisins ●● ○ ●● ○ ●●● 
+ H12 Récompense après coup Une enveloppe répartie par les pairs une fois l'impact constaté Optimism, Coordinape ● ○○ ●● ○ ● ○○ 
+ H13 Édition par un partenaire Un industriel produit la création, l'auteur touche une redevance LEGO Ideas ●● ○ ● ○○ ●● ○ 
+ I Gouvernance et confiance
+ Les règles qui rendent la contribution sûre : savoir ce qu'on donne, ce qu'on garde, et qui décide.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ I1 Licences types Un contrat standard choisi à l'ouverture du projet Creative Commons, Museomix ● ○○ ●● ○ ● ○○ 
+ I2 Droit de repartir Chacun peut quitter un projet avec une copie du travail commun Fork, itch.io ●● ○ ●●● ● ○○ 
+ I3 Marque protégée, contenus ouverts Les recettes sont libres, le nom se mérite Arduino, Repair Café ● ○○ ●● ○ ●● ○ 
+ I4 Qualité par consensus Plusieurs avis indépendants valent un expert Stall Catchers, Zooniverse ● ○○ ●● ○ ● ○○ 
+ I5 Budget voté par les membres Une part des recettes financée sur vote Budget participatif de Paris ●● ○ ●● ○ ● ○○ 
+ I6 Comptes publics Chaque projet et la plateforme publient leurs recettes et dépenses Ecosia, Open Collective ● ○○ ●● ○ ●● ○ 
+ I7 Charte et médiation Des règles de conduite et des médiateurs formés Leçon de NaNoWriMo ● ○○ ●● ○ ● ○○ 
+ I8 Sécurité des rencontres Identité vérifiée, lieux publics, signalement simple Dossier v2 ● ○○ ●● ○ ● ○○ 
+ J Rayonner
+ Ce que voit quelqu'un qui n'est pas encore membre, et ce qui donne envie d'entrer.
+ Possibilité Ce que ça permet Déjà vu chez Attirer Retenir Payer 
+ J1 Galerie des réalisations Tout ce qui est sorti de la plateforme, visible sans compte Scratch, Behance ●●● ● ○○ ● ○○ 
+ J2 Tableau d'impact par ville Ce que les membres ont réparé, créé, transmis près de chez soi Repair Café, Ecosia ●● ○ ●● ○ ●● ○ 
+ J3 Chaîne des projets Des films courts et un rendez-vous éditorial sur les projets en cours HitRecord ●●● ● ○○ ●● ○ 
+ J4 Données ouvertes Les données produites servent à d'autres : chercheurs, villes Strava Metro, OpenStreetMap ● ○○ ● ○○ ●● ○ 
+ J5 Villes pilotes Des partenariats avec des collectivités qui adoptent la plateforme Budget participatif, tiers-lieux ●● ○ ●● ○ ●●● 
+ J6 Ambassadeurs Des membres formés pour ouvrir un nœud dans leur ville La Fresque du Climat, Global Game Jam ●● ○ ●●● ● ○○ 
+ § 5
+ Ce que permet la technologie
+ Dix capacités, toutes disponibles en 2026, changent ce qu'une telle plateforme peut promettre. La plus importante : l'absence d'une compétence dans une équipe n'empêche plus de finir un projet.
+ Capacité Preuve Ce que ça ouvre Limite 
+ L'IA comme coéquipier Dans une expérience chez Procter & Gamble , une personne aidée par l'IA faisait aussi bien qu'une équipe sans IA Un copilote de projet qui découpe, relance et comble un manque (G2) L'IA n'apporte ni l'envie ni le lien : les humains doivent les fournir 
+ Le tuteur IA Un essai contrôlé à Harvard (194 étudiants) mesure des gains plus que doublés par rapport à un cours actif Préparer et prolonger chaque séance (B4) Un seul cours, une seule université 
+ La création assistée Lovable déclare 50 millions de projets, dont 80 % de créateurs non techniques ; Suno compte 2 millions d'abonnés payants Une équipe sans développeur ni musicien sort quand même un produit (G4) Créer devient banal ; le goût, le retour des pairs et le public deviennent rares 
+ La traduction vocale en direct DeepL couvre plus de 40 langues ; Google Meet et Apple l'intègrent Des équipes de pays différents dès le premier jour (E8) Un décalage d'une à deux phrases : adapté à l'atelier, moins à la conversation vive 
+ La toile multijoueur Deux tiers des 13 millions d'utilisateurs de Figma ne sont pas designers L'espace de projet est une toile de travail commune (E9, G3) Chaque métier a ses outils ; tout intégrer est illusoire 
+ Le positionnement spatial Niantic Spatial vend un positionnement au centimètre dans les zones cartographiées Des quêtes ancrées dans un lieu précis (C1, E6) Couverture inégale selon les villes 
+ Les lunettes connectées 7 millions de paires vendues en 2025 Filmer un geste les mains libres pour le transmettre (G8) Pas encore un équipement de masse 
+ La fabrication à la demande MakerWorld réunit 10 millions d'utilisateurs mensuels autour de modèles à imprimer Passer du fichier à l'objet dans un atelier du réseau (G5) Limité aux petites pièces ; le reste demande des ateliers 
+ Les attestations portables 320 millions de badges émis ; chaque pays de l'Union doit proposer un portefeuille d'identité numérique d'ici fin 2026 ; la norme C2PA signe l'origine des contenus Des preuves de compétence et de contribution valables hors de la plateforme (D4, G9) Adoption par les employeurs encore incertaine 
+ Le partage automatique des recettes Les prestataires de paiement répartissent une vente entre plusieurs bénéficiaires ; DistroKid le fait pour 1,5 million de morceaux Chaque vente d'un projet rémunère tous ses contributeurs (H4) La règle de partage reste un sujet humain 
+ Deux absences Je n'ai trouvé aucune preuve solide que l'IA sache évaluer un niveau de compétence à partir d'une réalisation, ni qu'elle sache apparier des personnes mieux qu'un animateur humain. Les réseaux d'échanges de savoirs insistent au contraire sur le rôle d'une équipe de mise en relation. Ces deux usages restent des paris.
+ § 6
+ Venir, rester, payer
+ Les trois verbes obéissent à des ressorts différents. Ce qui attire n'est presque jamais ce qui retient, et ceux qui paient ne sont pas toujours ceux qui utilisent.
+ Venir
+ Un objet concret, une date, un outil
+ Un grille-pain à réparer, un dîner, un jeu de cartes attirent mieux qu'une promesse d'« échange ».
+ Une échéance courte et un thème : 35 000 personnes au Global Game Jam, 7 515 jeux en quatre jours sur itch.io.
+ Un outil utile seul : Ravelry et Letterboxd ont grandi comme carnets personnels.
+ Le remix : un quart des projets Scratch en sont.
+ La demande de présence : 79 % des 18-35 ans interrogés veulent aller à plus d'événements, et 69 % veulent des événements qui mêlent plusieurs centres d'intérêt.
+ En France, 35 % des 25-39 ans se sentent régulièrement seuls.
+ Rester
+ Un groupe, un rythme, un rôle
+ Le lien avant les points : une méta-analyse mesure un effet de la gamification six fois plus fort sur le sentiment d'appartenance que sur le sentiment de compétence.
+ Finir : on valorise ce qu'on a construit, mais seulement si l'ouvrage est achevé .
+ Un rendez-vous fixe : Timeleft, Kino, Repair Café.
+ Une échelle : à la Fresque du Climat, tout participant peut devenir animateur, puis formateur.
+ La variété : chez Peloton, la résiliation est 60 % plus faible chez les membres qui pratiquent deux disciplines ou plus.
+ La densité : Timeleft a fermé plus de 100 villes où l'on retrouvait « les dix mêmes personnes ».
+ Payer
+ Une minorité, des organisations, des ventes
+ Entre 2 et 9 % des membres paient : environ 2 % chez Strava, 9 % chez Duolingo .
+ Hors communauté, un quart environ des abonnés est encore là après douze mois.
+ Les gens paient des personnes : 25 millions d'abonnements sur Patreon.
+ Les organisations paient pour un résultat : ateliers de la Fresque en entreprise, prix Kaggle, cofinancement Ulule.
+ Les ventes de créations se partagent, mais se concentrent sur très peu de créateurs.
+ Les lieux absorbent la marge : TechShop et Soho House n'ont jamais équilibré leurs comptes.
+ La loi de participation
+ LE PUBLIC · ≈ 90 % 
+ Regarde et encourage 
+ À lui offrir : une galerie, une carte, 
+ des quêtes d'une minute, 
+ des événements 
+ LES CONTRIBUTEURS · ≈ 9 % 
+ Prennent une tâche 
+ À leur offrir : des tâches courtes, 
+ une escouade, leur nom 
+ au générique 
+ LE NOYAU · ≈ 1 % 
+ Porte, anime, relit 
+ À lui offrir : un statut, des outils, 
+ une formation, des revenus 
+ La règle des 90-9-1 est une heuristique de 2006 , mais les mesures vont dans le même sens : 3,35 % des contributeurs Apache font la moitié du travail, moins d'un inscrit sur quatre a contribué à OpenStreetMap, et Be My Eyes compte dix volontaires pour une personne aidée. Une plateforme de masse doit donner un rôle à chacun des trois cercles. 
+ Le jeu, mode d'emploi
+ Les mécaniques de jeu attirent fortement et peuvent se retourner contre la motivation. Dans une étude de seize semaines , des étudiants soumis à des badges et à un classement ont fini moins motivés et moins bien notés que les autres. Une récompense attendue réduit le plaisir qu'on prenait à l'activité.
+ Le jeu d'abord, l'impact dedans. Borderlands Science a réuni 4,5 millions de joueurs parce que c'était un bon mini-jeu.
+ Des tâches fines et redondantes. Plusieurs avis indépendants garantissent la qualité.
+ Une conversion visible. Tant d'actions donnent tel résultat, vérifié et crédité.
+ Des séries qui pardonnent et des ligues à taille humaine. Jamais de classement mondial ni de punition.
+ Une œuvre commune, une date, une règle de rareté. C'est ce qui a coordonné 10,5 millions de personnes sur r/place.
+ Les mieux notées sur les trois axes Neuf possibilités obtiennent au moins huit points sur neuf : Promotions à échéance (B6), Quêtes par compétence (C2), Saisons (C4), Rendez-vous à jour fixe (E3), Maisons de la plateforme (F4), Festival des projets (F8), Outil personnel utile seul (G1), Création assistée (G4), Partage automatique des recettes (H4). Les maisons en propre sont aussi les plus risquées (§ 8).
+ § 7
+ Quatre visions assemblées
+ Le catalogue permet de composer quatre plateformes cohérentes. Chacune entre par une porte différente et s'appuie sur des références qui ont prouvé sa boucle. Les noms sont des noms de travail.
+ Vision 1 · production
+ La Forge
+ N'importe qui ouvre un chantier, n'importe qui y prend une tâche à sa mesure.
+ Pour qui Créateurs amateurs et professionnels du monde entier ; projets créatifs, produits, savoirs 
+ La boucle Voir une réalisation, la remixer ou prendre une tâche, être crédité, ouvrir son propre chantier 
+ Briques A1 à A10, D1 à D6, G2 à G5, H4, H5, I1, I2 
+ Qui paie Commission sur les ventes et les campagnes, outils avancés pour les porteurs de projet, commanditaires 
+ Preuves GitHub, Scratch, Thingiverse, Hugging Face, HitRecord 
+ Échelle Mondiale, numérique d'abord, puis nœuds locaux pour le physique 
+ Risque principal Un effort porté par 1 à 3 % des membres, une qualité qui se discute, des droits d'auteur à régler projet par projet 
+ Vision 2 · acquisition
+ Le Grand Jeu
+ Chaque saison, ta ville relève un défi et tu y joues avec ce que tu sais faire.
+ Pour qui Grand public urbain, collectivités, associations, marques 
+ La boucle Une quête d'une minute, une quête à sa mesure, une équipe, le final de saison, la saison suivante 
+ Briques C1 à C12, E6, F8, J2, J3, H3, H6 
+ Qui paie Collectivités, fondations et marques qui commanditent les défis ; laissez-passer de saison 
+ Preuves Pokémon Go, StreetComplete, Kaggle, r/place, budget participatif 
+ Échelle Très large si le jeu prend, ville par ville 
+ Risque principal Des pics d'affluence sans lendemain, une motivation abîmée par les récompenses, la dépendance aux commanditaires 
+ Vision 3 · identité
+ Les Guildes
+ Ton passeport montre ce que tu sais faire, prouvé par ce que tu as fait et transmis.
+ Pour qui Actifs de 20 à 45 ans en quête de progression ou de reconversion ; employeurs 
+ La boucle Apprendre une corde, contribuer, être reconnu par ses pairs, transmettre, monter d'un niveau 
+ Briques B1 à B7, D1 à D9, E1, E2, G1, H1, H7 
+ Qui paie Abonnement des membres, promotions payantes, entreprises pour la formation et le recrutement 
+ Preuves Kaggle, ceintures de la Fresque, clubs Strava, Open Badges, Hack The Box 
+ Échelle Moyenne : une cible plus étroite, mais qui paie 
+ Risque principal Une réputation sans utilité s'effondre, comme chez Stack Overflow ; dérive vers un réseau professionnel de plus 
+ Vision 4 · rétention
+ Les Ateliers
+ Près de chez toi, un groupe se retrouve chaque semaine pour apprendre et fabriquer, avec les recettes de tout le réseau.
+ Pour qui Habitants d'un quartier, tous âges ; lieux, associations, collectivités 
+ La boucle Venir à un rendez-vous, revenir, rejoindre un projet du groupe, animer, ouvrir un nœud ailleurs 
+ Briques B1 à B5, E1 à E4, F1 à F9, A5, A9, H8, H9, J6 
+ Qui paie Adhésions, ateliers en entreprise, collectivités et fondations ; statut coopératif possible 
+ Preuves La Fresque du Climat, Repair Café, Men's Sheds, La Louve, Timeleft, Kino 
+ Échelle Lente, ville par ville, mais durable 
+ Risque principal Les lieux absorbent la marge, la dépendance aux subventions, la densité à atteindre avant de s'étendre 
+ Les quatre visions sur une carte
+ LOCAL MONDIAL 
+ CONSTRUIRE APPRENDRE 
+ Dossier v2 : micro-séances par abonnement 
+ Les Ateliers 
+ Les Guildes 
+ Le Grand Jeu 
+ La Forge 
+ Positions qualitatives. Le dossier v2 occupe le coin « local, apprendre ». 
+ Aucune vision ne couvre toute la carte. La v2 est le point de départ le plus étroit ; la Forge est la plus proche de l'analogie avec l'open source et la plus éloignée de ce que tu peux tester demain. 
+ Vision Attire par Retient par Fait payer Faiblesse 
+ La Forge Les réalisations visibles, le remix Le crédit, les rôles, les sorties Ventes et campagnes Peu de porteurs, beaucoup de spectateurs 
+ Le Grand Jeu Les quêtes, les saisons, les jams Les ligues, le récit, les finals Les commanditaires La rétention entre deux saisons 
+ Les Guildes Le portfolio, la promesse de progression Les niveaux, l'escouade, la transmission Membres et employeurs Une cible plus étroite 
+ Les Ateliers Un rendez-vous concret près de chez soi Le groupe, le rythme, l'échelle d'animateur Adhésions et organisations Une croissance lente 
+ Elles se combinent
+ Chaque vision est forte là où une autre est faible. Le Grand Jeu fait venir mais retient mal, les Ateliers retiennent mais grandissent lentement, la Forge produit mais repose sur un petit noyau, les Guildes donnent une identité qui n'a de valeur que si les trois autres existent. Une plateforme complète les empile : le jeu pour l'entrée, les ateliers pour l'habitude, la forge pour les ouvrages, les guildes pour la reconnaissance.
+ Ma lecture Trois constats reviennent dans presque toutes les références qui durent : un objet concret ou un rendez-vous attire, une échelle qui fait du participant un animateur diffuse, et les organisations financent. Cela désigne les Ateliers comme socle, les mécanismes de la Forge comme produit, et le Grand Jeu comme moteur d'acquisition. C'est une opinion à ce stade, que le tri du § 9 doit confirmer ou renverser.
+ § 8
+ Le cimetière
+ Seize projets voisins ont fermé ou reculé. Presque aucun n'a manqué d'utilisateurs. Ils sont tombés sur le financement, sur des coûts physiques, sur la dépendance à un fondateur ou sur une confiance rompue avec leur communauté.
+ Projet Ce que c'était Ce qui s'est passé Leçon 
+ Quirky Inventions votées par la communauté et fabriquées par l'entreprise Plus de 180 millions de dollars levés, faillite en 2015 Un vote de la foule ne prouve pas une demande 
+ Local Motors Véhicules conçus par la foule, assemblés en micro-usines Fermé en janvier 2022 faute de financement La conception ouverte ne règle pas une production lourde en capital 
+ TechShop Ateliers équipés sur abonnement 9 000 membres actifs, fermé en 2017 L'abonnement seul ne paie pas des locaux et des machines 
+ Soho House Clubs privés sur adhésion 270 000 membres, jamais rentable On paie pour appartenir, mais les lieux absorbent la marge 
+ NaNoWriMo Écrire 50 000 mots en novembre 431 626 participants en 2015, fermeture annoncée en 2025 Un rituel gratuit passe à l'échelle sans se financer ; la confiance se perd vite 
+ Endlesss Improvisation musicale collaborative en direct Fermé en mai 2024 Une niche aimée, sans revenus, tenait à un seul fondateur 
+ Dreams Outil de création de jeux sur console, sans revenu pour les créateurs Suivi arrêté en 2023 Créer sans pouvoir diffuser ni gagner finit par lasser 
+ Buildspace Promotions gratuites de six semaines pour construire un projet De 500 à 18 000 participants par saison, fermé en 2024 La fatigue du fondateur peut arrêter un format qui marche 
+ Open Collective Foundation Portage financier de collectifs Dissoute fin 2024, plus de 600 collectifs touchés Tenir l'argent des groupes est un métier réglementaire lourd 
+ Railcoop Coopérative ferroviaire citoyenne 12 000 sociétaires, ≈ 8,4 M€ réunis pour 40 M€ nécessaires, liquidée en 2024 Le capital citoyen ne finance pas des projets lourds 
+ ConstitutionDAO et les jetons Collectif financé par jetons pour une enchère 47 millions de dollars réunis en quelques jours, enchère perdue Mobiliser est facile, gouverner non ; les jetons attirent la spéculation 
+ Open Source Ecology Cinquante machines industrielles en plans ouverts Un tiers achevé en 2018 Sans crédit ni documentation honnête, les contributeurs partent 
+ Buy Nothing Groupes de dons entre voisins 7,5 millions de membres ; des groupes fermés en 2025 après un rappel à la marque Monétiser un commun tenu par des bénévoles provoque un rejet 
+ BeReal Une photo par jour à heure imposée De 73,5 millions d'actifs (2022) à 16 millions (2024) Un rituel unique sans profondeur ni progression s'épuise 
+ Clubhouse Salons audio en direct De 9,2 millions d'installations à 900 000 en deux mois (2021) Parler en direct sans rien produire ne retient pas 
+ Stack Overflow Questions-réponses avec points de réputation Questions en baisse de 78 % en un an (2025) La réputation ne survit pas à la perte d'utilité 
+ Quatre causes qui reviennent Pas de modèle de revenus (Dreams, Endlesss, NaNoWriMo). Des coûts physiques plus lourds que les adhésions (TechShop, Soho House, Local Motors, Railcoop). Un fondateur irremplaçable (Buildspace, Endlesss, HitRecord). Une communauté qui se sent trahie quand la récompense baisse ou que la marque se referme (Threadless, Buy Nothing, Quirky).
+ § 9
+ Questions pour trier
+ Six choix transforment cet atlas en projet. Le prochain document peut reprendre le catalogue avec une quatrième note, le coût, et en tirer une version 3 du dossier.
+ Par quelle porte entre-t-on ? Un outil personnel, un jeu, un rendez-vous local ou un chantier ouvert. Les références montrent qu'une plateforme réussit d'abord par une seule porte.
+ Quel premier type d'ouvrage ? Créatif, local, produit ou savoir. Chacun impose ses outils, ses droits et ses lieux.
+ Qui paie en premier ? Les membres, les organisations ou les collectivités. La réponse fixe le statut et le rythme de croissance.
+ Entreprise, association ou coopérative ? Une coopérative à plusieurs collèges permet d'associer membres, lieux et collectivités.
+ Que garde-t-on du dossier v2 ? Les micro-séances et les paliers peuvent devenir la première brique des Ateliers ou un simple module.
+ Qui sont les cent premiers porteurs ? Le noyau de 1 % se recrute à la main. Il faut savoir où le trouver avant de construire quoi que ce soit.
+ § 10
+ Sources
+ Pages consultées le 4 octobre 2026. Les chiffres d'entreprises non cotées sont déclaratifs. Les notes du catalogue, les visions et la carte sont mon analyse.
+ Communs ouverts hors logiciel
+ Wikipédia en.wikipedia.org 
+ OpenStreetMap wiki.openstreetmap.org 
+ StreetComplete openstreetmap.org 
+ Open Food Facts world.openfoodfacts.org 
+ Thingiverse en.wikipedia.org 
+ Printables help.prusa3d.com 
+ MakerWorld 3dprint.com 
+ Precious Plastic en.wikipedia.org 
+ Arduino en.wikipedia.org 
+ Hugging Face huggingface.co 
+ Ravelry en.wikipedia.org 
+ iFixit en.wikipedia.org 
+ Zooniverse science.nasa.gov 
+ Archive of Our Own en.wikipedia.org 
+ LEGO Ideas en.wikipedia.org 
+ Création collective
+ Scratch en.scratch-wiki.info 
+ BandLab musicbusinessworldwide.com 
+ Splice en.wikipedia.org 
+ HitRecord techcrunch.com 
+ Wattpad en.wikipedia.org 
+ Roblox about.roblox.com 
+ Fortnite Creative digitalmusicnews.com 
+ itch.io et ses jams itch.io 
+ Global Game Jam en.wikipedia.org 
+ Kino en.wikipedia.org 
+ 48 Hour Film Project en.wikipedia.org 
+ Museomix fr.wikipedia.org 
+ Threadless en.wikipedia.org 
+ Minted en.wikipedia.org 
+ Figma tanayj.com 
+ Cohortes payantes edsurge.com 
+ Jeux et défis à impact réel
+ Foldit en.wikipedia.org 
+ Borderlands Science mcgill.ca 
+ Sea Hero Quest en.wikipedia.org 
+ EVE Online, Project Discovery the-scientist.com 
+ Stall Catchers stallcatchers.com 
+ Pokémon Go scopely.com 
+ Ingress en.wikipedia.org 
+ Geocaching en.wikipedia.org 
+ Kaggle en.wikipedia.org 
+ Chess.com en.wikipedia.org 
+ Advent of Code en.wikipedia.org 
+ Hack The Box hackthebox.com 
+ Freerice en.wikipedia.org 
+ Be My Eyes bemyeyes.com 
+ Missing Maps missingmaps.org 
+ r/place en.wikipedia.org 
+ Duolingo pocketgamer.biz 
+ Zombies, Run! en.wikipedia.org 
+ Local, entraide et communs
+ La Fresque du Climat fresqueduclimat.org 
+ Repair Café repaircafe.org 
+ Men's Sheds menssheds.org.uk 
+ Benenova solidarum.org 
+ Accorderies accorderie.fr 
+ Réseaux d'échanges réciproques de savoirs fr.wikipedia.org 
+ Tiers-lieux observatoire.francetierslieux.fr 
+ Fab labs fabfoundation.org 
+ Twiza fr.twiza.org 
+ La Louve fr.wikipedia.org 
+ Timeleft timfrin.substack.com 
+ Meetup businesswire.com 
+ Nextdoor about.nextdoor.com 
+ AlloVoisins informateurjudiciaire.fr 
+ Geev unmondemeilleur.info 
+ Budget participatif de Paris paris.fr 
+ Makesense france.makesense.org 
+ Workaway et WWOOF workaway.info 
+ Économie, propriété et reconnaissance
+ Kickstarter en.wikipedia.org 
+ Ulule outils.ulule.com 
+ Patreon netinfluencer.com 
+ GitHub Sponsors github.blog 
+ Gitcoin gitcoin.co 
+ Stocksy start.coop 
+ SCIC banquedesterritoires.fr 
+ Kaggle, compétitions commanditées mlcontests.com 
+ InnoCentive en.wikipedia.org 
+ Strava sacra.com 
+ Discord en.wikipedia.org 
+ Open Badges 1edtech.org 
+ all-contributors allcontributors.org 
+ Slicing Pie slicingpie.com 
+ Échecs et reculs
+ Quirky hbr.org 
+ Local Motors thedrive.com 
+ TechShop associationsnow.com 
+ Soho House en.wikipedia.org 
+ NaNoWriMo en.wikipedia.org 
+ Endlesss musictech.com 
+ Dreams pushsquare.com 
+ Buildspace therunway.ventures 
+ Open Collective Foundation opencollective.com 
+ Railcoop fr.wikipedia.org 
+ ConstitutionDAO et les jetons en.wikipedia.org 
+ Open Source Ecology en.wikipedia.org 
+ Buy Nothing en.wikipedia.org 
+ BeReal businessofapps.com 
+ Clubhouse digitalmusicnews.com 
+ Stack Overflow en.wikipedia.org 
+ Preuves transversales
+ GitHub, rapport Octoverse 2025 github.blog 
+ Gerosa et al., motivations des contributeurs (2021) arxiv.org 
+ Concentration des contributions, PLOS One journals.plos.org 
+ Enquête Linux Foundation et Harvard (2020) prnewswire.com 
+ Eventbrite, étude 2026 sur les 18-35 ans businesswire.com 
+ Fondation de France, étude Solitudes 2025 fondationdefrance.org 
+ Méta-analyse sur la gamification et les besoins psychologiques (2023) link.springer.com 
+ Effet IKEA en.wikipedia.org 
+ Peloton, résiliation et variété des pratiques pymnts.com 
+ Duolingo, résultats du 2e trimestre 2026 sec.gov 
+ RevenueCat, repères 2026 des applis à abonnement revenuecat.com 
+ Nielsen, inégalité de participation (2006) nngroup.com 
+ Hanus et Fox, gamification en classe (2015) sciencedirect.com 
+ Effet de surjustification en.wikipedia.org 
+ Technologies
+ IA et travail d'équipe, expérience Procter & Gamble (2025) pubsonline.informs.org 
+ Tuteur IA, essai contrôlé de Harvard (2025) nature.com 
+ Lovable, chiffres 2026 thenextweb.com 
+ Suno, chiffres 2026 musicinafrica.net 
+ DeepL Voice-to-Voice (avril 2026) thenextweb.com 
+ Traduction vocale dans Google Meet workspaceupdates.googleblog.com 
+ Traduction en direct sur AirPods macrumors.com 
+ Niantic Spatial, cartographie 3D (2026) geekwire.com 
+ Ventes de lunettes connectées en 2025 uploadvr.com 
+ Portefeuille d'identité numérique européen, calendrier eidasreadiness.com 
+ Content Authenticity Initiative, 5 000 membres contentauthenticity.org 
+ DistroKid Splits musicconnection.com 
+ Atlas des possibles · benchmark exploratoire v1 · préparé pour Antoine Bonelli · 4 octobre 2026
+ 

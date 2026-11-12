@@ -1,0 +1,401 @@
+===== aa72fbfa-Plateforme_de_comp_tences.html 35110
+ 
+ Plateforme de compétences 
+ Dossier de cadrage · v2 · 3 octobre 2026
+ Apprendre une corde, en transmettre une autre 
+ Une plateforme par abonnement où chacun apprend en une heure, en tout petit groupe, auprès de quelqu'un de son quartier, puis transmet à son tour. Ce dossier reprend l'analyse v1, intègre l'abonnement à paliers et les lieux partenaires, et creuse deux questions : quelles compétences, et qu'est-ce qui fait rester.
+ Statut Idée, avant validation aucune séance testée 
+ Modèle Abonnement à paliers Libre · Membre · Club, avec crédits 
+ Terrain Paris, présentiel lieux partenaires, heures creuses 
+ Équipe Side-project associé(s) identifié(s), sans salaire 
+ Budget Moins de 10 k€ autofinancé 
+ Point mort 93 à 151 abonnés selon le régime de TVA 
+ Sommaire
+ § 1 Verdict 
+ § 2 Le concept reformulé 
+ § 3 Hypothèses challengées 
+ § 4 Marché 
+ § 5 Concurrence 
+ § 6 Les compétences 
+ § 7 Les briques de la plateforme 
+ § 8 Ce qui fait rester 
+ § 9 Abonnement et lieux 
+ § 10 Économie 
+ § 11 Le rôle de l'IA 
+ § 12 SWOT 
+ § 13 Risques et cadre légal 
+ § 14 Feuille de route 
+ § 15 Questions ouvertes 
+ § 16 Sources 
+ § 1
+ Verdict
+ L'abonnement change la conclusion de la v1. Une marketplace à commission mourait de désintermédiation et de petits paniers. Une plateforme où l'on paie l'appartenance tient mieux : les crédits absorbent le troc, les lieux partenaires apportent une valeur tangible, et le point mort d'un side-project tombe autour d'une centaine d'abonnés.
+ Le projet reste fragile sur quatre points. Un abonnement inutilisé se résilie, donc il faut au moins deux usages par mois. La conversion du gratuit vers le payant est faible par nature. La qualité repose sur des hôtes amateurs. Et le palier d'entrée dégage peu de marge.
+ Sujet Conclusion v1 Conclusion v2 
+ Nature du produit Un club, pas de plateforme au départ Une plateforme, construite par couches à partir d'un noyau local 
+ Revenu Abonnement unique à 15 € + séances payantes Trois paliers (0, 12, 29 €) avec crédits mensuels inclus 
+ Troc Avantage secondaire Monnaie interne : animer une séance rapporte des crédits 
+ Lieux Parade au risque de sécurité Élément de l'offre : créneaux et avantages chez des partenaires 
+ Rétention Rituel hebdomadaire Rituel + passeport + cercles + chantiers + carnet 
+ Point mort 700 membres pour payer deux fondateurs 93 à 151 abonnés pour couvrir les frais d'un side-project 
+ Recommandation Garde l'idée de plateforme et lance-la dans l'ordre : trois mois pour prouver le rituel à la main dans un périmètre de quelques arrondissements, puis une première version logicielle limitée à quatre briques. La décision de passer à plein temps se prend vers 550 à 900 abonnés payants, pas avant.
+ § 2
+ Le concept reformulé
+ La promesse tient en une phrase : chaque mois, tu ajoutes une corde à ton arc avec des gens de ton quartier, et tu en transmets une des tiennes. On n'y vient pas pour devenir expert. On y vient pour le plaisir d'apprendre, pour les rencontres, et pour la fierté de transmettre.
+ Trois acteurs se rencontrent. Le membre apprend et, s'il le veut, anime. L' hôte est un membre qui transmet, payé en euros ou en crédits. Le lieu partenaire (café, bar, studio, atelier) accueille les séances à ses heures creuses.
+ ÉTAPE 1 Découvrir 
+ Une séance d'une heure, à 2-4, près de chez soi 
+ ÉTAPE 2 Revenir 
+ Abonnement, crédits, programme de la semaine 
+ ÉTAPE 3 Appartenir 
+ Un cercle, un chantier, un passeport qui se remplit 
+ ÉTAPE 4 Transmettre 
+ Animer à son tour, gagner des crédits 
+ Chaque membre qui transmet crée une séance de plus pour les nouveaux 
+ LA BOUCLE QUI FAIT GRANDIR L'OFFRE SANS LA RECRUTER 
+ La thèse centrale du projet est la flèche du bas. Si les apprenants ne deviennent pas hôtes, il faut recruter l'offre à la main et la plateforme redevient un catalogue d'ateliers. 
+ Ce que la plateforme ne fait pas
+ Pas de cursus long ni de certification : le format maximal est un arc de trois séances.
+ Pas de cours en visio au lancement : la promesse est le contact, et le terrain est local.
+ Pas de soutien scolaire ni de formation professionnelle : c'est le terrain de Superprof et du CPF.
+ § 3
+ Hypothèses challengées
+ Huit hypothèses portent le concept dans sa version abonnement. Deux tiennent sur pièces, quatre se testent en trois mois, deux sont fragiles.
+ Hypothèse État Ce que disent les faits Test qui tranche 
+ Les gens paient pour du lien hors écran Tient Timeleft vend un rituel hebdomadaire entre inconnus, au ticket ou par abonnement à 20 € par mois. Déjà prouvé ailleurs 
+ Un abonnement donnant accès à un réseau de lieux et d'activités se vend Tient Urban Sports Club vend à Paris quatre paliers de 24 à 165 € par mois ; ClassPass a prouvé le modèle à crédits. Déjà prouvé dans le sport 
+ Apprendre par petites touches justifie un paiement mensuel À tester L'achat de cours découverte est occasionnel. « Pas assez d'usage » représente 26 à 40 % des motifs de résiliation déclarés dans les applis à abonnement. Part d'abonnés avec 2 usages ou plus par mois 
+ Les apprenants deviennent hôtes À tester Aucune donnée publique. Les plateformes de troc existent mais restent petites. 1 participant sur 4 prêt à animer 
+ Des amateurs donnent une séance de qualité À tester Kokoroe refusait 10 % des annonces. Airbnb a retiré des milliers d'expériences pour remonter le niveau. Note moyenne et taux de réinscription par hôte 
+ Les lieux acceptent d'accueillir contre de la fréquentation À tester Le modèle marche pour les studios de sport, mais ClassPass a braqué ses partenaires en baissant leurs reversements. 2 lieux signés en un mois, sans loyer 
+ Le gratuit se convertit en payant Fragile Médiane de 2,1 % pour les applis mobiles freemium, 2 à 5 % pour le freemium en général. Conversion après une première séance physique 
+ La plateforme peut être locale et globale, physique et digitale Fragile Chaque combinaison est un produit et un concurrent différents. À reporter après 800 abonnés 
+ Le point qui décide de tout Un abonnement d'apprentissage occasionnel ressemble à un abonnement de salle de sport : beaucoup paient, peu viennent, puis ils résilient. Le produit doit fabriquer deux occasions de venir par mois sans que le membre ait à chercher. C'est le sujet du § 8.
+ § 4
+ Marché
+ Le marché francilien de l'abonnement se situe entre 1,4 et 7 M€ de revenus annuels selon la pénétration. C'est un marché de niche rentable pour une petite équipe, trop étroit pour un fonds de capital-risque tant qu'il reste dans une seule ville.
+ Repères observés
+ Repère Valeur Lecture 
+ Services récréatifs et sportifs des ménages, France 20,6 Md€ Estimation 2025 provisoire. Dépenses en volume supérieures de 17 % à 2019 selon le Crédoc. 
+ Cours particuliers, France ≈ 2 Md€ Surtout du soutien scolaire, en majorité non déclaré. Hors cible. 
+ Superprof, monde 60 M€ Chiffre 2025 communiqué lors d'un rachat, dont 85 % hors de France. D'autres articles citent 100 M€, qui était l'objectif. 
+ Wecandoo > 20 M€ Revenus 2025. Meilleur repère pour la découverte en présentiel. 
+ Timeleft 1 M€ par mois Revenu mensuel atteint en dix mois selon son fondateur, tous pays confondus. 
+ Estimation par l'abonnement
+ Base : environ 3,4 millions de Franciliens de 25 à 44 ans (ordre de grandeur) et un revenu moyen de 17,10 € par abonné et par mois, issu du mix de paliers du § 10.
+ Pénétration de la cible Abonnés Revenu annuel Lecture 
+ 0,2 % 6 800 1,4 M€ Niche installée dans Paris et la petite couronne 
+ 0,5 % 17 000 3,5 M€ Acteur de référence en Île-de-France 
+ 1 % 34 000 7,0 M€ Plafond réaliste d'une seule métropole 
+ Objectif à 3 ans 1 500 ≈ 308 k€ 0,04 % de la cible : atteignable sans levée de fonds 
+ Ces chiffres sont des hypothèses de travail. Je n'ai trouvé aucune étude publique sur l'abonnement de loisirs éducatifs entre particuliers ; le seul moyen de les fiabiliser est le test du § 14.
+ § 5
+ Concurrence et modèles voisins
+ Aucun acteur ne combine apprentissage entre pairs et appartenance récurrente. Les concurrents directs vendent des séances à l'unité ; les modèles par abonnement existent dans le sport, les rencontres et les communautés en ligne.
+ ACHAT PONCTUEL 
+ APPARTENANCE RÉCURRENTE 
+ PAIRS 
+ PROS 
+ Wecandoo 
+ Airbnb Expériences 
+ Superprof 
+ Applis de troc 
+ Urban Sports Club 
+ Communautés payantes en ligne 
+ Clubs Strava 
+ Timeleft 
+ Ta plateforme 
+ Positions qualitatives, d'après les modèles décrits dans le tableau ci-dessous 
+ Le quadrant en haut à droite est occupé par Timeleft et par les clubs Strava, qui créent du lien sans rien enseigner. La place à prendre est celle d'un rendez-vous récurrent qui laisse un savoir-faire. 
+ Acteur Modèle et prix Ce qu'il prouve Ce qu'il t'apprend 
+ Superprof Annonces gratuites, pass élève à 39 € pour contacter un prof, sans commission. 2 000 matières dont loisirs. Une plateforme de cours peut grandir sans lever de fonds. Il a renoncé à la commission pour éviter la fuite. Il vend un prof, pas une appartenance. 
+ Wecandoo Commission sur des ateliers d'artisans, en groupe. Plus de 20 M€ de revenus en 2025. La découverte en présentiel se vend, portée par les cadeaux et les entreprises. Offre professionnelle, achat ponctuel. Aucun lien entre participants après l'atelier. 
+ Airbnb Expériences Expériences sélectionnées, relancées en mai 2025 dans 650 villes. 40 % des réservations Originals viennent d'habitants, pas de voyageurs. Arrêté une première fois faute de rentabilité, volumes encore négligeables mi-2025. 
+ Kokoroe Cours entre particuliers, 2,50 € + 10 % par cours (2015). L'envie existe : inscriptions nombreuses et première levée. Les membres se retrouvaient hors plateforme. Pivot vers la formation en entreprise. 
+ Onsaitfaire , SACO , Swakky Troc en crédits-temps, gratuit. Le principe « une heure donnée, une heure reçue » est compris de tous. Sans revenu ni animation, ces réseaux restent petits. 
+ Timeleft Dîners, verres et running entre inconnus. 13 € le ticket ou 20 € par mois. Un rituel simple, à jour fixe, se paie et se répète. Concurrent direct sur la promesse de lien. Il n'offre aucune progression. 
+ Urban Sports Club Abonnement donnant accès à 17 700 lieux partenaires dans 7 pays. À Paris : 4 paliers, de 24 à 165 € par mois. Les paliers et le réseau de lieux fonctionnent en France. La valeur vient de l'étendue du réseau, longue à construire. 
+ ClassPass Crédits mensuels échangés contre des places invendues dans des studios. Les crédits lissent des prix différents et remplissent les heures creuses. Des reversements jugés trop bas ont poussé des studios à partir. Le partenaire doit y gagner. 
+ Communautés payantes (Skool) Prix médian de 39 $ par mois sur un échantillon de 1 000 communautés. Des gens paient chaque mois pour un groupe et ses contenus. Taille médiane de 200 membres : une communauté payante reste petite. 
+ Strava Réseau social gratuit, fonctions avancées payantes. 180 millions d'inscrits. Un million de clubs, 14 milliards de kudos en 2025 : la couche sociale retient. Le social est gratuit, l'abonnement paie l'outil. La rétention citée (80 à 90 %) n'est pas publiée par Strava. 
+ Les substituts gratuits comptent autant : YouTube pour apprendre seul, les associations de quartier et les réseaux d'échanges de savoirs pour le lien, Meetup pour les groupes d'intérêt.
+ § 6
+ Les compétences
+ Toutes les compétences ne font pas une bonne séance. Le catalogue de lancement doit se limiter à trois ou quatre familles qui passent cinq critères, puis s'ouvrir par la demande des membres.
+ Les cinq critères d'une bonne corde
+ Une heure suffit pour repartir avec un résultat : un cocktail réussi, une rosette de lait, un accord joué.
+ Le résultat se montre , en photo ou en geste. C'est ce qui alimente le passeport et le bouche-à-oreille.
+ Peu de matériel , ou un lieu partenaire qui l'a déjà.
+ Pas de diplôme exigé par la loi pour l'enseigner contre rémunération.
+ On peut y revenir : la corde ouvre sur un arc de trois séances ou sur un cercle.
+ Familles de compétences
+ Famille Exemples Atout Contrainte Lancement 
+ Boire et manger Latte art, cocktails, pain, dégustation de café ou de vin Résultat immédiat, lieux partenaires évidents Hygiène alimentaire, alcool Oui 
+ Musique et son Histoire d'un genre, écoute commentée, premiers pas en production, DJ Passion forte, cercles naturels, studios à heures creuses Matériel pour la pratique Oui 
+ Image et création Photo au téléphone, dessin d'observation, linogravure Résultat montrable, faible coût Niveaux très hétérogènes Oui 
+ Numérique et IA Automatiser sa vie avec l'IA, monter une vidéo, créer un site Demande utilitaire, tu peux animer Moins de chaleur, concurrence des tutoriels Ensuite 
+ Faire de ses mains Réparer un vélo, couture, bricolage, plantes Utile, fort ancrage local Atelier et outillage nécessaires Ensuite 
+ Culture et idées Histoire de l'art, échecs, lecture à voix haute, langue des signes Aucun matériel, format salon Résultat moins tangible Ensuite 
+ Corps et sport Padel, escalade, yoga, boxe Très forte demande Enseignement rémunéré réservé aux diplômés déclarés Sous condition 
+ Les formats
+ Format Taille Durée Rôle dans la plateforme 
+ Découverte 2 à 4 personnes 1 heure Le format de base, celui qui consomme un crédit 
+ Arc 2 à 4 personnes 3 séances Progresser sans s'engager dans un cursus 
+ Salon 6 à 10 personnes 1 h 30 Écoute, dégustation, discussion : le format des cercles 
+ Troc en tête-à-tête 2 personnes 2 fois 1 heure Échange direct entre deux membres, sans argent 
+ Chantier 4 à 8 personnes 4 à 6 semaines Créer quelque chose ensemble, avec une sortie publique 
+ La qualité des hôtes
+ La qualité se joue avant la première séance. Le parcours d'un hôte comporte quatre étapes : proposer une corde, construire sa trame avec le copilote (§ 11), animer une séance pilote devant un hôte confirmé, puis ouvrir ses créneaux. Un hôte garde ses créneaux tant que sa note moyenne et son taux de réinscription restent au-dessus d'un seuil.
+ L'hôte progresse lui aussi. Son profil affiche le nombre de personnes à qui il a transmis, et les meilleurs deviennent référents d'un cercle. Ce statut est une raison de rester que l'argent ne remplace pas.
+ Sport Enseigner une activité physique contre rémunération sans diplôme ni déclaration expose à un an de prison et 15 000 € d'amende. Ton exemple du padel est concerné. Deux voies : n'accepter que des hôtes titulaires d'une carte professionnelle, ou limiter le sport à des sorties entre membres sans enseignement rémunéré.
+ § 7
+ Les briques de la plateforme
+ Au-delà des cours, la plateforme propose six autres choses à faire. Chacune répond à l'une de tes demandes (événements, progression, projets, ressources, lieux) et sert un motif de rétention précis.
+ Brique Ce que le membre y trouve Pourquoi il revient Palier À construire 
+ Séances Le programme de la semaine dans son quartier, réservation en un geste Habitude Tous v1 
+ Passeport Ses cordes acquises, ses arcs en cours, les personnes rencontrées, ce qu'il a transmis Progression visible Tous v1 
+ Crédits Son solde, ce qu'il gagne en animant, les trocs proposés Valeur accumulée Tous v1 
+ Cercles Des groupes par passion et par quartier : fil de discussion, salons, sorties Liens Membre v1 
+ Agenda Les soirées, sorties et rencontres réservées aux membres Rendez-vous Membre v2 
+ Carnet La fiche de chaque séance suivie, plus la bibliothèque des fiches des autres Trace et utilité Membre v2 
+ Chantiers Des projets collectifs de 4 à 6 semaines : un dîner, une compilation, une expo, un podcast Faire grandir quelque chose Club v2 
+ Adresses Les lieux partenaires : créneaux réservés, table des membres, avantages Valeur tangible Club v2 
+ CÔTÉ MEMBRE 
+ Séances 
+ Passeport 
+ Crédits 
+ Cercles 
+ Agenda 
+ Carnet 
+ Chantiers 
+ Adresses 
+ MOTEUR 
+ Compte de crédits abonnement, troc, expiration 
+ Graphe de compétences qui sait quoi, qui veut quoi 
+ Recommandation séances, cercles, trocs 
+ Copilote des hôtes trame, fiche, prix 
+ HORS ÉCRAN 
+ Hôtes vérifiés identité, séance pilote, notes 
+ Lieux partenaires cafés, bars, studios, ateliers 
+ Paiement et assurance prestataire agréé, responsabilité civile 
+ Le graphe de compétences est la seule pièce qui prend de la valeur avec le temps 
+ Huit briques visibles reposent sur quatre pièces de moteur. Le graphe de compétences (qui sait quoi, qui a appris quoi, auprès de qui) est l'actif propre de la plateforme : il nourrit la recommandation, le troc et le passeport. 
+ Remarque Les noms Passeport, Cercles, Chantiers, Carnet et Adresses sont des noms de travail. Ils servent à parler du produit, pas à le baptiser.
+ § 8
+ Ce qui fait rester
+ On reste dans une communauté pour quatre raisons, qui arrivent dans cet ordre : l'habitude, la progression, les liens, puis le rôle qu'on y tient. La plateforme doit fournir une raison à chaque étape de la vie d'un membre, car la précédente s'use.
+ JOUR 0 Inscription curiosité 
+ JOUR 14 1re séance découverte 
+ MOIS 1 2e séance habitude 
+ MOIS 3 1re transmission progression et liens 
+ MOIS 12 Pilier rôle 
+ Questionnaire de goûts, trois séances proposées 
+ Première séance offerte, fiche dans le carnet 
+ Crédit mensuel, entrée dans un cercle 
+ Invitation à animer ou à rejoindre un chantier 
+ Référent de cercle, hôte reconnu, amis sur place 
+ EN HAUT : L'ÉTAPE ET SON MOTIF · EN BAS : LE LEVIER QUI Y CONDUIT 
+ Dans les applis à abonnement, la plus grande part des résiliations survient dès le premier mois. Les deux premières marches, jour 14 et mois 1, comptent donc plus que toutes les autres. 
+ Les mécanismes, avec leur preuve
+ Mécanisme Dans la plateforme Preuve ailleurs Motif servi 
+ Rendez-vous à jour fixe Un programme publié chaque lundi, des séances surtout en semaine après 19 h et le samedi matin Timeleft : dîners chaque mercredi Habitude 
+ Crédit qui arrive chaque mois 1 ou 2 crédits, reportables une fois, avec rappel et proposition de séance ClassPass, Urban Sports Club Habitude 
+ Progression visible Le passeport : cordes acquises, arcs terminés, heures transmises Strava : chaque activité devient une trace partagée Progression 
+ Petits groupes stables Les cercles, limités en taille, avec un référent et un salon mensuel Un million de clubs sur Strava ; taille médiane de 200 membres sur Skool Liens 
+ Œuvre commune Les chantiers : une sortie publique datée, visible sur le profil de chacun Pas de référence chiffrée, à tester Liens, rôle 
+ Passer de l'autre côté L'invitation à transmettre après trois séances suivies Pas de référence chiffrée, c'est le pari du projet Rôle 
+ Engagement annuel Deux mois offerts pour un an payé d'avance RevenueCat : 50 à 60 % de rétention à 12 mois en annuel, contre 20 à 40 % en mensuel Habitude 
+ Ce qu'il ne faut pas faire
+ Des badges sans rencontres. La gamification seule fatigue en quelques semaines. Chaque tampon du passeport doit correspondre à une heure passée avec des gens.
+ Un fil d'actualité à nourrir. Un réseau social de plus ne retient personne. Le fil d'un cercle sert à organiser le prochain rendez-vous.
+ Des crédits qui disparaissent sans prévenir. L'expiration sèche crée du ressentiment. Un report d'un mois et un rappel suffisent.
+ Tout ouvrir d'un coup. Huit briques vides donnent une impression de désert. Mieux vaut quatre briques pleines.
+ Les indicateurs à suivre dès le premier jour
+ Indicateur Cible de départ Pourquoi 
+ Inscrits qui suivent une séance sous 14 jours 40 % Sans première séance, pas d'abonnement 
+ Participants qui s'abonnent après leur première séance 25 % La vraie conversion se joue en personne 
+ Abonnés avec 2 usages ou plus dans le mois 50 % En dessous, l'abonnement paraît cher 
+ Résiliation mensuelle ≤ 8 % Équivaut à 37 % de rétention à 12 mois, haut de la fourchette du marché 
+ Abonnés ayant animé au moins une séance à 6 mois 15 % Mesure la boucle du § 2 
+ Les cibles sont des hypothèses de départ, à remplacer par tes mesures. Seule la fourchette de rétention vient d'une source.
+ § 9
+ Abonnement et lieux partenaires
+ Trois paliers suffisent. Le palier gratuit sert à remplir le réseau et à recruter des hôtes, le palier Membre paie l'habitude, le palier Club paie l'appartenance. Les prix sont des hypothèses à tester auprès des premiers inscrits.
+ Libre
+ 0 €
+ Profil et passeport
+ Séances à l'unité, 22 € la place
+ Première séance offerte
+ Peut animer et gagner des crédits
+ Un cercle au choix
+ Membre
+ 12 € par mois 
+ 1 crédit par mois (une place en séance)
+ Places supplémentaires à 15 €
+ Tous les cercles et l'agenda
+ Carnet complet
+ Troc en tête-à-tête
+ Club
+ 29 € par mois 
+ 2 crédits par mois
+ Places supplémentaires à 12 €
+ Adresses : créneaux et avantages
+ Chantiers collectifs
+ Réservation prioritaire, un invité par mois
+ Les règles des crédits
+ Un crédit vaut une place dans une séance Découverte ou Salon. Un arc en coûte trois.
+ Un hôte choisit sa rémunération séance par séance : 12 € par place occupée, ou 2 crédits pour la séance. C'est la forme que prend le troc.
+ Les crédits se reportent un mois, ne se revendent pas et ne se convertissent pas en euros.
+ Avec trois ou quatre places, un hôte payé en euros touche 36 à 48 € de l'heure.
+ Le troc n'est pas gratuit Un crédit gagné en animant se dépense souvent chez un hôte qui, lui, veut être payé en euros. Dans mes hypothèses, où 30 % des séances sont rémunérées en crédits, le coût moyen d'une place passe de 12 € à 10 €. Le troc allège le coût de 17 %, il ne le supprime pas.
+ Les lieux partenaires
+ Un lieu accepte d'accueillir s'il y gagne quelque chose de mesurable. Trois formules couvrent la plupart des cas et ne coûtent aucun loyer.
+ Formule Type de lieu Ce que le lieu donne Ce qu'il reçoit 
+ Heure creuse contre consommation Cafés, bars, caves Une table ou une arrière-salle à un créneau calme 4 à 10 clients qui consomment, et de la visibilité auprès des membres 
+ Avantage membre Commerces, torréfacteurs, disquaires Une remise ou un produit offert sur présentation du profil Club Du trafic qualifié et récurrent 
+ Partage de recette Studios de musique, ateliers équipés Un créneau avec matériel Une part fixe par place occupée 
+ Leçon ClassPass ClassPass a rempli les créneaux vides des studios, puis a réduit leurs reversements et retiré aux studios la maîtrise de leurs places. Des partenaires sont partis. Fixe dès le départ une règle simple et stable avec chaque lieu, et laisse-lui le choix de ses créneaux.
+ § 10
+ Économie
+ Chaque abonné laisse en moyenne 7,49 € de marge par mois tant que l'activité reste sous le seuil de TVA, et 4,64 € au-delà. Un side-project couvre ses frais avec 93 à 151 abonnés ; un premier salaire demande 560 à 904 abonnés.
+ Hypothèses de calcul
+ Paramètre Valeur Nature 
+ Mix des abonnés payants 70 % Membre, 30 % Club Hypothèse 
+ Crédits réellement utilisés 70 % Hypothèse 
+ Rémunération de l'hôte 12 € par place Choix de conception 
+ Séances rémunérées en crédits 30 % Hypothèse, à mesurer 
+ Coût moyen d'une place pour la plateforme 10,00 € Calculé 
+ Frais de paiement 1,5 % + 0,25 € Ordre de grandeur du marché 
+ Frais fixes en side-project 700 € par mois Outils, assurance, comptabilité, publicité locale 
+ Lieux partenaires 0 € Formules sans loyer du § 9 
+ Marge par abonné
+ Palier Prix Coût des crédits Marge sans TVA Marge avec TVA à 20 % 
+ Membre 12 € 7,00 € 4,57 € 2,57 € 
+ Club 29 € 14,00 € 14,32 € 9,48 € 
+ Moyenne pondérée 17,10 € 9,10 € 7,49 € 4,64 € 
+ Les ventes à l'unité s'ajoutent : une place vendue 22 € à un inscrit Libre laisse 11,42 €, une place supplémentaire à 15 € pour un Membre laisse 4,53 €. Le palier Club porte l'essentiel de la marge ; le palier Membre sert surtout d'entrée.
+ Seuils et scénarios
+ Objectif Coûts mensuels Abonnés sans TVA Abonnés avec TVA 
+ Couvrir les frais du side-project 700 € 93 151 
+ Payer un fondateur 4 200 € 560 904 
+ Payer deux fondateurs 10 000 € 1 334 2 154 
+ Abonnés payants Revenu mensuel Marge sans TVA Marge avec TVA Séances par mois Hôtes actifs 
+ 100 1 710 € 749 € 464 € 36 18 
+ 300 5 130 € 2 248 € 1 393 € 108 54 
+ 800 13 680 € 5 995 € 3 715 € 289 144 
+ 1 500 25 650 € 11 240 € 6 965 € 542 271 
+ Les deux dernières colonnes donnent la charge opérationnelle : séances de trois personnes, hôtes animant deux fois par mois. À 300 abonnés, il faut déjà une cinquantaine d'hôtes actifs. C'est pourquoi la boucle « l'apprenant devient hôte » est une nécessité économique.
+ Acquisition et valeur d'un abonné
+ Résiliation mensuelle Durée moyenne Valeur sans TVA Valeur avec TVA 
+ 6 % 16,7 mois 125 € 77 € 
+ 8 % 12,5 mois 94 € 58 € 
+ 12 % 8,3 mois 62 € 39 € 
+ Avec une valeur de 58 à 94 € par abonné, tu peux dépenser au plus 20 à 30 € pour en acquérir un. La publicité payante ne passe pas à ce prix : l'acquisition doit venir du parrainage, des lieux partenaires et des invités du palier Club. Pour 300 abonnés, compte environ 3 000 inscrits et 1 200 premières séances si 40 % des inscrits viennent et si 25 % d'entre eux s'abonnent.
+ Trois sensibilités TVA. Le passage à la TVA retire 38 % de la marge. Le seuil de franchise et son calendrier sont à vérifier avec un expert-comptable. Usage. Si les abonnés utilisent 90 % de leurs crédits au lieu de 70 %, la marge Membre tombe à 2,57 € sans TVA. Un usage élevé est bon pour la rétention et mauvais pour la marge : le prix du palier Membre devra peut-être monter. Mix. Chaque point de mix gagné vers le palier Club ajoute environ 0,10 € de marge moyenne.
+ Le complément entreprises
+ Les séances d'équipe (afterworks, comités d'entreprise) se vendent plusieurs centaines d'euros et ne dépendent pas de la rétention. Chez Wecandoo, les groupes d'entreprise pesaient près de 20 % du chiffre d'affaires début 2023. À 350 € la séance, hypothèse à vérifier, deux séances d'équipe par mois couvrent les frais fixes du side-project.
+ § 11
+ Le rôle de l'IA
+ L'IA sert d'abord à transformer un amateur en hôte en vingt minutes. C'est son usage le plus rentable, parce que l'offre est la ressource rare. La recommandation côté apprenant vient ensuite, quand il y a assez de séances à recommander.
+ Usage Ce que fait l'IA Ce qu'elle remplace Quand 
+ Copilote de l'hôte À partir d'une discussion, propose une trame minutée d'une heure, la liste de matériel, le titre et la description de la séance Une heure d'accompagnement humain par nouvel hôte v1 
+ Fiche de séance Rédige la fiche-mémo remise aux participants, à partir de la trame et des notes de l'hôte Un travail que l'hôte ne ferait pas v1 
+ Premières recommandations Propose trois séances à partir d'un questionnaire de goûts Le tri d'un catalogue v1 
+ Appariement de troc Repère les paires « A veut ce que B sait, B veut ce que A sait » et les chaînes à trois La double coïncidence des besoins v2 
+ Arcs suggérés Propose la corde suivante d'après le passeport et les cercles Un conseiller v2 
+ Demande non servie Agrège les envies sans séance et les signale aux hôtes capables d'y répondre Une étude de la demande v2 
+ Remarque Aucune de ces fonctions n'est une barrière à l'entrée : un concurrent les copie en quelques semaines. Ce qui ne se copie pas, ce sont les données du graphe de compétences et la confiance des hôtes. Présente l'IA comme un confort, et garde l'argument de vente pour les rencontres.
+ § 12
+ SWOT
+ Par rapport à la v1, l'abonnement renforce le revenu et la rétention, et ajoute une faiblesse : la dépendance à l'usage mensuel.
+ Forces
+ Revenu récurrent qui ne dépend pas de chaque transaction
+ Fondateur crédible comme premier hôte (musique, IA) et déjà enseignant
+ Coûts fixes très bas tant que le projet reste un side-project
+ Boucle apprenant-hôte qui fait grandir l'offre de l'intérieur
+ Associé technique identifié
+ Faiblesses
+ Besoin d'au moins deux usages par mois et par abonné
+ Marge mince sur le palier d'entrée
+ Temps disponible limité en parallèle d'un emploi
+ Qualité dépendante d'hôtes amateurs
+ Aucun actif propre avant que le graphe de compétences soit rempli
+ Opportunités
+ Demande prouvée pour le lien hors écran et les rituels locaux
+ Case libre entre cours à l'unité et rencontres sans contenu
+ Lieux en quête de fréquentation aux heures creuses
+ Séances d'équipe pour les entreprises, via ton réseau
+ Réplication ville par ville une fois la recette stabilisée
+ Menaces
+ Timeleft élargit ses formats et peut ajouter des ateliers
+ Airbnb vise l'usage local, Superprof couvre déjà les loisirs
+ Un hôte apprécié peut emmener son groupe ailleurs
+ Cadre fiscal et réglementaire lourd pour des hôtes occasionnels
+ Un incident lors d'une séance entame la confiance de toute la communauté
+ § 13
+ Risques et cadre légal
+ Deux risques sont structurels, six relèvent du droit et de la fiscalité. Je ne suis ni avocat ni expert-comptable : les points juridiques ci-dessous sont des alertes à faire valider, pas des avis.
+ Risque Gravité Ce que ça implique Parade 
+ Abonnés qui n'utilisent pas Critique Résiliation au premier ou au deuxième renouvellement. Proposition de séance automatique à chaque crédit, cercles, offre annuelle. 
+ Offre insuffisante Critique Créneaux complets ou programme pauvre, donc déception. Périmètre géographique réduit, hôtes recrutés à la main, invitation à transmettre. 
+ Fuite hors plateforme Moyenne Un hôte et son groupe se retrouvent sans passer par la plateforme. L'abonnement paie les cercles, les lieux et le carnet. La fuite d'une séance coûte peu. 
+ Enseignement sportif Élevée Diplôme et déclaration obligatoires pour enseigner un sport contre rémunération. Hôtes avec carte professionnelle, ou sport sans enseignement rémunéré. 
+ Déclaration DAC7 Moyenne La plateforme déclare au fisc les revenus de chaque prestataire de services, dès la première opération. Collecte d'identité guidée ; rémunération en crédits pour les hôtes occasionnels. 
+ Statut des hôtes Moyenne Des revenus réguliers supposent un statut. Le traitement fiscal et social d'une rémunération en crédits n'est pas tranché ici. Consultation avant le lancement des crédits. 
+ Nature des crédits Moyenne Une monnaie interne convertible en euros peut relever de la réglementation des moyens de paiement. Crédits non remboursables, non cessibles, utilisables seulement sur la plateforme. À faire valider. 
+ TVA et abonnement Moyenne Marge réduite au-delà de la franchise ; règles de résiliation en ligne des abonnements. Expert-comptable dès les premiers encaissements ; résiliation en un écran. 
+ Sécurité et responsabilité Moyenne Accident ou comportement déplacé lors d'une séance ; alcool et hygiène pour les séances de boissons. Lieux partenaires plutôt que domiciles, vérification d'identité, assurance, signalement simple. 
+ Paiements Faible Encaisser pour le compte des hôtes exige un prestataire agréé. Prestataire de paiement pour places de marché dès le premier euro. 
+ § 14
+ Feuille de route
+ Trois phases sur dix-huit mois, chacune fermée par un seuil chiffré. Le logiciel n'arrive qu'en phase 2, quand le rituel a prouvé qu'il retient.
+ Phase Durée Ce qu'on fait Outils Seuil pour passer à la suite 
+ 1. Prouver le rituel Mois 1 à 3 30 entretiens, 12 séances, 4 hôtes, 2 lieux, 2 familles de compétences. Offre « membres fondateurs » au tarif Membre. Messagerie de groupe, billetterie, liens de paiement, tableur pour les crédits 60 % de remplissage, 30 % de retour sous 30 jours, 50 abonnés, 1 participant sur 4 prêt à animer 
+ 2. Poser la plateforme Mois 4 à 9 Version 1 en application web : séances, passeport, crédits, cercles, copilote des hôtes. Deuxième périmètre de quartiers. Développement par ton associé, prestataire de paiement 300 abonnés, résiliation mensuelle sous 8 %, 15 hôtes venus des apprenants 
+ 3. Épaissir Mois 10 à 18 Agenda, carnet, chantiers, adresses, palier Club complet, offre entreprises, troc apparié. Version 2 800 abonnés et marge mensuelle supérieure à 4 000 € : décision sur le plein temps 
+ Emploi des 10 k€
+ Poste Phase 1 Phase 2 Commentaire 
+ Consultation juridique et comptable 1 000 € 500 € Crédits, statut des hôtes, TVA, conditions générales 
+ Lieux et consommables 800 € 600 € Ingrédients, petit matériel 
+ Publicité locale et contenus 500 € 1 500 € Affichage dans les lieux, vidéos courtes des séances 
+ Outils, hébergement, assurance 400 € 1 700 € Assurance à faire chiffrer 
+ Total 2 700 € 4 300 € Il reste 3 000 € de réserve 
+ Règle d'arrêt Fixe les seuils avant de commencer et tiens-les. Si la phase 1 donne moins de 30 abonnés ou moins d'un participant sur six prêt à animer, le projet devient un club d'ateliers animé par quelques hôtes : une activité possible, mais qui ne justifie pas une plateforme.
+ § 15
+ Questions ouvertes
+ Six décisions restent à prendre. Les deux premières conditionnent la phase 1.
+ Quelles deux familles de compétences au lancement ? Je propose « boire et manger » et « musique et son », où l'accès aux hôtes et aux lieux est le plus direct.
+ Quel périmètre ? Deux ou trois arrondissements voisins, choisis d'après l'endroit où vivent tes premiers hôtes.
+ Qui fait quoi entre associés ? La phase 1 demande surtout du terrain ; le développement ne commence qu'au mois 4.
+ Le palier Membre à 12 € est-il trop bas ? À tester face à 15 € auprès des membres fondateurs, car la marge y est mince.
+ Les hôtes doivent-ils être abonnés ? Un hôte non abonné élargit l'offre ; un hôte abonné renforce la communauté.
+ Quelle structure juridique ? Association au départ ou société dès le premier euro : la réponse dépend de la consultation sur les crédits et la TVA.
+ § 16
+ Sources
+ Chiffres relevés le 3 octobre 2026 dans la presse et sur des pages publiques. Les montants d'entreprises non cotées sont déclaratifs. Les tableaux des § 4, 8, 9, 10 et 14 reposent sur mes hypothèses, signalées comme telles.
+ Superprof : 60 M€ en 2025, 85 % hors de France (Infonet)
+ Superprof : pass élève à 39 € (franceinfo)
+ Superprof : 2 000 matières, 200 000 profs en France (Enseigna)
+ Wecandoo : revenus 2025, modèle, levée (Wikipédia)
+ Wecandoo : poids des groupes d'entreprise (TourMaG)
+ Kokoroe : raisons du pivot (Veille Formation)
+ Kokoroe : commission (TechCrunch)
+ Kokoroe : modération des annonces (Business & Marchés) et fiche J'aime les startups 
+ Airbnb Expériences : relance 2025, part des habitants (Rental Scale-Up) et expériences retirées (elloha)
+ Airbnb Expériences : premier arrêt (L'Hôtellerie Restauration)
+ Timeleft : trajectoire de revenus (lettre de son fondateur)
+ Timeleft : prix (Orange)
+ Urban Sports Club : paliers et prix à Paris 
+ ClassPass : modèle à crédits et limites (Rolodex Media) et enquête Vice sur les studios 
+ RevenueCat, State of Subscription Apps 2026 et motifs de résiliation 
+ Rétention à 12 mois par durée d'abonnement (synthèse du rapport RevenueCat 2025)
+ Conversion freemium, médiane de 2,1 % (synthèse RevenueCat) et fourchette de 2 à 5 % 
+ Communautés Skool : prix et taille médians (RevenueGeeks)
+ Strava : inscrits, clubs, kudos (communiqué) et rétention citée 
+ Troc de compétences : SACO (Euronews), Onsaitfaire , Swakky 
+ Dépenses de loisirs des ménages (INSEE et Crédoc cités par Toute la Franchise)
+ Marché des cours particuliers (GoStudent)
+ Code du sport : obligations des éducateurs sportifs (académie d'Aix-Marseille)
+ DAC7 : obligations déclaratives des plateformes 
+ Dossier de cadrage v2 · préparé pour Antoine Bonelli · 3 octobre 2026 · remplace l'analyse v1 du même jour
+ 
