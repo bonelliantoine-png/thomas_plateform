@@ -1,6 +1,6 @@
 /* Niche différenciante : score des paires de compétences maîtrisées.
    score = (0,30·complémentarité + 0,25·demande + 0,25·monétisation + 0,10·rareté + 0,10·formats communs) × facteur niveau
-   complémentarité = (1 − Jaccard(tags)) × (univers différents ? 1 : 0,6) ; rareté = 1 − similarité. */
+   complémentarité = (1 − JaccardIDF(tags)) × (univers différents ? 1 : 0,6) ; rareté = 1 − similarité. */
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
@@ -14,7 +14,7 @@
       var a = C.data.sById[ids[i]], b = C.data.sById[ids[j]];
       var la = st.skills[a.id].level, lb = st.skills[b.id].level;
       if (la < 3 && lb < 3) continue;
-      var comp = (1 - U.jaccard(a.tags, b.tags)) * (a.universe !== b.universe ? 1 : 0.6);
+      var comp = (1 - C.jaccardIdf(a.tags, b.tags)) * (a.universe !== b.universe ? 1 : 0.6);
       var demand = (a.attrs.demand + b.attrs.demand) / 6;
       var monet = (a.attrs.monetization + b.attrs.monetization) / 6;
       var simab = C.sim(a, b);

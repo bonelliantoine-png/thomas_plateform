@@ -1,5 +1,7 @@
 /* Similarité entre compétences et graphe de voisinage précalculé.
-   sim(a,b) = 0.36·Jaccard(tags) + 0.10·même univers + 0.08·même domaine + 0.18·lien related
+   Le Jaccard des tags est pondéré par l'IDF (idf(t) = ln(N / df(t))) : les tags très fréquents
+   (« precision », « geste », « creation ») pèsent peu, les tags rares rapprochent fortement.
+   sim(a,b) = 0.36·JaccardIDF(tags) + 0.10·même univers + 0.08·même domaine + 0.18·lien related
             + 0.20·proximité des attrs (cosinus centré, ramené à [0,1]) + 0.08·Jaccard(soft) */
 (function (W) {
   'use strict';
@@ -18,6 +20,9 @@
       s._vec = v.map(function (x) { return x / norm; });
       s._rel = {}; s.related.forEach(function (r) { s._rel[r] = 1; });
     });
+    // IDF des tags
+    var df = {}; S.forEach(function (s) { s.tags.forEach(function (t) { df[t] = (df[t] || 0) + 1; }); });
+    var idf = C.tagIdf = {}; Object.keys(df).forEach(function (t) { idf[t] = Math.log((n + 1) / df[t]); });
     var cache = C._simCache = new Float32Array(n * n);
     S.forEach(function (s, q) { s._idx = q; });
     var neigh = {};
@@ -42,12 +47,21 @@
     var w = C.SIM_WEIGHTS;
     var cos = 0; for (var q = 0; q < a._vec.length; q++) cos += a._vec[q] * b._vec[q];
     var rel = (a._rel[b.id] || b._rel[a.id]) ? 1 : 0;
-    return w.tags * U.jaccard(a.tags, b.tags)
+    return w.tags * C.jaccardIdf(a.tags, b.tags)
       + w.universe * (a.universe === b.universe ? 1 : 0)
       + w.domain * (a.domain === b.domain ? 1 : 0)
       + w.related * rel
       + w.attrs * ((cos + 1) / 2)
       + w.soft * U.jaccard(a.soft, b.soft);
+  };
+
+  C.jaccardIdf = function (a, b) {
+    var idf = C.tagIdf || {}, inter = 0, uni = 0, seen = {}, i, t;
+    for (i = 0; i < a.length; i++) { seen[a[i]] = 1; }
+    for (i = 0; i < b.length; i++) { t = b[i]; if (seen[t] === 1) { inter += idf[t] == null ? 1 : idf[t]; seen[t] = 2; } }
+    for (t in seen) uni += idf[t] == null ? 1 : idf[t];
+    for (i = 0; i < b.length; i++) { t = b[i]; if (!seen[t]) { uni += idf[t] == null ? 1 : idf[t]; seen[t] = 3; } }
+    return uni ? inter / uni : 0;
   };
 
   C.sim = function (a, b) {
@@ -63,7 +77,8 @@
     if (typeof a === 'string') a = C.data.sById[a];
     if (typeof b === 'string') b = C.data.sById[b];
     if (!a || !b) return '';
-    var common = a.tags.filter(function (t) { return b.tags.indexOf(t) >= 0; });
+    var idf = C.tagIdf || {};
+    var common = a.tags.filter(function (t) { return b.tags.indexOf(t) >= 0; }).sort(function (x, y) { return (idf[y] || 0) - (idf[x] || 0); });
     var parts = [];
     if (a._rel[b.id] || b._rel[a.id]) parts.push('lien direct');
     if (common.length) parts.push(common.slice(0, 3).join(', '));
