@@ -7,6 +7,7 @@ var $ = function (id) { return document.getElementById(id); };
 var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
 var f1 = function (x) { return (Math.round(x * 10) / 10).toFixed(1).replace('.', ','); };
 var f0 = function (x) { return String(Math.round(x)); };
+var fs1 = function (v) { return String(Math.round(v * 10) / 10).replace('.', ','); };
 var eur = function (x) { return (Math.round(x) < 0 ? '−' : '') + Math.abs(Math.round(x)) + ' €'; };
 var norm = function (s) { return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
 var L = E.LBL;
@@ -73,6 +74,13 @@ $('levels-t').innerHTML = E.LEVELS.map(function (l) { return '<tr><td class="num
   $('verdict-c').innerHTML = Object.keys(vc).map(function (k) { return '<div><div class="k"><span class="sq" style="background:var(--' + L.verdict[k][1] + ')"></span>' + L.verdict[k][0] + '</div><div class="v big">' + vc[k] + '</div><div class="sub">' + dsc[k] + '</div></div>'; }).join('');
 })();
 
+(function () {
+  var hk = ['format', 'supply', 'community', 'hostIncome'], nm = { format: 'Format', supply: 'Vivier', community: 'Communauté', hostIncome: 'Revenu hôte' };
+  $('harm-reg').textContent = D.harm.reg + ' niches concernées.';
+  $('dup-n').textContent = D.dups.length;
+  var sg = function (v) { return (v > 0 ? '+' : v < 0 ? '−' : '') + f1(Math.abs(v)).replace(',0', ''); };
+  $('harm-t').innerHTML = '<thead><tr><th>Secteur</th>' + hk.map(function (k) { return '<th class="num">' + nm[k] + '</th>'; }).join('') + '</tr></thead><tbody>' + D.sectors.map(function (s) { return '<tr><td>' + esc(s.n) + '</td>' + hk.map(function (k) { var v = D.harm.shift[k][s.id] || 0; return '<td class="num" style="color:' + (Math.abs(v) >= 0.3 ? 'var(--wait)' : 'var(--fg-2)') + '">' + sg(Math.round(v * 100) / 100) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
+})();
 /* ───── explorateur ───── */
 var X = { q: '', view: 'tree', verdict: {}, wtp: {}, sec: '', fmt: '', pub: '', ven: '', mom: '', low: '', open: {}, sort: { k: 's1', d: -1 }, order: [], sel: null };
 var FDEF = [['sec', 'Secteur', D.sectors.map(function (s) { return [s.id, s.n]; })], ['fmt', 'Format', Object.keys(L.format).map(function (k) { return [k, L.format[k]]; })], ['pub', 'Public', Object.keys(L.publics).map(function (k) { return [k, L.publics[k]]; })], ['ven', 'Lieu', Object.keys(L.venues).map(function (k) { return [k, L.venues[k]]; })], ['mom', 'Moment', Object.keys(L.moments).map(function (k) { return [k, L.moments[k]]; })], ['low', 'Parades', [['low', 'Faible propension avec parade'], ['no', 'Sans parade']]]];
@@ -159,7 +167,7 @@ function paintRows() {
   var st = b.scrollTop, h = b.clientHeight || 560, a = Math.max(0, Math.floor(st / RH) - 8), z = Math.min(ROWS.length, Math.ceil((st + h) / RH) + 8), o = [];
   for (var i = a; i < z; i++) {
     var n = ROWS[i];
-    o.push('<button type="button" class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-id="' + n.id + '" style="top:' + i * RH + 'px"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + pill(n.verdict) + '</span><span class="c xc">' + n.scores.demand + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + n.scores.format + '</span><span class="c xc">' + n.scores.supply + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button>');
+    o.push('<button type="button" class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-id="' + n.id + '" style="top:' + i * RH + 'px"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + pill(n.verdict) + '</span><span class="c xc">' + fs1(n.scores.demand) + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + fs1(n.scores.format) + '</span><span class="c xc">' + fs1(n.scores.supply) + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button>');
   }
   $('vspace').innerHTML = o.join('');
 }
@@ -214,7 +222,8 @@ function openNiche(id, list) {
     '<div><div class="k">Productions</div><div class="val">' + esc(lbls(n.outputs, 'outputs')) + '</div></div><div><div class="k">Cadre</div><div class="val">' + (n.regulated ? esc(L.regulated[n.regulated]) : 'Aucun frein particulier') + '</div></div>' +
     '<div class="w"><div class="k">Concurrents</div><div class="val">' + esc(n.competitors.join(', ') || 'non renseigné') + '</div></div><div class="w"><div class="k">Pourquoi ce verdict</div><div class="val">' + esc(n.why) + '</div></div></div>';
   h += '<h4>Échelle des 5 paliers</h4>' + ladder(n);
-  h += '<h4>Notes</h4>' + E.CRIT.map(function (c) { var v = n.scores[c[0]]; return '<div class="crit"><span>' + c[1] + ' <span style="color:var(--fg-3)">· ' + W[E.KEYS.indexOf(c[0])] + '</span></span><span class="g"><b style="width:' + v * 20 + '%;background:var(--' + (v >= 4 ? 'int' : v >= 3 ? 'accent' : v >= 2 ? 'wait' : 'no') + ')"></b></span><span class="val">' + v + '</span></div>'; }).join('');
+  h += '<h4>Notes</h4>' + E.CRIT.map(function (c) { var v = n.scores[c[0]], rw = n.raw && n.raw[c[0]] !== v ? ' <span style="color:var(--fg-3)">(brut ' + n.raw[c[0]] + ')</span>' : ''; return '<div class="crit"><span>' + c[1] + rw + ' <span style="color:var(--fg-3)">· ' + W[E.KEYS.indexOf(c[0])] + '</span></span><span class="g"><b style="width:' + v * 20 + '%;background:var(--' + (v >= 4 ? 'int' : v >= 3 ? 'accent' : v >= 2 ? 'wait' : 'no') + ')"></b></span><span class="val">' + String(v).replace('.', ',') + '</span></div>'; }).join('');
+  if (n.dup) h += '<p class="note">Proche de : ' + n.dup.map(function (d) { return '<button class="lnk" type="button" data-open="' + d + '" style="color:var(--accent)">' + esc(byId[d].name) + '</button> (' + esc(SEC[byId[d].sector].n) + ')'; }).join(', ') + '. Quasi-doublon entre lots, à fusionner ou différencier.</p>';
   if (n.par) {
     h += '<h4>Parades recommandées</h4><ul class="mini">' + n.par.map(function (p) { var f = (n.pfit || []).filter(function (x) { return x[0] === p; })[0]; return '<li><div><div class="mn">' + esc(PAR[p].n) + (n.pm ? ' <span style="color:var(--accent)">✎</span>' : '') + '</div><div class="ms">' + esc(PAR[p].tag) + (f ? ' · adéquation ' + f[1] : '') + '</div></div><button class="btn sm" type="button" data-sim="' + n.id + '|' + p + '">Simuler</button></li>'; }).join('') + '</ul>';
     if (n.pm) h += '<p class="note">✎ ' + esc(n.pm) + '</p>';
@@ -377,7 +386,7 @@ $('sim-p').addEventListener('change', function () { setSim(SIM.n.id, $('sim-p').
 $('sim-reset').addEventListener('click', function () { setSim(SIM.n.id, SIM.p); toast('Valeurs par défaut'); });
 
 /* ───── mixes ───── */
-var MIXRULE = { comp: 'Secteurs différents (1), même secteur (0,45), même catégorie (0,15), mêlé à la part de sens non partagés', lieu: 'Lieu commun (1), même famille de lieux (0,8), lieux compatibles (0,3 à 0,75)', moment: 'Moment commun (1), moments voisins (0,3 à 0,7)', public: 'Deux publics communs ou plus (1), un seul (0,6)', chain: 'La production de l’une nourrit l’autre : plantes puis plat, boisson puis écoute, objet puis photo', energy: 'Selon la préférence : accord, contraste ou indifférent', lever: 'Une niche de propension 2 ou moins avec une niche de 4 ou plus (1), sinon écart et moyenne', orig: 'Rareté de la paire de secteurs sur le marché (75 %) et espace concurrentiel moyen (25 %)', coh: 'Mots-clés de mix partagés : deux ou plus (1), un (0,8), sinon sens communs' };
+var MIXRULE = { comp: 'Secteurs différents (1), même secteur (0,45), même catégorie (0,15), mêlé à la part de sens non partagés', lieu: 'Lieu commun (1), même famille de lieux (0,8), lieux compatibles (0,3 à 0,75)', moment: 'Moment commun (1), moments voisins (0,3 à 0,7)', public: 'Deux publics communs ou plus (1), un seul (0,6)', chain: 'La production de l’une nourrit l’autre : plantes puis plat, boisson puis écoute, objet puis photo', energy: 'Selon la préférence : accord, contraste ou indifférent', lever: 'Une niche de propension 2 ou moins avec une niche de 4 ou plus (1), sinon écart et moyenne', orig: 'Rareté de la paire de secteurs sur le marché (75 %) et espace concurrentiel moyen (25 %)', coh: 'Mots-clés de mix spécifiques partagés : deux ou plus (1), un (0,85). Mots d’ambiance seuls (convivial, calme, famille…) : 0,45. Sinon sens communs (0,35)' };
 $('mixw-t').innerHTML = E.MIXW.map(function (w) { return '<tr><td>' + w[1] + '</td><td class="num">' + w[2] + '</td><td style="font-family:var(--f-body);font-size:14.5px">' + MIXRULE[w[0]] + '</td></tr>'; }).join('');
 function opts(sel, obj, all) { $(sel).innerHTML = '<option value="">' + all + '</option>' + Object.keys(obj).map(function (k) { return '<option value="' + k + '">' + esc(obj[k]) + '</option>'; }).join(''); }
 opts('mt-v', L.venues, 'Tous'); opts('mt-m', L.moments, 'Tous'); opts('mt-p', L.publics, 'Tous');

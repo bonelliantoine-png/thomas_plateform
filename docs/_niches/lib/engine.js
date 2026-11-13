@@ -133,7 +133,10 @@ E.simDefaults = function (pid, n, ctx) {
 };
 
 /* ───── mixes ───── */
-E.MIXW = [['comp', 'Complémentarité', 12], ['lieu', 'Lieu commun', 14], ['moment', 'Moment commun', 10], ['public', 'Public commun', 10], ['chain', 'Enchaînement des productions', 14], ['energy', 'Énergie', 6], ['lever', 'Levier de prix', 10], ['orig', 'Originalité', 16], ['coh', 'Pont de sens', 8]];
+E.MIXW = [['comp', 'Complémentarité', 10], ['lieu', 'Lieu commun', 12], ['moment', 'Moment commun', 8], ['public', 'Public commun', 8], ['chain', 'Enchaînement des productions', 16], ['energy', 'Énergie', 8], ['lever', 'Levier de prix', 10], ['orig', 'Originalité', 14], ['coh', 'Pont de sens', 14]];
+/* mots-clés d'ambiance trop généraux pour faire un pont de sens */
+E.GENERIC = ['famille', 'convivial', 'geste', 'calme', 'fete', 'cadeau', 'defi', 'couple', 'bien-etre', 'solidarite', 'argent', 'objet', 'objet-souvenir', 'reflexion', 'maison', 'tech'];
+E.MIX_BLEND = 0.8;
 var VFAM = { 'cafe': 'c', 'coffee-shop': 'c', 'bar': 'c', 'cave': 'c', 'restaurant': 'c', 'cuisine-pro': 'k', 'studio-musique': 's', 'studio-danse': 's', 'salle-sport': 's', 'salle-polyvalente': 't', 'atelier-artisan': 'a', 'fablab': 'a', 'tiers-lieu': 't', 'mediatheque': 'm', 'librairie': 'm', 'galerie': 'm', 'parc': 'n', 'jardin-partage': 'n', 'nature': 'n', 'montagne': 'n', 'bateau': 'n', 'domicile': 'd', 'boutique': 'c', 'ecole': 'm', 'entreprise': 'e', 'en-ligne': 'o' };
 var VCOMPAT = { 'c|k': 0.6, 'c|m': 0.55, 'c|t': 0.6, 'a|t': 0.75, 'm|t': 0.7, 's|t': 0.6, 'n|t': 0.4, 'n|m': 0.35, 'c|n': 0.3, 'e|t': 0.5, 'c|e': 0.4, 'e|m': 0.4, 'a|c': 0.45, 'a|m': 0.4, 'k|t': 0.55, 'd|t': 0.3, 'c|d': 0.3 };
 function vpair(a, b) { if (a === b) return 1; var x = VFAM[a], y = VFAM[b]; if (!x || !y) return 0; if (x === y) return 0.8; return VCOMPAT[x < y ? x + '|' + y : y + '|' + x] || 0; }
@@ -148,9 +151,11 @@ E.momentFit = function (A, B) {
   var best = 0, m = null; for (var i = 0; i < A.length; i++) for (var j = 0; j < B.length; j++) { var k = A[i] < B[j] ? A[i] + '|' + B[j] : B[j] + '|' + A[i]; var s = MADJ[k] || 0; if (s > best) { best = s; m = A[i]; } }
   return [best, m];
 };
-var CHAIN = { 'boisson|son': 1, 'boisson|plat': 0.75, 'objet|photo': 0.8, 'photo|plat': 0.75, 'boisson|photo': 0.7, 'performance|photo': 0.75, 'photo|plante': 0.75, 'photo|vetement': 0.9, 'photo|texte': 0.9, 'son|texte': 0.85, 'carte|savoir': 0.9, 'carte|photo': 0.8, 'objet|plante': 0.85, 'plante|plat': 0.95, 'boisson|plante': 0.8, 'boisson|objet': 0.75, 'son|video': 0.9, 'photo|video': 0.7, 'performance|son': 0.9, 'performance|texte': 0.85, 'jeu|savoir': 0.95, 'boisson|jeu': 0.7, 'jeu|plat': 0.6, 'objet|texte': 0.8, 'objet|vetement': 0.7, 'savoir|plat': 0.7, 'boisson|savoir': 0.8, 'carte|jeu': 0.9, 'carte|texte': 0.8, 'objet|plat': 0.75, 'plat|texte': 0.6, 'performance|vetement': 0.75, 'performance|video': 0.85, 'savoir|texte': 0.6, 'objet|savoir': 0.55, 'objet|son': 0.7, 'photo|savoir': 0.6, 'savoir|son': 0.65, 'performance|savoir': 0.55, 'jeu|texte': 0.7, 'plante|savoir': 0.7, 'plante|texte': 0.6, 'service|savoir': 0.55, 'objet|service': 0.6, 'jeu|objet': 0.65, 'photo|son': 0.6, 'plat|son': 0.8, 'jeu|son': 0.6, 'carte|plante': 0.7, 'carte|plat': 0.5, 'savoir|video': 0.6, 'texte|video': 0.7, 'performance|plat': 0.6, 'jeu|performance': 0.7, 'objet|performance': 0.6, 'plante|vetement': 0.6, 'texte|vetement': 0.5 };
+var CHAIN = { 'boisson|son': 1, 'boisson|plat': 0.75, 'objet|photo': 0.8, 'photo|plat': 0.75, 'boisson|photo': 0.7, 'performance|photo': 0.75, 'photo|plante': 0.75, 'photo|vetement': 0.9, 'photo|texte': 0.9, 'son|texte': 0.85, 'carte|savoir': 0.9, 'carte|photo': 0.8, 'objet|plante': 0.85, 'plante|plat': 0.95, 'boisson|plante': 0.8, 'boisson|objet': 0.75, 'son|video': 0.9, 'photo|video': 0.7, 'performance|son': 0.9, 'performance|texte': 0.85, 'jeu|savoir': 0.75, 'boisson|jeu': 0.7, 'jeu|plat': 0.6, 'objet|texte': 0.8, 'objet|vetement': 0.7, 'savoir|plat': 0.7, 'boisson|savoir': 0.8, 'carte|jeu': 0.9, 'carte|texte': 0.8, 'objet|plat': 0.75, 'plat|texte': 0.6, 'performance|vetement': 0.75, 'performance|video': 0.85, 'savoir|texte': 0.6, 'objet|savoir': 0.55, 'objet|son': 0.7, 'photo|savoir': 0.6, 'savoir|son': 0.65, 'performance|savoir': 0.55, 'jeu|texte': 0.7, 'plante|savoir': 0.7, 'plante|texte': 0.6, 'service|savoir': 0.55, 'objet|service': 0.6, 'jeu|objet': 0.65, 'photo|son': 0.6, 'plat|son': 0.8, 'jeu|son': 0.6, 'carte|plante': 0.7, 'carte|plat': 0.5, 'savoir|video': 0.6, 'texte|video': 0.7, 'performance|plat': 0.6, 'jeu|performance': 0.7, 'objet|performance': 0.6, 'plante|vetement': 0.6, 'texte|vetement': 0.5 };
 var PRODUCER = { plat: 1, boisson: 1, objet: 1, plante: 1, texte: 1, vetement: 1, carte: 1, savoir: 0.6, jeu: 0.5, service: 0.5, son: 0.4, video: 0.2, photo: 0, performance: 0.1, rencontre: 0 };
+function prod(o) { var f = o.filter(function (x) { return x !== 'savoir' && x !== 'rencontre'; }); return f.length ? f : o; }
 E.chainFit = function (A, B) {
+  A = prod(A); B = prod(B);
   var best = 0.3, pair = null;
   for (var i = 0; i < A.length; i++) for (var j = 0; j < B.length; j++) {
     var a = A[i], b = B[j]; var s;
@@ -179,11 +184,15 @@ E.pair = function (a, b, sa, sb, opt) {
   var wa = a.scores.wtp, wb = b.scores.wtp, hi = Math.max(wa, wb), lo = Math.min(wa, wb);
   p.lever = lo <= 2 && hi >= 4 ? 1 : Math.min(1, 0.35 * (hi - lo) / 3 + 0.55 * (wa + wb) / 10);
   p.orig = (1 - E.banal(a.sector, b.sector)) * 0.75 + 0.25 * (a.scores.space + b.scores.space) / 10;
-  var tags = inter(a.mixTags, b.mixTags); p.coh = tags.length >= 2 ? 1 : tags.length === 1 ? 0.8 : (si.length ? 0.45 : 0.25);
+  var tags = inter(a.mixTags, b.mixTags), spec = tags.filter(function (t) { return E.GENERIC.indexOf(t) < 0; });
+  p.coh = spec.length >= 2 ? 1 : spec.length === 1 ? 0.85 : tags.length ? 0.45 : (si.length ? 0.35 : 0.2);
   var fit = 0, sw = 0; E.MIXW.forEach(function (w) { fit += w[2] * p[w[0]]; sw += w[2]; }); fit = fit * 100 / sw;
+  /* garde-fou : sans pont de sens ni enchaînement fort, la paire est arbitraire */
+  if (Math.max(p.chain >= 0.7 ? p.chain : 0, p.coh >= 0.85 ? p.coh : 0) < 0.7) fit *= 0.82;
+  tags = spec.length ? spec : tags;
   if (p.lieu === 0 && p.moment === 0) fit *= 0.55; else if (p.lieu === 0 || p.moment === 0) fit *= 0.8;
   if ((a.regulated === 'alcool' || b.regulated === 'alcool') && pc.length && pc.every(function (x) { return x === 'enfants' || x === 'ados' || x === 'familles'; })) fit *= 0.6;
-  var s = 0.75 * fit + 0.25 * (sa + sb) / 2;
+  var s = E.MIX_BLEND * fit + (1 - E.MIX_BLEND) * (sa + sb) / 2;
   return { s: s, fit: fit, p: p, venue: vf[1], moment: mf[1], publics: pc, chain: cf[1], tags: tags, senses: si };
 };
 

@@ -43,6 +43,17 @@ HARM.forEach(k => {
     L.forEach(n => { n.scores[k] = Math.max(0, Math.min(5, Math.round((n.scores[k] + d) * 10) / 10)); }); });
 });
 console.log('harmonisation : regulatory plafonné sur', harm.reg, 'niches · décalages', JSON.stringify(harm.shift));
+/* 1 ter. quasi-doublons entre lots (noms proches dans deux secteurs) : signalés, et jamais réunis dans un portefeuille */
+const STOP = new Set('pour avec dans des les une son ses sur par aux debutant debutants bases premiers premier premiere initiation decouverte maison'.split(' '));
+const toks = n => new Set(n.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z0-9]+/).filter(w => w.length >= 4 && !STOP.has(w)));
+niches.forEach(n => n.tk = toks(n));
+const dups = [];
+for (let i = 0; i < niches.length; i++) for (let j = i + 1; j < niches.length; j++) {
+  const a = niches[i], b = niches[j]; if (a.sector === b.sector) continue;
+  let c = 0; a.tk.forEach(w => { if (b.tk.has(w)) c++; }); const u = a.tk.size + b.tk.size - c;
+  if (c >= 1 && u && c / u >= 0.5) { dups.push([a.id, b.id]); (a.dup = a.dup || []).push(b.id); (b.dup = b.dup || []).push(a.id); }
+}
+console.log('quasi-doublons entre secteurs', dups.length);
 /* 2. scores */
 const W = E.W0;
 niches.forEach(n => { n.s0 = E.score(n.scores, W); n.sx = E.scoreNoWtp(n.scores, W); });
@@ -93,7 +104,7 @@ const edit = MIX.editorial.map(m => {
   ns.forEach((x, k) => { if (!x) err('mix ' + m.id + ' : niche inconnue ' + m.n[k]); });
   if (ns.some(x => !x)) return null;
   const pr = ns.length === 3 ? E.triple(ns[0], ns[1], ns[2], sOf, {}) : E.pair(ns[0], ns[1], sOf(ns[0]), sOf(ns[1]), {});
-  return Object.assign({}, m, { s: Math.round(pr.s), fit: Math.round(pr.fit), parts: pr.p ? Object.fromEntries(Object.entries(pr.p).map(([k, v]) => [k, Math.round(v * 100)])) : null });
+  return Object.assign({}, m, { hosts: m.hosts || MIX.H2, s: Math.round(pr.s), fit: Math.round(pr.fit), parts: pr.p ? Object.fromEntries(Object.entries(pr.p).map(([k, v]) => [k, Math.round(v * 100)])) : null });
 }).filter(Boolean);
 const edRank = edit.slice().sort((a, b) => b.s - a.s);
 console.log('mixes éditoriaux', edit.length, '· top :', edRank.slice(0, 10).map(m => m.name + ' ' + m.s).join(' | '));
@@ -110,13 +121,15 @@ SEC.forEach(s => secStats[s.id] = stat(niches.filter(n => n.sector === s.id)));
 cats.forEach(c => catStats[c.id] = stat(niches.filter(n => n.category === c.id)));
 
 /* 6. portefeuilles et géographie */
-const pf = STR.portfolios.map(P => {
-  const elig = rank1.filter(n => P.pick(n) && n.verdict !== 'ecarter');
-  const sel = [], perCat = {}, perSec = {};
-  for (const n of elig) { if (sel.length >= P.size) break; if ((perCat[n.category] || 0) >= 1 || (perSec[n.sector] || 0) >= P.maxSec) continue; sel.push(n); perCat[n.category] = 1; perSec[n.sector] = (perSec[n.sector] || 0) + 1; }
-  /* une niche à faible propension avec parade, si le thème en compte */
-  const lowIn = elig.filter(n => n.par && !sel.includes(n))[0];
-  if (lowIn && !sel.some(n => n.par)) { sel[sel.length - 1] = lowIn; }
+/* tirage en ronde : chaque portefeuille prend à tour de rôle la meilleure niche restante de son circuit (exclusivité entre portefeuilles) */
+const taken = new Set(), PS = STR.portfolios.map(P => ({ P, elig: rank1.filter(n => P.pick(n) && n.verdict !== 'ecarter'), sel: [], perCat: {}, perSec: {} }));
+for (let round = 0; round < 6; round++) PS.forEach(o => {
+  const n = o.elig.find(x => !taken.has(x.id) && !(x.dup || []).some(d => taken.has(d)) && !o.perCat[x.category] && (o.perSec[x.sector] || 0) < o.P.maxSec); if (!n) return;
+  o.sel.push(n); taken.add(n.id); o.perCat[n.category] = 1; o.perSec[n.sector] = (o.perSec[n.sector] || 0) + 1;
+});
+/* au moins une niche à faible propension avec parade par portefeuille, si le circuit en contient */
+PS.forEach(o => { if (o.sel.some(n => n.par)) return; const l = o.elig.find(x => x.par && !taken.has(x.id)); if (l && o.sel.length) { taken.delete(o.sel[o.sel.length - 1].id); o.sel[o.sel.length - 1] = l; taken.add(l.id); } });
+const pf = PS.map(({ P, sel, elig }) => {
   /* mixes signature : meilleures paires internes + meilleur mix éditorial qui touche le portefeuille */
   const sp = [];
   for (let i = 0; i < sel.length; i++) for (let j = i + 1; j < sel.length; j++) { if (sel[i].sector === sel[j].sector) continue; const r = E.pair(sel[i], sel[j], sel[i].s0, sel[j].s0, {}); sp.push([Math.round(r.s), sel[i].id, sel[j].id]); }
@@ -143,12 +156,12 @@ const NI = niches.map(n => ({
   id: n.id, name: n.name, sector: n.sector, category: n.category, subcategory: n.subcategory, desc: n.desc, audience: n.audience, skills: n.skills, appSkills: n.appSkills || [],
   L: n.levels.map(lvl), scores: n.scores, venues: n.venues, moments: n.moments, publics: n.publics, senses: n.senses, outputs: n.outputs, energy: n.energy, mixTags: n.mixTags,
   raw: HARM.concat(['regulatory']).some(k => n.raw[k] !== n.scores[k]) ? n.raw : undefined, competitors: n.competitors || [], regulated: n.regulated, verdict: n.verdict, why: n.why, confidence: n.confidence,
-  par: n.par, pfit: n.pfit, prem: n.prem, pm: n.pm, wEff: n.wEff
+  dup: n.dup, par: n.par, pfit: n.pfit, prem: n.prem, pm: n.pm, wEff: n.wEff
 }));
 const data = {
   updated: '13 nov. 2026', lowMin: E.LOW_MIN, fixtures: fixtureSectors,
   sectors: SEC.map(s => ({ id: s.id, n: s.n, g: s.g, diag: s.diag, ch: s.ch.map(c => [c[0], c[1], c[2].map(k => { if (!srcIdx[k]) err('source ' + k); return srcIdx[k]; })]), b: s.b, sig: s.sig, opp: s.opp, dm: s.dm, dmN: s.dmN })),
-  cats, subs, niches: NI, harm, secStats, catStats, top, top0, low: low.map(n => n.id), parCount,
+  cats, subs, niches: NI, harm, dups, secStats, catStats, top, top0, low: low.map(n => n.id), parCount,
   parades: PAR.parades.map(p => Object.assign({}, p, { refs: p.refs.map(r => [r[0], r[1], r[2] ? (srcIdx[r[2]] || err('source parade ' + r[2])) : 0]) })),
   packages: PAR.packages, editorial: edit, families: E.FAMILIES, topPairs, portfolios: pf, geo, villes: STR.villes, limits: STR.limits, takeaways: STR.takeaways,
   sources: SRC.map((s, i) => ({ i: i + 1, k: s[0], t: s[1], e: s[2], u: s[3], v: s[4] ? 1 : 0 }))

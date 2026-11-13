@@ -465,6 +465,17 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <h3>Échelle de maîtrise et règle n → n-1</h3>
   <div class="tw"><table><thead><tr><th>Palier</th><th>Libellé</th><th>Ce que sait faire la personne</th><th>Peut animer</th></tr></thead><tbody id="levels-t"></tbody></table></div>
   <p class="note">Un atelier de niveau k amène des participants du niveau k-1 au niveau k. Il est animé par un hôte de niveau k+1 au moins. Le palier 5 est encadré par un référent confirmé, qui forme aussi les hôtes.</p>
+  <h3>Harmonisation du calibrage entre lots</h3>
+  <div class="prose">
+    <p>Les fiches ont été produites en cinq lots parallèles. Certains écarts entre secteurs tenaient au lot plus qu’au marché : vivier d’hôtes presque toujours à 5 en sport, aptitude au format très basse en bien-être, revenu d’hôte quasi nul en savoirs et lien social. Trois corrections s’appliquent avant tout calcul.</p>
+    <ul>
+      <li><strong>Cohérence réglementaire.</strong> Le score « cadre réglementaire » est plafonné selon le frein déclaré : 2 pour l’éducateur sportif diplômé (Code du sport), 3 pour santé, alcool, mineurs, sécurité, droit, 4 pour hygiène alimentaire et animaux. <span id="harm-reg"></span></li>
+      <li><strong>Recentrage partiel par secteur.</strong> Pour quatre critères de jugement (format, vivier d’hôtes, communauté, revenu de l’hôte), chaque note est décalée de la moitié de l’écart entre la moyenne de son secteur et la moyenne générale. L’ordre interne d’un secteur est conservé, la moitié de l’écart entre secteurs aussi.</li>
+      <li><strong>Propension à payer conservée.</strong> Elle est cohérente avec les prix des paliers à l’intérieur de chaque lot. Trois lots l’ont dérivée du prix du palier 1 : ses écarts reflètent donc surtout des prix de marché différents. Les cas emblématiques sont recalés à la main par les parades (✎).</li>
+    </ul>
+  </div>
+  <div class="tw"><table id="harm-t"></table></div>
+  <p class="note">Les notes brutes restent visibles dans chaque fiche quand elles diffèrent. Les quasi-doublons entre lots (<span id="dup-n"></span> paires de noms proches) sont signalés dans les fiches et jamais réunis dans un même portefeuille.</p>
   <h3>Verdicts</h3>
   <div class="prose"><p>Le verdict vient des fiches de données : il intègre des éléments qualitatifs (réglementation, risques, concurrence gratuite) que la grille ne capte pas seule. Le classement, lui, est recalculé à chaque changement de poids.</p></div>
   <div id="verdict-c" class="counters c4"></div>
@@ -549,7 +560,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <div class="eyebrow">07 · mixes</div>
   <h2 id="h-mix">Mêler deux ou trois niches pour inventer un format</h2>
   <div class="prose">
-    <p>Un mix réussi ne juxtapose pas deux ateliers. Il enchaîne deux gestes qui se répondent dans un même lieu, au même moment, pour le même public, et il crée une sortie qu’aucun acteur ne vend. Le moteur note chaque paire sur neuf composantes, puis mêle cette adéquation (75 %) au score moyen des deux niches (25 %).</p>
+    <p>Un mix réussi ne juxtapose pas deux ateliers. Il enchaîne deux gestes qui se répondent dans un même lieu, au même moment, pour le même public, et il crée une sortie qu’aucun acteur ne vend. Le moteur note chaque paire sur neuf composantes, puis mêle cette adéquation (80 %) au score moyen des deux niches (20 %). Une paire sans pont de sens spécifique ni enchaînement fort perd 18 % : deux niches excellentes mais sans rapport ne font pas un format.</p>
   </div>
   <div class="tw"><table><thead><tr><th>Composante</th><th class="num">Poids</th><th>Règle</th></tr></thead><tbody id="mixw-t"></tbody></table></div>
   <p class="note">Lieu et moment sans recouvrement : adéquation × 0,55. Un seul des deux : × 0,8. Alcool avec un public uniquement familial ou mineur : × 0,6.</p>
