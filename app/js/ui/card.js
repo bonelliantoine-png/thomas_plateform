@@ -51,9 +51,9 @@
       x.fillStyle = T.fg; x.fillText(text, px + 38, py + 29); px += w + 12;
     }
     if (d.arch) pill(d.arch, T.int);
-    pill(d.nSkills + ' compétences · ' + d.nDesires + ' envies', T.accent);
+    pill(d.nSkills + ' compétence' + (d.nSkills > 1 ? 's' : '') + ' · ' + d.nDesires + ' envie' + (d.nDesires > 1 ? 's' : ''), T.accent);
     // radar maîtrise × envies
-    var rcx = story ? Wd / 2 : P + 230, rcy = story ? py + 460 : py + 330, R = story ? 300 : 205;
+    var rcx = story ? Wd / 2 : P + 215, rcy = story ? py + 460 : py + 330, R = story ? 300 : 200;
     var ids = Object.keys(d.prof), n = ids.length || 1;
     var pt = function (i, r) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [rcx + Math.cos(a) * R * r, rcy + Math.sin(a) * R * r]; };
     x.strokeStyle = T.line; x.lineWidth = 1.5;
@@ -69,19 +69,27 @@
     ids.forEach(function (id, i) { var v = d.prof[id]; if (!(v.m > 0 || v.d > 0)) return; var p = pt(i, 1.16); x.fillStyle = T.fg2; x.fillText(v.u.short, p[0], p[1] + 6); });
     x.textAlign = 'left';
     // listes
-    var lx = story ? P : P + 500, lw = Wd - lx - P, y = story ? rcy + R + 110 : py + 120;
+    var lx = story ? P : P + 450, lw = Wd - lx - P, y = story ? rcy + R + 110 : py + 104;
+    // nom sur deux lignes au plus, coupé aux espaces
+    function lines(text, max) {
+      if (x.measureText(text).width <= max) return [text];
+      var w = text.split(' '), a = '';
+      while (w.length && x.measureText((a ? a + ' ' : '') + w[0]).width <= max) a += (a ? ' ' : '') + w.shift();
+      return a ? [a, fit(x, w.join(' '), max)] : [fit(x, text, max)];
+    }
     function list(title, items, desire) {
       x.fillStyle = T.fg3; x.font = '500 19px ' + F.mono; spaced(x, title, lx, y, 2); y += 22;
-      x.strokeStyle = T.line; x.lineWidth = 2; x.beginPath(); x.moveTo(lx, y); x.lineTo(lx + lw, y); x.stroke(); y += (story ? 62 : 52);
+      x.strokeStyle = T.line; x.lineWidth = 2; x.beginPath(); x.moveTo(lx, y); x.lineTo(lx + lw, y); x.stroke(); y += (story ? 62 : 46);
       if (!items.length) { x.fillStyle = T.fg3; x.font = '300 28px ' + F.body; x.fillText('à compléter', lx, y); y += 54; }
       items.forEach(function (it) {
         if (desire) { x.strokeStyle = T.int; x.lineWidth = 3; x.beginPath(); x.arc(lx + 10, y - 10, 9, 0, 7); x.stroke(); }
         else for (var k = 0; k < 4; k++) { x.fillStyle = k < it.level ? T.accent : T.line2; rr(x, lx + k * 15, y - 18, 11, 11, 2.5); x.fill(); }
-        x.fillStyle = T.fg; x.font = '400 ' + (story ? 38 : 33) + 'px ' + F.display;
-        x.fillText(fit(x, it.s.short || it.s.name, lw - 80), lx + (desire ? 36 : 74), y);
-        y += story ? 64 : 56;
+        x.fillStyle = T.fg; x.font = '400 ' + (story ? 40 : 31) + 'px ' + F.display;
+        var ls = lines(it.s.short || it.s.name, lw - (desire ? 40 : 78));
+        ls.forEach(function (t, k) { x.fillText(t, lx + (desire ? 36 : 74), y + k * (story ? 46 : 36)); });
+        y += (story ? 68 : 52) + (ls.length - 1) * (story ? 46 : 36);
       });
-      y += story ? 40 : 26;
+      y += story ? 40 : 16;
     }
     list('CE QUE JE SAIS FAIRE', d.skills, false);
     list('CE QUE JE VEUX APPRENDRE', d.desires, true);

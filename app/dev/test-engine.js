@@ -255,6 +255,21 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
   const nErased = C.eraseAll();
   ok(nErased >= 5 && Object.keys(store).length === 1 && store['autre.cle'] === '1', 'A2 · suppression totale des clés cordes.* (' + nErased + ')');
 
+  // A9 pages SEO générées
+  const os = require('os'), cp = require('child_process');
+  const seoDir = fs.mkdtempSync(path.join(os.tmpdir(), 'cordes-seo-'));
+  cp.execFileSync(process.execPath, [path.join(__dirname, 'build-seo.js'), seoDir]);
+  const seoFiles = fs.readdirSync(seoDir);
+  const learnP = seoFiles.filter(f => /^apprendre-.*-paris\.html$/.test(f)), teachP = seoFiles.filter(f => /^donner-des-cours-.*-paris\.html$/.test(f));
+  ok(learnP.length === 30 && teachP.length === 30 && seoFiles.indexOf('index.html') >= 0 && seoFiles.indexOf('seo.css') >= 0, 'A9 · 30 pages « apprendre » + 30 « donner des cours » + index');
+  const pg = fs.readFileSync(path.join(seoDir, learnP[0]), 'utf8'), pt = fs.readFileSync(path.join(seoDir, teachP[0]), 'utf8');
+  ok(/<title>Apprendre .* à Paris/.test(pg) && /N4/.test(pg) && /h cumulées/.test(pg) && /Prix observés/.test(pg) && /\.\.\/app\/index\.html#\//.test(pg), 'A9 · page apprendre : jalons, heures, prix, lien vers l’app');
+  ok(/Prix conseillé|Cours particulier/.test(pt) && /Trame minutée/.test(pt) && /Où trouver vos premiers élèves/.test(pt), 'A9 · page transmettre : prix, trame, canaux');
+  ok(!seoFiles.some(f => /undefined|NaN|\{q\}/.test(fs.readFileSync(path.join(seoDir, f), 'utf8'))), 'A9 · aucune valeur manquante (undefined, NaN)');
+  const idx = fs.readFileSync(path.join(seoDir, 'index.html'), 'utf8');
+  ok(learnP.every(f => idx.includes('href="' + f + '"')), 'A9 · index relié aux 30 fiches');
+  fs.rmSync(seoDir, { recursive: true, force: true });
+
   // robustesse : données manquantes ou mal formées
   const broken = { universes: [{ id: 'cuisine' }], domains: [], skills: [{ id: 'x', name: 'X', universe: 'nope', domain: 'cuisine.zz', related: ['inconnu'] }, { id: 'y', name: 'Y', universe: 'cuisine', attrs: { demand: 9 }, related: ['x', 'zzz'] }], softSkills: [] };
   let threw = false;

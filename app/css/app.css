@@ -506,10 +506,12 @@ ul.clean li::before{content:"";position:absolute;left:2px;top:13px;width:6px;hei
 .scale button.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .scalelbl{display:flex;justify-content:space-between;font-size:10.5px;color:var(--fg-3);margin-top:4px}
 .frow{margin:10px 0 14px}.frow .spread{font-size:12.5px}
-.matrix{border-collapse:separate;border-spacing:3px;font-size:12px;min-width:100%}
+.matrix{border-collapse:separate;border-spacing:3px;font-size:12px;width:100%;table-layout:fixed}
+.matrix th.rh{width:84px}
+.matrix td.zero{background:transparent;border-style:dashed}.matrix td.zero b{color:var(--fg-3);font-weight:400}
 .matrix th{font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2);text-align:left;padding:4px 6px;white-space:nowrap}
 .matrix thead th{text-align:center}
-.matrix td{min-width:92px;height:58px;vertical-align:top;padding:7px 8px;border-radius:6px;background:var(--panel-2);border:1px solid var(--line)}
+.matrix td{height:58px;vertical-align:top;padding:7px 8px;border-radius:6px;background:var(--panel-2);border:1px solid var(--line)}
 .matrix td b{display:block;font:500 18px var(--f-mono)}
 .matrix td span{display:block;font:300 12.5px/1.3 var(--f-body);color:var(--fg-2);margin-top:2px}
 .matrix td.hot{background:color-mix(in srgb,var(--int) calc(var(--a) * 18%),var(--panel-2));border-color:color-mix(in srgb,var(--int) calc(var(--a) * 40%),var(--line))}
