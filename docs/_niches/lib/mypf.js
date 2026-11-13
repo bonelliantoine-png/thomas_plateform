@@ -158,7 +158,7 @@ M.json = function (s, ctx) {
   Object.keys(c.ov).forEach(function (id) { names[id] = ctx.byId[id] ? ctx.byId[id].name : id; });
   return JSON.stringify({ format: M.FORMAT, version: 1, exported: ctx.now || new Date().toISOString(), study: ctx.study || '', cur: c.cur, mode: c.mode, pfs: c.pfs, ov: c.ov, names: names }, null, 2);
 };
-function lvTxt(n, lvs) { return lvs.map(function (k) { var l = n.levels[k - 1]; return 'P' + k + ' ' + l.title + ' (' + l.price[0] + '-' + l.price[1] + ' €)'; }).join(' | '); }
+function lvTxt(n, lvs) { return lvs.map(function (k) { var l = n.levels[k - 1]; return 'N' + k + ' ' + l.title + ' (' + l.price[0] + '-' + l.price[1] + ' €)'; }).join(' | '); }
 function rowCommon(s, n, ctx) {
   var o = M.get(s, n.id), L = ctx.LBL, lvs = M.levels(s, n.id);
   return {

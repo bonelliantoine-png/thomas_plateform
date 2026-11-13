@@ -173,7 +173,7 @@ module.exports = async function (browser) {
   const [cn, csv] = await dl('#my-csv'); const rows = csv.replace(/^\ufeff/, '').split('\n');
   ok(/^portefeuille-.*\.csv$/.test(cn) && rows.length === n1 + 1 && rows[0].startsWith('id;secteur;categorie;sous_categorie;niche;verdict_etude;mon_verdict;priorite;etiquettes;note;paliers_retenus'), 'export CSV du portefeuille', cn + ' · ' + rows.length + ' lignes');
   const rr = rows.find(r => r.startsWith(rid + ';')) || '';
-  ok(rr.includes(';a-tester;prioritaire;P1;"vague 1, 11e";"Contact repéré au café du coin";"P1 ') && !rr.includes('P4 '), 'ligne requalifiée dans le CSV');
+  ok(rr.includes(';a-tester;prioritaire;P1;"vague 1, 11e";"Contact repéré au café du coin";"N1 ') && !rr.includes('N4 '), 'ligne requalifiée dans le CSV');
   const [jn, json] = await dl('#my-json'); const J = JSON.parse(json);
   ok(/\.json$/.test(jn) && J.format === 'niches-v2.portefeuilles' && J.pfs.length === 2 && J.ov[rid].v === 'prioritaire', 'export JSON complet', jn);
   const [bn, base] = await dl('#my-base');
