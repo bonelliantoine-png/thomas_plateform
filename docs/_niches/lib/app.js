@@ -33,10 +33,11 @@ function recompute() {
 recompute();
 var sOf = function (n) { return n.s0; };
 
-function pill(v) { var x = L.verdict[v] || ['?', 'idle']; return '<span class="pill p-' + x[1] + '"><i></i>' + x[0] + '</span>'; }
+function pill(v, mod) { var x = L.verdict[v] || ['?', 'idle']; return '<span class="pill p-' + x[1] + '"><i></i>' + x[0] + (mod ? '<span class="mk" title="Verdict requalifié à la main" aria-label="requalifié">✎</span>' : '') + '</span>'; }
 function sbar(s) { return '<span class="sbar"><span class="g"><b style="width:' + Math.max(0, Math.min(100, s)) + '%"></b></span><span class="n">' + f1(s) + '</span></span>'; }
 function lbls(list, key) { return list.map(function (x) { return L[key][x] || x; }).join(', '); }
 function srcRef(i) { return i ? '<a class="ref" href="#src-' + i + '">[' + i + ']</a>' : ''; }
+/*__MYPF_UI__*/
 function toast(t) { $('toast-t').textContent = t; $('toast').classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { $('toast').classList.remove('on'); }, 1800); }
 
 /* ───── en-tête et synthèse ───── */
@@ -82,7 +83,7 @@ $('levels-t').innerHTML = E.LEVELS.map(function (l) { return '<tr><td class="num
   $('harm-t').innerHTML = '<thead><tr><th>Secteur</th>' + hk.map(function (k) { return '<th class="num">' + nm[k] + '</th>'; }).join('') + '</tr></thead><tbody>' + D.sectors.map(function (s) { return '<tr><td>' + esc(s.n) + '</td>' + hk.map(function (k) { var v = D.harm.shift[k][s.id] || 0; return '<td class="num" style="color:' + (Math.abs(v) >= 0.3 ? 'var(--wait)' : 'var(--fg-2)') + '">' + sg(Math.round(v * 100) / 100) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
 })();
 /* ───── explorateur ───── */
-var X = { q: '', view: 'tree', verdict: {}, wtp: {}, sec: '', fmt: '', pub: '', ven: '', mom: '', low: '', open: {}, sort: { k: 's1', d: -1 }, order: [], sel: null };
+var X = { q: '', view: 'tree', verdict: {}, wtp: {}, mine: {}, sec: '', fmt: '', pub: '', ven: '', mom: '', low: '', open: {}, sort: { k: 's1', d: -1 }, order: [], sel: null };
 var FDEF = [['sec', 'Secteur', D.sectors.map(function (s) { return [s.id, s.n]; })], ['fmt', 'Format', Object.keys(L.format).map(function (k) { return [k, L.format[k]]; })], ['pub', 'Public', Object.keys(L.publics).map(function (k) { return [k, L.publics[k]]; })], ['ven', 'Lieu', Object.keys(L.venues).map(function (k) { return [k, L.venues[k]]; })], ['mom', 'Moment', Object.keys(L.moments).map(function (k) { return [k, L.moments[k]]; })], ['low', 'Parades', [['low', 'Faible propension avec parade'], ['no', 'Sans parade']]]];
 $('filters').innerHTML = FDEF.map(function (f) { return '<label>' + f[1] + '<select data-f="' + f[0] + '"><option value="">Tous</option>' + f[2].map(function (o) { return '<option value="' + o[0] + '">' + esc(o[1]) + '</option>'; }).join('') + '</select></label>'; }).join('');
 function chipRow(id, defs, key) {
@@ -91,7 +92,7 @@ function chipRow(id, defs, key) {
 chipRow('f-verdict', Object.keys(L.verdict).map(function (k) { return [k, L.verdict[k][0], L.verdict[k][1]]; }), 'verdict');
 chipRow('f-wtp', [['lo', '0 à 2 · faible', 'no'], ['mid', '3 · moyenne', 'wait'], ['hi', '4 et 5 · forte', 'int']], 'wtp');
 var wb = function (w) { return w <= 2 ? 'lo' : w === 3 ? 'mid' : 'hi'; };
-function active() { return X.q || X.sec || X.fmt || X.pub || X.ven || X.mom || X.low || Object.keys(X.verdict).length || Object.keys(X.wtp).length; }
+function active() { return X.q || X.sec || X.fmt || X.pub || X.ven || X.mom || X.low || Object.keys(X.verdict).length || Object.keys(X.wtp).length || Object.keys(X.mine).length; }
 function match(n, skip) {
   if (X.q) { var ws = X.qw; for (var i = 0; i < ws.length; i++) if (n.q.indexOf(ws[i]) < 0) return false; }
   if (X.sec && n.sector !== X.sec) return false;
@@ -100,14 +101,16 @@ function match(n, skip) {
   if (X.ven && n.venues.indexOf(X.ven) < 0) return false;
   if (X.mom && n.moments.indexOf(X.mom) < 0) return false;
   if (X.low === 'low' && !n.par) return false; if (X.low === 'no' && n.par) return false;
-  if (skip !== 'verdict' && Object.keys(X.verdict).length && !X.verdict[n.verdict]) return false;
+  if (skip !== 'verdict' && Object.keys(X.verdict).length && !X.verdict[ev(n)]) return false;
+  if (skip !== 'mine' && Object.keys(X.mine).length && !((X.mine['in'] && IN[n.id]) || (X.mine.mod && ST.ov[n.id]))) return false;
   if (skip !== 'wtp' && Object.keys(X.wtp).length && !X.wtp[wb(n.scores.wtp)]) return false;
   return true;
 }
 function counts() {
-  var cv = {}, cw = {};
-  N.forEach(function (n) { if (match(n, 'verdict')) cv[n.verdict] = (cv[n.verdict] || 0) + 1; if (match(n, 'wtp')) { var b = wb(n.scores.wtp); cw[b] = (cw[b] || 0) + 1; } });
-  document.querySelectorAll('[data-c]').forEach(function (b) { var k = b.getAttribute('data-c'); b.textContent = k.indexOf('verdict') === 0 ? (cv[k.slice(7)] || 0) : (cw[k.slice(3)] || 0); });
+  var cv = {}, cw = {}, cm = { 'in': 0, mod: 0 };
+  N.forEach(function (n) { if (match(n, 'verdict')) { var v = ev(n); cv[v] = (cv[v] || 0) + 1; } if (match(n, 'wtp')) { var b = wb(n.scores.wtp); cw[b] = (cw[b] || 0) + 1; } if (match(n, 'mine')) { if (IN[n.id]) cm['in']++; if (ST.ov[n.id]) cm.mod++; } });
+  document.querySelectorAll('[data-c]').forEach(function (b) { var k = b.getAttribute('data-c'); b.textContent = k.indexOf('verdict') === 0 ? (cv[k.slice(7)] || 0) : k.indexOf('mine') === 0 ? cm[k.slice(4)] : (cw[k.slice(3)] || 0); });
+  paintAddAll();
 }
 function visible() { var o = []; for (var i = 0; i < N.length; i++) if (match(N[i])) o.push(N[i]); return o; }
 var VIS = [];
@@ -127,19 +130,19 @@ function renderTree() {
   D.sectors.forEach(function (s) {
     var a = bySec[s.id]; if (!a) return;
     var o = isOpen(s.id);
-    h.push('<button class="trow l0" type="button" data-t="' + s.id + '" aria-expanded="' + o + '"><span class="tri">▶</span><span class="glyph" aria-hidden="true">' + s.g + '</span><span class="sname">' + esc(s.n) + '</span><span class="tc">' + a.length + ' niches</span><span class="tc vv">' + sbar(mean(a)) + '</span></button>');
+    h.push('<div class="trw"><button class="trow l0" type="button" data-t="' + s.id + '" aria-expanded="' + o + '"><span class="tri">▶</span><span class="glyph" aria-hidden="true">' + s.g + '</span><span class="sname">' + esc(s.n) + '</span><span class="tc">' + a.length + ' niches</span><span class="tc vv">' + sbar(mean(a)) + '</span></button>' + grpBtn('x:' + s.id, a, s.n) + '</div>');
     if (!o) return;
     D.cats.forEach(function (c) {
       if (c.sec !== s.id) return; var ac = byCat[c.id]; if (!ac) return; var oc = isOpen(c.id);
-      h.push('<button class="trow l1" type="button" data-t="' + c.id + '" aria-expanded="' + oc + '"><span class="tri">▶</span><span>' + esc(c.name) + '</span><span class="tc">' + ac.length + '</span><span class="tc vv">' + sbar(mean(ac)) + '</span></button>');
+      h.push('<div class="trw"><button class="trow l1" type="button" data-t="' + c.id + '" aria-expanded="' + oc + '"><span class="tri">▶</span><span>' + esc(c.name) + '</span><span class="tc">' + ac.length + '</span><span class="tc vv">' + sbar(mean(ac)) + '</span></button>' + grpBtn('c:' + c.id, ac, c.name) + '</div>');
       if (!oc) return;
       D.subs.forEach(function (sc) {
         if (sc.cat !== c.id) return; var as = bySub[sc.id]; if (!as) return; var os = isOpen(sc.id);
-        h.push('<button class="trow l2" type="button" data-t="' + sc.id + '" aria-expanded="' + os + '"><span class="tri">▶</span><span>' + esc(sc.name) + '</span><span class="tc">' + as.length + '</span><span class="tc vv">' + sbar(mean(as)) + '</span></button>');
+        h.push('<div class="trw"><button class="trow l2" type="button" data-t="' + sc.id + '" aria-expanded="' + os + '"><span class="tri">▶</span><span>' + esc(sc.name) + '</span><span class="tc">' + as.length + '</span><span class="tc vv">' + sbar(mean(as)) + '</span></button>' + grpBtn('s:' + sc.id, as, sc.name) + '</div>');
         if (!os) return;
         as.slice().sort(function (x, y) { return y.s1 - x.s1; }).forEach(function (n) {
           order.push(n.id);
-          h.push('<button class="nrow' + (X.sel === n.id ? ' sel' : '') + '" type="button" data-id="' + n.id + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E" title="Faible propension, parade recommandée">parade</span>' : '') + '</span><span class="ff">' + esc(L.format[n.levels[0].format]) + ' · ' + n.levels[0].price[0] + ' à ' + n.levels[0].price[1] + ' € · ' + esc(lbls(n.venues.slice(0, 2), 'venues')) + '</span><span class="vv">' + pill(n.verdict) + '</span>' + sbar(n.s1) + '</button>');
+          h.push('<div class="nrow' + (X.sel === n.id ? ' sel' : '') + '" data-row="' + n.id + '">' + pfb(n) + '<button class="nopen" type="button" data-id="' + n.id + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E" title="Faible propension, parade recommandée">parade</span>' : '') + '</span><span class="ff">' + esc(L.format[n.levels[0].format]) + ' · ' + n.levels[0].price[0] + ' à ' + n.levels[0].price[1] + ' € · ' + esc(lbls(n.venues.slice(0, 2), 'venues')) + '</span><span class="vv">' + vpill(n) + '</span>' + sbar(n.s1) + '</button></div>');
         });
       });
     });
@@ -147,17 +150,18 @@ function renderTree() {
   X.order = order.length ? order : VIS.slice().sort(function (a, b) { return b.s1 - a.s1; }).map(function (n) { return n.id; });
   $('xbody').innerHTML = h.length ? '<div class="tree" role="tree">' + h.join('') + '</div>' : '<div class="empty">Aucune niche ne correspond. Effacer un filtre ou élargir la recherche.</div>';
 }
+function grpBtn(key, list, name) { var on = list.every(function (n) { return IN[n.id]; }); return '<button type="button" class="btn sm ghost pfg" data-pfgrp="' + key + '" aria-pressed="' + on + '" aria-label="Retenir les ' + list.length + ' niches de «\u00a0' + esc(name) + '\u00a0» dans mon portefeuille">' + (on ? 'Retirer' : 'Ajouter') + '</button>'; }
 /* tableau virtualisé */
 var COLS = [['r', '#'], ['name', 'Niche'], ['sector', 'Secteur'], ['verdict', 'Verdict'], ['demand', 'Dem.'], ['wtp', 'Prop.'], ['format', 'Fmt'], ['supply', 'Viv.'], ['s1', 'Score'], ['p1', 'Prix 1']];
 var VORD = { prioritaire: 0, 'a-tester': 1, 'plus-tard': 2, ecarter: 3 };
-function sortKey(n, k) { switch (k) { case 'r': case 's1': return n.s1; case 'name': return n.name; case 'sector': return SEC[n.sector].n + ' ' + n.category; case 'verdict': return -VORD[n.verdict]; case 'p1': return n.levels[0].price[0]; default: return n.scores[k]; } }
+function sortKey(n, k) { switch (k) { case 'r': case 's1': return n.s1; case 'name': return n.name; case 'sector': return SEC[n.sector].n + ' ' + n.category; case 'verdict': return -VORD[ev(n)]; case 'p1': return n.levels[0].price[0]; default: return n.scores[k]; } }
 var ROWS = [], RH = 44;
 function renderTable() {
   var k = X.sort.k, d = X.sort.d;
   ROWS = VIS.slice().sort(function (a, b) { var x = sortKey(a, k), y = sortKey(b, k); if (typeof x === 'string') return d * x.localeCompare(y); return d * (x - y) || b.s1 - a.s1; });
   X.order = ROWS.map(function (n) { return n.id; });
   RH = window.innerWidth <= 1040 ? 64 : 44;
-  $('xbody').innerHTML = '<div class="vt"><div class="msort"><label>Trier par <select id="x-sort">' + COLS.filter(function (c) { return c[0] !== 'r'; }).map(function (c) { return '<option value="' + c[0] + '"' + (X.sort.k === c[0] ? ' selected' : '') + '>' + ({ name: 'Nom', sector: 'Secteur', verdict: 'Verdict', demand: 'Demande', wtp: 'Propension', format: 'Format', supply: 'Vivier', s1: 'Score', p1: 'Prix palier 1' }[c[0]]) + '</option>'; }).join('') + '</select></label></div><div class="vhead" role="row">' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
+  $('xbody').innerHTML = '<div class="vt"><div class="msort"><label>Trier par <select id="x-sort">' + COLS.filter(function (c) { return c[0] !== 'r'; }).map(function (c) { return '<option value="' + c[0] + '"' + (X.sort.k === c[0] ? ' selected' : '') + '>' + ({ name: 'Nom', sector: 'Secteur', verdict: 'Verdict', demand: 'Demande', wtp: 'Propension', format: 'Format', supply: 'Vivier', s1: 'Score', p1: 'Prix palier 1' }[c[0]]) + '</option>'; }).join('') + '</select></label></div><div class="vhead" role="row"><div role="columnheader"><span class="sr">Portefeuille</span></div>' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
     (ROWS.length ? '<div class="vbody" id="vbody" tabindex="0" aria-label="Tableau des niches"><div class="vspace" id="vspace" style="height:' + ROWS.length * RH + 'px"></div></div>' : '<div class="empty">Aucune niche ne correspond. Effacer un filtre ou élargir la recherche.</div>') + '</div>';
   if (ROWS.length) { $('vbody').addEventListener('scroll', paintRows, { passive: true }); paintRows(); }
   $('x-sort').addEventListener('change', function (e) { var k2 = e.target.value; X.sort.k = k2; X.sort.d = (k2 === 'name' || k2 === 'sector') ? 1 : -1; renderTable(); });
@@ -167,7 +171,7 @@ function paintRows() {
   var st = b.scrollTop, h = b.clientHeight || 560, a = Math.max(0, Math.floor(st / RH) - 8), z = Math.min(ROWS.length, Math.ceil((st + h) / RH) + 8), o = [];
   for (var i = a; i < z; i++) {
     var n = ROWS[i];
-    o.push('<button type="button" class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-id="' + n.id + '" style="top:' + i * RH + 'px"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + pill(n.verdict) + '</span><span class="c xc">' + fs1(n.scores.demand) + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + fs1(n.scores.format) + '</span><span class="c xc">' + fs1(n.scores.supply) + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button>');
+    o.push('<div class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-row="' + n.id + '" style="top:' + i * RH + 'px">' + pfb(n) + '<button type="button" class="vopen" data-id="' + n.id + '"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + vpill(n) + '</span><span class="c xc">' + fs1(n.scores.demand) + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + fs1(n.scores.format) + '</span><span class="c xc">' + fs1(n.scores.supply) + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button></div>');
   }
   $('vspace').innerHTML = o.join('');
 }
@@ -188,13 +192,16 @@ $('x-reset').addEventListener('click', function () {
 });
 var hostDl = null; if (window.claude && typeof window.claude.use === 'function') { window.claude.use('downloads').then(function (d) { hostDl = d; }, function () {}); }
 function download(name, text) {
-  if (window.claude && typeof window.claude.use === 'function') { if (!hostDl) { toast('Téléchargement indisponible ici'); return; } hostDl.save({ filename: name, data: text }).catch(function () {}); return; }
-  var b = new Blob([text], { type: 'text/csv;charset=utf-8' }), u = URL.createObjectURL(b), a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 1000);
+  if (window.claude && typeof window.claude.use === 'function') {
+    (hostDl ? Promise.resolve(hostDl) : window.claude.use('downloads')).then(function (d) { if (!d) { toast('Téléchargement indisponible ici · utiliser Copier'); return; } hostDl = d; return d.save({ filename: name, data: text }); }).catch(function () { toast('Téléchargement refusé'); });
+    return;
+  }
+  var b = new Blob([text], { type: (/\.json$/.test(name) ? 'application/json' : 'text/csv') + ';charset=utf-8' }), u = URL.createObjectURL(b), a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 1000);
 }
 $('x-csv').addEventListener('click', function () {
   var q = function (s) { return '"' + String(s).replace(/"/g, '""') + '"'; };
-  var rows = [['id', 'niche', 'secteur', 'categorie', 'sous_categorie', 'score', 'score_parades', 'verdict', 'propension', 'parades', 'prix_p1', 'prix_p2', 'prix_p3', 'prix_p4', 'prix_p5'].join(';')];
-  VIS.forEach(function (n) { rows.push([n.id, q(n.name), q(SEC[n.sector].n), q((CAT[n.category] || {}).name), q((SUB[n.subcategory] || {}).name), f1(n.s0), f1(n.s1), n.verdict, n.scores.wtp, q((n.par || []).join(' ')), n.levels.map(function (l) { return l.price.join('-'); }).join(';')].join(';')); });
+  var rows = [['id', 'niche', 'secteur', 'categorie', 'sous_categorie', 'score', 'score_parades', 'verdict', 'mon_verdict', 'propension', 'parades', 'prix_p1', 'prix_p2', 'prix_p3', 'prix_p4', 'prix_p5'].join(';')];
+  VIS.forEach(function (n) { rows.push([n.id, q(n.name), q(SEC[n.sector].n), q((CAT[n.category] || {}).name), q((SUB[n.subcategory] || {}).name), f1(n.s0), f1(n.s1), n.verdict, MY.verdict(ST, n), n.scores.wtp, q((n.par || []).join(' ')), n.levels.map(function (l) { return l.price.join('-'); }).join(';')].join(';')); });
   download('niches-v2.csv', '﻿' + rows.join('\n')); toast(VIS.length + ' niches exportées');
 });
 
@@ -211,11 +218,11 @@ function openNiche(id, list) {
   if (!$('side').classList.contains('on')) PANEL.last = document.activeElement;
   PANEL.list = list || PANEL.list; X.sel = id;
   document.querySelectorAll('.nrow.sel,.vrow.sel').forEach(function (r) { r.classList.remove('sel'); });
-  document.querySelectorAll('[data-id="' + id + '"]').forEach(function (r) { if (r.classList.contains('nrow') || r.classList.contains('vrow')) r.classList.add('sel'); });
+  document.querySelectorAll('[data-row="' + id + '"]').forEach(function (r) { r.classList.add('sel'); });
   $('side-path').textContent = SEC[n.sector].n + ' / ' + ((CAT[n.category] || {}).name || '') + ' / ' + ((SUB[n.subcategory] || {}).name || '');
   $('side-title').textContent = n.name;
-  var h = '<div style="display:flex;gap:6px;flex-wrap:wrap">' + pill(n.verdict) + '<span class="pill p-acc"><i></i>Score ' + f1(n.s0) + ' · rang ' + n.r0 + '</span>' + (n.par ? '<span class="pill p-wait"><i></i>Avec parades ' + f1(n.s1) + ' · rang ' + n.r1 + '</span>' : '') + '<span class="tag t-' + (n.confidence === 'source' ? 'S' : n.confidence === 'estimation' ? 'E' : 'H') + '">' + n.confidence + '</span></div>';
-  h += '<p class="desc">' + esc(n.desc) + '</p>';
+  var h = '<div style="display:flex;gap:6px;flex-wrap:wrap" id="side-pills"></div>';
+  h += '<p class="desc">' + esc(n.desc) + '</p><div class="mine" id="side-mine"></div>';
   h += '<div class="kv"><div class="w"><div class="k">Public</div><div class="val">' + esc(n.audience) + '</div></div><div class="w"><div class="k">Compétences</div><div class="val">' + esc(n.skills.join(' · ')) + '</div></div>' +
     '<div><div class="k">Lieux</div><div class="val">' + esc(lbls(n.venues, 'venues')) + '</div></div><div><div class="k">Moments</div><div class="val">' + esc(lbls(n.moments, 'moments')) + '</div></div>' +
     '<div><div class="k">Publics</div><div class="val">' + esc(lbls(n.publics, 'publics')) + '</div></div><div><div class="k">Sens et énergie</div><div class="val">' + esc(lbls(n.senses, 'senses')) + ' · ' + esc(L.energy[n.energy]) + '</div></div>' +
@@ -231,7 +238,7 @@ function openNiche(id, list) {
   }
   var bp = E.bestPartners(n, N, sOf, 5, {}, function (b) { return b.sector !== n.sector; });
   h += '<h4>Meilleurs mixes avec cette niche</h4><ul class="mini">' + bp.map(function (r) { var f = E.format([n, r.b], r); return '<li><div><div class="mn">' + esc(f.name) + '</div><div class="ms">' + esc(SEC[r.b.sector].n) + ' · ' + f.price + ' € · ' + esc(L.venues[f.venue] || 'lieu à trouver') + ' · score ' + f0(r.s) + '</div></div><button class="btn sm" type="button" data-mix="' + n.id + '|' + r.b.id + '">Explorer</button></li>'; }).join('') + '</ul>';
-  $('side-b').innerHTML = h; $('side-b').scrollTop = 0;
+  $('side-b').innerHTML = h; $('side-b').scrollTop = 0; sidePills(n); renderMine(n);
   $('side').classList.add('on'); $('side').setAttribute('aria-hidden', 'false'); $('veil').classList.add('on');
   $('side-x').focus({ preventScroll: true });
 }
@@ -246,11 +253,12 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') { if ($('side').classList.contains('on')) { closeSide(); e.preventDefault(); } return; }
   if (typing) return;
   if (e.key === '/') { e.preventDefault(); $('q').focus(); $('explorer').scrollIntoView(); return; }
+  if ((e.key === 'p' || e.key === 'P') && !e.metaKey && !e.ctrlKey && !e.altKey && $('side').classList.contains('on') && X.sel) { var on = MY.toggle(ST, X.sel); afterSel(); toast((on ? 'Ajoutée à «\u00a0' : 'Retirée de «\u00a0') + MY.cur(ST).name + '\u00a0»'); e.preventDefault(); return; }
   if ((e.key === 'j' || e.key === 'k') && $('side').classList.contains('on') && PANEL.list.length) {
     var i = PANEL.list.indexOf(X.sel), j = e.key === 'j' ? Math.min(PANEL.list.length - 1, i + 1) : Math.max(0, i - 1); if (j !== i && j >= 0) openNiche(PANEL.list[j]); e.preventDefault();
   }
   if (e.key === 'Tab' && $('side').classList.contains('on')) {
-    var f = $('side').querySelectorAll('button,a[href]'); if (!f.length) return; var first = f[0], last = f[f.length - 1];
+    var f = $('side').querySelectorAll('button,a[href],input,textarea,select'); if (!f.length) return; var first = f[0], last = f[f.length - 1];
     if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); } else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
   }
 });
@@ -315,7 +323,7 @@ function renderTop() {
   $('top-h').textContent = TM === 's1' ? 'score avec parades · poids actuels' : 'score brut · poids actuels';
   $('topl').innerHTML = list.map(function (n, i) {
     var other = TM === 's1' ? n.r0 : n.r1, d = other - (i + 1);
-    return '<li><span class="rnk">' + (i + 1) + '</span><div><button class="lnk tn" type="button" data-open="' + n.id + '" data-list="' + ids.join(',') + '">' + esc(n.name) + '</button><div class="tm">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name) + ' · ' + esc(L.format[n.levels[0].format]) + '</div></div><div class="rs"><div class="sc">' + f1(n[key]) + '</div><div style="display:flex;gap:6px;justify-content:flex-end;align-items:center">' + pill(n.verdict) + '<span class="dl ' + (d > 0 ? 'down' : d < 0 ? 'up' : 'eq') + '" title="rang dans l’autre mode">' + (TM === 's1' ? 'brut ' : 'parades ') + other + '</span></div></div><div class="ta">' + argue(n) + '</div></li>';
+    return '<li><span class="rnk">' + (i + 1) + '</span><div><button class="lnk tn" type="button" data-open="' + n.id + '" data-list="' + ids.join(',') + '">' + esc(n.name) + '</button><div class="tm">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name) + ' · ' + esc(L.format[n.levels[0].format]) + '</div></div><div class="rs"><div class="sc">' + f1(n[key]) + '</div><div style="display:flex;gap:6px;justify-content:flex-end;align-items:center">' + vpill(n) + pfb(n) + '<span class="dl ' + (d > 0 ? 'down' : d < 0 ? 'up' : 'eq') + '" title="rang dans l’autre mode">' + (TM === 's1' ? 'brut ' : 'parades ') + other + '</span></div></div><div class="ta">' + argue(n) + '</div></li>';
   }).join('');
 }
 document.querySelectorAll('[data-tm]').forEach(function (b) { b.addEventListener('click', function () { TM = b.getAttribute('data-tm'); document.querySelectorAll('[data-tm]').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderTop(); }); });
@@ -348,7 +356,7 @@ function renderAff() {
   var list = D.low.map(function (id) { return byId[id]; }).filter(function (n) { return (!p || n.par.indexOf(p) >= 0) && (!s || n.sector === s); }).sort(function (a, b) { return b.sx - a.sx; });
   var ids = list.map(function (n) { return n.id; }).join(',');
   $('aff-cnt').textContent = list.length;
-  $('aff-t').innerHTML = list.map(function (n) { return '<tr><td><button class="lnk" type="button" data-open="' + n.id + '" data-list="' + ids + '" style="font-family:var(--f-body);font-size:14.5px">' + esc(n.name) + '</button></td><td>' + esc(SEC[n.sector].n) + '</td><td class="num">' + f1(n.sx) + '</td><td class="num">' + n.scores.wtp + '</td><td><div class="ncl">' + n.par.map(function (x) { return '<button type="button" class="nchip" data-sim="' + n.id + '|' + x + '"><span>' + esc(PAR[x].n) + (n.pm ? ' ✎' : '') + '</span></button>'; }).join('') + '</div></td><td style="font-size:11.5px;color:var(--fg-2)">' + (n.prem ? esc(byId[n.prem[0]].name) + ' · ' + n.prem[1] : '') + '</td></tr>'; }).join('') || '<tr><td colspan="6" class="empty">Aucune niche pour ce filtre.</td></tr>';
+  $('aff-t').innerHTML = list.map(function (n) { return '<tr><td><span style="display:flex;gap:8px;align-items:center">' + pfb(n) + '<button class="lnk" type="button" data-open="' + n.id + '" data-list="' + ids + '" style="font-family:var(--f-body);font-size:14.5px">' + esc(n.name) + '</button></span></td><td>' + esc(SEC[n.sector].n) + '</td><td class="num">' + f1(n.sx) + '</td><td class="num">' + n.scores.wtp + '</td><td><div class="ncl">' + n.par.map(function (x) { return '<button type="button" class="nchip" data-sim="' + n.id + '|' + x + '"><span>' + esc(PAR[x].n) + (n.pm ? ' ✎' : '') + '</span></button>'; }).join('') + '</div></td><td style="font-size:11.5px;color:var(--fg-2)">' + (n.prem ? esc(byId[n.prem[0]].name) + ' · ' + n.prem[1] : '') + '</td></tr>'; }).join('') || '<tr><td colspan="6" class="empty">Aucune niche pour ce filtre.</td></tr>';
 }
 $('aff-par').addEventListener('change', renderAff); $('aff-sec').addEventListener('change', renderAff);
 document.addEventListener('click', function (e) {
@@ -400,7 +408,7 @@ function mixCard(ns, pr, label) {
   return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(label || D.families[f.fam]) + '</span><span>score ' + f0(pr.s) + ' · adéquation ' + f0(pr.fit) + '</span></div><div class="cn">' + esc(f.name) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
     '<div class="facts f3"><div><div class="k">Jauge</div><div class="v">' + f.group + ' pers.</div></div><div><div class="k">Prix</div><div class="v">' + f.price + ' €</div></div><div><div class="k">Durée</div><div class="v">' + Math.floor(f.total / 60) + ' h ' + (f.total % 60 ? f.total % 60 : '') + '</div></div></div>' +
     '<dl><dt>Quand et où</dt><dd>' + esc(L.venues[f.venue] || 'Lieu à trouver') + ' · ' + esc(L.moments[f.moment] || 'moment à définir') + (pr.publics && pr.publics.length ? ' · ' + esc(lbls(pr.publics, 'publics')) : '') + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + f.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(f.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd><ul class="whys">' + f.why.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') + '</ul></dd></dl>' +
-    '<details><summary>Composantes du score</summary>' + partsHtml(pr.p || {}) + '</details></div></article>';
+    '<details><summary>Composantes du score</summary>' + partsHtml(pr.p || {}) + '</details></div><div class="cft">' + pfSetBtn(ns.map(function (n) { return n.id; })) + '</div></article>';
 }
 function renderSel() {
   $('mt-sel').innerHTML = MT.sel.map(function (id) { var n = byId[id]; return '<button type="button" class="nchip" data-rm="' + id + '" aria-label="Retirer ' + esc(n.name) + '"><span>' + esc(n.name) + '</span><span class="x">×</span></button>'; }).join('') || '<span class="note" style="margin:0">Aucune niche choisie : le moteur cherche dans tout le catalogue selon les contraintes.</span>';
@@ -466,7 +474,7 @@ function renderEd() {
     return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(D.families[m.fam]) + '</span><span>score moteur ' + m.s + '</span></div><div class="cn">' + esc(m.name) + '</div><div class="ctag">' + esc(m.pitch) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
       '<div class="facts f2"><div><div class="k">Jauge</div><div class="v">' + esc(m.group) + (/^\d/.test(m.group) && !/pers|duo|famil|enfant/.test(m.group) ? ' pers.' : '') + '</div></div><div><div class="k">Prix</div><div class="v wrap">' + esc(m.price) + '</div></div></div>' +
       '<dl><dt>Quand et où</dt><dd>' + esc(m.moment) + ' · ' + esc(m.venue) + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + m.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(m.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd>' + esc(m.why) + '</dd></dl></div>' +
-      '<div class="cft"><button class="btn sm" type="button" data-edmix="' + m.n.join('|') + '">Explorer dans l’outil</button></div></article>';
+      '<div class="cft"><button class="btn sm" type="button" data-edmix="' + m.n.join('|') + '">Explorer dans l’outil</button>' + pfSetBtn(m.n, 'ghost') + '</div></article>';
   }).join('');
 }
 document.addEventListener('click', function (e) { var b = e.target.closest('[data-edmix]'); if (b) { MT.sel = b.getAttribute('data-edmix').split('|'); renderSel(); runMix(); $('mt').scrollIntoView(); } });
@@ -484,7 +492,7 @@ function renderPf() {
       '<div class="facts"><div><div class="k">Score</div><div class="v">' + f1(p.m.s) + '</div></div><div><div class="k">Parades</div><div class="v">' + f1(p.m.s1) + '</div></div><div><div class="k">Mix</div><div class="v">' + f1(p.m.mix) + '</div></div><div><div class="k">Vivier</div><div class="v">' + f1(p.m.sup) + '</div></div></div>' +
       '<ul class="pfl">' + p.niches.map(function (id) { var n = byId[id]; return '<li><button type="button" data-open="' + id + '" data-list="' + ids + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E">parade</span>' : '') + '<br><span style="font-family:var(--f-mono);font-size:11px;color:var(--fg-3)">' + esc(SEC[n.sector].n) + '</span></span><span class="num">' + f1(n.s1) + '</span></button></li>'; }).join('') + '</ul>' +
       '<dl><dt>Mixes signature</dt><dd><ul class="whys">' + p.pairs.slice(0, 2).map(function (x) { var a = byId[x[1]], b = byId[x[2]]; return '<li>' + esc(E.format([a, b], E.pair(a, b, a.s0, b.s0, {})).name) + ' · ' + x[0] + '</li>'; }).join('') + p.ed.map(function (id) { var m = D.editorial.filter(function (e) { return e.id === id; })[0]; return m ? '<li>' + esc(m.name) + ' (sélection éditoriale)</li>' : ''; }).join('') + '</ul></dd>' +
-      '<dt>Lieux dominants</dt><dd>' + esc(lbls(p.venues, 'venues')) + '</dd><dt>Où commencer</dt><dd>' + (g ? g.top.slice(0, 3).map(function (t) { return t[0] + ' (' + t[1] + ')'; }).join(', ') : '') + '</dd><dt>Pourquoi</dt><dd>' + esc(p.desc) + '</dd><dt>Risques</dt><dd>' + esc(p.risk) + '</dd></dl></div></article>';
+      '<dt>Lieux dominants</dt><dd>' + esc(lbls(p.venues, 'venues')) + '</dd><dt>Où commencer</dt><dd>' + (g ? g.top.slice(0, 3).map(function (t) { return t[0] + ' (' + t[1] + ')'; }).join(', ') : '') + '</dd><dt>Pourquoi</dt><dd>' + esc(p.desc) + '</dd><dt>Risques</dt><dd>' + esc(p.risk) + '</dd></dl></div><div class="cft">' + pfSetBtn(p.niches) + '<button type="button" class="btn sm ghost" data-pfcopy="' + p.id + '">Copier en portefeuille</button></div></article>';
   }).join('');
   var rowsBy = {}; geo.rows.forEach(function (r) { rowsBy[r.a] = r; });
   $('geo-top').innerHTML = pf.slice(0, 2).map(function (p) { var g = geo.per.filter(function (x) { return x.id === p.id; })[0]; return '<article class="card rec"><div class="chd"><div class="cf"><span>' + esc(p.n) + '</span><span>adéquation sur 100</span></div><div class="cn">Arrondissements prioritaires</div></div><div class="cb"><ol class="steps">' + g.top.map(function (t) { return '<li><span class="mm">' + t[0] + '</span><span class="st">' + esc(rowsBy[t[0]].q) + ' · ' + t[1] + '</span></li>'; }).join('') + '</ol></div></article>'; }).join('');
@@ -508,8 +516,9 @@ $('srcl').innerHTML = D.sources.map(function (s) { var link = /^https?:/.test(s.
 })();
 
 function refreshScores() { renderX(); renderTop(); renderSectors(); }
+pfInit();
 renderX(); renderTop(); renderSectors();
 window.__firstRender = Math.round(performance.now() - T0);
 var idle = window.requestIdleCallback || function (f) { return setTimeout(f, 30); };
-idle(function () { renderAff(); setSim(D.low[0] ? byId[D.low.slice().sort(function (a, b) { return byId[b].sx - byId[a].sx; })[0]].id : N[0].id); renderEd(); renderTopPairs(); renderPf(); renderSel(); runMix(); window.__ready = Math.round(performance.now() - T0); });
+idle(function () { renderAff(); setSim(D.low[0] ? byId[D.low.slice().sort(function (a, b) { return byId[b].sx - byId[a].sx; })[0]].id : N[0].id); renderEd(); renderTopPairs(); renderPf(); renderSel(); runMix(); renderMy(); window.__ready = Math.round(performance.now() - T0); });
 })();

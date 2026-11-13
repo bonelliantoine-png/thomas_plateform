@@ -180,7 +180,8 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .trow .tc{color:var(--fg-3);font-size:11px;white-space:nowrap;text-align:right}
 .tri{color:var(--fg-3);font-size:10px;transition:transform .15s;display:inline-block}
 [aria-expanded="true"] .tri{transform:rotate(90deg)}
-.nrow{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 84px 120px;gap:10px;align-items:center;width:100%;background:transparent;border:0;border-top:1px solid var(--line);border-left:2px solid transparent;color:var(--fg);text-align:left;cursor:pointer;padding:7px 14px 7px 88px}
+.nrow{display:flex;align-items:center;gap:6px;width:100%;border-top:1px solid var(--line);border-left:2px solid transparent;padding-left:56px}
+.nopen{flex:1;min-width:0;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 84px 120px;gap:10px;align-items:center;background:transparent;border:0;color:var(--fg);text-align:left;cursor:pointer;padding:7px 14px 7px 0}
 .nrow:hover{background:var(--hover)}
 .nrow.sel{background:var(--panel-2);border-left-color:var(--accent)}
 .nrow .nn{font-family:var(--f-body);font-size:15px;line-height:1.3;min-width:0}
@@ -191,7 +192,8 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .sbar .n{font-weight:500;min-width:28px;text-align:right}
 /* table virtualisée */
 .vt{position:relative}
-.vhead,.vrow{display:grid;grid-template-columns:44px minmax(0,2.2fr) minmax(0,1.1fr) 112px 50px 50px 50px 50px 100px 70px;align-items:center;gap:0}
+.vhead,.vopen{display:grid;grid-template-columns:44px minmax(0,2.2fr) minmax(0,1.1fr) 132px 50px 50px 50px 50px 100px 70px;align-items:center;gap:0}
+.vhead{grid-template-columns:38px 44px minmax(0,2.2fr) minmax(0,1.1fr) 132px 50px 50px 50px 50px 100px 70px}
 .vhead{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
 .vhead>div{padding:8px 8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
 .vhead button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer;padding:0;text-align:left}
@@ -200,10 +202,12 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .msort select{margin-left:8px;text-transform:none;letter-spacing:0}
 .vbody{height:560px;overflow:auto;position:relative;overscroll-behavior:contain}
 .vspace{position:relative}
-.vrow{position:absolute;left:0;right:0;height:44px;border:0;border-bottom:1px solid var(--line);cursor:pointer;background:transparent;border-left:2px solid transparent;color:var(--fg);text-align:left;padding:0;width:100%}
+.vrow{position:absolute;left:0;right:0;height:44px;display:flex;align-items:center;border-bottom:1px solid var(--line);border-left:2px solid transparent;padding-left:6px}
+.vrow .pfb{margin-right:6px}
+.vopen{flex:1;min-width:0;height:100%;border:0;cursor:pointer;background:transparent;color:var(--fg);text-align:left;padding:0}
 .vrow:hover{background:var(--hover)}
 .vrow.sel{background:var(--panel-2);border-left-color:var(--accent)}
-.vrow>span{padding:0 8px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vopen>span{padding:0 8px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vrow .nm{font-family:var(--f-body);font-size:14.5px}
 .vrow .sc2{color:var(--fg-2);font-size:11.5px}
 .vrow .c{text-align:center}
@@ -358,19 +362,84 @@ details.sec .sname small{display:block;font-family:var(--f-mono);font-size:11px;
 footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:var(--fg-3);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap}
 .hide{display:none!important}
 
+/* mon portefeuille */
+.pfjump{margin-left:auto;display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px;border:1px solid var(--line-2);border-radius:6px;color:var(--fg-2);font-size:11.5px;white-space:nowrap;text-decoration:none}
+.pfjump:hover{color:var(--fg);background:var(--hover);text-decoration:none}
+.pfjump+.state{margin-left:6px}
+.pfb{width:24px;height:24px;flex:none;border-radius:6px;border:1px solid var(--line-2);background:transparent;color:var(--fg-3);font-size:13px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.pfb:hover{border-color:var(--accent);color:var(--accent)}
+.pfb[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent)}
+.btn[aria-pressed="true"][data-pfset]{border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.btn.danger{border-color:var(--no);color:var(--no);background:color-mix(in srgb,var(--no) 12%,transparent)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.mk{color:var(--accent);margin-left:5px;font-size:11px}
+.trw{display:flex;align-items:center;border-top:1px solid var(--line)}
+.trw .trow{border-top:0;flex:1;min-width:0}
+.trw:hover{background:var(--hover)}.trw:hover .trow{background:transparent}
+.pfg{flex:none;margin-right:14px;min-width:70px;justify-content:center}
+.pfg[aria-pressed="true"]{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.chips .vmode{margin-left:auto}
+.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mlist{max-height:640px;overflow:auto}
+.mrow{display:grid;grid-template-columns:24px minmax(0,1.5fr) minmax(0,2fr) 110px;gap:12px;align-items:center;padding:8px 14px;border-top:1px solid var(--line)}
+.mrow:hover{background:var(--hover)}
+.mrow .mn{font-family:var(--f-body);font-size:15px;line-height:1.3;min-width:0}
+.mrow .mn small{display:block;font-family:var(--f-mono);font-size:11px;color:var(--fg-3);margin-top:1px}
+.mmeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;min-width:0}
+.mgrp{display:flex;align-items:center;gap:8px;padding:8px 14px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2);border-top:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:1}
+.mgrp b{color:var(--fg-3);font-weight:500}.mgrp .act{margin-left:auto;text-transform:none;letter-spacing:0}
+.prio{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:4px;border:1px solid var(--line-2);font-size:11px;font-weight:600;color:var(--fg-2)}
+.prio.p1{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 50%,transparent)}.prio.p2{color:var(--fg)}
+.tgs{display:flex;gap:6px;flex-wrap:wrap}
+.tg{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 8px;border-radius:999px;border:1px solid var(--line-2);background:transparent;font-size:10.5px;color:var(--fg-2);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+button.tg{cursor:pointer;height:24px;font-size:11px}button.tg:hover{border-color:var(--accent);color:var(--fg)}
+.tg.nt{border-style:dashed}
+.lvd{display:inline-flex;gap:2px}
+.lvd i{width:15px;height:15px;border-radius:3px;font-size:9.5px;font-style:normal;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line-2);color:var(--fg-3)}
+.lvd i.on{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent)}
+.syn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.syn .panel{margin:0}
+.bl{list-style:none;margin:0;padding:0}
+.bl li{display:grid;grid-template-columns:minmax(0,1fr) 64px 28px;gap:8px;align-items:center;font-size:11.5px;color:var(--fg-2);padding:3px 0}
+.bl .bn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bl .g{height:3px;background:var(--line-2);border-radius:2px;overflow:hidden}.bl .g b{display:block;height:100%;background:var(--accent)}
+.bl .c{text-align:right;color:var(--fg);font-weight:500}
+.drop{border:1px dashed var(--line-2);border-radius:var(--r);padding:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--fg-2);font-size:12px}
+.drop.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.mine{border:1px solid var(--line);border-radius:var(--r);background:var(--panel-2);margin:12px 0 4px;padding:4px 12px 12px}
+.mine-h{display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap;padding:8px 0}
+.mine-h .t{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.pfbig[aria-pressed="true"]{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 50%,transparent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.mine .mf{padding:10px 0 4px;border-top:1px solid var(--line)}
+.mine .mfh{display:flex;align-items:center;gap:8px;justify-content:space-between;margin-bottom:6px;min-height:18px}
+.mine .seg{display:flex;width:100%}.mine .seg button{flex:1 1 auto}
+.mine .sub{font-size:11px}
+.rv{background:none;border:0;padding:0;color:var(--fg-3);font:inherit;font-size:11px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.rv:hover{color:var(--accent)}
+.tadd{display:flex;gap:6px}.tadd input{flex:1;min-width:0}
+.lvp{display:flex;gap:6px;flex-wrap:wrap}
+.lvp .chip{height:26px}
+.lvp .chip[aria-pressed="false"]{color:var(--fg-3);border-style:dashed}.lvp .chip[aria-pressed="false"] i{background:var(--idle)}
+.mine .seg button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--fg);box-shadow:inset 0 -2px 0 var(--accent)}
+textarea.in{width:100%;min-height:70px;background:var(--bg);border:1px solid var(--line-2);border-radius:6px;color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45;padding:8px 10px;resize:vertical}
+#sync[data-s="no"] #sync-t{color:var(--no)}
+
 @media (max-width:1040px){
   .pfs{grid-template-columns:1fr}
   .meta,.counters{grid-template-columns:repeat(3,minmax(0,1fr))}
   .counters.c4{grid-template-columns:repeat(2,minmax(0,1fr))}
   .filters{grid-template-columns:repeat(3,minmax(0,1fr))}
   .sliders{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .nrow{grid-template-columns:minmax(0,1fr) 84px 110px;padding-left:44px}
+  .nrow{padding-left:14px}.nopen{grid-template-columns:minmax(0,1fr) 84px 110px}
+  .syn{grid-template-columns:1fr 1fr}
+  .mrow{grid-template-columns:24px minmax(0,1fr) 100px}.mrow .mmeta{grid-column:2/-1;grid-row:2}
   .nrow .ff{display:none}
   .trow.l1{padding-left:28px}.trow.l2{padding-left:40px}
   .vhead{display:none}
   .msort{display:block}
-  .vrow{display:grid;grid-template-columns:30px minmax(0,1fr) 108px;grid-template-rows:auto auto;height:64px;align-content:center;row-gap:2px}
-  .vrow>span{padding:0 6px}
+  .vrow{height:64px}
+  .vopen{grid-template-columns:30px minmax(0,1fr) 108px;grid-template-rows:auto auto;align-content:center;row-gap:2px}
+  .vopen>span{padding:0 6px}
   .vrow .xc{display:none}
   .vrow .rk{grid-row:1/3}
   .vrow .nm{grid-column:2}
@@ -397,7 +466,13 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .crumb .cx{display:none}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sliders{grid-template-columns:1fr}
-  .nrow{grid-template-columns:minmax(0,1fr) 72px;padding-left:20px;gap:6px}
+  .nrow{padding-left:8px}.nopen{grid-template-columns:minmax(0,1fr) 72px;gap:6px;padding-right:10px}
+  .syn{grid-template-columns:1fr}.f3{grid-template-columns:1fr 1fr}
+  .mrow{grid-template-columns:24px minmax(0,1fr) 64px;gap:8px;padding:8px 10px}.mrow .sbar .g{display:none}
+  .pfg{margin-right:8px;min-width:0}
+  .pfjump .lbl2{display:none}.pfjump{padding:0 6px}
+  .mine .seg button{padding:0 5px;font-size:11px}
+  .chips .vmode{margin-left:0}
   .nrow .vv{display:none}
   .trow.l0{grid-template-columns:12px 20px minmax(0,1fr) 72px}
   .trow.l1,.trow.l2{grid-template-columns:12px minmax(0,1fr) 72px;padding-left:20px}
@@ -425,7 +500,8 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <div class="appbar" role="banner">
   <div class="brand" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="crumb"><span class="cx">cordes / études / </span><b>niches à adresser · v2</b></div>
-  <div class="state"><span class="dot" style="background:var(--int)" aria-hidden="true"></span><span><span class="lbl2">Données · </span>13 nov. 2026</span></div>
+  <a class="pfjump" id="pf-jump" href="#mon-portefeuille" aria-label="Aller à Mon portefeuille"><span class="lbl2">Mon portefeuille</span><span class="cnt" id="pf-jump-n">0</span></a>
+  <div class="state" id="sync" role="status" aria-live="polite" title="État de l’enregistrement de mon portefeuille"><span class="dot" id="sync-dot" style="background:var(--wait)" aria-hidden="true"></span><span id="sync-t"><span class="lbl2">Sur cet appareil</span></span></div>
 </div>
 <div class="wrap">
 <nav class="toc" aria-label="Sommaire">
@@ -439,8 +515,9 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
     <li><a href="#parades"><span>06</span>Parades</a></li>
     <li><a href="#mixes"><span>07</span>Mixes</a></li>
     <li><a href="#portefeuilles"><span>08</span>Portefeuilles</a></li>
-    <li><a href="#geo"><span>09</span>Géographie</a></li>
-    <li><a href="#limites"><span>10</span>Limites et sources</a></li>
+    <li><a href="#mon-portefeuille"><span>09</span>Mon portefeuille</a></li>
+    <li><a href="#geo"><span>10</span>Géographie</a></li>
+    <li><a href="#limites"><span>11</span>Limites et sources</a></li>
   </ol>
 </nav>
 <main id="main">
@@ -495,13 +572,14 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
       <div class="search"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="var(--fg-3)" stroke-width="1.5"/><path d="M11 11l4 4" stroke="var(--fg-3)" stroke-width="1.5"/></svg><input id="q" type="search" placeholder="Rechercher une niche, une compétence, un mot-clé" aria-label="Rechercher une niche" autocomplete="off"><kbd>/</kbd></div>
       <div class="seg" role="group" aria-label="Vue"><button type="button" data-view="tree" aria-pressed="true">Arborescence</button><button type="button" data-view="table" aria-pressed="false">Tableau</button></div>
       <span class="cnt" id="vis-cnt" aria-live="polite"></span>
-      <div class="act" style="margin-left:auto;display:flex;gap:8px"><button class="btn ghost" id="x-reset" type="button">Effacer les filtres</button><button class="btn" id="x-csv" type="button">Exporter CSV</button></div>
+      <div class="act" style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap"><button class="btn hide" id="x-addall" type="button">Ajouter les niches filtrées</button><button class="btn ghost" id="x-reset" type="button">Effacer les filtres</button><button class="btn" id="x-csv" type="button">Exporter CSV</button></div>
     </div>
     <div class="filters" id="filters"></div>
     <div class="chips" id="f-verdict"><span class="lb">Verdict</span></div>
     <div class="chips" id="f-wtp"><span class="lb">Propension</span></div>
+    <div class="chips" id="f-mine"><span class="lb">Mon suivi</span><button type="button" class="chip c-acc" data-k="mine" data-v="in" aria-pressed="false"><i></i>Dans mon portefeuille <b data-c="minein"></b></button><button type="button" class="chip c-acc" data-k="mine" data-v="mod" aria-pressed="false"><i></i>Requalifiées <b data-c="minemod"></b></button><div class="seg vmode" role="group" aria-label="Verdicts affichés"><button type="button" data-vm="mine" aria-pressed="true">Mes verdicts</button><button type="button" data-vm="study" aria-pressed="false">Verdicts de l’étude</button></div></div>
     <div id="xbody"></div>
-    <div class="kb"><span><kbd>/</kbd> rechercher</span><span><kbd>J</kbd> <kbd>K</kbd> niche suivante ou précédente</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>Esc</kbd> fermer</span></div>
+    <div class="kb"><span><kbd>/</kbd> rechercher</span><span><kbd>J</kbd> <kbd>K</kbd> niche suivante ou précédente</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>P</kbd> ajouter la niche ouverte au portefeuille</span><span><kbd>Esc</kbd> fermer</span></div>
   </div>
 </section>
 
@@ -604,8 +682,49 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <div class="pfs" id="pfs"></div>
 </section>
 
+<section class="s" id="mon-portefeuille" aria-labelledby="h-my">
+  <div class="eyebrow">09 · mon portefeuille</div>
+  <h2 id="h-my">Mon portefeuille de niches</h2>
+  <div class="prose"><p>Retenir des niches avec le bouton + de chaque ligne, de chaque fiche (touche P), du top 15, des mixes et des parades, ou par lot depuis les filtres et l’arborescence. Requalifier ensuite verdict, priorité, étiquettes, note et paliers dans la fiche. Les requalifications valent pour toute la page et tous les portefeuilles ; elles portent la marque ✎.</p></div>
+  <div class="panel" id="my">
+    <div class="ph"><span class="t">Portefeuilles</span><div class="seg" id="my-tabs" role="group" aria-label="Choisir le portefeuille actif"></div><div class="act"><button class="btn sm" id="my-new" type="button">Créer</button><button class="btn sm" id="my-dup" type="button">Dupliquer</button><button class="btn sm" id="my-ren" type="button">Renommer</button><button class="btn sm ghost" id="my-del" type="button">Supprimer</button></div></div>
+    <div class="pb hide" id="my-ren-row" style="border-bottom:1px solid var(--line)"><div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap"><label class="field" style="margin:0;flex:1 1 240px;max-width:420px"><span>Nom du portefeuille</span><input type="text" class="in" id="my-name" maxlength="60" autocomplete="off"></label><button class="btn sm" id="my-name-ok" type="button">Enregistrer</button></div></div>
+    <div class="counters" id="my-c" style="margin:0;border:0;border-radius:0;border-bottom:1px solid var(--line)"></div>
+    <div class="toolbar">
+      <div class="search"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="var(--fg-3)" stroke-width="1.5"/><path d="M11 11l4 4" stroke="var(--fg-3)" stroke-width="1.5"/></svg><input id="my-q" type="search" placeholder="Chercher dans mon portefeuille, mes étiquettes, mes notes" aria-label="Chercher dans mon portefeuille" autocomplete="off"></div>
+      <span class="cnt" id="my-cnt" aria-live="polite"></span>
+      <div class="seg" role="group" aria-label="Regrouper par"><button type="button" data-myg="sector" aria-pressed="true">Secteur</button><button type="button" data-myg="prio" aria-pressed="false">Priorité</button><button type="button" data-myg="tag" aria-pressed="false">Étiquette</button><button type="button" data-myg="verdict" aria-pressed="false">Verdict</button></div>
+    </div>
+    <div class="filters f3">
+      <label>Trier par<select id="my-sort"><option value="s1">Score avec parades</option><option value="prio">Priorité</option><option value="verdict">Verdict</option><option value="name">Nom</option><option value="p1">Prix palier 1</option></select></label>
+      <label>Verdict<select id="my-fv"><option value="">Tous</option><option value="prioritaire">Prioritaire</option><option value="a-tester">À tester</option><option value="plus-tard">Plus tard</option><option value="ecarter">Écarter</option></select></label>
+      <label>Étiquette<select id="my-tag"><option value="">Toutes</option></select></label>
+    </div>
+    <div id="my-list" class="mlist"></div>
+  </div>
+  <h3>Synthèse</h3>
+  <div class="syn" id="my-syn"></div>
+  <h4>Prix par palier et hôtes à recruter</h4>
+  <div class="tw"><table id="my-lv"></table></div>
+  <p class="note" id="my-lv-n"></p>
+  <h3>Mixes possibles dans le portefeuille</h3>
+  <div class="panel"><div class="ph"><span class="t">Meilleures paires internes</span><span class="h" id="my-mix-h"></span></div>
+    <div class="tw" style="margin:0;border:0;border-radius:0"><table><thead><tr><th class="num">Score</th><th>Format</th><th>Lieu</th><th class="num">Prix</th><th></th></tr></thead><tbody id="my-mix"></tbody></table></div>
+  </div>
+  <h3>Comparaison avec les portefeuilles de l’étude</h3>
+  <div class="tw"><table id="my-cmp"></table></div>
+  <h3>Exporter et importer</h3>
+  <div class="panel" id="my-io">
+    <div class="ph"><span class="t">Exports</span><span class="h">CSV séparé par des points-virgules, UTF-8</span></div>
+    <div class="pb" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="my-csv" type="button">Exporter CSV</button><button class="btn" id="my-copy" type="button">Copier le CSV</button><button class="btn" id="my-json" type="button">Exporter JSON</button><button class="btn" id="my-base" type="button">Base complète CSV</button></div>
+    <p class="note" style="padding:0 14px 12px;margin:0">CSV : une ligne par niche du portefeuille actif. JSON : tous les portefeuilles et toutes les requalifications, réimportable. Base complète : les __NNICHES__ niches avec mes requalifications.</p>
+    <div class="ph" style="border-top:1px solid var(--line)"><span class="t">Import</span><span class="h">fichier JSON exporté depuis cette page</span></div>
+    <div class="pb"><div class="drop" id="my-drop"><button class="btn" id="my-file-b" type="button">Choisir un fichier</button><span>ou glisser un fichier JSON ici</span><input type="file" id="my-file" accept=".json,application/json" class="sr" tabindex="-1" aria-hidden="true"></div><div id="my-prev" aria-live="polite"></div></div>
+  </div>
+</section>
+
 <section class="s" id="geo" aria-labelledby="h-geo">
-  <div class="eyebrow">09 · géographie</div>
+  <div class="eyebrow">10 · géographie</div>
   <h2 id="h-geo">Où commencer à Paris</h2>
   <div class="prose"><p>Chaque arrondissement reçoit une note de 1 à 3 sur six familles de lieux et quatre publics (estimations à partir de la connaissance du terrain et de la pyramide des âges parisienne). Chaque portefeuille pondère ces notes selon ses besoins. Le résultat dit où ouvrir les premiers lieux partenaires.</p></div>
   <div id="geo-top" class="cards"></div>
@@ -615,13 +734,13 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 </section>
 
 <section class="s" id="limites" aria-labelledby="h-lim">
-  <div class="eyebrow">10 · limites et sources</div>
+  <div class="eyebrow">11 · limites et sources</div>
   <h2 id="h-lim">Limites</h2>
   <div class="prose" id="limits"></div>
   <h3>Sources · __NSOURCES__</h3>
   <div class="panel"><ul class="srcl" id="srcl"></ul></div>
 </section>
-<footer class="ft"><span>Étude des niches · v2 · 13 nov. 2026</span><span>Données embarquées · aucune requête externe hors polices</span><span class="keys"><kbd>/</kbd> rechercher · <kbd>J</kbd> <kbd>K</kbd> naviguer · <kbd>Esc</kbd> fermer</span><span><a href="#main">Haut de page</a></span></footer>
+<footer class="ft"><span>Étude des niches · v2 · 13 nov. 2026</span><span>Données embarquées · aucune requête externe hors polices</span><span class="keys"><kbd>/</kbd> rechercher · <kbd>J</kbd> <kbd>K</kbd> naviguer · <kbd>P</kbd> portefeuille · <kbd>Esc</kbd> fermer</span><span><a href="#main">Haut de page</a></span></footer>
 </main>
 </div>
 <div class="veil" id="veil"></div>
@@ -632,6 +751,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <div class="toast" id="toast" role="status"><span class="dot" style="background:var(--int)"></span><span id="toast-t"></span></div>
 <script type="application/json" id="data">/*__DATA__*/</script>
 <script>/*__ENGINE__*/</script>
+<script>/*__MYPF__*/</script>
 <script>/*__APP__*/</script>
 </body>
 </html>

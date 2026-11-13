@@ -1,13 +1,14 @@
 /* Vérification Playwright de docs/niches.html : erreurs console, temps de rendu, filtres, recherche, panneau,
-   simulateur, outil de mix, curseurs, débordements, captures 375 et 1440 px. Usage : node docs/_niches/test.js [quick] */
+   simulateur, outil de mix, curseurs, débordements, captures 375 et 1440 px, puis « Mon portefeuille » (test-portfolio.js).
+   Usage : node docs/_niches/test.js [quick | pf] (pf : seulement les tests du portefeuille) */
 const { chromium } = require('playwright');
 const OUT = '/tmp/claude-0/-home-user-thomas-plateform/bdf3316b-5100-5af2-a522-73fd61586f39/scratchpad/shots-niches2/';
 require('fs').mkdirSync(OUT, { recursive: true });
-const QUICK = process.argv[2] === 'quick';
+const QUICK = process.argv[2] === 'quick', PF_ONLY = process.argv[2] === 'pf';
 (async () => {
   const b = await chromium.launch();
   const errs = [];
-  for (const vp of [{ n: 'desktop', w: 1440, h: 900 }, { n: 'mobile', w: 375, h: 812 }]) {
+  if (!PF_ONLY) for (const vp of [{ n: 'desktop', w: 1440, h: 900 }, { n: 'mobile', w: 375, h: 812 }]) {
     const p = await b.newPage({ viewport: { width: vp.w, height: vp.h }, deviceScaleFactor: 1 });
     p.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') errs.push(vp.n + ' ' + m.type() + ': ' + m.text()); });
     p.on('pageerror', e => errs.push(vp.n + ' pageerror: ' + e.message));
@@ -56,7 +57,7 @@ const QUICK = process.argv[2] === 'quick';
     console.log(vp.n, 'tableau défilé · première ligne', await p.$eval('.vrow .nm', e => e.textContent));
     if (vp.w > 1040) await p.click('[data-sort="wtp"]'); else await p.selectOption('#x-sort', 'wtp'); await p.waitForTimeout(100);
     await shot('04-table');
-    await p.click('.vrow >> nth=0'); await p.waitForTimeout(300);
+    await p.click('.vrow .vopen >> nth=0'); await p.waitForTimeout(300);
     console.log(vp.n, 'panneau ouvert', await p.$eval('#side', e => e.classList.contains('on')), await p.$eval('#side-title', e => e.textContent), '· paliers', await p.$$eval('.ladder li', a => a.length));
     await shot('05-panel');
     await p.keyboard.press('j'); await p.waitForTimeout(100);
@@ -94,5 +95,7 @@ const QUICK = process.argv[2] === 'quick';
     await p.close();
   }
   console.log('ERREURS', errs.length ? errs : 'aucune');
+  const pf = await require('./test-portfolio.js')(b);
   await b.close();
+  if (errs.length || pf) process.exitCode = 1;
 })();

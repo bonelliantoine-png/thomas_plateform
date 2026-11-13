@@ -169,7 +169,8 @@ const data = {
 const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8').replace(/ ([%€:;?!])/g, '\u202f$1');
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 const eng = fs.readFileSync(path.join(__dirname, 'lib', 'engine.js'), 'utf8');
-const out = tpl.replace('/*__DATA__*/', () => json).replace('/*__ENGINE__*/', () => eng).replace('/*__APP__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'app.js'), 'utf8'))
+const out = tpl.replace('/*__DATA__*/', () => json).replace('/*__ENGINE__*/', () => eng).replace('/*__MYPF__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'mypf.js'), 'utf8'))
+  .replace('/*__APP__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'app.js'), 'utf8').replace('/*__MYPF_UI__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'mypf-ui.js'), 'utf8')))
   .replace(/__NNICHES__/g, niches.length.toLocaleString('fr-FR')).replace(/__LOWMIN__/g, String(E.LOW_MIN)).replace(/__NSOURCES__/g, String(SRC.length)).replace(/__NCATS__/g, String(cats.length)).replace(/__NSUBS__/g, String(subs.length)).replace(/__NLOW__/g, String(low.length)).replace(/__NPAR__/g, String(PAR.parades.length)).replace(/__NMIX__/g, String(edit.length));
 if (/fondateur|antoine/i.test(json.replace(/biais fondateur|critère fondateur|Aucun critère fondateur/gi, ''))) console.warn('ATTENTION : mention fondateur dans les données');
 fs.writeFileSync(OUT, out);

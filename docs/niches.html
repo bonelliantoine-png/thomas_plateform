@@ -180,7 +180,8 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .trow .tc{color:var(--fg-3);font-size:11px;white-space:nowrap;text-align:right}
 .tri{color:var(--fg-3);font-size:10px;transition:transform .15s;display:inline-block}
 [aria-expanded="true"] .tri{transform:rotate(90deg)}
-.nrow{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 84px 120px;gap:10px;align-items:center;width:100%;background:transparent;border:0;border-top:1px solid var(--line);border-left:2px solid transparent;color:var(--fg);text-align:left;cursor:pointer;padding:7px 14px 7px 88px}
+.nrow{display:flex;align-items:center;gap:6px;width:100%;border-top:1px solid var(--line);border-left:2px solid transparent;padding-left:56px}
+.nopen{flex:1;min-width:0;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) 84px 120px;gap:10px;align-items:center;background:transparent;border:0;color:var(--fg);text-align:left;cursor:pointer;padding:7px 14px 7px 0}
 .nrow:hover{background:var(--hover)}
 .nrow.sel{background:var(--panel-2);border-left-color:var(--accent)}
 .nrow .nn{font-family:var(--f-body);font-size:15px;line-height:1.3;min-width:0}
@@ -191,7 +192,8 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .sbar .n{font-weight:500;min-width:28px;text-align:right}
 /* table virtualisée */
 .vt{position:relative}
-.vhead,.vrow{display:grid;grid-template-columns:44px minmax(0,2.2fr) minmax(0,1.1fr) 112px 50px 50px 50px 50px 100px 70px;align-items:center;gap:0}
+.vhead,.vopen{display:grid;grid-template-columns:44px minmax(0,2.2fr) minmax(0,1.1fr) 132px 50px 50px 50px 50px 100px 70px;align-items:center;gap:0}
+.vhead{grid-template-columns:38px 44px minmax(0,2.2fr) minmax(0,1.1fr) 132px 50px 50px 50px 50px 100px 70px}
 .vhead{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:2}
 .vhead>div{padding:8px 8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
 .vhead button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer;padding:0;text-align:left}
@@ -200,10 +202,12 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .msort select{margin-left:8px;text-transform:none;letter-spacing:0}
 .vbody{height:560px;overflow:auto;position:relative;overscroll-behavior:contain}
 .vspace{position:relative}
-.vrow{position:absolute;left:0;right:0;height:44px;border:0;border-bottom:1px solid var(--line);cursor:pointer;background:transparent;border-left:2px solid transparent;color:var(--fg);text-align:left;padding:0;width:100%}
+.vrow{position:absolute;left:0;right:0;height:44px;display:flex;align-items:center;border-bottom:1px solid var(--line);border-left:2px solid transparent;padding-left:6px}
+.vrow .pfb{margin-right:6px}
+.vopen{flex:1;min-width:0;height:100%;border:0;cursor:pointer;background:transparent;color:var(--fg);text-align:left;padding:0}
 .vrow:hover{background:var(--hover)}
 .vrow.sel{background:var(--panel-2);border-left-color:var(--accent)}
-.vrow>span{padding:0 8px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vopen>span{padding:0 8px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vrow .nm{font-family:var(--f-body);font-size:14.5px}
 .vrow .sc2{color:var(--fg-2);font-size:11.5px}
 .vrow .c{text-align:center}
@@ -358,19 +362,84 @@ details.sec .sname small{display:block;font-family:var(--f-mono);font-size:11px;
 footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:var(--fg-3);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap}
 .hide{display:none!important}
 
+/* mon portefeuille */
+.pfjump{margin-left:auto;display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 10px;border:1px solid var(--line-2);border-radius:6px;color:var(--fg-2);font-size:11.5px;white-space:nowrap;text-decoration:none}
+.pfjump:hover{color:var(--fg);background:var(--hover);text-decoration:none}
+.pfjump+.state{margin-left:6px}
+.pfb{width:24px;height:24px;flex:none;border-radius:6px;border:1px solid var(--line-2);background:transparent;color:var(--fg-3);font-size:13px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.pfb:hover{border-color:var(--accent);color:var(--accent)}
+.pfb[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent)}
+.btn[aria-pressed="true"][data-pfset]{border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.btn.danger{border-color:var(--no);color:var(--no);background:color-mix(in srgb,var(--no) 12%,transparent)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.mk{color:var(--accent);margin-left:5px;font-size:11px}
+.trw{display:flex;align-items:center;border-top:1px solid var(--line)}
+.trw .trow{border-top:0;flex:1;min-width:0}
+.trw:hover{background:var(--hover)}.trw:hover .trow{background:transparent}
+.pfg{flex:none;margin-right:14px;min-width:70px;justify-content:center}
+.pfg[aria-pressed="true"]{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.chips .vmode{margin-left:auto}
+.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mlist{max-height:640px;overflow:auto}
+.mrow{display:grid;grid-template-columns:24px minmax(0,1.5fr) minmax(0,2fr) 110px;gap:12px;align-items:center;padding:8px 14px;border-top:1px solid var(--line)}
+.mrow:hover{background:var(--hover)}
+.mrow .mn{font-family:var(--f-body);font-size:15px;line-height:1.3;min-width:0}
+.mrow .mn small{display:block;font-family:var(--f-mono);font-size:11px;color:var(--fg-3);margin-top:1px}
+.mmeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;min-width:0}
+.mgrp{display:flex;align-items:center;gap:8px;padding:8px 14px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2);border-top:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:1}
+.mgrp b{color:var(--fg-3);font-weight:500}.mgrp .act{margin-left:auto;text-transform:none;letter-spacing:0}
+.prio{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:4px;border:1px solid var(--line-2);font-size:11px;font-weight:600;color:var(--fg-2)}
+.prio.p1{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 50%,transparent)}.prio.p2{color:var(--fg)}
+.tgs{display:flex;gap:6px;flex-wrap:wrap}
+.tg{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 8px;border-radius:999px;border:1px solid var(--line-2);background:transparent;font-size:10.5px;color:var(--fg-2);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+button.tg{cursor:pointer;height:24px;font-size:11px}button.tg:hover{border-color:var(--accent);color:var(--fg)}
+.tg.nt{border-style:dashed}
+.lvd{display:inline-flex;gap:2px}
+.lvd i{width:15px;height:15px;border-radius:3px;font-size:9.5px;font-style:normal;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line-2);color:var(--fg-3)}
+.lvd i.on{background:color-mix(in srgb,var(--accent) 14%,transparent);border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent)}
+.syn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.syn .panel{margin:0}
+.bl{list-style:none;margin:0;padding:0}
+.bl li{display:grid;grid-template-columns:minmax(0,1fr) 64px 28px;gap:8px;align-items:center;font-size:11.5px;color:var(--fg-2);padding:3px 0}
+.bl .bn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bl .g{height:3px;background:var(--line-2);border-radius:2px;overflow:hidden}.bl .g b{display:block;height:100%;background:var(--accent)}
+.bl .c{text-align:right;color:var(--fg);font-weight:500}
+.drop{border:1px dashed var(--line-2);border-radius:var(--r);padding:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--fg-2);font-size:12px}
+.drop.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.mine{border:1px solid var(--line);border-radius:var(--r);background:var(--panel-2);margin:12px 0 4px;padding:4px 12px 12px}
+.mine-h{display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap;padding:8px 0}
+.mine-h .t{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.pfbig[aria-pressed="true"]{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 50%,transparent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.mine .mf{padding:10px 0 4px;border-top:1px solid var(--line)}
+.mine .mfh{display:flex;align-items:center;gap:8px;justify-content:space-between;margin-bottom:6px;min-height:18px}
+.mine .seg{display:flex;width:100%}.mine .seg button{flex:1 1 auto}
+.mine .sub{font-size:11px}
+.rv{background:none;border:0;padding:0;color:var(--fg-3);font:inherit;font-size:11px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.rv:hover{color:var(--accent)}
+.tadd{display:flex;gap:6px}.tadd input{flex:1;min-width:0}
+.lvp{display:flex;gap:6px;flex-wrap:wrap}
+.lvp .chip{height:26px}
+.lvp .chip[aria-pressed="false"]{color:var(--fg-3);border-style:dashed}.lvp .chip[aria-pressed="false"] i{background:var(--idle)}
+.mine .seg button[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--fg);box-shadow:inset 0 -2px 0 var(--accent)}
+textarea.in{width:100%;min-height:70px;background:var(--bg);border:1px solid var(--line-2);border-radius:6px;color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45;padding:8px 10px;resize:vertical}
+#sync[data-s="no"] #sync-t{color:var(--no)}
+
 @media (max-width:1040px){
   .pfs{grid-template-columns:1fr}
   .meta,.counters{grid-template-columns:repeat(3,minmax(0,1fr))}
   .counters.c4{grid-template-columns:repeat(2,minmax(0,1fr))}
   .filters{grid-template-columns:repeat(3,minmax(0,1fr))}
   .sliders{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .nrow{grid-template-columns:minmax(0,1fr) 84px 110px;padding-left:44px}
+  .nrow{padding-left:14px}.nopen{grid-template-columns:minmax(0,1fr) 84px 110px}
+  .syn{grid-template-columns:1fr 1fr}
+  .mrow{grid-template-columns:24px minmax(0,1fr) 100px}.mrow .mmeta{grid-column:2/-1;grid-row:2}
   .nrow .ff{display:none}
   .trow.l1{padding-left:28px}.trow.l2{padding-left:40px}
   .vhead{display:none}
   .msort{display:block}
-  .vrow{display:grid;grid-template-columns:30px minmax(0,1fr) 108px;grid-template-rows:auto auto;height:64px;align-content:center;row-gap:2px}
-  .vrow>span{padding:0 6px}
+  .vrow{height:64px}
+  .vopen{grid-template-columns:30px minmax(0,1fr) 108px;grid-template-rows:auto auto;align-content:center;row-gap:2px}
+  .vopen>span{padding:0 6px}
   .vrow .xc{display:none}
   .vrow .rk{grid-row:1/3}
   .vrow .nm{grid-column:2}
@@ -397,7 +466,13 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .crumb .cx{display:none}
   .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sliders{grid-template-columns:1fr}
-  .nrow{grid-template-columns:minmax(0,1fr) 72px;padding-left:20px;gap:6px}
+  .nrow{padding-left:8px}.nopen{grid-template-columns:minmax(0,1fr) 72px;gap:6px;padding-right:10px}
+  .syn{grid-template-columns:1fr}.f3{grid-template-columns:1fr 1fr}
+  .mrow{grid-template-columns:24px minmax(0,1fr) 64px;gap:8px;padding:8px 10px}.mrow .sbar .g{display:none}
+  .pfg{margin-right:8px;min-width:0}
+  .pfjump .lbl2{display:none}.pfjump{padding:0 6px}
+  .mine .seg button{padding:0 5px;font-size:11px}
+  .chips .vmode{margin-left:0}
   .nrow .vv{display:none}
   .trow.l0{grid-template-columns:12px 20px minmax(0,1fr) 72px}
   .trow.l1,.trow.l2{grid-template-columns:12px minmax(0,1fr) 72px;padding-left:20px}
@@ -425,7 +500,8 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <div class="appbar" role="banner">
   <div class="brand" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="crumb"><span class="cx">cordes / études / </span><b>niches à adresser · v2</b></div>
-  <div class="state"><span class="dot" style="background:var(--int)" aria-hidden="true"></span><span><span class="lbl2">Données · </span>13 nov. 2026</span></div>
+  <a class="pfjump" id="pf-jump" href="#mon-portefeuille" aria-label="Aller à Mon portefeuille"><span class="lbl2">Mon portefeuille</span><span class="cnt" id="pf-jump-n">0</span></a>
+  <div class="state" id="sync" role="status" aria-live="polite" title="État de l’enregistrement de mon portefeuille"><span class="dot" id="sync-dot" style="background:var(--wait)" aria-hidden="true"></span><span id="sync-t"><span class="lbl2">Sur cet appareil</span></span></div>
 </div>
 <div class="wrap">
 <nav class="toc" aria-label="Sommaire">
@@ -439,8 +515,9 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
     <li><a href="#parades"><span>06</span>Parades</a></li>
     <li><a href="#mixes"><span>07</span>Mixes</a></li>
     <li><a href="#portefeuilles"><span>08</span>Portefeuilles</a></li>
-    <li><a href="#geo"><span>09</span>Géographie</a></li>
-    <li><a href="#limites"><span>10</span>Limites et sources</a></li>
+    <li><a href="#mon-portefeuille"><span>09</span>Mon portefeuille</a></li>
+    <li><a href="#geo"><span>10</span>Géographie</a></li>
+    <li><a href="#limites"><span>11</span>Limites et sources</a></li>
   </ol>
 </nav>
 <main id="main">
@@ -495,13 +572,14 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
       <div class="search"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="var(--fg-3)" stroke-width="1.5"/><path d="M11 11l4 4" stroke="var(--fg-3)" stroke-width="1.5"/></svg><input id="q" type="search" placeholder="Rechercher une niche, une compétence, un mot-clé" aria-label="Rechercher une niche" autocomplete="off"><kbd>/</kbd></div>
       <div class="seg" role="group" aria-label="Vue"><button type="button" data-view="tree" aria-pressed="true">Arborescence</button><button type="button" data-view="table" aria-pressed="false">Tableau</button></div>
       <span class="cnt" id="vis-cnt" aria-live="polite"></span>
-      <div class="act" style="margin-left:auto;display:flex;gap:8px"><button class="btn ghost" id="x-reset" type="button">Effacer les filtres</button><button class="btn" id="x-csv" type="button">Exporter CSV</button></div>
+      <div class="act" style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap"><button class="btn hide" id="x-addall" type="button">Ajouter les niches filtrées</button><button class="btn ghost" id="x-reset" type="button">Effacer les filtres</button><button class="btn" id="x-csv" type="button">Exporter CSV</button></div>
     </div>
     <div class="filters" id="filters"></div>
     <div class="chips" id="f-verdict"><span class="lb">Verdict</span></div>
     <div class="chips" id="f-wtp"><span class="lb">Propension</span></div>
+    <div class="chips" id="f-mine"><span class="lb">Mon suivi</span><button type="button" class="chip c-acc" data-k="mine" data-v="in" aria-pressed="false"><i></i>Dans mon portefeuille <b data-c="minein"></b></button><button type="button" class="chip c-acc" data-k="mine" data-v="mod" aria-pressed="false"><i></i>Requalifiées <b data-c="minemod"></b></button><div class="seg vmode" role="group" aria-label="Verdicts affichés"><button type="button" data-vm="mine" aria-pressed="true">Mes verdicts</button><button type="button" data-vm="study" aria-pressed="false">Verdicts de l’étude</button></div></div>
     <div id="xbody"></div>
-    <div class="kb"><span><kbd>/</kbd> rechercher</span><span><kbd>J</kbd> <kbd>K</kbd> niche suivante ou précédente</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>Esc</kbd> fermer</span></div>
+    <div class="kb"><span><kbd>/</kbd> rechercher</span><span><kbd>J</kbd> <kbd>K</kbd> niche suivante ou précédente</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>P</kbd> ajouter la niche ouverte au portefeuille</span><span><kbd>Esc</kbd> fermer</span></div>
   </div>
 </section>
 
@@ -604,8 +682,49 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <div class="pfs" id="pfs"></div>
 </section>
 
+<section class="s" id="mon-portefeuille" aria-labelledby="h-my">
+  <div class="eyebrow">09 · mon portefeuille</div>
+  <h2 id="h-my">Mon portefeuille de niches</h2>
+  <div class="prose"><p>Retenir des niches avec le bouton + de chaque ligne, de chaque fiche (touche P), du top 15, des mixes et des parades, ou par lot depuis les filtres et l’arborescence. Requalifier ensuite verdict, priorité, étiquettes, note et paliers dans la fiche. Les requalifications valent pour toute la page et tous les portefeuilles ; elles portent la marque ✎.</p></div>
+  <div class="panel" id="my">
+    <div class="ph"><span class="t">Portefeuilles</span><div class="seg" id="my-tabs" role="group" aria-label="Choisir le portefeuille actif"></div><div class="act"><button class="btn sm" id="my-new" type="button">Créer</button><button class="btn sm" id="my-dup" type="button">Dupliquer</button><button class="btn sm" id="my-ren" type="button">Renommer</button><button class="btn sm ghost" id="my-del" type="button">Supprimer</button></div></div>
+    <div class="pb hide" id="my-ren-row" style="border-bottom:1px solid var(--line)"><div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap"><label class="field" style="margin:0;flex:1 1 240px;max-width:420px"><span>Nom du portefeuille</span><input type="text" class="in" id="my-name" maxlength="60" autocomplete="off"></label><button class="btn sm" id="my-name-ok" type="button">Enregistrer</button></div></div>
+    <div class="counters" id="my-c" style="margin:0;border:0;border-radius:0;border-bottom:1px solid var(--line)"></div>
+    <div class="toolbar">
+      <div class="search"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="var(--fg-3)" stroke-width="1.5"/><path d="M11 11l4 4" stroke="var(--fg-3)" stroke-width="1.5"/></svg><input id="my-q" type="search" placeholder="Chercher dans mon portefeuille, mes étiquettes, mes notes" aria-label="Chercher dans mon portefeuille" autocomplete="off"></div>
+      <span class="cnt" id="my-cnt" aria-live="polite"></span>
+      <div class="seg" role="group" aria-label="Regrouper par"><button type="button" data-myg="sector" aria-pressed="true">Secteur</button><button type="button" data-myg="prio" aria-pressed="false">Priorité</button><button type="button" data-myg="tag" aria-pressed="false">Étiquette</button><button type="button" data-myg="verdict" aria-pressed="false">Verdict</button></div>
+    </div>
+    <div class="filters f3">
+      <label>Trier par<select id="my-sort"><option value="s1">Score avec parades</option><option value="prio">Priorité</option><option value="verdict">Verdict</option><option value="name">Nom</option><option value="p1">Prix palier 1</option></select></label>
+      <label>Verdict<select id="my-fv"><option value="">Tous</option><option value="prioritaire">Prioritaire</option><option value="a-tester">À tester</option><option value="plus-tard">Plus tard</option><option value="ecarter">Écarter</option></select></label>
+      <label>Étiquette<select id="my-tag"><option value="">Toutes</option></select></label>
+    </div>
+    <div id="my-list" class="mlist"></div>
+  </div>
+  <h3>Synthèse</h3>
+  <div class="syn" id="my-syn"></div>
+  <h4>Prix par palier et hôtes à recruter</h4>
+  <div class="tw"><table id="my-lv"></table></div>
+  <p class="note" id="my-lv-n"></p>
+  <h3>Mixes possibles dans le portefeuille</h3>
+  <div class="panel"><div class="ph"><span class="t">Meilleures paires internes</span><span class="h" id="my-mix-h"></span></div>
+    <div class="tw" style="margin:0;border:0;border-radius:0"><table><thead><tr><th class="num">Score</th><th>Format</th><th>Lieu</th><th class="num">Prix</th><th></th></tr></thead><tbody id="my-mix"></tbody></table></div>
+  </div>
+  <h3>Comparaison avec les portefeuilles de l’étude</h3>
+  <div class="tw"><table id="my-cmp"></table></div>
+  <h3>Exporter et importer</h3>
+  <div class="panel" id="my-io">
+    <div class="ph"><span class="t">Exports</span><span class="h">CSV séparé par des points-virgules, UTF-8</span></div>
+    <div class="pb" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="my-csv" type="button">Exporter CSV</button><button class="btn" id="my-copy" type="button">Copier le CSV</button><button class="btn" id="my-json" type="button">Exporter JSON</button><button class="btn" id="my-base" type="button">Base complète CSV</button></div>
+    <p class="note" style="padding:0 14px 12px;margin:0">CSV : une ligne par niche du portefeuille actif. JSON : tous les portefeuilles et toutes les requalifications, réimportable. Base complète : les 1 034 niches avec mes requalifications.</p>
+    <div class="ph" style="border-top:1px solid var(--line)"><span class="t">Import</span><span class="h">fichier JSON exporté depuis cette page</span></div>
+    <div class="pb"><div class="drop" id="my-drop"><button class="btn" id="my-file-b" type="button">Choisir un fichier</button><span>ou glisser un fichier JSON ici</span><input type="file" id="my-file" accept=".json,application/json" class="sr" tabindex="-1" aria-hidden="true"></div><div id="my-prev" aria-live="polite"></div></div>
+  </div>
+</section>
+
 <section class="s" id="geo" aria-labelledby="h-geo">
-  <div class="eyebrow">09 · géographie</div>
+  <div class="eyebrow">10 · géographie</div>
   <h2 id="h-geo">Où commencer à Paris</h2>
   <div class="prose"><p>Chaque arrondissement reçoit une note de 1 à 3 sur six familles de lieux et quatre publics (estimations à partir de la connaissance du terrain et de la pyramide des âges parisienne). Chaque portefeuille pondère ces notes selon ses besoins. Le résultat dit où ouvrir les premiers lieux partenaires.</p></div>
   <div id="geo-top" class="cards"></div>
@@ -615,13 +734,13 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 </section>
 
 <section class="s" id="limites" aria-labelledby="h-lim">
-  <div class="eyebrow">10 · limites et sources</div>
+  <div class="eyebrow">11 · limites et sources</div>
   <h2 id="h-lim">Limites</h2>
   <div class="prose" id="limits"></div>
   <h3>Sources · 103</h3>
   <div class="panel"><ul class="srcl" id="srcl"></ul></div>
 </section>
-<footer class="ft"><span>Étude des niches · v2 · 13 nov. 2026</span><span>Données embarquées · aucune requête externe hors polices</span><span class="keys"><kbd>/</kbd> rechercher · <kbd>J</kbd> <kbd>K</kbd> naviguer · <kbd>Esc</kbd> fermer</span><span><a href="#main">Haut de page</a></span></footer>
+<footer class="ft"><span>Étude des niches · v2 · 13 nov. 2026</span><span>Données embarquées · aucune requête externe hors polices</span><span class="keys"><kbd>/</kbd> rechercher · <kbd>J</kbd> <kbd>K</kbd> naviguer · <kbd>P</kbd> portefeuille · <kbd>Esc</kbd> fermer</span><span><a href="#main">Haut de page</a></span></footer>
 </main>
 </div>
 <div class="veil" id="veil"></div>
@@ -892,6 +1011,226 @@ E.triple = function (a, b, c, scoreOf, opt) {
 if (typeof module !== 'undefined' && module.exports) module.exports = E; else root.ENG = E;
 })(this);
 </script>
+<script>/* Mon portefeuille : modèle d'état pur (sans DOM) de l'étude des niches v2.
+   Requalifications par niche (verdict, priorité, étiquettes, note, paliers), portefeuilles nommés,
+   document compact (écarts avec l'étude seulement), import, exports CSV et JSON, synthèse.
+   Embarqué tel quel dans niches.html (window.MYPF) et testable sous Node (module.exports). */
+(function (root) {
+'use strict';
+var M = {};
+M.KEY = 'niches-v2.portefeuilles';
+M.FORMAT = 'niches-v2.portefeuilles';
+M.VERDICTS = ['prioritaire', 'a-tester', 'plus-tard', 'ecarter'];
+M.ALL_LV = [1, 2, 3, 4, 5];
+M.MAX_TAGS = 12; M.MAX_TAG = 40; M.MAX_NOTE = 2000; M.MAX_PF = 40; M.MAX_NAME = 60;
+M.DEFAULT_NAME = 'Mon portefeuille';
+
+function str(s) { return typeof s === 'string' ? s : s == null ? '' : String(s); }
+function clean(s, max) { return str(s).replace(/[\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max); }
+M.cleanTag = function (t) { return clean(t, M.MAX_TAG); };
+M.cleanName = function (t) { return clean(t, M.MAX_NAME); };
+function uniqTags(list) {
+  var seen = {}, out = [];
+  (Array.isArray(list) ? list : []).forEach(function (t) { t = M.cleanTag(t); var k = t.toLowerCase(); if (t && !seen[k] && out.length < M.MAX_TAGS) { seen[k] = 1; out.push(t); } });
+  return out;
+}
+function lvList(l) {
+  var o = []; (Array.isArray(l) ? l : []).forEach(function (x) { x = +x; if (x >= 1 && x <= 5 && o.indexOf(x) < 0) o.push(x); });
+  return o.sort();
+}
+function sameLv(a) { return a.length === 5; }
+
+M.empty = function () { return { v: 1, ov: {}, pfs: [{ id: 'p1', name: M.DEFAULT_NAME, ids: [] }], cur: 'p1', mode: 'mine' }; };
+
+/* Normalise une saisie quelconque (document stocké, import) ; known : dictionnaire des ids connus (facultatif). */
+M.normalize = function (raw, known) {
+  var s = M.empty(), unknown = {};
+  if (!raw || typeof raw !== 'object') return s;
+  var ok = function (id) { if (typeof id !== 'string' || !id) return false; if (known && !known[id]) { unknown[id] = 1; return false; } return true; };
+  var ov = raw.ov && typeof raw.ov === 'object' ? raw.ov : {};
+  Object.keys(ov).forEach(function (id) {
+    if (!ok(id)) return; var o = ov[id] || {}, r = {};
+    if (M.VERDICTS.indexOf(o.v) >= 0) r.v = o.v;
+    if (o.p === 1 || o.p === 2 || o.p === 3) r.p = o.p;
+    var t = uniqTags(o.t); if (t.length) r.t = t;
+    var nt = str(o.note).slice(0, M.MAX_NOTE); if (nt.trim()) r.note = nt;
+    if (Array.isArray(o.lv)) { var l = lvList(o.lv); if (l.length && !sameLv(l)) r.lv = l; }
+    if (Object.keys(r).length) s.ov[id] = r;
+  });
+  var pfs = Array.isArray(raw.pfs) ? raw.pfs : [];
+  var used = {};
+  var list = [];
+  pfs.slice(0, M.MAX_PF).forEach(function (p, i) {
+    if (!p || typeof p !== 'object') return;
+    var id = typeof p.id === 'string' && /^[a-z0-9_-]{1,24}$/i.test(p.id) && !used[p.id] ? p.id : null;
+    if (!id) { var k = i + 1; while (used['p' + k]) k++; id = 'p' + k; }
+    used[id] = 1;
+    var seen = {}, ids = [];
+    (Array.isArray(p.ids) ? p.ids : []).forEach(function (x) { if (ok(x) && !seen[x]) { seen[x] = 1; ids.push(x); } });
+    list.push({ id: id, name: M.cleanName(p.name) || ('Portefeuille ' + (list.length + 1)), ids: ids });
+  });
+  if (list.length) s.pfs = list;
+  s.cur = s.pfs.some(function (p) { return p.id === raw.cur; }) ? raw.cur : s.pfs[0].id;
+  s.mode = raw.mode === 'study' ? 'study' : 'mine';
+  s.unknown = Object.keys(unknown);
+  return s;
+};
+
+/* Document compact : uniquement les écarts avec l'étude et les sélections. Clés triées pour une comparaison stable. */
+M.compact = function (s) {
+  var ov = {};
+  Object.keys(s.ov).sort().forEach(function (id) {
+    var o = s.ov[id], r = {};
+    if (o.v) r.v = o.v; if (o.p) r.p = o.p; if (o.t && o.t.length) r.t = o.t.slice(); if (o.note && o.note.trim()) r.note = o.note; if (o.lv && !sameLv(o.lv)) r.lv = o.lv.slice();
+    if (Object.keys(r).length) ov[id] = r;
+  });
+  return { v: 1, cur: s.cur, mode: s.mode, pfs: s.pfs.map(function (p) { return { id: p.id, name: p.name, ids: p.ids.slice() }; }), ov: ov };
+};
+M.key = function (s) { return JSON.stringify(M.compact(s)); };
+M.isEmpty = function (s) { return !Object.keys(s.ov).length && s.pfs.every(function (p) { return !p.ids.length; }) && s.pfs.length === 1; };
+
+/* portefeuilles */
+M.cur = function (s) { for (var i = 0; i < s.pfs.length; i++) if (s.pfs[i].id === s.cur) return s.pfs[i]; return s.pfs[0]; };
+M.newId = function (s) { var k = s.pfs.length + 1; while (s.pfs.some(function (p) { return p.id === 'p' + k; })) k++; return 'p' + k; };
+M.uniqueName = function (s, base, skipId) {
+  base = M.cleanName(base) || 'Portefeuille'; var n = base, k = 2;
+  var taken = function (x) { return s.pfs.some(function (p) { return p.id !== skipId && p.name.toLowerCase() === x.toLowerCase(); }); };
+  while (taken(n)) n = base + ' ' + (k++);
+  return n;
+};
+M.create = function (s, name, ids) {
+  if (s.pfs.length >= M.MAX_PF) return null;
+  var p = { id: M.newId(s), name: M.uniqueName(s, name || 'Portefeuille ' + (s.pfs.length + 1)), ids: (ids || []).slice() };
+  s.pfs.push(p); s.cur = p.id; return p;
+};
+M.duplicate = function (s, id) { var src = s.pfs.filter(function (p) { return p.id === id; })[0] || M.cur(s); return M.create(s, src.name + ' (copie)', src.ids); };
+M.rename = function (s, id, name) { var p = s.pfs.filter(function (x) { return x.id === id; })[0]; name = M.cleanName(name); if (!p || !name) return false; p.name = M.uniqueName(s, name, id); return true; };
+M.remove = function (s, id) {
+  s.pfs = s.pfs.filter(function (p) { return p.id !== id; });
+  if (!s.pfs.length) s.pfs.push({ id: 'p1', name: M.DEFAULT_NAME, ids: [] });
+  if (!s.pfs.some(function (p) { return p.id === s.cur; })) s.cur = s.pfs[0].id;
+};
+M.has = function (s, id) { return M.cur(s).ids.indexOf(id) >= 0; };
+M.add = function (s, ids) { var p = M.cur(s), n = 0; ids.forEach(function (id) { if (p.ids.indexOf(id) < 0) { p.ids.push(id); n++; } }); return n; };
+M.drop = function (s, ids) { var p = M.cur(s), b = p.ids.length; p.ids = p.ids.filter(function (x) { return ids.indexOf(x) < 0; }); return b - p.ids.length; };
+M.toggle = function (s, id) { if (M.has(s, id)) { M.drop(s, [id]); return false; } M.add(s, [id]); return true; };
+M.inAny = function (s, id) { return s.pfs.filter(function (p) { return p.ids.indexOf(id) >= 0; }).map(function (p) { return p.name; }); };
+
+/* requalifications */
+M.get = function (s, id) { return s.ov[id] || {}; };
+M.set = function (s, id, k, val, studyVerdict) {
+  var o = Object.assign({}, s.ov[id] || {});
+  if (k === 'v') { if (M.VERDICTS.indexOf(val) < 0 || val === studyVerdict) delete o.v; else o.v = val; }
+  else if (k === 'p') { if (val === 1 || val === 2 || val === 3) o.p = val; else delete o.p; }
+  else if (k === 't') { var t = uniqTags(val); if (t.length) o.t = t; else delete o.t; }
+  else if (k === 'note') { var nt = str(val).slice(0, M.MAX_NOTE); if (nt.trim()) o.note = nt; else delete o.note; }
+  else if (k === 'lv') { var l = lvList(val); if (!l.length || sameLv(l)) delete o.lv; else o.lv = l; }
+  if (Object.keys(o).length) s.ov[id] = o; else delete s.ov[id];
+};
+M.reset = function (s, id, k) { if (!s.ov[id]) return; if (!k) { delete s.ov[id]; return; } var o = Object.assign({}, s.ov[id]); delete o[k]; if (Object.keys(o).length) s.ov[id] = o; else delete s.ov[id]; };
+M.verdict = function (s, n) { var o = s.ov[n.id]; return o && o.v || n.verdict; };
+M.levels = function (s, id) { var o = s.ov[id]; return o && o.lv ? o.lv : M.ALL_LV; };
+M.allTags = function (s) { var c = {}; Object.keys(s.ov).forEach(function (id) { (s.ov[id].t || []).forEach(function (t) { c[t] = (c[t] || 0) + 1; }); }); return Object.keys(c).sort(function (a, b) { return c[b] - c[a] || a.localeCompare(b); }); };
+
+/* import */
+M.parseImport = function (text, known) {
+  var raw; try { raw = JSON.parse(text); } catch (e) { return { ok: false, err: 'Fichier illisible : JSON invalide' }; }
+  if (!raw || typeof raw !== 'object' || (!Array.isArray(raw.pfs) && !raw.ov)) return { ok: false, err: 'Ce fichier n’est pas un export de portefeuilles' };
+  if (raw.format && raw.format !== M.FORMAT) return { ok: false, err: 'Format inconnu : ' + clean(raw.format, 60) };
+  var st = M.normalize(raw, known);
+  if (!Array.isArray(raw.pfs) || !raw.pfs.length) st.pfs = [];
+  return { ok: true, state: st, stats: { pfs: st.pfs.map(function (p) { return [p.name, p.ids.length]; }), ov: Object.keys(st.ov).length, unknown: st.unknown.length } };
+};
+M.merge = function (s, imp) {
+  var out = JSON.parse(JSON.stringify(M.compact(s)));
+  out = M.normalize(out);
+  Object.keys(imp.ov).forEach(function (id) {
+    var a = out.ov[id] || {}, b = imp.ov[id], r = Object.assign({}, a, b);
+    if (a.t || b.t) r.t = uniqTags((a.t || []).concat(b.t || []));
+    if (a.note && b.note && a.note !== b.note && a.note.indexOf(b.note) < 0) r.note = (a.note + '\n' + b.note).slice(0, M.MAX_NOTE);
+    out.ov[id] = r;
+  });
+  imp.pfs.forEach(function (p) {
+    var q = out.pfs.filter(function (x) { return x.name.toLowerCase() === p.name.toLowerCase(); })[0];
+    if (q) p.ids.forEach(function (id) { if (q.ids.indexOf(id) < 0) q.ids.push(id); });
+    else if (out.pfs.length < M.MAX_PF) out.pfs.push({ id: M.newId(out), name: p.name, ids: p.ids.slice() });
+  });
+  /* un portefeuille par défaut vide est remplacé par les portefeuilles importés */
+  if (out.pfs.length > 1 && out.pfs[0].name === M.DEFAULT_NAME && !out.pfs[0].ids.length && imp.pfs.length) { out.pfs.shift(); if (!out.pfs.some(function (p) { return p.id === out.cur; })) out.cur = out.pfs[0].id; }
+  return out;
+};
+M.replace = function (s, imp) { var out = M.normalize(M.compact(imp)); if (!imp.pfs.length) { out.pfs = M.empty().pfs; out.cur = 'p1'; } out.mode = s.mode; return out; };
+
+/* exports */
+var q = function (v) { return '"' + str(v).replace(/"/g, '""') + '"'; };
+var dec = function (x) { return (Math.round(x * 10) / 10).toFixed(1).replace('.', ','); };
+M.slug = function (s) { return str(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50) || 'portefeuille'; };
+M.json = function (s, ctx) {
+  var c = M.compact(s), names = {};
+  c.pfs.forEach(function (p) { p.ids.forEach(function (id) { names[id] = ctx.byId[id] ? ctx.byId[id].name : id; }); });
+  Object.keys(c.ov).forEach(function (id) { names[id] = ctx.byId[id] ? ctx.byId[id].name : id; });
+  return JSON.stringify({ format: M.FORMAT, version: 1, exported: ctx.now || new Date().toISOString(), study: ctx.study || '', cur: c.cur, mode: c.mode, pfs: c.pfs, ov: c.ov, names: names }, null, 2);
+};
+function lvTxt(n, lvs) { return lvs.map(function (k) { var l = n.levels[k - 1]; return 'P' + k + ' ' + l.title + ' (' + l.price[0] + '-' + l.price[1] + ' €)'; }).join(' | '); }
+function rowCommon(s, n, ctx) {
+  var o = M.get(s, n.id), L = ctx.LBL, lvs = M.levels(s, n.id);
+  return {
+    head: [n.id, q(ctx.SEC[n.sector].n), q((ctx.CAT[n.category] || {}).name), q((ctx.SUB[n.subcategory] || {}).name), q(n.name), n.verdict, M.verdict(s, n), o.p ? 'P' + o.p : '', q((o.t || []).join(', ')), q(o.note || ''), q(lvTxt(n, lvs))],
+    tail: ctx.KEYS.map(function (k) { return String(n.scores[k]).replace('.', ','); }).concat([dec(n.s0), dec(n.s1), q((n.par || []).map(function (p) { return ctx.PAR[p].n; }).join(', ')), q(n.venues.map(function (v) { return L.venues[v] || v; }).join(', ')), q(n.moments.map(function (v) { return L.moments[v] || v; }).join(', ')), q(n.publics.map(function (v) { return L.publics[v] || v; }).join(', '))])
+  };
+}
+var HEAD = ['id', 'secteur', 'categorie', 'sous_categorie', 'niche', 'verdict_etude', 'mon_verdict', 'priorite', 'etiquettes', 'note', 'paliers_retenus'];
+function tailHead(ctx) { return ctx.KEYS.map(function (k) { return 'note_' + k; }).concat(['score', 'score_total_parades', 'parade_recommandee', 'lieux', 'moments', 'publics']); }
+M.csv = function (s, pfId, ctx) {
+  var p = s.pfs.filter(function (x) { return x.id === pfId; })[0] || M.cur(s);
+  var rows = [HEAD.concat(tailHead(ctx)).join(';')];
+  p.ids.forEach(function (id) { var n = ctx.byId[id]; if (!n) return; var r = rowCommon(s, n, ctx); rows.push(r.head.concat(r.tail).join(';')); });
+  return '﻿' + rows.join('\n');
+};
+M.csvBase = function (s, ctx) {
+  var rows = [HEAD.concat(['requalifiee', 'portefeuilles']).concat(tailHead(ctx)).join(';')];
+  ctx.N.forEach(function (n) { var r = rowCommon(s, n, ctx); rows.push(r.head.concat([s.ov[n.id] ? 'oui' : 'non', q(M.inAny(s, n.id).join(', '))]).concat(r.tail).join(';')); });
+  return '﻿' + rows.join('\n');
+};
+
+/* synthèse d'un portefeuille : ctx = { byId, sectors, ENG, editorial, studyPfs } */
+M.synth = function (s, ids, ctx) {
+  var L = ids.map(function (id) { return ctx.byId[id]; }).filter(Boolean), k = L.length || 1, E = ctx.ENG;
+  var cnt = function (key) { var c = {}; L.forEach(function (n) { n[key].forEach(function (v) { c[v] = (c[v] || 0) + 1; }); }); return Object.keys(c).map(function (x) { return [x, c[x]]; }).sort(function (a, b) { return b[1] - a[1] || a[0].localeCompare(b[0]); }); };
+  var sec = {}; L.forEach(function (n) { sec[n.sector] = (sec[n.sector] || 0) + 1; });
+  var vc = { prioritaire: 0, 'a-tester': 0, 'plus-tard': 0, ecarter: 0 }, pc = { 1: 0, 2: 0, 3: 0 };
+  L.forEach(function (n) { vc[M.verdict(s, n)]++; var o = s.ov[n.id]; if (o && o.p) pc[o.p]++; });
+  var lv = [1, 2, 3, 4, 5].map(function (j) {
+    var with_ = L.filter(function (n) { return M.levels(s, n.id).indexOf(j) >= 0; });
+    var mids = with_.map(function (n) { return E.mid(n.levels[j - 1].price); });
+    return { k: j, n: with_.length, mean: mids.length ? mids.reduce(function (a, b) { return a + b; }, 0) / mids.length : 0,
+      lo: with_.length ? Math.min.apply(null, with_.map(function (n) { return n.levels[j - 1].price[0]; })) : 0,
+      hi: with_.length ? Math.max.apply(null, with_.map(function (n) { return n.levels[j - 1].price[1]; })) : 0,
+      hostLevel: j < 5 ? j + 1 : 'référent', hosts: with_.length };
+  });
+  /* minimum : un seul hôte par niche, du niveau requis par le palier le plus haut retenu (règle n → n-1, « au moins ») */
+  var minH = {}; L.forEach(function (n) { var m = Math.max.apply(null, M.levels(s, n.id)); var lvl = m < 5 ? m + 1 : 'référent'; minH[lvl] = (minH[lvl] || 0) + 1; });
+  /* mixes internes : paires de secteurs différents, 80 meilleures niches au plus */
+  var pool = L.slice().sort(function (a, b) { return b.s1 - a.s1; }).slice(0, 80), pairs = [];
+  for (var i = 0; i < pool.length; i++) for (var j = i + 1; j < pool.length; j++) { if (pool[i].sector === pool[j].sector) continue; var r = E.pair(pool[i], pool[j], pool[i].s0, pool[j].s0, {}); pairs.push([r.s, pool[i].id, pool[j].id, r]); }
+  pairs.sort(function (a, b) { return b[0] - a[0]; });
+  var used = {}, mixes = [];
+  for (var x = 0; x < pairs.length && mixes.length < 6; x++) { var pp = pairs[x]; if ((used[pp[1]] || 0) >= 2 || (used[pp[2]] || 0) >= 2) continue; used[pp[1]] = (used[pp[1]] || 0) + 1; used[pp[2]] = (used[pp[2]] || 0) + 1; mixes.push(pp); }
+  var has = {}; L.forEach(function (n) { has[n.id] = 1; });
+  var ed = (ctx.editorial || []).filter(function (m) { return m.n.filter(function (id) { return has[id]; }).length >= 2; }).map(function (m) { return { m: m, all: m.n.every(function (id) { return has[id]; }) }; });
+  var cmp = (ctx.studyPfs || []).map(function (p) { var common = p.niches.filter(function (id) { return has[id]; }); return { p: p, common: common, share: p.niches.length ? common.length / p.niches.length : 0 }; });
+  return {
+    n: L.length, list: L, sec: sec, nSec: Object.keys(sec).length, missing: ctx.sectors.filter(function (x) { return !sec[x.id]; }).map(function (x) { return x.id; }),
+    venues: cnt('venues'), moments: cnt('moments'), publics: cnt('publics'), vc: vc, pc: pc,
+    wtp: L.reduce(function (a, n) { return a + n.scores.wtp; }, 0) / k, wEff: L.reduce(function (a, n) { return a + (n.wEff || n.scores.wtp); }, 0) / k,
+    par: L.filter(function (n) { return n.par; }).length, s1: L.reduce(function (a, n) { return a + n.s1; }, 0) / k,
+    lv: lv, minHosts: minH, hostsTotal: lv.reduce(function (a, l) { return a + l.hosts; }, 0), pairsN: pairs.length, mixes: mixes, ed: ed, cmp: cmp
+  };
+};
+
+if (typeof module !== 'undefined' && module.exports) module.exports = M; else root.MYPF = M;
+})(this);
+</script>
 <script>(function () {
 'use strict';
 var T0 = performance.now();
@@ -927,10 +1266,351 @@ function recompute() {
 recompute();
 var sOf = function (n) { return n.s0; };
 
-function pill(v) { var x = L.verdict[v] || ['?', 'idle']; return '<span class="pill p-' + x[1] + '"><i></i>' + x[0] + '</span>'; }
+function pill(v, mod) { var x = L.verdict[v] || ['?', 'idle']; return '<span class="pill p-' + x[1] + '"><i></i>' + x[0] + (mod ? '<span class="mk" title="Verdict requalifié à la main" aria-label="requalifié">✎</span>' : '') + '</span>'; }
 function sbar(s) { return '<span class="sbar"><span class="g"><b style="width:' + Math.max(0, Math.min(100, s)) + '%"></b></span><span class="n">' + f1(s) + '</span></span>'; }
 function lbls(list, key) { return list.map(function (x) { return L[key][x] || x; }).join(', '); }
 function srcRef(i) { return i ? '<a class="ref" href="#src-' + i + '">[' + i + ']</a>' : ''; }
+/* ───── mon portefeuille : interface et persistance ─────
+   Inséré par build.js dans la portée de lib/app.js (repère __MYPF_UI__). Utilise N, byId, SEC, CAT, SUB, PAR, L, E, D,
+   esc, f1, toast, pill, sbar, X, VIS, renderX, renderTop, openNiche, download, mixCard (fonctions hissées). */
+var MY = window.MYPF;
+var KNOWN = {}; N.forEach(function (n) { KNOWN[n.id] = 1; });
+var ST = MY.empty(), IN = {};
+var MYUI = { q: '', group: 'sector', sort: 's1', fv: '', tag: '', renaming: false, delArm: 0, imp: null, repArm: 0 };
+var SYNC = { mode: 'local', ref: null, writing: false, pending: false, timer: 0, last: '', early: false, unsub: null };
+var MYCTX = { byId: byId, N: N, SEC: SEC, CAT: CAT, SUB: SUB, PAR: PAR, LBL: L, KEYS: E.KEYS, ENG: E, sectors: D.sectors, editorial: D.editorial, studyPfs: D.portfolios, study: 'Étude des niches v2 · ' + D.updated };
+var MARK = '<span class="mk" title="Modifié à la main" aria-label="modifié">✎</span>';
+
+function curSet() { var o = {}; MY.cur(ST).ids.forEach(function (id) { o[id] = 1; }); IN = o; return o; }
+function ev(n) { return ST.mode === 'mine' ? MY.verdict(ST, n) : n.verdict; }
+function vpill(n) { return pill(ev(n), ST.mode === 'mine' && ST.ov[n.id] && ST.ov[n.id].v); }
+function pfb(n) { var on = !!IN[n.id]; return '<button type="button" class="pfb" data-pf="' + n.id + '" aria-pressed="' + on + '" aria-label="Retenir «\u00a0' + esc(n.name) + '\u00a0» dans mon portefeuille" title="' + (on ? 'Retirer du portefeuille' : 'Ajouter au portefeuille') + '">' + (on ? '✓' : '+') + '</button>'; }
+function setBtn(ids) {
+  var on = ids.length && ids.every(function (id) { return IN[id]; });
+  return { on: on, t: on ? 'Retirer ' + (ids.length > 1 ? 'les ' + ids.length + ' niches' : 'la niche') : 'Ajouter ' + (ids.length > 1 ? 'les ' + ids.length + ' niches' : 'la niche') };
+}
+function pfSetBtn(ids, cls) { var s = setBtn(ids); return '<button type="button" class="btn sm' + (cls ? ' ' + cls : '') + '" data-pfset="' + ids.join('|') + '" aria-pressed="' + s.on + '">' + s.t + '</button>'; }
+function hhmm() { var d = new Date(); return ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2); }
+function setSync(col, long, short) {
+  $('sync-dot').style.background = 'var(--' + col + ')';
+  $('sync-t').innerHTML = '<span class="lbl2">' + esc(long) + (short ? ' · ' : '') + '</span>' + esc(short || '');
+  $('sync').setAttribute('data-s', col); $('sync').title = long + (short ? ' · ' + short : '');
+}
+
+/* ───── mises à jour après un changement ───── */
+var VQ = 0;
+function refreshViews() { cancelAnimationFrame(VQ); VQ = requestAnimationFrame(function () { renderX(); renderTop(); renderMy(); if ($('side').classList.contains('on') && X.sel) sidePills(byId[X.sel]); }); }
+function paintPf() {
+  var name = MY.cur(ST).name;
+  document.querySelectorAll('[data-pf]').forEach(function (b) {
+    var on = !!IN[b.getAttribute('data-pf')]; b.setAttribute('aria-pressed', on);
+    if (b.classList.contains('pfbig')) b.textContent = on ? '✓ Dans «\u00a0' + name + '\u00a0» · retirer' : 'Ajouter au portefeuille';
+    else { b.textContent = on ? '✓' : '+'; b.title = on ? 'Retirer du portefeuille' : 'Ajouter au portefeuille'; }
+  });
+  document.querySelectorAll('[data-pfset]').forEach(function (b) { var s = setBtn(b.getAttribute('data-pfset').split('|')); b.setAttribute('aria-pressed', s.on); b.textContent = s.t; });
+  paintGroups(); paintAddAll();
+  var c = MY.cur(ST).ids.length; $('pf-jump-n').textContent = c; $('pf-jump').setAttribute('aria-label', 'Aller à Mon portefeuille, ' + c + ' niche' + (c > 1 ? 's' : ''));
+}
+function grpIds(key) { var k = key.split(':'), f = k[0] === 'x' ? 'sector' : k[0] === 'c' ? 'category' : 'subcategory'; return VIS.filter(function (n) { return n[f] === k[1]; }).map(function (n) { return n.id; }); }
+function paintGroups() {
+  document.querySelectorAll('[data-pfgrp]').forEach(function (b) { var ids = grpIds(b.getAttribute('data-pfgrp')), on = ids.every(function (id) { return IN[id]; }); b.setAttribute('aria-pressed', on); b.textContent = on ? 'Retirer' : 'Ajouter'; });
+}
+function paintAddAll() {
+  var b = $('x-addall'); if (!b) return; var act = active();
+  b.classList.toggle('hide', !act || !VIS.length);
+  if (!act) return; var all = VIS.every(function (n) { return IN[n.id]; });
+  b.textContent = (all ? 'Retirer ' : 'Ajouter ') + (VIS.length > 1 ? 'les ' + VIS.length + ' niches filtrées' : 'la niche filtrée'); b.setAttribute('data-all', all ? '1' : '');
+}
+function afterSel() { curSet(); paintPf(); save(); if (Object.keys(X.mine).length) renderX(); else counts(); scheduleMy(); }
+var MQ = 0; function scheduleMy() { clearTimeout(MQ); MQ = setTimeout(renderMy, 60); }
+
+/* ───── gestes de sélection (capture : passe avant l'ouverture des fiches) ───── */
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-pf],[data-pfgrp],[data-pfset],[data-pfcopy]'); if (!b) return;
+  e.stopPropagation(); e.preventDefault();
+  var name = MY.cur(ST).name, ids, n;
+  if (b.hasAttribute('data-pf')) { var id = b.getAttribute('data-pf'), on = MY.toggle(ST, id); afterSel(); toast((on ? 'Ajoutée à «\u00a0' : 'Retirée de «\u00a0') + name + '\u00a0»'); return; }
+  if (b.hasAttribute('data-pfcopy')) { var sp = D.portfolios.filter(function (p) { return p.id === b.getAttribute('data-pfcopy'); })[0]; if (!sp) return; var np = MY.create(ST, sp.n, sp.niches); if (!np) { toast('Quarante portefeuilles au plus'); return; } afterSel(); toast('Portefeuille «\u00a0' + np.name + '\u00a0» créé'); return; }
+  ids = b.hasAttribute('data-pfgrp') ? grpIds(b.getAttribute('data-pfgrp')) : b.getAttribute('data-pfset').split('|');
+  if (ids.every(function (x) { return IN[x]; })) { n = MY.drop(ST, ids); toast(n + ' niche' + (n > 1 ? 's' : '') + ' retirée' + (n > 1 ? 's' : '') + ' de «\u00a0' + name + '\u00a0»'); }
+  else { n = MY.add(ST, ids); toast(n + ' niche' + (n > 1 ? 's' : '') + ' ajoutée' + (n > 1 ? 's' : '') + ' à «\u00a0' + name + '\u00a0»'); }
+  afterSel();
+}, true);
+$('x-addall').addEventListener('click', function () {
+  var ids = VIS.map(function (n) { return n.id; }), n;
+  if ($('x-addall').getAttribute('data-all')) { n = MY.drop(ST, ids); toast(n + ' niches retirées'); } else { n = MY.add(ST, ids); toast(n + ' niches ajoutées à «\u00a0' + MY.cur(ST).name + '\u00a0»'); }
+  afterSel();
+});
+document.querySelectorAll('[data-vm]').forEach(function (b) {
+  b.addEventListener('click', function () { ST.mode = b.getAttribute('data-vm'); paintMode(); save(); refreshViews(); toast(ST.mode === 'mine' ? 'Affichage de mes verdicts' : 'Affichage des verdicts de l’étude'); });
+});
+function paintMode() { document.querySelectorAll('[data-vm]').forEach(function (x) { x.setAttribute('aria-pressed', x.getAttribute('data-vm') === ST.mode); }); }
+
+/* ───── fiche : bloc «\u00a0Mon suivi\u00a0» ───── */
+function sidePills(n) {
+  var el = $('side-pills'); if (!el || !n) return;
+  el.innerHTML = vpill(n) + '<span class="pill p-acc"><i></i>Score ' + f1(n.s0) + ' · rang ' + n.r0 + '</span>' + (n.par ? '<span class="pill p-wait"><i></i>Avec parades ' + f1(n.s1) + ' · rang ' + n.r1 + '</span>' : '') + '<span class="tag t-' + (n.confidence === 'source' ? 'S' : n.confidence === 'estimation' ? 'E' : 'H') + '">' + n.confidence + '</span>';
+}
+function rv(k) { return '<button type="button" class="rv" data-mrs="' + k + '">Revenir à la valeur de l’étude</button>'; }
+function mineBlock(n) {
+  var o = MY.get(ST, n.id), on = !!IN[n.id], lvs = MY.levels(ST, n.id), mv = MY.verdict(ST, n), tags = o.t || [];
+  var sug = MY.allTags(ST).filter(function (t) { return tags.indexOf(t) < 0; }).slice(0, 8);
+  var h = '<div class="mine-h"><span class="t">Mon suivi</span><button type="button" class="btn sm pfbig" data-pf="' + n.id + '" aria-pressed="' + on + '">' + (on ? '✓ Dans «\u00a0' + esc(MY.cur(ST).name) + '\u00a0» · retirer' : 'Ajouter au portefeuille') + '</button></div>';
+  h += '<div class="mf"><div class="mfh"><span class="k">Mon verdict' + (o.v ? MARK : '') + '</span>' + (o.v ? rv('v') : '<span class="sub">valeur de l’étude</span>') + '</div><div class="seg" role="group" aria-label="Mon verdict">' + MY.VERDICTS.map(function (v) { return '<button type="button" data-mv="' + v + '" data-fk="mv-' + v + '" aria-pressed="' + (mv === v) + '">' + L.verdict[v][0] + '</button>'; }).join('') + '</div>' + (o.v ? '<div class="sub">Étude : ' + L.verdict[n.verdict][0] + '</div>' : '') + '</div>';
+  h += '<div class="mf"><div class="mfh"><span class="k">Priorité personnelle' + (o.p ? MARK : '') + '</span>' + (o.p ? rv('p') : '') + '</div><div class="seg" role="group" aria-label="Priorité personnelle">' + [0, 1, 2, 3].map(function (p) { return '<button type="button" data-mp="' + p + '" data-fk="mp-' + p + '" aria-pressed="' + ((o.p || 0) === p) + '">' + (p ? 'P' + p : 'Aucune') + '</button>'; }).join('') + '</div></div>';
+  h += '<div class="mf"><div class="mfh"><span class="k">Étiquettes' + (tags.length ? MARK : '') + '</span>' + (tags.length ? rv('t') : '') + '</div>' +
+    (tags.length ? '<div class="tgs" style="margin-bottom:8px">' + tags.map(function (t) { return '<button type="button" class="tg x" data-mtrm="' + esc(t) + '" aria-label="Retirer l’étiquette ' + esc(t) + '">' + esc(t) + ' <span aria-hidden="true">×</span></button>'; }).join('') + '</div>' : '') +
+    '<div class="tadd"><input class="in" type="text" id="m-tag" data-fk="tag" maxlength="40" placeholder="vague 1, 11e, entreprise…" aria-label="Nouvelle étiquette" autocomplete="off"><button type="button" class="btn sm" data-mtadd="" data-fk="tag-b">Ajouter</button></div>' +
+    (sug.length ? '<div class="tgs" style="margin-top:6px">' + sug.map(function (t) { return '<button type="button" class="tg add" data-mtadd="' + esc(t) + '">+ ' + esc(t) + '</button>'; }).join('') + '</div>' : '') + '</div>';
+  h += '<div class="mf"><div class="mfh"><span class="k">Paliers à lancer' + (o.lv ? MARK : '') + '</span>' + (o.lv ? rv('lv') : '<span class="sub">les cinq par défaut</span>') + '</div><div class="lvp" role="group" aria-label="Paliers à lancer">' + n.levels.map(function (l, i) { var k = i + 1; return '<button type="button" class="chip c-acc" data-ml="' + k + '" data-fk="ml-' + k + '" aria-pressed="' + (lvs.indexOf(k) >= 0) + '" title="' + esc(l.title) + ' · ' + l.price[0] + ' à ' + l.price[1] + ' €"><i></i>P' + k + ' · ' + l.price[0] + '-' + l.price[1] + ' €</button>'; }).join('') + '</div></div>';
+  h += '<div class="mf"><div class="mfh"><span class="k" id="m-note-k">Note' + (o.note ? MARK : '') + '</span><span id="m-note-r">' + (o.note ? rv('note') : '') + '</span></div><textarea class="in" id="m-note" data-fk="note" rows="3" maxlength="2000" aria-labelledby="m-note-k" placeholder="Contact, lieu repéré, idée de format…">' + esc(o.note || '') + '</textarea></div>';
+  if (ST.ov[n.id]) h += '<button type="button" class="rv" data-mrs="*" style="margin-top:6px">Revenir à l’étude pour toute la fiche</button>';
+  return h;
+}
+function renderMine(n) {
+  var el = $('side-mine'); if (!el) return;
+  var fk = document.activeElement && el.contains(document.activeElement) ? document.activeElement.getAttribute('data-fk') : null;
+  el.innerHTML = mineBlock(n);
+  if (fk) { var f = el.querySelector('[data-fk="' + fk + '"]'); if (f) f.focus({ preventScroll: true }); }
+}
+function requal(id, k, val) { MY.set(ST, id, k, val, byId[id].verdict); save(); renderMine(byId[id]); refreshViews(); }
+function addTag(id, t) { t = MY.cleanTag(t); if (!t) return; var cur = (MY.get(ST, id).t || []).slice(); if (cur.length >= MY.MAX_TAGS) { toast('Douze étiquettes au plus'); return; } cur.push(t); requal(id, 't', cur); var i = $('m-tag'); if (i) i.focus(); }
+$('side-b').addEventListener('click', function (e) {
+  var id = X.sel, n = byId[id]; if (!n) return; var b;
+  if ((b = e.target.closest('[data-mv]'))) { requal(id, 'v', b.getAttribute('data-mv')); toast('Verdict requalifié'); return; }
+  if ((b = e.target.closest('[data-mp]'))) { requal(id, 'p', +b.getAttribute('data-mp')); return; }
+  if ((b = e.target.closest('[data-ml]'))) { var k = +b.getAttribute('data-ml'), l = MY.levels(ST, id).slice(), i = l.indexOf(k); if (i >= 0) { if (l.length === 1) { toast('Garder au moins un palier'); return; } l.splice(i, 1); } else l.push(k); requal(id, 'lv', l); return; }
+  if ((b = e.target.closest('[data-mtrm]'))) { var t = b.getAttribute('data-mtrm'); requal(id, 't', (MY.get(ST, id).t || []).filter(function (x) { return x !== t; })); return; }
+  if ((b = e.target.closest('[data-mtadd]'))) { var v = b.getAttribute('data-mtadd') || ($('m-tag') || {}).value; addTag(id, v); return; }
+  if ((b = e.target.closest('[data-mrs]'))) { var f = b.getAttribute('data-mrs'); MY.reset(ST, id, f === '*' ? null : f); save(); renderMine(n); refreshViews(); toast('Valeur de l’étude rétablie'); }
+});
+$('side-b').addEventListener('keydown', function (e) { if (e.target.id === 'm-tag' && e.key === 'Enter') { e.preventDefault(); addTag(X.sel, e.target.value); } });
+$('side-b').addEventListener('input', function (e) {
+  if (e.target.id !== 'm-note') return; var id = X.sel; MY.set(ST, id, 'note', e.target.value, byId[id].verdict); save();
+  var has = !!MY.get(ST, id).note; $('m-note-k').innerHTML = 'Note' + (has ? MARK : ''); var r = $('m-note-r'); if (r && !!r.firstChild !== has) r.innerHTML = has ? rv('note') : '';
+  clearTimeout(MYUI.nt); MYUI.nt = setTimeout(refreshViews, 400);
+});
+
+/* ───── section «\u00a0Mon portefeuille\u00a0» ───── */
+var VSEQ = { prioritaire: 0, 'a-tester': 1, 'plus-tard': 2, ecarter: 3 };
+function myList() {
+  var p = MY.cur(ST), w = MYUI.q ? norm(MYUI.q).split(/\s+/).filter(Boolean) : [];
+  var list = p.ids.map(function (id) { return byId[id]; }).filter(function (n) {
+    if (!n) return false;
+    if (w.length && !w.every(function (x) { return n.q.indexOf(x) >= 0 || norm((MY.get(ST, n.id).t || []).join(' ') + ' ' + (MY.get(ST, n.id).note || '')).indexOf(x) >= 0; })) return false;
+    if (MYUI.fv && ev(n) !== MYUI.fv) return false;
+    if (MYUI.tag && (MY.get(ST, n.id).t || []).indexOf(MYUI.tag) < 0) return false;
+    return true;
+  });
+  var pk = function (n) { return MY.get(ST, n.id).p || 9; };
+  var cmp = { s1: function (a, b) { return b.s1 - a.s1; }, name: function (a, b) { return a.name.localeCompare(b.name); }, prio: function (a, b) { return pk(a) - pk(b) || b.s1 - a.s1; }, p1: function (a, b) { return a.levels[0].price[0] - b.levels[0].price[0] || b.s1 - a.s1; }, verdict: function (a, b) { return VSEQ[ev(a)] - VSEQ[ev(b)] || b.s1 - a.s1; } }[MYUI.sort] || function (a, b) { return b.s1 - a.s1; };
+  return list.sort(cmp);
+}
+function myGroups(list) {
+  var g = MYUI.group, out = [], map = {};
+  var put = function (k, lbl, ord, n) { if (!map[k]) { map[k] = { k: k, lbl: lbl, ord: ord, list: [] }; out.push(map[k]); } map[k].list.push(n); };
+  var so = {}; D.sectors.forEach(function (s, i) { so[s.id] = i; });
+  list.forEach(function (n) {
+    var o = MY.get(ST, n.id);
+    if (g === 'sector') put(n.sector, SEC[n.sector].n, so[n.sector], n);
+    else if (g === 'prio') put('p' + (o.p || 9), o.p ? 'Priorité P' + o.p : 'Sans priorité', o.p || 9, n);
+    else if (g === 'verdict') { var v = ev(n); put(v, L.verdict[v][0], VSEQ[v], n); }
+    else if (g === 'tag') { if (o.t && o.t.length) o.t.forEach(function (t) { put('t' + t, t, 0, n); }); else put('-', 'Sans étiquette', 1, n); }
+    else put('all', '', 0, n);
+  });
+  return out.sort(function (a, b) { return a.ord - b.ord || a.lbl.localeCompare(b.lbl); });
+}
+function lvDots(id) { var l = MY.levels(ST, id); return '<span class="lvd" aria-label="Paliers retenus : ' + l.join(', ') + '">' + [1, 2, 3, 4, 5].map(function (k) { return '<i' + (l.indexOf(k) >= 0 ? ' class="on"' : '') + '>' + k + '</i>'; }).join('') + '</span>'; }
+function myRow(n, ids) {
+  var o = MY.get(ST, n.id);
+  return '<div class="mrow">' + pfb(n) + '<button type="button" class="lnk mn" data-open="' + n.id + '" data-list="' + ids + '">' + esc(n.name) + '<small>' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + (n.par ? ' · parade' : '') + '</small></button>' +
+    '<span class="mmeta">' + vpill(n) + (o.p ? '<span class="prio p' + o.p + '">P' + o.p + '</span>' : '') + lvDots(n.id) + (o.t || []).map(function (t) { return '<span class="tg">' + esc(t) + '</span>'; }).join('') + (o.note ? '<span class="tg nt" title="' + esc(o.note) + '">note</span>' : '') + '</span>' + sbar(n.s1) + '</div>';
+}
+function barList(rows, lbl, max) {
+  var m = rows.length ? rows[0][1] : 1;
+  return '<ul class="bl">' + rows.slice(0, max || 8).map(function (r) { return '<li><span class="bn">' + esc(lbl[r[0]] || r[0]) + '</span><span class="g"><b style="width:' + Math.round(r[1] / m * 100) + '%"></b></span><span class="c">' + r[1] + '</span></li>'; }).join('') + '</ul>' + (rows.length > (max || 8) ? '<div class="note">et ' + (rows.length - (max || 8)) + ' autres</div>' : '');
+}
+function cnt5(cells) { return cells.map(function (m) { return '<div><div class="k"><span class="sq" style="background:var(--' + m[3] + ')"></span>' + m[0] + '</div><div class="v big">' + m[1] + '</div><div class="sub">' + m[2] + '</div></div>'; }).join(''); }
+function renderMy() {
+  if (!$('my')) return;
+  var p = MY.cur(ST), S = MY.synth(ST, p.ids, MYCTX), list = myList(), ids = list.map(function (n) { return n.id; }).join(',');
+  $('my-tabs').innerHTML = ST.pfs.map(function (x) { return '<button type="button" data-myt="' + x.id + '" aria-pressed="' + (x.id === ST.cur) + '">' + esc(x.name) + ' <b>' + x.ids.length + '</b></button>'; }).join('');
+  $('my-del').textContent = MYUI.delArm ? 'Confirmer la suppression' : 'Supprimer';
+  $('my-del').classList.toggle('danger', !!MYUI.delArm);
+  $('my-ren-row').classList.toggle('hide', !MYUI.renaming);
+  if (MYUI.renaming && document.activeElement !== $('my-name')) { $('my-name').value = p.name; }
+  var k = S.n || 1;
+  $('my-c').innerHTML = cnt5([
+    ['Niches retenues', S.n, 'dans «\u00a0' + esc(p.name) + '\u00a0»', 'accent'],
+    ['Secteurs couverts', S.nSec + ' / ' + D.sectors.length, S.missing.length ? S.missing.length + ' secteurs absents' : 'tous les secteurs', 'sent'],
+    ['Prioritaires', S.vc.prioritaire, (ST.mode === 'mine' ? 'mes verdicts' : 'mes verdicts') + ' · P1 ' + S.pc[1] + ' · P2 ' + S.pc[2] + ' · P3 ' + S.pc[3], 'int'],
+    ['Avec parade', S.n ? Math.round(S.par / k * 100) + ' %' : '–', S.par + ' niche' + (S.par > 1 ? 's' : '') + ' à faible propension', 'wait'],
+    ['Propension moyenne', S.n ? f1(S.wtp) : '–', S.n ? 'effective avec parades ' + f1(S.wEff) + ' · score ' + f1(S.s1) : 'sur 5', 'accent']
+  ]);
+  /* liste */
+  var tags = MY.allTags(ST);
+  var tsel = $('my-tag'); var tv = MYUI.tag; tsel.innerHTML = '<option value="">Toutes</option>' + tags.map(function (t) { return '<option value="' + esc(t) + '"' + (t === tv ? ' selected' : '') + '>' + esc(t) + '</option>'; }).join('');
+  if (tv && tags.indexOf(tv) < 0) MYUI.tag = '';
+  $('my-cnt').textContent = list.length + (list.length !== S.n ? ' / ' + S.n : '');
+  var h = '';
+  if (!S.n) h = '<div class="empty">Aucune niche retenue dans «\u00a0' + esc(p.name) + '\u00a0». Ajouter avec le bouton + d’une ligne de l’explorateur, la touche P dans une fiche, ou copier un portefeuille de l’étude plus bas.</div>';
+  else if (!list.length) h = '<div class="empty">Aucune niche ne correspond. Effacer la recherche ou le filtre.</div>';
+  else myGroups(list).forEach(function (g) { if (g.lbl) h += '<div class="mgrp"><span>' + esc(g.lbl) + '</span><b>' + g.list.length + '</b><span class="act"><button type="button" class="btn sm ghost" data-pfset="' + g.list.map(function (n) { return n.id; }).join('|') + '" aria-pressed="true">Retirer les ' + g.list.length + ' niches</button></span></div>'; h += g.list.map(function (n) { return myRow(n, ids); }).join(''); });
+  $('my-list').innerHTML = h;
+  /* synthèse */
+  var sx = '';
+  if (S.n) {
+    var secRows = D.sectors.filter(function (s) { return S.sec[s.id]; }).map(function (s) { return [s.n, S.sec[s.id]]; }).sort(function (a, b) { return b[1] - a[1]; });
+    sx += '<div class="panel"><div class="ph"><span class="t">Couverture des secteurs</span><span class="h">' + S.nSec + ' sur ' + D.sectors.length + '</span></div><div class="pb">' + barList(secRows, {}, 17) + (S.missing.length ? '<p class="note">Absents : ' + S.missing.map(function (id) { return esc(SEC[id].n); }).join(', ') + '.</p>' : '') + '</div></div>';
+    sx += '<div class="panel"><div class="ph"><span class="t">Lieux nécessaires</span><span class="h">niches par lieu</span></div><div class="pb">' + barList(S.venues, L.venues, 8) + '</div></div>';
+    sx += '<div class="panel"><div class="ph"><span class="t">Moments et publics</span></div><div class="pb">' + barList(S.moments, L.moments, 7) + '<h4 style="margin-top:14px">Publics</h4>' + barList(S.publics, L.publics, 6) + '</div></div>';
+    $('my-syn').innerHTML = sx;
+    $('my-lv').innerHTML = '<thead><tr><th>Palier</th><th class="num">Niches</th><th class="num">Prix moyen</th><th class="num">Fourchette</th><th>Hôtes à recruter</th><th class="num">Hôtes</th></tr></thead><tbody>' + S.lv.map(function (l) {
+      return '<tr><td style="white-space:nowrap">P' + l.k + ' · ' + esc(E.LEVELS[l.k - 1][1]) + '</td><td class="num">' + l.n + '</td><td class="num">' + (l.n ? Math.round(l.mean) + ' €' : '–') + '</td><td class="num">' + (l.n ? l.lo + ' à ' + l.hi + ' €' : '–') + '</td><td>' + (l.k < 5 ? 'niveau ' + l.hostLevel + ' au moins' : 'référent confirmé') + '</td><td class="num">' + l.hosts + '</td></tr>';
+    }).join('') + '<tr><td colspan="5" style="color:var(--fg-2)">Total · un hôte par palier ouvert et par niche</td><td class="num"><b>' + S.hostsTotal + '</b></td></tr></tbody>';
+    var mh = Object.keys(S.minHosts).sort().map(function (lv) { return S.minHosts[lv] + ' ' + (lv === 'référent' ? 'référent' + (S.minHosts[lv] > 1 ? 's' : '') : 'de niveau ' + lv); }).join(', ');
+    $('my-lv-n').textContent = 'Règle n → n-1 : un palier k est animé par un hôte de niveau k+1 au moins, le palier 5 par un référent. Au minimum, un seul hôte par niche du niveau le plus haut requis : ' + S.n + ' hôtes (' + mh + ').';
+    $('my-mix').innerHTML = S.mixes.length ? S.mixes.map(function (x) { var a = byId[x[1]], b = byId[x[2]], f = E.format([a, b], x[3]); return '<tr><td class="num">' + Math.round(x[0]) + '</td><td><span style="font-family:var(--f-body);font-size:14.5px">' + esc(f.name) + '</span><div class="note" style="margin:0">' + esc(D.families[f.fam]) + ' · ' + esc(f.why[0] || '') + '</div></td><td>' + esc(L.venues[f.venue] || '') + '</td><td class="num">' + f.price + ' €</td><td><button class="btn sm" type="button" data-edmix="' + a.id + '|' + b.id + '">Explorer</button></td></tr>'; }).join('') +
+      S.ed.map(function (x) { return '<tr><td class="num">' + x.m.s + '</td><td><span style="font-family:var(--f-body);font-size:14.5px">' + esc(x.m.name) + '</span><div class="note" style="margin:0">Sélection éditoriale · ' + (x.all ? 'toutes ses niches sont retenues' : 'deux niches retenues sur trois') + '</div></td><td>' + esc(x.m.venue) + '</td><td class="num">' + esc(x.m.price) + '</td><td><button class="btn sm" type="button" data-edmix="' + x.m.n.join('|') + '">Explorer</button></td></tr>'; }).join('')
+      : '<tr><td colspan="5" class="empty">Retenir des niches d’au moins deux secteurs pour voir les mixes possibles.</td></tr>';
+    $('my-mix-h').textContent = S.pairsN + ' paires évaluées · secteurs différents';
+  } else {
+    $('my-syn').innerHTML = '<div class="panel"><div class="empty">La synthèse apparaît dès la première niche retenue.</div></div>';
+    $('my-lv').innerHTML = ''; $('my-lv-n').textContent = ''; $('my-mix').innerHTML = '<tr><td colspan="5" class="empty">Aucune niche retenue.</td></tr>'; $('my-mix-h').textContent = '';
+  }
+  $('my-cmp').innerHTML = '<thead><tr><th>Portefeuille de l’étude</th><th class="num">Recouvrement</th><th>Niches en commun</th><th></th></tr></thead><tbody>' + S.cmp.map(function (c, i) {
+    return '<tr><td><span class="nm" style="font-family:var(--f-display);font-size:15px">' + esc(c.p.n) + '</span><div class="note" style="margin:0">' + (i < 2 ? (i === 0 ? 'Recommandé · cœur' : 'Recommandé · complément') : 'Candidat ' + (i + 1)) + '</div></td><td class="num"><span class="mbar"><span class="g"><b style="width:' + Math.round(c.share * 100) + '%"></b></span>' + c.common.length + ' / ' + c.p.niches.length + '</span></td><td style="font-family:var(--f-body);font-size:14px">' + (c.common.length ? c.common.map(function (id) { return esc(byId[id].name); }).join(', ') : '<span style="color:var(--fg-3)">aucune</span>') + '</td><td style="white-space:nowrap">' + pfSetBtn(c.p.niches, 'ghost') + ' <button type="button" class="btn sm ghost" data-pfcopy="' + c.p.id + '">Copier en portefeuille</button></td></tr>';
+  }).join('') + '</tbody>';
+  ['my-csv', 'my-copy'].forEach(function (b) { $(b).disabled = !S.n; });
+  renderImp();
+}
+$('my').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-myt]'); if (b) { ST.cur = b.getAttribute('data-myt'); MYUI.renaming = false; MYUI.delArm = 0; afterSel(); renderMy(); return; }
+  var g = e.target.closest('[data-myg]'); if (g) { MYUI.group = g.getAttribute('data-myg'); document.querySelectorAll('[data-myg]').forEach(function (x) { x.setAttribute('aria-pressed', x === g); }); renderMy(); }
+});
+$('my-q').addEventListener('input', function (e) { MYUI.q = e.target.value.trim(); clearTimeout(MYUI.qt); MYUI.qt = setTimeout(renderMy, 90); });
+$('my-sort').addEventListener('change', function (e) { MYUI.sort = e.target.value; renderMy(); });
+$('my-fv').addEventListener('change', function (e) { MYUI.fv = e.target.value; renderMy(); });
+$('my-tag').addEventListener('change', function (e) { MYUI.tag = e.target.value; renderMy(); });
+$('my-new').addEventListener('click', function () { var p = MY.create(ST); if (!p) { toast('Quarante portefeuilles au plus'); return; } MYUI.renaming = true; afterSel(); renderMy(); $('my-name').value = p.name; $('my-name').focus(); $('my-name').select(); toast('Portefeuille créé'); });
+$('my-dup').addEventListener('click', function () { var p = MY.duplicate(ST, ST.cur); if (!p) { toast('Quarante portefeuilles au plus'); return; } afterSel(); renderMy(); toast('«\u00a0' + p.name + '\u00a0» créé'); });
+$('my-ren').addEventListener('click', function () { MYUI.renaming = !MYUI.renaming; renderMy(); if (MYUI.renaming) { $('my-name').value = MY.cur(ST).name; $('my-name').focus(); $('my-name').select(); } });
+function commitName() { var v = $('my-name').value; if (MY.rename(ST, ST.cur, v)) { save(); toast('Portefeuille renommé'); } MYUI.renaming = false; renderMy(); paintPf(); }
+$('my-name-ok').addEventListener('click', commitName);
+$('my-name').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); commitName(); } else if (e.key === 'Escape') { e.stopPropagation(); MYUI.renaming = false; renderMy(); $('my-ren').focus(); } });
+$('my-del').addEventListener('click', function () {
+  if (!MYUI.delArm) { MYUI.delArm = setTimeout(function () { MYUI.delArm = 0; renderMy(); }, 4000); renderMy(); return; }
+  clearTimeout(MYUI.delArm); MYUI.delArm = 0; var nm = MY.cur(ST).name; MY.remove(ST, ST.cur); MYUI.renaming = false; afterSel(); renderMy(); toast('«\u00a0' + nm + '\u00a0» supprimé');
+});
+
+/* ───── exports et import ───── */
+function csvCur() { return MY.csv(ST, ST.cur, MYCTX); }
+$('my-csv').addEventListener('click', function () { download('portefeuille-' + MY.slug(MY.cur(ST).name) + '.csv', csvCur()); toast(MY.cur(ST).ids.length + ' niches exportées'); });
+$('my-json').addEventListener('click', function () { download('mes-portefeuilles-' + new Date().toISOString().slice(0, 10) + '.json', MY.json(ST, MYCTX)); toast(ST.pfs.length + ' portefeuille' + (ST.pfs.length > 1 ? 's' : '') + ' exporté' + (ST.pfs.length > 1 ? 's' : '')); });
+$('my-base').addEventListener('click', function () { download('niches-base-complete.csv', MY.csvBase(ST, MYCTX)); toast(N.length + ' niches exportées avec mes requalifications'); });
+$('my-copy').addEventListener('click', function () {
+  var t = csvCur(), n = MY.cur(ST).ids.length;
+  try { navigator.clipboard.writeText(t.replace(/^﻿/, '')).then(function () { toast('CSV copié · ' + n + ' lignes'); }, function () { toast('Copie refusée ici · utiliser Exporter CSV'); }); }
+  catch (e) { toast('Copie indisponible ici · utiliser Exporter CSV'); }
+});
+function readFile(f) {
+  if (!f) return; if (f.size > 2e6) { MYUI.imp = { ok: false, err: 'Fichier trop lourd (2 Mo au plus)' }; renderImp(); return; }
+  var done = function (txt) { var r = MY.parseImport(txt, KNOWN); r.file = f.name; MYUI.imp = r; MYUI.repArm = 0; renderImp(); var b = $('my-prev').querySelector('button'); if (b) b.focus(); };
+  if (f.text) f.text().then(done, function () { MYUI.imp = { ok: false, err: 'Lecture impossible' }; renderImp(); });
+  else { var fr = new FileReader(); fr.onload = function () { done(fr.result); }; fr.readAsText(f); }
+}
+function renderImp() {
+  var r = MYUI.imp, el = $('my-prev'); if (!r) { el.innerHTML = ''; return; }
+  if (!r.ok) { el.innerHTML = '<div class="callout risk"><div class="ct">Import impossible</div><div class="prose"><p>' + esc(r.err) + '</p></div><button type="button" class="btn sm ghost" data-imp="cancel">Fermer</button></div>'; return; }
+  var s = r.stats;
+  el.innerHTML = '<div class="callout"><div class="ct">Aperçu · ' + esc(r.file || 'fichier') + '</div><ul class="whys">' + (s.pfs.length ? s.pfs.map(function (p) { return '<li>' + esc(p[0]) + ' · ' + p[1] + ' niche' + (p[1] > 1 ? 's' : '') + '</li>'; }).join('') : '<li>Aucun portefeuille</li>') + '<li>' + s.ov + ' niche' + (s.ov > 1 ? 's' : '') + ' requalifiée' + (s.ov > 1 ? 's' : '') + '</li>' + (s.unknown ? '<li style="color:var(--wait)">' + s.unknown + ' identifiant' + (s.unknown > 1 ? 's' : '') + ' inconnu' + (s.unknown > 1 ? 's' : '') + ', ignoré' + (s.unknown > 1 ? 's' : '') + '</li>' : '') + '</ul>' +
+    '<p class="note">Fusionner : ajoute les portefeuilles et les niches, les valeurs importées priment, les étiquettes s’additionnent. Remplacer : efface l’état actuel.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><button type="button" class="btn primary sm" data-imp="merge">Fusionner</button><button type="button" class="btn sm' + (MYUI.repArm ? ' danger' : '') + '" data-imp="replace">' + (MYUI.repArm ? 'Confirmer le remplacement' : 'Remplacer') + '</button><button type="button" class="btn sm ghost" data-imp="cancel">Annuler</button></div></div>';
+}
+$('my-prev').addEventListener('click', function (e) {
+  var b = e.target.closest('[data-imp]'); if (!b) return; var a = b.getAttribute('data-imp'), r = MYUI.imp;
+  if (a === 'cancel') { MYUI.imp = null; renderImp(); return; }
+  if (a === 'replace' && !MYUI.repArm) { MYUI.repArm = setTimeout(function () { MYUI.repArm = 0; renderImp(); }, 4000); renderImp(); return; }
+  clearTimeout(MYUI.repArm); MYUI.repArm = 0;
+  ST = a === 'merge' ? MY.merge(ST, r.state) : MY.replace(ST, r.state);
+  MYUI.imp = null; paintMode(); afterSel(); refreshViews(); toast(a === 'merge' ? 'Import fusionné' : 'État remplacé par l’import');
+});
+$('my-file-b').addEventListener('click', function () { $('my-file').click(); });
+$('my-file').addEventListener('change', function (e) { readFile(e.target.files[0]); e.target.value = ''; });
+(function () {
+  var z = $('my-drop');
+  ['dragenter', 'dragover'].forEach(function (t) { z.addEventListener(t, function (e) { e.preventDefault(); z.classList.add('on'); }); });
+  ['dragleave', 'drop'].forEach(function (t) { z.addEventListener(t, function (e) { e.preventDefault(); z.classList.remove('on'); }); });
+  z.addEventListener('drop', function (e) { var f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]; readFile(f); });
+})();
+
+/* ───── persistance : capacité db de claude.ai, sinon localStorage ───── */
+function loadLocal() { try { var s = window.localStorage.getItem(MY.KEY); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+function saveLocal(str) { try { window.localStorage.setItem(MY.KEY, str); return true; } catch (e) { return false; } }
+function save() { clearTimeout(SYNC.timer); SYNC.timer = setTimeout(flush, 800); if (SYNC.mode === 'connecting') SYNC.early = true; }
+function flush() {
+  SYNC.timer = 0;
+  var doc = MY.compact(ST), str = JSON.stringify(doc), okL = saveLocal(str);
+  if (SYNC.mode !== 'db') { setSync(okL ? 'wait' : 'no', okL ? 'Enregistré sur cet appareil' : 'Non enregistré', okL ? hhmm() : 'stockage indisponible'); return; }
+  if (str === SYNC.last) return;
+  if (SYNC.writing) { SYNC.pending = true; return; }
+  SYNC.writing = true; setSync('idle', 'Enregistrement', '…');
+  doc.at = Date.now();
+  SYNC.ref.set(doc).then(function () { SYNC.last = str; setSync('int', 'Enregistré', hhmm()); }, function (err) {
+    var c = err && err.code;
+    if (c === 'revoked' || c === 'not_granted' || c === 'capability_disabled' || c === 'capability_removed' || c === 'invalid_argument' || c === 'quota_exceeded') { SYNC.mode = 'local'; if (SYNC.unsub) { try { SYNC.unsub(); } catch (e) {} } }
+    setSync('wait', 'Enregistré sur cet appareil', 'compte indisponible');
+  }).then(function () { SYNC.writing = false; if (SYNC.pending) { SYNC.pending = false; flush(); } });
+}
+function applyState(next) { ST = next; paintMode(); curSet(); paintPf(); refreshViews(); }
+function hostProbe(i) {
+  if (window.claude && typeof window.claude.use === 'function') { connectHost(); return; }
+  if (i < 12) setTimeout(function () { hostProbe(i + 1); }, 250);
+}
+function connectHost() {
+  SYNC.mode = 'connecting'; setSync('idle', 'Connexion au compte', '…');
+  var to = setTimeout(function () { to = 0; SYNC.mode = 'local'; setSync('wait', 'Enregistré sur cet appareil', 'compte injoignable'); if (SYNC.early) flush(); }, 10000);
+  var fail = function (msg) { if (!to) return; clearTimeout(to); to = 0; SYNC.mode = 'local'; setSync('wait', 'Enregistré sur cet appareil', msg); if (SYNC.early) flush(); };
+  var cl = window.claude;
+  Promise.all([cl.use('db'), cl.use('user')]).then(function (r) {
+    var db = r[0], user = r[1];
+    if (!db || !user) { fail('hors compte'); return null; }
+    return user.id().then(function (id) {
+      if (!id) { fail('hors compte'); return null; }
+      SYNC.ref = db.collection('data/users/' + id).doc('portefeuilles');
+      return SYNC.ref.get();
+    });
+  }).then(function (snap) {
+    if (!snap || !to) return;
+    clearTimeout(to); to = 0;
+    var remote = snap.exists ? MY.normalize(snap.data(), KNOWN) : null;
+    SYNC.mode = 'db';
+    if (remote) {
+      SYNC.last = MY.key(remote);
+      /* le compte fait foi ; un geste fait avant son arrivée est fusionné puis écrit */
+      if (SYNC.early) { applyState(MY.merge(remote, ST)); flush(); } else applyState(remote);
+      setSync('int', 'Synchronisé', hhmm());
+    } else if (!MY.isEmpty(ST)) { flush(); }
+    else setSync('int', 'Compte relié', hhmm());
+    SYNC.early = false;
+    /* un seul abonnement, pour les changements venus d'un autre appareil */
+    SYNC.unsub = SYNC.ref.onSnapshot(function (s) {
+      if (!s || !s.exists || (s.metadata && s.metadata.hasPendingWrites)) return;
+      if (SYNC.writing || SYNC.timer) return;
+      var st = MY.normalize(s.data(), KNOWN), k = MY.key(st);
+      if (k === SYNC.last || k === MY.key(ST)) { SYNC.last = k; return; }
+      SYNC.last = k; applyState(st); setSync('int', 'Synchronisé', hhmm());
+    }, function () { /* abonnement terminé : l'état local reste valable */ });
+  }).catch(function () { fail('compte indisponible'); });
+}
+function pfInit() {
+  var raw = loadLocal();
+  if (raw) ST = MY.normalize(raw, KNOWN);
+  curSet(); paintMode();
+  setSync('wait', raw ? 'Chargé' : 'Rien à enregistrer', 'sur cet appareil');
+  var c = MY.cur(ST).ids.length; $('pf-jump-n').textContent = c;
+  hostProbe(0);
+}
+
 function toast(t) { $('toast-t').textContent = t; $('toast').classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { $('toast').classList.remove('on'); }, 1800); }
 
 /* ───── en-tête et synthèse ───── */
@@ -976,7 +1656,7 @@ $('levels-t').innerHTML = E.LEVELS.map(function (l) { return '<tr><td class="num
   $('harm-t').innerHTML = '<thead><tr><th>Secteur</th>' + hk.map(function (k) { return '<th class="num">' + nm[k] + '</th>'; }).join('') + '</tr></thead><tbody>' + D.sectors.map(function (s) { return '<tr><td>' + esc(s.n) + '</td>' + hk.map(function (k) { var v = D.harm.shift[k][s.id] || 0; return '<td class="num" style="color:' + (Math.abs(v) >= 0.3 ? 'var(--wait)' : 'var(--fg-2)') + '">' + sg(Math.round(v * 100) / 100) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody>';
 })();
 /* ───── explorateur ───── */
-var X = { q: '', view: 'tree', verdict: {}, wtp: {}, sec: '', fmt: '', pub: '', ven: '', mom: '', low: '', open: {}, sort: { k: 's1', d: -1 }, order: [], sel: null };
+var X = { q: '', view: 'tree', verdict: {}, wtp: {}, mine: {}, sec: '', fmt: '', pub: '', ven: '', mom: '', low: '', open: {}, sort: { k: 's1', d: -1 }, order: [], sel: null };
 var FDEF = [['sec', 'Secteur', D.sectors.map(function (s) { return [s.id, s.n]; })], ['fmt', 'Format', Object.keys(L.format).map(function (k) { return [k, L.format[k]]; })], ['pub', 'Public', Object.keys(L.publics).map(function (k) { return [k, L.publics[k]]; })], ['ven', 'Lieu', Object.keys(L.venues).map(function (k) { return [k, L.venues[k]]; })], ['mom', 'Moment', Object.keys(L.moments).map(function (k) { return [k, L.moments[k]]; })], ['low', 'Parades', [['low', 'Faible propension avec parade'], ['no', 'Sans parade']]]];
 $('filters').innerHTML = FDEF.map(function (f) { return '<label>' + f[1] + '<select data-f="' + f[0] + '"><option value="">Tous</option>' + f[2].map(function (o) { return '<option value="' + o[0] + '">' + esc(o[1]) + '</option>'; }).join('') + '</select></label>'; }).join('');
 function chipRow(id, defs, key) {
@@ -985,7 +1665,7 @@ function chipRow(id, defs, key) {
 chipRow('f-verdict', Object.keys(L.verdict).map(function (k) { return [k, L.verdict[k][0], L.verdict[k][1]]; }), 'verdict');
 chipRow('f-wtp', [['lo', '0 à 2 · faible', 'no'], ['mid', '3 · moyenne', 'wait'], ['hi', '4 et 5 · forte', 'int']], 'wtp');
 var wb = function (w) { return w <= 2 ? 'lo' : w === 3 ? 'mid' : 'hi'; };
-function active() { return X.q || X.sec || X.fmt || X.pub || X.ven || X.mom || X.low || Object.keys(X.verdict).length || Object.keys(X.wtp).length; }
+function active() { return X.q || X.sec || X.fmt || X.pub || X.ven || X.mom || X.low || Object.keys(X.verdict).length || Object.keys(X.wtp).length || Object.keys(X.mine).length; }
 function match(n, skip) {
   if (X.q) { var ws = X.qw; for (var i = 0; i < ws.length; i++) if (n.q.indexOf(ws[i]) < 0) return false; }
   if (X.sec && n.sector !== X.sec) return false;
@@ -994,14 +1674,16 @@ function match(n, skip) {
   if (X.ven && n.venues.indexOf(X.ven) < 0) return false;
   if (X.mom && n.moments.indexOf(X.mom) < 0) return false;
   if (X.low === 'low' && !n.par) return false; if (X.low === 'no' && n.par) return false;
-  if (skip !== 'verdict' && Object.keys(X.verdict).length && !X.verdict[n.verdict]) return false;
+  if (skip !== 'verdict' && Object.keys(X.verdict).length && !X.verdict[ev(n)]) return false;
+  if (skip !== 'mine' && Object.keys(X.mine).length && !((X.mine['in'] && IN[n.id]) || (X.mine.mod && ST.ov[n.id]))) return false;
   if (skip !== 'wtp' && Object.keys(X.wtp).length && !X.wtp[wb(n.scores.wtp)]) return false;
   return true;
 }
 function counts() {
-  var cv = {}, cw = {};
-  N.forEach(function (n) { if (match(n, 'verdict')) cv[n.verdict] = (cv[n.verdict] || 0) + 1; if (match(n, 'wtp')) { var b = wb(n.scores.wtp); cw[b] = (cw[b] || 0) + 1; } });
-  document.querySelectorAll('[data-c]').forEach(function (b) { var k = b.getAttribute('data-c'); b.textContent = k.indexOf('verdict') === 0 ? (cv[k.slice(7)] || 0) : (cw[k.slice(3)] || 0); });
+  var cv = {}, cw = {}, cm = { 'in': 0, mod: 0 };
+  N.forEach(function (n) { if (match(n, 'verdict')) { var v = ev(n); cv[v] = (cv[v] || 0) + 1; } if (match(n, 'wtp')) { var b = wb(n.scores.wtp); cw[b] = (cw[b] || 0) + 1; } if (match(n, 'mine')) { if (IN[n.id]) cm['in']++; if (ST.ov[n.id]) cm.mod++; } });
+  document.querySelectorAll('[data-c]').forEach(function (b) { var k = b.getAttribute('data-c'); b.textContent = k.indexOf('verdict') === 0 ? (cv[k.slice(7)] || 0) : k.indexOf('mine') === 0 ? cm[k.slice(4)] : (cw[k.slice(3)] || 0); });
+  paintAddAll();
 }
 function visible() { var o = []; for (var i = 0; i < N.length; i++) if (match(N[i])) o.push(N[i]); return o; }
 var VIS = [];
@@ -1021,19 +1703,19 @@ function renderTree() {
   D.sectors.forEach(function (s) {
     var a = bySec[s.id]; if (!a) return;
     var o = isOpen(s.id);
-    h.push('<button class="trow l0" type="button" data-t="' + s.id + '" aria-expanded="' + o + '"><span class="tri">▶</span><span class="glyph" aria-hidden="true">' + s.g + '</span><span class="sname">' + esc(s.n) + '</span><span class="tc">' + a.length + ' niches</span><span class="tc vv">' + sbar(mean(a)) + '</span></button>');
+    h.push('<div class="trw"><button class="trow l0" type="button" data-t="' + s.id + '" aria-expanded="' + o + '"><span class="tri">▶</span><span class="glyph" aria-hidden="true">' + s.g + '</span><span class="sname">' + esc(s.n) + '</span><span class="tc">' + a.length + ' niches</span><span class="tc vv">' + sbar(mean(a)) + '</span></button>' + grpBtn('x:' + s.id, a, s.n) + '</div>');
     if (!o) return;
     D.cats.forEach(function (c) {
       if (c.sec !== s.id) return; var ac = byCat[c.id]; if (!ac) return; var oc = isOpen(c.id);
-      h.push('<button class="trow l1" type="button" data-t="' + c.id + '" aria-expanded="' + oc + '"><span class="tri">▶</span><span>' + esc(c.name) + '</span><span class="tc">' + ac.length + '</span><span class="tc vv">' + sbar(mean(ac)) + '</span></button>');
+      h.push('<div class="trw"><button class="trow l1" type="button" data-t="' + c.id + '" aria-expanded="' + oc + '"><span class="tri">▶</span><span>' + esc(c.name) + '</span><span class="tc">' + ac.length + '</span><span class="tc vv">' + sbar(mean(ac)) + '</span></button>' + grpBtn('c:' + c.id, ac, c.name) + '</div>');
       if (!oc) return;
       D.subs.forEach(function (sc) {
         if (sc.cat !== c.id) return; var as = bySub[sc.id]; if (!as) return; var os = isOpen(sc.id);
-        h.push('<button class="trow l2" type="button" data-t="' + sc.id + '" aria-expanded="' + os + '"><span class="tri">▶</span><span>' + esc(sc.name) + '</span><span class="tc">' + as.length + '</span><span class="tc vv">' + sbar(mean(as)) + '</span></button>');
+        h.push('<div class="trw"><button class="trow l2" type="button" data-t="' + sc.id + '" aria-expanded="' + os + '"><span class="tri">▶</span><span>' + esc(sc.name) + '</span><span class="tc">' + as.length + '</span><span class="tc vv">' + sbar(mean(as)) + '</span></button>' + grpBtn('s:' + sc.id, as, sc.name) + '</div>');
         if (!os) return;
         as.slice().sort(function (x, y) { return y.s1 - x.s1; }).forEach(function (n) {
           order.push(n.id);
-          h.push('<button class="nrow' + (X.sel === n.id ? ' sel' : '') + '" type="button" data-id="' + n.id + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E" title="Faible propension, parade recommandée">parade</span>' : '') + '</span><span class="ff">' + esc(L.format[n.levels[0].format]) + ' · ' + n.levels[0].price[0] + ' à ' + n.levels[0].price[1] + ' € · ' + esc(lbls(n.venues.slice(0, 2), 'venues')) + '</span><span class="vv">' + pill(n.verdict) + '</span>' + sbar(n.s1) + '</button>');
+          h.push('<div class="nrow' + (X.sel === n.id ? ' sel' : '') + '" data-row="' + n.id + '">' + pfb(n) + '<button class="nopen" type="button" data-id="' + n.id + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E" title="Faible propension, parade recommandée">parade</span>' : '') + '</span><span class="ff">' + esc(L.format[n.levels[0].format]) + ' · ' + n.levels[0].price[0] + ' à ' + n.levels[0].price[1] + ' € · ' + esc(lbls(n.venues.slice(0, 2), 'venues')) + '</span><span class="vv">' + vpill(n) + '</span>' + sbar(n.s1) + '</button></div>');
         });
       });
     });
@@ -1041,17 +1723,18 @@ function renderTree() {
   X.order = order.length ? order : VIS.slice().sort(function (a, b) { return b.s1 - a.s1; }).map(function (n) { return n.id; });
   $('xbody').innerHTML = h.length ? '<div class="tree" role="tree">' + h.join('') + '</div>' : '<div class="empty">Aucune niche ne correspond. Effacer un filtre ou élargir la recherche.</div>';
 }
+function grpBtn(key, list, name) { var on = list.every(function (n) { return IN[n.id]; }); return '<button type="button" class="btn sm ghost pfg" data-pfgrp="' + key + '" aria-pressed="' + on + '" aria-label="Retenir les ' + list.length + ' niches de «\u00a0' + esc(name) + '\u00a0» dans mon portefeuille">' + (on ? 'Retirer' : 'Ajouter') + '</button>'; }
 /* tableau virtualisé */
 var COLS = [['r', '#'], ['name', 'Niche'], ['sector', 'Secteur'], ['verdict', 'Verdict'], ['demand', 'Dem.'], ['wtp', 'Prop.'], ['format', 'Fmt'], ['supply', 'Viv.'], ['s1', 'Score'], ['p1', 'Prix 1']];
 var VORD = { prioritaire: 0, 'a-tester': 1, 'plus-tard': 2, ecarter: 3 };
-function sortKey(n, k) { switch (k) { case 'r': case 's1': return n.s1; case 'name': return n.name; case 'sector': return SEC[n.sector].n + ' ' + n.category; case 'verdict': return -VORD[n.verdict]; case 'p1': return n.levels[0].price[0]; default: return n.scores[k]; } }
+function sortKey(n, k) { switch (k) { case 'r': case 's1': return n.s1; case 'name': return n.name; case 'sector': return SEC[n.sector].n + ' ' + n.category; case 'verdict': return -VORD[ev(n)]; case 'p1': return n.levels[0].price[0]; default: return n.scores[k]; } }
 var ROWS = [], RH = 44;
 function renderTable() {
   var k = X.sort.k, d = X.sort.d;
   ROWS = VIS.slice().sort(function (a, b) { var x = sortKey(a, k), y = sortKey(b, k); if (typeof x === 'string') return d * x.localeCompare(y); return d * (x - y) || b.s1 - a.s1; });
   X.order = ROWS.map(function (n) { return n.id; });
   RH = window.innerWidth <= 1040 ? 64 : 44;
-  $('xbody').innerHTML = '<div class="vt"><div class="msort"><label>Trier par <select id="x-sort">' + COLS.filter(function (c) { return c[0] !== 'r'; }).map(function (c) { return '<option value="' + c[0] + '"' + (X.sort.k === c[0] ? ' selected' : '') + '>' + ({ name: 'Nom', sector: 'Secteur', verdict: 'Verdict', demand: 'Demande', wtp: 'Propension', format: 'Format', supply: 'Vivier', s1: 'Score', p1: 'Prix palier 1' }[c[0]]) + '</option>'; }).join('') + '</select></label></div><div class="vhead" role="row">' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
+  $('xbody').innerHTML = '<div class="vt"><div class="msort"><label>Trier par <select id="x-sort">' + COLS.filter(function (c) { return c[0] !== 'r'; }).map(function (c) { return '<option value="' + c[0] + '"' + (X.sort.k === c[0] ? ' selected' : '') + '>' + ({ name: 'Nom', sector: 'Secteur', verdict: 'Verdict', demand: 'Demande', wtp: 'Propension', format: 'Format', supply: 'Vivier', s1: 'Score', p1: 'Prix palier 1' }[c[0]]) + '</option>'; }).join('') + '</select></label></div><div class="vhead" role="row"><div role="columnheader"><span class="sr">Portefeuille</span></div>' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
     (ROWS.length ? '<div class="vbody" id="vbody" tabindex="0" aria-label="Tableau des niches"><div class="vspace" id="vspace" style="height:' + ROWS.length * RH + 'px"></div></div>' : '<div class="empty">Aucune niche ne correspond. Effacer un filtre ou élargir la recherche.</div>') + '</div>';
   if (ROWS.length) { $('vbody').addEventListener('scroll', paintRows, { passive: true }); paintRows(); }
   $('x-sort').addEventListener('change', function (e) { var k2 = e.target.value; X.sort.k = k2; X.sort.d = (k2 === 'name' || k2 === 'sector') ? 1 : -1; renderTable(); });
@@ -1061,7 +1744,7 @@ function paintRows() {
   var st = b.scrollTop, h = b.clientHeight || 560, a = Math.max(0, Math.floor(st / RH) - 8), z = Math.min(ROWS.length, Math.ceil((st + h) / RH) + 8), o = [];
   for (var i = a; i < z; i++) {
     var n = ROWS[i];
-    o.push('<button type="button" class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-id="' + n.id + '" style="top:' + i * RH + 'px"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + pill(n.verdict) + '</span><span class="c xc">' + fs1(n.scores.demand) + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + fs1(n.scores.format) + '</span><span class="c xc">' + fs1(n.scores.supply) + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button>');
+    o.push('<div class="vrow' + (X.sel === n.id ? ' sel' : '') + '" data-row="' + n.id + '" style="top:' + i * RH + 'px">' + pfb(n) + '<button type="button" class="vopen" data-id="' + n.id + '"><span class="rk">' + n.r1 + '</span><span class="nm">' + esc(n.name) + '</span><span class="sc2">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name || '') + '</span><span class="vd">' + vpill(n) + '</span><span class="c xc">' + fs1(n.scores.demand) + '</span><span class="c xc">' + n.scores.wtp + (n.par ? '<span class="up" title="parade"> +</span>' : '') + '</span><span class="c xc">' + fs1(n.scores.format) + '</span><span class="c xc">' + fs1(n.scores.supply) + '</span><span class="scr">' + sbar(n.s1) + '</span><span class="c xc">' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + '</span></button></div>');
   }
   $('vspace').innerHTML = o.join('');
 }
@@ -1082,13 +1765,16 @@ $('x-reset').addEventListener('click', function () {
 });
 var hostDl = null; if (window.claude && typeof window.claude.use === 'function') { window.claude.use('downloads').then(function (d) { hostDl = d; }, function () {}); }
 function download(name, text) {
-  if (window.claude && typeof window.claude.use === 'function') { if (!hostDl) { toast('Téléchargement indisponible ici'); return; } hostDl.save({ filename: name, data: text }).catch(function () {}); return; }
-  var b = new Blob([text], { type: 'text/csv;charset=utf-8' }), u = URL.createObjectURL(b), a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 1000);
+  if (window.claude && typeof window.claude.use === 'function') {
+    (hostDl ? Promise.resolve(hostDl) : window.claude.use('downloads')).then(function (d) { if (!d) { toast('Téléchargement indisponible ici · utiliser Copier'); return; } hostDl = d; return d.save({ filename: name, data: text }); }).catch(function () { toast('Téléchargement refusé'); });
+    return;
+  }
+  var b = new Blob([text], { type: (/\.json$/.test(name) ? 'application/json' : 'text/csv') + ';charset=utf-8' }), u = URL.createObjectURL(b), a = document.createElement('a'); a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 1000);
 }
 $('x-csv').addEventListener('click', function () {
   var q = function (s) { return '"' + String(s).replace(/"/g, '""') + '"'; };
-  var rows = [['id', 'niche', 'secteur', 'categorie', 'sous_categorie', 'score', 'score_parades', 'verdict', 'propension', 'parades', 'prix_p1', 'prix_p2', 'prix_p3', 'prix_p4', 'prix_p5'].join(';')];
-  VIS.forEach(function (n) { rows.push([n.id, q(n.name), q(SEC[n.sector].n), q((CAT[n.category] || {}).name), q((SUB[n.subcategory] || {}).name), f1(n.s0), f1(n.s1), n.verdict, n.scores.wtp, q((n.par || []).join(' ')), n.levels.map(function (l) { return l.price.join('-'); }).join(';')].join(';')); });
+  var rows = [['id', 'niche', 'secteur', 'categorie', 'sous_categorie', 'score', 'score_parades', 'verdict', 'mon_verdict', 'propension', 'parades', 'prix_p1', 'prix_p2', 'prix_p3', 'prix_p4', 'prix_p5'].join(';')];
+  VIS.forEach(function (n) { rows.push([n.id, q(n.name), q(SEC[n.sector].n), q((CAT[n.category] || {}).name), q((SUB[n.subcategory] || {}).name), f1(n.s0), f1(n.s1), n.verdict, MY.verdict(ST, n), n.scores.wtp, q((n.par || []).join(' ')), n.levels.map(function (l) { return l.price.join('-'); }).join(';')].join(';')); });
   download('niches-v2.csv', '﻿' + rows.join('\n')); toast(VIS.length + ' niches exportées');
 });
 
@@ -1105,11 +1791,11 @@ function openNiche(id, list) {
   if (!$('side').classList.contains('on')) PANEL.last = document.activeElement;
   PANEL.list = list || PANEL.list; X.sel = id;
   document.querySelectorAll('.nrow.sel,.vrow.sel').forEach(function (r) { r.classList.remove('sel'); });
-  document.querySelectorAll('[data-id="' + id + '"]').forEach(function (r) { if (r.classList.contains('nrow') || r.classList.contains('vrow')) r.classList.add('sel'); });
+  document.querySelectorAll('[data-row="' + id + '"]').forEach(function (r) { r.classList.add('sel'); });
   $('side-path').textContent = SEC[n.sector].n + ' / ' + ((CAT[n.category] || {}).name || '') + ' / ' + ((SUB[n.subcategory] || {}).name || '');
   $('side-title').textContent = n.name;
-  var h = '<div style="display:flex;gap:6px;flex-wrap:wrap">' + pill(n.verdict) + '<span class="pill p-acc"><i></i>Score ' + f1(n.s0) + ' · rang ' + n.r0 + '</span>' + (n.par ? '<span class="pill p-wait"><i></i>Avec parades ' + f1(n.s1) + ' · rang ' + n.r1 + '</span>' : '') + '<span class="tag t-' + (n.confidence === 'source' ? 'S' : n.confidence === 'estimation' ? 'E' : 'H') + '">' + n.confidence + '</span></div>';
-  h += '<p class="desc">' + esc(n.desc) + '</p>';
+  var h = '<div style="display:flex;gap:6px;flex-wrap:wrap" id="side-pills"></div>';
+  h += '<p class="desc">' + esc(n.desc) + '</p><div class="mine" id="side-mine"></div>';
   h += '<div class="kv"><div class="w"><div class="k">Public</div><div class="val">' + esc(n.audience) + '</div></div><div class="w"><div class="k">Compétences</div><div class="val">' + esc(n.skills.join(' · ')) + '</div></div>' +
     '<div><div class="k">Lieux</div><div class="val">' + esc(lbls(n.venues, 'venues')) + '</div></div><div><div class="k">Moments</div><div class="val">' + esc(lbls(n.moments, 'moments')) + '</div></div>' +
     '<div><div class="k">Publics</div><div class="val">' + esc(lbls(n.publics, 'publics')) + '</div></div><div><div class="k">Sens et énergie</div><div class="val">' + esc(lbls(n.senses, 'senses')) + ' · ' + esc(L.energy[n.energy]) + '</div></div>' +
@@ -1125,7 +1811,7 @@ function openNiche(id, list) {
   }
   var bp = E.bestPartners(n, N, sOf, 5, {}, function (b) { return b.sector !== n.sector; });
   h += '<h4>Meilleurs mixes avec cette niche</h4><ul class="mini">' + bp.map(function (r) { var f = E.format([n, r.b], r); return '<li><div><div class="mn">' + esc(f.name) + '</div><div class="ms">' + esc(SEC[r.b.sector].n) + ' · ' + f.price + ' € · ' + esc(L.venues[f.venue] || 'lieu à trouver') + ' · score ' + f0(r.s) + '</div></div><button class="btn sm" type="button" data-mix="' + n.id + '|' + r.b.id + '">Explorer</button></li>'; }).join('') + '</ul>';
-  $('side-b').innerHTML = h; $('side-b').scrollTop = 0;
+  $('side-b').innerHTML = h; $('side-b').scrollTop = 0; sidePills(n); renderMine(n);
   $('side').classList.add('on'); $('side').setAttribute('aria-hidden', 'false'); $('veil').classList.add('on');
   $('side-x').focus({ preventScroll: true });
 }
@@ -1140,11 +1826,12 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') { if ($('side').classList.contains('on')) { closeSide(); e.preventDefault(); } return; }
   if (typing) return;
   if (e.key === '/') { e.preventDefault(); $('q').focus(); $('explorer').scrollIntoView(); return; }
+  if ((e.key === 'p' || e.key === 'P') && !e.metaKey && !e.ctrlKey && !e.altKey && $('side').classList.contains('on') && X.sel) { var on = MY.toggle(ST, X.sel); afterSel(); toast((on ? 'Ajoutée à «\u00a0' : 'Retirée de «\u00a0') + MY.cur(ST).name + '\u00a0»'); e.preventDefault(); return; }
   if ((e.key === 'j' || e.key === 'k') && $('side').classList.contains('on') && PANEL.list.length) {
     var i = PANEL.list.indexOf(X.sel), j = e.key === 'j' ? Math.min(PANEL.list.length - 1, i + 1) : Math.max(0, i - 1); if (j !== i && j >= 0) openNiche(PANEL.list[j]); e.preventDefault();
   }
   if (e.key === 'Tab' && $('side').classList.contains('on')) {
-    var f = $('side').querySelectorAll('button,a[href]'); if (!f.length) return; var first = f[0], last = f[f.length - 1];
+    var f = $('side').querySelectorAll('button,a[href],input,textarea,select'); if (!f.length) return; var first = f[0], last = f[f.length - 1];
     if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); } else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
   }
 });
@@ -1209,7 +1896,7 @@ function renderTop() {
   $('top-h').textContent = TM === 's1' ? 'score avec parades · poids actuels' : 'score brut · poids actuels';
   $('topl').innerHTML = list.map(function (n, i) {
     var other = TM === 's1' ? n.r0 : n.r1, d = other - (i + 1);
-    return '<li><span class="rnk">' + (i + 1) + '</span><div><button class="lnk tn" type="button" data-open="' + n.id + '" data-list="' + ids.join(',') + '">' + esc(n.name) + '</button><div class="tm">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name) + ' · ' + esc(L.format[n.levels[0].format]) + '</div></div><div class="rs"><div class="sc">' + f1(n[key]) + '</div><div style="display:flex;gap:6px;justify-content:flex-end;align-items:center">' + pill(n.verdict) + '<span class="dl ' + (d > 0 ? 'down' : d < 0 ? 'up' : 'eq') + '" title="rang dans l’autre mode">' + (TM === 's1' ? 'brut ' : 'parades ') + other + '</span></div></div><div class="ta">' + argue(n) + '</div></li>';
+    return '<li><span class="rnk">' + (i + 1) + '</span><div><button class="lnk tn" type="button" data-open="' + n.id + '" data-list="' + ids.join(',') + '">' + esc(n.name) + '</button><div class="tm">' + esc(SEC[n.sector].n) + ' · ' + esc((CAT[n.category] || {}).name) + ' · ' + esc(L.format[n.levels[0].format]) + '</div></div><div class="rs"><div class="sc">' + f1(n[key]) + '</div><div style="display:flex;gap:6px;justify-content:flex-end;align-items:center">' + vpill(n) + pfb(n) + '<span class="dl ' + (d > 0 ? 'down' : d < 0 ? 'up' : 'eq') + '" title="rang dans l’autre mode">' + (TM === 's1' ? 'brut ' : 'parades ') + other + '</span></div></div><div class="ta">' + argue(n) + '</div></li>';
   }).join('');
 }
 document.querySelectorAll('[data-tm]').forEach(function (b) { b.addEventListener('click', function () { TM = b.getAttribute('data-tm'); document.querySelectorAll('[data-tm]').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderTop(); }); });
@@ -1242,7 +1929,7 @@ function renderAff() {
   var list = D.low.map(function (id) { return byId[id]; }).filter(function (n) { return (!p || n.par.indexOf(p) >= 0) && (!s || n.sector === s); }).sort(function (a, b) { return b.sx - a.sx; });
   var ids = list.map(function (n) { return n.id; }).join(',');
   $('aff-cnt').textContent = list.length;
-  $('aff-t').innerHTML = list.map(function (n) { return '<tr><td><button class="lnk" type="button" data-open="' + n.id + '" data-list="' + ids + '" style="font-family:var(--f-body);font-size:14.5px">' + esc(n.name) + '</button></td><td>' + esc(SEC[n.sector].n) + '</td><td class="num">' + f1(n.sx) + '</td><td class="num">' + n.scores.wtp + '</td><td><div class="ncl">' + n.par.map(function (x) { return '<button type="button" class="nchip" data-sim="' + n.id + '|' + x + '"><span>' + esc(PAR[x].n) + (n.pm ? ' ✎' : '') + '</span></button>'; }).join('') + '</div></td><td style="font-size:11.5px;color:var(--fg-2)">' + (n.prem ? esc(byId[n.prem[0]].name) + ' · ' + n.prem[1] : '') + '</td></tr>'; }).join('') || '<tr><td colspan="6" class="empty">Aucune niche pour ce filtre.</td></tr>';
+  $('aff-t').innerHTML = list.map(function (n) { return '<tr><td><span style="display:flex;gap:8px;align-items:center">' + pfb(n) + '<button class="lnk" type="button" data-open="' + n.id + '" data-list="' + ids + '" style="font-family:var(--f-body);font-size:14.5px">' + esc(n.name) + '</button></span></td><td>' + esc(SEC[n.sector].n) + '</td><td class="num">' + f1(n.sx) + '</td><td class="num">' + n.scores.wtp + '</td><td><div class="ncl">' + n.par.map(function (x) { return '<button type="button" class="nchip" data-sim="' + n.id + '|' + x + '"><span>' + esc(PAR[x].n) + (n.pm ? ' ✎' : '') + '</span></button>'; }).join('') + '</div></td><td style="font-size:11.5px;color:var(--fg-2)">' + (n.prem ? esc(byId[n.prem[0]].name) + ' · ' + n.prem[1] : '') + '</td></tr>'; }).join('') || '<tr><td colspan="6" class="empty">Aucune niche pour ce filtre.</td></tr>';
 }
 $('aff-par').addEventListener('change', renderAff); $('aff-sec').addEventListener('change', renderAff);
 document.addEventListener('click', function (e) {
@@ -1294,7 +1981,7 @@ function mixCard(ns, pr, label) {
   return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(label || D.families[f.fam]) + '</span><span>score ' + f0(pr.s) + ' · adéquation ' + f0(pr.fit) + '</span></div><div class="cn">' + esc(f.name) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
     '<div class="facts f3"><div><div class="k">Jauge</div><div class="v">' + f.group + ' pers.</div></div><div><div class="k">Prix</div><div class="v">' + f.price + ' €</div></div><div><div class="k">Durée</div><div class="v">' + Math.floor(f.total / 60) + ' h ' + (f.total % 60 ? f.total % 60 : '') + '</div></div></div>' +
     '<dl><dt>Quand et où</dt><dd>' + esc(L.venues[f.venue] || 'Lieu à trouver') + ' · ' + esc(L.moments[f.moment] || 'moment à définir') + (pr.publics && pr.publics.length ? ' · ' + esc(lbls(pr.publics, 'publics')) : '') + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + f.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(f.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd><ul class="whys">' + f.why.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') + '</ul></dd></dl>' +
-    '<details><summary>Composantes du score</summary>' + partsHtml(pr.p || {}) + '</details></div></article>';
+    '<details><summary>Composantes du score</summary>' + partsHtml(pr.p || {}) + '</details></div><div class="cft">' + pfSetBtn(ns.map(function (n) { return n.id; })) + '</div></article>';
 }
 function renderSel() {
   $('mt-sel').innerHTML = MT.sel.map(function (id) { var n = byId[id]; return '<button type="button" class="nchip" data-rm="' + id + '" aria-label="Retirer ' + esc(n.name) + '"><span>' + esc(n.name) + '</span><span class="x">×</span></button>'; }).join('') || '<span class="note" style="margin:0">Aucune niche choisie : le moteur cherche dans tout le catalogue selon les contraintes.</span>';
@@ -1360,7 +2047,7 @@ function renderEd() {
     return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(D.families[m.fam]) + '</span><span>score moteur ' + m.s + '</span></div><div class="cn">' + esc(m.name) + '</div><div class="ctag">' + esc(m.pitch) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
       '<div class="facts f2"><div><div class="k">Jauge</div><div class="v">' + esc(m.group) + (/^\d/.test(m.group) && !/pers|duo|famil|enfant/.test(m.group) ? ' pers.' : '') + '</div></div><div><div class="k">Prix</div><div class="v wrap">' + esc(m.price) + '</div></div></div>' +
       '<dl><dt>Quand et où</dt><dd>' + esc(m.moment) + ' · ' + esc(m.venue) + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + m.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(m.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd>' + esc(m.why) + '</dd></dl></div>' +
-      '<div class="cft"><button class="btn sm" type="button" data-edmix="' + m.n.join('|') + '">Explorer dans l’outil</button></div></article>';
+      '<div class="cft"><button class="btn sm" type="button" data-edmix="' + m.n.join('|') + '">Explorer dans l’outil</button>' + pfSetBtn(m.n, 'ghost') + '</div></article>';
   }).join('');
 }
 document.addEventListener('click', function (e) { var b = e.target.closest('[data-edmix]'); if (b) { MT.sel = b.getAttribute('data-edmix').split('|'); renderSel(); runMix(); $('mt').scrollIntoView(); } });
@@ -1378,7 +2065,7 @@ function renderPf() {
       '<div class="facts"><div><div class="k">Score</div><div class="v">' + f1(p.m.s) + '</div></div><div><div class="k">Parades</div><div class="v">' + f1(p.m.s1) + '</div></div><div><div class="k">Mix</div><div class="v">' + f1(p.m.mix) + '</div></div><div><div class="k">Vivier</div><div class="v">' + f1(p.m.sup) + '</div></div></div>' +
       '<ul class="pfl">' + p.niches.map(function (id) { var n = byId[id]; return '<li><button type="button" data-open="' + id + '" data-list="' + ids + '"><span class="nn">' + esc(n.name) + (n.par ? ' <span class="tag t-E">parade</span>' : '') + '<br><span style="font-family:var(--f-mono);font-size:11px;color:var(--fg-3)">' + esc(SEC[n.sector].n) + '</span></span><span class="num">' + f1(n.s1) + '</span></button></li>'; }).join('') + '</ul>' +
       '<dl><dt>Mixes signature</dt><dd><ul class="whys">' + p.pairs.slice(0, 2).map(function (x) { var a = byId[x[1]], b = byId[x[2]]; return '<li>' + esc(E.format([a, b], E.pair(a, b, a.s0, b.s0, {})).name) + ' · ' + x[0] + '</li>'; }).join('') + p.ed.map(function (id) { var m = D.editorial.filter(function (e) { return e.id === id; })[0]; return m ? '<li>' + esc(m.name) + ' (sélection éditoriale)</li>' : ''; }).join('') + '</ul></dd>' +
-      '<dt>Lieux dominants</dt><dd>' + esc(lbls(p.venues, 'venues')) + '</dd><dt>Où commencer</dt><dd>' + (g ? g.top.slice(0, 3).map(function (t) { return t[0] + ' (' + t[1] + ')'; }).join(', ') : '') + '</dd><dt>Pourquoi</dt><dd>' + esc(p.desc) + '</dd><dt>Risques</dt><dd>' + esc(p.risk) + '</dd></dl></div></article>';
+      '<dt>Lieux dominants</dt><dd>' + esc(lbls(p.venues, 'venues')) + '</dd><dt>Où commencer</dt><dd>' + (g ? g.top.slice(0, 3).map(function (t) { return t[0] + ' (' + t[1] + ')'; }).join(', ') : '') + '</dd><dt>Pourquoi</dt><dd>' + esc(p.desc) + '</dd><dt>Risques</dt><dd>' + esc(p.risk) + '</dd></dl></div><div class="cft">' + pfSetBtn(p.niches) + '<button type="button" class="btn sm ghost" data-pfcopy="' + p.id + '">Copier en portefeuille</button></div></article>';
   }).join('');
   var rowsBy = {}; geo.rows.forEach(function (r) { rowsBy[r.a] = r; });
   $('geo-top').innerHTML = pf.slice(0, 2).map(function (p) { var g = geo.per.filter(function (x) { return x.id === p.id; })[0]; return '<article class="card rec"><div class="chd"><div class="cf"><span>' + esc(p.n) + '</span><span>adéquation sur 100</span></div><div class="cn">Arrondissements prioritaires</div></div><div class="cb"><ol class="steps">' + g.top.map(function (t) { return '<li><span class="mm">' + t[0] + '</span><span class="st">' + esc(rowsBy[t[0]].q) + ' · ' + t[1] + '</span></li>'; }).join('') + '</ol></div></article>'; }).join('');
@@ -1402,10 +2089,11 @@ $('srcl').innerHTML = D.sources.map(function (s) { var link = /^https?:/.test(s.
 })();
 
 function refreshScores() { renderX(); renderTop(); renderSectors(); }
+pfInit();
 renderX(); renderTop(); renderSectors();
 window.__firstRender = Math.round(performance.now() - T0);
 var idle = window.requestIdleCallback || function (f) { return setTimeout(f, 30); };
-idle(function () { renderAff(); setSim(D.low[0] ? byId[D.low.slice().sort(function (a, b) { return byId[b].sx - byId[a].sx; })[0]].id : N[0].id); renderEd(); renderTopPairs(); renderPf(); renderSel(); runMix(); window.__ready = Math.round(performance.now() - T0); });
+idle(function () { renderAff(); setSim(D.low[0] ? byId[D.low.slice().sort(function (a, b) { return byId[b].sx - byId[a].sx; })[0]].id : N[0].id); renderEd(); renderTopPairs(); renderPf(); renderSel(); runMix(); renderMy(); window.__ready = Math.round(performance.now() - T0); });
 })();
 </script>
 </body>
