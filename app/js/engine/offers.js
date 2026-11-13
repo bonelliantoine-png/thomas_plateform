@@ -2,7 +2,7 @@
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
-  function lc(s) { s = String(s || ''); return s.charAt(0).toLowerCase() + s.slice(1); }
+  var lc = U.lc;
   function minutes(m) { var h = Math.floor(m / 60), r = m % 60; return h ? h + ' h' + (r ? ' ' + (r < 10 ? '0' : '') + r : '') : r + ' min'; }
   C.minutes = minutes;
   C.AUDIENCES = { enfants: 'Enfants', debutants: 'Adultes débutants', passionnes: 'Passionnés', entreprises: 'Entreprises', touristes: 'Touristes', seniors: 'Seniors' };
@@ -58,12 +58,14 @@
       }).sort(function (a, b) { return b.v - a.v; });
       return list.map(function (x) { return x.f; });
     }
-    var plan = [];
+    var plan = [], used = {};
     var per = ids.length === 1 ? 3 : ids.length === 2 ? 2 : 1;
     ids.forEach(function (id, i) {
       var s = C.data.sById[id], fl = rankFormats(s);
+      // diversité : un format déjà proposé passe derrière les autres (sauf le cours particulier)
+      fl = fl.map(function (f, r) { return { f: f, r: r + (used[f] && f !== 'cours' ? 2.5 * used[f] : 0) }; }).sort(function (a, b) { return a.r - b.r; }).map(function (x) { return x.f; });
       var k = i === 0 ? Math.max(per, 2) : per;
-      fl.slice(0, k).forEach(function (f) { plan.push({ id: id, f: f }); });
+      fl.slice(0, k).forEach(function (f) { plan.push({ id: id, f: f }); used[f] = (used[f] || 0) + 1; });
     });
     plan = plan.slice(0, 6);
     while (plan.length < 3 && ids.length) { var s0 = C.data.sById[ids[0]]; var extra = rankFormats(s0).filter(function (f) { return !plan.some(function (p) { return p.id === s0.id && p.f === f; }); })[0]; if (!extra) break; plan.push({ id: s0.id, f: extra }); }
@@ -73,12 +75,12 @@
   C.buildOffer = function (st, id, fmt, i) {
     var s = C.data.sById[id], o = st.offer || {}, spec = FMT_SPEC[fmt] || { dur: 90, size: [4, 8] };
     var aud = U.arr(o.audiences);
-    var size = fmt === 'atelier' ? (s.attrs.teachable >= 3 ? 6 : 4) : Math.round((spec.size[0] + spec.size[1]) / 2);
+    var size = fmt === 'atelier' ? (s.attrs.teachable >= 3 ? 6 : 4) : fmt === 'entreprise' ? 12 : Math.round((spec.size[0] + spec.size[1]) / 2);
     if (fmt === 'atelier' && s.attrs.cost >= 3) size = 4;
     var dur = spec.dur;
     if (fmt === 'atelier' && s.attrs.hoursToBasics <= 8) dur = 90;
     var pr = C.suggestPrice(st, id, fmt, size);
-    var L = s.levels, name = s.name;
+    var L = s.levels, name = s.short || s.name;
     var audTxt = aud.length ? aud.map(function (a) { return (C.AUDIENCES[a] || a).toLowerCase(); }).slice(0, 2).join(' et ') : 'adultes débutants';
     var title, hook;
     switch (fmt) {
@@ -194,31 +196,31 @@
     var s = first.s, v = (st.skills && st.skills[s.id]) || {};
     var name = c.firstName || 'Votre prénom', city = c.city || 'votre ville';
     var yrs = v.years ? v.years + ' ans de pratique' : 'une pratique de longue date';
-    var others = offers.map(function (x) { return x.s.name; }).filter(function (n, i, a) { return a.indexOf(n) === i && n !== s.name; });
+    var others = offers.map(function (x) { return x.s.short || x.s.name; }).filter(function (n, i, a) { return a.indexOf(n) === i && n !== (s.short || s.name); });
     var aud = first.audience;
-    var bioShort = name + ' · ' + s.name.toLowerCase() + (others[0] ? ' et ' + others[0].toLowerCase() : '') + ' à ' + city + '. ' + yrs.charAt(0).toUpperCase() + yrs.slice(1) + ', des ateliers en petit groupe où l’on repart avec un résultat.';
-    var bioLong = 'Je m’appelle ' + name + ' et je pratique ' + s.name.toLowerCase() + ' depuis ' + (v.years ? v.years + ' ans' : 'longtemps') + '. ' +
+    var bioShort = name + ' · ' + C.nm(s) + (others[0] ? ' et ' + lc(others[0]) : '') + ' à ' + city + '. ' + yrs.charAt(0).toUpperCase() + yrs.slice(1) + ', des ateliers en petit groupe où l’on repart avec un résultat.';
+    var bioLong = 'Je m’appelle ' + name + ' et je pratique ' + C.nm(s) + ' depuis ' + (v.years ? v.years + ' ans' : 'longtemps') + '. ' +
       'J’anime à ' + city + ' des séances pour ' + aud + ' : on y apprend à ' + lc(s.levels[0]) + ', puis on va plus loin à son rythme. ' +
-      (niche ? 'Ma particularité : je mêle ' + niche.a.name.toLowerCase() + ' et ' + niche.b.name.toLowerCase() + ', ce qui donne des séances qu’on ne trouve pas ailleurs. ' : '') +
+      (niche ? 'Ma particularité : je mêle ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ', ce qui donne des séances qu’on ne trouve pas ailleurs. ' : '') +
       'Prochaine date et réservation en message.';
-    var pitch = 'Vous avez toujours voulu essayer ' + s.name.toLowerCase() + ' ? En ' + C.minutes(first.duration) + ', en groupe de ' + first.size + ', vous repartez en sachant ' + lc(s.levels[0]) + '. C’est ' + U.eur(first.price) + ', le matériel est fourni, et c’est à ' + city + '.';
+    var pitch = 'Vous avez toujours voulu essayer ' + C.nm(s) + ' ? En ' + C.minutes(first.duration) + ', en groupe de ' + first.size + ', vous repartez en sachant ' + lc(s.levels[0]) + '. C’est ' + U.eur(first.price) + ', le matériel est fourni, et c’est à ' + city + '.';
     var mat = C.COST_RANGE[s.attrs.cost];
     var posts = [
       'Avant / après : ce que mes participants savent faire en ' + C.minutes(first.duration) + ' (photos de la dernière séance)',
-      '3 erreurs de débutant en ' + s.name.toLowerCase() + ', et comment les éviter',
-      'Le matériel minimum pour commencer ' + s.name.toLowerCase() + ' : ' + (mat[1] <= 20 ? 'presque rien' : 'moins de ' + mat[1] + ' €'),
+      '3 erreurs de débutant en ' + C.nm(s) + ', et comment les éviter',
+      'Le matériel minimum pour commencer ' + C.nm(s) + ' : ' + (mat[1] <= 20 ? 'presque rien' : 'moins de ' + mat[1] + ' €'),
       'Coulisses : je prépare la séance de jeudi (trame, matériel, playlist)',
       'Témoignage d’une participante et photo de sa première réalisation',
       'Défi de la semaine : ' + lc(s.levels[0]) + '. Montrez-moi vos essais',
-      niche ? 'Pourquoi ' + niche.a.name.toLowerCase() + ' et ' + niche.b.name.toLowerCase() + ' vont si bien ensemble' : 'Ce que ' + s.name.toLowerCase() + ' m’a appris en dehors de ' + s.name.toLowerCase(),
+      niche ? 'Pourquoi ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ' vont si bien ensemble' : 'Ce que ' + C.nm(s) + ' m’a appris en dehors de ' + C.nm(s),
       'Prochaine date : jeudi 19 h, ' + first.size + ' places, ' + U.eur(first.price) + ', lien en bio',
-      'Question ouverte : qu’aimeriez-vous apprendre en ' + s.name.toLowerCase() + ' ?',
+      'Question ouverte : qu’aimeriez-vous apprendre en ' + C.nm(s) + ' ?',
       'Merci au lieu partenaire du mois, qui nous accueille aux heures creuses'
     ];
-    var venue = 'Bonjour,\n\nJe m’appelle ' + name + ' et j’anime des ateliers de ' + s.name.toLowerCase() + ' en petit groupe (' + first.size + ' personnes, ' + C.minutes(first.duration) + ') à ' + city + '.\n\n' +
+    var venue = 'Bonjour,\n\nJe m’appelle ' + name + ' et j’anime des ateliers de ' + C.nm(s) + ' en petit groupe (' + first.size + ' personnes, ' + C.minutes(first.duration) + ') à ' + city + '.\n\n' +
       'Je cherche un lieu pour les accueillir un soir de semaine ou un samedi matin, à un moment calme pour vous. En échange, je vous amène ' + first.size + ' à ' + (first.size + 4) + ' clients qui consomment sur place, et je mets votre lieu en avant dans toutes mes communications.\n\n' +
       'Pas de loyer, pas d’engagement : on teste une date, et on continue si c’est bon pour vous. Je peux passer vous présenter le format cette semaine.\n\nBelle journée,\n' + name;
-    var keywords = U.uniq([s.name.toLowerCase(), 'atelier ' + s.name.toLowerCase(), 'cours ' + s.name.toLowerCase() + ' ' + U.norm(city), s.name.toLowerCase() + ' débutant'].concat(s.aliases.slice(0, 3)).concat(s.tags.slice(0, 4)).concat(others.slice(0, 2).map(function (x) { return x.toLowerCase(); })));
+    var keywords = U.uniq([C.nm(s), 'atelier ' + C.nm(s), 'cours ' + C.nm(s) + ' ' + U.norm(city), C.nm(s) + ' débutant'].concat(s.aliases.slice(0, 3)).concat(s.tags.slice(0, 4)).concat(others.slice(0, 2).map(function (x) { return lc(x); })));
     return { bioShort: bioShort, bioLong: bioLong, pitch: pitch, posts: posts, venue: venue, keywords: keywords };
   };
 

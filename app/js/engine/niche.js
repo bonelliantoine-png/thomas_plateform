@@ -29,7 +29,7 @@
       var other = lead === a ? b : a;
       var f = common[0] || lead.formats[0];
       out.push({ a: lead, b: other, score: score, parts: { comp: comp, demand: demand, monet: monet, rare: rare, fmt: fmt }, format: f, common: common,
-        title: lead.name + ' × ' + other.name,
+        title: (lead.short || lead.name) + ' × ' + (other.short || other.name),
         concept: C.nicheConcept(lead, other, f) });
     }
     out.sort(function (x, y) { return y.score - x.score; });
@@ -38,7 +38,7 @@
   C.nicheConcept = function (a, b, f) {
     var fl = (C.FORMATS[f] || f).toLowerCase();
     var tagsB = b.tags.slice(0, 2).join(' et ');
-    return 'Un ' + fl + ' où « ' + a.levels[0].toLowerCase() + ' » sert de porte d’entrée, enrichi par votre pratique de ' + b.name.toLowerCase() +
+    return 'Un ' + fl + ' où « ' + a.levels[0].toLowerCase() + ' » sert de porte d’entrée, enrichi par votre pratique de ' + C.nm(b) +
       (tagsB ? ' (' + tagsB + ')' : '') + '. Peu de personnes maîtrisent les deux : vous attirez deux publics et sortez de la comparaison de prix.';
   };
   // matrice « j'aime / je maîtrise / ça se demande / ça se paie »

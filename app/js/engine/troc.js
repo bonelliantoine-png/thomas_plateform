@@ -34,9 +34,9 @@
     var projSkills = commonSkills.concat(commonWants).concat(pairs.slice(0, 2).map(function (p) { return p.aLearns.via; })).map(function (id) { return C.data.sById[id]; });
     var projects = C.projectsFor(projSkills.length ? projSkills : ak.concat(bk).map(function (id) { return C.data.sById[id]; }), 3);
     var ideas = [];
-    commonWants.slice(0, 3).forEach(function (id) { var s = C.data.sById[id]; ideas.push('Réserver ensemble un atelier découverte de ' + s.name.toLowerCase() + ' : à deux, on revient plus souvent'); });
-    commonSkills.slice(0, 2).forEach(function (id) { var s = C.data.sById[id]; ideas.push('Animer à deux une séance de ' + s.name.toLowerCase() + ' pour 4 amis'); });
-    pairs.slice(0, 2).forEach(function (p) { ideas.push('Troc de 2 × 1 h : ' + C.data.sById[p.aLearns.via].name.toLowerCase() + ' contre ' + C.data.sById[p.bLearns.via].name.toLowerCase()); });
+    commonWants.slice(0, 3).forEach(function (id) { var s = C.data.sById[id]; ideas.push('Réserver ensemble un atelier découverte de ' + C.nm(s) + ' : à deux, on revient plus souvent'); });
+    commonSkills.slice(0, 2).forEach(function (id) { var s = C.data.sById[id]; ideas.push('Animer à deux une séance de ' + C.nm(s) + ' pour 4 amis'); });
+    pairs.slice(0, 2).forEach(function (p) { ideas.push('Troc de 2 × 1 h : ' + C.nm(C.data.sById[p.aLearns.via]) + ' contre ' + C.nm(C.data.sById[p.bLearns.via])); });
     var compat = Math.round(U.clamp(pairs.length * 0.22 + aFromB.length * 0.08 + bFromA.length * 0.08 + commonWants.length * 0.1 + commonSkills.length * 0.05, 0, 1) * 100);
     return { aFromB: aFromB, bFromA: bFromA, pairs: pairs.slice(0, 6), commonSkills: commonSkills, commonWants: commonWants, projects: projects, ideas: ideas, compat: compat };
   };

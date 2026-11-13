@@ -11,15 +11,18 @@
   C.priceRange = function (uni, fmt) {
     var p = C.res.pricing[uni];
     var r = p && Array.isArray(p[fmt]) && p[fmt].length === 2 ? p[fmt] : null;
-    if (!r) { r = C.FORMAT_DEFAULT_PRICES[fmt] || [20, 50]; return { lo: r[0], hi: r[1], fallback: true }; }
+    if (!r) { U.anomaly('resources', 'pricing sans fourchette « ' + fmt + ' » (' + uni + ') : repli générique'); r = C.FORMAT_DEFAULT_PRICES[fmt] || [20, 50]; return { lo: r[0], hi: r[1], fallback: true }; }
     return { lo: U.num(r[0]), hi: U.num(r[1]), fallback: false };
   };
 
+  function slug(x) { return U.norm(x).replace(/ /g, '-'); }
+  function fmtPart(x, f) { if (f === 'slug') return slug(x); if (f === 'hashtag') return U.norm(x).replace(/ /g, ''); return encodeURIComponent(x); }
   C.searchLinks = function (s, intent, city, side) {
-    var q = (s ? s.name : '') + (intent ? ' ' + intent : '');
+    var q = (s ? (typeof s === 'string' ? s : s.name) : '') + (intent ? ' ' + intent : '');
     return C.res.searchEngines.filter(function (e) { return !side || e.sides.indexOf(side) >= 0; }).map(function (e) {
-      var url = e.url.replace(/\{q\}/g, encodeURIComponent(q)).replace(/\{city\}/g, encodeURIComponent(city || ''));
-      if (!city) url = url.replace(/(\+|%20)?(&?[a-z_]+=)?$/i, function (m) { return m; });
+      var qq = e.qFormat === 'hashtag' ? (s ? (typeof s === 'string' ? s : s.name) : q) : q;
+      var url = e.url.replace(/\{q\}/g, fmtPart(qq, e.qFormat)).replace(/\{city\}/g, city ? fmtPart(city, e.cityFormat) : '');
+      if (!city) url = url.replace(/\+(?=&|$|\/)/g, '').replace(/\/\/+$/, '/').replace(/france--\//, 'france/');
       return { id: e.id, name: e.name, url: url, q: q };
     });
   };
@@ -74,11 +77,11 @@
     var arch = st.style && st.style.archetype;
     if ((fm.indexOf('contenu') >= 0 || arch === 'autodidacte' || (st.context && st.context.presence === 'online')) && apps.length && s.attrs.online >= 2)
       return { text: 'Installer ' + apps[0].name + ' et pratiquer 20 minutes, deux soirs cette semaine', link: apps[0].url, label: apps[0].name };
-    if (ws.length && s.attrs.oneHourResult)
+    if (ws.length && (s.attrs.oneHourResult || fm.indexOf('atelier') >= 0 || fm.indexOf('stage') >= 0))
       return { text: 'Réserver un atelier découverte « ' + s.name + ' » sur ' + ws[0].name + (city ? ' à ' + city : ''), link: ws[0].url, label: ws[0].name };
     var com = C.res.communityTypes.filter(function (c) { return c.sides.indexOf('learn') >= 0 && C.matchUniverse(c.universes, s.universe) && c.universes.indexOf('*') < 0; });
     if (com.length && s.attrs.social >= 2)
-      return { text: 'Repérer un(e) ' + com[0].name.toLowerCase() + ' près de chez vous et y passer lors d’une séance ouverte', link: com[0].links[0] && com[0].links[0].url, label: com[0].name };
+      return { text: 'Repérer un(e) ' + C.nm(com[0]) + ' près de chez vous et y passer lors d’une séance ouverte', link: com[0].links[0] && com[0].links[0].url, label: com[0].name };
     if (apps.length && s.attrs.online >= 2)
       return { text: 'Faire 3 séances de 20 minutes avec ' + apps[0].name, link: apps[0].url, label: apps[0].name };
     var anyP = C.res.platforms.filter(function (p) { return p.sides.indexOf('learn') >= 0 && C.matchUniverse(p.universes, s.universe) && p.kinds.indexOf('cours') >= 0; })[0];
@@ -88,7 +91,7 @@
 
   C.appsFor = function (s) {
     var byDom = C.res.learningApps.filter(function (a) { return a.domains.indexOf(s.domain) >= 0; });
-    var byU = C.res.learningApps.filter(function (a) { return byDom.indexOf(a) < 0 && a.universes.indexOf(s.universe) >= 0; });
+    var byU = C.res.learningApps.filter(function (a) { return byDom.indexOf(a) < 0 && a.universes.indexOf(s.universe) >= 0 && (!a.domains.length || a.domains.every(function (d) { return d.split('.')[0] !== s.universe; })); });
     return byDom.concat(byU);
   };
 
@@ -133,13 +136,13 @@
     var L = s.levels, t = s.tags, mins = s.attrs.hoursToBasics > 60 ? 25 : 15;
     var app = C.appsFor(s)[0];
     var T = [
-      'Regarder 2 démonstrations de ' + s.name.toLowerCase() + ' et noter le geste qui revient',
+      'Regarder 2 démonstrations de ' + C.nm(s) + ' et noter le geste qui revient',
       'Préparer le matériel minimum et le ranger à portée de main',
       mins + ' min : viser « ' + L[0].toLowerCase() + ' », même maladroitement',
       'Refaire la même chose qu’hier, en chronométrant',
       'Trouver 1 personne qui pratique et lui poser 3 questions',
       'Photographier ou filmer votre essai du jour',
-      'Repos actif : lire ou écouter 20 min sur ' + (t[0] || s.name.toLowerCase())
+      'Repos actif : lire ou écouter 20 min sur ' + (t[0] || C.nm(s))
     ];
     var T2 = [
       mins + ' min sur le point le plus difficile de la semaine dernière',
@@ -166,7 +169,7 @@
       else if (w === 0) text = T[k];
       else if (w === 1) text = T2[k];
       else if (w === 2) text = T3[k];
-      else text = [mins + ' min vers « ' + L[1].toLowerCase() + ' »', 'Préparer une mini démonstration de 2 min', 'Réserver la suite : un cours, un atelier ou un stage', 'Montrer votre démonstration à quelqu’un', mins + ' min de pratique libre', 'Écrire ce que vous ferez le mois prochain', 'Repos'][k];
+      else text = [mins + ' min vers « ' + L[1].toLowerCase() + ' »', 'Préparer une mini démonstration de 2 min', 'Réserver la suite : un cours, un atelier ou un stage', 'Montrer votre démonstration à quelqu’un', mins + ' min de pratique libre', 'Écrire ce que vous ferez le mois prochain', 'Repos et récupération'][k];
       days.push({ day: i + 1, id: 'c' + (i + 1), text: text, milestone: i === 6 || i === 13 || i === 20 || i === 29 });
     }
     return days;
@@ -220,18 +223,18 @@
   };
 
   C.cvSection = function (st) {
-    var soft = C.softProfile(st).slice(0, 4).map(function (x) { return x.soft.name.toLowerCase(); });
+    var soft = C.softProfile(st).slice(0, 4).map(function (x) { return C.nm(x.soft); });
     var top = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 2; })
       .sort(function (a, b) { return st.skills[b].level - st.skills[a].level; }).slice(0, 6).map(function (id) {
         var s = C.data.sById[id], v = st.skills[id];
         return s.name + ' (' + C.LEVELS[v.level].toLowerCase() + (v.years ? ', ' + v.years + ' ans' : '') + ')';
       });
-    var learning = C.yesDesires(st).slice(0, 3).map(function (id) { return C.data.sById[id].name.toLowerCase(); });
+    var learning = C.yesDesires(st).slice(0, 3).map(function (id) { return C.nm(C.data.sById[id]); });
     var lines = [];
     if (top.length) lines.push('Centres d’intérêt et savoir-faire : ' + top.join(' · ') + '.');
     if (soft.length) lines.push('Compétences transverses développées par ces pratiques : ' + soft.join(', ') + '.');
     if (learning.length) lines.push('En apprentissage : ' + learning.join(', ') + '.');
-    var teach = Object.keys(st.skills || {}).filter(function (id) { return st.skills[id].teach || st.skills[id].level >= 4; }).map(function (id) { return C.data.sById[id] && C.data.sById[id].name.toLowerCase(); }).filter(Boolean);
+    var teach = Object.keys(st.skills || {}).filter(function (id) { return st.skills[id].teach || st.skills[id].level >= 4; }).map(function (id) { return C.data.sById[id] && C.nm(C.data.sById[id]); }).filter(Boolean);
     if (teach.length) lines.push('Transmission : anime ou peut animer des séances de ' + teach.slice(0, 3).join(', ') + '.');
     return lines;
   };

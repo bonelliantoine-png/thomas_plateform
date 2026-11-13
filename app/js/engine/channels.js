@@ -35,7 +35,7 @@
     var ranked = plats.map(function (p) {
       var fmtW = 0, fmtTot = 0;
       fmtList.forEach(function (f) { fmtTot += fmts[f]; if (p.kinds.indexOf(f) >= 0) fmtW += fmts[f]; });
-      var fmtFit = fmtTot ? fmtW / fmtTot : 0;
+      var fmtFit = fmtTot ? Math.sqrt(fmtW / fmtTot) : 0;
       if (!p.kinds.length) fmtFit = 0.3;
       var uniFit = p.universes.indexOf('*') >= 0 ? 0.8 : (Object.keys(unis).some(function (u) { return p.universes.indexOf(u) >= 0; }) ? 1 : 0.1);
       var f = C.feeOf(p);

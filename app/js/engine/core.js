@@ -21,6 +21,8 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   };
+  // minuscule initiale sauf sigle (DJ, IA, MAO)
+  U.lc = function (s) { s = String(s || ''); return (s.length > 1 && s.charAt(1) === s.charAt(1).toUpperCase() && /[A-Z]/.test(s.charAt(1))) ? s : s.charAt(0).toLowerCase() + s.slice(1); };
   U.round5 = function (x) { return x < 20 ? Math.round(x) : Math.round(x / 5) * 5; };
   U.eur = function (x, dec) {
     x = U.num(x);
@@ -169,6 +171,9 @@
         desc: str(s.desc), levels: levels, attrs: attrs, regulated: reg, tags: tags, soft: softs, formats: formats,
         related: U.arr(s.related).filter(function (x) { return typeof x === 'string'; })
       };
+      var sh = o.name.replace(/\s*\([^)]*\)\s*/g, ' ').trim();
+      if (sh.indexOf(' : ') > 1) sh = sh.split(' : ')[0];
+      o.short = sh || o.name;
       o._search = U.norm([o.name, o.aliases.join(' '), o.tags.join(' '), o.desc].join(' '));
       o._name = U.norm(o.name);
       sById[o.id] = o; skills.push(o);
@@ -203,7 +208,7 @@
         id: p.id, name: str(p.name, p.id), url: str(p.url), sides: U.arr(p.sides).length ? U.arr(p.sides) : ['learn', 'offer'],
         kinds: U.arr(p.kinds), universes: unis(p), geo: str(p.geo, 'FR'), model: str(p.model), fee: fee, audience: str(p.audience),
         bestFor: str(p.bestFor), pros: U.arr(p.pros), cons: U.arr(p.cons), effort: U.clamp(p.effort == null ? 1 : p.effort, 0, 3),
-        reach: U.clamp(p.reach == null ? 1 : p.reach, 0, 3), control: U.clamp(p.control == null ? 1 : p.control, 0, 3), verify: !!p.verify
+        reach: U.clamp(p.reach == null ? 1 : p.reach, 0, 3), control: U.clamp(p.control == null ? 1 : p.control, 0, 3), verify: !!p.verify, note: str(p.note), sourceDate: str(p.sourceDate)
       };
     });
     var R2 = {
@@ -216,6 +221,8 @@
       statuses: list('statuses', 'id').map(function (s) { return { id: s.id, name: str(s.name, s.id), forWhat: str(s.forWhat), cost: str(s.cost), ceiling: str(s.ceiling), pros: U.arr(s.pros), cons: U.arr(s.cons), steps: U.arr(s.steps), fit: s.fit || {}, source: str(s.source), rate: s.rate, raw: s }; }),
       regulations: (R.regulations && typeof R.regulations === 'object') ? R.regulations : {},
       pricing: (R.pricing && typeof R.pricing === 'object') ? R.pricing : {},
+      pricingUnits: (R.pricingUnits && typeof R.pricingUnits === 'object') ? R.pricingUnits : {},
+      pricingNotes: typeof R.pricingNotes === 'string' ? R.pricingNotes : '',
       projectTemplates: list('projectTemplates', 'id').map(function (p) { return { id: p.id, name: str(p.name, p.id), desc: str(p.desc), universes: unis(p), tags: U.arr(p.tags).map(function (t) { return U.norm(t).replace(/ /g, '-'); }), size: U.arr(p.size).length === 2 ? p.size : [3, 8], weeks: U.num(p.weeks, 6), output: str(p.output), roles: U.arr(p.roles), steps: U.arr(p.steps), funding: U.arr(p.funding), paid: str(p.paid, 'mixed') }; }),
       searchEngines: list('searchEngines', 'url').map(function (e) { return { id: e.id || e.name, name: str(e.name, e.id), url: e.url, sides: U.arr(e.sides).length ? U.arr(e.sides) : ['learn', 'offer'] }; })
     };
@@ -228,6 +235,7 @@
   };
 
   /* ---------- requêtes utiles ---------- */
+  C.nm = function (s) { return s ? U.lc(s.short || s.name) : ''; };
   C.skill = function (id) { return C.data && C.data.sById[id]; };
   C.universe = function (id) { return (C.data && C.data.uById[id]) || { id: id, name: id, short: id, hue: 200, glyph: '·' }; };
   C.hue = function (uid, l) { var u = C.universe(uid); return 'hsl(' + u.hue + ' 38% ' + (l || 62) + '%)'; };

@@ -100,19 +100,19 @@
   C.ai.templateSynthesis = function (st) {
     var c = st.context || {}, out = [];
     var arch = st.style && st.style.archetype && C.ARCHETYPES.filter(function (x) { return x.id === st.style.archetype; })[0];
-    var soft = C.softProfile(st).slice(0, 3).map(function (x) { return x.soft.name.toLowerCase(); });
-    var top = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 3; }).map(function (id) { return C.data.sById[id].name.toLowerCase(); });
+    var soft = C.softProfile(st).slice(0, 3).map(function (x) { return C.nm(x.soft); });
+    var top = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 3; }).map(function (id) { return C.nm(C.data.sById[id]); });
     var ds = C.yesDesires(st);
     out.push('EN BREF');
     out.push((c.firstName ? c.firstName + ', vous' : 'Vous') + ' maîtrisez ' + (top.length ? top.slice(0, 3).join(', ') : 'déjà plusieurs choses') + (soft.length ? ', des pratiques qui développent ' + soft.join(', ') : '') + '.');
     if (ds.length) {
       var p = C.learnPlan(st, ds[0]);
-      out.push('Votre envie prioritaire est ' + p.s.name.toLowerCase() + ' : environ ' + p.hours + ' h pour atteindre « ' + p.s.levels[p.target - 1].toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + p.hpw + ' h par semaine.');
+      out.push('Votre envie prioritaire est ' + C.nm(p.s) + ' : environ ' + p.hours + ' h pour atteindre « ' + p.s.levels[p.target - 1].toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + p.hpw + ' h par semaine.');
       out.push('Premier pas cette semaine : ' + p.first.text.charAt(0).toLowerCase() + p.first.text.slice(1) + '.');
     }
     if (arch) out.push(arch.pref + ' Conseil : ' + arch.tips[0].charAt(0).toLowerCase() + arch.tips[0].slice(1) + '.');
     var sh = C.shareable(st);
-    if (sh.length) out.push('À partager : ' + sh.slice(0, 2).map(function (x) { return x.s.name.toLowerCase(); }).join(' et ') + ' se transmettent bien en petit groupe, entre ' + U.eur(sh[0].range.lo) + ' et ' + U.eur(sh[0].range.hi) + ' la place.');
+    if (sh.length) out.push('À partager : ' + sh.slice(0, 2).map(function (x) { return C.nm(x.s); }).join(' et ') + ' se transmettent bien en petit groupe, entre ' + U.eur(sh[0].range.lo) + ' et ' + U.eur(sh[0].range.hi) + ' la place.');
     return out.join('\n\n');
   };
 })(window);
