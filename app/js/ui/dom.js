@@ -45,15 +45,18 @@
   };
 
   /* ---------- panneau latéral ---------- */
-  var lastFocus = null;
+  var lastFocus = null, closeT = null, openRaf = null;
   ui.drawer = function (title, html, opts) {
     opts = opts || {};
     var d = ui.$('#drawer'), v = ui.$('#veil');
-    lastFocus = document.activeElement;
+    // une fermeture en cours ne doit pas masquer le panneau que l'on rouvre
+    if (closeT) { clearTimeout(closeT); closeT = null; }
+    if (d.hidden) lastFocus = document.activeElement;
     d.innerHTML = '<div class="dr-h"><h2 id="dr-title">' + E(title) + '</h2><button class="btn ghost sm" data-act="closeDrawer" aria-label="Fermer">Esc ' + ui.icon('x') + '</button></div><div class="dr-b">' + html + '</div>';
     d.setAttribute('aria-labelledby', 'dr-title');
     d.hidden = false; v.hidden = false;
-    requestAnimationFrame(function () { d.classList.add('open'); v.classList.add('open'); });
+    if (openRaf) cancelAnimationFrame(openRaf);
+    openRaf = requestAnimationFrame(function () { openRaf = null; if (!d.hidden) { d.classList.add('open'); v.classList.add('open'); } });
     var f = d.querySelector(opts.focus || 'button, a, input, textarea, select'); if (f) f.focus();
     document.body.classList.add('noscroll');
     if (opts.onOpen) opts.onOpen(d);
@@ -61,8 +64,11 @@
   ui.closeDrawer = function () {
     var d = ui.$('#drawer'), v = ui.$('#veil');
     if (!d || d.hidden) return false;
+    if (openRaf) { cancelAnimationFrame(openRaf); openRaf = null; }
     d.classList.remove('open'); v.classList.remove('open');
-    setTimeout(function () { d.hidden = true; v.hidden = true; d.innerHTML = ''; }, 180);
+    d.hidden = true; v.hidden = true;
+    clearTimeout(closeT);
+    closeT = setTimeout(function () { closeT = null; if (d.hidden) d.innerHTML = ''; }, 180);
     document.body.classList.remove('noscroll');
     if (lastFocus && lastFocus.focus) lastFocus.focus();
     return true;

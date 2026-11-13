@@ -79,7 +79,7 @@
       var sels = C.osmSelectors(o.unis.length ? o.unis : ['musique'], o.side);
       return C.overpass(sels, g.lat, g.lon, o.radius * 1000);
     }).then(function (r) { o.items = r.items; o.status = 'done'; onUpdate(); })
-      .catch(function (err) { o.status = 'error'; o.error = C.osmErrorText(err); if (W.console) console.warn('[Cordes] OSM', err); onUpdate(); });
+      .catch(function (err) { o.status = 'error'; o.error = C.osmErrorText(err); if (W.console) console.info('[Cordes] OSM', err && err.message); onUpdate(); });
   };
   ui.actions.osmRun = function () {
     var o = ui.osmState, city = ui.$('#osm-city').value.trim();

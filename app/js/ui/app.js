@@ -171,6 +171,9 @@
     document.addEventListener('keydown', onKey);
     W.addEventListener('hashchange', function () { ui.closeDrawer(); ui.render({ keepFocus: false }); W.scrollTo(0, 0); var h = ui.$('#view h1'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); } });
     ui.$('#veil').addEventListener('click', ui.closeDrawer);
+    // enregistrer tout de suite si l'onglet se ferme ou passe en arrière-plan
+    W.addEventListener('pagehide', function () { if (ui.st && ui.st.mode) ui.save(true); });
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden' && ui.st && ui.st.mode) ui.save(true); });
     if ('ontouchstart' in W || navigator.maxTouchPoints > 0) document.documentElement.classList.add('touch');
     ui.updateSaveBadge();
     ui.render();

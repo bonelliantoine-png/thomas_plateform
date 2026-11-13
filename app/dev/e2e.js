@@ -33,6 +33,7 @@ async function newPage(browser, width, errs) {
   await page.addInitScript(() => { window.print = () => { window.__printed = (window.__printed || 0) + 1; }; window.confirm = () => true; });
   return { ctx, page };
 }
+const vis = async (page, sel, t = 4000) => { try { await page.waitForSelector(sel, { state: 'visible', timeout: t }); return true; } catch (e) { return false; } };
 const shot = (page, name, full = true) => page.screenshot({ path: path.join(SHOTS, name + '.png'), fullPage: full });
 async function download(page, clickSel) {
   const [d] = await Promise.all([page.waitForEvent('download', { timeout: 5000 }), page.click(clickSel)]);
@@ -57,7 +58,7 @@ async function download(page, clickSel) {
     await page.click('[data-bind="intents"][data-val="rencontres"]');
     await shot(page, 'e2e-375-02-contexte');
     await page.click('[data-act="next"]');
-    ok(await page.isVisible('text=Ce que vous savez déjà faire'), 'étape maîtrise affichée');
+    ok(await vis(page, 'text=Ce que vous savez déjà faire'), 'étape maîtrise affichée');
     await page.fill('#mq', 'guitare');
     await page.waitForTimeout(100);
     const g = page.locator('#mres .schip').first();
@@ -71,7 +72,7 @@ async function download(page, clickSel) {
     const known = await page.evaluate(() => Object.values(Cordes.ui.st.skills).filter(s => s.level > 0).length);
     ok(known >= 4, 'compétences notées par appui (' + known + ')');
     await page.click('[data-act="next"]');
-    ok(await page.isVisible('#card'), 'paquet de cartes affiché');
+    ok(await vis(page, '#card'), 'paquet de cartes affiché');
     const first = await page.getAttribute('#card', 'data-id');
     await page.keyboard.press('ArrowRight'); await page.waitForTimeout(320);
     const second = await page.getAttribute('#card', 'data-id');
@@ -127,8 +128,8 @@ async function download(page, clickSel) {
     await page.locator('#drawer .day input').first().check();
     ok(await page.evaluate(() => Object.keys(Cordes.ui.st.challenge.checked).length === 1), 'défi 30 jours : jour coché et enregistré');
     await page.keyboard.press('Escape'); await page.waitForTimeout(250);
-    await page.click('[data-act="wishlist"].tile'); ok(await page.isVisible('#drawer .copyblock'), 'liste d’envies à offrir'); await page.keyboard.press('Escape'); await page.waitForTimeout(250);
-    await page.click('[data-act="cv"].tile'); ok(await page.isVisible('#drawer .copyblock'), 'section CV'); await page.keyboard.press('Escape'); await page.waitForTimeout(250);
+    await page.click('[data-act="wishlist"].tile'); ok(await vis(page, '#drawer .copyblock'), 'liste d’envies à offrir'); await page.keyboard.press('Escape'); await page.waitForTimeout(250);
+    await page.click('[data-act="cv"].tile'); ok(await vis(page, '#drawer .copyblock'), 'section CV'); await page.keyboard.press('Escape'); await page.waitForTimeout(250);
     // persistance
     await page.reload(); await page.waitForTimeout(200);
     ok(await page.evaluate(() => Cordes.ui.st.context.firstName === 'Sam' && Cordes.yesDesires(Cordes.ui.st).length === 3), 'reprise après rechargement');
@@ -154,7 +155,7 @@ async function download(page, clickSel) {
     await page.fill('#mq', 'yoga'); await page.waitForTimeout(100);
     c = page.locator('#mres .schip').first(); for (let i = 0; i < 3; i++) await c.click();
     await page.click('[data-act="next"]');
-    ok(await page.isVisible('text=Vos compétences fortes'), 'étape forces');
+    ok(await vis(page, 'text=Vos compétences fortes'), 'étape forces');
     ok(await page.locator('section.panel .h3').count() >= 3, 'compétences fortes présélectionnées');
     await page.locator('input[type=number][data-bind$=".years"]').first().fill('9');
     await page.locator('[data-bind$=".proof"][data-val="realisations"]').first().click();
@@ -171,7 +172,7 @@ async function download(page, clickSel) {
     const nOff = await page.locator('article.offer').count();
     ok(nOff >= 3 && nOff <= 6, nOff + ' offres générées');
     ok(await page.locator('.chtable .gtr:not(.h)').count() >= 5, 'canaux classés');
-    ok(await page.isVisible('text=Cordes · bientôt'), 'canal « notre plateforme · bientôt »');
+    ok(await vis(page, 'text=Cordes · bientôt'), 'canal « notre plateforme · bientôt »');
     const net0 = await page.textContent('#sim-counters .counter:nth-child(4) .v');
     await page.locator('#sim-hours').fill('30'); await page.locator('#sim-hours').dispatchEvent('input');
     const net1 = await page.textContent('#sim-counters .counter:nth-child(4) .v');
@@ -191,7 +192,7 @@ async function download(page, clickSel) {
     await page.click('a[href="#/attente/host"]');
     await page.fill('#wl-email', 'nora@example.org');
     await page.click('[data-act="wlSave"]');
-    ok(await page.isVisible('text=Inscription enregistrée'), 'liste d’attente hôte fondateur');
+    ok(await vis(page, 'text=Inscription enregistrée'), 'liste d’attente hôte fondateur');
     // autour de moi (outil complet)
     await page.goto(URL + '#/outils/autour/artisanat');
     await page.fill('#osm-city', 'Lyon');
@@ -202,7 +203,7 @@ async function download(page, clickSel) {
     ok(d.length && /m$/.test(d[0]), 'distances affichées (' + d.join(', ') + ')');
     await shot(page, 'e2e-1440-04-autour');
     // comment ça marche, démo, comparer
-    await page.goto(URL + '#/comment'); ok(await page.isVisible('text=JaccardIDF'), 'page Comment ça marche'); await shot(page, 'e2e-1440-05-comment', false);
+    await page.goto(URL + '#/comment'); ok(await vis(page, 'text=JaccardIDF'), 'page Comment ça marche'); await shot(page, 'e2e-1440-05-comment', false);
     await page.goto(URL + '#/comparer'); await page.click('[data-act="cmpDemo"]');
     await page.waitForSelector('text=Trocs possibles', { timeout: 5000 }); ok(true, 'comparaison avec un ami');
     await shot(page, 'e2e-1440-06-comparer');
@@ -210,7 +211,7 @@ async function download(page, clickSel) {
       await page.goto(URL + '#/demo'); await page.click(`[data-act="loadDemo"][data-id="${id}"]`); await page.waitForTimeout(300);
       ok(await page.locator('.counters').count() >= 1, 'démo ' + id + ' affichée');
     }
-    await page.goto(URL + '#/demo'); ok(await page.isVisible('[data-act="restoreBackup"]'), 'bilan mis de côté restaurable');
+    await page.goto(URL + '#/demo'); ok(await vis(page, '[data-act="restoreBackup"]'), 'bilan mis de côté restaurable');
     // repli OSM en cas d'échec réseau
     await page.unroute(/overpass/); await page.route(/overpass/, r => r.abort());
     await page.goto(URL + '#/outils/autour'); await page.fill('#osm-city', 'Lyon'); await page.click('[data-act="osmRun"]');
