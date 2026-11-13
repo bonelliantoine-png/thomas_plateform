@@ -340,6 +340,101 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
   ok(learnP.every(f => idx.includes('href="' + f + '"')), 'A9 · index relié aux 30 fiches');
   fs.rmSync(seoDir, { recursive: true, force: true });
 
+  /* ---------- brief V2 · curieux : idées à vivre et ta corde cachée ---------- */
+  console.log('\nCurieux');
+  C.loadOccasions(); C.loadQuiz();
+  ok(C.occasions.length === 9 && C.occasions.every(o => o.intro && o.pins.length === 3), '9 occasions, intro et 3 mises en avant vérifiées');
+  ok(C.ideasPrimary(new Date(2026, 11, 14)) && C.ideasPrimary(new Date(2027, 1, 10)) && C.ideasPrimary(new Date(2027, 4, 2)) && !C.ideasPrimary(new Date(2027, 7, 15)) && !C.ideasPrimary(new Date(2027, 1, 20)), 'saisons : idées en porte principale (nov.-déc., 1-14 févr., 15 mars-30 juin)');
+  ok(C.occasionsOrdered(new Date(2026, 11, 1))[0].id === 'offrir' && C.occasionsOrdered(new Date(2027, 3, 20))[0].id === 'evjf', 'occasions de saison en tête de la grille');
+  const ALC = id => D.sById[id].regulated === 'alcool';
+  for (const o of C.occasions) {
+    const r = C.ideas(o.id), six = r.items.slice(0, 6);
+    ok(six.length === 6, o.id + ' : 6 idées (' + r.total + ' possibles)');
+    ok(r.items.every(x => !x.s.regulated || ['securite', 'sante', 'animaux'].indexOf(x.s.regulated) < 0), o.id + ' : aucun cadre exclu (sécurité, santé, animaux)');
+    ok(o.id === 'evjf' || r.items.every(x => !ALC(x.s.id)), o.id + ' : alcool absent hors EVJF');
+    ok(r.items.every(x => x.s.attrs.oneHourResult || x.s.attrs.hoursToBasics <= 3), o.id + ' : résultat en une heure');
+    const per = {}; six.forEach(x => { per[x.s.universe] = (per[x.s.universe] || 0) + 1; });
+    ok(Object.values(per).every(n => n <= 2), o.id + ' : 2 idées au plus par univers dans les 6 premières');
+    ok(six.some(x => x.novelty >= 0.6), o.id + ' : au moins une nouveauté (découverte de niche)');
+    ok(JSON.stringify(C.ideas(o.id).items.map(x => x.s.id)) === JSON.stringify(r.items.map(x => x.s.id)), o.id + ' : déterministe');
+    ok(six.every(x => x.why && x.title.startsWith('Apprendre ') && x.sub.startsWith('À la fin : ') && x.budgetOut.hi >= x.budgetOut.lo), o.id + ' : titre, sous-titre, raison et fourchettes');
+  }
+  ok(C.ideas('famille').items.every(x => x.s.attrs.physical < 3 && x.s.regulated !== 'enfants'), 'famille : rien de très physique');
+  ok(C.ideas('evjf').items.some(x => ALC(x.s.id)), 'EVJF : l’alcool est autorisé');
+  const home0 = C.ideas('dimanche', { budget: 0, place: 'home', people: 1 });
+  ok(home0.items.length >= 6 && home0.items.every(x => x.s.attrs.cost === 0 && x.s.attrs.physical <= 2), 'budget 0 € chez soi : matériel de coût 0 (' + home0.items.length + ')');
+  ok(C.ideas('dimanche', { place: 'home' }).items.every(x => x.s.attrs.cost <= 2), 'chez soi : pas d’équipement lourd');
+  const p2 = C.ideas('amis', { people: 2 }).items[0], p9 = C.ideas('equipe').items[0];
+  ok(/ à deux$/.test(p2.title) && / entre collègues$/.test(p9.title), 'titre selon le nombre de personnes (' + p2.title + ' · ' + p9.title + ')');
+  const tasteR = C.ideas('offrir', { tastes: ['jeux'] });
+  ok(tasteR.items.slice(0, 6).filter(x => x.s.universe === 'jeux').length >= 1, 'ses goûts : l’univers choisi remonte');
+  const seedR = C.ideas('amis', { seed: ['geocaching'] });
+  ok(seedR.items.slice(0, 6).some(x => x.s.id === 'geocaching'), 'graines du test : bonus de score');
+  C.anomalies = []; C._anomalyKeys = {};
+  let thrown = null; try { C.loadOccasions([{ id: 'x', label: 'X', pins: ['inexistant', 'latte-art'] }]); C.ideas('x'); } catch (e) { thrown = e; }
+  ok(!thrown && C.occById.x.pins.join() === 'latte-art' && C.anomalies.some(a => /inexistant/.test(a.msg)), 'mise en avant absente ignorée et signalée, sans exception');
+  C.loadOccasions();
+  const sheet = C.ideaSheet('latte-art', { zone: 'Paris 11e', people: 2 });
+  ok(sheet.end === D.sById['latte-art'].levels[0] && sheet.further.length === 2 && sheet.links.length >= 3 && sheet.links.length <= 5 && sheet.budgetOut.paris && sheet.neighbors.length <= 3 && sheet.home.text, 'fiche idée : fin de l’heure, suite, liens (' + sheet.links.map(l => l.id).join(', ') + '), Paris +15 %');
+  // codes #i=
+  const icode = await C.encodeIdeas({ o: 'evjf', ids: ['latte-art', 'cocktails', 'salsa-bachata', 'bal-folk', 'crochet', 'aquarelle', 'inconnu'], from: 'Léa', when: 'samedi' });
+  const iback = await C.decodeIdeas('#i=' + icode);
+  ok(iback && iback.o === 'evjf' && iback.ids.length === 5 && iback.ids[0] === 'latte-art' && iback.from === 'Léa' && iback.when === 'samedi', 'idées partagées : aller-retour, 5 identifiants au plus');
+  ok(await C.decodeIdeas(icode.slice(0, Math.floor(icode.length / 2))) === null && await C.decodeIdeas('zzz') === null && await C.decodeIdeas('') === null, 'code tronqué ou illisible : null');
+  ok(/^Léa te propose 5 idées pour samedi : .* On vote ici : L$/.test(C.ideasMessage(iback, 'L')) && /^Je te propose 1 idée pour bientôt/.test(C.ideasMessage({ ids: ['crochet'] }, 'L')), 'message de groupe par gabarit');
+  // ta corde cachée
+  const Qz = C.quiz;
+  ok(Qz.questions.length === 8 && Qz.profiles.length === 13, 'test : 8 questions et 13 cordes');
+  const reach = {}; let allOk = true, nComb = 0;
+  for (let a = 0; a < 5; a++) for (let b = 0; b < 5; b++) for (let c = 0; c < 5; c++) for (let d = 0; d < 5; d++) for (let e = 0; e < 5; e++) for (let f = 0; f < 5; f++) for (let g = 0; g < 4; g++) {
+    const r = C.quizScore([a, b, c, d, e, f, g, 3]); nComb++;
+    if (!r.profile || !Qz.byId[r.profile.id]) allOk = false; else reach[r.profile.id] = (reach[r.profile.id] || 0) + 1;
+  }
+  ok(allOk, 'toutes les combinaisons donnent une corde parmi les 13 (' + nComb + ' combinaisons)');
+  ok(Object.keys(reach).length === 13, 'chaque corde est atteignable (' + Object.keys(reach).map(k => k + ' ' + reach[k]).join(', ') + ')');
+  let seedQ = 7; const rnd = () => { seedQ = (seedQ * 16807) % 2147483647; return seedQ / 2147483647; };
+  let pickOk = true, costOk = true, distinct = true, surpOk = true, defiN = 0, nP = 0;
+  for (let i = 0; i < 400; i++) {
+    const ans = [0, 1, 2, 3, 4, 5].map(() => Math.floor(rnd() * 5)).concat([Math.floor(rnd() * 4), i % 4]);
+    const r = C.quizScore(ans), P = C.quizPicks(r); nP++;
+    if (P.picks.length !== 3 || P.picks.map(x => x.role).join() !== 'evidente,voisine,surprise') pickOk = false;
+    if (P.picks.some(x => x.s.attrs.cost > r.costMax || !x.s.attrs.oneHourResult)) costOk = false;
+    if (new Set(P.picks.map(x => x.s.id)).size !== 3) distinct = false;
+    const top3 = Array.from(new Set(r.profile.universes.concat(r.topUniverses))).slice(0, Math.max(3, r.profile.universes.length));
+    if (top3.indexOf(P.picks[2].s.universe) >= 0) surpOk = false;
+    if (C.quizDefi(P.picks[0].s.id).edited) defiN++;
+  }
+  ok(pickOk, 'évidente, voisine, surprise pour chaque résultat');
+  ok(costOk, 'budget (Q8) respecté par les 3 savoir-faire');
+  ok(distinct, 'les 3 savoir-faire sont distincts');
+  ok(surpOk, 'la surprise est hors des 3 univers du profil');
+  ok(defiN / nP >= 0.6, 'défi rédigé pour l’évidente dans ' + Math.round(defiN / nP * 100) + ' % des tirages');
+  const r0 = C.quizScore([1, 1, 0, 4, 0, 1, 2, 1]), P0 = C.quizPicks(r0), P1 = C.quizPicks(r0, { surprise: 1 });
+  ok(P0.surprises.length >= 2 && P1.picks[2].s.id === P0.surprises[1] && P1.picks[0].s.id === P0.picks[0].s.id, '« une autre surprise » : la suivante de la liste');
+  ok(JSON.stringify(C.quizPicks(r0).picks.map(x => x.s.id)) === JSON.stringify(P0.picks.map(x => x.s.id)), 'test déterministe');
+  ok(r0.costMax === 1 && r0.budget === 15, 'Q8 : coût max 1 et budget 15 €');
+  const DF = win.CORDES_DEFIS;
+  ok(Object.keys(DF).length === 60 && Object.keys(DF).every(id => D.sById[id] && DF[id].etapes.length === 3 && DF[id].titre && DF[id].reussi), '60 défis rédigés, 3 étapes chacun');
+  const dflt = C.quizDefi('pixel-art'), gen = C.quizDefi(D.skills.find(s => !DF[s.id]).id);
+  ok(dflt.edited && !gen.edited && gen.etapes.length === 3 && gen.minutes === 15, 'défi de repli construit par gabarit');
+  const tcode = await C.encodeQuiz(r0, 'Léa'), tback = await C.decodeQuiz('#t=' + tcode);
+  ok(tback && tback.answers.join('') === '11040121' && tback.name === 'Léa' && await C.decodeQuiz(tcode.slice(0, 6)) === null, 'résultat partagé #t= : 8 réponses et prénom, code tronqué → null');
+  const rB = C.quizScore([3, 4, 1, 0, 1, 4, 3, 3]), cmpQ = C.quizCompare(r0, rB);
+  ok(cmpQ.axes.length === 4 && cmpQ.together.length === 2 && cmpQ.together[0].universe !== cmpQ.together[1].universe, 'comparaison : 4 axes, 2 savoir-faire à apprendre ensemble (' + cmpQ.together.map(s => s.name).join(', ') + ')');
+  const qst = C.mergeState(JSON.parse(JSON.stringify(C.quizToState(r0, P0.picks))));
+  ok(qst.version === 2 && qst.deck.seed.length === 3 && qst.context.budgetPerMonth === 15 && qst.deck.uniW.cuisine === 0.5, 'passerelle vers le bilan : état valide, budget, graines et poids d’univers');
+  const ten = C.nextCards(qst, 10).map(c => c.s.id);
+  ok(P0.picks.every(p => ten.indexOf(p.s.id) >= 0) && ten.slice(0, 3).every(id => qst.deck.seed.indexOf(id) >= 0), 'paquet d’inspiration : les 3 savoir-faire en tête (' + ten.slice(0, 3).join(', ') + ')');
+  // liste d'attente : source dans le CSV, mesure des curieux
+  C.waitlist.add({ role: 'apprendre', zone: 'Paris 11e', consent: true, email: 'c@d.fr', wants: ['latte-art'], source: 'test' });
+  ok(/;source\r\n/.test(C.waitlist.csv().split('\r\n')[0] + '\r\n') && /;test\r\n/.test(C.waitlist.csv()), 'liste d’attente : colonne source dans le CSV');
+  const cev = [['view', { r: 'idees' }, 's1'], ['idees_open', { o: 'evjf' }, 's1'], ['idees_add', { id: 'x' }, 's1'], ['idees_share', { n: 2 }, 's1'], ['idees_recv', { n: 2 }, 's2'], ['idees_recv', { n: 2 }, 's3'], ['test_start', null, 's3'], ['test_done', { profile: 'palais' }, 's3'], ['test_to_bilan', null, 's3'], ['waitlist', { role: 'apprendre' }, 's3']].map((x, i) => ({ e: x[0], p: x[1] || undefined, s: x[2], t: 1e12 + i * 1000 }));
+  const crep = C.metricsReport(cev);
+  ok(crep.curious.map(f => f.n).join() === '3,2,1,1,1' && crep.viral.shares === 1 && crep.viral.opens === 2 && crep.viral.k === 2, 'entonnoir des curieux et coefficient viral (' + crep.curious.map(f => f.n).join(' · ') + ', k = ' + crep.viral.k + ')');
+  ok(C.KEY_LABELS['cordes.quiz'] && C.KEY_LABELS['cordes.ideas'], 'nouvelles clés listées dans « Mes données »');
+  console.log('  EVJF : ' + C.ideas('evjf').items.slice(0, 6).map(x => x.s.name).join(' · '));
+  console.log('  corde ' + r0.profile.name + ' : ' + P0.picks.map(x => x.label + ' ' + x.s.name).join(' · '));
+
   // robustesse : données manquantes ou mal formées
   const broken = { universes: [{ id: 'cuisine' }], domains: [], skills: [{ id: 'x', name: 'X', universe: 'nope', domain: 'cuisine.zz', related: ['inconnu'] }, { id: 'y', name: 'Y', universe: 'cuisine', attrs: { demand: 9 }, related: ['x', 'zzz'] }], softSkills: [] };
   let threw = false;
