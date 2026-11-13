@@ -768,7 +768,7 @@ kbd{font:500 10.5px/1 var(--f-mono);border:1px solid var(--line-2);border-bottom
     <div class="ph"><span class="pt">Poids des critères</span><span class="pi" id="wSum">total 100</span></div>
     <div class="pb"><div class="g3" id="wCtrls"></div><div class="row" style="margin-top:6px"><button type="button" class="btn" id="wReset">Rétablir les poids</button></div></div>
   </div>
-  <div class="tbl wide-tbl" id="gridWrap"><table id="gridTable"><caption>Chargement de la grille…</caption></table></div>
+  <div class="tbl" id="gridWrap"><table id="gridTable"><caption>Chargement de la grille…</caption></table></div>
 
   <figure class="fig">
     <div class="fig-title"><span>Matrice attraction × effort</span><span class="small">taille du point = score pondéré · jugement de l'étude</span></div>
@@ -1842,7 +1842,7 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
     var rows = [
       ['Bilan en ligne',1,36,'solid'],['Liste d\'attente et collecte',1,36,'solid'],['Séances pilotes à la main',2,3,'solid'],
       ['Abonnement, vague 1',4,36,'solid'],['Séances d\'équipe',6,36,'solid'],['Plateforme V1',7,9,'dash'],['Plateforme V1',10,18,'solid'],
-      ['Idées à vivre, test',1,36,'solid'],['Lieux : charte, formules 1-3',1,36,'solid'],['Groupes privés, programmes lieux',4,36,'solid'],['Lieu à la une',10,36,'solid'],['Vague 2 (provisoire)',10,36,'solid'],['Programmes publics',13,36,'solid'],['Chantiers, troc, carnet',19,36,'solid'],['2e ville',24,29,'dash'],['2e ville',30,36,'solid']
+      ['Idées à vivre, test',1,36,'solid'],['Lieux : charte, formules 1-3',1,36,'solid'],['Groupes privés, lieux payants',4,36,'solid'],['Lieu à la une',10,36,'solid'],['Vague 2 (provisoire)',10,36,'solid'],['Programmes publics',13,36,'solid'],['Chantiers, troc, carnet',19,36,'solid'],['2e ville',24,29,'dash'],['2e ville',30,36,'solid']
     ];
     var labels = []; rows.forEach(function(r){ if (labels.indexOf(r[0]) < 0) labels.push(r[0]); });
     var h = '';
@@ -1858,6 +1858,7 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
       h += '<rect x="' + x(r[1]) + '" y="' + y + '" width="' + Math.max(4, x(r[2] + 1) - x(r[1]) - 2) + '" height="12" rx="3" fill="' + (dash ? 'none' : 'var(--accent)') + '" fill-opacity="' + (dash ? 0 : 0.85) + '" stroke="var(--accent)" stroke-dasharray="' + (dash ? '3 2' : '0') + '"/>';
     });
     g.innerHTML = h;
+    var svgR = g.ownerSVGElement; if (svgR) svgR.setAttribute('viewBox', '0 0 860 ' + (70 + labels.length * 22));
   })();
 
   /* ---------- Simulateur ---------- */
@@ -2083,6 +2084,113 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
   syncCtrls(); run(); scenTable();
   var rzT = 0, lastW = window.innerWidth;
   window.addEventListener('resize', function(){ $$('.tip').forEach(function(t){ t.classList.remove('on'); }); clearTimeout(rzT); rzT = setTimeout(function(){ if (Math.abs(window.innerWidth - lastW) > 40){ lastW = window.innerWidth; run(); } }, 200); });
+
+  /* ---------- Chiffres du central dans le texte ---------- */
+  (function(){
+    var C = Mdl.model(Mdl.presets.central), sm = Mdl.summary(C), R = C.rows;
+    var set = function(sel, txt){ $$(sel).forEach(function(el){ el.textContent = txt; }); };
+    set('[data-k="S12"]', n0(sm.S12)); set('[data-k="S36"]', n0(sm.S36)); set('[data-k="CA3"]', keur(sm.CA3));
+    set('[data-ks="S36"]', n0(sm.S24) + ' à M24 · v1.0 : 811');
+    set('[data-ks="CA3"]', 'HT · ' + keur(sm.CA1) + ' an 1 · ' + keur(sm.CA2) + ' an 2');
+    set('[data-ks="need"]', 'trésorerie au plus bas ≈ ' + keur(sm.minCash) + ' à M' + sm.minCashM + ' · v1.0 : 31 k€ de besoin');
+    var r100 = function(v){ return n0(Math.round(v / 10) * 10); };
+    [3, 9, 18].forEach(function(m){ var x = R[m - 1]; set('[data-kc="V' + m + '"]', r100(x.V)); set('[data-kc="I' + m + '"]', n0(x.Icur)); set('[data-kc="G' + m + '"]', n0(x.G)); });
+  })();
+
+  /* ---------- Pistes pour attirer les curieux : grille et matrice ---------- */
+  (function(){
+    var SHORT = ['Attr.','Fréq.','Viral.','Coût','CAC','Niches','Chemin','Déf.','Proto'];
+    var CRIT = [['cur','Attraction des curieux',20],['freq','Fréquence d\'usage',10],['vir','Viralité',15],['cost','Coût de production (5 = faible)',15],['cac','CAC (5 = faible)',10],['niche','Découverte des niches',10],['path','Chemin vers bilan et plateforme',10],['def','Défendabilité',5],['proto','Faisable sans serveur',5]];
+    var P = [
+      ['Agenda local',[4,5,2,1,3,3,3,2,1]],
+      ['Test « Ta corde cachée »',[4,1,5,5,5,4,5,1,5]],
+      ['Défi hebdomadaire',[3,4,3,3,4,4,4,2,4]],
+      ['Idées à vivre',[5,3,4,4,4,5,5,3,5]],
+      ['Vitrine vidéo',[4,4,4,2,3,5,3,2,2]],
+      ['Carte des talents',[3,2,2,2,3,3,4,4,1]],
+      ['Lettre locale',[2,4,2,3,3,3,3,3,3]],
+      ['Grand Jeu de saison',[4,3,4,1,3,4,3,4,2]],
+      ['Outils du quotidien',[4,4,2,4,4,4,3,2,4]],
+      ['Soirées découverte',[4,2,3,2,3,4,5,5,3]]
+    ];
+    var W0 = CRIT.map(function(c){ return c[2]; }), W = W0.slice();
+    var wc = $('#wCtrls'), gt = $('#gridTable'); if (!wc || !gt) return;
+    wc.innerHTML = CRIT.map(function(c, i){ return '<div class="ctrl"><label for="w_' + c[0] + '">' + esc(c[1]) + '<output id="wo_' + c[0] + '">' + c[2] + '</output></label><input type="range" id="w_' + c[0] + '" data-i="' + i + '" min="0" max="40" step="5" value="' + c[2] + '"></div>'; }).join('');
+    function scores(){ var tot = W.reduce(function(a, b){ return a + b; }, 0) || 1; return P.map(function(p){ var s = 0; p[1].forEach(function(v, i){ s += v * W[i]; }); return s / 5 / tot * 100; }); }
+    function draw(){
+      var sc = scores(), tot = W.reduce(function(a, b){ return a + b; }, 0);
+      $('#wSum').textContent = 'total ' + tot + (tot !== 100 ? ' · ramené à 100' : '');
+      var order = P.map(function(p, i){ return i; }).sort(function(a, b){ return sc[b] - sc[a]; });
+      var h = '<caption>Notes de 1 à 5 · score pondéré sur 100 · rang recalculé avec les poids · Attr. attraction des curieux · Fréq. fréquence · Viral. viralité · Coût production et mise à jour · CAC coût d\'acquisition · Niches découverte · Chemin vers bilan et plateforme · Déf. défendabilité · Proto faisable sans serveur</caption><thead><tr><th>Rang</th><th>Piste</th>' + CRIT.map(function(c, i){ return '<th class="r" title="' + esc(c[1]) + '">' + SHORT[i] + '<br><span style="font-weight:400">' + W[i] + '</span></th>'; }).join('') + '<th class="r">Score</th></tr></thead><tbody>';
+      order.forEach(function(i, k){ var p = P[i], top = k < 2; h += '<tr' + (top ? ' class="tot"' : '') + '><td class="r">' + (k + 1) + '</td><td>' + (i + 1) + ' · ' + esc(p[0]) + (top ? '<br><span class="pill p-int" style="margin-top:4px"><i></i>retenue</span>' : '') + '</td>' + p[1].map(function(v){ return '<td class="r">' + v + '</td>'; }).join('') + '<td class="r">' + Math.round(sc[i]) + '</td></tr>'; });
+      gt.innerHTML = h + '</tbody>';
+      drawMatrix(sc, order);
+    }
+    function drawMatrix(sc, order){
+      var svg = $('#pisteChart'); if (!svg) return;
+      var L = 70, T = 20, Wd = 600, H = 330, x = function(v){ return L + 20 + (v - 1) / 4 * (Wd - 40); }, y = function(v){ return T + 15 + (1 - (v - 2) / 2.5) * (H - 30); };
+      var LAB = [['l',0],['r',0],['b',0],['r',0],['l',0],['l',0],['l',0],['l',0],['l',0],['r',0]];
+      var h = '<rect x="' + L + '" y="' + T + '" width="' + Wd + '" height="' + H + '" fill="none" stroke="var(--line)"/>';
+      h += '<rect x="' + L + '" y="' + T + '" width="' + Wd / 2 + '" height="' + H / 2 + '" fill="color-mix(in srgb,var(--int) 6%,transparent)"/>';
+      h += '<line x1="' + (L + Wd / 2) + '" x2="' + (L + Wd / 2) + '" y1="' + T + '" y2="' + (T + H) + '" stroke="var(--line-2)" stroke-dasharray="3 3"/><line x1="' + L + '" x2="' + (L + Wd) + '" y1="' + (T + H / 2) + '" y2="' + (T + H / 2) + '" stroke="var(--line-2)" stroke-dasharray="3 3"/>';
+      h += '<text x="' + L + '" y="' + (T + H + 20) + '" font-size="10" fill="var(--fg-3)">EFFORT FAIBLE</text><text x="' + (L + Wd) + '" y="' + (T + H + 20) + '" font-size="10" fill="var(--fg-3)" text-anchor="end">EFFORT ÉLEVÉ</text>';
+      h += '<text transform="translate(' + (L - 14) + ',' + (T + H) + ') rotate(-90)" font-size="10" fill="var(--fg-3)">ATTIRE PEU</text><text transform="translate(' + (L - 14) + ',' + T + ') rotate(-90)" font-size="10" fill="var(--fg-3)" text-anchor="end">ATTIRE LES CURIEUX</text>';
+      h += '<text x="' + (L + 8) + '" y="' + (T + 16) + '" font-size="10" fill="var(--int)">ZONE CIBLE</text>';
+      var top2 = order.slice(0, 2);
+      P.forEach(function(p, i){
+        var v = p[1], eff = 6 - (v[3] * 0.7 + v[8] * 0.3), att = (v[0] * 20 + v[2] * 15 + v[1] * 10) / 45;
+        var cx = x(eff), cy = y(att), r = 4 + Math.max(0, sc[i] - 45) / 5, on = top2.indexOf(i) >= 0;
+        var side = LAB[i][0], right = side === 'r';
+        h += '<g class="pp" data-i="' + i + '" tabindex="0" role="img" aria-label="' + esc(p[0]) + ', score ' + Math.round(sc[i]) + '"><circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + r.toFixed(1) + '" fill="' + (on ? 'var(--accent)' : 'var(--panel-2)') + '" stroke="' + (on ? 'var(--accent)' : 'var(--fg-3)') + '" stroke-width="1.5" fill-opacity="' + (on ? 0.85 : 1) + '"/><text x="' + (side === 'b' ? cx : right ? cx + r + 5 : cx - r - 5).toFixed(1) + '" y="' + (side === 'b' ? cy + r + 13 : cy + 3.5).toFixed(1) + '" font-size="10.5" fill="' + (on ? 'var(--fg)' : 'var(--fg-2)') + '" text-anchor="' + (side === 'b' ? 'middle' : right ? 'start' : 'end') + '">' + (i + 1) + ' · ' + esc(p[0]) + '</text></g>';
+      });
+      svg.innerHTML = h;
+      var tip = $('#pisteTip');
+      $$('.pp', svg).forEach(function(g){
+        function show(){ var i = +g.getAttribute('data-i'), c = g.querySelector('circle'); placeTip(tip, svg, +c.getAttribute('cx'), +c.getAttribute('cy') - 8, '<b>' + esc(P[i][0]) + '</b><br>Score pondéré : ' + Math.round(sc[i]) + ' sur 100'); }
+        g.addEventListener('mouseenter', show); g.addEventListener('focus', show);
+        g.addEventListener('mouseleave', function(){ tip.classList.remove('on'); }); g.addEventListener('blur', function(){ tip.classList.remove('on'); });
+      });
+    }
+    wc.addEventListener('input', function(e){ if (!e.target.matches('input[type=range]')) return; var i = +e.target.getAttribute('data-i'); W[i] = +e.target.value; $('#wo_' + CRIT[i][0]).textContent = W[i]; draw(); });
+    var rb = $('#wReset'); if (rb) rb.addEventListener('click', function(){ W = W0.slice(); CRIT.forEach(function(c, i){ $('#w_' + c[0]).value = W[i]; $('#wo_' + c[0]).textContent = W[i]; }); draw(); });
+    draw();
+  })();
+
+  /* ---------- Gain mensuel estimé pour un lieu ---------- */
+  (function(){
+    var svg = $('#venueChart'); if (!svg) return;
+    var N = 4.33, PPL = 5, PART = 4;
+    var D = [
+      ['Cave à vin · formule 1', N * PPL * 15, 0.7, 'ticket 15 €, 5 personnes (4 + hôte)'],
+      ['Restaurant hors service · 1', N * PPL * 12, 0.7, 'ticket 12 €'],
+      ['Soirée découverte · 6', 30 * 10, 0.7, '1 soirée par mois, 30 personnes, 10 € au bar'],
+      ['Bar · 1', N * PPL * 10, 0.7, 'ticket 10 €'],
+      ['Café, coffee shop · 1', N * PPL * 6, 0.7, 'ticket 6 €'],
+      ['Boutique de matériel · 2', N * PART * 0.25 * 30, 0.35, '25 % des 4 participants achètent, panier 30 €'],
+      ['Librairie-café · 1', N * PPL * 5, 0.7, 'ticket 5 €'],
+      ['Studio, atelier · 3', N * Math.max(15, PART * 4), 1, '4 € par place, minimum 15 € par séance']
+    ];
+    var Lw = 190, Rm = 70, T = 6, rowH = 38, Wv = 640, Wd = Wv - Lw - Rm, mx = 350, x = function(v){ return v / mx * Wd; };
+    var h = '';
+    [0, 100, 200, 300].forEach(function(v){ h += '<line x1="' + (Lw + x(v)) + '" x2="' + (Lw + x(v)) + '" y1="' + T + '" y2="' + (T + D.length * rowH) + '" stroke="var(--line)"/><text x="' + (Lw + x(v)) + '" y="' + (T + D.length * rowH + 14) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">' + v + ' €</text>'; });
+    D.forEach(function(d, i){
+      var yy = T + i * rowH + 6, m = d[1] * d[2];
+      h += '<g class="vb" data-i="' + i + '"><rect x="0" y="' + (yy - 4) + '" width="' + Wv + '" height="' + rowH + '" fill="transparent"/>';
+      h += '<text x="' + (Lw - 8) + '" y="' + (yy + 13) + '" font-size="10.5" fill="var(--fg-2)" text-anchor="end">' + esc(d[0]) + '</text>';
+      h += '<rect x="' + Lw + '" y="' + yy + '" width="' + Math.max(2, x(d[1])).toFixed(1) + '" height="10" rx="3" fill="var(--accent)"/>';
+      h += '<rect x="' + Lw + '" y="' + (yy + 13) + '" width="' + Math.max(2, x(m)).toFixed(1) + '" height="10" rx="3" fill="var(--int)"/>';
+      h += '<text x="' + (Lw + x(d[1]) + 6).toFixed(1) + '" y="' + (yy + 9) + '" font-size="10" fill="var(--fg)">' + n0(d[1]) + ' €</text><text x="' + (Lw + x(m) + 6).toFixed(1) + '" y="' + (yy + 22) + '" font-size="10" fill="var(--fg-2)">' + n0(m) + ' €</text></g>';
+    });
+    svg.setAttribute('viewBox', '0 0 ' + Wv + ' ' + (T + D.length * rowH + 22));
+    svg.innerHTML = h;
+    var tip = $('#venueTip');
+    $$('.vb', svg).forEach(function(g){
+      g.addEventListener('mousemove', function(){ var d = D[+g.getAttribute('data-i')]; placeTip(tip, svg, Lw + x(d[1]) + 60, T + (+g.getAttribute('data-i')) * rowH + 4, '<b>' + esc(d[0]) + '</b><br>' + esc(d[3]) + '<br>CA ' + n0(d[1]) + ' € · marge ' + n0(d[1] * d[2]) + ' €'); });
+      g.addEventListener('mouseleave', function(){ tip.classList.remove('on'); });
+    });
+    var tb = $('#venueTable');
+    if (tb) tb.innerHTML = '<thead><tr><th>Lieu · formule</th><th class="r">CA par mois</th><th class="r">Marge brute</th><th>Hypothèses (estimations)</th></tr></thead><tbody>' + D.map(function(d){ return '<tr><td>' + esc(d[0]) + '</td><td class="r">' + n0(d[1]) + ' €</td><td class="r">' + n0(d[1] * d[2]) + ' € (' + Math.round(d[2] * 100) + ' %)</td><td class="t">' + esc(d[3]) + ' · 4,33 séances par mois</td></tr>'; }).join('') + '</tbody>';
+  })();
 
   /* ---------- Carte de positionnement ---------- */
   (function(){
