@@ -353,6 +353,8 @@ details.sec .sname small{display:block;font-family:var(--f-mono);font-size:11px;
 .figs li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-family:var(--f-body);font-size:15px;line-height:1.5}
 .figs li:last-child{border-bottom:0}
 .chart svg{display:block;width:100%;height:auto}
+.schart .dist{width:100%}
+.schart{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 110px;gap:6px 12px;align-items:center;font-size:11.5px}
 footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:var(--fg-3);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap}
 .hide{display:none!important}
 
@@ -404,6 +406,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .topl li{grid-template-columns:30px minmax(0,1fr)}
   .topl .rs{grid-column:2;text-align:left;display:flex;gap:10px;align-items:center}
   .prose{font-size:16px}
+  .schart{grid-template-columns:96px minmax(0,1fr) 54px;gap:6px 8px;font-size:10.5px}
   .chips .lb{min-width:0;width:100%}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -459,7 +462,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <h2 id="h-met">Grille de notation, poids et échelle de maîtrise</h2>
   <div class="prose">
     <p>Chaque niche reçoit douze notes de 0 à 5. Le score est la moyenne pondérée ramenée sur 100. La grille ne contient aucun critère lié à une équipe ou à ses compétences : l’analyse est agnostique et tous les classements découlent des seules notes de marché, d’offre et de format.</p>
-    <p>Le <strong>score avec parades</strong> remplace la propension à payer d’une niche faible par la propension effective qu’apporte sa meilleure parade (tiers payeur, package, abonnement). Il sert aux classements et aux portefeuilles. Le score brut reste affiché partout.</p>
+    <p>Le <strong>score avec parades</strong> remplace la propension à payer d’une niche faible par une propension effective : la propension de départ plus la moitié de l’écart avec la portée de sa meilleure parade (tiers payeur, package, abonnement). La moitié seulement, car une parade ajoute un risque d’exécution. Il sert aux classements et aux portefeuilles. Le score brut reste affiché partout.</p>
   </div>
   <div class="panel">
     <div class="ph"><span class="t">Poids des critères</span><span class="h" id="wsum"></span><div class="act"><button class="btn" id="w-reset" type="button">Réinitialiser</button></div></div>
@@ -505,7 +508,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <section class="s" id="secteurs" aria-labelledby="h-sec">
   <div class="eyebrow">04 · secteurs et catégories</div>
   <h2 id="h-sec">Synthèses chiffrées par secteur et catégorie</h2>
-  <div class="panel chart"><div class="ph"><span class="t">Score moyen et verdicts par secteur</span><span class="h">score avec parades en trait, brut en barre</span></div><div class="pb" id="sec-chart"></div></div>
+  <div class="panel chart"><div class="ph"><span class="t">Score moyen et verdicts par secteur</span><span class="h">point : score brut · trait : avec parades</span></div><div class="pb" id="sec-chart"></div></div>
   <div class="tw"><table id="sec-t"></table></div>
   <p class="note">Cliquer sur un secteur pour déplier ses catégories. Prix : milieu de fourchette des paliers 1 et 4, en euros par personne (estimations des fiches).</p>
   <h3>Diagnostic et bench des 17 secteurs</h3>
@@ -596,7 +599,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <section class="s" id="portefeuilles" aria-labelledby="h-pf">
   <div class="eyebrow">08 · portefeuilles</div>
   <h2 id="h-pf">Portefeuilles de lancement</h2>
-  <div class="prose"><p>Six portefeuilles candidats, chacun défini par un circuit de lieux. Le moteur y place les six meilleures niches (score avec parades, une par catégorie, deux par secteur au plus, au moins une niche à parade si le thème en contient), puis note le portefeuille : score moyen avec parades 45 %, meilleurs mixes internes 20 %, vivier d’hôtes 15 %, propension effective 10 %, concentration des lieux 10 %.</p></div>
+  <div class="prose"><p>Six portefeuilles candidats, chacun défini par un circuit de lieux. Un lieu compte s’il figure parmi les deux lieux principaux de la niche. Les portefeuilles choisissent à tour de rôle la meilleure niche restante de leur circuit (score avec parades, une par catégorie, deux par secteur au plus, jamais deux quasi-doublons, au moins une niche à parade si le circuit en contient). Une niche n’appartient qu’à un portefeuille. Le moteur note ensuite le portefeuille : score moyen avec parades 45 %, meilleurs mixes internes 20 %, vivier d’hôtes 15 %, propension effective 10 %, concentration des lieux 10 %.</p></div>
   <div id="pf-reco"></div>
   <div class="pfs" id="pfs"></div>
 </section>
@@ -1162,16 +1165,19 @@ function renderSectors() {
   rows.sort(function (a, b) { var x = key(a), y = key(b); return typeof x === 'string' ? SECS.d * x.localeCompare(y) : SECS.d * (x - y); });
   var vcol = ['prioritaire', 'a-tester', 'plus-tard', 'ecarter'];
   /* graphique en barres */
-  var mx = 100;
-  $('sec-chart').innerHTML = '<div style="display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 120px;gap:6px 12px;align-items:center;font-size:11.5px">' + rows.slice().sort(function (a, b) { return b.m.s1 - a.m.s1; }).map(function (r) {
-    var x = r.x; return '<span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--fg-2)">' + esc(r.s.n) + '</span><span style="position:relative;height:14px;display:block"><span style="position:absolute;left:0;top:4px;height:6px;border-radius:3px;background:var(--accent);width:' + (r.m.s / mx * 100) + '%"></span><span style="position:absolute;top:0;height:14px;width:2px;background:var(--int);left:' + (r.m.s1 / mx * 100) + '%"></span><span style="position:absolute;left:calc(' + (r.m.s1 / mx * 100) + '% + 6px);top:-1px;color:var(--fg)">' + f1(r.m.s1) + '</span></span>' +
+  var vals = []; rows.forEach(function (r) { vals.push(r.m.s, r.m.s1); }); var lo = Math.floor((Math.min.apply(null, vals) - 2) / 4) * 4, hi = lo + 16; while (hi < Math.max.apply(null, vals) + 1) hi += 4;
+  var ticks = []; for (var t = lo; t <= hi; t += (hi - lo) / 4) ticks.push(t);
+  var pos = function (v) { return Math.max(0, Math.min(100, (v - lo) / (hi - lo) * 100)); };
+  var axis = '<span></span><span style="position:relative;height:14px;display:block;color:var(--fg-3);font-size:10px">' + ticks.map(function (t) { return '<span style="position:absolute;left:' + pos(t) + '%;transform:translateX(-50%)">' + t + '</span>'; }).join('') + '</span><span style="color:var(--fg-3);font-size:10px">verdicts</span>';
+  $('sec-chart').innerHTML = '<div class="schart">' + axis + rows.slice().sort(function (a, b) { return b.m.s1 - a.m.s1; }).map(function (r) {
+    var x = r.x; return '<span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--fg-2)">' + esc(r.s.n) + '</span><span style="position:relative;height:16px;display:block;background:linear-gradient(var(--line-2),var(--line-2)) 0 50%/100% 1px no-repeat"><span title="brut" style="position:absolute;top:4px;width:8px;height:8px;border-radius:50%;background:var(--accent);left:calc(' + pos(r.m.s) + '% - 4px)"></span><span title="avec parades" style="position:absolute;top:1px;height:14px;width:2px;background:var(--int);left:' + pos(r.m.s1) + '%"></span><span style="position:absolute;left:calc(' + pos(Math.max(r.m.s, r.m.s1)) + '% + 8px);top:0;color:var(--fg)">' + f1(r.m.s1) + '</span></span>' +
       '<span class="dist" title="verdicts">' + vcol.map(function (v) { return x.vc[v] ? '<i style="flex:' + x.vc[v] + ';background:var(--' + L.verdict[v][1] + ')"></i>' : ''; }).join('') + '</span>';
-  }).join('') + '</div><div class="legend" style="margin-top:12px"><span><i style="background:var(--accent)"></i>Score brut moyen</span><span><i style="background:var(--int);width:2px"></i>Avec parades</span>' + vcol.map(function (v) { return '<span><i style="background:var(--' + L.verdict[v][1] + ')"></i>' + L.verdict[v][0] + '</span>'; }).join('') + '</div>';
+  }).join('') + '</div><div class="legend" style="margin-top:12px"><span><i style="background:var(--accent);border-radius:50%"></i>Score brut moyen</span><span><i style="background:var(--int);width:2px"></i>Avec parades</span><span style="color:var(--fg-3)">échelle de 60 à 76</span>' + vcol.map(function (v) { return '<span><i style="background:var(--' + L.verdict[v][1] + ')"></i>' + L.verdict[v][0] + '</span>'; }).join('') + '</div>';
   var hd = [['name', 'Secteur'], ['n', 'Niches'], ['s0', 'Score'], ['s1', 'Avec parades'], ['prio', 'Prioritaires'], ['wtp', 'Prop. moy.'], ['low', 'Faibles à parade'], ['p1', 'Prix P1'], ['p4', 'Prix P4'], ['best', 'Meilleure niche']];
   var h = '<thead><tr>' + hd.map(function (c, i) { var on = SECS.k === c[0]; return '<th' + (i && i < 9 ? ' class="num"' : '') + ' aria-sort="' + (on ? (SECS.d > 0 ? 'ascending' : 'descending') : 'none') + '">' + (c[0] === 'best' ? c[1] : '<button type="button" data-ss="' + c[0] + '">' + c[1] + (on ? (SECS.d > 0 ? ' ↑' : ' ↓') : '') + '</button>') + '</th>'; }).join('') + '</tr></thead><tbody>';
   rows.forEach(function (r) {
     var x = r.x, b = byId[x.best];
-    h += '<tr class="clk" data-sx="' + r.s.id + '" tabindex="0" aria-expanded="' + !!SOPEN[r.s.id] + '"><td><span class="tri">▶</span> <span class="nm">' + esc(r.s.n) + '</span></td><td class="num">' + x.n + '</td><td class="num">' + f1(r.m.s) + '</td><td class="num">' + f1(r.m.s1) + '</td><td class="num">' + Math.round(x.vc.prioritaire / x.n * 100) + ' %</td><td class="num">' + f1(x.wtp) + '</td><td class="num">' + x.low + '</td><td class="num">' + x.p1 + ' €</td><td class="num">' + x.p4 + ' €</td><td>' + (b ? '<button class="lnk" type="button" data-open="' + b.id + '">' + esc(b.name) + '</button>' : '') + '</td></tr>';
+    h += '<tr class="clk" data-sx="' + r.s.id + '" tabindex="0" aria-expanded="' + !!SOPEN[r.s.id] + '"><td style="white-space:nowrap"><span class="tri">▶</span> <span class="nm">' + esc(r.s.n) + '</span></td><td class="num">' + x.n + '</td><td class="num">' + f1(r.m.s) + '</td><td class="num">' + f1(r.m.s1) + '</td><td class="num">' + Math.round(x.vc.prioritaire / x.n * 100) + ' %</td><td class="num">' + f1(x.wtp) + '</td><td class="num">' + x.low + '</td><td class="num">' + x.p1 + ' €</td><td class="num">' + x.p4 + ' €</td><td>' + (b ? '<button class="lnk" type="button" data-open="' + b.id + '">' + esc(b.name) + '</button>' : '') + '</td></tr>';
     if (SOPEN[r.s.id]) D.cats.forEach(function (c) { if (c.sec !== r.s.id) return; var cx = D.catStats[c.id], cm = st.cat[c.id], cb = byId[cx.best]; h += '<tr class="cat"><td>' + esc(c.name) + '</td><td class="num">' + cx.n + '</td><td class="num">' + f1(cm.s) + '</td><td class="num">' + f1(cm.s1) + '</td><td class="num">' + Math.round(cx.vc.prioritaire / Math.max(1, cx.n) * 100) + ' %</td><td class="num">' + f1(cx.wtp) + '</td><td class="num">' + cx.low + '</td><td class="num">' + cx.p1 + ' €</td><td class="num">' + cx.p4 + ' €</td><td>' + (cb ? '<button class="lnk" type="button" data-open="' + cb.id + '">' + esc(cb.name) + '</button>' : '') + '</td></tr>'; });
   });
   $('sec-t').innerHTML = h + '</tbody>';
@@ -1192,7 +1198,7 @@ $('sec-diag').innerHTML = D.sectors.map(function (s) {
 /* ───── top 15 ───── */
 var TM = 's1';
 function argue(n) {
-  var s = n.scores, best = E.CRIT.map(function (c) { return [c[1], s[c[0]], c[3]]; }).filter(function (c) { return c[1] >= 4; }).sort(function (a, b) { return b[2] - a[2]; }).slice(0, 3).map(function (c) { return c[0].toLowerCase() + ' ' + c[1]; });
+  var s = n.scores, best = E.CRIT.map(function (c) { return [c[1], s[c[0]], c[3]]; }).filter(function (c) { return c[1] >= 4; }).sort(function (a, b) { return b[2] - a[2]; }).slice(0, 3).map(function (c) { return c[0].toLowerCase() + ' ' + fs1(c[1]); });
   var t = esc(n.why) + ' Points forts : ' + best.join(', ') + '.';
   if (n.par) t += ' Propension ' + s.wtp + '/5 compensée par ' + n.par.map(function (p) { return PAR[p].n.toLowerCase(); }).join(' ou ') + '.';
   t += ' Palier 1 à ' + n.levels[0].price[0] + '-' + n.levels[0].price[1] + ' €, palier 4 à ' + n.levels[3].price[0] + '-' + n.levels[3].price[1] + ' €.';

@@ -353,6 +353,8 @@ details.sec .sname small{display:block;font-family:var(--f-mono);font-size:11px;
 .figs li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-family:var(--f-body);font-size:15px;line-height:1.5}
 .figs li:last-child{border-bottom:0}
 .chart svg{display:block;width:100%;height:auto}
+.schart .dist{width:100%}
+.schart{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 110px;gap:6px 12px;align-items:center;font-size:11.5px}
 footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:var(--fg-3);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap}
 .hide{display:none!important}
 
@@ -404,6 +406,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .topl li{grid-template-columns:30px minmax(0,1fr)}
   .topl .rs{grid-column:2;text-align:left;display:flex;gap:10px;align-items:center}
   .prose{font-size:16px}
+  .schart{grid-template-columns:96px minmax(0,1fr) 54px;gap:6px 8px;font-size:10.5px}
   .chips .lb{min-width:0;width:100%}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -459,7 +462,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <h2 id="h-met">Grille de notation, poids et échelle de maîtrise</h2>
   <div class="prose">
     <p>Chaque niche reçoit douze notes de 0 à 5. Le score est la moyenne pondérée ramenée sur 100. La grille ne contient aucun critère lié à une équipe ou à ses compétences : l’analyse est agnostique et tous les classements découlent des seules notes de marché, d’offre et de format.</p>
-    <p>Le <strong>score avec parades</strong> remplace la propension à payer d’une niche faible par la propension effective qu’apporte sa meilleure parade (tiers payeur, package, abonnement). Il sert aux classements et aux portefeuilles. Le score brut reste affiché partout.</p>
+    <p>Le <strong>score avec parades</strong> remplace la propension à payer d’une niche faible par une propension effective : la propension de départ plus la moitié de l’écart avec la portée de sa meilleure parade (tiers payeur, package, abonnement). La moitié seulement, car une parade ajoute un risque d’exécution. Il sert aux classements et aux portefeuilles. Le score brut reste affiché partout.</p>
   </div>
   <div class="panel">
     <div class="ph"><span class="t">Poids des critères</span><span class="h" id="wsum"></span><div class="act"><button class="btn" id="w-reset" type="button">Réinitialiser</button></div></div>
@@ -505,7 +508,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <section class="s" id="secteurs" aria-labelledby="h-sec">
   <div class="eyebrow">04 · secteurs et catégories</div>
   <h2 id="h-sec">Synthèses chiffrées par secteur et catégorie</h2>
-  <div class="panel chart"><div class="ph"><span class="t">Score moyen et verdicts par secteur</span><span class="h">score avec parades en trait, brut en barre</span></div><div class="pb" id="sec-chart"></div></div>
+  <div class="panel chart"><div class="ph"><span class="t">Score moyen et verdicts par secteur</span><span class="h">point : score brut · trait : avec parades</span></div><div class="pb" id="sec-chart"></div></div>
   <div class="tw"><table id="sec-t"></table></div>
   <p class="note">Cliquer sur un secteur pour déplier ses catégories. Prix : milieu de fourchette des paliers 1 et 4, en euros par personne (estimations des fiches).</p>
   <h3>Diagnostic et bench des 17 secteurs</h3>
@@ -596,7 +599,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
 <section class="s" id="portefeuilles" aria-labelledby="h-pf">
   <div class="eyebrow">08 · portefeuilles</div>
   <h2 id="h-pf">Portefeuilles de lancement</h2>
-  <div class="prose"><p>Six portefeuilles candidats, chacun défini par un circuit de lieux. Le moteur y place les six meilleures niches (score avec parades, une par catégorie, deux par secteur au plus, au moins une niche à parade si le thème en contient), puis note le portefeuille : score moyen avec parades 45 %, meilleurs mixes internes 20 %, vivier d’hôtes 15 %, propension effective 10 %, concentration des lieux 10 %.</p></div>
+  <div class="prose"><p>Six portefeuilles candidats, chacun défini par un circuit de lieux. Un lieu compte s’il figure parmi les deux lieux principaux de la niche. Les portefeuilles choisissent à tour de rôle la meilleure niche restante de leur circuit (score avec parades, une par catégorie, deux par secteur au plus, jamais deux quasi-doublons, au moins une niche à parade si le circuit en contient). Une niche n’appartient qu’à un portefeuille. Le moteur note ensuite le portefeuille : score moyen avec parades 45 %, meilleurs mixes internes 20 %, vivier d’hôtes 15 %, propension effective 10 %, concentration des lieux 10 %.</p></div>
   <div id="pf-reco"></div>
   <div class="pfs" id="pfs"></div>
 </section>
