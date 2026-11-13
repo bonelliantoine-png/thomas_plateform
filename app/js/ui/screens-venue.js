@@ -64,7 +64,7 @@
       if (param === 'pitch') { mountPitch(root); return; }
       var v = venueState();
       if (v.slots.length && !ui._vSimSeen) { ui._vSimSeen = true; C.track('venue_sim_view'); }
-      [['#v-name', 'name'], ['#v-email', 'contact']].forEach(function (p) { var el = ui.$(p[0], root); if (el) { el.addEventListener('input', function () { v[p[1]] = el.value; venueSave(); }); el.addEventListener('change', function () { if (p[1] === 'name') ui.render(); }); } });
+      [['#v-name', 'name'], ['#v-email', 'contact']].forEach(function (p) { var el = ui.$(p[0], root); if (el) { el.addEventListener('input', function () { v[p[1]] = el.value; venueSave(); }); } });
       var city = ui.$('#v-city', root);
       if (city) { city.addEventListener('input', function () { v.city = city.value; venueSave(); }); city.addEventListener('change', function () { ui.render(); }); }
       var arr = ui.$('#v-arr', root); if (arr) arr.addEventListener('change', function () { v.arr = arr.value; venueSave(); ui.render(); });

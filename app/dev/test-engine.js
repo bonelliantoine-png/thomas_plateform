@@ -435,6 +435,48 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
   console.log('  EVJF : ' + C.ideas('evjf').items.slice(0, 6).map(x => x.s.name).join(' · '));
   console.log('  corde ' + r0.profile.name + ' : ' + P0.picks.map(x => x.label + ' ' + x.s.name).join(' · '));
 
+  /* ---------- brief V2 · section 2 : lieux partenaires ---------- */
+  console.log('\nLieux partenaires');
+  C.loadVenues();
+  const gain = (type, f, extra) => C.venueGain(C.migrateVenue(Object.assign({ type, slots: ['1:aprem'], formulas: f }, extra || {})));
+  const row = (g, id) => g.rows.find(r => r.id === id);
+  ok(gain('cafe', ['creuse']).ca === 130 && gain('cafe', ['creuse']).marge === 91, 'gain café, 1 créneau : 130 € de CA, 91 € de marge');
+  ok(gain('bar', ['creuse']).ca === 217 && gain('bar', ['creuse']).marge === 152, 'gain bar : 217 € et 152 €');
+  ok(gain('cave', ['creuse']).ca === 325 && gain('cave', ['creuse']).marge === 227, 'gain cave : 325 € et 227 €');
+  ok(gain('studio-musique', ['recette']).ca === 69, 'gain studio (part fixe par place) : 69 €');
+  ok(gain('boutique-materiel', ['membre']).ca === 130 && gain('boutique-materiel', ['membre']).marge === 45, 'gain boutique (ventes liées) : 130 € et 45 €');
+  ok(row(gain('bar', ['soiree']), 'soiree').ca === 300 && row(gain('bar', ['soiree']), 'soiree').marge === 210, 'soirée découverte : 300 € et 210 €');
+  const g0 = C.venueGain(C.migrateVenue({ type: 'bar', slots: [], formulas: ['creuse', 'recette', 'membre'] }));
+  ok(g0.ca === 0 && g0.marge === 0 && g0.sessions === 0 && g0.rows.every(r => isFinite(r.ca) && isFinite(r.marge)), '0 créneau : 0 partout, sans erreur');
+  ok(C.venueGain(C.migrateVenue({ type: 'cafe', slots: ['1:aprem'], formulas: ['creuse'] }), { people: 40 }).params.people === 8 && C.venueGain(C.migrateVenue({ type: 'cafe', slots: ['1:aprem'] }), { people: 0 }).params.people === 2, 'participants bornés à 2-8');
+  ok(row(gain('hotel', ['programme']), 'programme').cost === 800 && row(gain('cafe', ['une']), 'une').cost === 39 && row(gain('mediatheque', ['public']), 'public').cost === 1000, 'formules payées par le lieu : coûts (programme, à la une, public)');
+  ok(gain('cafe', ['creuse']).newClientsValue6m > 0, 'valeur des nouveaux clients sur 6 mois (hypothèse)');
+  ok(C.venueGain(C.migrateVenue({ type: 'cafe', slots: ['1:aprem', '2:aprem', '3:aprem'], formulas: ['creuse'] })).ca === 390, 'trois créneaux : trois fois le gain');
+  const mv1 = C.migrateVenue({ type: 'studio', formula: 'recette', equip: ['sono'] }), mv2 = C.migrateVenue({ type: 'studio', formula: 'recette' }), mv3 = C.migrateVenue({ type: 'atelier', formula: 'creuse' });
+  ok(mv1.type === 'studio-musique' && mv2.type === 'studio-danse' && mv3.type === 'atelier-artisan' && mv1.formulas.join() === 'recette' && mv1.formula === undefined, 'migration des fiches v1 (studio, atelier, formule unique)');
+  const TY = Object.values(C.VENUE_TYPE_INFO);
+  ok(C.VENUE_TYPES.length === 20 && C.VENUE_FAMILIES.length === 6 && C.VENUE_FORMULAS.length === 7, '20 types en 6 familles, 7 formules');
+  ok(TY.every(t => (t.pitch.match(/\./g) || []).length === 3 && t.formulas.length >= 1 && t.formulas.every(f => C.formulaById(f)) && typeof t.ticket === 'number'), 'chaque type : pitch en trois phrases, formule recommandée valide, ticket numérique');
+  const bar = C.migrateVenue({ name: 'Le Bar Test', type: 'bar', city: 'Paris', arr: '10e', slots: ['1:soir', '3:soir'], capacity: 20, equip: ['tables', 'sono'], formulas: ['creuse', 'soiree'] });
+  const ch = C.venueCharter(bar);
+  ok(['Créneaux', 'Formule', 'Consommation', 'Assurance', 'Annulation', 'Paiement', 'Données', 'Exclusivité', 'Règles légales', 'Sortie'].every((c, i) => ch.indexOf((i + 1) + '. ' + c) >= 0) && /mar\. soir, jeu\. soir/.test(ch) && /12\s€ TTC/.test(ch) && /juriste/.test(ch) && !/undefined|NaN/.test(ch), 'charte : 10 clauses, créneaux, montants, mention juriste');
+  const sh = C.venueSheetHTML(bar), chH = C.venueCharterHTML(bar), pr = C.venuePrintHTML(bar);
+  ok(sh.startsWith('<!DOCTYPE html>') && /Le Bar Test/.test(sh) && /Six séances possibles/.test(sh) && /@page\{size:A4/.test(sh) && !/undefined|NaN/.test(sh + chH + pr), 'fiche HTML autonome imprimable, charte et affiche HTML sans valeur manquante');
+  ok(/Pour le lieu · nom, date, signature/.test(chH) && /class="a4"/.test(pr) && /class="a6"/.test(pr), 'charte HTML avec zones de signature ; affiche A4 et chevalet A6');
+  const kit = C.venueKit(bar);
+  ok(kit.posts.length === 3 && kit.message.length > 80 && kit.sessions.length === 3 && new Set(kit.sessions.map(x => x.s.short)).size === 3, 'kit : 3 publications, un message, 3 séances distinctes');
+  ok(/FICHE LIEU PARTENAIRE · Le Bar Test/.test(C.venueSheet(bar)) && /Formules : 1 · Heure creuse/.test(C.venueSheet(bar)), 'fiche texte enrichie');
+  ok(C.DEMO_VENUES.length === 6 && C.DEMO_VENUES.every(v => v.demo && v.slug && C.VENUE_TYPE_INFO[v.type] && v.formulas.length), '6 lieux fictifs de démonstration');
+  let vfOk = true, vfN = 0;
+  for (const s of D.skills.filter((x, i) => i % 3 === 0)) {
+    C.venuesFor(s.id, 'Paris 11e', 6).forEach(x => { vfN++; if (!C.venueSkillScore(x.v, s) || !x.demo) vfOk = false; if (s.regulated === 'alcool' && C.VENUE_LICENSED.indexOf(x.v.type) < 0) vfOk = false; if (s.attrs.physical >= 3 && x.v.equip.indexOf('parquet') < 0 && x.v.equip.indexOf('exterieur') < 0) vfOk = false; });
+  }
+  ok(vfOk && vfN > 20, 'C.venuesFor : jamais un lieu dont l’équipement exclut la compétence, démo signalée (' + vfN + ' propositions)');
+  ok(C.venuesFor('latte-art', 'Paris 11e')[0].v.slug === 'comptoir-tranquille', 'latte art près du 11e : le café de démonstration du 11e d’abord');
+  ok(C.venueBySlug('studio-contretemps').type === 'studio-musique' && C.venueBySlug('inconnu') === null, 'fiche publique : recherche par identifiant');
+  const vev = ['venue_type', 'venue_slots', 'venue_sim_view', 'venue_charter_dl', 'venue_join'].map((e, i) => ({ e, s: 'v1', t: 1e12 + i }));
+  ok(C.metricsReport(vev.concat([{ e: 'venue_type', s: 'v2', t: 2e12 }])).venue.map(f => f.n).join() === '2,1,1,1,1', 'entonnoir des lieux');
+
   // robustesse : données manquantes ou mal formées
   const broken = { universes: [{ id: 'cuisine' }], domains: [], skills: [{ id: 'x', name: 'X', universe: 'nope', domain: 'cuisine.zz', related: ['inconnu'] }, { id: 'y', name: 'Y', universe: 'cuisine', attrs: { demand: 9 }, related: ['x', 'zzz'] }], softSkills: [] };
   let threw = false;

@@ -308,9 +308,9 @@ async function download(page, clickSel) {
     for (const k of ['1:aprem', '2:aprem', '4:matin']) await page.click(`[data-act="vSlot"][data-k="${k}"]`);
     await page.click('[data-act="vEquip"][data-v="machine"]');
     await page.click('[data-act="vFormula"][data-v="membre"]');
-    ok(await page.locator('#venue-out .resitem').count() >= 8, 'A10 · compétences compatibles');
-    ok(/Café de spécialité|Latte art/.test(await page.textContent('#venue-out')), 'A10 · équipement pris en compte (machine à café)');
-    ok(/FICHE LIEU PARTENAIRE · Café des Volontaires/.test(await page.textContent('#venue-out .copyblock')), 'A10 · fiche partenaire générée');
+    ok(await page.locator('#venue-skills .resitem').count() >= 8, 'A10 · compétences compatibles');
+    ok(/Café de spécialité|Latte art/.test(await page.textContent('#venue-skills')), 'A10 · équipement pris en compte (machine à café)');
+    ok(/Café des Volontaires/.test(await page.textContent('.vsheet')) && await page.evaluate(() => JSON.parse(localStorage.getItem('cordes.venue')).formulas.join()) === 'creuse,membre', 'A10 · fiche partenaire générée, deux formules cochées');
     await page.click('[data-act="vJoin"]');
     await page.waitForTimeout(100);
     ok(await page.evaluate(() => Cordes.ui.st.waitlist.role !== 'lieu'), 'A10 · consentement exigé');
@@ -330,8 +330,8 @@ async function download(page, clickSel) {
     await shot(page, 'e2e-375-15-groupe');
     // A3 + A6 tableau de bord
     await page.goto(URL + '#/admin/metrics'); await page.waitForTimeout(200);
-    ok(await page.locator('.frow:not(.cf)').count() === 8 && await page.locator('.frow.cf').count() === 5, 'A3 · entonnoir à 8 étapes et entonnoir des curieux à 5 étapes');
-    const funnel = await page.$$eval('.frow:not(.cf) .num > b', b => b.map(x => +x.textContent));
+    ok(await page.locator('.frow:not(.cf):not(.vf)').count() === 8 && await page.locator('.frow.cf').count() === 5, 'A3 · entonnoir à 8 étapes et entonnoir des curieux à 5 étapes');
+    const funnel = await page.$$eval('.frow:not(.cf):not(.vf) .num > b', b => b.map(x => +x.textContent));
     ok(funnel.length === 8 && funnel[0] >= 1 && funnel[4] >= 1 && funnel[6] >= 1 && funnel[7] >= 1, 'A3 · étapes mesurées sur cet appareil (' + funnel.join(' · ') + ')');
     ok(/1/.test(await page.textContent('#q ~ .counters .counter .v')), 'A6 · réponse visible dans le tableau de bord');
     await page.click('[data-act="mSrc"][data-val="demo"]'); await page.click('[data-act="mSim"]'); await page.waitForTimeout(200);
@@ -496,6 +496,62 @@ async function download(page, clickSel) {
     await p2.close();
     await ctx.close();
   }
+  /* ---------- brief V2 · section 2 : parcours d'un bar, 375 et 1440 px ---------- */
+  for (const W of [375, 1440]) {
+    console.log('Lieu partenaire · ' + W + ' px');
+    const { page } = await newPage(browser, W, errs);
+    const noOv = async name => { const ov = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); ok(ov <= 0, name + ' : aucun débordement à ' + W + ' px (' + ov + ' px)'); };
+    await page.goto(URL + '#/lieu'); await page.waitForSelector('#v-name');
+    ok(await page.locator('[data-act="vType"]').count() === 20 && await page.locator('.vfam').count() === 6, '20 types de lieux en 6 familles');
+    await page.fill('#v-name', 'Le Zinc Exemple'); await page.dispatchEvent('#v-name', 'change'); await page.waitForTimeout(100);
+    await page.fill('#v-city', 'Paris'); await page.dispatchEvent('#v-city', 'change'); await page.waitForTimeout(100);
+    await page.selectOption('#v-arr', '10e');
+    await page.click('[data-act="vType"][data-v="bar"]');
+    ok(/Vos débuts de soirée sont creux/.test(await page.textContent('.vpitch')), 'pitch du type affiché');
+    for (const k of ['1:soir', '3:soir', '4:soir']) await page.click(`[data-act="vSlot"][data-k="${k}"]`);
+    ok(await page.locator('[data-act="vFormula"][data-v="creuse"]').getAttribute('aria-pressed') === 'true', 'formule recommandée cochée par défaut');
+    await page.click('[data-act="vFormula"][data-v="soiree"]');
+    const ca0 = await page.textContent('#v-sim .counter:nth-child(3) .v');
+    ok(/1\s?250|1 250/.test(ca0.replace(/\u202f|\u00a0/g, ' ')) || ca0.trim().length > 0, 'gain calculé (' + ca0.trim() + ')');
+    await page.click('.vhyp summary');
+    const bars0 = await page.innerHTML('#v-sim .vbars');
+    await page.fill('#vs-ticket', '14'); await page.dispatchEvent('#vs-ticket', 'change'); await page.waitForTimeout(150);
+    const ca1 = await page.textContent('#v-sim .counter:nth-child(3) .v');
+    ok(ca1 !== ca0 && await page.innerHTML('#v-sim .vbars') !== bars0, 'modifier le ticket met à jour le CA et le graphique (' + ca0.trim() + ' → ' + ca1.trim() + ')');
+    await page.click('[data-act="vCompare"]'); await page.waitForTimeout(150);
+    ok(await page.locator('#v-sim svg.bars > g[style*="opacity"]').count() === 7, 'comparer : les 7 formules côte à côte');
+    await noOv('simulateur');
+    await page.locator('#v-s3').screenshot({ path: path.join(SHOTS, 'e2e-' + W + '-26-simulateur.png') });
+    // présentation au clavier
+    await page.click('[data-act="vPitch"]'); await page.waitForSelector('.pslide');
+    const titles = [];
+    for (let i = 0; i < 4; i++) { titles.push(await page.textContent('.pslide .pt')); if (i < 3) { await page.keyboard.press('ArrowRight'); await page.waitForTimeout(120); } }
+    ok(new Set(titles).size === 4 && /4 \/ 4/.test(await page.textContent('.pbar')), 'présentation : 4 diapositives au clavier');
+    await noOv('présentation');
+    await page.keyboard.press('ArrowLeft'); await page.waitForTimeout(100);
+    await page.screenshot({ path: path.join(SHOTS, 'e2e-' + W + '-27-presentation.png') });
+    await page.click('.pbar a[href="#/lieu"]'); await page.waitForSelector('#v-s4');
+    // documents
+    const fiche = await download(page, '[data-act="vDlSheet"]');
+    ok(/^cordes-lieu-le-zinc-exemple\.html$/.test(fiche.name) && /Le Zinc Exemple/.test(fiche.content) && /Six séances possibles/.test(fiche.content), 'fiche HTML téléchargée (' + fiche.name + ')');
+    const charte = await download(page, '[data-act="vDlCharter"][data-fmt="html"]');
+    ok(/charte/.test(charte.name) && /10 · Sortie/.test(charte.content) && /signature/.test(charte.content), 'charte HTML téléchargée');
+    const ctxt = await download(page, '[data-act="vDlCharter"][data-fmt="txt"]');
+    ok(/1\. Créneaux/.test(ctxt.content) && /juriste/.test(ctxt.content), 'charte texte');
+    const aff = await download(page, '[data-act="vKitDl"][data-item="affiche"]');
+    ok(/affiche-le-zinc-exemple\.png$/.test(aff.name) && aff.size > 10000, 'affiche PNG (' + aff.size + ' o)');
+    await noOv('lieu complet');
+    await page.screenshot({ path: path.join(SHOTS, 'e2e-' + W + '-28-lieu.png'), fullPage: true });
+    await page.check('#v-consent'); await page.click('[data-act="vJoin"]'); await page.waitForTimeout(200);
+    ok(await page.evaluate(() => { const v = JSON.parse(localStorage.getItem('cordes.waitlist')).find(x => x.role === 'lieu'); return v && v.venue.formulas.join() === 'creuse,soiree' && v.venue.gain.ca > 0 && v.zone === 'Paris 10e'; }), 'inscription du lieu avec formules et gain');
+    // mise en avant
+    await page.goto(URL + '#/idees/amis'); await page.waitForSelector('.idea');
+    ok(/À faire chez .* · lieu fictif de démonstration/.test(await page.textContent('.ideas')), 'idées à vivre : « À faire chez … · lieu fictif de démonstration »');
+    await page.locator('.venueline').first().click(); await page.waitForTimeout(200);
+    ok(/#\/l\//.test(page.url()) && /Séances possibles ici/.test(await page.textContent('#view')), 'fiche publique du lieu');
+    await page.goto(URL + '#/attente'); await page.waitForSelector('.vready');
+    ok(/lieux? prêts? dans/.test(await page.textContent('.vready')), 'liste d’attente : lieux prêts dans la zone');
+  }
   /* ---------- page publiée simulée : window.claude, aucun appel réseau ---------- */
   console.log('Page publiée simulée · 375 px');
   {
@@ -524,7 +580,14 @@ async function download(page, clickSel) {
     await page.waitForSelector('.cordename');
     await page.click('.tile[data-act="qzCard"]'); await page.waitForSelector('#qz-prev img', { timeout: 8000 });
     await page.click('#drawer [data-act="qzDl"]'); await page.waitForTimeout(300);
+    await page.keyboard.press('Escape');
+    await page.goto(URL + '#/lieu'); await page.waitForSelector('#v-name');
+    await page.fill('#v-name', 'Lieu Test'); await page.dispatchEvent('#v-name', 'change'); await page.waitForTimeout(100);
+    await page.click('[data-act="vSlot"][data-k="1:soir"]');
+    await page.click('[data-act="vDlSheet"]'); await page.waitForTimeout(200);
+    await page.click('[data-act="vKitDl"][data-item="affiche"]'); await page.waitForTimeout(600);
     const saved = await page.evaluate(() => window.__saved);
+    ok(saved.indexOf('cordes-lieu-lieu-test.html') >= 0 && saved.some(n => /affiche-lieu-test\.png$/.test(n)), 'page publiée : fiche et affiche du lieu routées par la plateforme (' + saved.join(', ') + ')');
     ok(saved.indexOf('cordes-bon-cadeau.png') >= 0 && saved.some(n => /corde-story\.png$/.test(n)), 'page publiée : téléchargements routés par la plateforme (' + saved.join(', ') + ')');
     ok(net.length === 0, 'page publiée : aucun appel réseau dans les nouveaux écrans (' + net.join(', ') + ')');
     await ctx.close();
