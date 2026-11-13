@@ -246,7 +246,7 @@ async function download(page, clickSel) {
     await page.goto(URL);
     await page.evaluate(() => { const st = Cordes.buildDemo('ines'); delete st.demo; st.context.firstName = 'Lou'; st.context.city = 'Paris'; localStorage.setItem('cordes.v1', JSON.stringify(st)); });
     await page.goto(URL + '#/resultats'); await page.reload(); await page.waitForTimeout(250);
-    ok(await page.locator('#usages ~ .tiles .tile, .tiles .tile[data-act]').count() === 12, 'résultats : 12 utilisations du bilan');
+    ok(await page.locator('#usages ~ .tiles .tile, .tiles .tile[data-act]').count() === 14, 'résultats : 14 utilisations du bilan (dont idées à vivre et test)');
     ok(await page.evaluate(() => Cordes.history.list().length === 1), 'A5 · instantané daté à l’arrivée aux résultats');
     // A4 carte image
     await page.click('[data-act="card"].tile');
@@ -330,8 +330,8 @@ async function download(page, clickSel) {
     await shot(page, 'e2e-375-15-groupe');
     // A3 + A6 tableau de bord
     await page.goto(URL + '#/admin/metrics'); await page.waitForTimeout(200);
-    ok(await page.locator('.frow').count() === 8, 'A3 · entonnoir à 8 étapes');
-    const funnel = await page.$$eval('.frow .num > b', b => b.map(x => +x.textContent));
+    ok(await page.locator('.frow:not(.cf)').count() === 8 && await page.locator('.frow.cf').count() === 5, 'A3 · entonnoir à 8 étapes et entonnoir des curieux à 5 étapes');
+    const funnel = await page.$$eval('.frow:not(.cf) .num > b', b => b.map(x => +x.textContent));
     ok(funnel.length === 8 && funnel[0] >= 1 && funnel[4] >= 1 && funnel[6] >= 1 && funnel[7] >= 1, 'A3 · étapes mesurées sur cet appareil (' + funnel.join(' · ') + ')');
     ok(/1/.test(await page.textContent('#q ~ .counters .counter .v')), 'A6 · réponse visible dans le tableau de bord');
     await page.click('[data-act="mSrc"][data-val="demo"]'); await page.click('[data-act="mSim"]'); await page.waitForTimeout(200);
@@ -382,6 +382,152 @@ async function download(page, clickSel) {
     await page.evaluate(() => document.getElementById('d-echelle').scrollIntoView()); await page.waitForTimeout(200);
     await noOverflow2(page, 'comment ça marche');
     await shot(page, 'e2e-375-19-echelle', false);
+  }
+  /* ---------- brief V2 · curieux : idées à vivre et test, 375 et 1440 px ---------- */
+  for (const W of [375, 1440]) {
+    console.log('Curieux · ' + W + ' px');
+    const { ctx, page } = await newPage(browser, W, errs);
+    const noOv = async name => { const ov = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); ok(ov <= 0, name + ' : aucun débordement à ' + W + ' px (' + ov + ' px)'); };
+    await page.goto(URL);
+    ok(await page.locator('.door').count() === 3 && await page.locator('.hero .btn.primary').count() === 1, 'accueil : trois portes, une seule principale');
+    await page.click('.door a[href="#/idees"]'); await page.waitForSelector('.occ');
+    ok(await page.locator('.occ').count() === 9, 'idées : 9 occasions');
+    await noOv('occasions');
+    if (W === 375) await shot(page, 'e2e-375-20-occasions');
+    await page.click('.occ[href="#/idees/evjf"]');
+    await page.waitForSelector('.idea');
+    ok(await page.locator('.idea').count() === 6, 'EVJF : 6 cartes d’idées');
+    await page.click('[data-act="idOpt"][data-k="budget"][data-v="50"]');
+    await page.click('[data-act="idOpt"][data-k="people"][data-v="3"]');
+    ok(await page.locator('[data-act="idOpt"][data-k="budget"][data-v="50"]').getAttribute('aria-pressed') === 'true', 'réglages : budget appliqué (aria-pressed)');
+    const firstTitle = await page.textContent('.idea .it');
+    ok(/en bande$/.test(firstTitle.trim()), 'titre adapté au groupe (' + firstTitle.trim() + ')');
+    await page.click('[data-act="idMore"]');
+    ok(await page.locator('.idea').count() === 12, '« Voir 6 autres »');
+    for (let k = 0; k < 3; k++) await page.locator('.idea [data-act="idAdd"][aria-pressed="false"]').first().click();
+    const sel = await page.evaluate(() => JSON.parse(localStorage.getItem('cordes.ideas')).sel);
+    ok(sel.length === 3, 'trois idées ajoutées à la sélection');
+    await page.locator('.idea [data-act="idSheet"]').first().click();
+    await page.waitForSelector('#drawer [data-sheet]');
+    ok(await page.locator('#drawer .linkgrid a').count() >= 3 && /À la fin de l’heure/.test(await page.textContent('#drawer')), 'fiche idée : fin de l’heure et où le faire');
+    await page.keyboard.press('Escape'); await page.waitForTimeout(200);
+    await noOv('idées EVJF');
+    await shot(page, 'e2e-' + W + '-21-idees');
+    await page.locator('[data-act="idSend"]:visible').first().click();
+    await page.waitForSelector('#id-msg');
+    await page.fill('#id-from', 'Léa'); await page.dispatchEvent('#id-from', 'change'); await page.waitForTimeout(300);
+    const msg = await page.inputValue('#id-msg');
+    ok(/^Léa te propose 3 idées pour bientôt : .* On vote ici : file:.*#i=[zj][\w-]+$/.test(msg), 'message de groupe avec lien #i=');
+    await page.click('[data-act="idCopy"]');
+    // bon cadeau
+    await page.click('#drawer [data-act="idGift"]');
+    await page.waitForSelector('#gift-prev img', { timeout: 8000 });
+    await page.fill('#gf-to', 'Léa'); await page.dispatchEvent('#gf-to', 'change'); await page.waitForTimeout(400);
+    const gift = await download(page, '#drawer [data-act="giftDl"]');
+    ok(/bon-cadeau\.png$/.test(gift.name) && gift.size > 10000, 'bon cadeau PNG (' + gift.size + ' o)');
+    ok(await page.evaluate(() => { const i = document.querySelector('#gift-prev img'); return i.naturalWidth === 1080 && i.naturalHeight === 1350; }), 'bon cadeau 1080 × 1350');
+    await shot(page, 'e2e-' + W + '-22-bon', false);
+    await page.click('#drawer [data-act="giftPrint"]');
+    ok(await page.evaluate(() => window.__printed >= 1 && !!document.getElementById('giftprint')), 'bon imprimable A6');
+    await page.emulateMedia({ media: 'print' });
+    ok(await page.evaluate(() => { document.body.classList.add('printgift'); const g = document.querySelector('#giftprint .gp'); const ok2 = g && g.scrollWidth <= g.clientWidth + 1 && getComputedStyle(document.getElementById('view')).display === 'none'; document.body.classList.remove('printgift'); return ok2; }), 'impression du bon : seul le bon, sans débordement');
+    await page.emulateMedia({ media: 'screen' });
+    await page.keyboard.press('Escape'); await page.waitForTimeout(200);
+    // vue reçue dans un nouvel onglet
+    const link = msg.match(/(file:\S+#i=[\w-]+)/)[1];
+    const p2 = await ctx.newPage();
+    p2.on('pageerror', e => errs.push(W + ' · pageerror: ' + e.message));
+    await p2.goto(link); await p2.waitForSelector('text=Léa te propose 3 idées', { timeout: 5000 });
+    ok(await p2.locator('[data-act="idVote"]').count() === 3, 'vue reçue : 3 idées à voter');
+    await p2.locator('[data-act="idVote"]').first().click();
+    ok(/^Je vote .*, merci Léa\.$/.test((await p2.textContent('#vote-out .cb-t')).trim()), 'vote : message de réponse composé');
+    if (W === 375) { const ov = await p2.evaluate(() => document.documentElement.scrollWidth - innerWidth); ok(ov <= 0, 'vue reçue : aucun débordement à 375 px'); await p2.screenshot({ path: path.join(SHOTS, 'e2e-375-23-recu.png'), fullPage: true }); }
+    await p2.goto(link.split('#')[0] + '#i=' + link.split('#i=')[1].slice(0, 12)); await p2.waitForTimeout(400);
+    ok(/Lien incomplet/.test(await p2.textContent('#view')), 'lien #i= tronqué : message clair');
+    await p2.goto(link); await p2.waitForSelector('[data-act="recvTest"]');
+    await p2.click('[data-act="recvTest"]');
+    // test au clavier
+    await p2.click('[data-act="qzStart"]');
+    await p2.waitForSelector('.qopt');
+    const keys = ['2', '2', '1', '5', '1', '2', '3', '2'];
+    await p2.keyboard.press(keys[0]); await p2.waitForTimeout(260);
+    ok(await p2.evaluate(() => document.activeElement && document.activeElement.classList.contains('qopt') && getComputedStyle(document.activeElement).outlineStyle !== 'none' && document.querySelector('.qprog i.done')), 'test : focus visible sur les options, progression');
+    for (const k of keys.slice(1)) { await p2.keyboard.press(k); await p2.waitForTimeout(260); }
+    await p2.waitForSelector('.cordename');
+    ok(await p2.getAttribute('.cordename', 'aria-live') === 'polite' && (await p2.textContent('.cordename')).length > 3, 'résultat : nom de la corde annoncé (' + (await p2.textContent('.cordename')) + ')');
+    ok(await p2.locator('.pick').count() === 3 && await p2.locator('.pick.surprise').count() === 1, 'trois savoir-faire : évidente, voisine, surprise');
+    const s1 = await p2.textContent('.pick.surprise .it');
+    await p2.click('[data-act="qzMore"]'); await p2.waitForTimeout(200);
+    ok((await p2.textContent('.pick.surprise .it')) !== s1, '« Une autre surprise »');
+    await p2.locator('[data-act="qzLike"]').first().click(); await p2.waitForTimeout(150);
+    ok(await p2.locator('[data-act="qzLike"]').first().getAttribute('aria-pressed') === 'true', '« Ça me tente » (aria-pressed)');
+    await p2.check('[data-act="qzDefi"]'); await p2.waitForTimeout(200);
+    ok(await p2.evaluate(() => Object.keys(JSON.parse(localStorage.getItem('cordes.quiz')).defiDone).length === 1) && await p2.locator('[data-act="qzCard"][data-defi]').count() === 1, 'défi fait, persisté, partage de la réussite proposé');
+    if (W === 375) { const ov = await p2.evaluate(() => document.documentElement.scrollWidth - innerWidth); ok(ov <= 0, 'résultat du test : aucun débordement à 375 px'); }
+    await p2.screenshot({ path: path.join(SHOTS, 'e2e-' + W + '-24-corde.png'), fullPage: true });
+    await p2.click('.tile[data-act="qzCard"]');
+    await p2.waitForSelector('#qz-prev img', { timeout: 8000 });
+    ok(await p2.evaluate(() => { const i = document.querySelector('#qz-prev img'); return i.naturalWidth === 1080 && i.naturalHeight === 1920; }), 'carte de la corde au format story');
+    await p2.keyboard.press('Escape'); await p2.waitForTimeout(200);
+    // liste d'attente pré-remplie avec la source
+    await p2.click('.tile[data-act="qzWait"]'); await p2.waitForSelector('#wl-email');
+    ok(await p2.locator('.chip.on[data-act="wlSkill"][data-k="wants"]').count() >= 1, 'liste d’attente : envies du test pré-remplies');
+    await p2.fill('#wl-city', 'Paris'); await p2.dispatchEvent('#wl-city', 'change'); await p2.waitForTimeout(150);
+    await p2.check('#wl-consent'); await p2.click('[data-act="wlSave"]'); await p2.waitForTimeout(200);
+    ok(await p2.evaluate(() => (JSON.parse(localStorage.getItem('cordes.waitlist')) || []).some(e => e.source === 'test')), 'inscription avec source « test »');
+    // comparaison #t=
+    await p2.goto(URL + '#/test/r'); await p2.waitForSelector('.cordename');
+    await p2.click('.tile[data-act="qzCompare"]'); await p2.waitForSelector('#qz-link');
+    const tlink = (await p2.inputValue('#qz-link')).match(/(file:\S+#t=[\w-]+)/)[1];
+    await p2.keyboard.press('Escape');
+    await p2.goto(URL + '#/accueil'); await p2.evaluate(() => { const q = JSON.parse(localStorage.getItem('cordes.quiz')); q.answers = [3, 4, 1, 0, 1, 4, 3, 3]; localStorage.setItem('cordes.quiz', JSON.stringify(q)); });
+    await p2.goto(tlink); await p2.waitForSelector('text=Ce que vous pourriez apprendre ensemble', { timeout: 5000 });
+    const nDash = await p2.locator('svg.axes polygon[style*="dasharray"]').count(), nTog = await p2.locator('section.panel', { hasText: 'Ce que vous pourriez apprendre ensemble' }).locator('.resitem').count();
+    ok(nDash === 1 && nTog === 2, 'lien #t= : comparaison des axes et 2 savoir-faire communs (' + nDash + ', ' + nTog + ')');
+    if (W === 1440) await p2.screenshot({ path: path.join(SHOTS, 'e2e-1440-25-comparaison.png'), fullPage: true });
+    // aller plus loin : bilan avec les 3 savoir-faire en tête du paquet
+    await p2.goto(URL + '#/test/r'); await p2.waitForSelector('.cordename');
+    const picks = await p2.$$eval('.pick [data-act="qzLike"]', b => b.map(x => x.dataset.id));
+    await p2.click('.tile[data-act="qzBilan"]'); await p2.waitForTimeout(200);
+    ok(p2.url().endsWith('#/bilan/contexte'), 'aller plus loin : bilan démarré');
+    await p2.goto(URL + '#/bilan/envies'); await p2.waitForSelector('#card');
+    const firstCard = await p2.getAttribute('#card', 'data-id');
+    ok(picks.indexOf(firstCard) >= 0 && /corde cachée/.test(await p2.textContent('#card .reasons')), 'paquet d’inspiration : un des 3 savoir-faire en première carte (' + firstCard + ')');
+    await p2.close();
+    await ctx.close();
+  }
+  /* ---------- page publiée simulée : window.claude, aucun appel réseau ---------- */
+  console.log('Page publiée simulée · 375 px');
+  {
+    const net = [];
+    const ctx = await browser.newContext({ viewport: { width: 375, height: 812 }, acceptDownloads: true });
+    await ctx.route(/^https?:/, r => { if (!/fonts\.(googleapis|gstatic)/.test(r.request().url())) net.push(r.request().url()); r.abort(); });
+    const page = await ctx.newPage();
+    page.on('console', m => { if ((m.type() === 'error' || m.type() === 'warning') && !/Failed to load resource/.test(m.text())) errs.push('hosted · ' + m.type() + ': ' + m.text()); });
+    page.on('pageerror', e => errs.push('hosted · pageerror: ' + e.message));
+    await page.addInitScript(() => {
+      window.__saved = []; window.__sampled = 0;
+      window.claude = { use: cap => Promise.resolve(cap === 'downloads' ? { save: o => { window.__saved.push(o.filename); return Promise.resolve(); } } : cap === 'sample' ? (p, o) => { window.__sampled++; if (o && o.onText) o.onText({ text: 'Salsa samedi ?' }); return Promise.resolve({ text: 'Salsa ou frisbee samedi ? On vote, vite.' }); } : null) };
+    });
+    await page.goto(URL + '#/idees/amis'); await page.waitForSelector('.idea');
+    for (let k = 0; k < 2; k++) await page.locator('.idea [data-act="idAdd"][aria-pressed="false"]').first().click();
+    await page.locator('[data-act="idSend"]:visible').first().click(); await page.waitForSelector('#id-msg');
+    await page.click('[data-act="idAi"]'); await page.waitForTimeout(400);
+    const m2 = await page.inputValue('#id-msg');
+    ok(await page.evaluate(() => window.__sampled) === 1 && /^Salsa ou frisbee samedi \?/.test(m2) && /#i=[zj]/.test(m2), 'page publiée : message réécrit par sample, lien conservé');
+    await page.click('#drawer [data-act="idGift"]'); await page.waitForSelector('#gift-prev img', { timeout: 8000 });
+    await page.click('#drawer [data-act="giftDl"]'); await page.waitForTimeout(300);
+    await page.click('#drawer [data-act="giftPrint"]'); await page.waitForTimeout(200);
+    await page.keyboard.press('Escape');
+    await page.goto(URL + '#/test'); await page.click('[data-act="qzStart"]'); await page.waitForSelector('.qopt');
+    for (const k of ['1', '1', '1', '1', '1', '1', '1', '1']) { await page.keyboard.press(k); await page.waitForTimeout(260); }
+    await page.waitForSelector('.cordename');
+    await page.click('.tile[data-act="qzCard"]'); await page.waitForSelector('#qz-prev img', { timeout: 8000 });
+    await page.click('#drawer [data-act="qzDl"]'); await page.waitForTimeout(300);
+    const saved = await page.evaluate(() => window.__saved);
+    ok(saved.indexOf('cordes-bon-cadeau.png') >= 0 && saved.some(n => /corde-story\.png$/.test(n)), 'page publiée : téléchargements routés par la plateforme (' + saved.join(', ') + ')');
+    ok(net.length === 0, 'page publiée : aucun appel réseau dans les nouveaux écrans (' + net.join(', ') + ')');
+    await ctx.close();
   }
   await browser.close();
   console.log('\nErreurs console : ' + (errs.length ? '\n  ' + errs.join('\n  ') : 'aucune'));

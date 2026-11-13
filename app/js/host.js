@@ -12,7 +12,7 @@
 
   var downloads = null, sample = null;
   host.use('downloads').then(function (d) { downloads = d; }, function () { downloads = null; });
-  host.use('sample').then(function (s) { sample = s; if (s && ui && ui.render) { try { ui.render(); } catch (e) { /* rien */ } } }, function () { sample = null; });
+  host.use('sample').then(function (s) { sample = s; if (s && ui && ui.render && ui.st && C.data) { try { ui.render(); } catch (e) { /* rien */ } } }, function () { sample = null; });
 
   function toast(msg, kind) { if (ui && ui.toast) ui.toast(msg, kind); }
   var ALLOWED = /\.(png|jpe?g|webp|gif|txt|json|md|csv|html|svg|pdf|zip)$/i;
