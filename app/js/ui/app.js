@@ -86,7 +86,7 @@
     ui.$$('.topnav a').forEach(function (a) { var on = a.getAttribute('href').replace('#/', '') === r.path.split('/')[0] || a.getAttribute('href') === '#/' + r.path; a.classList.toggle('on', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   };
   ui.renderCrumb = function (r) {
-    var labels = { accueil: 'accueil', bilan: 'bilan', resultats: 'résultats', offre: 'plan de valorisation', comment: 'comment ça marche', demo: 'démo', comparer: 'comparer', attente: 'liste d’attente', copilote: 'copilote', partage: 'bilan partagé', 'outils/autour': 'outils / autour de moi', 'outils/recherches': 'outils / recherches' };
+    var labels = { accueil: 'accueil', bilan: 'bilan', resultats: 'résultats', offre: 'plan de valorisation', comment: 'comment ça marche', demo: 'démo', comparer: 'comparer', attente: 'liste d’attente', copilote: 'copilote', partage: 'bilan partagé', 'outils/autour': 'outils / autour de moi', 'outils/recherches': 'outils / recherches', groupe: 'comparer en groupe', lieu: 'lieu partenaire', donnees: 'mes données', progres: 'mes progrès', admin: 'mesure et questionnaire' };
     var t = labels[r.path] || r.path;
     if (r.path === 'bilan' && r.param) t += ' / ' + (ui.STEP_DEFS[r.param] || r.param).toLowerCase();
     var c = ui.$('#crumb'); if (c) c.textContent = t;

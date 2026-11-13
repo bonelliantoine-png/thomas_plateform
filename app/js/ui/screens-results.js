@@ -9,7 +9,7 @@
   ui.exportBar = function (st) {
     return '<div class="actionsbar noprint"><button class="btn" data-act="share">' + ui.icon('share') + ' Partager</button><button class="btn" data-act="passport">' + ui.icon('dl') + ' Passeport</button>' +
       '<button class="btn" data-act="ics">' + ui.icon('cal') + ' Agenda</button><button class="btn" data-act="print">' + ui.icon('print') + ' Imprimer</button><button class="btn" data-act="json">' + ui.icon('dl') + ' JSON</button>' +
-      '<a class="btn" href="#/comparer">Comparer</a></div>';
+      '<button class="btn" data-act="card">' + ui.icon('img') + ' Image</button><a class="btn" href="#/comparer">Comparer</a></div>';
   };
 
   ui.routes.resultats = {
@@ -54,13 +54,15 @@
       } else html += '<p class="empty">Aucune compétence au niveau « je maîtrise » pour l’instant. Le jour venu, le parcours « Je transmets » vous aidera à lancer une première séance.</p>';
 
       // utilisations directes
-      html += '<div class="section-h noprint" id="usages" tabindex="-1"><span class="kicker">Utiliser</span><h2 class="h2">Sept façons d’utiliser votre bilan</h2></div><div class="tiles noprint">' +
+      html += '<div class="section-h noprint" id="usages" tabindex="-1"><span class="kicker">Utiliser</span><h2 class="h2">Douze façons d’utiliser votre bilan</h2></div><div class="tiles noprint">' +
         [['passport', '01', 'Passeport', 'Une page HTML autonome à garder ou envoyer'], ['ics', '02', 'Plan dans l’agenda', 'Premiers pas et jalons en .ics'], ['share', '03', 'Lien de partage', 'Votre bilan lisible par un ami, sans compte'], ['gocompare', '04', 'Comparer, troquer', 'Coller le lien d’un ami pour trouver un troc'],
-          ['wishlist', '05', 'Liste d’envies à offrir', 'Des ateliers à offrir pour un anniversaire'], ['challenge', '06', 'Défi 30 jours', 'Un micro-défi par jour sur l’envie prioritaire'], ['cv', '07', 'Pour un CV', 'Centres d’intérêt et compétences transverses'], ['print', '08', 'Imprimer', 'Version papier propre, en PDF']]
+          ['wishlist', '05', 'Liste d’envies à offrir', 'Des ateliers à offrir pour un anniversaire'], ['challenge', '06', 'Défi 30 jours', 'Un micro-défi par jour sur l’envie prioritaire'], ['cv', '07', 'Pour un CV', 'Centres d’intérêt et compétences transverses'], ['print', '08', 'Imprimer', 'Version papier propre, en PDF'],
+          ['card', '09', 'Carte image', 'Une image carrée ou story pour vos réseaux'], ['goGroup', '10', 'Comparer en groupe', 'De 3 à 8 amis : qui apprend quoi à qui'], ['goProgress', '11', 'Mes progrès', 'Instantanés datés et rappel dans 90 jours'], ['goData', '12', 'Mes données', 'Tout exporter ou tout effacer']]
           .map(function (t) { return '<button class="tile" data-act="' + t[0] + '"><span class="n">' + t[1] + '</span><span class="t">' + E(t[2]) + '</span><span class="d">' + E(t[3]) + '</span></button>'; }).join('') + '</div>';
 
       // copilote
       html += '<div class="section-h noprint" id="copilote" tabindex="-1"><span class="kicker">Synthèse</span><h2 class="h2">Le mot du copilote</h2></div>' + ui.copilotPanel('synth', C.ai.templateSynthesis(st), 'Rédige une synthèse narrative et motivante (180 mots maximum) de ce bilan, puis 3 conseils concrets datés pour les 30 prochains jours.');
+      if (ui.afterResults) html += ui.afterResults(st);
       html += '</div>';
       return html;
     },
@@ -147,6 +149,9 @@
     C.download(C.fileSlug(ui.st) + '-plan.ics', C.toICS(ev), 'text/calendar;charset=utf-8'); ui.toast(ev.length + ' événements exportés');
   };
   ui.actions.gocompare = function () { ui.go('#/comparer'); };
+  ui.actions.goGroup = function () { ui.go('#/groupe'); };
+  ui.actions.goProgress = function () { ui.go('#/progres'); };
+  ui.actions.goData = function () { ui.go('#/donnees'); };
   ui.actions.share = function () {
     C.encodeShare(ui.st).then(function (code) {
       var url = C.shareUrl(code);

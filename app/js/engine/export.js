@@ -38,6 +38,7 @@
       var end = U.addDays(e.date, 1);
       L.push('BEGIN:VEVENT', 'UID:' + (e.uid || ('cordes-' + i)) + '-' + d8(e.date) + '@cordes.local', 'DTSTAMP:' + stamp,
         'DTSTART;VALUE=DATE:' + d8(e.date), 'DTEND;VALUE=DATE:' + d8(end), 'SUMMARY:' + icsEsc(e.title));
+      if (e.rrule) L.push('RRULE:' + e.rrule);
       if (e.desc) L.push('DESCRIPTION:' + icsEsc(e.desc));
       if (e.url) L.push('URL:' + e.url);
       L.push('BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + icsEsc(e.title), 'TRIGGER:-PT12H', 'END:VALARM', 'END:VEVENT');

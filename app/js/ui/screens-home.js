@@ -11,7 +11,7 @@
       var html = '<div class="wrap"><section class="hero"><div><div class="kicker">Bilan de compétences de vie · gratuit · sans compte</div>' +
         '<h1 class="h1">Tout ce que vous savez faire, et tout ce que vous voulez apprendre.</h1>' +
         '<p class="lead">Cuisine, musique, bricolage, éloquence, magie, jardin… En dix minutes, faites le point sur vos savoir-faire et vos envies. Cordes vous dit où, avec qui et comment apprendre, ou comment transmettre et en tirer un revenu.</p>' +
-        '<div class="row" style="margin-top:16px">' + ui.pill(D.skills.length + ' compétences', 'idle', false) + ui.pill(D.universes.length + ' univers', 'idle', false) + ui.pill(R.platforms.length + ' plateformes réelles', 'idle', false) + ui.pill('vos données restent sur cet appareil', 'int') + '</div></div>' +
+        '<div class="row" style="margin-top:16px">' + ui.pill(D.skills.length + ' compétences', 'idle', false) + ui.pill(D.universes.length + ' univers', 'idle', false) + ui.pill(R.platforms.length + ' plateformes réelles', 'idle', false) + '<a class="pill int pilllink" href="#/donnees"><i></i>vos données restent sur cet appareil</a></div></div>' +
         '<div class="modes" role="group" aria-label="Choisir un parcours">' +
         [['learn', 'J’apprends', 'Faire le point en 3 minutes, découvrir ce qui me tente et obtenir un plan concret pour y arriver.'], ['offer', 'Je transmets', 'Transformer un savoir-faire en offres, en prix, en canaux et en revenus, avec une feuille de route de 90 jours.'], ['both', 'Les deux', 'Apprendre et transmettre, avec des idées de troc : ce que je sais contre ce que je veux.']]
           .map(function (m) { return '<button class="choice' + (st.mode === m[0] && has ? ' on' : '') + '" data-act="start" data-mode="' + m[0] + '"><span class="h3">' + E(m[1]) + ui.icon('arrowR') + '</span><p class="sp">' + E(m[2]) + '</p></button>'; }).join('') + '</div></section>';
@@ -23,9 +23,14 @@
       html += '<div class="section-h"><span class="kicker">Exemples</span><h2 class="h2">Voir un résultat en un clic</h2></div><div class="grid3">' + C.DEMOS.map(demoCard).join('') + '</div>';
       html += '<div class="section-h"><span class="kicker">Catalogue</span><h2 class="h2">17 univers, du plus courant au plus rare</h2></div><div class="unistrip">' + D.universes.map(function (u) { return '<span><span class="sw" style="background:' + C.hue(u.id) + '"></span>' + E(u.name) + ' <b class="faint" style="font-weight:400">' + D.byUniverse[u.id].length + '</b></span>'; }).join('') + '</div>';
       html += '<div class="section-h"><span class="kicker">Outils</span><h2 class="h2">Utiles même sans bilan</h2></div><div class="tiles">' +
-        [['#/outils/autour', 'Autour de moi', 'Écoles, clubs, ateliers et tiers-lieux réels près de chez vous, via OpenStreetMap'], ['#/outils/recherches', 'Recherches préparées', 'Liens directs vers Superprof, Meetup, Eventbrite, YouTube, HelloAsso…'], ['#/comparer', 'Comparer avec un ami', 'Coller son lien de bilan : compétences communes et trocs possibles'], ['#/comment', 'Comment ça marche', 'Les algorithmes expliqués, avec leurs poids réels']]
+        [['#/outils/autour', 'Autour de moi', 'Écoles, clubs, ateliers et tiers-lieux réels près de chez vous, via OpenStreetMap'], ['#/outils/recherches', 'Recherches préparées', 'Liens directs vers Superprof, Meetup, Eventbrite, YouTube, HelloAsso…'], ['#/comparer', 'Comparer avec un ami', 'Coller son lien de bilan : compétences communes et trocs possibles'], ['#/groupe', 'Comparer en groupe', 'De 3 à 8 amis : qui peut apprendre quoi à qui'],
+          ['#/lieu', 'Proposer un lieu', 'Café, bar, studio, atelier : vos heures creuses deviennent des séances'], ['#/progres', 'Mes progrès', 'Comparer deux bilans datés, rappel tous les 3 mois'], ['#/donnees', 'Mes données', 'Ce qui reste sur l’appareil, export et suppression'], ['#/comment', 'Comment ça marche', 'Les algorithmes expliqués, avec leurs poids réels']]
           .map(function (t) { return '<a class="tile" href="' + t[0] + '" style="text-decoration:none"><span class="t">' + E(t[1]) + '</span><span class="d">' + E(t[2]) + '</span></a>'; }).join('') + '</div>';
-      html += '<div class="note int" style="margin-top:22px"><span class="lbl">Bientôt · la plateforme</span><span class="sp">Des séances d’une heure en petit groupe près de chez vous, et la possibilité de transmettre à votre tour.</span> <a href="#/attente">Rejoindre la liste d’attente</a></div>';
+      var zone = C.zoneOf(st.context.city) || 'Paris 11e';
+      html += '<div class="section-h"><span class="kicker">Bientôt</span><h2 class="h2">La plateforme ouvre quartier par quartier</h2></div><div class="grid2"><section class="panel"><div class="pb">' +
+        '<p class="prose">Des séances d’une heure en groupe de 2 à 4, près de chez vous, dans des cafés, ateliers et studios partenaires aux heures creuses. Un quartier ouvre quand ' + C.OPEN_GOAL + ' voisins se sont inscrits.</p>' +
+        '<div class="row" style="margin-top:14px"><a class="btn primary" href="#/attente">Rejoindre la liste</a><a class="btn" href="#/attente/host">Devenir hôte</a><a class="btn" href="#/lieu">Proposer un lieu</a></div></div></section>' +
+        '<section class="panel"><div class="ph"><span class="t">Ouverture</span><span class="hint">' + E(zone) + '</span></div><div class="pb">' + ui.quarterHTML(zone, { noText: false }) + '</div></section></div>';
       return html + '</div>';
     }
   };
@@ -53,39 +58,6 @@
         (backup ? '<div class="note wait" style="margin-top:16px"><span class="lbl">Bilan mis de côté</span><span class="sp">Votre propre bilan a été sauvegardé avant l’ouverture d’une démo.</span> <button class="btn sm" data-act="restoreBackup">Restaurer mon bilan</button></div>' : '') +
         '<div class="grid3" style="margin-top:20px">' + C.DEMOS.map(demoCard).join('') + '</div></div>';
     }
-  };
-
-  /* ---------- liste d'attente ---------- */
-  ui.routes.attente = {
-    title: 'Liste d’attente',
-    render: function (st, param) {
-      var w = st.waitlist || {};
-      var role = ui._wlRole || w.role || (param === 'host' ? 'transmettre' : st.mode === 'offer' ? 'transmettre' : 'apprendre');
-      var list = []; try { list = JSON.parse(W.localStorage.getItem('cordes.waitlist') || '[]'); } catch (e) { list = []; }
-      var html = '<div class="wrap narrow"><div class="kicker">Bientôt</div><h1 class="h1">La plateforme Cordes</h1>' +
-        '<p class="lead">Chaque mois, ajouter une corde à son arc avec des gens de son quartier : des séances d’une heure, en groupe de 2 à 4, dans des cafés, ateliers et studios partenaires aux heures creuses. Puis transmettre à son tour.</p>' +
-        '<div class="grid3" style="margin-top:20px">' + [['Apprendre', 'Première séance offerte, puis un abonnement à partir de 12 € par mois avec un crédit inclus.'], ['Transmettre', 'Les hôtes sont payés 12 € par place occupée, ou 2 crédits par séance. Le copilote aide à construire la trame.'], ['Lieu partenaire', 'Une heure creuse contre 4 à 10 clients qui consomment, sans loyer ni engagement.']].map(function (x) { return '<div class="panel pad"><div class="h3">' + E(x[0]) + '</div><p class="sp" style="margin-top:6px">' + E(x[1]) + '</p></div>'; }).join('') + '</div>';
-      if (w.at) html += '<div class="note int" style="margin-top:20px"><span class="lbl">Inscription enregistrée · ' + E(U.dateShort(new Date(w.at))) + '</span><span class="sp">Rôle : ' + E(w.role) + (w.role === 'transmettre' ? ' · statut hôte fondateur réservé' : '') + '. Dans ce prototype, la liste reste sur votre appareil.</span></div>';
-      html += '<section class="panel" style="margin-top:20px"><div class="ph"><span class="t">' + (w.at ? 'Modifier mon inscription' : 'Rejoindre la liste') + '</span><span class="hint">' + list.length + ' inscription' + (list.length > 1 ? 's' : '') + ' sur cet appareil</span></div><div class="pb">' +
-        '<div class="lbl">Je veux</div><div style="margin-top:8px">' + ui.seg('_', [['apprendre', 'Apprendre'], ['transmettre', 'Transmettre'], ['lieu', 'Proposer un lieu']], role, 'Rôle').replace(/data-act="set" data-bind="_"/g, 'data-act="wlRole"') + '</div>' +
-        (role === 'transmettre' ? '<div class="note int" style="margin-top:14px"><span class="lbl">Hôte fondateur</span><span class="sp">Les 50 premiers hôtes animent la séance pilote accompagnés, gardent un tarif membre à vie et choisissent leurs créneaux en premier.</span></div>' : '') +
-        '<label class="field"><span class="lbl">E-mail (facultatif)</span><input class="input" type="email" id="wl-email" value="' + E(w.email || '') + '" autocomplete="email" placeholder="vous@exemple.fr"></label>' +
-        '<label class="field"><span class="lbl">Ville</span><input class="input" id="wl-city" value="' + E(w.city || st.context.city || '') + '" autocomplete="address-level2"></label>' +
-        (role === 'lieu' ? '<label class="field"><span class="lbl">Nom et type de lieu</span><input class="input" id="wl-place" value="' + E(w.place || '') + '" placeholder="Café associatif, atelier, studio…"></label>' : '') +
-        '<button class="btn primary lg" style="margin-top:20px" data-act="wlSave">' + (w.at ? 'Mettre à jour' : 'M’inscrire') + '</button>' +
-        '<p class="faint" style="margin-top:10px;font-size:11.5px">Prototype : aucune donnée n’est envoyée. L’inscription est gardée dans le navigateur.</p></div></section></div>';
-      return html;
-    }
-  };
-  ui.actions.wlRole = function (el) { ui._wlRole = el.getAttribute('data-val'); ui.render(); };
-  ui.actions.wlSave = function () {
-    var email = ui.$('#wl-email').value.trim();
-    if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { ui.toast('E-mail invalide', 'no'); ui.$('#wl-email').focus(); return; }
-    var role = ui._wlRole || (ui.st.waitlist && ui.st.waitlist.role) || 'apprendre';
-    var entry = { email: email || undefined, role: role, city: ui.$('#wl-city').value.trim(), place: ui.$('#wl-place') ? ui.$('#wl-place').value.trim() : undefined, at: new Date().toISOString(), skills: (ui.st.offer.strong || []).slice(0, 6) };
-    ui.st.waitlist = entry; ui.save(true);
-    try { var list = JSON.parse(W.localStorage.getItem('cordes.waitlist') || '[]'); list = list.filter(function (x) { return !(x.email && x.email === entry.email); }); list.push(entry); W.localStorage.setItem('cordes.waitlist', JSON.stringify(list)); } catch (e) { /* plein */ }
-    ui.toast(role === 'transmettre' ? 'Inscrit comme hôte fondateur' : 'Inscription enregistrée'); ui.render();
   };
 
   /* ---------- copilote ---------- */

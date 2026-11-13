@@ -138,7 +138,7 @@
     title: 'Comparer avec un ami',
     render: function (st) {
       var cmp = ui._cmp || {};
-      var html = '<div class="wrap"><div class="kicker">Troc entre proches</div><h1 class="h1">Comparer avec un ami</h1><p class="lead">Collez le lien de bilan d’un ami : Cordes trouve ce que vous avez en commun, ce que chacun peut apprendre à l’autre, et des idées d’activités à deux.</p>';
+      var html = '<div class="wrap"><div class="kicker">Troc entre proches</div><h1 class="h1">Comparer avec un ami</h1><p class="lead">Collez le lien de bilan d’un ami : Cordes trouve ce que vous avez en commun, ce que chacun peut apprendre à l’autre, et des idées d’activités à deux.</p>' + ui.cmpSwitch('comparer');
       if (!st.mode) html += '<div class="note wait" style="margin-top:16px"><span class="lbl">Votre bilan d’abord</span><span class="sp">La comparaison se fait entre deux bilans.</span> <a href="#/accueil">Faire mon bilan</a> · <a href="#/demo">Charger une démo</a></div>';
       html += '<section class="panel" style="margin-top:18px"><div class="pb"><label class="lbl" for="cmp-in">Lien du bilan de votre ami</label><textarea class="input" id="cmp-in" data-search style="margin-top:8px;font:12px var(--f-mono);min-height:80px" placeholder="…index.html#b=z…">' + E(cmp.input || '') + '</textarea>' +
         '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="cmpRun"' + (st.mode ? '' : ' disabled') + '>Comparer</button>' + (st.mode ? '<button class="btn ghost" data-act="share">' + ui.icon('share') + ' Mon lien à envoyer</button>' : '') + '<button class="btn ghost" data-act="cmpDemo">Essayer avec un profil de démo</button></div>' +

@@ -34,7 +34,8 @@
 <main id="view" tabindex="-1"></main>
 <footer class="footer">
   <div class="in">
-    <span>Cordes · prototype V1 · données locales, aucun compte · lieux © contributeurs OpenStreetMap</span>
+    <div class="fcol"><span>Cordes · prototype V1 · données locales, aucun compte · lieux © contributeurs OpenStreetMap</span>
+    <nav class="flinks" aria-label="Liens secondaires"><a href="#/donnees">Mes données</a><a href="#/attente">Liste d’attente</a><a href="#/lieu">Proposer un lieu</a><a href="#/groupe">Comparer en groupe</a><a href="../seo/index.html">Fiches par compétence</a><a href="#/admin/metrics">Mesure et questionnaire</a></nav></div>
     <span class="shortcuts" aria-hidden="true"><span><kbd>/</kbd> rechercher</span><span><kbd>←</kbd> <kbd>→</kbd> <kbd>↓</kbd> cartes</span><span><kbd>Esc</kbd> fermer</span></span>
   </div>
 </footer>
@@ -61,6 +62,7 @@
 <script src="js/engine/ai.js"></script>
 <script src="js/engine/demo.js"></script>
 <script src="js/engine/export.js"></script>
+<script src="js/engine/growth.js"></script>
 <script src="js/ui/dom.js"></script>
 <script src="js/ui/charts.js"></script>
 <script src="js/ui/app.js"></script>
@@ -69,6 +71,8 @@
 <script src="js/ui/screens-offer.js"></script>
 <script src="js/ui/screens-home.js"></script>
 <script src="js/ui/screens-tools.js"></script>
+<script src="js/ui/card.js"></script>
+<script src="js/ui/screens-growth.js"></script>
 <script src="js/main.js"></script>
 <script>document.getElementById('logo').innerHTML = window.Cordes && Cordes.ui ? Cordes.ui.logo : '';</script>
 </body>
