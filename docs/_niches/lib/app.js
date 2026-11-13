@@ -42,7 +42,7 @@ function toast(t) { $('toast-t').textContent = t; $('toast').classList.add('on')
 /* ───── en-tête et synthèse ───── */
 var nLow = D.low.length;
 $('meta').innerHTML = [
-  ['Niches', N.length, 'avec 5 paliers chacune', 'accent'], ['Secteurs', D.sectors.length, 'ids figés de l’app', 'sent'], ['Catégories', D.cats.length, D.subs.length + ' sous-catégories', 'sent'],
+  ['Niches', N.length.toLocaleString('fr-FR'), 'avec 5 paliers chacune', 'accent'], ['Secteurs', D.sectors.length, 'ids figés de l’app', 'sent'], ['Catégories', D.cats.length, D.subs.length + ' sous-catégories', 'sent'],
   ['Faible propension', nLow, 'niches couvertes par une parade', 'wait'], ['Mixes éditoriaux', D.editorial.length, 'et un moteur pour les autres paires', 'int']
 ].map(function (m) { return '<div><div class="k"><span class="sq" style="background:var(--' + m[3] + ')"></span>' + m[0] + '</div><div class="v big">' + m[1] + '</div><div class="sub">' + m[2] + '</div></div>'; }).join('');
 (function () {
@@ -322,14 +322,14 @@ document.querySelectorAll('[data-tm]').forEach(function (b) { b.addEventListener
   var cover = {}; D.low.forEach(function (id) { byId[id].par.forEach(function (p) { cover[p] = (cover[p] || 0) + 1; }); });
   var allLow = N.filter(function (n) { return n.scores.wtp <= 2; }).length;
   var tp = D.low.filter(function (id) { return byId[id].par.some(function (p) { return PAR[p].fam === 'Tiers payeur'; }); }).length;
-  $('par-c').innerHTML = [['Propension 2 ou moins', allLow, 'sur ' + N.length + ' niches', 'no'], ['Faibles mais intéressantes', nLow, 'score hors propension ≥ 58', 'wait'], ['Couvertes par un tiers payeur', tp, 'entreprise, collectivité, lieu, marque…', 'int'], ['Parades', D.parades.length, D.packages.length + ' packages', 'accent']].map(function (m) { return '<div><div class="k"><span class="sq" style="background:var(--' + m[3] + ')"></span>' + m[0] + '</div><div class="v big">' + m[1] + '</div><div class="sub">' + m[2] + '</div></div>'; }).join('');
+  $('par-c').innerHTML = [['Propension 2 ou moins', allLow, 'sur ' + N.length.toLocaleString('fr-FR') + ' niches', 'no'], ['Faibles mais intéressantes', nLow, 'score hors propension ≥ ' + D.lowMin, 'wait'], ['Couvertes par un tiers payeur', tp, 'entreprise, collectivité, lieu, marque…', 'int'], ['Parades', D.parades.length, D.packages.length + ' packages', 'accent']].map(function (m) { return '<div><div class="k"><span class="sq" style="background:var(--' + m[3] + ')"></span>' + m[0] + '</div><div class="v big">' + m[1] + '</div><div class="sub">' + m[2] + '</div></div>'; }).join('');
   /* nuage : score hors propension × propension */
-  var w = 640, h = 230, pl = 34, pb = 26, pt = 10, pr = 10, xs = function (v) { return pl + (v - 20) / 80 * (w - pl - pr); }, ys = function (v) { return pt + (5 - v) / 5 * (h - pt - pb); };
+  var w = 640, h = 230, pl = 34, pb = 26, pt = 10, pr = 10, xs = function (v) { return pl + (v - 40) / 60 * (w - pl - pr); }, ys = function (v) { return pt + (5 - v) / 5 * (h - pt - pb); };
   var svg = '<svg viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="Nuage des niches : score hors propension en abscisse, propension à payer en ordonnée"><rect x="' + xs(58) + '" y="' + ys(2.5) + '" width="' + (xs(100) - xs(58)) + '" height="' + (ys(-0.5) - ys(2.5)) + '" fill="color-mix(in srgb,var(--wait) 10%,transparent)" stroke="color-mix(in srgb,var(--wait) 38%,transparent)"/>';
   for (var v = 0; v <= 5; v++) svg += '<text x="' + (pl - 8) + '" y="' + (ys(v) + 3) + '" fill="var(--fg-3)" font-size="10" font-family="IBM Plex Mono" text-anchor="end">' + v + '</text>';
-  [20, 40, 60, 80, 100].forEach(function (x) { svg += '<text x="' + xs(x) + '" y="' + (h - 8) + '" fill="var(--fg-3)" font-size="10" font-family="IBM Plex Mono" text-anchor="middle">' + x + '</text>'; });
-  N.forEach(function (n, i) { var j = ((i * 7919) % 100) / 100 - 0.5; svg += '<circle cx="' + xs(Math.max(20, n.sx)).toFixed(1) + '" cy="' + ys(n.scores.wtp + j * 0.6).toFixed(1) + '" r="2.2" fill="var(--' + L.verdict[n.verdict][1] + ')" opacity=".75"/>'; });
-  svg += '<text x="' + (xs(100) - 4) + '" y="' + (ys(2.5) + 13) + '" fill="var(--wait)" font-size="10" font-family="IBM Plex Mono" text-anchor="end">zone des parades · ' + nLow + ' niches</text></svg>';
+  [40, 50, 60, 70, 80, 90, 100].forEach(function (x) { svg += '<text x="' + xs(x) + '" y="' + (h - 8) + '" fill="var(--fg-3)" font-size="10" font-family="IBM Plex Mono" text-anchor="middle">' + x + '</text>'; });
+  N.forEach(function (n, i) { var j = ((i * 7919) % 100) / 100 - 0.5; svg += '<circle cx="' + xs(Math.max(40, n.sx)).toFixed(1) + '" cy="' + ys(n.scores.wtp + j * 0.6).toFixed(1) + '" r="2.2" fill="var(--' + L.verdict[n.verdict][1] + ')" opacity=".75"/>'; });
+  svg += '<text x="' + (xs(100) - 4) + '" y="' + (ys(2.5) - 4) + '" fill="var(--wait)" font-size="10" font-family="IBM Plex Mono" text-anchor="end">zone des parades · ' + nLow + ' niches</text></svg>';
   $('par-c').insertAdjacentHTML('afterend', '<div class="panel chart"><div class="ph"><span class="t">Score hors propension × propension à payer</span><span class="h">un point par niche, couleur du verdict</span></div><div class="pb">' + svg + '</div></div>');
   $('par-cards').innerHTML = D.parades.map(function (p) {
     return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(p.fam) + '</span><span>' + (cover[p.id] || 0) + ' niches</span></div><div class="cn">' + esc(p.n) + '</div><div class="ctag">' + esc(p.tag) + '</div></div><div class="cb"><dl><dt>Mécanique</dt><dd>' + esc(p.meca) + '</dd><dt>Qui paie</dt><dd>' + esc(p.payers.join(', ')) + '</dd><dt>Mini-économie <span class="tag t-E">estimation</span></dt><dd>' + esc(p.eco) + '</dd></dl>' +
@@ -395,8 +395,8 @@ function partsHtml(p) { return '<div class="parts">' + E.MIXW.map(function (w) {
 function mixCard(ns, pr, label) {
   var f = E.format(ns, pr);
   return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(label || D.families[f.fam]) + '</span><span>score ' + f0(pr.s) + ' · adéquation ' + f0(pr.fit) + '</span></div><div class="cn">' + esc(f.name) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
-    '<div class="facts"><div><div class="k">Jauge</div><div class="v">' + f.group + ' pers.</div></div><div><div class="k">Prix</div><div class="v">' + f.price + ' €</div></div><div><div class="k">Durée</div><div class="v">' + Math.floor(f.total / 60) + ' h ' + (f.total % 60 ? f.total % 60 : '') + '</div></div><div><div class="k">Lieu</div><div class="v" title="' + esc(L.venues[f.venue] || '') + '">' + esc(L.venues[f.venue] || 'à trouver') + '</div></div></div>' +
-    '<dl><dt>Moment</dt><dd>' + esc(L.moments[f.moment] || 'à définir') + (pr.publics && pr.publics.length ? ' · ' + esc(lbls(pr.publics, 'publics')) : '') + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + f.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(f.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd><ul class="whys">' + f.why.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') + '</ul></dd></dl>' +
+    '<div class="facts f3"><div><div class="k">Jauge</div><div class="v">' + f.group + ' pers.</div></div><div><div class="k">Prix</div><div class="v">' + f.price + ' €</div></div><div><div class="k">Durée</div><div class="v">' + Math.floor(f.total / 60) + ' h ' + (f.total % 60 ? f.total % 60 : '') + '</div></div></div>' +
+    '<dl><dt>Quand et où</dt><dd>' + esc(L.venues[f.venue] || 'Lieu à trouver') + ' · ' + esc(L.moments[f.moment] || 'moment à définir') + (pr.publics && pr.publics.length ? ' · ' + esc(lbls(pr.publics, 'publics')) : '') + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + f.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(f.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd><ul class="whys">' + f.why.map(function (w) { return '<li>' + esc(w) + '</li>'; }).join('') + '</ul></dd></dl>' +
     '<details><summary>Composantes du score</summary>' + partsHtml(pr.p || {}) + '</details></div></article>';
 }
 function renderSel() {
@@ -432,7 +432,7 @@ var cmb = { list: [], act: -1 };
 function comboShow(q) {
   var w = norm(q).split(/\s+/).filter(Boolean), ul = $('mt-list');
   if (!w.length) { ul.classList.add('hide'); $('mt-in').setAttribute('aria-expanded', 'false'); return; }
-  cmb.list = N.filter(function (n) { var nn = norm(n.name); return w.every(function (x) { return nn.indexOf(x) >= 0 || n.q.indexOf(x) >= 0; }) && MT.sel.indexOf(n.id) < 0; }).sort(function (a, b) { return norm(a.name).indexOf(w[0]) - norm(b.name).indexOf(w[0]) || b.s1 - a.s1; }).slice(0, 10);
+  cmb.list = N.filter(function (n) { var nn = norm(n.name); return w.every(function (x) { return nn.indexOf(x) >= 0 || n.q.indexOf(x) >= 0; }) && MT.sel.indexOf(n.id) < 0; }).sort(function (a, b) { var x = norm(a.name).indexOf(w[0]), y = norm(b.name).indexOf(w[0]); x = x < 0 ? 999 : x; y = y < 0 ? 999 : y; return x - y || b.s1 - a.s1; }).slice(0, 10);
   cmb.act = cmb.list.length ? 0 : -1;
   ul.innerHTML = cmb.list.map(function (n, i) { return '<li role="option" id="mo-' + i + '" data-add="' + n.id + '" aria-selected="' + (i === cmb.act) + '">' + esc(n.name) + '<span>' + esc(SEC[n.sector].n) + '</span></li>'; }).join('') || '<li role="option" aria-disabled="true">Aucune niche</li>';
   ul.classList.remove('hide'); $('mt-in').setAttribute('aria-expanded', 'true');
@@ -458,11 +458,11 @@ var EDF = '';
   $('ed-fam').addEventListener('click', function (e) { var b = e.target.closest('[data-ef]'); if (!b) return; EDF = b.getAttribute('data-ef'); $('ed-fam').querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); }); renderEd(); });
 })();
 function renderEd() {
-  $('ed-cards').innerHTML = D.editorial.filter(function (m) { return !EDF || m.fam === EDF; }).map(function (m) {
+  $('ed-cards').innerHTML = D.editorial.filter(function (m) { return !EDF || m.fam === EDF; }).slice().sort(function (a, b) { return b.s - a.s; }).map(function (m) {
     var ns = m.n.map(function (id) { return byId[id]; });
     return '<article class="card"><div class="chd"><div class="cf"><span>' + esc(D.families[m.fam]) + '</span><span>score moteur ' + m.s + '</span></div><div class="cn">' + esc(m.name) + '</div><div class="ctag">' + esc(m.pitch) + '</div><div class="ncl" style="margin-top:8px">' + ns.map(function (n) { return '<button type="button" class="nchip" data-open="' + n.id + '"><span>' + esc(n.name) + '</span><span class="x">' + n.scores.wtp + '/5</span></button>'; }).join('') + '</div></div><div class="cb">' +
-      '<div class="facts"><div><div class="k">Jauge</div><div class="v">' + esc(m.group) + '</div></div><div><div class="k">Prix</div><div class="v">' + esc(m.price) + '</div></div><div><div class="k">Moment</div><div class="v" title="' + esc(m.moment) + '">' + esc(m.moment) + '</div></div><div><div class="k">Lieu</div><div class="v" title="' + esc(m.venue) + '">' + esc(m.venue) + '</div></div></div>' +
-      '<dl><dt>Déroulé</dt><dd><ol class="steps">' + m.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(m.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd>' + esc(m.why) + '</dd></dl></div>' +
+      '<div class="facts f2"><div><div class="k">Jauge</div><div class="v">' + esc(m.group) + (/^\d/.test(m.group) && !/pers|duo|famil|enfant/.test(m.group) ? ' pers.' : '') + '</div></div><div><div class="k">Prix</div><div class="v wrap">' + esc(m.price) + '</div></div></div>' +
+      '<dl><dt>Quand et où</dt><dd>' + esc(m.moment) + ' · ' + esc(m.venue) + '</dd><dt>Déroulé</dt><dd><ol class="steps">' + m.steps.map(function (s) { return '<li><span class="mm">' + s[0] + ' min</span><span class="st">' + esc(s[1]) + '</span></li>'; }).join('') + '</ol></dd><dt>Hôtes</dt><dd>' + esc(m.hosts) + '</dd><dt>Pourquoi c’est original</dt><dd>' + esc(m.why) + '</dd></dl></div>' +
       '<div class="cft"><button class="btn sm" type="button" data-edmix="' + m.n.join('|') + '">Explorer dans l’outil</button></div></article>';
   }).join('');
 }

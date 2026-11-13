@@ -286,6 +286,8 @@ aside.side.on{transform:none;visibility:visible}
 .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
 .facts>div{background:var(--panel-2);padding:7px 9px;min-width:0}
 .facts .v{font-size:13px;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.facts .v.wrap{white-space:normal}
+.facts.f2{grid-template-columns:repeat(2,minmax(0,1fr))}.facts.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .parts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 12px}
 .parts div{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:6px;align-items:center;font-size:10.5px;color:var(--fg-3)}
 .parts .g{grid-column:1/-1;height:3px;background:var(--line-2);border-radius:2px;overflow:hidden}
@@ -404,6 +406,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .prose{font-size:16px}
   .chips .lb{min-width:0;width:100%}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts.f3{grid-template-columns:repeat(3,minmax(0,1fr))}
   .parts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cards,.mixres{grid-template-columns:minmax(0,1fr)}
@@ -523,7 +526,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   <div class="eyebrow">06 · parades</div>
   <h2 id="h-par">Financer les niches que le public ne paie pas</h2>
   <div class="prose">
-    <p>Une niche peut être excellente sur le format, la communauté et le vivier d’hôtes, et rester invendable au prix d’une place. On la repère ainsi : <strong>propension à payer de 2 ou moins</strong> et <strong>score hors propension d’au moins 58</strong>. Pour elles, le prix ne vient pas du participant seul. Il vient d’un tiers payeur, d’un package ou d’une autre manière de rémunérer l’hôte.</p>
+    <p>Une niche peut être excellente sur le format, la communauté et le vivier d’hôtes, et rester invendable au prix d’une place. On la repère ainsi : <strong>propension à payer de 2 ou moins</strong> et <strong>score hors propension d’au moins __LOWMIN__</strong>, la médiane du catalogue. Pour elles, le prix ne vient pas du participant seul. Il vient d’un tiers payeur, d’un package ou d’une autre manière de rémunérer l’hôte.</p>
   </div>
   <div class="counters c4" id="par-c"></div>
   <h3>Catalogue des __NPAR__ parades</h3>

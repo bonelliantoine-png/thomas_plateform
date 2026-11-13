@@ -163,14 +163,14 @@ const data = {
   sectors: SEC.map(s => ({ id: s.id, n: s.n, g: s.g, diag: s.diag, ch: s.ch.map(c => [c[0], c[1], c[2].map(k => { if (!srcIdx[k]) err('source ' + k); return srcIdx[k]; })]), b: s.b, sig: s.sig, opp: s.opp, dm: s.dm, dmN: s.dmN })),
   cats, subs, niches: NI, harm, dups, secStats, catStats, top, top0, low: low.map(n => n.id), parCount,
   parades: PAR.parades.map(p => Object.assign({}, p, { refs: p.refs.map(r => [r[0], r[1], r[2] ? (srcIdx[r[2]] || err('source parade ' + r[2])) : 0]) })),
-  packages: PAR.packages, editorial: edit, families: E.FAMILIES, topPairs, portfolios: pf, geo, villes: STR.villes, limits: STR.limits, takeaways: STR.takeaways,
+  packages: PAR.packages, editorial: edit, families: E.FAMILIES, topPairs, portfolios: pf, geo, villes: STR.villes, limits: STR.limits, takeaways: STR.takeaways, pfNote: STR.pfNote,
   sources: SRC.map((s, i) => ({ i: i + 1, k: s[0], t: s[1], e: s[2], u: s[3], v: s[4] ? 1 : 0 }))
 };
-const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
+const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8').replace(/ ([%€:;?!])/g, '\u202f$1');
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 const eng = fs.readFileSync(path.join(__dirname, 'lib', 'engine.js'), 'utf8');
 const out = tpl.replace('/*__DATA__*/', () => json).replace('/*__ENGINE__*/', () => eng).replace('/*__APP__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'app.js'), 'utf8'))
-  .replace(/__NNICHES__/g, String(niches.length)).replace(/__NSOURCES__/g, String(SRC.length)).replace(/__NCATS__/g, String(cats.length)).replace(/__NSUBS__/g, String(subs.length)).replace(/__NLOW__/g, String(low.length)).replace(/__NPAR__/g, String(PAR.parades.length)).replace(/__NMIX__/g, String(edit.length));
+  .replace(/__NNICHES__/g, niches.length.toLocaleString('fr-FR')).replace(/__LOWMIN__/g, String(E.LOW_MIN)).replace(/__NSOURCES__/g, String(SRC.length)).replace(/__NCATS__/g, String(cats.length)).replace(/__NSUBS__/g, String(subs.length)).replace(/__NLOW__/g, String(low.length)).replace(/__NPAR__/g, String(PAR.parades.length)).replace(/__NMIX__/g, String(edit.length));
 if (/fondateur|antoine/i.test(json.replace(/biais fondateur|critère fondateur|Aucun critère fondateur/gi, ''))) console.warn('ATTENTION : mention fondateur dans les données');
 fs.writeFileSync(OUT, out);
 console.log('top15', rank1.slice(0, 15).map(n => n.r1 + ' ' + n.name + ' ' + n.s1.toFixed(1) + (n.par ? ' (parade)' : '')).join('\n'));

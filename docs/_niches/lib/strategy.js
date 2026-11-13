@@ -56,10 +56,10 @@ module.exports = {
    need: [0, 0, 3, 0, 0, 0, 1, 2, 1, 0],
    desc: 'Aucun loyer, des sorties le week-end, un ancrage de quartier très visible.',
    risk: 'Météo et saisonnalité. Propension à payer souvent faible, d’où les parades.'},
-  {id: 'studios', n: 'Studios et salles', tag: 'Studios de musique et de danse, salles', size: 6, maxSec: 2,
+  {id: 'studios', n: 'Salles de quartier', tag: 'Salles polyvalentes, studios de musique et de danse', size: 6, maxSec: 2,
    pick: n => has(n.venues.slice(0, 2), ['studio-musique', 'studio-danse', 'salle-sport', 'salle-polyvalente']),
    need: [0, 0, 0, 3, 0, 0, 2, 0, 0, 2],
-   desc: 'Des salles à heures creuses qui apportent le matériel et l’espace pour le corps et le son.',
+   desc: 'Des salles municipales, associatives ou de studio, libres en heures creuses, qui accueillent la voix, le corps, le jeu et la vie pratique.',
    risk: 'Partage de recette avec le studio. Cadre de l’éducateur sportif pour certaines pratiques.'},
   {id: 'savoirs', n: 'Savoirs et médiathèques', tag: 'Médiathèques, librairies, galeries, écoles', size: 6, maxSec: 2,
    pick: n => has(n.venues.slice(0, 2), ['mediatheque', 'librairie', 'galerie', 'ecole']),
@@ -91,6 +91,23 @@ module.exports = {
   ['Montpellier', 3, 2, 2, 'Écusson, Beaux-Arts · ville jeune, densité étudiante'],
   ['Rennes', 2, 2, 2, 'Centre, Sainte-Anne · ville étudiante, vie associative forte']
  ],
- limits: [],
- takeaways: []
+ pfNote: 'Les écarts entre les cinq premiers portefeuilles sont faibles (4 points) et sensibles aux poids. Comptoirs de quartier reste le meilleur terrain pour les mixes signature de soirée (Vin et vinyles, Tours de comptoir, Chorale de comptoir). Formats d’équipe finance le reste.',
+ limits: [
+  'Toutes les notes sont des estimations produites en cinq lots parallèles, harmonisées a posteriori. Aucune n’est mesurée sur le terrain. La propension à payer en particulier doit être vérifiée par des préventes.',
+  'Le recentrage par secteur corrige des biais de lot mais efface aussi une partie des écarts réels. Il est documenté et réversible dans le script de construction (constante SHRINK).',
+  'Les prix des paliers sont des fourchettes de marché indicatives pour Paris en 2026. Ils ne tiennent pas compte de la TVA ni du statut de l’hôte.',
+  '36 paires de noms proches entre secteurs (quasi-doublons) restent dans le catalogue. Une partie sont de vrais doublons à fusionner, d’autres des angles différents.',
+  'Les mini-économies des parades et le simulateur reposent sur des hypothèses (forfaits, taux de conversion, parts des hôtes). Les montants publics cités (pass Culture, TFPB, budgets de CSE) changent chaque année.',
+  'Le moteur de mix note la cohérence à partir des mots-clés, sens, lieux, moments et productions déclarés. Il ne connaît pas le marché réel : l’originalité est approchée par la rareté des paires de secteurs. Les mixes doivent être testés en séance pilote.',
+  'La géographie note les arrondissements de 1 à 3 à dire d’expert, à remplacer par un recensement des lieux partenaires (OpenStreetMap, annuaires de tiers-lieux).',
+  'Le cadre réglementaire est résumé. L’enseignement rémunéré du sport, les premiers secours, l’alcool et l’accueil de mineurs demandent une vérification juridique avant tout lancement.'
+ ],
+ takeaways: [
+  '<strong>1 034 niches</strong> rangées en 17 secteurs, 113 catégories et 333 sous-catégories, chacune avec une échelle de cinq paliers, du « je découvre » au « référent ». La règle n → n-1 fixe qui peut animer : un hôte de niveau 2 suffit pour une découverte, ce qui rend le vivier d’hôtes large dès le départ.',
+  '<strong>Analyse agnostique.</strong> La grille compte douze critères de marché, d’offre et de format, sans aucun critère d’équipe. Tous les classements, portefeuilles et exemples en découlent.',
+  '<strong>Le top 15</strong> mêle prise de parole, vidéo verticale, bouquet de saison, crochet, magie, jeu de rôle, photo au smartphone, pâtes fraîches, plantes d’intérieur et petits travaux. Quatre niches y entrent grâce à leur parade.',
+  '<strong>366 niches ont une propension à payer de 2 ou moins</strong>, dont 159 restent au-dessus de la médiane du catalogue sur tous les autres critères. Seize parades les financent : tiers payeurs (entreprise, collectivité, médiathèque, bailleur, caisse de retraite, pass Culture, marque, lieu), packages (duo premium, sortie et atelier, bon cadeau, kit) et formes communautaires (prix libre, temps contre accès).',
+  '<strong>Les mixes inventent l’offre introuvable.</strong> Le moteur note chaque paire sur neuf composantes et refuse les paires sans pont de sens. 51 mixes sont rédigés à la main, en tête Vin et vinyles, Carnet relié carnet écrit, Blind test improvisé, Fanzine de nouvelles et Main contre machine.',
+  '<strong>Portefeuille recommandé</strong> : Ateliers et tiers-lieux en cœur, Salles de quartier en complément, à ouvrir dans le 13e, le 20e, le 10e et le 11e. Comptoirs et Formats d’équipe suivent de près.'
+ ]
 };
