@@ -10,10 +10,12 @@
     ids.sort(function (a, b) { return st.skills[b].level - st.skills[a].level; });
     ids = ids.slice(0, 14);
     var out = [], W = C.NICHE_W;
+    var strongN = ids.filter(function (id) { return st.skills[id].level >= 3; }).length;
     for (var i = 0; i < ids.length; i++) for (var j = i + 1; j < ids.length; j++) {
       var a = C.data.sById[ids[i]], b = C.data.sById[ids[j]];
       var la = st.skills[a.id].level, lb = st.skills[b.id].level;
       if (la < 3 && lb < 3) continue;
+      if (strongN >= 2 && (la < 3 || lb < 3)) continue; // deux compétences maîtrisées si possible
       var comp = (1 - C.jaccardIdf(a.tags, b.tags)) * (a.universe !== b.universe ? 1 : 0.6);
       var demand = (a.attrs.demand + b.attrs.demand) / 6;
       var monet = (a.attrs.monetization + b.attrs.monetization) / 6;
@@ -38,7 +40,7 @@
   C.nicheConcept = function (a, b, f) {
     var fl = (C.FORMATS[f] || f).toLowerCase();
     var tagsB = b.tags.slice(0, 2).join(' et ');
-    return 'Un ' + fl + ' où « ' + a.levels[0].toLowerCase() + ' » sert de porte d’entrée, enrichi par votre pratique de ' + C.nm(b) +
+    return 'Un ' + fl + ' où « ' + a.levels[0].toLowerCase() + ' » sert de porte d’entrée, enrichi par votre pratique ' + C.de(b) +
       (tagsB ? ' (' + tagsB + ')' : '') + '. Peu de personnes maîtrisent les deux : vous attirez deux publics et sortez de la comparaison de prix.';
   };
   // matrice « j'aime / je maîtrise / ça se demande / ça se paie »

@@ -336,7 +336,7 @@ ul.clean li::before{content:"";position:absolute;left:2px;top:13px;width:6px;hei
 .gtr:not(.h):hover{background:var(--hover)}
 .gtr.sel{background:var(--panel-2);box-shadow:inset 2px 0 0 var(--accent)}
 .chtable .gtr{grid-template-columns:28px minmax(0,1.6fr) 110px 120px minmax(0,1.4fr)}
-.mtable .gtr{grid-template-columns:minmax(0,1.5fr) repeat(4,1fr) 90px}
+.mtable .gtr{grid-template-columns:minmax(0,1.5fr) repeat(4,1fr) 112px}
 @media (max-width:1040px){
   .chtable .gtr,.mtable .gtr{grid-template-columns:1fr 1fr;gap:6px 12px}
   .chtable .gtr.h,.mtable .gtr.h{display:none}
@@ -463,3 +463,4 @@ ul.clean li::before{content:"";position:absolute;left:2px;top:13px;width:6px;hei
   .section-h{break-after:avoid}
   a{color:#111}
 }
+[tabindex="-1"]:focus{outline:none}

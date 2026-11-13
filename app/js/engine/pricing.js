@@ -53,10 +53,10 @@
   C.feeOf = function (p) {
     var f = (p && p.fee) || { type: 'none' };
     var pct = U.num(f.pct, 0) / 100, sub = U.num(f.eurPerMonth, 0), fix = U.num(f.eur, 0);
-    if (f.type === 'commission') return { pct: pct, sub: 0, fix: 0, label: Math.round(pct * 1000) / 10 + ' % de commission' };
+    if (f.type === 'commission') return { pct: pct, sub: 0, fix: 0, label: U.rate(pct) + ' de commission' };
     if (f.type === 'subscription') return { pct: 0, sub: sub, fix: 0, label: sub + ' € / mois' };
     if (f.type === 'fixed') return { pct: 0, sub: 0, fix: fix, label: fix + ' € par réservation' };
-    if (f.type === 'mixed') return { pct: pct, sub: sub, fix: fix, label: [pct ? Math.round(pct * 1000) / 10 + ' %' : '', sub ? sub + ' € / mois' : '', fix ? fix + ' € / résa' : ''].filter(Boolean).join(' + ') || (f.note || 'mixte') };
+    if (f.type === 'mixed') return { pct: pct, sub: sub, fix: fix, label: [pct ? U.rate(pct) + '' : '', sub ? sub + ' € / mois' : '', fix ? fix + ' € / résa' : ''].filter(Boolean).join(' + ') || (f.note || 'mixte') };
     if (f.type !== 'none') U.anomaly('resources', 'type de fee inconnu pour ' + (p && p.id) + ' : ' + f.type);
     return { pct: 0, sub: 0, fix: 0, label: 'Sans commission' };
   };

@@ -32,6 +32,7 @@
     return parts.join(',') + ' €';
   };
   U.fmt = function (x) { return String(Math.round(U.num(x))).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+  U.rate = function (r) { return String(Math.round(U.num(r) * 1000) / 10).replace('.', ',') + '\u00a0%'; };
   U.pct = function (x) { return Math.round(U.num(x) * 100) + ' %'; };
   // hachage déterministe (pour un aléa reproductible)
   U.hash = function (s) { var h = 2166136261; s = String(s); for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0) / 4294967295; };
@@ -235,6 +236,7 @@
   };
 
   /* ---------- requêtes utiles ---------- */
+  C.de = function (s) { var n = C.nm(s); return (/^[aeiouyhâàéèêîïôûœ]/i.test(n) ? 'd\u2019' : 'de ') + n; };
   C.nm = function (s) { return s ? U.lc(s.short || s.name) : ''; };
   C.skill = function (id) { return C.data && C.data.sById[id]; };
   C.universe = function (id) { return (C.data && C.data.uById[id]) || { id: id, name: id, short: id, hue: 200, glyph: '·' }; };

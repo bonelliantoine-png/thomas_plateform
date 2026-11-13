@@ -107,7 +107,7 @@
     out.push((c.firstName ? c.firstName + ', vous' : 'Vous') + ' maîtrisez ' + (top.length ? top.slice(0, 3).join(', ') : 'déjà plusieurs choses') + (soft.length ? ', des pratiques qui développent ' + soft.join(', ') : '') + '.');
     if (ds.length) {
       var p = C.learnPlan(st, ds[0]);
-      out.push('Votre envie prioritaire est ' + C.nm(p.s) + ' : environ ' + p.hours + ' h pour atteindre « ' + p.s.levels[p.target - 1].toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + p.hpw + ' h par semaine.');
+      out.push('Votre envie prioritaire est ' + C.nm(p.s) + ' : environ ' + p.hours + ' h pour atteindre « ' + p.s.levels[p.target - 1].toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + String(p.hpw).replace('.', ',') + ' h par semaine.');
       out.push('Premier pas cette semaine : ' + p.first.text.charAt(0).toLowerCase() + p.first.text.slice(1) + '.');
     }
     if (arch) out.push(arch.pref + ' Conseil : ' + arch.tips[0].charAt(0).toLowerCase() + arch.tips[0].slice(1) + '.');

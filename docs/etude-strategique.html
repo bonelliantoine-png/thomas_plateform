@@ -1072,7 +1072,7 @@ kbd{font:500 10.5px/1 var(--f-mono);border:1px solid var(--line-2);border-bottom
   <h3>Cercle c · Monétisation des offreurs</h3>
   <figure class="fig">
     <div class="fig-title"><span>Part du prix conservée par la plateforme</span><span class="small">sur une vente type, hors frais de paiement sauf mention</span></div>
-    <svg class="chart" id="comChart" viewBox="0 0 640 430" role="img" aria-label="Commission prélevée par plateforme, de 0 à 63 %"></svg>
+    <div class="scroll-x"><svg class="chart" id="comChart" viewBox="0 0 640 430" role="img" aria-label="Commission prélevée par plateforme, de 0 à 63 %"></svg></div>
     <div class="tip" id="comTip"></div>
     <details class="data"><summary>Voir les données</summary>
       <div class="tbl"><table id="comTable"></table></div>
@@ -1107,7 +1107,7 @@ kbd{font:500 10.5px/1 var(--f-mono);border:1px solid var(--line-2);border-bottom
   <h2>Ce qui peut casser, et la parade</h2>
   <figure class="fig">
     <div class="fig-title"><span>Matrice probabilité × impact</span><span class="small">notes de 1 à 5, jugement de l'étude</span></div>
-    <svg class="chart" id="riskChart" viewBox="0 0 640 420" role="img" aria-label="Matrice des risques : douze risques placés selon leur probabilité et leur impact"></svg>
+    <div class="scroll-x"><svg class="chart" id="riskChart" viewBox="0 0 640 420" role="img" aria-label="Matrice des risques : douze risques placés selon leur probabilité et leur impact"></svg></div>
     <div class="tip" id="riskTip"></div>
     <figcaption>Les points sont numérotés comme dans le tableau. Zone rose : probabilité × impact ≥ 15.</figcaption>
   </figure>
@@ -1465,6 +1465,7 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
     else state[k] = v;
   }
 
+  function vbw(svg){ var w = svg.parentNode.clientWidth || 640; var v = w < 520 ? 380 : 640; svg.setAttribute('viewBox', '0 0 ' + v + ' ' + svg.viewBox.baseVal.height); return v; }
   function niceMax(v){ if (v <= 0) return 1; var p = Math.pow(10, Math.floor(Math.log10(v))); var m = v / p; var n = m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10; return n * p; }
   function placeTip(tip, svg, xv, yv, html){
     var box = svg.getBoundingClientRect(), fig = svg.parentNode.getBoundingClientRect();
@@ -1489,12 +1490,12 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
 
   function drawSubs(R){
     var svg = $('#subsChart'); if (!svg) return;
-    var Wv = 640, Hv = 240, L = 44, Rm = 12, T = 12, Bm = 26, W = Wv - L - Rm, H = Hv - T - Bm;
+    var Wv = vbw(svg), Hv = 240, L = 44, Rm = 12, T = 12, Bm = 26, W = Wv - L - Rm, H = Hv - T - Bm;
     var mx = 0; R.forEach(function(r, i){ mx = Math.max(mx, r.S, REF.rows[i].S); }); mx = niceMax(mx * 1.05);
     var x = function(t){ return L + (t - 1) / 35 * W; }, y = function(v){ return T + H - v / mx * H; };
     var h = '';
     for (var i = 0; i <= 4; i++){ var v = mx * i / 4; h += '<line x1="' + L + '" x2="' + (Wv - Rm) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--line)"/><text x="' + (L - 6) + '" y="' + (y(v) + 3) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="end">' + n0(v) + '</text>'; }
-    [1,6,12,18,24,30,36].forEach(function(t){ h += '<text x="' + x(t) + '" y="' + (Hv - 8) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
+    (Wv < 500 ? [1,12,24,36] : [1,6,12,18,24,30,36]).forEach(function(t){ h += '<text x="' + x(t) + '" y="' + (Hv - 8) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
     var pRef = REF.rows.map(function(r){ return x(r.t).toFixed(1) + ',' + y(r.S).toFixed(1); }).join(' ');
     var pSim = R.map(function(r){ return x(r.t).toFixed(1) + ',' + y(r.S).toFixed(1); }).join(' ');
     h += '<polyline points="' + pRef + '" fill="none" stroke="var(--fg-3)" stroke-width="1.5" stroke-dasharray="4 3"/>';
@@ -1514,7 +1515,7 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
   }
   function drawRes(R){
     var svg = $('#resChart'); if (!svg) return;
-    var Wv = 640, Hv = 200, L = 52, Rm = 12, T = 10, Bm = 24, W = Wv - L - Rm, H = Hv - T - Bm;
+    var Wv = vbw(svg), Hv = 200, L = 52, Rm = 12, T = 10, Bm = 24, W = Wv - L - Rm, H = Hv - T - Bm;
     var mx = 0, mn = 0; R.forEach(function(r){ mx = Math.max(mx, r.res); mn = Math.min(mn, r.res); });
     var top = niceMax(Math.max(mx, 1) * 1.1), bot = -niceMax(Math.max(-mn, 1) * 1.1);
     var y = function(v){ return T + (top - v) / (top - bot) * H; };
@@ -1524,7 +1525,7 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
       var x0 = L + i * bw + 1, y0 = y(Math.max(0, r.res)), hh = Math.max(1, Math.abs(y(r.res) - y(0)));
       h += '<rect class="b" data-i="' + i + '" x="' + x0.toFixed(1) + '" y="' + y0.toFixed(1) + '" width="' + (bw - 2).toFixed(1) + '" height="' + hh.toFixed(1) + '" rx="2" fill="' + (r.res >= 0 ? 'var(--int)' : 'var(--no)') + '"/>';
     });
-    [1,6,12,18,24,30,36].forEach(function(t){ h += '<text x="' + (L + (t - 0.5) * bw) + '" y="' + (Hv - 7) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
+    (Wv < 500 ? [1,12,24,36] : [1,6,12,18,24,30,36]).forEach(function(t){ h += '<text x="' + (L + (t - 0.5) * bw) + '" y="' + (Hv - 7) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
     h += '<g class="xh" opacity="0"><rect class="hl" y="' + T + '" height="' + H + '" fill="var(--hover)" opacity=".0"/></g>';
     h += '<rect class="ov" x="' + L + '" y="' + T + '" width="' + W + '" height="' + H + '" fill="transparent"/>';
     svg.innerHTML = h;
@@ -1539,17 +1540,17 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
   }
   function drawCash(R){
     var svg = $('#cashChart'); if (!svg) return;
-    var Wv = 640, Hv = 180, L = 52, Rm = 12, T = 10, Bm = 24, W = Wv - L - Rm, H = Hv - T - Bm;
+    var Wv = vbw(svg), Hv = 180, L = 52, Rm = 12, T = 10, Bm = 24, W = Wv - L - Rm, H = Hv - T - Bm;
     var mx = 0, mn = 0; R.forEach(function(r){ mx = Math.max(mx, r.cash); mn = Math.min(mn, r.cash); }); mx = Math.max(mx, 10000);
     var top = niceMax(mx * 1.05), bot = mn < 0 ? -niceMax(-mn * 1.05) : 0;
     var x = function(t){ return L + (t - 1) / 35 * W; }, y = function(v){ return T + (top - v) / (top - bot) * H; };
     var h = '';
     var ticks = bot < 0 ? [top, 0, bot] : [top, top / 2, 0];
     ticks.forEach(function(v){ h += '<line x1="' + L + '" x2="' + (Wv - Rm) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="' + (v === 0 ? 'var(--line-2)' : 'var(--line)') + '"/><text x="' + (L - 6) + '" y="' + (y(v) + 3) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="end">' + keur(v) + '</text>'; });
-    [1,6,12,18,24,30,36].forEach(function(t){ h += '<text x="' + x(t) + '" y="' + (Hv - 7) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
+    (Wv < 500 ? [1,12,24,36] : [1,6,12,18,24,30,36]).forEach(function(t){ h += '<text x="' + x(t) + '" y="' + (Hv - 7) + '" font-size="9.5" fill="var(--fg-3)" text-anchor="middle">M' + t + '</text>'; });
     h += '<polyline points="' + R.map(function(r){ return x(r.t).toFixed(1) + ',' + y(r.cash).toFixed(1); }).join(' ') + '" fill="none" stroke="var(--accent)" stroke-width="2"/>';
     var mi = 0; R.forEach(function(r, i){ if (r.cash < R[mi].cash) mi = i; });
-    h += '<circle cx="' + x(R[mi].t) + '" cy="' + y(R[mi].cash) + '" r="4" fill="var(--accent)" stroke="var(--panel)" stroke-width="2"/><text x="' + Math.min(x(R[mi].t), Wv - 90) + '" y="' + Math.min(Hv - 30, y(R[mi].cash) + 16) + '" font-size="10" fill="var(--fg)" text-anchor="middle">min ' + keur(R[mi].cash) + '</text>';
+    h += '<circle cx="' + x(R[mi].t) + '" cy="' + y(R[mi].cash) + '" r="4" fill="var(--accent)" stroke="var(--panel)" stroke-width="2"/><text x="' + Math.max(L + 40, Math.min(x(R[mi].t), Wv - 50)) + '" y="' + Math.min(Hv - 30, y(R[mi].cash) + 16) + '" font-size="10" fill="var(--fg)" text-anchor="middle">min ' + keur(R[mi].cash) + '</text>';
     h += '<g class="xh" opacity="0"><line class="xl" y1="' + T + '" y2="' + (T + H) + '" stroke="var(--line-2)"/><circle class="d1" r="4" fill="var(--accent)" stroke="var(--panel)" stroke-width="2"/></g>';
     h += '<rect class="ov" x="' + L + '" y="' + T + '" width="' + W + '" height="' + H + '" fill="transparent"/>';
     svg.innerHTML = h;
@@ -1637,7 +1638,8 @@ if (typeof module !== 'undefined') module.exports = CORDES_MODEL;
     });
   });
   syncCtrls(); run(); scenTable();
-  window.addEventListener('resize', function(){ $$('.tip').forEach(function(t){ t.classList.remove('on'); }); });
+  var rzT = 0, lastW = window.innerWidth;
+  window.addEventListener('resize', function(){ $$('.tip').forEach(function(t){ t.classList.remove('on'); }); clearTimeout(rzT); rzT = setTimeout(function(){ if (Math.abs(window.innerWidth - lastW) > 40){ lastW = window.innerWidth; run(); } }, 200); });
 
   /* ---------- Carte de positionnement ---------- */
   (function(){

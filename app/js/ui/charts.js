@@ -36,7 +36,7 @@
   // constellation : compétences connues (pleines, plus proches du centre si maîtrisées) et envies (anneaux) par secteur d'univers
   CH.constellationSVG = function (st, o) {
     o = o || {};
-    var S = o.size || 420, cx = S / 2, cy = S / 2, R = S / 2 - 46;
+    var S = o.size || 420, cx = S / 2, cy = S / 2, R = S / 2 - 58;
     var unis = C.data.universes, nU = unis.length;
     var nodes = [];
     Object.keys(st.skills || {}).forEach(function (id) { var s = C.data.sById[id], v = st.skills[id]; if (s && v && v.level > 0) nodes.push({ s: s, level: v.level, desire: false }); });
@@ -80,7 +80,7 @@
       s += n.desire ? '<circle cx="' + f(n.x) + '" cy="' + f(n.y) + '" r="' + r + '" style="fill:var(--bg);stroke:var(--int);stroke-width:1.6" />'
         : '<circle cx="' + f(n.x) + '" cy="' + f(n.y) + '" r="' + f(r) + '" style="fill:' + col + ';stroke:var(--bg);stroke-width:1" />';
       if (labelAll || n.level >= 3 || n.desire) {
-        var name = n.s.name.length > 18 ? n.s.name.slice(0, 17) + '…' : n.s.name;
+        var nm0 = n.s.short || n.s.name; var name = nm0.length > 16 ? nm0.slice(0, 15) + '…' : nm0;
         var right = n.x >= cx;
         s += '<text x="' + f(n.x + (right ? r + 3 : -r - 3)) + '" y="' + f(n.y + 3) + '" text-anchor="' + (right ? 'start' : 'end') + '" style="font:9px var(--f-mono);fill:' + (n.desire ? 'var(--int)' : 'var(--fg)') + '">' + E(name) + '</text>';
       }

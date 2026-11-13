@@ -156,7 +156,7 @@
 
   /* ---------- feuille de route 90 jours ---------- */
   C.roadmap = function (st, offers, channels, status, niche) {
-    var o = st.offer || {}, first = offers[0], now = new Date();
+    var o = st.offer || {}, first = offers.filter(function (x) { return x.size > 1 && x.duration; })[0] || offers[0], now = new Date();
     var ch1 = channels.filter(function (c) { return !c.p.soon; })[0], ch2 = channels.filter(function (c) { return !c.p.soon; })[1];
     var regs = C.regulationsFor(offers.map(function (x) { return x.s; }));
     var proj = C.projectsFor(offers.map(function (x) { return x.s; }), 1)[0];
@@ -174,7 +174,7 @@
       { id: 'clients', label: 'Premiers clients', range: 'Mois 2', tasks: [
         { id: 'r7', due: d(35), text: ch1 ? 'Publier l’offre sur ' + ch1.p.name + (ch1.p.url ? ' (' + ch1.p.url.replace(/^https?:\/\//, '') + ')' : '') : 'Publier l’offre sur un premier canal' },
         { id: 'r8', due: d(38), text: 'Envoyer le message de prospection du kit à 5 lieux partenaires (cafés, ateliers, tiers-lieux)' },
-        { id: 'r9', due: d(50), text: 'Remplir 2 séances payantes à ' + (first ? first.size : 4) + ' participants' },
+        { id: 'r9', due: d(50), text: first && first.size > 1 ? 'Remplir 2 séances payantes de ' + first.size + ' participants' : 'Trouver 5 élèves réguliers' },
         { id: 'r10', due: d(55), text: 'Demander un avis écrit à chaque participant et le publier' }] },
       { id: 'canaux', label: 'Canaux', range: 'Mois 2', tasks: [
         { id: 'r11', due: d(58), text: ch2 ? 'Ouvrir un 2e canal : ' + ch2.p.name : 'Ouvrir un 2e canal' },
@@ -212,12 +212,12 @@
       'Coulisses : je prépare la séance de jeudi (trame, matériel, playlist)',
       'Témoignage d’une participante et photo de sa première réalisation',
       'Défi de la semaine : ' + lc(s.levels[0]) + '. Montrez-moi vos essais',
-      niche ? 'Pourquoi ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ' vont si bien ensemble' : 'Ce que ' + C.nm(s) + ' m’a appris en dehors de ' + C.nm(s),
+      niche ? 'Pourquoi ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ' vont si bien ensemble' : 'Ce que ' + C.nm(s) + ' m’a appris en dehors ' + C.de(s),
       'Prochaine date : jeudi 19 h, ' + first.size + ' places, ' + U.eur(first.price) + ', lien en bio',
       'Question ouverte : qu’aimeriez-vous apprendre en ' + C.nm(s) + ' ?',
       'Merci au lieu partenaire du mois, qui nous accueille aux heures creuses'
     ];
-    var venue = 'Bonjour,\n\nJe m’appelle ' + name + ' et j’anime des ateliers de ' + C.nm(s) + ' en petit groupe (' + first.size + ' personnes, ' + C.minutes(first.duration) + ') à ' + city + '.\n\n' +
+    var venue = 'Bonjour,\n\nJe m’appelle ' + name + ' et j’anime des ateliers ' + C.de(s) + ' en petit groupe (' + first.size + ' personnes, ' + C.minutes(first.duration) + ') à ' + city + '.\n\n' +
       'Je cherche un lieu pour les accueillir un soir de semaine ou un samedi matin, à un moment calme pour vous. En échange, je vous amène ' + first.size + ' à ' + (first.size + 4) + ' clients qui consomment sur place, et je mets votre lieu en avant dans toutes mes communications.\n\n' +
       'Pas de loyer, pas d’engagement : on teste une date, et on continue si c’est bon pour vous. Je peux passer vous présenter le format cette semaine.\n\nBelle journée,\n' + name;
     var keywords = U.uniq([C.nm(s), 'atelier ' + C.nm(s), 'cours ' + C.nm(s) + ' ' + U.norm(city), C.nm(s) + ' débutant'].concat(s.aliases.slice(0, 3)).concat(s.tags.slice(0, 4)).concat(others.slice(0, 2).map(function (x) { return lc(x); })));

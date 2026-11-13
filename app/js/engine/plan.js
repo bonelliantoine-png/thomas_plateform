@@ -57,8 +57,8 @@
     var first = C.firstStep(st, s, d);
     var milestones = [
       { id: id + ':h1', when: reach(7), label: '1re heure', text: s.attrs.oneHourResult ? s.levels[0] : 'Découvrir le geste de base et repartir avec une liste de questions' },
-      { id: id + ':m1', when: reach(30), label: '1er mois', text: cur >= 1 ? s.levels[Math.min(3, cur)] : s.levels[0] },
-      { id: id + ':m3', when: reach(Math.min(90, Math.max(45, weeks * 7))), label: weeks * 7 <= 90 ? 'Objectif' : '3 mois', text: s.levels[Math.min(target, 4) - 1] }
+      { id: id + ':m1', when: reach(30), label: '1er mois', text: cur >= 1 ? s.levels[Math.min(3, cur)] : (s.attrs.oneHourResult ? 'Refaire seul « ' + U.lc(s.levels[0]) + ' », sans aide' : s.levels[0]) },
+      { id: id + ':m3', when: reach(Math.min(90, Math.max(45, weeks * 7))), label: weeks * 7 <= 90 ? 'Objectif' : '3 mois', text: weeks * 7 <= 90 ? s.levels[target - 1] : (target - 2 > cur && target - 2 >= 1 ? s.levels[target - 2] : 'À mi-chemin : ' + U.lc(s.levels[target - 1]) + ', avec de l\u2019aide') }
     ];
     if (weeks * 7 > 90) milestones.push({ id: id + ':goal', when: reach(weeks * 7), label: 'Objectif', text: s.levels[target - 1] });
     return {
@@ -121,12 +121,12 @@
   };
 
   C.projectsFor = function (skills, n) {
-    var tags = {}, unis = {};
-    skills.forEach(function (s) { s.tags.forEach(function (t) { tags[t] = 1; }); unis[s.universe] = 1; });
+    var tags = {}, unis = {}, idf = C.tagIdf || {};
+    skills.forEach(function (s) { if (!s) return; s.tags.concat(U.norm(s.name).split(' ')).forEach(function (t) { tags[t] = (tags[t] || 0) + 1; }); unis[s.universe] = (unis[s.universe] || 0) + 1; });
     return C.res.projectTemplates.map(function (p) {
-      var tagHit = p.tags.filter(function (t) { return tags[t]; }).length;
-      var uniHit = p.universes.filter(function (u) { return unis[u]; }).length;
-      return { p: p, score: tagHit * 1.2 + uniHit * 1, tagHit: tagHit };
+      var tagHit = 0; p.tags.forEach(function (t) { if (tags[t]) tagHit += Math.min(2, tags[t]) * (idf[t] == null ? 1 : Math.min(3, idf[t])) / 2; });
+      var uniHit = 0; p.universes.forEach(function (u, i) { if (unis[u]) uniHit += (i === 0 ? 1 : 0.6) * Math.min(2, unis[u]); });
+      return { p: p, score: tagHit * 1.2 + uniHit, tagHit: tagHit };
     }).filter(function (x) { return x.score > 0; }).sort(function (a, b) { return b.score - a.score; }).slice(0, n || 4);
   };
 
@@ -136,7 +136,7 @@
     var L = s.levels, t = s.tags, mins = s.attrs.hoursToBasics > 60 ? 25 : 15;
     var app = C.appsFor(s)[0];
     var T = [
-      'Regarder 2 démonstrations de ' + C.nm(s) + ' et noter le geste qui revient',
+      'Regarder 2 démonstrations ' + C.de(s) + ' et noter le geste qui revient',
       'Préparer le matériel minimum et le ranger à portée de main',
       mins + ' min : viser « ' + L[0].toLowerCase() + ' », même maladroitement',
       'Refaire la même chose qu’hier, en chronométrant',
