@@ -57,6 +57,8 @@
   ui.parseHash = function () {
     var h = W.location.hash || '';
     if (/^#b=/.test(h)) return { path: 'partage', param: h.slice(3) };
+    if (/^#i=/.test(h)) return { path: 'recu', param: h.slice(3) };
+    if (/^#t=/.test(h)) return { path: 'corde', param: h.slice(3) };
     h = h.replace(/^#\/?/, '');
     var parts = h.split('/').filter(Boolean);
     if (!parts.length) return { path: 'accueil' };
@@ -92,7 +94,7 @@
     ui.$$('.topnav a').forEach(function (a) { var on = a.getAttribute('href').replace('#/', '') === r.path.split('/')[0] || a.getAttribute('href') === '#/' + r.path; a.classList.toggle('on', on); if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   }
   ui.renderCrumb = function (r) {
-    var labels = { accueil: 'accueil', bilan: 'bilan', resultats: 'résultats', offre: 'plan de valorisation', comment: 'comment ça marche', demo: 'démo', comparer: 'comparer', attente: 'liste d’attente', copilote: 'copilote', partage: 'bilan partagé', 'outils/autour': 'outils / autour de moi', 'outils/recherches': 'outils / recherches', groupe: 'comparer en groupe', lieu: 'lieu partenaire', donnees: 'mes données', progres: 'mes progrès', admin: 'mesure et questionnaire' };
+    var labels = { accueil: 'accueil', bilan: 'bilan', resultats: 'résultats', offre: 'plan de valorisation', comment: 'comment ça marche', demo: 'démo', comparer: 'comparer', attente: 'liste d’attente', copilote: 'copilote', partage: 'bilan partagé', 'outils/autour': 'outils / autour de moi', 'outils/recherches': 'outils / recherches', groupe: 'comparer en groupe', lieu: 'lieu partenaire', donnees: 'mes données', progres: 'mes progrès', admin: 'mesure et questionnaire', idees: 'idées à vivre', test: 'le test', recu: 'idées reçues', corde: 'corde cachée reçue' };
     var t = labels[r.path] || r.path;
     if (r.path === 'bilan' && r.param) t += ' / ' + (ui.STEP_DEFS[r.param] || r.param).toLowerCase();
     var c = ui.$('#crumb'); if (c) c.textContent = t;

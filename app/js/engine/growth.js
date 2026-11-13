@@ -15,7 +15,7 @@
 
   C.KEYS = {
     state: 'cordes.v1', backup: 'cordes.v1.backup', waitlist: 'cordes.waitlist', metrics: 'cordes.metrics', metricsDemo: 'cordes.metrics.demo',
-    metricsOff: 'cordes.metrics.off', survey: 'cordes.survey', history: 'cordes.history', priceArm: 'cordes.priceArm', apikey: 'cordes.apikey', geo: 'cordes.geo', venue: 'cordes.venue'
+    metricsOff: 'cordes.metrics.off', survey: 'cordes.survey', history: 'cordes.history', priceArm: 'cordes.priceArm', apikey: 'cordes.apikey', geo: 'cordes.geo', venue: 'cordes.venue', quiz: 'cordes.quiz', ideas: 'cordes.ideas'
   };
   var LS = {
     get: function (k, d) { try { var r = W.localStorage.getItem(k); return r == null ? d : JSON.parse(r); } catch (e) { return d; } },
@@ -67,11 +67,11 @@
     },
     remove: function (id) { LS.set(C.KEYS.waitlist, C.waitlist.list().filter(function (x) { return x.id !== id; })); },
     csv: function (list) {
-      var cols = ['date', 'role', 'zone', 'email', 'envies', 'competences', 'lieu', 'consentement'];
+      var cols = ['date', 'role', 'zone', 'email', 'envies', 'competences', 'lieu', 'consentement', 'source'];
       var esc = function (v) { v = String(v == null ? '' : v); return /[";,\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
       var names = function (ids) { return U.arr(ids).map(function (id) { var s = C.data.sById[id]; return s ? s.name : id; }).join(' | '); };
       var rows = (list || C.waitlist.list()).map(function (e) {
-        return [e.at, C.ROLES[e.role] || e.role, e.zone, e.email || '', names(e.wants), names(e.offers), e.venue ? e.venue.name + ' (' + e.venue.type + ')' : '', e.consent ? 'oui ' + (e.consentAt || '') : 'non'].map(esc).join(';');
+        return [e.at, C.ROLES[e.role] || e.role, e.zone, e.email || '', names(e.wants), names(e.offers), e.venue ? e.venue.name + ' (' + e.venue.type + ')' : '', e.consent ? 'oui ' + (e.consentAt || '') : 'non', e.source || ''].map(esc).join(';');
       });
       return '﻿' + cols.join(';') + '\r\n' + rows.join('\r\n') + (rows.length ? '\r\n' : '');
     },
@@ -142,14 +142,31 @@
     { id: 'survey', label: 'Questionnaire', test: function (ev) { return ev.e === 'survey'; } },
     { id: 'waitlist', label: 'Liste d’attente', test: function (ev) { return ev.e === 'waitlist'; } }
   ];
+  // entonnoir des curieux : idées à vivre et test, jusqu'au bilan et à la liste d'attente
+  var isE = function (re) { return function (ev) { return re.test(ev.e); }; };
+  C.FUNNEL_CURIOUS = [
+    { id: 'c-visit', label: 'Idées ou test ouverts', test: function (ev) { return /^(idees_open|test_start|idees_recv)$/.test(ev.e) || isView(/^(idees|test)/)(ev); } },
+    { id: 'c-engage', label: 'Idée ajoutée ou test fini', test: isE(/^(idees_add|test_done)$/) },
+    { id: 'c-share', label: 'Partage ou bon cadeau', test: isE(/^(idees_share|idees_gift|test_share)$/) },
+    { id: 'c-bilan', label: 'Bilan démarré', test: function (ev) { return /^(idees_to_bilan|test_to_bilan)$/.test(ev.e) || ev.e === 'start'; } },
+    { id: 'c-wait', label: 'Liste d’attente', test: function (ev) { return ev.e === 'waitlist' || /^(idees_to_waitlist|test_to_waitlist)$/.test(ev.e); } }
+  ];
   function median(a) { if (!a.length) return 0; a = a.slice().sort(function (x, y) { return x - y; }); var m = Math.floor(a.length / 2); return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2; }
   C.metricsReport = function (events) {
     var bySess = {};
     events.forEach(function (ev) { if (ev && ev.s) (bySess[ev.s] = bySess[ev.s] || []).push(ev); });
     var sess = Object.keys(bySess);
     sess.forEach(function (k) { bySess[k].sort(function (a, b) { return a.t - b.t; }); });
-    var funnel = C.FUNNEL.map(function (f) { return { id: f.id, label: f.label, n: sess.filter(function (k) { return bySess[k].some(f.test); }).length }; });
-    funnel.forEach(function (f, i) { f.rate = funnel[0].n ? f.n / funnel[0].n : 0; f.conv = i && funnel[i - 1].n ? f.n / funnel[i - 1].n : (i ? 0 : 1); });
+    var mkFunnel = function (def) {
+      var fl = def.map(function (f) { return { id: f.id, label: f.label, n: sess.filter(function (k) { return bySess[k].some(f.test); }).length }; });
+      fl.forEach(function (f, i) { f.rate = fl[0].n ? f.n / fl[0].n : 0; f.conv = i && fl[i - 1].n ? f.n / fl[i - 1].n : (i ? 0 : 1); });
+      return fl;
+    };
+    var funnel = mkFunnel(C.FUNNEL), curious = mkFunnel(C.FUNNEL_CURIOUS);
+    // coefficient viral estimé : ouvertures de liens reçus (#i=, #t=) rapportées aux partages
+    var nShare = events.filter(function (ev) { return /^(idees_share|test_share|test_compare)$/.test(ev.e); }).length;
+    var nRecv = events.filter(function (ev) { return /^(idees_recv|test_recv)$/.test(ev.e); }).length;
+    var viral = { shares: nShare, opens: nRecv, k: nShare ? nRecv / nShare : null };
     // temps passé par écran : écart jusqu'à l'événement suivant de la même visite (plafonné à 30 min)
     var dur = {};
     sess.forEach(function (k) {
@@ -168,7 +185,7 @@
     events.forEach(function (ev) { var k = ev.e === 'use' && ev.p ? 'use:' + ev.p.k : ev.e === 'start' && ev.p ? 'start:' + ev.p.m : ev.e; if (ev.e !== 'view') counts[k] = (counts[k] || 0) + 1; });
     var survey = C.surveyReport(events.filter(function (ev) { return ev.e === 'survey' && ev.p; }).map(function (ev) { return ev.p; }));
     var first = events.length ? Math.min.apply(null, events.map(function (e) { return e.t; })) : null, last = events.length ? Math.max.apply(null, events.map(function (e) { return e.t; })) : null;
-    return { events: events.length, sessions: sess.length, funnel: funnel, durations: durations, medianSession: median(sessionLen), counts: counts, survey: survey, first: first, last: last };
+    return { events: events.length, sessions: sess.length, funnel: funnel, curious: curious, viral: viral, durations: durations, medianSession: median(sessionLen), counts: counts, survey: survey, first: first, last: last };
   };
   C.metricsCSV = function (events) {
     return 'horodatage;visite;evenement;proprietes\r\n' + events.map(function (ev) { return [new Date(ev.t).toISOString(), ev.s, ev.e, ev.p ? JSON.stringify(ev.p).replace(/;/g, ',') : ''].join(';'); }).join('\r\n') + '\r\n';
@@ -185,7 +202,18 @@
       var s = 'demo-' + k, t = t0 + Math.floor(rnd() * 20 * 86400000), mode = rnd() < 0.62 ? 'learn' : rnd() < 0.6 ? 'offer' : 'both';
       var push = function (e, p, dt) { t += Math.round(dt * 1000); var ev = { e: e, t: t, s: s }; if (p) ev.p = p; out.push(ev); };
       push('view', { r: 'accueil' }, 0);
-      if (rnd() < 0.24) continue;
+      // un tiers des visites passe d'abord par les idées à vivre ou le test (curieux)
+      if (rnd() < 0.34) {
+        var viaTest = rnd() < 0.45;
+        if (rnd() < 0.3) push(viaTest ? 'test_recv' : 'idees_recv', { n: 3 }, 1);
+        push('view', { r: viaTest ? 'test' : 'idees' }, 5);
+        push(viaTest ? 'test_start' : 'idees_open', viaTest ? null : { o: ['offrir', 'amis', 'anniv', 'couple'][Math.floor(rnd() * 4)] }, 3);
+        if (rnd() < 0.3) continue;
+        push(viaTest ? 'test_done' : 'idees_add', viaTest ? { profile: 'palais' } : { id: 'latte-art' }, 40 + rnd() * 40);
+        if (rnd() < 0.55) push(viaTest ? 'test_share' : 'idees_share', { n: 3, via: 'copie' }, 20 + rnd() * 30);
+        if (rnd() < 0.55) continue;
+        push(viaTest ? 'test_to_bilan' : 'idees_to_bilan', null, 10);
+      } else if (rnd() < 0.24) continue;
       push('start', { m: mode }, 20 + rnd() * 40);
       push('view', { r: 'bilan/contexte' }, 1);
       if (rnd() < 0.1) continue;
@@ -440,7 +468,7 @@
     try { for (var i = 0; i < W.localStorage.length; i++) { var k = W.localStorage.key(i); if (k && k.indexOf('cordes.') === 0) out.push({ key: k, size: (W.localStorage.getItem(k) || '').length }); } } catch (e) { /* rien */ }
     return out.sort(function (a, b) { return a.key < b.key ? -1 : 1; });
   };
-  C.KEY_LABELS = { 'cordes.v1': 'Votre bilan', 'cordes.v1.backup': 'Bilan mis de côté', 'cordes.waitlist': 'Inscriptions à la liste d’attente', 'cordes.metrics': 'Mesure d’audience anonyme', 'cordes.metrics.demo': 'Mesure simulée (démonstration)', 'cordes.metrics.off': 'Refus de la mesure', 'cordes.survey': 'Réponses au questionnaire', 'cordes.history': 'Historique des bilans', 'cordes.priceArm': 'Prix affiché au questionnaire', 'cordes.apikey': 'Clé du copilote IA', 'cordes.geo': 'Villes déjà localisées', 'cordes.venue': 'Fiche lieu partenaire' };
+  C.KEY_LABELS = { 'cordes.v1': 'Votre bilan', 'cordes.v1.backup': 'Bilan mis de côté', 'cordes.waitlist': 'Inscriptions à la liste d’attente', 'cordes.metrics': 'Mesure d’audience anonyme', 'cordes.metrics.demo': 'Mesure simulée (démonstration)', 'cordes.metrics.off': 'Refus de la mesure', 'cordes.survey': 'Réponses au questionnaire', 'cordes.history': 'Historique des bilans', 'cordes.priceArm': 'Prix affiché au questionnaire', 'cordes.apikey': 'Clé du copilote IA', 'cordes.geo': 'Villes déjà localisées', 'cordes.venue': 'Fiche lieu partenaire', 'cordes.quiz': 'Test « Ta corde cachée » (réponses, résultat, défi)', 'cordes.ideas': 'Idées à vivre (sélection en cours)' };
   // export complet : toutes les clés « cordes.* », la clé d'API masquée
   C.exportAll = function () {
     var data = {};

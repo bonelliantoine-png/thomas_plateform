@@ -31,3 +31,11 @@ window.CORDES_OCCASIONS = [
     intro: 'Le plus simple pour connaître du monde : apprendre quelque chose avec des gens qui habitent à côté.',
     w: { social: 0.45, oneHour: 0.25, trend: 0.15, demand: 0.15 }, pins: ['jam-session-groupe', 'bal-folk', 'jeux-de-societe-regles'] }
 ];
+
+/* Domaines et compétences écartés des idées à vivre : utiles, mais pas une sortie ni un cadeau
+   (démarches, argent, engagement associatif, transmission bénévole, code, installations). */
+window.CORDES_IDEAS_EXCLUDE = {
+  domains: ['pratique.argent', 'pratique.admin', 'pratique.conso', 'pratique.secours', 'pratique.organisation', 'pratique.foyer', 'pratique.mobilite',
+    'social.engagement', 'social.transmission', 'social.mediation', 'tech.code', 'tech.culture', 'maison.installations', 'maison.organisation'],
+  skills: ['massage-bebe', 'animation-seniors', 'animation-enfants', 'genealogie', 'geopolitique']
+};

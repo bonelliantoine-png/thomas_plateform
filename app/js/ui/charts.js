@@ -33,6 +33,27 @@
     return s;
   };
 
+  // axes du test (social, physique, création, intellect) : un losange, un ou deux profils superposés
+  CH.axesSVG = function (a, b, o) {
+    o = o || {};
+    var S = o.size || 260, pad = 30, R = (S - 150) / 2, cx = S / 2, cy = S / 2, ax = C.QUIZ_AXES || [['so', 'Social'], ['ph', 'Physique'], ['cr', 'Création'], ['in', 'Intellect']];
+    var vals = [a, b].filter(Boolean).reduce(function (m, v) { ax.forEach(function (k) { m = Math.max(m, Math.abs(v[k[0]] || 0)); }); return m; }, 4);
+    var pt = function (i, r) { var t = -Math.PI / 2 + i * Math.PI / 2; return [cx + Math.cos(t) * R * r, cy + Math.sin(t) * R * r]; };
+    var rad = function (v) { return Math.max(0.06, Math.min(1, ((v || 0) + 1) / (vals + 1))); };
+    var lab = ax.map(function (k) { return k[1] + ' ' + (a[k[0]] || 0) + (b ? ' / ' + (b[k[0]] || 0) : ''); }).join(', ');
+    var s = '<svg viewBox="0 0 ' + S + ' ' + S + '" width="' + S + '" height="' + S + '" role="img" aria-label="Axes : ' + E(lab) + '" class="radar axes">';
+    [0.33, 0.66, 1].forEach(function (r) { s += '<polygon points="' + ax.map(function (_, i) { return pt(i, r).map(f).join(','); }).join(' ') + '" style="fill:none;stroke:var(--line)" />'; });
+    ax.forEach(function (_, i) { var p = pt(i, 1); s += '<line x1="' + cx + '" y1="' + cy + '" x2="' + f(p[0]) + '" y2="' + f(p[1]) + '" style="stroke:var(--line)" />'; });
+    var poly = function (v, st) { return '<polygon points="' + ax.map(function (k, i) { return pt(i, rad(v[k[0]])).map(f).join(','); }).join(' ') + '" style="' + st + '" />'; };
+    if (b) s += poly(b, 'fill:color-mix(in srgb,var(--int) 10%,transparent);stroke:var(--int);stroke-width:1.5;stroke-dasharray:4 3');
+    s += poly(a, 'fill:color-mix(in srgb,var(--accent) 16%,transparent);stroke:var(--accent);stroke-width:1.5');
+    ax.forEach(function (k, i) {
+      var p = pt(i, i % 2 ? 1.1 : 1.16), anchor = i === 1 ? 'start' : i === 3 ? 'end' : 'middle';
+      s += '<text x="' + f(p[0]) + '" y="' + f(p[1] + (i === 0 ? -2 : i === 2 ? 10 : 4)) + '" text-anchor="' + anchor + '" style="font:500 10.5px var(--f-mono);fill:var(--fg)">' + E(k[1]) + '</text>';
+    });
+    return s + '</svg>';
+  };
+
   // constellation : compétences connues (pleines, plus proches du centre si maîtrisées) et envies (anneaux) par secteur d'univers
   CH.constellationSVG = function (st, o) {
     o = o || {};

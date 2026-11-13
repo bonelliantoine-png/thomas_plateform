@@ -1,7 +1,7 @@
 /* Ta corde cachée · questions et profils (contenu éditorial). Chargé après resources.js.
    Chaque réponse ajoute des points d'axes (so social, ph physique, cr création, in intellect) et des points d'univers
    (identifiants de la taxonomie). Q8 fixe le coût maximal du matériel (0 à 2, null = pas de filtre).
-   Profils : univers regroupés ; à égalité, l'axe le plus fort départage (axis). Portraits rédigés à la main. */
+   Profils : univers regroupés ; à égalité, l'axe le plus fort départage (axis), puis l'ordre de la liste. Portraits rédigés à la main. */
 window.CORDES_QUIZ = {
   questions: [
     { id: 'q1', q: 'Dimanche, 10 h. Tu es plutôt…', opts: [
@@ -58,8 +58,8 @@ window.CORDES_QUIZ = {
     { id: 'oeil', name: 'Œil vif', universes: ['image', 'style'], axis: 'cr', portrait: 'Tu remarques les couleurs, les cadrages et les détails avant tout le monde.' },
     { id: 'conteur', name: 'Conteur né', universes: ['parole'], axis: 'so', portrait: 'Tes histoires font rire la table, et tu trouves facilement les mots justes.' },
     { id: 'scene', name: 'Scène ouverte', universes: ['scene'], axis: 'so', portrait: 'Être regardé ne te fait pas peur quand il s’agit de faire passer un bon moment.' },
-    { id: 'corps', name: 'Corps en mouvement', universes: ['sport', 'pleinair'], axis: 'ph', portrait: 'Tu réfléchis mieux en marchant, et une journée sans bouger te paraît longue.' },
     { id: 'pied-vert', name: 'Pied vert', universes: ['nature'], axis: 'ph', portrait: 'Tu te sens bien dehors, au contact de ce qui pousse et de ce qui vit.' },
+    { id: 'corps', name: 'Corps en mouvement', universes: ['sport', 'pleinair'], axis: 'ph', portrait: 'Tu réfléchis mieux en marchant, et une journée sans bouger te paraît longue.' },
     { id: 'jeu', name: 'Esprit de jeu', universes: ['jeux'], axis: 'in', portrait: 'Une règle à comprendre et une partie à gagner suffisent à réunir tout le monde.' },
     { id: 'quartier', name: 'Âme du quartier', universes: ['social'], axis: 'so', portrait: 'Tu aimes que les gens se rencontrent, et tu es souvent celui ou celle qui fait le lien.' },
     { id: 'bidouille', name: 'Bidouilleur malin', universes: ['tech', 'pratique'], axis: 'in', portrait: 'Devant un problème, ton premier réflexe est de chercher l’astuce qui le règle.' },

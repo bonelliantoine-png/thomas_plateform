@@ -18,10 +18,10 @@ const ctx = vm.createContext(Object.assign(win, {
   btoa: globalThis.btoa, atob: globalThis.atob, encodeURIComponent, decodeURIComponent, URL, AbortController, fetch: async () => { throw new Error('offline'); }
 }));
 const files = [
-  'js/data/taxonomy-a.js', 'js/data/taxonomy-b.js', 'js/data/resources.js',
+  'js/data/taxonomy-a.js', 'js/data/taxonomy-b.js', 'js/data/resources.js', 'js/data/occasions.js', 'js/data/quiz.js', 'js/data/defis.js',
   'js/engine/core.js', 'js/engine/similarity.js', 'js/engine/inspiration.js', 'js/engine/archetype.js', 'js/engine/plan.js',
   'js/engine/pricing.js', 'js/engine/channels.js', 'js/engine/status.js', 'js/engine/niche.js', 'js/engine/offers.js',
-  'js/engine/troc.js', 'js/engine/share.js', 'js/engine/osm.js', 'js/engine/ai.js', 'js/engine/demo.js', 'js/engine/export.js', 'js/engine/growth.js', 'js/ui/charts.js'
+  'js/engine/troc.js', 'js/engine/share.js', 'js/engine/osm.js', 'js/engine/ai.js', 'js/engine/demo.js', 'js/engine/export.js', 'js/engine/growth.js', 'js/engine/ideas.js', 'js/engine/quiz.js', 'js/ui/charts.js'
 ];
 for (const f of files) {
   const p = path.join(APP, f);

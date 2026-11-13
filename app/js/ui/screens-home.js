@@ -8,13 +8,20 @@
     render: function (st) {
       var D = C.data, R = C.res;
       var has = st.mode && (Object.keys(st.skills).length || st.step);
-      var html = '<div class="wrap"><section class="hero"><div><div class="kicker">Bilan de compétences de vie · gratuit · sans compte</div>' +
+      // trois portes au même niveau : idées à vivre, le test, le bilan ; une seule porte principale selon la saison
+      var ideasFirst = C.ideasPrimary(new Date());
+      var door = function (href, k, t, d, label, primary, extra) { return '<section class="door' + (primary ? ' main' : '') + '"><div class="k">' + E(k) + '</div><h2 class="t">' + E(t) + '</h2><p class="sp">' + E(d) + '</p>' + (extra || '') + (href ? '<a class="btn' + (primary ? ' primary' : '') + ' lg" href="' + href + '">' + E(label) + ' ' + ui.icon('arrowR') + '</a>' : '') + '</section>'; };
+      var html = '<div class="wrap"><section class="hero hero3"><div><div class="kicker">Cordes · gratuit · sans compte</div>' +
         '<h1 class="h1">Tout ce que vous savez faire, et tout ce que vous voulez apprendre.</h1>' +
-        '<p class="lead">Cuisine, musique, bricolage, éloquence, magie, jardin… En dix minutes, faites le point sur vos savoir-faire et vos envies. Cordes vous dit où, avec qui et comment apprendre, ou comment transmettre et en tirer un revenu.</p>' +
+        '<p class="lead">Cuisine, musique, bricolage, éloquence, magie, jardin… Trouvez une idée à vivre, découvrez votre corde cachée, ou faites le point en dix minutes : Cordes dit où, avec qui et comment apprendre ou transmettre.</p>' +
         '<div class="row" style="margin-top:16px">' + ui.pill(D.skills.length + ' compétences', 'idle', false) + ui.pill(D.universes.length + ' univers', 'idle', false) + ui.pill(R.platforms.length + ' plateformes réelles', 'idle', false) + '<a class="pill int pilllink" href="#/donnees"><i></i>vos données restent sur cet appareil</a></div></div>' +
-        '<div class="modes" role="group" aria-label="Choisir un parcours">' +
-        [['learn', 'J’apprends', 'Faire le point en 3 minutes, découvrir ce qui me tente et obtenir un plan concret pour y arriver.'], ['offer', 'Je transmets', 'Transformer un savoir-faire en offres, en prix, en canaux et en revenus, avec une feuille de route de 90 jours.'], ['both', 'Les deux', 'Apprendre et transmettre, avec des idées de troc : ce que je sais contre ce que je veux.']]
-          .map(function (m) { return '<button class="choice' + (st.mode === m[0] && has ? ' on' : '') + '" data-act="start" data-mode="' + m[0] + '"><span class="h3">' + E(m[1]) + ui.icon('arrowR') + '</span><p class="sp">' + E(m[2]) + '</p></button>'; }).join('') + '</div></section>';
+        '<div class="doors">' +
+        door('#/idees', 'Idées à vivre · 30 s', 'Trouver une idée de sortie ou de cadeau', 'Anniversaire, EVJF, Noël, un soir entre amis : des idées qui s’apprennent en une heure.', 'Trouver une idée', ideasFirst) +
+        door('#/test', 'Le test · 60 s', 'Quelle est ta corde cachée ?', '8 questions sur ta vie, et trois savoir-faire qui te ressemblent.', 'Faire le test', !ideasFirst) +
+        door('', 'Le bilan · 10 min', 'Faire mon bilan', 'Ce que vous savez, ce qui vous tente, et un plan concret.', '', false,
+          '<div class="modes" role="group" aria-label="Choisir un parcours">' + [['learn', 'J’apprends', 'Découvrir ce qui me tente et obtenir un plan concret.'], ['offer', 'Je transmets', 'Offres, prix, canaux et revenus, feuille de route de 90 jours.'], ['both', 'Les deux', 'Apprendre et transmettre, avec des idées de troc.']]
+            .map(function (m) { return '<button class="choice' + (st.mode === m[0] && has ? ' on' : '') + '" data-act="start" data-mode="' + m[0] + '"><span class="h3">' + E(m[1]) + ui.icon('arrowR') + '</span><p class="sp">' + E(m[2]) + '</p></button>'; }).join('') + '</div>') +
+        '</div></section>';
       if (has) {
         var done = st.step === 'done';
         html += '<section class="panel" style="margin-top:22px"><div class="ph"><span class="t">Votre bilan en cours</span><span class="hint">' + (st.demo ? 'profil de démonstration' : 'enregistré sur cet appareil') + '</span></div><div class="pb spread"><p class="sp">' + (st.context.firstName ? E(st.context.firstName) + ' · ' : '') + ({ learn: 'J’apprends', offer: 'Je transmets', both: 'Les deux' }[st.mode]) + ' · ' + Object.keys(st.skills).filter(function (k) { return st.skills[k].level > 0; }).length + ' compétences · ' + C.yesDesires(st).length + ' envies' + (done ? '' : ' · étape « ' + E(ui.STEP_DEFS[st.step] || 'Vous') + ' »') + '</p>' +
@@ -29,7 +36,7 @@
       var zone = C.zoneOf(st.context.city) || 'Paris 11e';
       html += '<div class="section-h"><span class="kicker">Bientôt</span><h2 class="h2">La plateforme ouvre quartier par quartier</h2></div><div class="grid2"><section class="panel"><div class="pb">' +
         '<p class="prose">Des séances d’une heure en groupe de 2 à 4, près de chez vous, dans des cafés, ateliers et studios partenaires aux heures creuses. Un quartier ouvre quand ' + C.OPEN_GOAL + ' voisins se sont inscrits.</p>' +
-        '<div class="row" style="margin-top:14px"><a class="btn primary" href="#/attente">Rejoindre la liste</a><a class="btn" href="#/attente/host">Devenir hôte</a><a class="btn" href="#/lieu">Proposer un lieu</a></div></div></section>' +
+        '<div class="row" style="margin-top:14px"><a class="btn" href="#/attente">Rejoindre la liste</a><a class="btn" href="#/attente/host">Devenir hôte</a><a class="btn" href="#/lieu">Proposer un lieu</a></div></div></section>' +
         '<section class="panel"><div class="ph"><span class="t">Ouverture</span><span class="hint">' + E(zone) + '</span></div><div class="pb">' + ui.quarterHTML(zone, { noText: false }) + '</div></section></div>';
       return html + '</div>';
     }

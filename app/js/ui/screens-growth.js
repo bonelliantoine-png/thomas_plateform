@@ -38,6 +38,7 @@
       mine.push(['#/progres', 'Mes progrès']);
     }
     mine.push(['#/donnees', 'Mes données']);
+    groups.unshift(['Pour les curieux', [['#/idees', 'Idées à vivre'], ['#/test', 'Le test · ta corde cachée']]]);
     groups.push(['Mon bilan', mine]);
     groups.push(['Outils', [['#/outils/autour', 'Autour de moi'], ['#/outils/recherches', 'Recherches préparées'], ['#/comparer', 'Comparer avec un ami'], ['#/groupe', 'Comparer en groupe'], ['#/copilote', 'Copilote IA']]]);
     groups.push(['La plateforme', [['#/attente', 'Liste d’attente'], ['#/lieu', 'Proposer un lieu'], ['#/demo', 'Démo'], ['#/comment', 'Comment ça marche'], ['#/admin/metrics', 'Mesure et questionnaire']]]);
@@ -59,15 +60,18 @@
 
   /* ---------- A1 · liste d'attente ---------- */
   function wlState(st, param) {
-    var f = ui._wl;
-    if (!f || (param && f.param !== param)) {
+    var f = ui._wl, pf = ui._prefill;
+    if (!f || (param && f.param !== param) || pf) {
       var pre = C.waitlist.prefill(st), last = st.waitlist || {};
+      // pré-remplissage venu des idées à vivre ou du test : envies proposées et cochées, source conservée
+      if (pf) { pre.wants = U.uniq(U.arr(pf.wants).filter(function (id) { return C.data.sById[id]; }).concat(pre.wants)); ui._prefill = null; }
       var city = last.city || st.context.city || 'Paris';
       f = ui._wl = {
         param: param, role: param === 'host' ? 'transmettre' : param === 'lieu' ? 'lieu' : (last.role || (st.mode === 'offer' ? 'transmettre' : 'apprendre')),
         city: city, arr: last.arr || (C.zoneOf(city).match(/Paris (\d+\w+)/) || [])[1] || (C.isParis(city) ? '11e' : ''),
-        email: last.email || '', wants: pre.wants.slice(), offers: pre.offers.slice(), pre: pre, consent: false
+        email: last.email || '', wants: pre.wants.slice(), offers: pre.offers.slice(), pre: pre, consent: false, source: pf ? pf.source : ''
       };
+      if (pf && /^(idees|test)/.test(pf.source)) f.role = 'apprendre';
     }
     return f;
   }
@@ -126,7 +130,7 @@
     var f = ui._wl, venue = C.LS.get(C.KEYS.venue, null);
     f.email = (ui.$('#wl-email').value || '').trim(); f.consent = ui.$('#wl-consent').checked; f.city = ui.$('#wl-city').value.trim();
     if (ui.$('#wl-arr')) f.arr = ui.$('#wl-arr').value;
-    var entry = { id: (ui.st.waitlist && ui.st.waitlist.id) || undefined, role: f.role, city: f.city, arr: C.isParis(f.city) ? f.arr : '', zone: C.zoneOf(f.city, f.arr), email: f.email || undefined, consent: f.consent, wants: f.role === 'lieu' ? [] : f.wants.slice(), offers: f.role === 'lieu' ? [] : f.offers.slice() };
+    var entry = { id: (ui.st.waitlist && ui.st.waitlist.id) || undefined, source: f.source || 'bilan', role: f.role, city: f.city, arr: C.isParis(f.city) ? f.arr : '', zone: C.zoneOf(f.city, f.arr), email: f.email || undefined, consent: f.consent, wants: f.role === 'lieu' ? [] : f.wants.slice(), offers: f.role === 'lieu' ? [] : f.offers.slice() };
     if (f.role === 'lieu' && venue && venue.name) entry.venue = { name: venue.name, type: venue.type, capacity: venue.capacity, slots: venue.slots, equip: venue.equip, formula: venue.formula };
     var errs = C.waitlist.validate(entry);
     if (errs.length) { ui.toast(errs[0], 'no'); var foc = !entry.consent && errs[0].indexOf('consentement') >= 0 ? '#wl-consent' : !entry.zone ? '#wl-city' : '#wl-email'; if (ui.$(foc)) ui.$(foc).focus(); return; }
@@ -294,6 +298,11 @@
         R.durations.slice(0, 10).map(function (d) { return '<div class="gtr" style="grid-template-columns:minmax(0,1fr) 60px 90px"><span>' + E(d.route) + '</span><span class="num">' + d.n + '</span><span class="num">' + fmtDur(d.median) + '</span></div>'; }).join('') + '</div></section></div>';
       var cnt = Object.keys(R.counts).sort(function (a, b) { return R.counts[b] - R.counts[a]; });
       html += '<section class="panel" style="margin-top:16px"><div class="ph"><span class="t">Événements</span></div><div class="pb"><div class="row">' + cnt.map(function (k) { return ui.pill(k.replace('use:', 'usage · ').replace('start:', 'départ · ') + ' · ' + R.counts[k], 'idle'); }).join('') + '</div></div></section>';
+      html += '<div class="grid2" style="margin-top:16px"><section class="panel"><div class="ph"><span class="t">Entonnoir des curieux</span><span class="hint">idées à vivre et test</span></div><div class="pb">' +
+        R.curious.map(function (f, i) { return '<div class="frow cf"><div class="spread"><span>' + (i + 1) + ' · ' + E(f.label) + '</span><span class="num"><b>' + f.n + '</b> <span class="faint">' + (i ? U.pct(f.conv) + ' de l’étape précédente' : U.pct(f.rate) + ' des visites') + '</span></span></div>' + ui.meter(R.curious[0].n ? f.n / R.curious[0].n * 100 : 0, 100, i >= 3 ? 'int' : '') + '</div>'; }).join('') + '</div></section>' +
+        '<section class="panel"><div class="ph"><span class="t">Coefficient viral estimé</span><span class="hint">liens #i= et #t=</span></div><div class="pb"><div class="counters" style="grid-template-columns:1fr 1fr 1fr">' +
+        ui.counter('Partages', R.viral.shares, 'message, lien ou image') + ui.counter('Ouvertures', R.viral.opens, 'liens reçus ouverts', 'sent') + ui.counter('Coefficient', R.viral.k == null ? '·' : String(Math.round(R.viral.k * 100) / 100).replace('.', ','), 'ouvertures / partages', R.viral.k >= 1 ? 'int' : 'wait') + '</div>' +
+        '<p class="faint" style="margin-top:10px;font-size:11.5px">' + (src === 'demo' ? 'Données fictives.' : 'Sur cet appareil seulement en prototype : le coefficient réel suppose la mesure agrégée.') + ' Au-dessus de 1, chaque partage ramène plus d’une visite.</p></div></section></div>';
       html += '<div class="section-h" id="q"><span class="kicker">Questionnaire de fin</span><h2 class="h2">Utilité, recommandation et test du prix</h2></div>';
       if (!S.n) return html + '<p class="empty">Aucune réponse au questionnaire pour l’instant.</p></div>';
       html += '<div class="counters">' + ui.counter('Réponses', S.n, U.pct(S.n / Math.max(1, res.n)) + ' des résultats') + ui.counter('Utilité', String(Math.round(S.avgUtility * 10) / 10).replace('.', ',') + '<small> / 5</small>', 'moyenne', 'int') +

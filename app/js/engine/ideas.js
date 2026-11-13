@@ -39,6 +39,8 @@
       };
     });
     C.occById = {}; C.occasions.forEach(function (o) { C.occById[o.id] = o; });
+    var ex = W.CORDES_IDEAS_EXCLUDE || {};
+    C.IDEAS.excludeDomains = U.arr(ex.domains); C.IDEAS.excludeSkills = U.arr(ex.skills);
     // univers les plus fréquents de la taxonomie (pour la « nouveauté »)
     var cnt = {}; C.data.skills.forEach(function (s) { cnt[s.universe] = (cnt[s.universe] || 0) + 1; });
     C.TOP_UNIVERSES = Object.keys(cnt).sort(function (a, b) { return cnt[b] - cnt[a] || (a < b ? -1 : 1); }).slice(0, 4);
@@ -70,6 +72,7 @@
   /* ---------- filtres durs ---------- */
   C.ideaPasses = function (s, occ, o) {
     var a = s.attrs;
+    if (C.IDEAS.excludeDomains && (C.IDEAS.excludeDomains.indexOf(s.domain) >= 0 || C.IDEAS.excludeSkills.indexOf(s.id) >= 0)) return false;
     if (!(a.oneHourResult === true || a.hoursToBasics <= 3)) return false;
     if (!s.formats.some(function (f) { return f === 'atelier' || f === 'evenement' || f === 'communaute' || f === 'cours'; })) return false;
     if (s.regulated && occ.exclude.indexOf(s.regulated) >= 0) return false;
@@ -96,7 +99,7 @@
     novelty: 'une idée que peu de gens ont', taste: 'colle à ses goûts', pin: 'un classique de cette occasion', desire: 'déjà dans tes envies', seed: 'proche de ta corde cachée'
   };
   C.ideaNovelty = function (s) { return U.clamp(1 - s.attrs.demand / 3 + (C.TOP_UNIVERSES.indexOf(s.universe) < 0 ? 0.3 : 0), 0, 1); };
-  C.ideaScore = function (s, occ, o) {
+  C.ideaScore = function (s, occ, o, mean) {
     var a = s.attrs, B = C.IDEAS.bonus;
     var val = {
       social: a.social / 3, creative: a.creative / 3, physical: a.physical / 3, intellectual: a.intellectual / 3,
@@ -108,11 +111,14 @@
     if (occ.pins.indexOf(s.id) >= 0) { parts.pin = B.pin; score += B.pin; }
     if (o.desires.indexOf(s.id) >= 0) { parts.desire = B.desire; score += B.desire; }
     if (o.seed.indexOf(s.id) >= 0) { parts.seed = B.seed; score += B.seed; }
-    var top = Object.keys(parts).sort(function (x, y) { return parts[y] - parts[x] || (x < y ? -1 : 1); });
+    // la raison affichée retient ce qui distingue l'idée des autres (écart à la moyenne des candidates)
+    var dist = {}; Object.keys(parts).forEach(function (k) { dist[k] = parts[k] - (mean && mean[k] != null ? occ.w[k] * mean[k] : 0); });
+    var top = Object.keys(dist).filter(function (k) { return dist[k] > 0; }).sort(function (x, y) { return dist[y] - dist[x] || (x < y ? -1 : 1); });
+    if (!top.length) top = Object.keys(parts).sort(function (x, y) { return parts[y] - parts[x]; });
     var lab = function (k) { return k === 'cheap' && a.cost === 0 ? 'pas besoin de matériel' : k === 'novelty' && occ.id === 'offrir' ? 'rare et facile à offrir' : WHY[k]; };
     var why = top.slice(0, 2).map(lab).filter(Boolean);
     why = why.length ? why[0].charAt(0).toUpperCase() + why[0].slice(1) + (why[1] ? ', ' + why[1] : '') : '';
-    return { score: score, parts: parts, why: why, novelty: val.novelty };
+    return { score: score, parts: parts, why: why, novelty: val.novelty, val: val };
   };
 
   C.ideaBudgets = function (s, o) {
@@ -129,8 +135,10 @@
     var occ = C.occById[occasionId] || C.occasions[0];
     if (!occ) return { items: [], total: 0, occ: null };
     var o = C.ideaOpts(occ, opts), K = C.IDEAS;
-    var pool = C.data.skills.filter(function (s) { return C.ideaPasses(s, occ, o); }).map(function (s) {
-      var sc = C.ideaScore(s, occ, o);
+    var cands = C.data.skills.filter(function (s) { return C.ideaPasses(s, occ, o); });
+    var mean = {}; cands.forEach(function (s) { var v = C.ideaScore(s, occ, o).val; Object.keys(v).forEach(function (k) { mean[k] = (mean[k] || 0) + v[k] / cands.length; }); });
+    var pool = cands.map(function (s) {
+      var sc = C.ideaScore(s, occ, o, mean);
       return { s: s, score: sc.score, why: sc.why, novelty: sc.novelty, parts: sc.parts };
     }).sort(function (a, b) { return b.score - a.score || (a.s.id < b.s.id ? -1 : 1); }).slice(0, 90);
     var total = pool.length, out = [];

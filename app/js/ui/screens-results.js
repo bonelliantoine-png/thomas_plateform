@@ -54,10 +54,11 @@
       } else html += '<p class="empty">Aucune compétence au niveau 2 (bases acquises) pour l’instant : c’est le niveau qui permet d’animer la découverte. Le jour venu, le parcours « Je transmets » vous aidera à lancer une première séance.</p>';
 
       // utilisations directes
-      html += '<div class="section-h noprint" id="usages" tabindex="-1"><span class="kicker">Utiliser</span><h2 class="h2">Douze façons d’utiliser votre bilan</h2></div><div class="tiles noprint">' +
+      html += '<div class="section-h noprint" id="usages" tabindex="-1"><span class="kicker">Utiliser</span><h2 class="h2">Quatorze façons d’utiliser votre bilan</h2></div><div class="tiles noprint">' +
         [['passport', '01', 'Passeport', 'Une page HTML autonome à garder ou envoyer'], ['ics', '02', 'Plan dans l’agenda', 'Premiers pas et jalons en .ics'], ['share', '03', 'Lien de partage', 'Votre bilan lisible par un ami, sans compte'], ['gocompare', '04', 'Comparer, troquer', 'Coller le lien d’un ami pour trouver un troc'],
           ['wishlist', '05', 'Liste d’envies à offrir', 'Des ateliers à offrir pour un anniversaire'], ['challenge', '06', 'Défi 30 jours', 'Un micro-défi par jour sur l’envie prioritaire'], ['cv', '07', 'Pour un CV', 'Centres d’intérêt et compétences transverses'], ['print', '08', 'Imprimer', 'Version papier propre, en PDF'],
-          ['card', '09', 'Carte image', 'Une image carrée ou story pour vos réseaux'], ['goGroup', '10', 'Comparer en groupe', 'De 3 à 8 amis : qui apprend quoi à qui'], ['goProgress', '11', 'Mes progrès', 'Instantanés datés et rappel dans 90 jours'], ['goData', '12', 'Mes données', 'Tout exporter ou tout effacer']]
+          ['card', '09', 'Carte image', 'Une image carrée ou story pour vos réseaux'], ['goGroup', '10', 'Comparer en groupe', 'De 3 à 8 amis : qui apprend quoi à qui'], ['goProgress', '11', 'Mes progrès', 'Instantanés datés et rappel dans 90 jours'], ['goData', '12', 'Mes données', 'Tout exporter ou tout effacer'],
+          ['goIdeas', '13', 'Une idée à vivre avec ces envies', 'Une sortie entre amis autour de vos envies, à envoyer au groupe'], ['goTest', '14', 'Fais passer le test à un ami', 'Sa corde cachée en 60 secondes, puis comparer']]
           .map(function (t) { return '<button class="tile" data-act="' + t[0] + '"><span class="n">' + t[1] + '</span><span class="t">' + E(t[2]) + '</span><span class="d">' + E(t[3]) + '</span></button>'; }).join('') + '</div>';
 
       // copilote

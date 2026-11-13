@@ -44,6 +44,9 @@
         counter('Statut conseillé', '<span style="font-size:16px;letter-spacing:0">' + E(plan.statuses[0].s.name.replace(/\s*\(.*\)/, '')) + '</span>', plan.statuses[0].s.name.match(/\((.*)\)/) ? E(plan.statuses[0].s.name.match(/\((.*)\)/)[1]) : 'cotisations ' + U.rate(plan.statuses[0].rate.rate ), 'int') + '</div>';
       html += '<nav class="subnav" aria-label="Sections du plan">' + [['s-offres', '1 · Offres'], ['s-niche', '2 · Niche'], ['s-sim', '3 · Simulateur'], ['s-canaux', '4 · Canaux'], ['s-statut', '5 · Statut et cadre'], ['s-route', '6 · 90 jours'], ['s-kit', '7 · Kit'], ['s-coll', '8 · Collectif']].map(function (x) { return '<button data-act="scrollTo" data-target="' + x[0] + '">' + E(x[1]) + '</button>'; }).join('') + '</nav>';
       html += secOffers(st, plan) + secNiche(st, plan) + secSim(st, plan) + secChannels(st, plan) + secStatus(st, plan) + secRoadmap(st, plan) + secKit(st, plan) + secColl(st, plan);
+      html += '<div class="section-h noprint"><span class="kicker">Curieux</span><h2 class="h2">Faire venir de nouveaux publics</h2></div><div class="tiles noprint">' +
+        [['goIdeas', 'Une idée à vivre avec ces envies', 'Des sorties à plusieurs, à envoyer au groupe'], ['goTest', 'Fais passer le test à un ami', 'Sa corde cachée en 60 secondes, puis comparer']]
+          .map(function (t) { return '<button class="tile" data-act="' + t[0] + '"><span class="t">' + E(t[1]) + '</span><span class="d">' + E(t[2]) + '</span></button>'; }).join('') + '</div>';
       if (ui.afterResults) html += ui.afterResults(st);
       html += '</div>';
       return html;

@@ -101,6 +101,77 @@
     var dd = new Date(); x.fillText(U.dateShort(dd) + ' ' + dd.getFullYear() + (d.city ? ' · ' + d.city : ''), Wd - P, fy); x.textAlign = 'left';
     return canvas;
   };
+  /* ---------- fonds et en-tête communs aux cartes ---------- */
+  function frame(x, Wd, H, P, ly, label) {
+    x.fillStyle = T.bg; x.fillRect(0, 0, Wd, H);
+    x.fillStyle = T.grid; for (var gy = 18; gy < H; gy += 36) for (var gx = 18; gx < Wd; gx += 36) { x.beginPath(); x.arc(gx, gy, 1.6, 0, 7); x.fill(); }
+    x.fillStyle = T.accent; rr(x, P, ly, 26, 26, 7); x.fill();
+    x.fillStyle = T.int; rr(x, P + 32, ly, 26, 26, 7); x.fill();
+    x.strokeStyle = T.line2; x.lineWidth = 2; rr(x, P + 1, ly + 33, 24, 24, 6); x.stroke(); rr(x, P + 33, ly + 33, 24, 24, 6); x.stroke();
+    x.fillStyle = T.fg; x.font = '400 40px ' + F.display; x.textBaseline = 'alphabetic'; x.fillText('Cordes', P + 76, ly + 44);
+    x.fillStyle = T.accent; x.font = '500 20px ' + F.mono; spaced(x, label, P, ly + 118, 2.2);
+  }
+  // texte sur plusieurs lignes (coupé aux espaces), renvoie la hauteur utilisée
+  function wrap(x, text, px, y, max, lh, maxLines) {
+    var words = String(text || '').split(/\s+/), line = '', n = 0;
+    for (var i = 0; i < words.length; i++) {
+      var t = line ? line + ' ' + words[i] : words[i];
+      if (x.measureText(t).width > max && line) { x.fillText(line, px, y + n * lh); n++; line = words[i]; if (n >= (maxLines || 9) - 1) { line = fit(x, words.slice(i).join(' '), max); break; } }
+      else line = t;
+    }
+    if (line) { x.fillText(line, px, y + n * lh); n++; }
+    return n * lh;
+  }
+  function foot(x, Wd, H, P, text) {
+    var fy = H - 64;
+    x.strokeStyle = T.line; x.lineWidth = 2; x.beginPath(); x.moveTo(P, fy - 44); x.lineTo(Wd - P, fy - 44); x.stroke();
+    x.fillStyle = T.fg2; x.font = '300 28px ' + F.body; x.fillText(text, P, fy);
+    if (C.PUBLIC_URL) { x.fillStyle = T.fg3; x.font = '400 20px ' + F.mono; x.textAlign = 'right'; x.fillText(C.PUBLIC_URL, Wd - P, fy); x.textAlign = 'left'; }
+  }
+
+  /* ---------- carte « Ta corde cachée » (story ou carré) ---------- */
+  ui.drawQuizCard = function (canvas, d, fmt) {
+    var dims = ui.CARD_FORMATS[fmt] || ui.CARD_FORMATS.story, Wd = dims[0], H = dims[1], story = fmt !== 'carre';
+    canvas.width = Wd; canvas.height = H;
+    var x = canvas.getContext('2d'), P = 72, ly = story ? 120 : 76, r = d.r;
+    frame(x, Wd, H, P, ly, 'TA CORDE CACHÉE');
+    var y = ly + (story ? 300 : 230);
+    x.fillStyle = T.fg3; x.font = '500 24px ' + F.mono; x.fillText(d.defi ? 'DÉFI RÉUSSI' : 'MA CORDE', P, y - (story ? 110 : 84));
+    x.fillStyle = T.fg; x.font = '400 ' + (story ? 108 : 84) + 'px ' + F.display;
+    x.fillText(fit(x, r.profile.name, Wd - 2 * P), P, y);
+    x.fillStyle = T.fg2; x.font = '300 ' + (story ? 38 : 31) + 'px ' + F.body;
+    y += (story ? 70 : 56) + wrap(x, d.defi ? d.defi.titre + '. ' + d.defi.reussi : r.profile.portrait, P, y + (story ? 70 : 56), Wd - 2 * P, story ? 50 : 40, 3);
+    y += story ? 90 : 60;
+    x.fillStyle = T.fg3; x.font = '500 19px ' + F.mono; spaced(x, 'TROIS SAVOIR-FAIRE QUI ME RESSEMBLENT', P, y, 2); y += 22;
+    x.strokeStyle = T.line; x.lineWidth = 2; x.beginPath(); x.moveTo(P, y); x.lineTo(Wd - P, y); x.stroke(); y += story ? 74 : 54;
+    d.picks.slice(0, 3).forEach(function (p, i) {
+      x.fillStyle = i === 2 ? T.int : T.accent; rr(x, P, y - 24, 18, 18, 4); x.fill();
+      x.fillStyle = T.fg3; x.font = '500 ' + (story ? 22 : 18) + 'px ' + F.mono; x.fillText(p.label.toUpperCase(), P + 34, y - 8);
+      x.fillStyle = T.fg; x.font = '500 ' + (story ? 44 : 32) + 'px ' + F.mono; x.fillText(fit(x, p.s.short || p.s.name, Wd - 2 * P - 34), P + 34, y + (story ? 46 : 32));
+      if (story) { x.fillStyle = T.fg2; x.font = '300 32px ' + F.body; wrap(x, 'En 1 h : ' + U.lc(p.oneHour || p.s.levels[0]), P + 34, y + 100, Wd - 2 * P - 34, 42, 2); }
+      y += story ? 250 : 102;
+    });
+    foot(x, Wd, H, P, 'Ta corde cachée · fais le test');
+    return canvas;
+  };
+
+  /* ---------- bon cadeau (1080 × 1350) ---------- */
+  ui.drawGiftCard = function (canvas, d) {
+    var Wd = 1080, H = 1350, P = 80; canvas.width = Wd; canvas.height = H;
+    var x = canvas.getContext('2d');
+    frame(x, Wd, H, P, 84, 'BON CADEAU · IDÉE À VIVRE');
+    x.strokeStyle = T.accent; x.lineWidth = 3; x.setLineDash([14, 10]); rr(x, P - 20, 270, Wd - 2 * P + 40, 820, 18); x.stroke(); x.setLineDash([]);
+    var y = 380, Q = P + 20, MW = Wd - 2 * Q;
+    if (d.to) { x.fillStyle = T.fg3; x.font = '500 26px ' + F.mono; x.fillText(fit(x, 'POUR ' + d.to.toUpperCase() + (d.from ? '  ·  DE ' + d.from.toUpperCase() : ''), MW), Q, y); y += 80; }
+    x.fillStyle = T.fg; x.font = '400 78px ' + F.display; y += wrap(x, d.title, Q, y + 14, MW, 88, 3) + 50;
+    x.font = '500 36px ' + F.mono;
+    d.items.slice(0, 5).forEach(function (s) { x.fillStyle = T.int; x.beginPath(); x.arc(Q + 10, y - 12, 8, 0, 7); x.fill(); x.fillStyle = T.fg; x.fillText(fit(x, s.short || s.name, MW - 44), Q + 36, y); y += 62; });
+    y += 30; x.fillStyle = T.fg2; x.font = '300 38px ' + F.body; y += wrap(x, d.end, Q, y, MW, 50, 2) + 30;
+    if (d.word) { x.fillStyle = T.fg; x.font = 'italic 300 40px ' + F.body; wrap(x, '« ' + d.word + ' »', Q, Math.min(y + 20, 960), MW, 52, 3); }
+    foot(x, Wd, H, P, 'Idée trouvée sur Cordes');
+    return canvas;
+  };
+
   // attendre les polices de la page (limité à 1,5 s) pour que le dessin soit fidèle
   ui.cardFontsReady = function () {
     if (!document.fonts || !document.fonts.load) return Promise.resolve();
