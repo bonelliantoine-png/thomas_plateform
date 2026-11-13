@@ -4,7 +4,7 @@
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
-  C.DECK = { w: { aff: 0.34, ctx: 0.20, trend: 0.08, explore: 0.12, bridge: 0.10, demand: 0.06 }, lambda: 0.72, uniPenalty: 0.07, learnYes: 0.06, learnNo: 0.05, learnUniYes: 0.05, learnUniNo: 0.07 };
+  C.DECK = { w: { aff: 0.34, ctx: 0.20, trend: 0.08, explore: 0.12, bridge: 0.10, demand: 0.06 }, lambda: 0.72, uniPenalty: 0.07, learnYes: 0.06, learnNo: 0.05, learnUniYes: 0.05, learnUniNo: 0.07, seedBonus: 1 };
 
   function deckState(st) {
     st.deck = st.deck || {};
@@ -67,9 +67,12 @@
     s.tags.forEach(function (t) { learned += U.num(dk.tagW[t]); });
     learned = (s.tags.length ? learned / Math.sqrt(s.tags.length) : 0) + U.num(dk.uniW[s.universe]);
     learned = U.clamp(learned, -0.5, 0.4);
-    var score = w.aff * aff + w.ctx * cf + w.trend * trend + w.explore * explore + w.bridge * bridge + w.demand * s.attrs.demand / 3 + learned;
+    // graines : idées retenues ou savoir-faire du test, proposés en premier (bonus de +1)
+    var seeded = U.arr(dk.seed).indexOf(s.id) >= 0;
+    var score = w.aff * aff + w.ctx * cf + w.trend * trend + w.explore * explore + w.bridge * bridge + w.demand * s.attrs.demand / 3 + learned + (seeded ? C.DECK.seedBonus : 0);
     // raison principale affichée sur la carte
     var reasons = [];
+    if (seeded) reasons.push({ k: 'graine', t: dk.seedFrom === 'test' ? 'Issue de ta corde cachée' : 'Issue de vos idées à vivre' });
     if (top[0] && top[0].raw > 0.4) reasons.push({ k: 'voisine', t: 'Voisine de ' + top[0].an.s.name, why: C.simWhy(s, top[0].an.s) });
     if (bridge >= 0.6) reasons.push({ k: 'passerelle', t: 'Passerelle entre ' + Object.keys(uniNear).slice(0, 2).map(function (u) { return C.universe(u).short; }).join(' et ') });
     if (!ctx.touched[s.universe]) reasons.push({ k: 'nouveau', t: 'Nouvel univers · ' + C.universe(s.universe).short });

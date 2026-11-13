@@ -98,18 +98,19 @@
     var rs = new Blob([bytes]).stream().pipeThrough(stream);
     return new Response(rs).arrayBuffer().then(function (b) { return new Uint8Array(b); });
   }
-  C.encodeShare = function (st) {
-    var json = JSON.stringify(C.compact(st));
-    var bytes = new TextEncoder().encode(json);
+  // compacte un objet en code « z… » (deflate-raw) ou « j… » (JSON), base64url ; utilisé par #b=, #i= et #t=
+  C.packCode = function (obj) {
+    var bytes = new TextEncoder().encode(JSON.stringify(obj));
     if (typeof W.CompressionStream === 'function') {
       try { return streamBytes(bytes, new W.CompressionStream('deflate-raw')).then(function (z) { return 'z' + b64urlFromBytes(z); }).catch(function () { return 'j' + b64urlFromBytes(bytes); }); }
       catch (e) { /* repli */ }
     }
     return Promise.resolve('j' + b64urlFromBytes(bytes));
   };
-  C.decodeShare = function (code) {
+  // relit un code (ou une URL qui le contient après « key= ») ; rejette si illisible
+  C.unpackCode = function (code, key) {
     code = String(code || '').trim();
-    var m = code.match(/[#&?]b=([A-Za-z0-9_\-]+)/); if (m) code = m[1];
+    var m = code.match(new RegExp('[#&?]' + (key || 'b') + '=([A-Za-z0-9_\\-]+)')); if (m) code = m[1];
     var kind = code.charAt(0), body = code.slice(1);
     try {
       var bytes = bytesFromB64url(body);
@@ -118,9 +119,15 @@
         if (typeof W.DecompressionStream !== 'function') return Promise.reject(new Error('Ce navigateur ne sait pas lire les liens compressés.'));
         p = streamBytes(bytes, new W.DecompressionStream('deflate-raw'));
       } else if (kind === 'j') p = Promise.resolve(bytes);
-      else return Promise.reject(new Error('Lien de bilan non reconnu.'));
-      return p.then(function (b) { var o = JSON.parse(new TextDecoder().decode(b)); return C.expand(o); });
-    } catch (e) { return Promise.reject(new Error('Lien de bilan illisible.')); }
+      else return Promise.reject(new Error('Lien non reconnu.'));
+      return p.then(function (b) { return JSON.parse(new TextDecoder().decode(b)); });
+    } catch (e) { return Promise.reject(new Error('Lien illisible.')); }
+  };
+  C.encodeShare = function (st) { return C.packCode(C.compact(st)); };
+  C.decodeShare = function (code) {
+    return C.unpackCode(code, 'b').then(function (o) { return C.expand(o); }, function (e) {
+      throw new Error(/compressés/.test(e.message) ? e.message : /reconnu/.test(e.message) ? 'Lien de bilan non reconnu.' : 'Lien de bilan illisible.');
+    });
   };
   C.shareUrl = function (code) {
     var base = (W.location && W.location.href ? W.location.href.split('#')[0] : '');
