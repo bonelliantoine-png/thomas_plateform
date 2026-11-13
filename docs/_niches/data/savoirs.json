@@ -1,0 +1,8658 @@
+{
+ "sector": "savoirs",
+ "categories": [
+  {
+   "id": "savoirs.arts",
+   "name": "Arts, patrimoine et écoute",
+   "desc": "Lire une oeuvre, un bâtiment, une rue ou un disque pour en comprendre les codes.",
+   "subcategories": [
+    {
+     "id": "savoirs.arts.musees",
+     "name": "Musées et expositions",
+     "desc": "Apprendre à regarder les oeuvres et à préparer une visite."
+    },
+    {
+     "id": "savoirs.arts.architecture",
+     "name": "Architecture et ville",
+     "desc": "Décrypter les façades, les styles et les lieux de culte."
+    },
+    {
+     "id": "savoirs.arts.rue-design",
+     "name": "Rue, design et images",
+     "desc": "Street art, objets du quotidien et histoire de la photographie."
+    },
+    {
+     "id": "savoirs.arts.ecoute",
+     "name": "Écoute guidée",
+     "desc": "Comprendre la musique en l'écoutant ensemble, sans solfège."
+    }
+   ]
+  },
+  {
+   "id": "savoirs.histoire",
+   "name": "Histoire et mémoire",
+   "desc": "Du récit des grandes époques aux archives de sa propre famille.",
+   "subcategories": [
+    {
+     "id": "savoirs.histoire.grande-histoire",
+     "name": "Grandes époques",
+     "desc": "Raconter et comprendre les périodes qui structurent notre monde."
+    },
+    {
+     "id": "savoirs.histoire.locale",
+     "name": "Histoire locale",
+     "desc": "Redécouvrir l'histoire de son quartier et de sa ville."
+    },
+    {
+     "id": "savoirs.histoire.familles",
+     "name": "Familles et mémoire",
+     "desc": "Retrouver ses ancêtres et recueillir la mémoire des proches."
+    },
+    {
+     "id": "savoirs.histoire.collections",
+     "name": "Objets, pièces et vestiges",
+     "desc": "Reconnaître et situer monnaies, timbres, objets anciens et vestiges."
+    }
+   ]
+  },
+  {
+   "id": "savoirs.sciences",
+   "name": "Ciel, terre et sciences",
+   "desc": "Observer le ciel et la terre, comprendre les sciences du quotidien.",
+   "subcategories": [
+    {
+     "id": "savoirs.sciences.ciel",
+     "name": "Ciel et astronomie",
+     "desc": "S'orienter dans le ciel et observer sans matériel lourd."
+    },
+    {
+     "id": "savoirs.sciences.terre",
+     "name": "Terre, météo et climat",
+     "desc": "Lire le temps, les roches et les grands équilibres du climat."
+    },
+    {
+     "id": "savoirs.sciences.ludique",
+     "name": "Sciences ludiques",
+     "desc": "Expériences, mathématiques, esprit critique et numérique expliqués simplement."
+    }
+   ]
+  },
+  {
+   "id": "savoirs.pensee",
+   "name": "Philosophie et idées",
+   "desc": "Penser ensemble : philosophie, société, psychologie et débats.",
+   "subcategories": [
+    {
+     "id": "savoirs.pensee.philo",
+     "name": "Philosophie pratique",
+     "desc": "Questionner, argumenter et trouver des repères."
+    },
+    {
+     "id": "savoirs.pensee.societe",
+     "name": "Mythes, monde et société",
+     "desc": "Mythologies, cartes du monde et économie pour curieux."
+    },
+    {
+     "id": "savoirs.pensee.psycho",
+     "name": "Psychologie et cerveau",
+     "desc": "Comprendre ses réactions et ses biais."
+    }
+   ]
+  },
+  {
+   "id": "savoirs.gout",
+   "name": "Cultures du goût",
+   "desc": "Connaître les grands produits sans forcément cuisiner ni boire.",
+   "subcategories": [
+    {
+     "id": "savoirs.gout.boissons",
+     "name": "Cultures des boissons",
+     "desc": "Vin, thé, café et bière côté histoire, géographie et vocabulaire."
+    },
+    {
+     "id": "savoirs.gout.produits",
+     "name": "Produits et terroirs",
+     "desc": "Fromage, chocolat, épices : origines, fabrication, reconnaissance."
+    },
+    {
+     "id": "savoirs.gout.gastronomie",
+     "name": "Histoire de la table",
+     "desc": "Comment on mange, d'où viennent les plats et les règles."
+    }
+   ]
+  },
+  {
+   "id": "savoirs.lettres",
+   "name": "Lettres, écrans et mots",
+   "desc": "Lire, regarder et analyser livres, films, séries, bandes dessinées et langue.",
+   "subcategories": [
+    {
+     "id": "savoirs.lettres.livres",
+     "name": "Livres et lecture",
+     "desc": "Choisir, lire et discuter ensemble."
+    },
+    {
+     "id": "savoirs.lettres.ecrans",
+     "name": "Cinéma, séries et jeux vidéo",
+     "desc": "Analyser ce que l'on regarde et ce à quoi l'on joue."
+    },
+    {
+     "id": "savoirs.lettres.mots",
+     "name": "Mots et langue",
+     "desc": "Étymologie, histoire de la langue et bande dessinée."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "savoirs-histoire-art-balade-musee",
+   "name": "Histoire de l'art en balade de musée",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.musees",
+   "desc": "Parcourir une salle de musée en 1 h 30 avec dix oeuvres clés et des repères pour comprendre.",
+   "audience": "25-65 ans curieux, visiteurs réguliers de musées, touristes francophones",
+   "skills": [
+    "Lire une composition",
+    "Situer une oeuvre dans son époque",
+    "Préparer un parcours de 10 oeuvres",
+    "Faire parler un visiteur"
+   ],
+   "appSkills": [
+    "histoire-de-l-art",
+    "visite-musee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier regard",
+     "goal": "Décrire une oeuvre et la situer dans une époque en suivant une grille de lecture",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les grands mouvements",
+     "goal": "Reconnaître 5 mouvements (gothique à impressionnisme) devant les oeuvres",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcours thématique",
+     "goal": "Suivre un fil rouge (portrait, lumière, mythe) sur plusieurs salles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Construire sa visite",
+     "goal": "Concevoir un parcours de 10 oeuvres avec anecdotes et questions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Médiateur amateur",
+     "goal": "Animer un groupe en musée et former de nouveaux hôtes à la médiation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "touristes",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "art",
+    "convivial",
+    "balade",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Visites guidées de musées",
+    "Conférenciers indépendants",
+    "Applis audioguides"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Fort intérêt et lieux gratuits ou bon marché, mais la visite guidée payante en musée relève de la carte de guide-conférencier : rester sur des balades entre amis, sans prestation commerciale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-art-contemporain",
+   "name": "Art contemporain sans complexe",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.musees",
+   "desc": "Comprendre ce que veulent dire une installation, un monochrome ou une vidéo d'art.",
+   "audience": "25-45 ans, curieux gênés devant l'art actuel, visiteurs de galeries",
+   "skills": [
+    "Se poser les bonnes questions",
+    "Repérer les gestes de rupture",
+    "Lire un cartel et un dossier",
+    "Défendre son avis"
+   ],
+   "appSkills": [
+    "histoire-de-l-art",
+    "visite-musee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je n'y comprends rien",
+     "goal": "Formuler trois questions devant une oeuvre actuelle et leur trouver un début de réponse",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les ruptures du XXe siècle",
+     "goal": "Situer ready-made, abstraction, pop art et performance sur une frise",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Galeries et foires",
+     "goal": "Lire un cartel, un communiqué et distinguer marché et musée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Regard critique",
+     "goal": "Écrire et défendre un avis argumenté sur une exposition",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'art actuel",
+     "goal": "Animer un parcours de galeries et former d'autres hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "galerie",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "art",
+    "ville",
+    "convivial",
+    "couleur",
+    "histoire"
+   ],
+   "competitors": [
+    "Visites de galeries",
+    "Médiations de centres d'art"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Beaucoup de curiosité mêlée de blocage : le format petit groupe lève le complexe. Peu d'offre accessible au-delà des visites institutionnelles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-musee-en-famille",
+   "name": "Musée en famille : visiter avec des enfants",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.musees",
+   "desc": "Transformer une sortie musée en enquête ludique pour enfants de 6 à 12 ans et leurs parents.",
+   "audience": "Parents et grands-parents de 6-12 ans, familles du week-end",
+   "skills": [
+    "Choisir des oeuvres adaptées",
+    "Inventer des jeux d'observation",
+    "Tenir 1 h sans lassitude",
+    "Prolonger à la maison"
+   ],
+   "appSkills": [
+    "visite-musee",
+    "animation-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chasse aux détails",
+     "goal": "Mener une visite de 45 min avec deux jeux d'observation sans écran",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mini-enquêtes",
+     "goal": "Créer une enquête de 5 questions autour de trois oeuvres choisies",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcours par thème",
+     "goal": "Préparer une visite thématique (animaux, couleurs, héros) adaptée à l'âge",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Atelier après visite",
+     "goal": "Prolonger la visite par une activité créative de 30 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur famille",
+     "goal": "Animer des groupes familiaux et former d'autres parents-hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 4,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "histoire",
+    "art",
+    "convivial",
+    "jeu"
+   ],
+   "competitors": [
+    "Ateliers des musées",
+    "Conférenciers jeune public"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande forte des parents, mais les musées proposent déjà des ateliers subventionnés : la valeur est dans la souplesse et l'accueil des grands-parents. Encadrement d'enfants à cadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-art-et-mythologie",
+   "name": "Mythes et symboles dans la peinture",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.musees",
+   "desc": "Décoder les sujets bibliques et mythologiques que l'on voit sans les comprendre au Louvre ou à Orsay.",
+   "audience": "30-70 ans cultivés, lecteurs, amateurs de musées",
+   "skills": [
+    "Reconnaître les attributs des dieux",
+    "Lire les scènes bibliques",
+    "Décoder allégories et vanités",
+    "Relier texte et image"
+   ],
+   "appSkills": [
+    "histoire-de-l-art",
+    "mythologies-religions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Qui est qui ?",
+     "goal": "Identifier 10 personnages mythologiques ou bibliques grâce à leurs attributs",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Raconter l'histoire derrière l'image",
+     "goal": "Rattacher un tableau à son récit source et le raconter en 2 min",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Allégories et vanités",
+     "goal": "Déchiffrer symboles, objets et codes d'un tableau classique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire une salle",
+     "goal": "Construire un parcours thématique avec textes sources",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de symboles",
+     "goal": "Animer des parcours et former des hôtes à la lecture iconographique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "art",
+    "recit",
+    "lecture",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Conférences d'histoire de l'art",
+    "Podcasts d'art"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public réel mais plus âgé et capté par les conférences existantes. Bon complément d'un atelier musée plutôt qu'une porte d'entrée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-architecture-balade",
+   "name": "Lire l'architecture en marchant",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.architecture",
+   "desc": "Reconnaître les styles et lire une façade lors d'une balade urbaine de 2 heures.",
+   "audience": "Urbains curieux 25-60 ans, Parisiens et touristes, amateurs de photo",
+   "skills": [
+    "Reconnaître 6 styles",
+    "Lire une façade",
+    "Comprendre les matériaux",
+    "Construire un itinéraire"
+   ],
+   "appSkills": [
+    "architecture-lecture",
+    "histoire-locale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lever les yeux",
+     "goal": "Reconnaître gothique, classique, haussmannien et art nouveau sur une rue",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Matériaux et structures",
+     "goal": "Expliquer pierre, brique, fer et béton dans un édifice",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un quartier, une époque",
+     "goal": "Dater un îlot à partir de ses indices et de la voirie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concevoir une balade",
+     "goal": "Créer un itinéraire de 2 h avec arrêts, anecdotes et photos",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'architecture",
+     "goal": "Animer des balades et former de nouveaux hôtes à lire la ville",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "touristes",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "balade",
+    "ville",
+    "patrimoine",
+    "histoire",
+    "photo"
+   ],
+   "competitors": [
+    "Visites guidées de Paris",
+    "Pavillon de l'Arsenal",
+    "Conférenciers"
+   ],
+   "regulated": "droit",
+   "verdict": "prioritaire",
+   "why": "Marché de balades dense mais très orienté touristes ; l'angle quartier et lecture de façades garde de la place. Balades commerciales régies par la carte de guide-conférencier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-paris-haussmann",
+   "name": "Paris haussmannien : comprendre les immeubles",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.architecture",
+   "desc": "Décoder un immeuble de rapport : étages, balcons, cours, escaliers et histoire de la rue.",
+   "audience": "Propriétaires, locataires, nouveaux Parisiens, passionnés de patrimoine",
+   "skills": [
+    "Lire les étages",
+    "Dater les ornements",
+    "Comprendre une copropriété ancienne",
+    "Raconter les travaux d'Haussmann"
+   ],
+   "appSkills": [
+    "architecture-lecture",
+    "histoire-locale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Façade à façade",
+     "goal": "Distinguer les 5 étages d'un immeuble haussmannien et leur usage social",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cours, escaliers et loges",
+     "goal": "Lire plans, escaliers et détails d'un immeuble de 1860-1900",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Haussmann en contexte",
+     "goal": "Expliquer les grands percements et leurs raisons politiques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Enquêter sur son immeuble",
+     "goal": "Retrouver l'histoire de son adresse dans les archives en ligne",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de quartier",
+     "goal": "Animer des visites d'immeubles et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "expatries",
+    "touristes"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ville",
+    "patrimoine",
+    "histoire",
+    "maison",
+    "balade"
+   ],
+   "competitors": [
+    "Parisiens d'hier",
+    "Visites guidées"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Public très francilien et ciblé ; l'intérêt se retrouve mieux dans la balade d'architecture générale que dans un thème trop étroit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-patrimoine-religieux",
+   "name": "Églises et cathédrales : lire un édifice",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.architecture",
+   "desc": "Comprendre plan, vitraux, sculptures et histoire d'une église sans être croyant.",
+   "audience": "Curieux et touristes, 30-75 ans, familles en vacances",
+   "skills": [
+    "Lire un plan en croix",
+    "Reconnaître roman et gothique",
+    "Déchiffrer un vitrail",
+    "Situer les saints"
+   ],
+   "appSkills": [
+    "architecture-lecture",
+    "mythologies-religions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Entrer dans une église",
+     "goal": "Nommer nef, transept, chevet et lire le plan en croix",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Roman ou gothique ?",
+     "goal": "Reconnaître l'arc, la voûte et les contreforts de chaque style",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vitraux et sculptures",
+     "goal": "Décoder un portail ou un vitrail et en raconter la scène",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire un édifice complet",
+     "goal": "Préparer une visite de 1 h d'une église avec dossier de repères",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de patrimoine",
+     "goal": "Animer des visites et former des hôtes à la lecture des églises",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "touristes",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "patrimoine",
+    "histoire",
+    "balade",
+    "calme",
+    "voyage"
+   ],
+   "competitors": [
+    "Visites guidées d'églises",
+    "Associations de patrimoine"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Passionnés fidèles mais public plus âgé et déjà couvert par les associations de patrimoine ; faible propension à payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-street-art-balade",
+   "name": "Street art : décrypter les murs",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.rue-design",
+   "desc": "Lire les fresques, signatures et tags d'un quartier et rencontrer l'histoire du graffiti.",
+   "audience": "Jeunes adultes et adolescents, touristes, photographes",
+   "skills": [
+    "Distinguer tag, graff et fresque",
+    "Reconnaître des signatures",
+    "Photographier un mur",
+    "Comprendre la commande publique"
+   ],
+   "appSkills": [
+    "histoire-de-l-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Tag ou fresque ?",
+     "goal": "Distinguer tag, pochoir, collage et fresque sur 10 exemples",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Qui est derrière ?",
+     "goal": "Reconnaître 8 signatures majeures et leurs styles",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Photographier un mur",
+     "goal": "Composer un cliché de rue avec contexte et signature",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concevoir un parcours",
+     "goal": "Créer une balade street art de 2 h avec histoires d'artistes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de rue",
+     "goal": "Animer des balades et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants",
+    "touristes"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ville",
+    "balade",
+    "photo",
+    "couleur",
+    "dessin"
+   ],
+   "competitors": [
+    "Visites street art à Paris",
+    "Collectifs d'artistes"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Bonne dynamique chez les 18-35 ans et peu de matériel. Le marché de balades est déjà occupé par des collectifs, il faut un angle (quartier, techniques).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-design-objets",
+   "name": "Histoire du design : objets du quotidien",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.rue-design",
+   "desc": "Pourquoi la chaise, la lampe ou le téléphone ont cette forme : repères des grands designers.",
+   "audience": "25-50 ans, amateurs de déco, étudiants en arts appliqués",
+   "skills": [
+    "Reconnaître Bauhaus, scandinave, pop",
+    "Lire un objet",
+    "Identifier un classique",
+    "Acheter un classique d'occasion"
+   ],
+   "appSkills": [
+    "histoire-de-l-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un objet, une histoire",
+     "goal": "Raconter l'histoire de 5 objets de design du quotidien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écoles et courants",
+     "goal": "Reconnaître Bauhaus, scandinave, pop et années 50 sur des meubles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Reconnaître un classique",
+     "goal": "Distinguer original, édition et copie à partir de repères",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chiner du design",
+     "goal": "Évaluer une pièce de seconde main et son prix juste",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de design",
+     "goal": "Animer des ateliers et former des hôtes en culture du design",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "galerie",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "objet-souvenir",
+    "collection",
+    "histoire",
+    "maison"
+   ],
+   "competitors": [
+    "Musées du design",
+    "Brocanteurs spécialisés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche d'esthète à marge réduite ; rejoint la chine et la déco, ce qui lui donne des débouchés commerciaux plus larges.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-photographie",
+   "name": "Histoire de la photographie en 10 images",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.rue-design",
+   "desc": "Des premiers daguerréotypes à l'image numérique, avec les grands noms et les techniques.",
+   "audience": "Photographes amateurs, 30-60 ans, étudiants",
+   "skills": [
+    "Situer les grandes ruptures",
+    "Lire une photo documentaire",
+    "Comprendre argentique et numérique",
+    "Visiter une expo photo"
+   ],
+   "appSkills": [
+    "histoire-de-l-art",
+    "visite-musee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix images qui comptent",
+     "goal": "Situer 10 photos majeures dans leur époque et leur intention",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Technique et esthétique",
+     "goal": "Relier procédé (argentique, couleur) et style d'une époque",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire une photo documentaire",
+     "goal": "Analyser cadrage, contexte et légende d'un reportage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Visiter une expo photo",
+     "goal": "Préparer et conduire une visite critique d'exposition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'images",
+     "goal": "Animer des soirées d'analyse et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "galerie",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "histoire",
+    "art",
+    "lecture",
+    "ville"
+   ],
+   "competitors": [
+    "Écoles de photo",
+    "Maison Européenne de la Photographie"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Passionnés fidèles, offre institutionnelle riche à bas prix ; mieux en complément d'un atelier de photographie que seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-opera-classique-ecoute",
+   "name": "Opéra et classique : écoute guidée",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.ecoute",
+   "desc": "Écouter un extrait, comprendre le livret et la forme, puis assister à un concert sans appréhension.",
+   "audience": "30-70 ans, curieux de classique, couples, abonnés potentiels",
+   "skills": [
+    "Suivre une forme (sonate, air)",
+    "Lire un livret",
+    "Reconnaître les instruments",
+    "Préparer sa première salle"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première écoute",
+     "goal": "Identifier la forme et l'humeur d'un extrait de 5 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reconnaître les familles d'instruments",
+     "goal": "Distinguer cordes, vents, cuivres et leurs rôles dans une pièce",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Opéra mode d'emploi",
+     "goal": "Suivre un livret et situer airs et ensembles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Aller au concert",
+     "goal": "Préparer et vivre une sortie de salle avec repères",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'écoute",
+     "goal": "Animer des écoutes guidées et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "histoire",
+    "calme",
+    "lecture",
+    "convivial"
+   ],
+   "competitors": [
+    "Philharmonie",
+    "Conférences de l'opéra",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public attaché mais vieillissant, institutions très actives à petit prix. Exige un hôte à haute culture musicale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-jazz-vinyle-ecoute",
+   "name": "Histoire du jazz en vinyle",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.ecoute",
+   "desc": "Écouter ensemble les grands disques du jazz, de New Orleans au free, avec histoires et contexte.",
+   "audience": "30-60 ans, amateurs de vinyle, couples, collectionneurs",
+   "skills": [
+    "Situer les grands courants",
+    "Écouter un solo",
+    "Reconnaître 10 grands disques",
+    "Constituer une discothèque"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq disques clés",
+     "goal": "Situer 5 disques et leur contexte dans l'histoire du jazz",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les courants",
+     "goal": "Distinguer swing, bebop, cool et modal à l'oreille",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écouter un solo",
+     "goal": "Suivre la structure et les échanges d'un morceau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Constituer sa discothèque",
+     "goal": "Bâtir une sélection de 20 disques justifiée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de jazz",
+     "goal": "Animer des soirées d'écoute et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "cave",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "vinyle",
+    "histoire",
+    "convivial",
+    "apero"
+   ],
+   "competitors": [
+    "Bars à vinyles",
+    "Radios jazz"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Ambiance conviviale avec un verre, bonne affinité apéro et vinyle ; offre dispersée chez les disquaires et bars.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-musiques-actuelles-histoire",
+   "name": "Histoire des musiques actuelles",
+   "sector": "savoirs",
+   "category": "savoirs.arts",
+   "subcategory": "savoirs.arts.ecoute",
+   "desc": "Rock, hip-hop, électro : comprendre d'où elles viennent à travers extraits, pochettes et anecdotes.",
+   "audience": "18-45 ans, amateurs de musique, étudiants",
+   "skills": [
+    "Situer les genres",
+    "Retracer une filiation",
+    "Écouter un sample",
+    "Créer une playlist commentée"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Frise sonore",
+     "goal": "Placer 6 genres sur une frise avec un titre emblématique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Filiations",
+     "goal": "Retracer d'où vient un son (blues, funk, hip-hop) avec 3 extraits",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Samples et hommages",
+     "goal": "Repérer un sample dans un morceau et remonter à la source",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Playlist commentée",
+     "goal": "Concevoir une sélection de 12 titres avec fil narratif",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de musique",
+     "goal": "Animer des soirées d'écoute et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "coffee-shop",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "son"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "histoire",
+    "convivial",
+    "apero",
+    "vinyle"
+   ],
+   "competitors": [
+    "Radios",
+    "Podcasts musicaux",
+    "Magazines"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte demande de fond (musique) et culture partagée ; peu de gens paient pour apprendre, plutôt pour une soirée agréable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-france-recits",
+   "name": "Histoire de France en récits",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.grande-histoire",
+   "desc": "Raconter une grande période (Révolution, Moyen Âge, 1914-1945) comme une histoire, pas comme un cours.",
+   "audience": "30-70 ans, amateurs d'histoire, lecteurs, familles",
+   "skills": [
+    "Raconter une période",
+    "Situer personnages et dates",
+    "Distinguer sources et récits",
+    "Débattre d'un fait"
+   ],
+   "appSkills": [
+    "histoire-generale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une période en 1 h 30",
+     "goal": "Raconter une période en 5 repères et 3 personnages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Causes et conséquences",
+     "goal": "Expliquer un événement par ses causes et ses suites",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sources et récits",
+     "goal": "Comparer deux versions d'un événement et juger les sources",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conférence de salon",
+     "goal": "Préparer et animer un exposé de 40 min avec débat",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'histoire",
+     "goal": "Animer un cycle et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "cafe",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "recit",
+    "lecture",
+    "convivial",
+    "calme"
+   ],
+   "competitors": [
+    "Universités populaires",
+    "Podcasts d'histoire",
+    "Conférences"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande stable et large, mais gratuite ou presque (podcasts, conférences) : valeur dans le débat en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-antiquite-grecque-romaine",
+   "name": "Antiquité grecque et romaine",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.grande-histoire",
+   "desc": "Rome et la Grèce racontées par leurs héritages : mots, monuments, institutions, vie quotidienne.",
+   "audience": "30-65 ans, lecteurs, collégiens et parents, voyageurs",
+   "skills": [
+    "Situer cités et empires",
+    "Comprendre un forum",
+    "Lire une inscription",
+    "Relier mythes et histoire"
+   ],
+   "appSkills": [
+    "histoire-generale",
+    "mythologies-religions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rome en 10 images",
+     "goal": "Situer 10 lieux et personnages de la Rome antique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vie quotidienne",
+     "goal": "Raconter une journée d'un citoyen, d'une femme, d'un esclave",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Institutions et héritages",
+     "goal": "Expliquer ce que nous devons à la cité grecque et à Rome",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sur place ou au musée",
+     "goal": "Mener une visite de salle antique avec repères",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'Antiquité",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "mythologies",
+    "recit",
+    "voyage",
+    "lecture"
+   ],
+   "competitors": [
+    "Université du temps libre",
+    "Musées"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Fidèle mais restreint ; fonctionne surtout comme thème d'un cycle ou d'une sortie en musée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-moyen-age-chateaux",
+   "name": "Moyen Âge : châteaux, chevaliers et vie quotidienne",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.grande-histoire",
+   "desc": "Dépasser les clichés : seigneurs, paysans, moines, châteaux forts et cathédrales.",
+   "audience": "Familles, 25-60 ans, amateurs de visites de châteaux",
+   "skills": [
+    "Situer le féodalisme",
+    "Lire un château fort",
+    "Comprendre la vie paysanne",
+    "Débusquer les clichés"
+   ],
+   "appSkills": [
+    "histoire-generale",
+    "architecture-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Clichés et réalités",
+     "goal": "Démonter 5 idées reçues sur le Moyen Âge",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un château fort",
+     "goal": "Lire plan, défenses et usages d'un château",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "La société médiévale",
+     "goal": "Expliquer seigneurs, clercs et paysans sans anachronisme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Visite sur site",
+     "goal": "Préparer et mener une visite de château ou d'abbaye",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur du Moyen Âge",
+     "goal": "Animer des visites et former des hôtes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "histoire",
+    "patrimoine",
+    "balade",
+    "famille",
+    "voyage"
+   ],
+   "competitors": [
+    "Visites de châteaux",
+    "Reconstituteurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt familial en vacances plus que toute l'année ; offre institutionnelle sur site, rarement en ville.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-xxe-siecle",
+   "name": "Comprendre le XXe siècle",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.grande-histoire",
+   "desc": "Guerres mondiales, guerre froide, décolonisation : repères pour lire l'actualité.",
+   "audience": "30-70 ans, lecteurs de presse, étudiants, enseignants",
+   "skills": [
+    "Frise du siècle",
+    "Causes d'une guerre",
+    "Lire un témoignage",
+    "Comprendre la guerre froide"
+   ],
+   "appSkills": [
+    "histoire-generale",
+    "geopolitique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Frise 1900-2000",
+     "goal": "Placer 15 événements majeurs sur une frise commentée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les deux guerres",
+     "goal": "Expliquer les causes et les suites des deux conflits mondiaux",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Décolonisation et guerre froide",
+     "goal": "Relier trois crises du siècle à l'actualité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Témoignages",
+     "goal": "Analyser un témoignage et le situer dans son contexte",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'histoire",
+     "goal": "Animer un cycle et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "recit",
+    "geopolitique",
+    "lecture",
+    "calme"
+   ],
+   "competitors": [
+    "Universités populaires",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt de fond avec l'actualité, notamment pour les parents de lycéens et les retraités actifs ; gratuit en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-de-son-quartier",
+   "name": "Histoire de son quartier",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.locale",
+   "desc": "Remonter dans le temps d'une rue ou d'un quartier avec cartes anciennes, photos et archives.",
+   "audience": "Habitants de 30-75 ans, associations de quartier, nouveaux arrivants",
+   "skills": [
+    "Lire un plan ancien",
+    "Chercher aux archives",
+    "Interroger un habitant",
+    "Monter une exposition"
+   ],
+   "appSkills": [
+    "histoire-locale",
+    "genealogie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma rue autrefois",
+     "goal": "Comparer un plan ancien et un plan actuel de sa rue",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chercher aux archives",
+     "goal": "Retrouver 3 documents sur son quartier (cadastre, presse, photos)",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Collecter des témoignages",
+     "goal": "Mener 2 entretiens d'habitants et en tirer un récit",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Une exposition de quartier",
+     "goal": "Réaliser une petite exposition ou un parcours d'une quinzaine de panneaux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mémoire locale",
+     "goal": "Coordonner un collectif et former des hôtes à la recherche",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "carte",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "ville",
+    "balade",
+    "solidarite",
+    "recit"
+   ],
+   "competitors": [
+    "Sociétés d'histoire",
+    "Maisons de quartier"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très ancré dans le local et fédérateur ; peu rentable mais source de liens et de contenus. Bonne porte d'entrée communautaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-paris-insolite-rues",
+   "name": "Paris insolite : histoires de rues",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.locale",
+   "desc": "Raconter les noms de rues, passages couverts et lieux oubliés de la capitale.",
+   "audience": "Franciliens et touristes de 25-60 ans, curieux de ville",
+   "skills": [
+    "Décoder un nom de rue",
+    "Repérer les traces anciennes",
+    "Raconter une anecdote",
+    "Composer une balade"
+   ],
+   "appSkills": [
+    "histoire-locale",
+    "architecture-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pourquoi cette rue ?",
+     "goal": "Expliquer l'origine de 10 noms de rues d'un quartier",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Traces et vestiges",
+     "goal": "Repérer murs de Philippe Auguste, bornes et enseignes anciennes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Passages et cours cachées",
+     "goal": "Documenter 5 lieux méconnus d'un quartier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créer sa balade",
+     "goal": "Concevoir une balade de 2 h avec anecdotes vérifiées",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de Paris",
+     "goal": "Animer des balades et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "touristes",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ville",
+    "balade",
+    "histoire",
+    "patrimoine",
+    "voyage"
+   ],
+   "competitors": [
+    "Visites guidées",
+    "Paris Walks",
+    "Guides conférenciers"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Marché de visites saturé, mais les balades de quartier par des habitants restent rares. Cadre juridique des visites payantes à vérifier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-metiers-industrie-memoire",
+   "name": "Métiers d'hier et mémoire industrielle",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.locale",
+   "desc": "Comprendre les métiers disparus et l'industrie d'une ville : ateliers, ports, usines, halles.",
+   "audience": "Seniors, anciens salariés, familles, écoles",
+   "skills": [
+    "Lire un site industriel",
+    "Recueillir un témoignage",
+    "Reconnaître un outil",
+    "Relier métier et territoire"
+   ],
+   "appSkills": [
+    "histoire-locale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un métier disparu",
+     "goal": "Présenter un métier d'hier avec outils et lieux associés",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un site industriel",
+     "goal": "Lire un bâtiment industriel et son rôle économique",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récits d'anciens",
+     "goal": "Recueillir et restituer un témoignage de travailleur",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Parcours de mémoire",
+     "goal": "Concevoir une visite ou une exposition thématique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mémoire ouvrière",
+     "goal": "Animer un collectif et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "patrimoine",
+    "recit",
+    "solidarite",
+    "calme"
+   ],
+   "competitors": [
+    "Écomusées",
+    "Associations de patrimoine"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Beaucoup de mémoire à sauver, peu d'argent : à porter par des associations et des mairies plutôt que par des particuliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-genealogie-retrouver-ancetres",
+   "name": "Généalogie : retrouver ses ancêtres",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.familles",
+   "desc": "Remonter son arbre avec les états civils en ligne, les archives départementales et les recoupements.",
+   "audience": "40-75 ans curieux, familles, héritiers, passionnés de généalogie",
+   "skills": [
+    "Remonter trois générations",
+    "Lire un acte ancien",
+    "Utiliser les archives en ligne",
+    "Rédiger son arbre"
+   ],
+   "appSkills": [
+    "genealogie",
+    "histoire-locale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes trois générations",
+     "goal": "Construire un arbre sur trois générations à partir de sources familiales",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Actes et état civil",
+     "goal": "Trouver et lire un acte de naissance, mariage ou décès",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Archives en ligne",
+     "goal": "Mener une recherche aux archives départementales",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Remonter plus loin",
+     "goal": "Dépasser un point mort avec recoupements et actes notariés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent généalogie",
+     "goal": "Accompagner des recherches et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "famille",
+    "lecture",
+    "calme",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Geneanet",
+    "Cercles généalogiques",
+    "Archives départementales"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande large chez les 40+, entraide naturelle entre passionnés et outils déjà gratuits : l'atelier en petit groupe fait gagner un temps précieux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-memoire-des-aines",
+   "name": "Recueillir la mémoire des aînés",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.familles",
+   "desc": "Interviewer un grand-parent ou un voisin et en faire un livret, un enregistrement ou un film.",
+   "audience": "30-60 ans (petits-enfants), seniors, familles, associations",
+   "skills": [
+    "Préparer un entretien",
+    "Enregistrer proprement",
+    "Transcrire et monter",
+    "Restituer à la famille"
+   ],
+   "appSkills": [
+    "genealogie",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Poser les bonnes questions",
+     "goal": "Préparer et mener un entretien de 30 min avec un proche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Enregistrer et transcrire",
+     "goal": "Obtenir un enregistrement propre et une transcription lisible",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Faire un livret",
+     "goal": "Mettre en forme 8 pages avec photos et récit",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Monter un court film ou podcast",
+     "goal": "Réaliser un montage sonore de 10 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de mémoire",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "histoire",
+    "recit",
+    "voix",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations de mémoire",
+    "Services de livres de vie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très émotionnel et porteur d'un fort passage de génération ; marché de livres de vie à domicile, peu d'ateliers collectifs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-archives-paleographie",
+   "name": "Lire les écritures anciennes (paléographie)",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.familles",
+   "desc": "Déchiffrer actes notariés et registres anciens pour la généalogie et l'histoire locale.",
+   "audience": "Généalogistes confirmés, historiens amateurs, 45-75 ans",
+   "skills": [
+    "Reconnaître les graphies",
+    "Lire un acte du XVIIIe",
+    "Transcrire",
+    "Comprendre le vocabulaire"
+   ],
+   "appSkills": [
+    "genealogie",
+    "histoire-locale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières lettres",
+     "goal": "Déchiffrer 20 mots d'un acte du XVIIIe siècle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Actes de notaires",
+     "goal": "Lire et transcrire un acte de 10 lignes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Registres paroissiaux",
+     "goal": "Transcrire un registre sur plusieurs pages",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Textes complexes",
+     "goal": "Déchiffrer des écritures difficiles avec abréviations",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent paléographie",
+     "goal": "Former des hôtes et corriger des transcriptions",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 1,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "lecture",
+    "calme",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Archives nationales",
+    "Cercles généalogiques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très niche, public exigeant mais prêt à payer pour gagner du temps ; viser un cycle court réservé aux généalogistes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-numismatique-philatelie",
+   "name": "Pièces et timbres : débuter une collection",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.collections",
+   "desc": "Identifier une pièce ou un timbre, estimer sa rareté et conserver sans l'abîmer.",
+   "audience": "40-75 ans, collectionneurs débutants, familles, héritiers",
+   "skills": [
+    "Identifier une pièce",
+    "Lire une cote",
+    "Conserver",
+    "Repérer les faux"
+   ],
+   "appSkills": [
+    "numismatique-philatelie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier tri",
+     "goal": "Identifier 10 pièces ou timbres et leur époque",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cotes et raretés",
+     "goal": "Lire un catalogue et estimer la valeur approximative",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conserver et classer",
+     "goal": "Ranger une collection de manière durable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vendre ou échanger",
+     "goal": "Évaluer, négocier et éviter les arnaques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent collection",
+     "goal": "Expertiser en amateur et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "collection",
+    "histoire",
+    "objet-souvenir",
+    "calme",
+    "cadeau"
+   ],
+   "competitors": [
+    "Clubs de numismates",
+    "Salons",
+    "Marchands"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Passion stable mais en érosion générationnelle, communautés actives en ligne et en clubs ; atelier utile pour héritages et premières collections.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-brocante-objets-anciens",
+   "name": "Reconnaître les objets anciens (brocante)",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.collections",
+   "desc": "Dater, identifier et estimer porcelaine, mobilier, argenterie ou outils, sans se faire avoir.",
+   "audience": "30-65 ans, chineurs, héritiers, décorateurs amateurs",
+   "skills": [
+    "Dater un objet",
+    "Lire un poinçon",
+    "Estimer un prix",
+    "Éviter les copies"
+   ],
+   "appSkills": [
+    "histoire-de-l-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Identifier et dater un objet de famille avec 3 indices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marques et poinçons",
+     "goal": "Lire poinçons, signatures et marques de fabricants",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Estimer un prix",
+     "goal": "Évaluer le prix juste sur la base de ventes comparables",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chiner et revendre",
+     "goal": "Acheter et revendre un lot avec marge et sécurité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent chineur",
+     "goal": "Accompagner des estimations et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "collection",
+    "objet-souvenir",
+    "deco",
+    "recup",
+    "histoire"
+   ],
+   "competitors": [
+    "Commissaires-priseurs",
+    "Brocanteurs",
+    "Experts en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte demande pour héritages et déco ; concurrence de gratuits en ligne et de professionnels, mais le conseil en petit groupe est rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-archeologie-amateur",
+   "name": "Archéologie de loisir et patrimoine enfoui",
+   "sector": "savoirs",
+   "category": "savoirs.histoire",
+   "subcategory": "savoirs.histoire.collections",
+   "desc": "Comprendre fouilles, vestiges et règles : ce qu'on peut ramasser ou non, et où se former.",
+   "audience": "Curieux, familles, scolaires, randonneurs",
+   "skills": [
+    "Lire un site",
+    "Distinguer silex et pierres",
+    "Connaître la loi",
+    "Participer à un chantier"
+   ],
+   "appSkills": [
+    "archeologie-amateur",
+    "histoire-generale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers vestiges",
+     "goal": "Reconnaître poterie, silex et briques sur un site",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Le cadre légal",
+     "goal": "Expliquer ce qui est permis (ramassage, détecteur) et ce qui est interdit",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un site",
+     "goal": "Interpréter strates, plans et fiches d'un chantier",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Participer à un chantier",
+     "goal": "Rejoindre un chantier de fouille encadré",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent archéo",
+     "goal": "Coordonner des sorties et former des hôtes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 4,
+    "local": 3,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "nature",
+    "patrimoine",
+    "famille",
+    "balade"
+   ],
+   "competitors": [
+    "Chantiers de bénévoles",
+    "INRAP",
+    "Musées"
+   ],
+   "regulated": "droit",
+   "verdict": "ecarter",
+   "why": "Intérêt réel mais cadre légal strict (fouilles, détecteurs) ; l'offre doit rester sur la sensibilisation, pas la fouille.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-astronomie-oeil-nu",
+   "name": "Astronomie à l'oeil nu",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ciel",
+   "desc": "Repérer constellations, planètes et Lune sans télescope, avec une appli et un ciel dégagé.",
+   "audience": "Tous publics 8-80 ans, familles, randonneurs, couples",
+   "skills": [
+    "Repérer 10 constellations",
+    "Lire une carte du ciel",
+    "Reconnaître planètes et Lune",
+    "Suivre les saisons du ciel"
+   ],
+   "appSkills": [
+    "astronomie",
+    "meteorologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier ciel",
+     "goal": "Repérer la Grande Ourse, Cassiopée et l'étoile polaire",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Constellations de saison",
+     "goal": "Reconnaître 10 constellations et 3 planètes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire une carte du ciel",
+     "goal": "Utiliser une carte mobile ou papier pour préparer une soirée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Organiser une soirée d'observation",
+     "goal": "Planifier un lieu, une date et un programme pour 10 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de ciel",
+     "goal": "Animer des soirées publiques et former des hôtes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-soir",
+    "vacances",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ciel",
+    "nuit",
+    "science",
+    "plein-air",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs d'astronomie",
+    "Nuit des étoiles",
+    "Applis"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Gros public, très peu de matériel et fort effet d'émerveillement ; offre associative gratuite mais éparpillée. À Paris le ciel est limité, d'où sorties en périphérie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-telescope-initiation",
+   "name": "Observer au télescope : premiers pas",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ciel",
+   "desc": "Monter, régler et utiliser un télescope pour Lune, planètes et ciel profond.",
+   "audience": "25-55 ans, bricoleurs, parents d'enfants curieux",
+   "skills": [
+    "Monter un télescope",
+    "Faire une mise en station",
+    "Observer Lune et planètes",
+    "Choisir son matériel"
+   ],
+   "appSkills": [
+    "astronomie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier télescope",
+     "goal": "Monter, régler et viser la Lune en 30 min",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Planètes et doubles",
+     "goal": "Observer Jupiter, Saturne et une étoile double",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ciel profond",
+     "goal": "Retrouver amas et nébuleuses avec une carte",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Choisir son matériel",
+     "goal": "Comparer 3 instruments selon budget et usage",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent observation",
+     "goal": "Animer des soirées et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-soir",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ciel",
+    "nuit",
+    "science",
+    "plein-air",
+    "tech"
+   ],
+   "competitors": [
+    "Clubs d'astronomie",
+    "Observatoires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande modeste mais passionnée ; le goût du matériel crée un lien entre bricolage et science. Dépend de la météo.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-astrophoto-smartphone",
+   "name": "Photographier la Lune et le ciel au smartphone",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ciel",
+   "desc": "Obtenir de belles photos de Lune, étoiles et traînées avec un téléphone et un trépied.",
+   "audience": "18-45 ans, amateurs de photo, voyageurs",
+   "skills": [
+    "Régler la pose longue",
+    "Stabiliser",
+    "Photographier la Lune",
+    "Traiter une image"
+   ],
+   "appSkills": [
+    "astrophotographie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première Lune",
+     "goal": "Obtenir une Lune nette au smartphone sur trépied",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Étoiles et traînées",
+     "goal": "Réaliser une pose longue de ciel étoilé",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Planifier une session",
+     "goal": "Choisir date, lieu et météo pour une photo de ciel",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Traiter ses images",
+     "goal": "Empiler et retoucher pour sortir plus de détails",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent photo de ciel",
+     "goal": "Accompagner et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-soir",
+    "vacances",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ciel",
+    "nuit",
+    "photo",
+    "science",
+    "plein-air"
+   ],
+   "competitors": [
+    "Tutoriels YouTube",
+    "Clubs photo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance forte portée par la photo mobile ; les tutoriels gratuits abondent mais l'accompagnement sur le terrain manque.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-meteo-lire-le-ciel",
+   "name": "Lire la météo et les nuages",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.terre",
+   "desc": "Comprendre cartes, nuages et vents pour anticiper le temps sans appli.",
+   "audience": "Randonneurs, voileux, jardiniers, familles",
+   "skills": [
+    "Reconnaître 10 nuages",
+    "Lire une carte de pression",
+    "Anticiper un orage",
+    "Tenir un carnet météo"
+   ],
+   "appSkills": [
+    "meteorologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les nuages",
+     "goal": "Reconnaître 6 types de nuages et ce qu'ils annoncent",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cartes et vents",
+     "goal": "Lire une carte de pressions et un bulletin météo",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Anticiper un orage",
+     "goal": "Prévoir les signes avant-coureurs et décider de rentrer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Station et carnet",
+     "goal": "Installer une station amateur et tenir un carnet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent météo",
+     "goal": "Animer des sorties et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "nature",
+    "plein-air",
+    "ciel",
+    "calme"
+   ],
+   "competitors": [
+    "Météo France",
+    "Associations de météo"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt solide chez les randonneurs et jardiniers, mais l'information gratuite est abondante ; mieux comme module de sorties plein air.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-geologie-mineraux",
+   "name": "Géologie et minéraux : lire les cailloux",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.terre",
+   "desc": "Reconnaître roches et minéraux, comprendre un paysage, collectionner sans piller.",
+   "audience": "Familles, randonneurs, collectionneurs, 8-70 ans",
+   "skills": [
+    "Reconnaître 15 roches",
+    "Lire un paysage",
+    "Utiliser une loupe",
+    "Collecter légalement"
+   ],
+   "appSkills": [
+    "mineralogie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières roches",
+     "goal": "Reconnaître granite, calcaire, basalte et quartz",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire un paysage",
+     "goal": "Expliquer la formation d'un site proche",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Minéraux et loupe",
+     "goal": "Identifier 10 minéraux avec dureté, couleur et éclat",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Constituer une collection",
+     "goal": "Étiqueter et ranger une collection raisonnée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent géologie",
+     "goal": "Animer des sorties et former des hôtes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "salle-polyvalente",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "nature",
+    "collection",
+    "plein-air",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs de minéralogie",
+    "Muséum",
+    "Salons"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très porteur pour les familles et les enfants, matériel minime ; le marché est tenu par des clubs et des boutiques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-climat-comprendre",
+   "name": "Comprendre le climat et le vivant",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.terre",
+   "desc": "Effet de serre, biodiversité, énergie : repères solides pour discuter sans slogans.",
+   "audience": "25-65 ans, parents, salariés, citoyens engagés",
+   "skills": [
+    "Comprendre l'effet de serre",
+    "Lire un graphique GIEC",
+    "Connaître son empreinte",
+    "Argumenter sans polémique"
+   ],
+   "appSkills": [
+    "climat-ecologie",
+    "culture-scientifique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les bases",
+     "goal": "Expliquer l'effet de serre et les ordres de grandeur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire les chiffres",
+     "goal": "Interpréter 3 graphiques de rapports scientifiques",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Empreinte et leviers",
+     "goal": "Calculer son empreinte carbone et classer les leviers",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Débattre sereinement",
+     "goal": "Argumenter avec des sources dans un débat contradictoire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de climat",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "nature",
+    "solidarite",
+    "zero-dechet",
+    "argent"
+   ],
+   "competitors": [
+    "Fresque du climat",
+    "Associations",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte et portée par la tendance, mais saturée de fresques gratuites ; l'entreprise paie plus que le particulier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-sciences-cuisine",
+   "name": "Sciences en cuisine",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ludique",
+   "desc": "Comprendre émulsions, gels, fermentations et cuissons avec de petites expériences à goûter.",
+   "audience": "Familles, couples, 25-50 ans curieux de cuisine",
+   "skills": [
+    "Faire une émulsion",
+    "Comprendre la réaction de Maillard",
+    "Expérimenter fermentation",
+    "Écrire un protocole"
+   ],
+   "appSkills": [
+    "culture-scientifique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cuisine et science",
+     "goal": "Réussir une mayonnaise et expliquer l'émulsion",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chimie du four",
+     "goal": "Comprendre Maillard et caramélisation en trois expériences",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fermentations",
+     "goal": "Observer et goûter pâte, yaourt et légumes fermentés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concevoir une expérience",
+     "goal": "Inventer un protocole à partager",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de science",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cuisine-pro",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "science",
+    "cuisine",
+    "gourmand",
+    "famille",
+    "geste"
+   ],
+   "competitors": [
+    "Cité des sciences",
+    "Ateliers de cuisine"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Résultat dégustable, public familial et excellent effet de curiosité ; frein d'hygiène à gérer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-maths-recreatives",
+   "name": "Mathématiques récréatives",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ludique",
+   "desc": "Énigmes, logique, probas et jeux mathématiques pour retrouver le plaisir de chercher.",
+   "audience": "Adultes anxieux face aux maths, parents, passionnés de jeux",
+   "skills": [
+    "Résoudre une énigme",
+    "Raisonner en probabilités",
+    "Comprendre l'infini",
+    "Inventer un problème"
+   ],
+   "appSkills": [
+    "maths-recreatives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Énigmes sans équations",
+     "goal": "Résoudre 5 énigmes logiques en équipe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hasard et probabilités",
+     "goal": "Expliquer 3 paradoxes de probabilités",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Géométrie et nombres",
+     "goal": "Découvrir symétries, pavages et suites remarquables",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Inventer une énigme",
+     "goal": "Concevoir et tester un problème original",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de maths",
+     "goal": "Animer des soirées de jeux et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cafe",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "science",
+    "jeu",
+    "enigme",
+    "strategie",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de maths",
+    "Maisons des maths",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt de niche mais fidèle, bon cousin des jeux de logique ; difficulté de recruter le public hors des déjà convaincus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-esprit-critique",
+   "name": "Esprit critique et fausses informations",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ludique",
+   "desc": "Repérer biais, rumeurs et fausses sources, vérifier une info en 5 minutes.",
+   "audience": "Parents, ados, seniors, salariés, enseignants",
+   "skills": [
+    "Vérifier une source",
+    "Reconnaître un biais",
+    "Repérer une image truquée",
+    "Débattre sans heurts"
+   ],
+   "appSkills": [
+    "culture-scientifique",
+    "psychologie-vulgarisee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Vérifier en 5 minutes",
+     "goal": "Contrôler la source d'une information et d'une image",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Biais et raccourcis",
+     "goal": "Reconnaître 6 biais de raisonnement dans des exemples",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fausses images et deepfakes",
+     "goal": "Repérer une image truquée ou générée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Débat argumenté",
+     "goal": "Mener un échange qui respecte les faits",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'esprit critique",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "ados",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "science",
+    "ia",
+    "ecriture",
+    "lecture",
+    "solidarite"
+   ],
+   "competitors": [
+    "Éducation aux médias",
+    "CLEMI",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin social net et croissant, public très varié (parents, ados, seniors) ; l'enseignement scolaire est gratuit mais l'atelier adulte reste rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-comprendre-ia",
+   "name": "Comprendre l'intelligence artificielle",
+   "sector": "savoirs",
+   "category": "savoirs.sciences",
+   "subcategory": "savoirs.sciences.ludique",
+   "desc": "Ce que font vraiment les IA génératives, leurs limites, biais et usages raisonnés.",
+   "audience": "25-65 ans, salariés, parents, curieux méfiants",
+   "skills": [
+    "Comprendre un modèle",
+    "Écrire un bon prompt",
+    "Repérer les erreurs",
+    "Connaître les risques"
+   ],
+   "appSkills": [
+    "culture-scientifique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ce que fait une IA",
+     "goal": "Expliquer en 3 phrases le fonctionnement d'un modèle de langage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Utiliser sans se faire avoir",
+     "goal": "Écrire un prompt et contrôler la réponse",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Limites et biais",
+     "goal": "Repérer erreurs, hallucinations et biais dans des réponses",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Usage éthique",
+     "goal": "Poser des règles pour son travail et sa famille",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'IA",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ia",
+    "tech",
+    "science",
+    "solidarite",
+    "ecriture"
+   ],
+   "competitors": [
+    "Formations en entreprise",
+    "Chaînes YouTube",
+    "Universités"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte demande en croissance, financement par les entreprises ; mais l'offre explose et change vite : se différencier par la pédagogie et le contrôle des réponses.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-philo-au-cafe",
+   "name": "Philosophie au café",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.philo",
+   "desc": "Débattre d'une question (liberté, bonheur, travail) en s'appuyant sur des auteurs, autour d'un verre.",
+   "audience": "25-70 ans, curieux, retraités actifs, habitués de cafés",
+   "skills": [
+    "Problématiser",
+    "Argumenter",
+    "Citer un auteur",
+    "Animer un débat"
+   ],
+   "appSkills": [
+    "philosophie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une question, un verre",
+     "goal": "Formuler une problématique et défendre un point de vue",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire un court texte",
+     "goal": "Expliquer un extrait de Platon, Descartes ou Arendt",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 3 soirées",
+     "goal": "Construire une réflexion à partir de trois textes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un café-philo",
+     "goal": "Préparer et animer une soirée de 2 h avec 15 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur formateur",
+     "goal": "Former des animateurs de débats et créer des cycles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      60
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "librairie",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "lecture",
+    "convivial",
+    "cafe",
+    "calme"
+   ],
+   "competitors": [
+    "Cafés philo",
+    "Universités populaires",
+    "Philosophes indépendants"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Culture bien implantée à Paris, souvent gratuite ou à prix libre, mais fidélise bien ; revenu d'hôte faible, lieu partenaire via consommations.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-stoicisme-philo-pratique",
+   "name": "Philosophie antique et sagesse pratique",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.philo",
+   "desc": "Stoïcisme, épicurisme et cynisme comme outils pour mieux vivre : exercices à pratiquer.",
+   "audience": "25-55 ans, lecteurs de développement personnel, managers",
+   "skills": [
+    "Lire Marc Aurèle",
+    "Pratiquer un exercice",
+    "Distinguer ce qui dépend de soi",
+    "Tenir un journal"
+   ],
+   "appSkills": [
+    "philosophie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ce qui dépend de moi",
+     "goal": "Appliquer la distinction stoïcienne à une situation vécue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Exercices quotidiens",
+     "goal": "Pratiquer 3 exercices (journal, vue d'en haut, préméditation)",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire les sources",
+     "goal": "Commenter un extrait de Sénèque ou Épictète",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un groupe de pratique",
+     "goal": "Conduire un cycle de 6 séances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de sagesse",
+     "goal": "Former des animateurs et créer des cycles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cafe",
+    "librairie",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "lecture",
+    "calme",
+    "recit",
+    "voyage"
+   ],
+   "competitors": [
+    "Livres de développement personnel",
+    "Coachs",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance forte portée par les livres ; proche du bien-être, public prêt à payer un peu plus que pour la philo académique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-argumenter-debat",
+   "name": "Argumenter et débattre",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.philo",
+   "desc": "Construire un argument, repérer les sophismes et débattre sans se disputer.",
+   "audience": "Étudiants, salariés, lycéens, associations",
+   "skills": [
+    "Structurer un argument",
+    "Repérer les sophismes",
+    "Écouter une objection",
+    "Animer un débat mouvant"
+   ],
+   "appSkills": [
+    "philosophie",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un argument solide",
+     "goal": "Structurer une position en thèse, preuve et exemple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Repérer les sophismes",
+     "goal": "Identifier 8 erreurs de raisonnement courantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écouter l'objection",
+     "goal": "Reformuler la position adverse avant de répondre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un débat mouvant",
+     "goal": "Conduire un débat de 1 h avec règles et temps de parole",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîneur de débat",
+     "goal": "Former des animateurs et préparer des joutes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recit",
+    "ecriture",
+    "jeu",
+    "strategie",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de débat",
+    "Écoles",
+    "Cabinets de formation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande régulière des étudiants et entreprises, fort effet pédagogique ; offre scolaire gratuite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-ethique-dilemmes",
+   "name": "Dilemmes éthiques du quotidien",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.philo",
+   "desc": "Discuter des cas concrets : médecine, travail, technologie, environnement, avec des repères moraux.",
+   "audience": "25-60 ans, salariés, soignants, parents, étudiants",
+   "skills": [
+    "Poser un dilemme",
+    "Comparer utilitarisme et devoirs",
+    "Décider avec ses valeurs",
+    "Écouter les désaccords"
+   ],
+   "appSkills": [
+    "philosophie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un dilemme, deux camps",
+     "goal": "Poser un dilemme concret et exprimer deux positions opposées",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Théories morales",
+     "goal": "Comparer conséquences, devoirs et vertus sur un cas",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cas pratiques",
+     "goal": "Examiner des cas de travail, de santé ou de technologie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un cercle",
+     "goal": "Conduire un cercle de discussion de 2 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'éthique",
+     "goal": "Former des animateurs et créer des cas",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cafe",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "lecture",
+    "solidarite",
+    "convivial",
+    "calme"
+   ],
+   "competitors": [
+    "Espaces éthiques hospitaliers",
+    "Cafés philo"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt réel mais dilué par l'offre voisine de philo au café ; mieux comme thème de soirées d'entreprise ou de cycles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-mythologies-religions",
+   "name": "Mythologies et religions du monde",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.societe",
+   "desc": "Découvrir les grands récits d'origine et les rites sans jugement, pour comprendre les cultures.",
+   "audience": "25-70 ans, voyageurs, enseignants, curieux",
+   "skills": [
+    "Raconter un mythe",
+    "Comparer des récits",
+    "Comprendre un rite",
+    "Lire un symbole"
+   ],
+   "appSkills": [
+    "mythologies-religions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix mythes",
+     "goal": "Raconter 5 mythes majeurs de cultures différentes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Récits comparés",
+     "goal": "Rapprocher déluge, création et héros dans plusieurs traditions",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rites et fêtes",
+     "goal": "Expliquer l'origine de fêtes et symboles courants",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Parcours thématique",
+     "goal": "Concevoir un cycle autour d'un thème (mort, héros, dieux)",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de récits",
+     "goal": "Animer des soirées et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "cafe",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "histoire",
+    "lecture",
+    "voyage",
+    "calme"
+   ],
+   "competitors": [
+    "Musées des religions",
+    "Conférences",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Curiosité durable (voyage, culture générale) ; à mener dans un cadre laïque pour éviter les crispations.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-geopolitique-cartes",
+   "name": "Géopolitique et cartes du monde",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.societe",
+   "desc": "Comprendre les conflits et les alliances d'aujourd'hui avec des cartes et des faits.",
+   "audience": "25-65 ans, lecteurs de presse, étudiants, salariés",
+   "skills": [
+    "Lire une carte",
+    "Comprendre un conflit",
+    "Suivre un acteur",
+    "Éviter les raccourcis"
+   ],
+   "appSkills": [
+    "geopolitique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire une carte",
+     "goal": "Décoder légende, projection et échelle d'une carte du monde",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un conflit en 4 cartes",
+     "goal": "Expliquer origines, acteurs et enjeux d'un conflit actuel",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ressources et routes",
+     "goal": "Relier énergie, eau et commerce aux tensions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Briefing mensuel",
+     "goal": "Préparer et présenter une note de 15 min sur l'actualité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de monde",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "cafe",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "histoire",
+    "lecture",
+    "carte",
+    "voyage"
+   ],
+   "competitors": [
+    "Le Dessous des cartes",
+    "Think tanks",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande élevée en période d'actualité tendue, peu de salons physiques pour en discuter ; risque de débats polarisés à cadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-economie-pour-curieux",
+   "name": "Économie pour curieux",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.societe",
+   "desc": "Inflation, chômage, dette, monnaie : comprendre les mots de l'actualité économique.",
+   "audience": "25-60 ans, salariés, parents, étudiants",
+   "skills": [
+    "Lire une courbe",
+    "Comprendre l'inflation",
+    "Distinguer dette et déficit",
+    "Voir qui gagne et qui perd"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les mots du journal",
+     "goal": "Expliquer 8 notions clés (PIB, inflation, dette) avec exemples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire un graphique",
+     "goal": "Interpréter 3 courbes économiques sans se tromper",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Monnaie et banques",
+     "goal": "Expliquer création monétaire et taux d'intérêt",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Débat éco",
+     "goal": "Défendre deux lectures d'une même mesure",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'économie",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cafe",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "science",
+    "lecture",
+    "recit",
+    "calme"
+   ],
+   "competitors": [
+    "Cafés économiques",
+    "Podcasts",
+    "Conférences"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande réelle mais forte offre gratuite ; lien naturel avec les ateliers d'argent personnel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-psychologie-quotidien",
+   "name": "Psychologie du quotidien",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.psycho",
+   "desc": "Mémoire, motivation, émotions et relations : repères validés par la recherche, sans jargon.",
+   "audience": "25-55 ans, parents, managers, curieux",
+   "skills": [
+    "Comprendre une émotion",
+    "Repérer un biais",
+    "Différencier science et pop psy",
+    "Appliquer un résultat"
+   ],
+   "appSkills": [
+    "psychologie-vulgarisee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre mes réactions",
+     "goal": "Expliquer 5 mécanismes simples (stress, habitudes, mémoire)",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Science ou pop psy",
+     "goal": "Distinguer résultat solide et idée reçue",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Relations et groupes",
+     "goal": "Appliquer 3 résultats sur le travail d'équipe ou le couple",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un café psycho",
+     "goal": "Préparer et conduire une soirée de 2 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de psycho",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cafe",
+    "librairie",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "science",
+    "lecture",
+    "calme",
+    "recit"
+   ],
+   "competitors": [
+    "Podcasts de psycho",
+    "Conférences",
+    "Magazines"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Grande demande de fond, frontière floue avec le soin : rester sur la culture générale, sans conseil individuel ni diagnostic.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-biais-cognitifs",
+   "name": "Biais cognitifs et décisions",
+   "sector": "savoirs",
+   "category": "savoirs.pensee",
+   "subcategory": "savoirs.pensee.psycho",
+   "desc": "Comprendre pourquoi on se trompe : ancrage, aversion à la perte, effet de groupe, et comment s'en prémunir.",
+   "audience": "Managers, étudiants, joueurs, salariés",
+   "skills": [
+    "Reconnaître 10 biais",
+    "Tester son intuition",
+    "Décider en groupe",
+    "Poser un garde-fou"
+   ],
+   "appSkills": [
+    "psychologie-vulgarisee",
+    "culture-scientifique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix pièges de l'esprit",
+     "goal": "Reconnaître 10 biais dans des exemples quotidiens",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mini-expériences",
+     "goal": "Tester 3 biais sur soi-même et les groupes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Décider à plusieurs",
+     "goal": "Mettre en place des règles contre l'effet de groupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas pratiques",
+     "goal": "Examiner des décisions réelles d'équipe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de décision",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "science",
+    "jeu",
+    "strategie",
+    "ia",
+    "argent"
+   ],
+   "competitors": [
+    "Formations en entreprise",
+    "Livres de psychologie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Vendable en entreprise (qualité de décision) mieux qu'aux particuliers ; contenu bien connu mais peu animé en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-vin-sans-degustation",
+   "name": "Culture du vin sans dégustation",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.boissons",
+   "desc": "Régions, cépages, étiquettes et vocabulaire du vin, avec cartes et histoires, sans verre à la main.",
+   "audience": "25-60 ans, amateurs de vin, sobres curieux, touristes",
+   "skills": [
+    "Lire une carte des vignobles",
+    "Décoder une étiquette",
+    "Reconnaître les cépages",
+    "Comprendre les appellations"
+   ],
+   "appSkills": [
+    "oenologie-culture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Carte des vignobles",
+     "goal": "Placer les grandes régions et leurs cépages sur une carte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Décoder une étiquette",
+     "goal": "Lire millésime, appellation et mentions",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Appellations et classements",
+     "goal": "Comprendre AOC, crus et classements sans erreur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Choisir et acheter",
+     "goal": "Composer une cave raisonnée avec budget",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de vin",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cave",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "vin",
+    "culture-vin",
+    "voyage",
+    "cadeau",
+    "histoire"
+   ],
+   "competitors": [
+    "Écoles de vin",
+    "Cavistes",
+    "Wine Paris"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt massif pour le vin, mais l'angle sans dégustation évite la contrainte alcool et permet de toucher les sobres. Marché de la dégustation déjà dense.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-culture-the",
+   "name": "Culture du thé",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.boissons",
+   "desc": "Origines, familles, récolte et cérémonie : comprendre le thé avant de le boire.",
+   "audience": "25-55 ans, amateurs de thé, cadeau, bien-être",
+   "skills": [
+    "Distinguer 6 familles",
+    "Lire une étiquette",
+    "Comprendre le terroir",
+    "Connaître la cérémonie"
+   ],
+   "appSkills": [
+    "culture-du-the"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Six familles",
+     "goal": "Distinguer vert, noir, blanc, oolong, pu-erh et infusions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines et terroirs",
+     "goal": "Situer Chine, Inde, Japon et leurs styles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un paquet",
+     "goal": "Comprendre cueillette, grade et conservation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cérémonie et accords",
+     "goal": "Conduire une dégustation raisonnée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de thé",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "boutique",
+    "cave",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "the",
+    "culture-vin",
+    "voyage",
+    "calme",
+    "gourmand"
+   ],
+   "competitors": [
+    "Maisons de thé",
+    "Salons",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public attaché, valeur ajoutée par les boutiques ; offre de dégustation correcte mais discrète.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-culture-cafe",
+   "name": "Culture du café : du champ à la tasse",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.boissons",
+   "desc": "Origines, variétés, filière et enjeux : histoire du café pour comprendre ce qu'on boit.",
+   "audience": "25-45 ans, amateurs de café de spécialité",
+   "skills": [
+    "Situer les origines",
+    "Comprendre la filière",
+    "Lire un paquet",
+    "Choisir son café"
+   ],
+   "appSkills": [
+    "cafe-filtre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Du caféier à la tasse",
+     "goal": "Décrire les étapes de la filière du café",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines",
+     "goal": "Situer 6 pays producteurs et leurs profils",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prix et équité",
+     "goal": "Expliquer commerce équitable et prix mondiaux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire un paquet",
+     "goal": "Choisir un café selon origine, torréfaction, usage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de café",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "coffee-shop",
+    "cafe",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cafe",
+    "culture-vin",
+    "gourmand",
+    "voyage",
+    "convivial"
+   ],
+   "competitors": [
+    "Torréfacteurs",
+    "Cafés de spécialité"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte attractivité urbaine, mais les torréfacteurs animent déjà des cuppings ; on peut compléter avec l'angle culture générale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-culture-biere",
+   "name": "Culture de la bière",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.boissons",
+   "desc": "Styles, brasseurs, histoire et vocabulaire : comprendre la bière avant de la déguster.",
+   "audience": "25-45 ans, amateurs de bière, groupes d'amis",
+   "skills": [
+    "Reconnaître 8 styles",
+    "Lire un brassin",
+    "Comprendre la fermentation",
+    "Choisir un accord"
+   ],
+   "appSkills": [
+    "culture-biere"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Huit styles",
+     "goal": "Distinguer pils, blonde, IPA, stout, saison, lambic et blanche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ingrédients et brassage",
+     "goal": "Décrire les 5 étapes de la fabrication",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régions brassicoles",
+     "goal": "Situer Belgique, Allemagne, UK et France",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Accords et lecture",
+     "goal": "Associer styles et plats et lire une étiquette",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de bière",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente",
+    "cave"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "biere",
+    "culture-vin",
+    "convivial",
+    "apero",
+    "histoire"
+   ],
+   "competitors": [
+    "Brasseries",
+    "Écoles de brasseurs"
+   ],
+   "regulated": "alcool",
+   "verdict": "plus-tard",
+   "why": "Marché porté par les brasseries et les bars, l'angle sans verre n'a que peu de sens ; dépend d'un lieu partenaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-culture-fromage",
+   "name": "Culture du fromage",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.produits",
+   "desc": "Familles, terroirs, affinage et appellations : lire une cave et choisir un plateau.",
+   "audience": "25-60 ans, gourmands, cadeau, couples",
+   "skills": [
+    "Distinguer 8 familles",
+    "Lire une appellation",
+    "Comprendre l'affinage",
+    "Composer un plateau"
+   ],
+   "appSkills": [
+    "culture-fromage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Huit familles",
+     "goal": "Reconnaître 8 grandes familles de fromages et leurs régions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Appellations et lait",
+     "goal": "Distinguer AOP, lait cru et pasteurisé",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Affinage",
+     "goal": "Expliquer croûtes, textures et conservation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Composer un plateau",
+     "goal": "Choisir un plateau équilibré pour 6 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de fromage",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "cave",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "culture-vin",
+    "voyage",
+    "convivial",
+    "cadeau"
+   ],
+   "competitors": [
+    "Fromageries",
+    "Écoles de fromagers"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Attrait très fort, mais dégustation et vente de produits en lien avec une fromagerie ; l'angle culture seul reste de niche.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-culture-chocolat",
+   "name": "Culture du chocolat",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.produits",
+   "desc": "Du cacaoyer à la tablette : origines, fabrication, grands chocolatiers et dégustation raisonnée.",
+   "audience": "25-55 ans, gourmands, familles, cadeau",
+   "skills": [
+    "Reconnaître les origines",
+    "Comprendre la filière",
+    "Lire une étiquette",
+    "Déguster raisonnablement"
+   ],
+   "appSkills": [
+    "culture-du-the"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "De la fève à la tablette",
+     "goal": "Décrire les étapes de fabrication du chocolat",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines",
+     "goal": "Situer 5 origines et leur profil aromatique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Qualité et étiquette",
+     "goal": "Distinguer pourcentage, beurre de cacao et additifs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dégustation",
+     "goal": "Mener une dégustation comparée de 5 chocolats",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de chocolat",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "culture-vin",
+    "cadeau",
+    "famille",
+    "voyage"
+   ],
+   "competitors": [
+    "Chocolatiers",
+    "Salon du chocolat"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Public très large et très gourmand, bonne mise en cadeau ; concurrents de qualité chez les chocolatiers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-epices-huiles-vinaigres",
+   "name": "Épices, huiles et vinaigres : bien les choisir",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.produits",
+   "desc": "Reconnaître les épices du monde, huiles et vinaigres de qualité, et les conserver.",
+   "audience": "25-55 ans, cuisiniers du quotidien, voyageurs",
+   "skills": [
+    "Reconnaître 15 épices",
+    "Choisir une huile",
+    "Conserver",
+    "Associer"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix épices",
+     "goal": "Reconnaître 10 épices à l'odeur et à l'aspect",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines et mélanges",
+     "goal": "Situer garam masala, ras-el-hanout et herbes de Provence",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Huiles et vinaigres",
+     "goal": "Distinguer qualité, extraction et usage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Composer un placard",
+     "goal": "Constituer un placard d'épices adapté",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'épices",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "gout",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "culture-vin",
+    "voyage",
+    "cuisine-du-monde",
+    "odorat"
+   ],
+   "competitors": [
+    "Épiceries fines",
+    "Ateliers de cuisine"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Complément de cuisine plutôt que niche autonome ; demande moyenne mais lien fort avec ateliers culinaires.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-alimentation",
+   "name": "Histoire de l'alimentation",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.gastronomie",
+   "desc": "Pourquoi on mange ce qu'on mange : d'où viennent pain, sucre, pâtes, tomate, et comment les repas ont changé.",
+   "audience": "30-70 ans, curieux de cuisine, enseignants, familles",
+   "skills": [
+    "Situer l'origine d'un aliment",
+    "Raconter un repas d'époque",
+    "Comprendre les tabous",
+    "Relier cuisine et société"
+   ],
+   "appSkills": [
+    "histoire-generale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "D'où vient mon assiette",
+     "goal": "Retracer l'origine de 5 aliments du quotidien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Repas d'époque",
+     "goal": "Raconter un menu du Moyen Âge à la Belle Époque",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tabous et interdits",
+     "goal": "Expliquer interdits religieux et sanitaires",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dîner historique",
+     "goal": "Préparer un repas thématique avec récit",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de table",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "restaurant"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "histoire",
+    "recit",
+    "convivial",
+    "culture-vin"
+   ],
+   "competitors": [
+    "Musées de l'alimentation",
+    "Podcasts"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Intérêt solide mais audience restreinte ; porte d'entrée possible vers des repas à thème.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-terroirs-appellations",
+   "name": "Terroirs, AOP et labels",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.gastronomie",
+   "desc": "Comprendre AOP, IGP, Label Rouge, bio et savoir ce que garantissent vraiment les labels.",
+   "audience": "30-60 ans, consommateurs attentifs, familles",
+   "skills": [
+    "Distinguer AOP et IGP",
+    "Lire un label",
+    "Repérer le greenwashing",
+    "Acheter local"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Que garantit ce logo ?",
+     "goal": "Expliquer 6 labels alimentaires courants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Terroir et cahier des charges",
+     "goal": "Lire un cahier des charges d'AOP",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Piège des allégations",
+     "goal": "Repérer 5 mentions trompeuses sur un emballage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Acheter local",
+     "goal": "Composer des courses justifiées par les labels",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de labels",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "gout"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "zero-dechet",
+    "culture-vin",
+    "maison",
+    "argent"
+   ],
+   "competitors": [
+    "UFC-Que Choisir",
+    "Associations de consommateurs"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Intérêt de fond, recoupe consommation responsable et savoirs ; peu rentable seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-cuisines-du-monde-histoires",
+   "name": "Cuisines du monde : histoires de plats",
+   "sector": "savoirs",
+   "category": "savoirs.gout",
+   "subcategory": "savoirs.gout.gastronomie",
+   "desc": "Raconter l'histoire de plats emblématiques (couscous, pizza, curry) et ce qu'ils disent des migrations.",
+   "audience": "25-60 ans, voyageurs, familles, amateurs de cuisine",
+   "skills": [
+    "Situer un plat",
+    "Raconter une migration",
+    "Comparer des variantes",
+    "Relier cuisine et culture"
+   ],
+   "appSkills": [
+    "histoire-generale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un plat, un voyage",
+     "goal": "Raconter l'origine de 5 plats connus",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Migrations et métissages",
+     "goal": "Expliquer comment un plat a voyagé",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisine et identité",
+     "goal": "Comparer variantes régionales et politiques de l'authenticité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repas raconté",
+     "goal": "Préparer un dîner thématique avec récit",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de plats",
+     "goal": "Animer des soirées et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "restaurant"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "expatries"
+   ],
+   "senses": [
+    "gout",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "voyage",
+    "histoire",
+    "recit"
+   ],
+   "competitors": [
+    "Cuisiniers et chaînes culinaires",
+    "Podcasts"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Excellent compagnon de cuisine du monde ; tout seul, plutôt un contenu qu'un atelier payant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-club-de-lecture",
+   "name": "Club de lecture",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.livres",
+   "desc": "Lire un roman par mois et en discuter en cercle avec règles de parole et fiches de lecture.",
+   "audience": "25-70 ans, lecteurs réguliers, nouveaux habitants",
+   "skills": [
+    "Choisir un livre",
+    "Animer la discussion",
+    "Faire une fiche",
+    "Écouter les avis"
+   ],
+   "appSkills": [
+    "litterature-lecture",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cercle",
+     "goal": "Participer à une discussion de livre en 1 h 30",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      8
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire et noter",
+     "goal": "Préparer une fiche de lecture et trois questions",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer un tour de table",
+     "goal": "Mener une discussion équilibrée de 2 h",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concevoir une saison",
+     "goal": "Choisir 8 livres sur un fil thématique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur de club",
+     "goal": "Former des animateurs de clubs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      20,
+      45
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 2,
+    "wtp": 1,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "convivial",
+    "cafe",
+    "calme",
+    "recit"
+   ],
+   "competitors": [
+    "Clubs de bibliothèques",
+    "Librairies",
+    "Babelio"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Culture très répandue, gratuite dans les médiathèques ; la plus-value serait la qualité d'animation et le lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-roman-policier",
+   "name": "Polar et romans noirs",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.livres",
+   "desc": "Du roman policier à la littérature noire : genres, auteurs et enquêtes pour lire autrement.",
+   "audience": "25-65 ans, lecteurs de romans, couples, ados",
+   "skills": [
+    "Reconnaître les sous-genres",
+    "Lire un indice",
+    "Comparer deux enquêteurs",
+    "Créer son énigme"
+   ],
+   "appSkills": [
+    "litterature-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Qui est le coupable ?",
+     "goal": "Distinguer polar, thriller, roman noir et énigme classique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les grands noms",
+     "goal": "Situer 8 auteurs majeurs et leurs détectives",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Construire un indice",
+     "goal": "Analyser comment un auteur place ses fausses pistes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Enquête en équipe",
+     "goal": "Concevoir une courte énigme et la faire jouer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de polar",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "enigme",
+    "convivial",
+    "recit",
+    "jeu"
+   ],
+   "competitors": [
+    "Festivals de polar",
+    "Librairies spécialisées"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Genre très populaire, public mixte ; bon pont avec les jeux d'enquête.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-science-fiction-lecture",
+   "name": "Science-fiction et imaginaires",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.livres",
+   "desc": "Explorer la SF et la fantasy : grandes questions, mondes et auteurs, à lire en cercle.",
+   "audience": "18-50 ans, lecteurs de SF, joueurs, étudiants",
+   "skills": [
+    "Situer les sous-genres",
+    "Lire une utopie",
+    "Débattre d'un futur",
+    "Imaginer son monde"
+   ],
+   "appSkills": [
+    "litterature-lecture",
+    "bd-manga-culture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Voyager dans un futur",
+     "goal": "Distinguer space opera, cyberpunk, dystopie et fantasy",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les grandes questions",
+     "goal": "Relier un roman de SF à une question de société",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un monde",
+     "goal": "Analyser la construction d'un univers",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écrire un début de monde",
+     "goal": "Rédiger un court récit d'anticipation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur d'imaginaires",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "ecriture",
+    "jeu",
+    "science",
+    "recit"
+   ],
+   "competitors": [
+    "Clubs de SF",
+    "Librairies spécialisées",
+    "Festivals"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune, actif et très communautaire (conventions) ; bon lien avec jeux de rôle et écriture.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-analyse-de-film",
+   "name": "Analyse de film : lire un plan",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.ecrans",
+   "desc": "Comprendre cadrage, montage et son pour regarder un film comme un cinéaste, en cercle.",
+   "audience": "20-65 ans, cinéphiles, étudiants, parents d'ados",
+   "skills": [
+    "Lire un plan",
+    "Comprendre un montage",
+    "Identifier un genre",
+    "Écrire une critique"
+   ],
+   "appSkills": [
+    "cinema-analyse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Voir un film autrement",
+     "goal": "Décrire cadrage, lumière et montage d'une scène",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Grammaire du cinéma",
+     "goal": "Expliquer 8 notions (plan, champ, montage, hors-champ)",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Genres et courants",
+     "goal": "Situer western, noir, nouvelle vague et blockbusters",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Critique et cercle",
+     "goal": "Écrire une critique argumentée et animer un débat",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de cinéma",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "histoire",
+    "lecture",
+    "convivial",
+    "calme"
+   ],
+   "competitors": [
+    "Ciné-clubs",
+    "Cinémathèque",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte culture cinéphile parisienne ; l'animation en petits groupes est moins développée que les séances ouvertes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-series-culture",
+   "name": "Séries télé : décrypter ses séries",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.ecrans",
+   "desc": "Narration, personnages, thèmes : comprendre pourquoi une série nous accroche et ce qu'elle dit du monde.",
+   "audience": "18-40 ans, binge-watchers, couples, étudiants",
+   "skills": [
+    "Analyser une saison",
+    "Repérer les ressorts",
+    "Comparer des pays",
+    "Écrire une critique"
+   ],
+   "appSkills": [
+    "cinema-analyse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pourquoi ça accroche",
+     "goal": "Repérer 5 ressorts narratifs d'une série",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages et arcs",
+     "goal": "Analyser un personnage sur une saison",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Genres et pays",
+     "goal": "Comparer séries américaines, scandinaves et coréennes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Critique de groupe",
+     "goal": "Animer une soirée de débat sur un épisode",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de séries",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "recit",
+    "convivial",
+    "lecture",
+    "apero"
+   ],
+   "competitors": [
+    "Podcasts de séries",
+    "Médias de pop culture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Grande audience mais consommation individuelle ; l'enjeu est de rendre la discussion plus attractive que Reddit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-jeu-video-culture",
+   "name": "Culture du jeu vidéo",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.ecrans",
+   "desc": "Histoire, genres et enjeux du jeu vidéo : comprendre ce que jouent les enfants et les ados.",
+   "audience": "Parents, ados, trentenaires nostalgiques",
+   "skills": [
+    "Situer 5 grandes époques",
+    "Comprendre un genre",
+    "Régler contrôle parental",
+    "Lire un jeu comme une oeuvre"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Du flipper à la console",
+     "goal": "Situer 5 grandes époques et consoles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Genres et mécaniques",
+     "goal": "Comprendre action, aventure, stratégie et jeu de rôle",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parents et jeux",
+     "goal": "Choisir et encadrer un jeu avec PEGI et contrôle parental",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire un jeu",
+     "goal": "Analyser narration et mécanique d'un jeu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de jeu vidéo",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "ados",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "tech",
+    "famille",
+    "lecture",
+    "histoire"
+   ],
+   "competitors": [
+    "Musées du jeu vidéo",
+    "Associations de jeux",
+    "Chaînes YouTube"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin réel côté parents (régulation) et passion côté joueurs ; deux publics différents à séparer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-etymologie-mots",
+   "name": "Étymologie et histoire des mots",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.mots",
+   "desc": "D'où viennent les mots du quotidien : latin, grec, arabe, gaulois et emprunts récents.",
+   "audience": "25-70 ans, lecteurs, enseignants, joueurs de mots",
+   "skills": [
+    "Remonter un mot",
+    "Reconnaître des racines",
+    "Comprendre un emprunt",
+    "Jouer avec les mots"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "D'où vient ce mot",
+     "goal": "Retrouver l'origine de 10 mots courants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Racines latines et grecques",
+     "goal": "Comprendre des familles de mots à partir de leurs racines",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Emprunts et migrations",
+     "goal": "Expliquer des mots venus d'arabe, d'anglais, de turc",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu de piste",
+     "goal": "Concevoir un jeu autour de l'étymologie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de mots",
+     "goal": "Animer des soirées et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "cafe",
+    "librairie",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "ecriture",
+    "jeu",
+    "langue",
+    "histoire"
+   ],
+   "competitors": [
+    "Podcasts de langue",
+    "Dictionnaires",
+    "Clubs de mots"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Passion fidèle mais restreinte ; facile à lier aux jeux de mots et à l'écriture plutôt qu'à vendre isolément.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-histoire-langue-francaise",
+   "name": "Histoire de la langue française",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.mots",
+   "desc": "Du latin à aujourd'hui : accents, orthographe, régionalismes et débats sur la langue.",
+   "audience": "30-70 ans, lecteurs, enseignants, passionnés de langue",
+   "skills": [
+    "Raconter l'évolution",
+    "Comprendre l'orthographe",
+    "Connaître les langues de France",
+    "Débattre d'une réforme"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Du latin au français",
+     "goal": "Raconter 5 étapes de l'évolution du français",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pourquoi cette orthographe",
+     "goal": "Expliquer 8 bizarreries orthographiques",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Langues de France",
+     "goal": "Situer breton, occitan, alsacien et créoles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Débattre de la langue",
+     "goal": "Animer un débat sur féminisation ou réforme",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de langue",
+     "goal": "Animer des cycles et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "histoire",
+    "lecture",
+    "ecriture",
+    "calme"
+   ],
+   "competitors": [
+    "Académie française",
+    "Podcasts",
+    "Universités populaires"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Passionnés fidèles mais très peu prêts à payer ; à intégrer à des clubs de lecture ou d'écriture.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "savoirs-bd-manga-culture",
+   "name": "BD, comics et manga : se repérer",
+   "sector": "savoirs",
+   "category": "savoirs.lettres",
+   "subcategory": "savoirs.lettres.mots",
+   "desc": "Comprendre les grandes familles de la BD et du manga pour choisir ses lectures et celles de ses enfants.",
+   "audience": "Parents, ados, adultes curieux, collectionneurs",
+   "skills": [
+    "Situer BD, comics, manga",
+    "Choisir une série",
+    "Lire une planche",
+    "Collectionner"
+   ],
+   "appSkills": [
+    "bd-manga-culture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Quelle BD pour qui ?",
+     "goal": "Distinguer BD franco-belge, comics et manga et choisir selon l'âge",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire une planche",
+     "goal": "Décrire case, bulle et rythme d'une page",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Grandes séries",
+     "goal": "Situer 8 séries incontournables par genre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Collectionner",
+     "goal": "Constituer une collection raisonnée et la conserver",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Passeur de BD",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "ados",
+    "parents",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "dessin",
+    "collection",
+    "recit",
+    "famille"
+   ],
+   "competitors": [
+    "Librairies spécialisées",
+    "Festival d'Angoulême"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune et parents ; offre portée par les libraires, avec des ateliers de dessin en complément.",
+   "confidence": "estimation"
+  }
+ ]
+}

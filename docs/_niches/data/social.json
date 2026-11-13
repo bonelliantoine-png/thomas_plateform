@@ -1,0 +1,8659 @@
+{
+ "sector": "social",
+ "categories": [
+  {
+   "id": "social.animation",
+   "name": "Animer et faciliter",
+   "desc": "Conduire un groupe, une réunion ou un atelier pour qu'il produise quelque chose.",
+   "subcategories": [
+    {
+     "id": "social.animation.groupe",
+     "name": "Animer un groupe",
+     "desc": "Accueillir, cadrer, faire parler et conclure."
+    },
+    {
+     "id": "social.animation.formats",
+     "name": "Formats collaboratifs",
+     "desc": "Fresques, team building, débats et jeux pour travailler ensemble."
+    },
+    {
+     "id": "social.animation.publics",
+     "name": "Animer selon les publics",
+     "desc": "Enfants, ados, seniors et groupes mixtes."
+    }
+   ]
+  },
+  {
+   "id": "social.mediation",
+   "name": "Médiation, écoute et transmission",
+   "desc": "Apaiser un conflit, écouter, transmettre à un plus jeune ou un plus âgé.",
+   "subcategories": [
+    {
+     "id": "social.mediation.conflits",
+     "name": "Conflits et communication",
+     "desc": "Résoudre un différend sans s'affronter."
+    },
+    {
+     "id": "social.mediation.ecoute",
+     "name": "Écoute et soutien",
+     "desc": "Être présent pour quelqu'un sans juger."
+    },
+    {
+     "id": "social.mediation.transmission",
+     "name": "Transmission et accompagnement",
+     "desc": "Mentorat, soutien scolaire, apprentissage du français."
+    }
+   ]
+  },
+  {
+   "id": "social.evenements",
+   "name": "Fêtes et événements",
+   "desc": "Réunir des gens autour d'une fête, d'un repas ou d'une sortie.",
+   "subcategories": [
+    {
+     "id": "social.evenements.quartier",
+     "name": "Événements de quartier",
+     "desc": "Fêtes, repas, brocantes et marchés de proximité."
+    },
+    {
+     "id": "social.evenements.perso",
+     "name": "Fêtes personnelles",
+     "desc": "Anniversaires, cérémonies et célébrations entre proches."
+    },
+    {
+     "id": "social.evenements.sorties",
+     "name": "Sorties et voyages de groupe",
+     "desc": "Organiser pour que tout le monde vienne."
+    }
+   ]
+  },
+  {
+   "id": "social.solidarite",
+   "name": "Solidarité de proximité",
+   "desc": "Agir concrètement près de chez soi pour les aînés, les voisins, les nouveaux arrivants.",
+   "subcategories": [
+    {
+     "id": "social.solidarite.aines",
+     "name": "Aînés et aidants",
+     "desc": "Rompre l'isolement et soutenir les proches aidants."
+    },
+    {
+     "id": "social.solidarite.entraide",
+     "name": "Entraide et accueil",
+     "desc": "Repair cafés, aide alimentaire, français, écrivain public."
+    },
+    {
+     "id": "social.solidarite.voisinage",
+     "name": "Voisinage actif",
+     "desc": "Faire vivre l'entraide entre habitants."
+    }
+   ]
+  },
+  {
+   "id": "social.associations",
+   "name": "Associations et engagement",
+   "desc": "Créer, gérer et faire vivre une association ou une campagne.",
+   "subcategories": [
+    {
+     "id": "social.associations.gestion",
+     "name": "Gérer une association",
+     "desc": "Statuts, trésorerie, assemblée, financements."
+    },
+    {
+     "id": "social.associations.benevoles",
+     "name": "Bénévoles et compétences",
+     "desc": "Recruter, accueillir et fidéliser."
+    },
+    {
+     "id": "social.associations.mobilisation",
+     "name": "Mobilisation et démocratie locale",
+     "desc": "Plaider, collecter, communiquer, participer."
+    }
+   ]
+  },
+  {
+   "id": "social.communautes",
+   "name": "Communautés et lieux",
+   "desc": "Créer des cercles de rencontre durables et des lieux vivants.",
+   "subcategories": [
+    {
+     "id": "social.communautes.rencontres",
+     "name": "Rencontres et cercles",
+     "desc": "Dîners, clubs, groupes de voisins."
+    },
+    {
+     "id": "social.communautes.parentalite",
+     "name": "Parentalité et entraide entre pairs",
+     "desc": "Cercles de parole et échanges de pratiques."
+    },
+    {
+     "id": "social.communautes.lieux",
+     "name": "Faire vivre un lieu",
+     "desc": "Café associatif, tiers-lieu, coworking convivial."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "social-animer-premiere-seance",
+   "name": "Animer sa première séance",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.groupe",
+   "desc": "Construire une trame d'1 h, accueillir, briser la glace, gérer les niveaux et recueillir des retours.",
+   "audience": "Futurs hôtes d'ateliers, bénévoles, passionnés qui veulent transmettre",
+   "skills": [
+    "Construire une trame d'1 h",
+    "Accueillir et briser la glace",
+    "Gérer les niveaux",
+    "Recueillir les retours"
+   ],
+   "appSkills": [
+    "animation-de-groupe",
+    "facilitation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je prépare ma séance",
+     "goal": "Écrire une trame d'1 h avec objectifs et timing",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "J'accueille",
+     "goal": "Pratiquer accueil, règles et brise-glace devant un petit groupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer les niveaux",
+     "goal": "Adapter une activité à des participants de niveaux différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Retours et amélioration",
+     "goal": "Recueillir et exploiter des retours pour améliorer sa séance",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur d'hôtes",
+     "goal": "Former des hôtes et superviser leurs premières séances",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "recit",
+    "scene",
+    "voix",
+    "jeu"
+   ],
+   "competitors": [
+    "Formations d'animateur",
+    "Associations d'éducation populaire"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Compétence-clé pour passer de participant à hôte : indispensable à la plateforme, demande interne et cumulable avec toute niche.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animer-reunion-benevoles",
+   "name": "Animer une réunion de bénévoles",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.groupe",
+   "desc": "Préparer un ordre du jour, tenir le temps, donner la parole, décider et partager un compte rendu.",
+   "audience": "Présidents et membres d'associations, responsables de collectifs",
+   "skills": [
+    "Préparer un ordre du jour",
+    "Distribuer la parole",
+    "Décider ensemble",
+    "Faire un compte rendu"
+   ],
+   "appSkills": [
+    "facilitation",
+    "gestion-association"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Réunion en 1 h",
+     "goal": "Mener une réunion de 1 h avec ordre du jour et tour de parole",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Décider",
+     "goal": "Choisir un mode de décision (consentement, vote) et le tenir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer les tensions",
+     "goal": "Désamorcer un désaccord et reprendre la main",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réunions à distance",
+     "goal": "Animer une réunion hybride avec outils numériques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent réunions",
+     "goal": "Former d'autres animateurs et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "recit",
+    "voix"
+   ],
+   "competitors": [
+    "Formations de France Bénévolat",
+    "Fédérations d'associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin évident dans des milliers d'associations, peu de formation facile d'accès ; faible budget des bénévoles mais financements possibles via fonds de formation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-faciliter-atelier-collaboratif",
+   "name": "Faciliter un atelier collaboratif",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.groupe",
+   "desc": "Cadrer un objectif, choisir des techniques (post-it, vote, sous-groupes) et obtenir un résultat partagé.",
+   "audience": "Salariés, chefs de projet, associations, collectivités",
+   "skills": [
+    "Cadrer un objectif",
+    "Choisir une technique",
+    "Gérer le temps",
+    "Synthétiser"
+   ],
+   "appSkills": [
+    "facilitation",
+    "intelligence-collective"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier atelier",
+     "goal": "Concevoir et animer un atelier de 1 h 30 avec un livrable",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boîte à outils",
+     "goal": "Utiliser 5 techniques de production collective",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Groupes difficiles",
+     "goal": "Gérer participants bavards, silencieux ou conflictuels",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Atelier de 3 h",
+     "goal": "Concevoir un atelier de 3 h avec scénarios de secours",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur facilitateur",
+     "goal": "Former des facilitateurs et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      325
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "recit",
+    "jeu",
+    "voix",
+    "tech"
+   ],
+   "competitors": [
+    "Cabinets de conseil",
+    "Formations de facilitation",
+    "Agences d'innovation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte demande en entreprise et collectivités, bonne propension à payer côté organisation ; marché professionnel déjà structuré.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-facilitation-graphique",
+   "name": "Facilitation graphique",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.groupe",
+   "desc": "Dessiner en direct les idées d'un groupe : lettrage, pictos, mise en page de fresques et de comptes rendus.",
+   "audience": "Facilitateurs, formateurs, salariés, dessinateurs",
+   "skills": [
+    "Lettrage lisible",
+    "Banque de pictos",
+    "Composer une fresque",
+    "Dessiner en direct"
+   ],
+   "appSkills": [
+    "facilitation-graphique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers pictos",
+     "goal": "Dessiner 20 pictos de base et un lettrage lisible",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une page claire",
+     "goal": "Réaliser une affiche de 5 idées bien hiérarchisées",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dessiner en direct",
+     "goal": "Illustrer 30 min de réunion en temps réel",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fresque de 3 h",
+     "goal": "Composer une grande fresque de séminaire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent facilitation graphique",
+     "goal": "Former et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      325
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "geste",
+    "vue",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "dessin",
+    "recit",
+    "convivial",
+    "couleur",
+    "voix"
+   ],
+   "competitors": [
+    "Graphistes facilitateurs",
+    "Cabinets de conseil"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Compétence recherchée par les entreprises qui paient bien ; offre rare, apprentissage progressif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-intelligence-collective-gouvernance",
+   "name": "Intelligence collective et gouvernance partagée",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.groupe",
+   "desc": "Sociocratie, consentement, élection sans candidat : prendre des décisions à plusieurs.",
+   "audience": "Collectifs, coopératives, associations, tiers-lieux",
+   "skills": [
+    "Rédiger une proposition",
+    "Décider au consentement",
+    "Élire sans candidat",
+    "Tenir un cercle"
+   ],
+   "appSkills": [
+    "intelligence-collective",
+    "facilitation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir le consentement",
+     "goal": "Participer à une décision par consentement",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier cercle",
+     "goal": "Tenir un cercle avec rôles et règles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gouvernance de l'association",
+     "goal": "Écrire des règles de gouvernance d'un collectif",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Organisation sur plusieurs cercles",
+     "goal": "Coordonner plusieurs cercles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent gouvernance",
+     "goal": "Former des collectifs et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "voix",
+    "solidarite",
+    "convivial",
+    "strategie"
+   ],
+   "competitors": [
+    "Coopératives",
+    "Formations de gouvernance partagée"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche d'initiés, en croissance dans l'ESS ; faible grand public, bon marché B2B.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-fresque-collaborative",
+   "name": "Animer une fresque collaborative",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.formats",
+   "desc": "Faire jouer une fresque (climat, numérique, biodiversité) : cartes, débats et passage à l'action.",
+   "audience": "Associations, entreprises, écoles, curieux",
+   "skills": [
+    "Maîtriser le déroulé",
+    "Faire parler",
+    "Débriefer",
+    "Susciter l'action"
+   ],
+   "appSkills": [
+    "animation-fresque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer à une fresque",
+     "goal": "Vivre une fresque et comprendre le déroulé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer avec support",
+     "goal": "Animer une fresque en suivant le guide officiel",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer le débrief",
+     "goal": "Conduire un débrief profond de 30 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Adapter pour d'autres publics",
+     "goal": "Adapter une fresque aux ados, aux élus et aux salariés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur de fresques",
+     "goal": "Former et superviser des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "ecole",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "science",
+    "recit",
+    "solidarite"
+   ],
+   "competitors": [
+    "Fresque du climat",
+    "2tonnes",
+    "Fresque du numérique"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Phénomène bien installé et rémunérateur en entreprise ; les formations officielles sont gratuites ou peu chères mais très encadrées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-team-building-animer",
+   "name": "Animer un team building",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.formats",
+   "desc": "Concevoir et animer une activité de cohésion d'équipe : jeux, défis, ateliers créatifs.",
+   "audience": "Salariés, RH, managers, associations",
+   "skills": [
+    "Choisir un format",
+    "Écrire un scénario",
+    "Gérer le rythme",
+    "Débriefer"
+   ],
+   "appSkills": [
+    "team-building",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer en équipe",
+     "goal": "Participer à 3 jeux de cohésion et les analyser",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer un jeu",
+     "goal": "Conduire une activité de 1 h pour 12 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Concevoir un format",
+     "goal": "Écrire le déroulé d'une demi-journée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Adapter à l'entreprise",
+     "goal": "Construire une offre pour un client",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent team building",
+     "goal": "Former des animateurs et créer un catalogue",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      325
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "journee"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "convivial",
+    "jeu",
+    "defi",
+    "cuisine",
+    "plein-air"
+   ],
+   "competitors": [
+    "Agences événementielles",
+    "Prestataires d'activités"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Marché B2B dense, bon pouvoir d'achat, concurrence de professionnels ; un angle ancré dans les savoirs du quotidien peut distinguer l'offre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-debat-mouvant-jeux-cooperatifs",
+   "name": "Animer un débat mouvant et des jeux coopératifs",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.formats",
+   "desc": "Débats physiques, jeux de rôle et jeux coopératifs pour réfléchir ensemble sur un sujet.",
+   "audience": "Enseignants, éducateurs, associations, centres sociaux",
+   "skills": [
+    "Cadrer un débat mouvant",
+    "Poser des règles",
+    "Animer un jeu de rôle",
+    "Débriefer"
+   ],
+   "appSkills": [
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Debout, assis, au milieu",
+     "goal": "Animer un débat mouvant de 45 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeux de rôle",
+     "goal": "Mener un jeu de rôle avec consignes claires",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux coopératifs",
+     "goal": "Animer 3 jeux coopératifs pour un groupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concevoir un jeu",
+     "goal": "Créer un jeu sur un thème",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent jeux d'éducation",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "recit",
+    "voix",
+    "strategie"
+   ],
+   "competitors": [
+    "Éducation populaire",
+    "Centres sociaux",
+    "Ligue de l'enseignement"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé en éducation, mais le public animateur paie peu ; fort potentiel avec le secteur associatif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-serious-game-concevoir",
+   "name": "Concevoir un serious game ou une enquête grandeur nature",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.formats",
+   "desc": "Écrire un scénario, énigmes et jeu pour former ou fédérer : murder party, enquête de quartier, rallye.",
+   "audience": "Animateurs, enseignants, associations, entreprises",
+   "skills": [
+    "Écrire un scénario",
+    "Concevoir des énigmes",
+    "Équilibrer la difficulté",
+    "Tester"
+   ],
+   "appSkills": [
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je joue une enquête",
+     "goal": "Participer à une enquête et analyser sa structure",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier scénario",
+     "goal": "Écrire une enquête courte de 45 min",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Énigmes et tests",
+     "goal": "Concevoir 5 énigmes variées et les tester",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu complet",
+     "goal": "Produire un jeu clés en main pour 12 joueurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Créateur de jeux",
+     "goal": "Former des créateurs et publier",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "recit",
+    "convivial",
+    "strategie"
+   ],
+   "competitors": [
+    "Agences d'escape game",
+    "Jeux de société"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Bon lien avec l'univers des énigmes et jeux ; coûteux à produire mais réutilisable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animation-enfants-ateliers",
+   "name": "Animer des ateliers pour enfants",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.publics",
+   "desc": "Concevoir des activités adaptées à l'âge, gérer l'énergie et la sécurité.",
+   "audience": "Parents, étudiants, animateurs de centres de loisirs, enseignants",
+   "skills": [
+    "Adapter à l'âge",
+    "Gérer l'énergie",
+    "Cadrer sans crier",
+    "Prévenir les risques"
+   ],
+   "appSkills": [
+    "animation-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Animer 30 min",
+     "goal": "Conduire une activité de 30 min avec 6 enfants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gérer le groupe",
+     "goal": "Maintenir calme et attention avec des rituels",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Atelier de 2 h",
+     "goal": "Concevoir un atelier sur un thème avec production finale",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fêtes d'enfants",
+     "goal": "Animer un anniversaire ou une chasse au trésor",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent animation enfants",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "parents",
+    "enfants",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "parole"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "jeu",
+    "convivial",
+    "fete",
+    "geste"
+   ],
+   "competitors": [
+    "Centres de loisirs",
+    "Animateurs indépendants",
+    "Associations"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande forte et récurrente, mais encadrement d'enfants réglementé (BAFA, déclaration). Cibler l'accompagnement de parents et d'adultes plutôt que l'accueil direct d'enfants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animation-seniors",
+   "name": "Animer des activités pour seniors",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.publics",
+   "desc": "Concevoir des ateliers de mémoire, d'écriture, de jeux et de mouvement doux pour personnes âgées.",
+   "audience": "Bénévoles, animateurs de résidences, familles",
+   "skills": [
+    "Adapter le rythme",
+    "Stimuler la mémoire",
+    "Impliquer sans infantiliser",
+    "Gérer la fatigue"
+   ],
+   "appSkills": [
+    "animation-seniors"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Accueillir",
+     "goal": "Mener une rencontre de 1 h avec des aînés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mémoire et jeux",
+     "goal": "Animer 3 jeux de mémoire adaptés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Atelier créatif",
+     "goal": "Conduire un atelier de création ou d'écriture",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet de résidence",
+     "goal": "Construire un programme de 6 séances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent animation seniors",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "calme",
+    "famille",
+    "recit"
+   ],
+   "competitors": [
+    "EHPAD",
+    "Centres communaux",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande démographique très forte et financements publics ; marché de professionnels en EHPAD, mais bénévoles recherchés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animer-ados",
+   "name": "Animer un groupe d'adolescents",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.publics",
+   "desc": "Capter l'attention des 12-17 ans : projets, jeux, écoute et règles claires.",
+   "audience": "Éducateurs, bénévoles, parents, associations",
+   "skills": [
+    "Poser un cadre",
+    "Choisir des projets",
+    "Écouter",
+    "Gérer l'autorité"
+   ],
+   "appSkills": [
+    "animation-de-groupe",
+    "animation-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Accueillir des ados",
+     "goal": "Mener une première rencontre de 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Projets",
+     "goal": "Co-construire un projet de 4 séances",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer l'autorité",
+     "goal": "Poser des règles et gérer un conflit",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écoute et repérage",
+     "goal": "Repérer un mal-être et orienter",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent ados",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "ados",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "jeu",
+    "solidarite",
+    "convivial"
+   ],
+   "competitors": [
+    "Maisons des jeunes",
+    "MJC",
+    "Éducateurs"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Besoin social net, mais encadrement de mineurs lourd (responsabilité, diplômes) ; à confier à des structures habilitées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-atelier-intergenerationnel",
+   "name": "Atelier intergénérationnel",
+   "sector": "social",
+   "category": "social.animation",
+   "subcategory": "social.animation.publics",
+   "desc": "Réunir enfants, parents et grands-parents autour de la cuisine, du jardin, des jeux, ou de la mémoire.",
+   "audience": "Familles, seniors, écoles, résidences",
+   "skills": [
+    "Choisir une activité commune",
+    "Équilibrer les âges",
+    "Faciliter l'échange",
+    "Garder une trace"
+   ],
+   "appSkills": [
+    "animation-seniors",
+    "animation-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cuisiner ensemble",
+     "goal": "Animer une recette à trois générations",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeux et histoires",
+     "goal": "Mener un après-midi de jeux anciens et nouveaux",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Atelier projet",
+     "goal": "Réaliser un livret ou un album collectif",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme annuel",
+     "goal": "Construire 6 séances intergénérationnelles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent intergénérations",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "enfants"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "solidarite",
+    "convivial",
+    "recit",
+    "cuisine"
+   ],
+   "competitors": [
+    "Associations intergénérationnelles",
+    "Résidences",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Fort impact social, financements par collectivités ; revenus limités mais bonne image et mixité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-mediation-entre-voisins",
+   "name": "Médiation entre voisins",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.conflits",
+   "desc": "Écouter deux parties, reformuler et aider à trouver un accord sur un conflit de voisinage.",
+   "audience": "Habitants, bénévoles, médiateurs de copropriété, bailleurs",
+   "skills": [
+    "Poser un cadre",
+    "Reformuler",
+    "Faire émerger des besoins",
+    "Rédiger un accord"
+   ],
+   "appSkills": [
+    "mediation",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre un conflit",
+     "goal": "Distinguer positions, besoins et émotions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter et reformuler",
+     "goal": "Reformuler les propos de deux parties sans prendre parti",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une médiation de A à Z",
+     "goal": "Mener une médiation de 1 h 30 en binôme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas difficiles",
+     "goal": "Gérer des situations tendues (bruit, déchets, animaux)",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent médiation",
+     "goal": "Former et superviser des médiateurs de quartier",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "maison",
+    "convivial",
+    "recit",
+    "voix"
+   ],
+   "competitors": [
+    "Associations de médiation",
+    "Conciliateurs de justice",
+    "Bailleurs"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin réel dans les copropriétés, financements bailleurs et municipalités ; cadre éthique et confidentialité à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-communication-non-violente",
+   "name": "Communication non violente",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.conflits",
+   "desc": "Observer, nommer ses émotions et ses besoins, demander : la méthode de Rosenberg en pratique.",
+   "audience": "25-55 ans, parents, couples, managers, soignants",
+   "skills": [
+    "Distinguer fait et jugement",
+    "Nommer ses émotions",
+    "Formuler un besoin",
+    "Faire une demande"
+   ],
+   "appSkills": [
+    "communication-non-violente",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les 4 étapes",
+     "goal": "Formuler une phrase en observation, émotion, besoin, demande",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "S'entraîner",
+     "goal": "Pratiquer la CNV sur 3 situations concrètes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conflits du quotidien",
+     "goal": "Appliquer la CNV dans un désaccord réel",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cercle de pratique",
+     "goal": "Animer un cercle de pratique de 2 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur CNV",
+     "goal": "Former des groupes et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "couple",
+    "famille",
+    "voix",
+    "convivial"
+   ],
+   "competitors": [
+    "Formateurs certifiés",
+    "Livres",
+    "Podcasts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte et attachement affectif, marché de formateurs certifiés ; en pratique, les cercles de pratique à petit prix sont répandus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-gerer-conflits-travail",
+   "name": "Gérer les conflits au travail",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.conflits",
+   "desc": "Désamorcer, dire non, poser une limite, faire un feedback sans blesser.",
+   "audience": "Salariés, managers, indépendants",
+   "skills": [
+    "Poser une limite",
+    "Donner un feedback",
+    "Gérer un désaccord",
+    "Recourir à un tiers"
+   ],
+   "appSkills": [
+    "mediation",
+    "communication-non-violente"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dire non",
+     "goal": "S'entraîner à dire non avec assertivité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Feedback",
+     "goal": "Donner un retour sur 3 cas",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Désaccord en équipe",
+     "goal": "Traiter un conflit de manière structurée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Recours",
+     "goal": "Utiliser un médiateur ou un référent interne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach conflits",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "recit",
+    "strategie",
+    "jeu",
+    "calme"
+   ],
+   "competitors": [
+    "Cabinets RH",
+    "Formations managers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande de fond, achetée surtout par les entreprises ; concurrence de cabinets spécialisés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-ecoute-active",
+   "name": "Écoute active",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.ecoute",
+   "desc": "Accueillir sans juger, reformuler, poser des questions ouvertes : l'outil de base des relations.",
+   "audience": "25-65 ans, parents, bénévoles, soignants, managers",
+   "skills": [
+    "Reformuler",
+    "Poser des questions ouvertes",
+    "Gérer le silence",
+    "Repérer les émotions"
+   ],
+   "appSkills": [
+    "ecoute-active",
+    "communication-non-violente"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écouter vraiment",
+     "goal": "Pratiquer la reformulation en binôme pendant 10 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Questions ouvertes",
+     "goal": "Enchaîner 5 questions sans conseiller",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Situations délicates",
+     "goal": "Écouter une personne en colère ou en peine",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cercle d'écoute",
+     "goal": "Animer un cercle d'écoute entre pairs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur écoute",
+     "goal": "Former des bénévoles d'écoute et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "voix",
+    "calme",
+    "convivial",
+    "bien-etre"
+   ],
+   "competitors": [
+    "SOS Amitié",
+    "Associations d'écoute",
+    "Formations"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Compétence très demandée par les associations ; frontière avec la psychothérapie à garder claire (aucun soin).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-accompagner-aidants",
+   "name": "Accompagner et soutenir les proches aidants",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.ecoute",
+   "desc": "Écouter, informer, orienter des personnes qui aident un proche malade ou âgé.",
+   "audience": "Aidants, bénévoles, professionnels, voisins",
+   "skills": [
+    "Écouter un aidant",
+    "Informer sur les aides",
+    "Repérer l'épuisement",
+    "Orienter"
+   ],
+   "appSkills": [
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mieux comprendre",
+     "goal": "Comprendre le quotidien d'un aidant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter",
+     "goal": "Pratiquer l'écoute d'un aidant en binôme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Les aides existantes",
+     "goal": "Présenter 5 dispositifs d'aide aux aidants",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Café des aidants",
+     "goal": "Animer un temps d'échange mensuel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aidants",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "famille",
+    "voix",
+    "calme",
+    "soin"
+   ],
+   "competitors": [
+    "Cafés des aidants",
+    "Associations de malades",
+    "Mairies"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin immense et croissant (aidants de plus en plus nombreux) ; financement par des acteurs publics et fondations, jamais par les aidants eux-mêmes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-accompagner-deuil-fin-de-vie",
+   "name": "Présence auprès des personnes en fin de vie et en deuil",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.ecoute",
+   "desc": "Bénévolat d'accompagnement : écouter, être là, savoir se protéger.",
+   "audience": "Bénévoles 30-70 ans, soignants",
+   "skills": [
+    "Poser une présence",
+    "Écouter le deuil",
+    "S'adapter",
+    "Se protéger"
+   ],
+   "appSkills": [
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rencontre",
+     "goal": "Découvrir le bénévolat d'accompagnement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formation de base",
+     "goal": "Pratiquer l'écoute et la présence",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Stage en équipe",
+     "goal": "Intégrer une équipe et être supervisé",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas difficiles",
+     "goal": "Réfléchir en groupe de supervision",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bénévolat",
+     "goal": "Former de nouveaux bénévoles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 0,
+    "space": 5,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 0,
+    "regulatory": 1,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "calme",
+    "voix",
+    "famille",
+    "soin"
+   ],
+   "competitors": [
+    "JALMALV",
+    "Associations de soins palliatifs"
+   ],
+   "regulated": "sante",
+   "verdict": "ecarter",
+   "why": "Cadre très protégé, formation longue et dispositif associatif dédié ; à ne pas porter par une plateforme grand public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-mentorat",
+   "name": "Mentorat",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.transmission",
+   "desc": "Accompagner un plus jeune ou un pair : fixer des objectifs, questionner, partager ses expériences.",
+   "audience": "Salariés, étudiants, aînés, entrepreneurs",
+   "skills": [
+    "Cadrer la relation",
+    "Questionner",
+    "Partager son expérience",
+    "Fixer des objectifs"
+   ],
+   "appSkills": [
+    "mentorat"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Être mentoré",
+     "goal": "Définir ses objectifs et préparer une première rencontre",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mentor débutant",
+     "goal": "Mener un premier entretien de mentorat",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de mentorat",
+     "goal": "Tenir 6 rencontres sur 3 mois",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mentorat de groupe",
+     "goal": "Animer un cercle de mentors",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur de mentors",
+     "goal": "Former des mentors et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "domicile",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "recit",
+    "voix",
+    "argent",
+    "calme"
+   ],
+   "competitors": [
+    "Réseaux d'anciens",
+    "Programmes d'entreprise",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande solide ; très structurée dans de grandes associations, mais les rencontres de petits groupes et le mentorat entre pairs restent artisanaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-soutien-scolaire-tutorat",
+   "name": "Soutien scolaire et tutorat",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.transmission",
+   "desc": "Aider un élève du primaire ou du collège : méthode, confiance, devoirs.",
+   "audience": "Étudiants, retraités, parents, bénévoles",
+   "skills": [
+    "Évaluer un besoin",
+    "Expliquer simplement",
+    "Redonner confiance",
+    "Travailler la méthode"
+   ],
+   "appSkills": [
+    "tutorat-soutien-scolaire"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier accompagnement",
+     "goal": "Mener une séance d'aide aux devoirs d'1 h",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Méthode et organisation",
+     "goal": "Enseigner l'organisation du travail",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivre un élève",
+     "goal": "Tenir un suivi sur un trimestre",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Difficultés spécifiques",
+     "goal": "Adapter ses séances à un enfant en difficulté",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent tutorat",
+     "goal": "Former des tuteurs et superviser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 1,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "ecole",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "enfants",
+    "ados"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "solidarite",
+    "lecture",
+    "calme",
+    "voix"
+   ],
+   "competitors": [
+    "Cours particuliers",
+    "Associations d'aide aux devoirs"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Marché énorme mais saturé de soutien payant ; le tutorat bénévole et le cercle de devoirs sont des alternatives. Public mineur, cadre à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-fle-benevole",
+   "name": "Enseigner le français à des adultes (bénévolat)",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.transmission",
+   "desc": "Animer des ateliers de français pour migrants et expatriés : conversation, vie quotidienne, démarches.",
+   "audience": "Bénévoles, retraités, étudiants",
+   "skills": [
+    "Animer une conversation",
+    "Adapter son niveau de langue",
+    "Enseigner le vocabulaire utile",
+    "Évaluer"
+   ],
+   "appSkills": [
+    "fle-benevole"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Parler simplement",
+     "goal": "Animer une conversation de 1 h avec des débutants",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vocabulaire de survie",
+     "goal": "Concevoir un atelier autour de la vie quotidienne",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écrire et lire",
+     "goal": "Aider à rédiger un courrier ou lire une notice",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Préparer un examen",
+     "goal": "Préparer à un niveau A2 ou B1",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent FLE",
+     "goal": "Former des bénévoles et superviser",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "expatries",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "solidarite",
+    "voyage",
+    "convivial",
+    "voix"
+   ],
+   "competitors": [
+    "Associations d'accueil",
+    "Cours de langues",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin immense et peu de prestataires payants ; financements publics importants, public peu solvable mais fort impact social.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-binome-intergenerationnel",
+   "name": "Binômes intergénérationnels",
+   "sector": "social",
+   "category": "social.mediation",
+   "subcategory": "social.mediation.transmission",
+   "desc": "Faire se rencontrer jeunes et aînés pour des échanges de savoirs, d'aide et de visites.",
+   "audience": "Étudiants, seniors, associations",
+   "skills": [
+    "Constituer un binôme",
+    "Choisir des activités",
+    "Poser des règles",
+    "Suivre la relation"
+   ],
+   "appSkills": [
+    "mentorat",
+    "animation-seniors"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier rendez-vous",
+     "goal": "Rencontrer son binôme et définir des envies",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Activités communes",
+     "goal": "Réaliser 3 activités partagées",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivi sur 6 mois",
+     "goal": "Tenir un binôme avec bilans réguliers",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un réseau",
+     "goal": "Coordonner 10 binômes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent binômes",
+     "goal": "Former des coordinateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 0,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "famille",
+    "convivial",
+    "recit",
+    "calme"
+   ],
+   "competitors": [
+    "Cohabitations solidaires",
+    "Associations de jeunes",
+    "Fondations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Enthousiasme fort et faible argent ; à coupler avec des fondations ou des collectivités.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-fete-de-quartier",
+   "name": "Organiser une fête de quartier",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.quartier",
+   "desc": "Budget, autorisations, bénévoles, animations, sécurité : monter une fête pour 100 à 500 personnes.",
+   "audience": "Habitants, associations, élus locaux, conseils de quartier",
+   "skills": [
+    "Chiffrer un budget",
+    "Demander une autorisation",
+    "Recruter des bénévoles",
+    "Assurer la sécurité"
+   ],
+   "appSkills": [
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "J'aide à une fête",
+     "goal": "Tenir un poste (accueil, buvette) lors d'une fête",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Je pilote un pôle",
+     "goal": "Coordonner buvette, animations ou logistique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Je monte la fête",
+     "goal": "Planifier une fête de 150 personnes en 8 semaines",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Je gère les risques",
+     "goal": "Gérer budget, assurance, autorisations et sécurité",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent événement",
+     "goal": "Accompagner de nouveaux organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "convivial",
+    "solidarite",
+    "famille",
+    "musique"
+   ],
+   "competitors": [
+    "Mairies",
+    "Collectifs de quartier",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "prioritaire",
+   "why": "Très fédérateur, financé par subventions et sponsors locaux ; les participants paient peu mais les organisateurs cherchent de l'aide. Autorisations de voirie et alcool à vérifier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-repas-de-voisins",
+   "name": "Repas et fête des voisins",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.quartier",
+   "desc": "Organiser un repas partagé dans une rue ou une cour : invitations, buffet, règles de vie.",
+   "audience": "Habitants d'immeuble, voisins, syndics, associations",
+   "skills": [
+    "Inviter",
+    "Organiser un buffet partagé",
+    "Gérer la logistique",
+    "Faire revenir les voisins"
+   ],
+   "appSkills": [
+    "organisation-evenements",
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je participe",
+     "goal": "Participer à un repas de voisins et rencontrer 5 personnes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "J'invite",
+     "goal": "Organiser un repas d'immeuble de 20 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un rendez-vous régulier",
+     "goal": "Installer un repas trimestriel",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Une rue en fête",
+     "goal": "Fédérer plusieurs immeubles autour d'un repas",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent voisinage",
+     "goal": "Aider d'autres immeubles à organiser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 0,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc",
+    "domicile",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "gout",
+    "parole"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "convivial",
+    "gourmand",
+    "solidarite",
+    "fete",
+    "famille"
+   ],
+   "competitors": [
+    "Fête des voisins",
+    "Immeubles en fête"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Très accessible et très demandé ; aucune dimension marchande. À proposer en gratuit, sponsorisé par des acteurs locaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-vide-grenier-organiser",
+   "name": "Organiser un vide-grenier ou une brocante de quartier",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.quartier",
+   "desc": "Déclarer, gérer les stands, la sécurité, la logistique et la communication.",
+   "audience": "Associations, collectifs, comités de quartier",
+   "skills": [
+    "Demander l'autorisation",
+    "Placer les stands",
+    "Faire respecter les règles",
+    "Communiquer"
+   ],
+   "appSkills": [
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Tenir un stand",
+     "goal": "Participer à un vide-grenier et vendre 10 objets",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      4,
+      7
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Aider à l'organisation",
+     "goal": "Gérer l'accueil et les inscriptions",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      4,
+      7
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser un petit vide-grenier",
+     "goal": "Planifier un vide-grenier de 30 stands",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gérer le jour J",
+     "goal": "Gérer sécurité et imprévus",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent vide-grenier",
+     "goal": "Aider d'autres associations",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "zero-dechet",
+    "fete",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "Mairies",
+    "Sites d'annonces"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Format très répandu et simple ; revenus à l'association, cadre légal précis (déclaration en mairie, registre).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-marche-createurs-producteurs",
+   "name": "Organiser un marché de créateurs ou de producteurs",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.quartier",
+   "desc": "Sélectionner, placer les exposants, assurer, animer et communiquer.",
+   "audience": "Associations, commerçants, tiers-lieux, collectivités",
+   "skills": [
+    "Sélectionner des exposants",
+    "Gérer la logistique",
+    "Animer un marché",
+    "Mesurer le succès"
+   ],
+   "appSkills": [
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Visiter et tenir un stand",
+     "goal": "Participer à un marché et comprendre la logistique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      4,
+      7
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Aider à organiser",
+     "goal": "Gérer l'accueil des exposants",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      4,
+      7
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser un petit marché",
+     "goal": "Monter un marché de 15 exposants",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programmer des animations",
+     "goal": "Planifier ateliers et musique",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent marchés",
+     "goal": "Aider d'autres organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "convivial",
+    "artisanat",
+    "gourmand",
+    "cadeau"
+   ],
+   "competitors": [
+    "Associations de commerçants",
+    "Mairies"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Demande élevée de créateurs et du public, concurrence de marchés existants ; forts besoins en logistique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-organiser-anniversaire",
+   "name": "Organiser un anniversaire ou une fête réussie",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.perso",
+   "desc": "Choisir un thème, un lieu, un budget, un programme et gérer les invités.",
+   "audience": "25-45 ans, parents, amis, collègues",
+   "skills": [
+    "Fixer un budget",
+    "Choisir un lieu",
+    "Prévoir un programme",
+    "Gérer les invités"
+   ],
+   "appSkills": [
+    "fetes-anniversaires",
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première fête",
+     "goal": "Organiser une fête de 15 personnes avec budget et programme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animations",
+     "goal": "Préparer 3 jeux collectifs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fête à thème",
+     "goal": "Concevoir un thème complet avec décor",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grande fête",
+     "goal": "Gérer une fête de 60 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur référent",
+     "goal": "Former des hôtes et monter des offres",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "restaurant",
+    "bar"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "convivial",
+    "famille",
+    "jeu",
+    "deco"
+   ],
+   "competitors": [
+    "Wedding planners",
+    "Animateurs",
+    "Salles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande régulière et large ; compétence appréciée en soirée entre amis, forte concurrence des prestataires.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-ceremonies-laiques",
+   "name": "Cérémonies laïques : mariage, naissance, hommage",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.perso",
+   "desc": "Écrire et conduire une cérémonie personnalisée : texte, rituel, musique, parole.",
+   "audience": "Couples, familles, officiants amateurs",
+   "skills": [
+    "Écrire un texte",
+    "Choisir un rituel",
+    "Conduire une cérémonie",
+    "Gérer l'émotion"
+   ],
+   "appSkills": [
+    "ceremonies-laiques"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écrire pour une cérémonie",
+     "goal": "Rédiger un texte d'accueil de 3 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Choisir les rituels",
+     "goal": "Concevoir 3 rituels adaptés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conduire une cérémonie",
+     "goal": "Animer une cérémonie de 30 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      125,
+      200
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cérémonies difficiles",
+     "goal": "Mener un hommage ou une naissance avec émotion",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cérémonies",
+     "goal": "Former des officiants",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 5,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "texte",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "fete",
+    "recit",
+    "voix",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Officiants laïques",
+    "Wedding planners"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Marché en croissance, bien rémunéré mais fait par des officiants professionnels ; l'atelier peut former des proches à prendre la parole.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-evjf-evg-organiser",
+   "name": "Organiser un EVJF, un EVG ou une surprise",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.perso",
+   "desc": "Choisir une activité, un lieu et un budget pour un événement collectif.",
+   "audience": "25-40 ans, groupes d'amis",
+   "skills": [
+    "Fixer le budget",
+    "Choisir l'activité",
+    "Répartir les rôles",
+    "Gérer l'imprévu"
+   ],
+   "appSkills": [
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Choisir une idée",
+     "goal": "Sélectionner trois idées selon le groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plan et budget",
+     "goal": "Écrire un plan et un budget de groupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer la surprise",
+     "goal": "Organiser une surprise sans fuites",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Week-end complet",
+     "goal": "Planifier un week-end à 12",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent surprises",
+     "goal": "Former des organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "convivial",
+    "voyage",
+    "jeu",
+    "defi"
+   ],
+   "competitors": [
+    "Agences de loisirs",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande ponctuelle, déjà accaparée par des plateformes de loisirs ; utile comme module d'organisation de groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-sorties-groupe-organiser",
+   "name": "Organiser des sorties en groupe",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.sorties",
+   "desc": "Proposer, inscrire, chiffrer et animer des sorties de 10 à 30 personnes.",
+   "audience": "Associations, collègues, amis, voisins",
+   "skills": [
+    "Choisir une sortie",
+    "Gérer les inscriptions",
+    "Chiffrer",
+    "Animer"
+   ],
+   "appSkills": [
+    "sorties-groupe",
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer",
+     "goal": "Participer à 3 sorties de groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Organiser une petite sortie",
+     "goal": "Proposer et organiser une sortie de 8 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer les inscriptions",
+     "goal": "Gérer budget et réservations pour 20",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sorties régulières",
+     "goal": "Tenir un programme trimestriel",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent sorties",
+     "goal": "Former des organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "voyage",
+    "balade",
+    "solidarite",
+    "plein-air"
+   ],
+   "competitors": [
+    "Meetup",
+    "Clubs de loisirs",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Très recherché, très concurrencé par Meetup et les applications de rencontres ; régime de l'organisation de voyages encadré au-delà d'une sortie à la journée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-supper-club-diners-partages",
+   "name": "Dîners partagés et supper club",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.sorties",
+   "desc": "Cuisiner pour 8, accueillir des inconnus et animer une table.",
+   "audience": "25-45 ans, nouveaux arrivants, célibataires, curieux",
+   "skills": [
+    "Cuisiner pour 8",
+    "Accueillir des inconnus",
+    "Animer une table",
+    "Gérer les allergies"
+   ],
+   "appSkills": [
+    "hospitalite-accueil",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je suis invité",
+     "goal": "Participer à un dîner partagé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Je reçois",
+     "goal": "Cuisiner pour 6 et accueillir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Table d'hôtes",
+     "goal": "Animer une table de 8 inconnus",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Supper club",
+     "goal": "Organiser des soirées régulières avec participation",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent tables",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "domicile",
+    "restaurant",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "parole"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "gourmand",
+    "cuisine-du-monde",
+    "apero",
+    "fete"
+   ],
+   "competitors": [
+    "Plateformes de dîners",
+    "Restaurants",
+    "Meetup"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Forte demande de liens, déjà occupée par plusieurs applications ; la différenciation passe par la qualité d'accueil. Réglementation sanitaire à connaître si vente de repas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-week-end-groupe-organiser",
+   "name": "Organiser un week-end entre amis ou en famille",
+   "sector": "social",
+   "category": "social.evenements",
+   "subcategory": "social.evenements.sorties",
+   "desc": "Choisir lieu et programme, répartir les tâches, gérer le budget commun.",
+   "audience": "25-60 ans, familles, groupes d'amis, associations",
+   "skills": [
+    "Choisir un lieu",
+    "Répartir les tâches",
+    "Partager les frais",
+    "Prévoir les repas"
+   ],
+   "appSkills": [
+    "sorties-groupe",
+    "organisation-voyage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un week-end simple",
+     "goal": "Organiser un week-end à 6 avec budget",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Menus et courses",
+     "goal": "Planifier repas et courses pour 10",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Partage des frais",
+     "goal": "Utiliser une règle de répartition équitable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séjour de 4 jours",
+     "goal": "Gérer un séjour à 15 avec activités",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent séjours",
+     "goal": "Former des organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voyage",
+    "famille",
+    "convivial",
+    "gourmand",
+    "argent"
+   ],
+   "competitors": [
+    "Gîtes",
+    "Agences de séjours"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais très domestique ; peu d'offre payante identifiable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-accueillir-aines-isoles",
+   "name": "Accueillir des personnes âgées isolées",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.aines",
+   "desc": "Accueillir, écouter et animer des rencontres pour rompre l'isolement des aînés.",
+   "audience": "Bénévoles, voisins, étudiants, associations",
+   "skills": [
+    "Accueillir sans juger",
+    "Écouter",
+    "Proposer une activité",
+    "Repérer un besoin"
+   ],
+   "appSkills": [
+    "hospitalite-accueil",
+    "animation-seniors"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une première visite",
+     "goal": "Rendre visite à une personne et créer le lien",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Visites régulières",
+     "goal": "Tenir un rythme de visites et d'activités",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer un goûter",
+     "goal": "Animer un temps collectif de 2 h",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repérer et orienter",
+     "goal": "Reconnaître une fragilité et orienter",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aînés",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "calme",
+    "famille",
+    "recit"
+   ],
+   "competitors": [
+    "Petits Frères des Pauvres",
+    "Mairies",
+    "Associations"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Besoin social massif et en croissance ; très forte envie de s'engager chez les jeunes retraités et étudiants, financement public et associatif plutôt que par les participants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-visites-convivialite",
+   "name": "Visites de convivialité à domicile",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.aines",
+   "desc": "Rendre visite régulièrement à une personne isolée : discussion, jeux, promenade.",
+   "audience": "Bénévoles, étudiants, retraités",
+   "skills": [
+    "Créer la confiance",
+    "Tenir la durée",
+    "Poser des limites",
+    "Signaler"
+   ],
+   "appSkills": [
+    "hospitalite-accueil",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première visite",
+     "goal": "Réaliser une première visite avec un référent",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme régulier",
+     "goal": "Tenir 6 visites consécutives",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Activités à domicile",
+     "goal": "Proposer jeux et sorties",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas fragiles",
+     "goal": "Gérer un décès ou une perte d'autonomie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent visites",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "calme",
+    "convivial",
+    "famille",
+    "recit"
+   ],
+   "competitors": [
+    "Petits Frères des Pauvres",
+    "Monalisa",
+    "Mairies"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Très répandu dans les associations ; bien structuré et encadré, la plateforme apporterait surtout une mise en relation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-numerique-seniors-aide",
+   "name": "Aide numérique pour seniors",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.aines",
+   "desc": "Aider des personnes âgées à utiliser téléphone, tablette, messagerie et démarches en ligne.",
+   "audience": "Étudiants, actifs bénévoles, seniors",
+   "skills": [
+    "Expliquer simplement",
+    "Choisir un rythme",
+    "Sécuriser",
+    "Installer des outils"
+   ],
+   "appSkills": [
+    "mediation-numerique",
+    "animation-seniors"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier smartphone",
+     "goal": "Aider à passer un appel vidéo et à envoyer une photo",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Messagerie et photos",
+     "goal": "Expliquer messagerie et partage de photos",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Démarches en ligne",
+     "goal": "Accompagner une démarche en ligne",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sécurité",
+     "goal": "Prévenir les arnaques",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent numérique",
+     "goal": "Former des médiateurs",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 1,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "solidarite",
+    "calme",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Mairies",
+    "Associations (Emmaüs Connect, Simplon)",
+    "Bibliothèques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin massif et immédiat ; financeurs publics et opérateurs (bibliothèques, France Services) ; le bénévolat de proximité se rend visible en binôme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-soutien-aidants-repit",
+   "name": "Garde de répit et accompagnement des aidants",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.aines",
+   "desc": "Relayer un aidant quelques heures : présence, activités, sortie.",
+   "audience": "Bénévoles, étudiants, aidants",
+   "skills": [
+    "Accueillir",
+    "Proposer une activité",
+    "Gérer un imprévu",
+    "Transmettre"
+   ],
+   "appSkills": [
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une heure de relais",
+     "goal": "Rester une heure avec une personne en présence de l'aidant",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une demi-journée",
+     "goal": "Relayer un aidant pendant une demi-journée",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie accompagnée",
+     "goal": "Organiser une sortie courte",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas difficiles",
+     "goal": "Gérer fatigue et agitation",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent répit",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "parole"
+   ],
+   "outputs": [
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "famille",
+    "soin",
+    "calme"
+   ],
+   "competitors": [
+    "Plateformes de répit",
+    "Associations d'aidants"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Besoin fort mais encadrement de personnes dépendantes : relève de structures agréées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-repair-cafe-animation",
+   "name": "Animer un repair café",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.entraide",
+   "desc": "Accueillir les visiteurs, orienter vers un réparateur, tenir l'atelier et mesurer l'impact.",
+   "audience": "Bénévoles, réparateurs amateurs, associations",
+   "skills": [
+    "Accueillir",
+    "Orienter",
+    "Organiser l'atelier",
+    "Documenter"
+   ],
+   "appSkills": [
+    "repair-cafe-animation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Faire réparer",
+     "goal": "Venir avec un objet et observer le déroulé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accueil et tri",
+     "goal": "Tenir l'accueil et diagnostiquer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser un repair",
+     "goal": "Monter un repair café mensuel",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réseau",
+     "goal": "Fédérer plusieurs repairs",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent repair",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 0,
+    "space": 4,
+    "community": 5,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "recup",
+    "zero-dechet",
+    "convivial",
+    "solidarite"
+   ],
+   "competitors": [
+    "Repair Café France",
+    "Ressourceries",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Mouvement mondial gratuit, forte adhésion, financement par subventions ; peu de revenus individuels.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-aide-alimentaire-frigo-solidaire",
+   "name": "Frigo solidaire et distribution alimentaire",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.entraide",
+   "desc": "Collecter, trier, distribuer en respectant les règles d'hygiène.",
+   "audience": "Bénévoles, commerçants, associations",
+   "skills": [
+    "Collecter",
+    "Respecter la chaîne du froid",
+    "Organiser une distribution",
+    "Accueillir dignement"
+   ],
+   "appSkills": [
+    "aide-alimentaire-solidarite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une distribution",
+     "goal": "Tenir un poste lors d'une distribution",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tri et hygiène",
+     "goal": "Appliquer les règles de la chaîne du froid",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser une collecte",
+     "goal": "Coordonner une collecte avec des commerçants",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Frigo de quartier",
+     "goal": "Installer et gérer un frigo solidaire",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent distribution",
+     "goal": "Former et coordonner des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 0,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "solidarite",
+    "gourmand",
+    "zero-dechet",
+    "convivial"
+   ],
+   "competitors": [
+    "Restos du coeur",
+    "Banques alimentaires",
+    "Frigos solidaires"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Besoin urgent et récurrent, très organisé par de grandes associations ; une plateforme apporte surtout de la coordination.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-francais-accueil-nouveaux-arrivants",
+   "name": "Cafés d'accueil et conversation en français",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.entraide",
+   "desc": "Animer un café-conversation pour migrants et expatriés : parler, s'orienter, se faire des amis.",
+   "audience": "Expatriés, migrants, bénévoles",
+   "skills": [
+    "Animer une conversation",
+    "Orienter",
+    "Brise-glace",
+    "Créer de la confiance"
+   ],
+   "appSkills": [
+    "fle-benevole",
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer",
+     "goal": "Venir parler français en groupe",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer une table",
+     "goal": "Animer une table de conversation",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser un café",
+     "goal": "Organiser un café mensuel",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      9,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Parcours d'accueil",
+     "goal": "Orienter vers logement, emploi et démarches",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent accueil",
+     "goal": "Former des bénévoles",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      7,
+      15
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "expatries",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "solidarite",
+    "convivial",
+    "cafe",
+    "voyage"
+   ],
+   "competitors": [
+    "Associations d'accueil",
+    "Conversations tandem",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin évident, financements publics, mobilisation forte ; faible solvabilité du public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-ecrivain-public",
+   "name": "Écrivain public et aide à la rédaction",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.entraide",
+   "desc": "Aider à rédiger courriers, CV et dossiers : écouter, structurer, écrire clairement.",
+   "audience": "Bénévoles, retraités, personnes en difficulté d'écriture",
+   "skills": [
+    "Écouter le besoin",
+    "Structurer",
+    "Écrire clairement",
+    "Respecter la confidentialité"
+   ],
+   "appSkills": [
+    "ecoute-active",
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Aider à écrire",
+     "goal": "Rédiger un courrier avec une personne",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courriers administratifs",
+     "goal": "Rédiger 3 types de courriers",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dossiers complexes",
+     "goal": "Aider à constituer un dossier",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Permanence",
+     "goal": "Tenir une permanence d'une demi-journée",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent écriture",
+     "goal": "Former des bénévoles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "expatries"
+   ],
+   "senses": [
+    "parole",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "solidarite",
+    "calme",
+    "lecture",
+    "voix"
+   ],
+   "competitors": [
+    "Écrivains publics",
+    "France Services",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin réel (illectronisme, administratif) et grande valeur ajoutée sociale ; faibles revenus mais forte reconnaissance.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-troc-competences-voisins",
+   "name": "Troc de compétences entre voisins",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.voisinage",
+   "desc": "Recenser ses savoirs, proposer un échange, organiser des ateliers de réciprocité.",
+   "audience": "Voisins, résidents, associations",
+   "skills": [
+    "Recenser ses savoirs",
+    "Proposer un échange",
+    "Organiser",
+    "Tenir l'équilibre"
+   ],
+   "appSkills": [
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon offre",
+     "goal": "Lister 3 savoirs à proposer",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier échange",
+     "goal": "Réaliser un troc d'une heure",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      6,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un réseau de quartier",
+     "goal": "Constituer un réseau de 20 personnes",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      9,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Régulation",
+     "goal": "Gérer déséquilibres et conflits",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      9,
+      15
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent réseau",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      10,
+      20
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "maison",
+    "recit"
+   ],
+   "competitors": [
+    "SEL",
+    "Réseaux d'échanges réciproques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Idée ancienne et attrayante, difficile à faire durer ; à intégrer dans une plateforme d'ateliers entre particuliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-reseau-voisins-vigilants",
+   "name": "Réseau d'entraide entre voisins",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.voisinage",
+   "desc": "Constituer un groupe d'entraide dans un immeuble : prêt d'outils, garde, courses.",
+   "audience": "Habitants d'immeuble, locataires, copropriétaires",
+   "skills": [
+    "Créer un groupe",
+    "Fixer des règles",
+    "Organiser un prêt",
+    "Gérer les désaccords"
+   ],
+   "appSkills": [
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dire bonjour",
+     "goal": "Rencontrer 5 voisins et lister des besoins",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Créer le groupe",
+     "goal": "Lancer un groupe de messagerie de voisins",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prêt d'objets",
+     "goal": "Organiser un prêt d'outils",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entraide régulière",
+     "goal": "Tenir un réseau actif pendant un an",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent voisinage",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "maison",
+    "convivial",
+    "recup",
+    "calme"
+   ],
+   "competitors": [
+    "Nextdoor",
+    "Smiile",
+    "Voisins solidaires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte demande de lien ; plateformes concurrentes, peu de revenus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-accueillir-nouvel-arrivant",
+   "name": "Accueillir un nouvel arrivant ou un expatrié",
+   "sector": "social",
+   "category": "social.solidarite",
+   "subcategory": "social.solidarite.voisinage",
+   "desc": "Guider, présenter, faire découvrir le quartier et les usages locaux.",
+   "audience": "Habitants, expatriés, nouveaux voisins",
+   "skills": [
+    "Accueillir",
+    "Présenter le quartier",
+    "Expliquer les usages",
+    "Inviter"
+   ],
+   "appSkills": [
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier accueil",
+     "goal": "Recevoir un nouvel arrivant pour un café",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Découverte du quartier",
+     "goal": "Faire découvrir 5 lieux utiles",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Usages locaux",
+     "goal": "Expliquer règles et codes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réseau de bienvenue",
+     "goal": "Organiser un comité d'accueil",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent accueil",
+     "goal": "Former des hôtes",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "expatries",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "voyage",
+    "cafe",
+    "langue"
+   ],
+   "competitors": [
+    "InterNations",
+    "Associations d'accueil",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très apprécié des expatriés (qui paient peu), efficace avec les communautés locales ; lien naturel avec les ateliers de découverte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-creer-association",
+   "name": "Créer et lancer une association",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.gestion",
+   "desc": "Statuts, bureau, déclaration, premiers financements : monter son association loi 1901.",
+   "audience": "Porteurs de projets, collectifs, bénévoles",
+   "skills": [
+    "Rédiger des statuts",
+    "Déclarer en préfecture",
+    "Ouvrir un compte",
+    "Faire adhérer"
+   ],
+   "appSkills": [
+    "gestion-association"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon projet",
+     "goal": "Définir objet, public et moyens de l'association",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Statuts et déclaration",
+     "goal": "Rédiger statuts et déclarer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Premiers mois",
+     "goal": "Ouvrir un compte et recruter 10 adhérents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Obligations",
+     "goal": "Tenir comptabilité simple et assemblée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent création",
+     "goal": "Accompagner des projets et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "argent",
+    "recit",
+    "convivial",
+    "voix"
+   ],
+   "competitors": [
+    "Maisons des associations",
+    "Points d'appui à la vie associative"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin ponctuel et très accompagné ; ateliers gratuits en maisons des associations, le payant se limite à l'accompagnement approfondi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-tresorerie-association",
+   "name": "Trésorerie et comptabilité d'association",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.gestion",
+   "desc": "Tenir un budget, un livre de comptes, un bilan et préparer l'assemblée générale.",
+   "audience": "Trésoriers bénévoles, présidents",
+   "skills": [
+    "Tenir un livre de comptes",
+    "Faire un bilan",
+    "Préparer un budget",
+    "Gérer les justificatifs"
+   ],
+   "appSkills": [
+    "gestion-association",
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Livre de comptes",
+     "goal": "Tenir une comptabilité simple sur un tableur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Budget prévisionnel",
+     "goal": "Construire un budget annuel",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bilan et assemblée",
+     "goal": "Produire un bilan clair pour l'AG",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Subventions",
+     "goal": "Justifier une subvention",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent trésorerie",
+     "goal": "Former des trésoriers",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "solidarite",
+    "calme",
+    "maison"
+   ],
+   "competitors": [
+    "Maisons des associations",
+    "Experts-comptables"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin récurrent et réel chez des milliers de petites associations ; offre de formation à petits prix.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-assemblee-generale-asso",
+   "name": "Préparer et tenir une assemblée générale",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.gestion",
+   "desc": "Convocations, quorum, votes, procès-verbal et bilan d'une AG.",
+   "audience": "Présidents, secrétaires, bénévoles",
+   "skills": [
+    "Convoquer",
+    "Respecter le quorum",
+    "Animer un vote",
+    "Rédiger un procès-verbal"
+   ],
+   "appSkills": [
+    "gestion-association",
+    "facilitation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Calendrier d'une AG",
+     "goal": "Planifier une AG sur 6 semaines",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Documents",
+     "goal": "Rédiger convocation, rapport et PV",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer le jour J",
+     "goal": "Conduire une AG de 2 h",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "AG à distance",
+     "goal": "Organiser une AG numérique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent gouvernance associative",
+     "goal": "Former des bureaux",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "recit",
+    "voix",
+    "argent",
+    "calme"
+   ],
+   "competitors": [
+    "Fédérations d'associations",
+    "Maisons des associations"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin saisonnier et ciblé ; à inclure à des ateliers de gestion associative.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-subventions-financements",
+   "name": "Trouver des financements pour son association",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.gestion",
+   "desc": "Subventions, appels à projets, mécénat, cotisations : bâtir son modèle économique.",
+   "audience": "Porteurs de projets, associations",
+   "skills": [
+    "Cartographier les financeurs",
+    "Rédiger un dossier",
+    "Argumenter un impact",
+    "Rendre des comptes"
+   ],
+   "appSkills": [
+    "financement-participatif",
+    "gestion-association"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les sources",
+     "goal": "Lister 10 sources de financement possibles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un dossier de subvention",
+     "goal": "Rédiger un dossier de 5 pages",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Appels à projets",
+     "goal": "Répondre à un appel à projets",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan de financement",
+     "goal": "Bâtir un plan à 3 ans",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent financement",
+     "goal": "Former des porteurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "solidarite",
+    "ecriture",
+    "strategie",
+    "recit"
+   ],
+   "competitors": [
+    "Cabinets de conseil",
+    "Fondations",
+    "Collectivités"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin clé et récurrent, forte propension à payer pour de l'expertise ; concurrence de consultants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-coordination-benevoles",
+   "name": "Coordonner des bénévoles",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.benevoles",
+   "desc": "Recruter, accueillir, former, motiver et fidéliser des bénévoles.",
+   "audience": "Responsables de bénévoles, associations, collectivités",
+   "skills": [
+    "Accueillir un bénévole",
+    "Définir des missions",
+    "Reconnaître",
+    "Gérer les départs"
+   ],
+   "appSkills": [
+    "gestion-benevoles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Accueillir",
+     "goal": "Mener un premier entretien avec un bénévole",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Définir des missions",
+     "goal": "Rédiger 5 fiches de mission",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer une équipe",
+     "goal": "Tenir une équipe de 15 bénévoles",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fidéliser",
+     "goal": "Mettre en place une politique de reconnaissance",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bénévolat",
+     "goal": "Former des coordinateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "recit",
+    "voix",
+    "calme"
+   ],
+   "competitors": [
+    "France Bénévolat",
+    "Associations",
+    "Conseil"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin fort et récurrent ; formation par fédérations, intérêt grandissant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-mecenat-competences",
+   "name": "Mécénat de compétences pour associations",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.benevoles",
+   "desc": "Diagnostiquer un besoin d'une association, transmettre et suivre un projet pro bono.",
+   "audience": "Salariés, indépendants, associations",
+   "skills": [
+    "Diagnostiquer un besoin",
+    "Cadrer une mission",
+    "Transmettre",
+    "Suivre"
+   ],
+   "appSkills": [
+    "mentorat",
+    "gestion-benevoles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une première mission",
+     "goal": "Réaliser une mission de 3 h pour une association",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Diagnostic",
+     "goal": "Cadrer le besoin d'une association en 1 h",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet de 4 semaines",
+     "goal": "Mener une mission de 4 semaines",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Équipe de projet",
+     "goal": "Piloter plusieurs bénévoles de compétences",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pro bono",
+     "goal": "Former des consultants bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 0,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "tech",
+    "argent",
+    "ecriture",
+    "strategie"
+   ],
+   "competitors": [
+    "Bénévoles de compétences",
+    "Associations de skills-based volunteering"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Gisement de compétences à connecter avec des associations ; faible rémunération mais bons relais en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-accueil-nouveaux-benevoles",
+   "name": "Accueillir et intégrer de nouveaux bénévoles",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.benevoles",
+   "desc": "Premier contact, parcours d'intégration, tutorat, suivi.",
+   "audience": "Associations, collectifs, tiers-lieux",
+   "skills": [
+    "Accueillir",
+    "Présenter l'association",
+    "Tutorer",
+    "Suivre"
+   ],
+   "appSkills": [
+    "gestion-benevoles",
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Accueillir",
+     "goal": "Mener un accueil de 30 min avec visite",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Parcours d'intégration",
+     "goal": "Écrire un parcours de 3 mois",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tutorat",
+     "goal": "Accompagner un nouveau pendant 1 mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Culture commune",
+     "goal": "Animer une journée d'intégration",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent accueil",
+     "goal": "Former des tuteurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "voix",
+    "calme",
+    "recit"
+   ],
+   "competitors": [
+    "Associations",
+    "Fédérations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais très diffus ; à intégrer dans une offre de coordination de bénévoles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-plaidoyer-mobilisation",
+   "name": "Plaidoyer et mobilisation citoyenne",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.mobilisation",
+   "desc": "Concevoir une campagne, écrire à des élus, mobiliser une communauté.",
+   "audience": "Militants, associations, collectifs, étudiants",
+   "skills": [
+    "Définir un objectif",
+    "Écrire à un élu",
+    "Mobiliser",
+    "Mesurer"
+   ],
+   "appSkills": [
+    "plaidoyer-mobilisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon sujet",
+     "goal": "Définir un objectif de campagne clair",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Interpeller un élu",
+     "goal": "Rédiger une lettre et préparer un rendez-vous",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Campagne de 3 mois",
+     "goal": "Planifier une campagne complète",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Alliances et médias",
+     "goal": "Constituer des alliances et placer un article",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent plaidoyer",
+     "goal": "Former des militants",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "solidarite",
+    "recit",
+    "voix",
+    "ecriture",
+    "strategie"
+   ],
+   "competitors": [
+    "Ligues",
+    "ONG",
+    "Collectifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt fort chez des publics militants, peu de formation accessible ; financement limité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-financement-participatif",
+   "name": "Financement participatif et collecte",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.mobilisation",
+   "desc": "Monter une campagne de crowdfunding : message, récompenses, communication, suivi.",
+   "audience": "Porteurs de projets, associations, artistes",
+   "skills": [
+    "Définir un objectif",
+    "Écrire une page",
+    "Choisir des contreparties",
+    "Mobiliser son réseau"
+   ],
+   "appSkills": [
+    "financement-participatif"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon projet",
+     "goal": "Définir un objectif de collecte réaliste",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma page de campagne",
+     "goal": "Rédiger une page persuasive",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Contreparties",
+     "goal": "Concevoir 5 contreparties",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Campagne complète",
+     "goal": "Mener une campagne de 30 jours",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent crowdfunding",
+     "goal": "Former des porteurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "recit",
+    "ecriture",
+    "video",
+    "strategie"
+   ],
+   "competitors": [
+    "Plateformes de crowdfunding",
+    "Agences"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin récurrent de porteurs de projets, plateformes avec ressources gratuites ; valeur dans l'accompagnement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-communication-associative",
+   "name": "Communication associative",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.mobilisation",
+   "desc": "Message, affiche, réseaux, newsletter, presse locale : se faire connaître sans budget.",
+   "audience": "Associations, collectifs, bénévoles",
+   "skills": [
+    "Définir un message",
+    "Faire une affiche",
+    "Gérer un réseau social",
+    "Écrire à la presse"
+   ],
+   "appSkills": [
+    "communication-associative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dire qui nous sommes",
+     "goal": "Écrire un message de présentation de 3 phrases",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Affiche et flyer",
+     "goal": "Concevoir une affiche lisible",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réseaux et newsletter",
+     "goal": "Planifier un mois de publications",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Presse et partenaires",
+     "goal": "Rédiger un communiqué",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent communication",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "dessin",
+    "photo",
+    "video",
+    "solidarite"
+   ],
+   "competitors": [
+    "Agences",
+    "Maisons des associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin universel dans les associations, avec un budget très limité ; recoupe formation numérique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-democratie-participative-locale",
+   "name": "Démocratie participative : conseil de quartier, budget participatif",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.mobilisation",
+   "desc": "Comprendre et utiliser les outils de participation locale : consultations, conseils, budgets participatifs.",
+   "audience": "Habitants engagés, élus, associations",
+   "skills": [
+    "Comprendre les instances",
+    "Déposer un projet",
+    "Mobiliser des voisins",
+    "Suivre un budget"
+   ],
+   "appSkills": [
+    "plaidoyer-mobilisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comment ça marche",
+     "goal": "Comprendre conseils et budgets participatifs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Déposer un projet",
+     "goal": "Rédiger et déposer un projet au budget participatif",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mobiliser pour voter",
+     "goal": "Organiser une campagne de soutien",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivre la réalisation",
+     "goal": "Suivre un projet jusqu'à sa livraison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent participation",
+     "goal": "Former des habitants",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "ville",
+    "recit",
+    "voix",
+    "strategie"
+   ],
+   "competitors": [
+    "Mairies",
+    "Plateformes de participation"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Bien soutenu par les collectivités mais audience faible ; à relier aux fêtes de quartier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-education-populaire-initier",
+   "name": "Éducation populaire : monter un cycle de conférences et d'ateliers",
+   "sector": "social",
+   "category": "social.associations",
+   "subcategory": "social.associations.mobilisation",
+   "desc": "Concevoir un programme d'éducation populaire dans un lieu : thèmes, intervenants, animation.",
+   "audience": "Associations, tiers-lieux, bibliothèques",
+   "skills": [
+    "Définir des thèmes",
+    "Inviter des intervenants",
+    "Animer",
+    "Évaluer"
+   ],
+   "appSkills": [
+    "animation-de-groupe",
+    "organisation-evenements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer",
+     "goal": "Suivre un cycle et noter les ressorts",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Concevoir une soirée",
+     "goal": "Organiser une soirée de conférence-débat",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      8,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Programmer un trimestre",
+     "goal": "Construire un programme de 6 soirées",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Évaluer",
+     "goal": "Mesurer participation et impact",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent programmation",
+     "goal": "Former des programmateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 1,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "voix",
+    "lecture",
+    "convivial",
+    "solidarite"
+   ],
+   "competitors": [
+    "Universités populaires",
+    "Ligue de l'enseignement",
+    "Bibliothèques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Complément naturel d'un lieu animé ; modèle économique principalement subventionné.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animer-club-de-pratique",
+   "name": "Animer un club ou cercle de pratique",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.rencontres",
+   "desc": "Lancer un cercle régulier autour d'une passion : règles, rythme, accueil, durée.",
+   "audience": "Passionnés, animateurs de clubs, associations",
+   "skills": [
+    "Choisir un rythme",
+    "Accueillir",
+    "Garder la motivation",
+    "Gérer les niveaux"
+   ],
+   "appSkills": [
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer à un cercle",
+     "goal": "Participer à 3 rencontres d'un cercle",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer une séance",
+     "goal": "Mener une séance de cercle",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lancer un cercle",
+     "goal": "Lancer un cercle de 8 membres",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Faire durer",
+     "goal": "Tenir un cercle pendant 12 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cercles",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 1,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "librairie",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "convivial",
+    "recit",
+    "voix",
+    "cafe",
+    "jeu"
+   ],
+   "competitors": [
+    "Meetup",
+    "Clubs associatifs",
+    "Cafés"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Brique de base du modèle de salons récurrents ; faible rémunération unitaire mais cumulable et sociale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-communaute-locale-en-ligne",
+   "name": "Créer et animer une communauté locale en ligne",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.rencontres",
+   "desc": "Groupe de messagerie ou forum d'un quartier : règles, modération, événements.",
+   "audience": "Habitants, associations, commerçants",
+   "skills": [
+    "Fixer des règles",
+    "Modérer",
+    "Animer",
+    "Transformer en rencontres"
+   ],
+   "appSkills": [
+    "communication-associative",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je lance un groupe",
+     "goal": "Créer un groupe avec une charte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Modérer",
+     "goal": "Gérer 3 situations de tension",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer au quotidien",
+     "goal": "Publier et susciter des échanges",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Passer au réel",
+     "goal": "Organiser 3 rencontres issues du groupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent communauté",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "solidarite",
+    "recit",
+    "convivial",
+    "ia"
+   ],
+   "competitors": [
+    "Réseaux sociaux",
+    "Plateformes de voisinage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Compétence recherchée et utile ; compétition avec de grands réseaux ; important pour amener des participants vers le présentiel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-soiree-rencontre-inconnus",
+   "name": "Organiser des soirées pour rencontrer des inconnus",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.rencontres",
+   "desc": "Concevoir des soirées de rencontre sans drague : jeux, tables, mélanges de profils.",
+   "audience": "25-40 ans, nouveaux arrivants, célibataires, curieux",
+   "skills": [
+    "Concevoir un format",
+    "Mixer les profils",
+    "Accueillir",
+    "Briser la glace"
+   ],
+   "appSkills": [
+    "hospitalite-accueil",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer",
+     "goal": "Vivre une soirée et noter les mécanismes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer",
+     "goal": "Animer une soirée de 2 h",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Concevoir un format",
+     "goal": "Écrire un format de soirée et le tester",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lancer une série",
+     "goal": "Tenir 6 soirées avec mêmes participants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent rencontres",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "apero",
+    "jeu",
+    "fete",
+    "cafe"
+   ],
+   "competitors": [
+    "Timeleft",
+    "Meetup",
+    "Bars"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande de fond très forte et marché concurrentiel (applications de dîners avec inconnus) ; rentabilité par le lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-cercle-parents-echange",
+   "name": "Cercle d'échange entre parents",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.parentalite",
+   "desc": "Animer un groupe de parole de parents : sujets, règles de bienveillance, partage d'expériences.",
+   "audience": "Jeunes parents, parents d'ados",
+   "skills": [
+    "Poser un cadre",
+    "Distribuer la parole",
+    "Éviter les conseils non demandés",
+    "Orienter"
+   ],
+   "appSkills": [
+    "ecoute-active",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Participer",
+     "goal": "Participer à un cercle de parents",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer une séance",
+     "goal": "Mener un cercle de 2 h",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 6 séances",
+     "goal": "Tenir un cycle thématique",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas sensibles",
+     "goal": "Gérer émotions et situations délicates",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent parentalité",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 1,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "solidarite",
+    "voix",
+    "convivial",
+    "calme"
+   ],
+   "competitors": [
+    "Lieux d'accueil parents-enfants",
+    "Associations de parents"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin social fort, offre souvent subventionnée ; propension à payer faible mais engagement élevé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-partage-garde-parents",
+   "name": "Entraide entre parents : garde partagée et covoiturage",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.parentalite",
+   "desc": "Organiser des échanges de garde, trajets et sorties entre parents d'un quartier.",
+   "audience": "Parents de 0-12 ans",
+   "skills": [
+    "Créer un réseau",
+    "Fixer des règles de confiance",
+    "Organiser",
+    "Gérer les imprévus"
+   ],
+   "appSkills": [
+    "hospitalite-accueil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rencontrer",
+     "goal": "Participer à une rencontre de parents du quartier",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier échange",
+     "goal": "Organiser une garde ou un trajet partagés",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réseau actif",
+     "goal": "Constituer un réseau de 10 familles",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Règles et confiance",
+     "goal": "Définir un cadre de sécurité",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent entraide parentale",
+     "goal": "Former des coordinateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "solidarite",
+    "maison",
+    "convivial"
+   ],
+   "competitors": [
+    "Groupes de parents",
+    "Crèches parentales"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Demande réelle, réglementation autour de la garde d'enfants (même gratuite) et de l'assurance à étudier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-cafe-associatif",
+   "name": "Monter et animer un café associatif",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.lieux",
+   "desc": "Programmer, accueillir, tenir la caisse et l'équipe de bénévoles d'un café de quartier.",
+   "audience": "Collectifs, habitants, associations",
+   "skills": [
+    "Concevoir un projet",
+    "Tenir l'accueil",
+    "Programmer",
+    "Équilibrer les comptes"
+   ],
+   "appSkills": [
+    "organisation-evenements",
+    "gestion-association"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un service de bénévole",
+     "goal": "Tenir un service de café",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accueillir et programmer",
+     "goal": "Organiser une soirée par mois",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer un lieu",
+     "goal": "Tenir un budget mensuel",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Modèle économique",
+     "goal": "Équilibrer les comptes d'un café associatif",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent café associatif",
+     "goal": "Former des collectifs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      35,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 2,
+    "cost": 2,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "cafe",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cafe",
+    "convivial",
+    "solidarite",
+    "fete",
+    "gourmand"
+   ],
+   "competitors": [
+    "Réseaux de cafés associatifs",
+    "Tiers-lieux"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Très attractif, modèle économique fragile ; licence de débit de boissons à étudier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-animer-tiers-lieu",
+   "name": "Animer un tiers-lieu",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.lieux",
+   "desc": "Faire vivre un lieu hybride (atelier, coworking, café) : communauté, programmation, finances.",
+   "audience": "Gestionnaires de tiers-lieux, collectifs, mairies",
+   "skills": [
+    "Définir une communauté",
+    "Programmer",
+    "Faire vivre un réseau",
+    "Tenir un budget"
+   ],
+   "appSkills": [
+    "organisation-evenements",
+    "gestion-association"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Fréquenter un tiers-lieu",
+     "goal": "Participer à 3 événements et observer",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer un événement",
+     "goal": "Organiser un atelier ouvert",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Programmer une saison",
+     "goal": "Construire une saison de 3 mois",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Équilibrer le modèle",
+     "goal": "Tenir budget et partenaires",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent tiers-lieu",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "tech",
+    "fabrication",
+    "cafe"
+   ],
+   "competitors": [
+    "Réseau des tiers-lieux",
+    "France Tiers-Lieux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Écosystème en croissance, soutenu par l'État ; bon débouché pour des ateliers récurrents.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "social-coworking-convivial",
+   "name": "Coworking convivial et rituels de communauté",
+   "sector": "social",
+   "category": "social.communautes",
+   "subcategory": "social.communautes.lieux",
+   "desc": "Instaurer déjeuners, présentations et entraide dans un espace de travail partagé.",
+   "audience": "Gérants d'espaces, indépendants, salariés",
+   "skills": [
+    "Mettre en place des rituels",
+    "Faciliter les rencontres",
+    "Animer",
+    "Mesurer"
+   ],
+   "appSkills": [
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rituel de bienvenue",
+     "goal": "Mettre en place un accueil des nouveaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Déjeuners et afterworks",
+     "goal": "Animer 3 rencontres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entraide",
+     "goal": "Mettre en place un échange de compétences",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Calendrier",
+     "goal": "Construire une programmation trimestrielle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent communauté",
+     "goal": "Former des gérants",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "convivial",
+    "tech",
+    "solidarite",
+    "apero",
+    "voix"
+   ],
+   "competitors": [
+    "Espaces de coworking",
+    "Réseaux d'indépendants"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché B2B de niche, plus lent ; peut compléter une offre de tiers-lieu.",
+   "confidence": "estimation"
+  }
+ ]
+}

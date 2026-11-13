@@ -1,0 +1,8145 @@
+{
+ "sector": "pratique",
+ "categories": [
+  {
+   "id": "pratique.argent",
+   "name": "Argent et budget",
+   "desc": "Maîtriser ses dépenses, épargner, comprendre impôts et assurances.",
+   "subcategories": [
+    {
+     "id": "pratique.argent.budget",
+     "name": "Budget et dépenses",
+     "desc": "Savoir où part l'argent et reprendre la main."
+    },
+    {
+     "id": "pratique.argent.epargne",
+     "name": "Épargne et placements",
+     "desc": "Épargner, investir prudemment, préparer retraite et achat."
+    },
+    {
+     "id": "pratique.argent.fiscalite",
+     "name": "Impôts, assurances et statuts",
+     "desc": "Comprendre les règles du jeu fiscales et contractuelles."
+    }
+   ]
+  },
+  {
+   "id": "pratique.admin",
+   "name": "Démarches et droits du quotidien",
+   "desc": "Venir à bout des formalités, connaître ses droits et se protéger en ligne.",
+   "subcategories": [
+    {
+     "id": "pratique.admin.demarches",
+     "name": "Démarches administratives",
+     "desc": "Faire ses papiers sans stress."
+    },
+    {
+     "id": "pratique.admin.droits",
+     "name": "Droits du quotidien",
+     "desc": "Locataire, consommateur, salarié, héritier : connaître ses droits."
+    },
+    {
+     "id": "pratique.admin.securite-numerique",
+     "name": "Sécurité numérique du quotidien",
+     "desc": "Se protéger des arnaques et gérer ses accès."
+    }
+   ]
+  },
+  {
+   "id": "pratique.conso",
+   "name": "Négociation et consommation",
+   "desc": "Acheter, vendre, troquer et négocier avec méthode.",
+   "subcategories": [
+    {
+     "id": "pratique.conso.negociation",
+     "name": "Négocier",
+     "desc": "Obtenir de meilleures conditions sans conflit."
+    },
+    {
+     "id": "pratique.conso.occasion",
+     "name": "Occasion, troc et dons",
+     "desc": "Acheter et vendre d'occasion sans se faire avoir."
+    },
+    {
+     "id": "pratique.conso.achats",
+     "name": "Achats et courses malins",
+     "desc": "Comparer, garantir et ne pas gaspiller."
+    }
+   ]
+  },
+  {
+   "id": "pratique.secours",
+   "name": "Secours et prévention",
+   "desc": "Réagir en cas d'accident et prévenir les risques chez soi.",
+   "subcategories": [
+    {
+     "id": "pratique.secours.gestes",
+     "name": "Gestes de secours",
+     "desc": "Premiers gestes qui sauvent, pour adultes, enfants et en sortie."
+    },
+    {
+     "id": "pratique.secours.prevention",
+     "name": "Prévention et urgence",
+     "desc": "Prévenir incendie, accidents et situations de crise."
+    }
+   ]
+  },
+  {
+   "id": "pratique.organisation",
+   "name": "Organisation, apprentissage et carrière",
+   "desc": "Organiser sa vie, apprendre efficacement et piloter son parcours pro.",
+   "subcategories": [
+    {
+     "id": "pratique.organisation.perso",
+     "name": "Organisation personnelle",
+     "desc": "Temps, rangement, déménagement."
+    },
+    {
+     "id": "pratique.organisation.apprendre",
+     "name": "Apprendre à apprendre",
+     "desc": "Mémoire et méthodes d'étude."
+    },
+    {
+     "id": "pratique.organisation.carriere",
+     "name": "Carrière et emploi",
+     "desc": "CV, entretien, reconversion."
+    }
+   ]
+  },
+  {
+   "id": "pratique.maison-sobre",
+   "name": "Maison sobre et durable",
+   "desc": "Dépenser moins, jeter moins, consommer moins d'énergie chez soi.",
+   "subcategories": [
+    {
+     "id": "pratique.maison-sobre.zero-dechet",
+     "name": "Zéro déchet",
+     "desc": "Réduire ses déchets à la maison."
+    },
+    {
+     "id": "pratique.maison-sobre.energie",
+     "name": "Énergie et factures",
+     "desc": "Comprendre et réduire consommation et factures."
+    },
+    {
+     "id": "pratique.maison-sobre.entretien",
+     "name": "Entretien du logement et du linge",
+     "desc": "Entretenir sans produits coûteux."
+    }
+   ]
+  },
+  {
+   "id": "pratique.mobilite",
+   "name": "Mobilité et voyage",
+   "desc": "Se déplacer avec sûreté et économie, préparer ses voyages.",
+   "subcategories": [
+    {
+     "id": "pratique.mobilite.voiture",
+     "name": "Voiture",
+     "desc": "Entretien et conduite."
+    },
+    {
+     "id": "pratique.mobilite.velo-ville",
+     "name": "Vélo et ville",
+     "desc": "Circuler à vélo et en ville en sécurité."
+    },
+    {
+     "id": "pratique.mobilite.voyage",
+     "name": "Voyage",
+     "desc": "Préparer, financer et vivre un voyage."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "pratique-budget-perso-epargne",
+   "name": "Budget perso et épargne",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.budget",
+   "desc": "Cartographier ses dépenses, fixer un reste à vivre et automatiser une épargne.",
+   "audience": "25-45 ans, jeunes actifs, couples, étudiants",
+   "skills": [
+    "Catégoriser ses dépenses",
+    "Calculer son reste à vivre",
+    "Fixer un objectif d'épargne",
+    "Automatiser"
+   ],
+   "appSkills": [
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Où part mon argent ?",
+     "goal": "Classer 3 mois de dépenses en grandes catégories",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon budget mensuel",
+     "goal": "Construire un budget avec reste à vivre et marge",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Épargne automatique",
+     "goal": "Mettre en place un virement d'épargne et un objectif",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Budget de projet",
+     "goal": "Planifier un voyage ou un achat important sur 12 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent budget",
+     "goal": "Animer des ateliers et accompagner d'autres budgets",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "defi",
+    "convivial"
+   ],
+   "competitors": [
+    "Banques (webinaires)",
+    "Applis de budget",
+    "Associations de crédit"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin universel et récurrent, prise de conscience forte depuis l'inflation ; offre gratuite des banques mais peu personnalisée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-budget-couple-colocation",
+   "name": "Budget en couple ou en colocation",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.budget",
+   "desc": "Partager les dépenses équitablement, définir un compte commun et éviter les tensions.",
+   "audience": "Couples, colocataires, jeunes familles",
+   "skills": [
+    "Choisir un partage",
+    "Compte commun ou proportionnel",
+    "Dépenses de projet",
+    "Parler d'argent"
+   ],
+   "appSkills": [
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Parler d'argent à deux",
+     "goal": "Poser à plat revenus et charges et se mettre d'accord sur des règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Partage équitable",
+     "goal": "Choisir une règle (égal, proportionnel) et la mettre en application",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Compte commun",
+     "goal": "Organiser comptes, virements et suivi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projets communs",
+     "goal": "Planifier achat, voyage ou enfant avec une trajectoire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent budget de couple",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "couple",
+    "maison",
+    "convivial",
+    "calme"
+   ],
+   "competitors": [
+    "Applis de partage",
+    "Conseillers conjugaux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt fort et sensible ; format atelier rendu à deux, avec pudeur. Frein : sujet intime.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-argent-et-enfants",
+   "name": "Argent de poche et éducation financière des enfants",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.budget",
+   "desc": "Apprendre aux 6-16 ans à épargner, dépenser et reconnaître la valeur de l'argent.",
+   "audience": "Parents d'enfants 6-16 ans, grands-parents, enseignants",
+   "skills": [
+    "Fixer un argent de poche",
+    "Faire épargner",
+    "Expliquer un achat",
+    "Jeux de rôle"
+   ],
+   "appSkills": [
+    "budget-perso",
+    "animation-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sous",
+     "goal": "Mettre en place un argent de poche et un tirelire projet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dépenser ou épargner ?",
+     "goal": "Jouer un marché pour comprendre un arbitrage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ado et carte bancaire",
+     "goal": "Choisir un compte jeune et les règles d'usage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet d'ado",
+     "goal": "Aider un ado à financer un projet en 3 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur éducation financière",
+     "goal": "Former des parents-hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "enfants",
+    "ados"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "famille",
+    "jeu",
+    "calme",
+    "maison"
+   ],
+   "competitors": [
+    "Banques (livrets jeunes)",
+    "Finances pour tous"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Bonne porte d'entrée parents, mais l'éducation financière scolaire se développe ; public réceptif aux ateliers courts.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-sortir-decouvert-credits",
+   "name": "Maîtriser son découvert et ses crédits",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.budget",
+   "desc": "Comprendre les crédits, éviter les frais bancaires et sortir d'un découvert chronique.",
+   "audience": "25-55 ans, ménages modestes, jeunes actifs",
+   "skills": [
+    "Lire un taux",
+    "Négocier ses frais",
+    "Rembourser par priorité",
+    "Savoir où demander de l'aide"
+   ],
+   "appSkills": [
+    "budget-perso",
+    "assurances-comprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre mon découvert",
+     "goal": "Identifier frais, agios et coût réel des crédits",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réduire les frais",
+     "goal": "Négocier ou changer d'offre bancaire pour réduire les frais",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de remboursement",
+     "goal": "Construire un échéancier prioritaire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Savoir demander de l'aide",
+     "goal": "Contacter un point conseil budget ou la Banque de France",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent budget solidaire",
+     "goal": "Former des bénévoles et accompagner des cas",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "solidarite",
+    "maison",
+    "calme"
+   ],
+   "competitors": [
+    "Points conseil budget",
+    "Crésus",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin réel, souvent chez des publics fragiles qui paient peu ; accompagnement à articuler avec des structures sociales (aucun conseil juridique).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-epargne-livrets",
+   "name": "Épargne de précaution et livrets",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.epargne",
+   "desc": "Choisir entre livrets, assurance-vie et dépôts selon l'objectif et l'horizon.",
+   "audience": "25-60 ans, premiers épargnants, jeunes parents",
+   "skills": [
+    "Calculer son matelas",
+    "Comparer des livrets",
+    "Comprendre l'inflation",
+    "Éviter les frais"
+   ],
+   "appSkills": [
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon matelas",
+     "goal": "Calculer 3 à 6 mois de dépenses et un plan pour l'atteindre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Livrets et dépôts",
+     "goal": "Comparer 3 supports selon taux, plafond et liquidité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Assurance-vie",
+     "goal": "Expliquer fonds euros, unités de compte et fiscalité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan d'épargne",
+     "goal": "Bâtir une allocation simple selon objectifs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent épargne",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "defi"
+   ],
+   "competitors": [
+    "Banques",
+    "Influenceurs finance",
+    "Conseillers indépendants"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public large mais sensible : rester sur l'éducation financière, sans conseil personnalisé ni recommandation de produit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-investir-etf-debutant",
+   "name": "Investir en bourse pour débutants (ETF)",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.epargne",
+   "desc": "Comprendre actions, ETF, frais et risques ; enveloppes PEA et assurance-vie.",
+   "audience": "25-45 ans, jeunes actifs, indépendants",
+   "skills": [
+    "Comprendre un ETF",
+    "Choisir une enveloppe",
+    "Mesurer le risque",
+    "Éviter les arnaques"
+   ],
+   "appSkills": [
+    "investissement-debutant"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas",
+     "goal": "Expliquer action, ETF et diversification",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Enveloppes et frais",
+     "goal": "Comparer PEA, compte-titres et assurance-vie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Horizon et risque",
+     "goal": "Construire une règle simple de versements réguliers",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Éviter les pièges",
+     "goal": "Reconnaître produits complexes et arnaques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent investissement",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 2,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "science",
+    "calme",
+    "tech",
+    "strategie"
+   ],
+   "competitors": [
+    "Influenceurs boursiers",
+    "Courtiers en ligne",
+    "Banques"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Forte demande mais conseil en investissement réglementé (AMF) : atelier pédagogique uniquement, jamais de recommandation de produit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-retraite-comprendre",
+   "name": "Comprendre sa retraite",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.epargne",
+   "desc": "Lire son relevé de carrière, anticiper trimestres, rachats et départ.",
+   "audience": "45-62 ans, salariés et indépendants",
+   "skills": [
+    "Lire un relevé de carrière",
+    "Compter les trimestres",
+    "Simuler",
+    "Préparer le départ"
+   ],
+   "appSkills": [
+    "budget-perso",
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon relevé",
+     "goal": "Lire son relevé de carrière et repérer les erreurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trimestres et âge",
+     "goal": "Comprendre régimes de base et complémentaires",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Simulation",
+     "goal": "Utiliser les simulateurs et estimer sa pension",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Préparer le départ",
+     "goal": "Planifier les démarches 6 mois avant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent retraite",
+     "goal": "Accompagner des cas et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "lecture"
+   ],
+   "competitors": [
+    "Info Retraite",
+    "Agirc-Arrco",
+    "Conseillers"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin évident chez les 50+, offre de réunions institutionnelles ; l'accompagnement individualisé est un service de professionnels.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-acheter-premier-logement",
+   "name": "Acheter son premier logement : les étapes",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.epargne",
+   "desc": "Budget, prêt, visite, compromis, notaire : comprendre le parcours d'achat.",
+   "audience": "25-40 ans, jeunes couples, primo-accédants",
+   "skills": [
+    "Calculer sa capacité",
+    "Comparer des offres de prêt",
+    "Visiter et vérifier",
+    "Comprendre les frais"
+   ],
+   "appSkills": [
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Suis-je prêt ?",
+     "goal": "Calculer capacité d'emprunt et apport nécessaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Le prêt",
+     "goal": "Comparer taux, durée et assurance de deux offres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Visiter et vérifier",
+     "goal": "Utiliser une grille de visite et repérer 10 défauts",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Du compromis à la vente",
+     "goal": "Comprendre les étapes, délais et frais de notaire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent premier achat",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "parents"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "couple",
+    "deco",
+    "calme"
+   ],
+   "competitors": [
+    "Banques",
+    "Courtiers",
+    "Agences"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public précis et très motivé, bon consentement à payer ; conseil financier et immobilier réglementés, d'où une approche pédagogique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-crypto-comprendre",
+   "name": "Cryptomonnaies : comprendre sans spéculer",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.epargne",
+   "desc": "Blockchain, wallets, volatilité, fiscalité et arnaques : un tour d'horizon prudent.",
+   "audience": "20-45 ans, curieux, investisseurs débutants",
+   "skills": [
+    "Expliquer une blockchain",
+    "Sécuriser un wallet",
+    "Évaluer le risque",
+    "Déclarer ses gains"
+   ],
+   "appSkills": [
+    "investissement-debutant",
+    "culture-scientifique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "De quoi parle-t-on ?",
+     "goal": "Expliquer blockchain, bitcoin et stablecoin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sécurité",
+     "goal": "Créer et sauvegarder un wallet sans se faire voler",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Risque et fiscalité",
+     "goal": "Comprendre la volatilité et la déclaration des gains",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arnaques",
+     "goal": "Repérer 10 arnaques courantes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent crypto",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 2,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "tech",
+    "science",
+    "ia",
+    "strategie"
+   ],
+   "competitors": [
+    "Chaînes YouTube",
+    "Plateformes d'échange"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Demande en dents de scie selon les cours, contexte réglementaire mouvant (PSAN) ; rester pédagogique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-faire-ses-impots",
+   "name": "Faire ses impôts : déclaration pas à pas",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.fiscalite",
+   "desc": "Remplir sa déclaration de revenus, comprendre cases, crédits et réductions.",
+   "audience": "Tous adultes, jeunes actifs, étudiants, seniors",
+   "skills": [
+    "Comprendre sa feuille",
+    "Repérer cases et déductions",
+    "Gérer les revenus annexes",
+    "Corriger après coup"
+   ],
+   "appSkills": [
+    "impots-declaration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première déclaration",
+     "goal": "Remplir une déclaration simple en ligne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cases et réductions",
+     "goal": "Utiliser frais réels, dons, emploi à domicile",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Revenus annexes",
+     "goal": "Déclarer location, revenus d'activité annexe ou plus-values",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Optimiser légalement",
+     "goal": "Comparer options et anticiper l'année suivante",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent impôts",
+     "goal": "Animer des permanences et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "Permanences fiscales",
+    "Logiciels",
+    "Experts-comptables"
+   ],
+   "regulated": "droit",
+   "verdict": "prioritaire",
+   "why": "Demande massive chaque printemps, pic saisonnier net ; permanences gratuites existantes mais saturées. Pas de conseil fiscal personnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-assurances-comprendre",
+   "name": "Comprendre ses assurances",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.fiscalite",
+   "desc": "Habitation, auto, santé, prévoyance : ce que couvrent vraiment les contrats et les exclusions.",
+   "audience": "25-60 ans, locataires, propriétaires, jeunes parents",
+   "skills": [
+    "Lire un contrat",
+    "Repérer franchises et exclusions",
+    "Comparer des offres",
+    "Déclarer un sinistre"
+   ],
+   "appSkills": [
+    "assurances-comprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ce que je paie",
+     "goal": "Lire un contrat et repérer garanties et franchises",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comparer",
+     "goal": "Comparer 3 offres sur les mêmes garanties",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Déclarer un sinistre",
+     "goal": "Rédiger une déclaration et suivre une indemnisation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Changer d'assureur",
+     "goal": "Résilier et souscrire sans trou de garantie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent assurance",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "lecture"
+   ],
+   "competitors": [
+    "Comparateurs",
+    "Courtiers",
+    "UFC-Que Choisir"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Sujet peu glamour mais utile ; porté par la peur de mal faire. Concurrents : comparateurs et associations de consommateurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-freelance-statut",
+   "name": "Se lancer en indépendant : statuts et charges",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.fiscalite",
+   "desc": "Micro-entreprise, EURL, portage : comprendre statuts, cotisations et facturation.",
+   "audience": "25-45 ans, salariés en transition, créateurs",
+   "skills": [
+    "Choisir un statut",
+    "Calculer ses charges",
+    "Facturer",
+    "Déclarer"
+   ],
+   "appSkills": [
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Quel statut ?",
+     "goal": "Comparer micro, EURL et portage sur un exemple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Calculer ses charges",
+     "goal": "Estimer cotisations et revenu net d'une activité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Facturer et déclarer",
+     "goal": "Émettre une facture conforme et déclarer en ligne",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Premiers clients",
+     "goal": "Fixer un tarif et un devis",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent indépendants",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "tech",
+    "ecriture",
+    "strategie"
+   ],
+   "competitors": [
+    "URSSAF",
+    "CCI",
+    "Réseaux d'indépendants"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public précis et solvable, bonne propension à payer ; chevauche la création d'entreprise, où abondent les formations financées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-demarches-en-ligne",
+   "name": "Démarches administratives en ligne",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.demarches",
+   "desc": "FranceConnect, impots.gouv, ameli, ANTS : réussir ses démarches sans aide.",
+   "audience": "Tous âges, seniors, nouveaux arrivants, personnes éloignées du numérique",
+   "skills": [
+    "Créer un compte FranceConnect",
+    "Remplir un formulaire",
+    "Scanner et envoyer",
+    "Suivre un dossier"
+   ],
+   "appSkills": [
+    "demarches-administratives",
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier compte",
+     "goal": "Créer et connecter un compte FranceConnect",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Je fais ma démarche",
+     "goal": "Réaliser une démarche simple (carte vitale, domicile) de bout en bout",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Scan, pièces et suivi",
+     "goal": "Préparer pièces numérisées et suivre un dossier",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dossier compliqué",
+     "goal": "Gérer une démarche multi-étapes avec relances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent démarches",
+     "goal": "Animer des permanences et former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 0,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "expatries",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "tech",
+    "maison",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "France Services",
+    "Mairies",
+    "Associations d'inclusion numérique"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin immense et croissant avec la dématérialisation ; offre publique saturée et gratuite, donc modèle bénévole ou financé par des tiers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-coffre-fort-papiers",
+   "name": "Coffre-fort numérique et papiers : tout ranger",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.demarches",
+   "desc": "Organiser papiers, justificatifs et sauvegardes, papier et numérique.",
+   "audience": "25-70 ans, ménages, couples, seniors",
+   "skills": [
+    "Trier papiers",
+    "Numériser",
+    "Nommer et classer",
+    "Sauvegarder"
+   ],
+   "appSkills": [
+    "organisation",
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je trie",
+     "goal": "Trier un classeur et définir les durées de conservation",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Je numérise",
+     "goal": "Scanner et nommer ses documents avec méthode",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Je classe",
+     "goal": "Mettre en place un coffre-fort numérique et sa sauvegarde",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mes proches",
+     "goal": "Organiser un dossier pour ses proches (urgence, succession)",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent organisation papiers",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "tech",
+    "zero-dechet",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "Applis de coffre-fort",
+    "Notaires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin diffus, rarement exprimé ; trouve son public à l'occasion d'un déménagement ou d'une succession.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-papiers-identite-permis",
+   "name": "Papiers d'identité, permis et immatriculation",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.demarches",
+   "desc": "Passeport, carte d'identité, permis, carte grise : délais, pièces, pièges.",
+   "audience": "Tous adultes, familles, jeunes de 18 ans",
+   "skills": [
+    "Lister les pièces",
+    "Prendre rendez-vous",
+    "Faire une démarche en ligne",
+    "Éviter les sites payants trompeurs"
+   ],
+   "appSkills": [
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Quelle démarche ?",
+     "goal": "Identifier la bonne démarche et les pièces à fournir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rendez-vous et dossier",
+     "goal": "Prendre un rendez-vous et préparer un dossier complet",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Démarche en ligne",
+     "goal": "Réaliser une démarche ANTS sans passer par un site privé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas complexes",
+     "goal": "Gérer perte, vol, renouvellement et changement d'adresse",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent papiers",
+     "goal": "Animer des permanences et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "tech",
+    "calme",
+    "voyage",
+    "geste"
+   ],
+   "competitors": [
+    "France Services",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel (peu de récurrence) et très bien couvert par les services publics ; utile comme module d'une permanence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-aides-sociales-droits",
+   "name": "Accéder à ses droits et aux aides",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.demarches",
+   "desc": "CAF, prime d'activité, APL, santé : savoir à quoi on a droit et comment le demander.",
+   "audience": "Étudiants, familles, travailleurs modestes, seniors",
+   "skills": [
+    "Simuler ses droits",
+    "Remplir une demande",
+    "Rassembler les pièces",
+    "Faire un recours"
+   ],
+   "appSkills": [
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes droits",
+     "goal": "Utiliser un simulateur pour repérer les aides possibles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Je fais ma demande",
+     "goal": "Compléter et déposer une demande d'aide en ligne",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dossier complet",
+     "goal": "Réunir les pièces et suivre un dossier jusqu'au versement",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Recours",
+     "goal": "Contester une décision de refus",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      0,
+      0
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent accès aux droits",
+     "goal": "Animer des permanences et former des bénévoles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      0,
+      0
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 0,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 0,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "solidarite",
+    "argent",
+    "maison",
+    "calme",
+    "tech"
+   ],
+   "competitors": [
+    "CAF",
+    "France Services",
+    "Associations de solidarité"
+   ],
+   "regulated": "droit",
+   "verdict": "prioritaire",
+   "why": "Non-recours massif aux aides : besoin social net, financements publics et associatifs ; sans conseil juridique personnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-lire-fiche-de-paie",
+   "name": "Lire sa fiche de paie",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Brut, net, cotisations, congés, primes : comprendre chaque ligne de son bulletin.",
+   "audience": "Salariés débutants, étudiants salariés, intérimaires",
+   "skills": [
+    "Lire les lignes",
+    "Calculer net et brut",
+    "Vérifier ses congés",
+    "Repérer une erreur"
+   ],
+   "appSkills": [
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Brut, net, cotisations",
+     "goal": "Distinguer les trois montants clés d'un bulletin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ligne par ligne",
+     "goal": "Lire les 10 lignes principales",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Congés et primes",
+     "goal": "Vérifier solde de congés et primes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repérer une erreur",
+     "goal": "Contester une erreur auprès de l'employeur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent paie",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "lecture"
+   ],
+   "competitors": [
+    "Syndicats",
+    "Sites officiels"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin récurrent chez les jeunes salariés, format court ; offre limitée aux sites d'information.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-mutuelle-sante-comprendre",
+   "name": "Comprendre sa mutuelle et ses remboursements",
+   "sector": "pratique",
+   "category": "pratique.argent",
+   "subcategory": "pratique.argent.fiscalite",
+   "desc": "Sécu, mutuelle, tiers payant, reste à charge : s'y retrouver et choisir.",
+   "audience": "Salariés, étudiants, indépendants, seniors",
+   "skills": [
+    "Lire un tableau de garanties",
+    "Comprendre un remboursement",
+    "Comparer",
+    "Optimiser"
+   ],
+   "appSkills": [
+    "assurances-comprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sécu et mutuelle",
+     "goal": "Expliquer ce que rembourse chacune",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire un tableau",
+     "goal": "Comprendre un tableau de garanties et un devis",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Comparer",
+     "goal": "Comparer trois offres selon ses besoins",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Reste à charge",
+     "goal": "Réduire son reste à charge sur une prestation majeure",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent santé",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "calme",
+    "soin",
+    "lecture"
+   ],
+   "competitors": [
+    "Comparateurs",
+    "Courtiers",
+    "Mutuelles"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin réel, offre très commerciale (courtiers) : l'atelier pédagogique peut marquer sa neutralité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-choisir-mode-garde",
+   "name": "Choisir un mode de garde et gérer l'emploi à domicile",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.demarches",
+   "desc": "Crèche, assistante maternelle, garde partagée, CESU : choisir, contractualiser, déclarer.",
+   "audience": "Futurs parents, parents de 0-3 ans",
+   "skills": [
+    "Comparer les modes de garde",
+    "Remplir un dossier",
+    "Rédiger un contrat",
+    "Déclarer l'emploi"
+   ],
+   "appSkills": [
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Quel mode de garde ?",
+     "goal": "Comparer crèche, assistante maternelle et garde partagée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dossier et délais",
+     "goal": "Planifier les démarches 6 mois avant",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Employeur à domicile",
+     "goal": "Rédiger un contrat et déclarer via Pajemploi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas pratiques",
+     "goal": "Gérer congés, absences et fin de contrat",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent parents",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "maison",
+    "argent",
+    "calme",
+    "solidarite"
+   ],
+   "competitors": [
+    "Mairies",
+    "Relais petite enfance",
+    "CAF"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin fort au moment de la naissance, public réceptif et ponctuel ; bonne porte d'entrée pour la communauté de jeunes parents.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-droits-locataire",
+   "name": "Droits du locataire",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Bail, état des lieux, charges, dépôt de garantie, litiges avec le propriétaire.",
+   "audience": "Locataires 20-45 ans, étudiants, colocataires",
+   "skills": [
+    "Lire un bail",
+    "Faire un état des lieux",
+    "Vérifier ses charges",
+    "Récupérer son dépôt"
+   ],
+   "appSkills": [
+    "droits-locataire"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon bail",
+     "goal": "Lire un bail et repérer les clauses abusives",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "État des lieux",
+     "goal": "Rédiger un état des lieux d'entrée et de sortie complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charges et loyer",
+     "goal": "Vérifier régularisation, révision et encadrement",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Litige",
+     "goal": "Rédiger une mise en demeure et saisir la commission de conciliation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent droits locataires",
+     "goal": "Animer des permanences et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "solidarite",
+    "argent",
+    "calme",
+    "lecture"
+   ],
+   "competitors": [
+    "ADIL",
+    "Associations de locataires",
+    "Avocats"
+   ],
+   "regulated": "droit",
+   "verdict": "prioritaire",
+   "why": "Besoin fort et récurrent, notamment à Paris ; permanences existantes, mais l'atelier de préparation répond à une demande réelle. Pas de conseil juridique personnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-droit-conso-litiges",
+   "name": "Droits du consommateur et litiges",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Garanties légales, rétractation, remboursement, médiateurs et recours en cas de litige.",
+   "audience": "25-60 ans, acheteurs en ligne, familles",
+   "skills": [
+    "Connaître les garanties",
+    "Utiliser le droit de rétractation",
+    "Écrire une réclamation",
+    "Saisir un médiateur"
+   ],
+   "appSkills": [
+    "droits-conso-litiges"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes garanties",
+     "goal": "Distinguer garantie légale et commerciale",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rétractation et retour",
+     "goal": "Appliquer le délai de 14 jours et obtenir un remboursement",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réclamation efficace",
+     "goal": "Rédiger une lettre de réclamation recevable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Médiation et recours",
+     "goal": "Monter un dossier de médiation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent consommation",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "ecriture",
+    "solidarite",
+    "calme"
+   ],
+   "competitors": [
+    "UFC-Que Choisir",
+    "DGCCRF",
+    "Médiateurs"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Intérêt solide, financements possibles via associations de consommateurs ; la frontière avec le conseil juridique reste à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-droit-du-travail-base",
+   "name": "Droit du travail : les bases",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Contrat, période d'essai, congés, rupture, chômage : repères pour salariés.",
+   "audience": "20-50 ans, salariés, jeunes embauchés, étudiants salariés",
+   "skills": [
+    "Lire un contrat",
+    "Calculer ses congés",
+    "Comprendre une rupture",
+    "Connaître ses recours"
+   ],
+   "appSkills": [
+    "droits-conso-litiges"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon contrat",
+     "goal": "Lire un contrat et repérer les clauses importantes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Salaire et congés",
+     "goal": "Vérifier un bulletin et ses congés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rupture et chômage",
+     "goal": "Distinguer démission, licenciement, rupture conventionnelle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Recours",
+     "goal": "Repérer syndicats, inspection du travail, prud'hommes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent droit du travail",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "solidarite",
+    "lecture",
+    "calme",
+    "maison"
+   ],
+   "competitors": [
+    "Syndicats",
+    "Sites officiels",
+    "Avocats"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais frontière avec le conseil juridique ; mieux porté par syndicats et services publics.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-courrier-reclamation",
+   "name": "Écrire un courrier qui fait bouger les choses",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Rédiger lettres de réclamation, recours, résiliation et mails efficaces.",
+   "audience": "25-65 ans, locataires, abonnés, consommateurs",
+   "skills": [
+    "Structurer une demande",
+    "Citer le droit",
+    "Choisir le recommandé",
+    "Relancer"
+   ],
+   "appSkills": [
+    "droits-conso-litiges"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première lettre",
+     "goal": "Rédiger une réclamation claire en 10 lignes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Citer ses droits",
+     "goal": "Appuyer une demande sur l'article de loi adapté",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Résiliation et recommandé",
+     "goal": "Résilier un contrat et prouver l'envoi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gérer un dossier",
+     "goal": "Suivre un litige sur plusieurs mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent courriers",
+     "goal": "Animer des permanences d'écriture et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "argent",
+    "maison",
+    "calme",
+    "solidarite"
+   ],
+   "competitors": [
+    "Écrivains publics",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Compétence très demandée à la marge ; se combine bien avec droits du consommateur et du locataire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-succession-heritage",
+   "name": "Succession et héritage : comprendre les étapes",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.droits",
+   "desc": "Que faire à un décès : démarches, notaire, droits de succession, assurance-vie.",
+   "audience": "35-70 ans, héritiers, aidants, familles",
+   "skills": [
+    "Lister les démarches",
+    "Choisir un notaire",
+    "Comprendre les droits",
+    "Gérer une indivision"
+   ],
+   "appSkills": [
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les premières démarches",
+     "goal": "Lister les démarches des 3 premiers mois",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Notaire et inventaire",
+     "goal": "Comprendre le rôle du notaire et les frais",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Droits et impôts",
+     "goal": "Estimer les droits de succession et l'assurance-vie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gérer l'indivision",
+     "goal": "Éviter les blocages entre héritiers",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent succession",
+     "goal": "Accompagner des cas et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 3,
+    "supply": 1,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "argent",
+    "maison",
+    "solidarite",
+    "calme"
+   ],
+   "competitors": [
+    "Notaires",
+    "Associations de familles"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel et sensible, très cadré par les notaires ; solidarité plutôt que marché.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-arnaques-en-ligne",
+   "name": "Reconnaître les arnaques en ligne",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.securite-numerique",
+   "desc": "Phishing, faux conseillers, faux colis, arnaques sentimentales : réflexes et recours.",
+   "audience": "Seniors, parents, ados, salariés",
+   "skills": [
+    "Repérer un mail frauduleux",
+    "Vérifier un lien",
+    "Réagir après une arnaque",
+    "Protéger ses proches"
+   ],
+   "appSkills": [
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix arnaques courantes",
+     "goal": "Reconnaître 10 arnaques types dans des exemples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mail, SMS, appel",
+     "goal": "Vérifier une demande suspecte en 3 contrôles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réagir",
+     "goal": "Appliquer la marche à suivre après une arnaque",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Protéger sa famille",
+     "goal": "Transmettre ces réflexes à ses proches",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent anti-arnaque",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "solidarite",
+    "argent",
+    "calme",
+    "maison"
+   ],
+   "competitors": [
+    "Cybermalveillance.gouv",
+    "Banques",
+    "Associations de seniors"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin urgent et en forte croissance, notamment chez les seniors ; financeurs variés (collectivités, banques, assureurs).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-mots-de-passe-vie-privee",
+   "name": "Mots de passe, sauvegardes et vie privée",
+   "sector": "pratique",
+   "category": "pratique.admin",
+   "subcategory": "pratique.admin.securite-numerique",
+   "desc": "Gestionnaire de mots de passe, double authentification, sauvegarde et paramètres de confidentialité.",
+   "audience": "25-60 ans, parents, salariés, seniors connectés",
+   "skills": [
+    "Installer un gestionnaire",
+    "Activer la double authentification",
+    "Sauvegarder",
+    "Régler la confidentialité"
+   ],
+   "appSkills": [
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier gestionnaire",
+     "goal": "Installer un gestionnaire de mots de passe et migrer 10 comptes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Double authentification",
+     "goal": "Activer l'A2F sur ses comptes sensibles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sauvegardes",
+     "goal": "Mettre en place une sauvegarde automatique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vie privée",
+     "goal": "Régler la confidentialité d'un réseau social et d'un téléphone",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent vie privée",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "maison",
+    "calme",
+    "geste",
+    "ia"
+   ],
+   "competitors": [
+    "Cybermalveillance.gouv",
+    "CNIL",
+    "Entreprises de sécurité"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Compétence utile et sous-pratiquée ; les entreprises financent plus volontiers que les particuliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-negocier-loyer-achat",
+   "name": "Négocier son loyer ou un achat",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.negociation",
+   "desc": "Préparer, argumenter et conclure : loyer, voiture, meuble, abonnement.",
+   "audience": "25-45 ans, locataires, acheteurs, indépendants",
+   "skills": [
+    "Préparer son marché",
+    "Poser un premier prix",
+    "Argumenter",
+    "Conclure"
+   ],
+   "appSkills": [
+    "negociation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier marchandage",
+     "goal": "Négocier un achat simple avec une fourchette préparée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Préparer ses arguments",
+     "goal": "Rassembler comparables et arguments chiffrés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux de rôle",
+     "goal": "Mener 3 négociations différentes en binôme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Négociation complexe",
+     "goal": "Négocier un loyer ou un contrat avec plusieurs enjeux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach négociation",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "jeu",
+    "strategie",
+    "recit",
+    "convivial"
+   ],
+   "competitors": [
+    "Formations en entreprise",
+    "Livres de négociation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé ; l'entraînement en jeux de rôle est efficace et rare chez les particuliers, valeur plus forte en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-negocier-salaire-augmentation",
+   "name": "Négocier son salaire et son évolution",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.negociation",
+   "desc": "Préparer un entretien d'augmentation, connaître sa valeur de marché et répondre aux objections.",
+   "audience": "25-45 ans, salariés, jeunes diplômés",
+   "skills": [
+    "Évaluer sa valeur",
+    "Préparer son dossier",
+    "S'entraîner",
+    "Réagir à un refus"
+   ],
+   "appSkills": [
+    "negociation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma valeur",
+     "goal": "Estimer son salaire de marché avec trois sources",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon dossier",
+     "goal": "Rédiger un argumentaire chiffré de réussites",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entraînement",
+     "goal": "Jouer l'entretien face à un pair",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan B",
+     "goal": "Préparer des alternatives et un calendrier de relance",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach carrière",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "jeu",
+    "strategie",
+    "recit",
+    "convivial"
+   ],
+   "competitors": [
+    "Coachs carrière",
+    "Formations RH"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte attractivité mais tentation de rester discret ; pic autour des entretiens annuels.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-vente-occasion-en-ligne",
+   "name": "Vendre d'occasion en ligne",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.occasion",
+   "desc": "Prendre de bonnes photos, fixer un prix, éviter les arnaques sur Vinted, Leboncoin et autres.",
+   "audience": "20-55 ans, vendeurs occasionnels, parents, déménageurs",
+   "skills": [
+    "Photographier un objet",
+    "Fixer un prix",
+    "Rédiger une annonce",
+    "Sécuriser le paiement"
+   ],
+   "appSkills": [
+    "vente-occasion"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première annonce",
+     "goal": "Mettre en ligne une annonce avec photos et description",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Prix et délais",
+     "goal": "Fixer un prix selon l'état et le marché",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Négocier et expédier",
+     "goal": "Gérer une négociation et un colis",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arnaques et litiges",
+     "goal": "Repérer et éviter 10 arnaques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent vente d'occasion",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "recup",
+    "zero-dechet",
+    "photo",
+    "maison"
+   ],
+   "competitors": [
+    "Tutoriels",
+    "Plateformes (aides)"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pratique très répandue ; l'atelier ne se justifie que lié à un désencombrement ou un déménagement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-acheter-voiture-occasion",
+   "name": "Acheter une voiture d'occasion sans se faire avoir",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.occasion",
+   "desc": "Vérifier historique, contrôle technique, prix et contrat de vente.",
+   "audience": "25-55 ans, familles, jeunes conducteurs",
+   "skills": [
+    "Vérifier un historique",
+    "Lire un contrôle technique",
+    "Essayer",
+    "Négocier"
+   ],
+   "appSkills": [
+    "entretien-auto",
+    "negociation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Avant de chercher",
+     "goal": "Définir besoin, budget et coût d'usage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Annonces et vendeurs",
+     "goal": "Repérer annonces suspectes et vérifier un vendeur",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Inspection",
+     "goal": "Contrôler l'état d'un véhicule avec une grille",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Contrat et papiers",
+     "goal": "Compléter cession, carte grise et assurance",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent achat auto",
+     "goal": "Accompagner des achats et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "strategie",
+    "calme"
+   ],
+   "competitors": [
+    "UFC-Que Choisir",
+    "Garages",
+    "Experts auto"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Valeur réelle mais forte concurrence de professionnels et de comparateurs ; risque de responsabilité si le conseil est mal suivi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-troc-dons-gratuiferia",
+   "name": "Troc, dons et gratiferia",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.occasion",
+   "desc": "Donner, échanger ou troquer des objets et services : organiser un troc local.",
+   "audience": "Voisins, familles, jeunes parents, étudiants",
+   "skills": [
+    "Trier ce qu'on donne",
+    "Organiser un troc",
+    "Fixer des règles",
+    "Faire circuler"
+   ],
+   "appSkills": [
+    "vente-occasion",
+    "zero-dechet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trier et donner",
+     "goal": "Trier une pièce et placer dons et reventes",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      4,
+      7
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Participer à un troc",
+     "goal": "Échanger 5 objets lors d'un troc local",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Organiser un troc",
+     "goal": "Monter une gratiferia pour 40 personnes",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réseau d'échange",
+     "goal": "Lancer un groupe permanent de troc",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent troc",
+     "goal": "Animer des réseaux et former des organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      20,
+      35
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 0,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc",
+    "jardin-partage",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "zero-dechet",
+    "solidarite",
+    "fete",
+    "convivial"
+   ],
+   "competitors": [
+    "Groupes de dons",
+    "Ressourceries",
+    "Gratiferias"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très social et très peu rentable ; fort ancrage de voisinage. À articuler avec des fêtes de quartier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-comparer-garanties-achats",
+   "name": "Acheter malin : comparer, lire une fiche, choisir",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.achats",
+   "desc": "Éviter le marketing, lire les caractéristiques, comparer et choisir durable.",
+   "audience": "25-55 ans, acheteurs de gros électroménager, familles",
+   "skills": [
+    "Lire une fiche produit",
+    "Repérer le marketing",
+    "Comparer",
+    "Évaluer la réparabilité"
+   ],
+   "appSkills": [
+    "droits-conso-litiges"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Fiches et pièges",
+     "goal": "Repérer 5 astuces marketing dans une fiche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Indice de réparabilité",
+     "goal": "Lire un indice de réparabilité et une garantie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Comparer",
+     "goal": "Comparer 3 produits selon coût d'usage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Acheter durable",
+     "goal": "Choisir un produit sur 10 ans",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent achats",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "reparation",
+    "zero-dechet",
+    "calme"
+   ],
+   "competitors": [
+    "Magazines de test",
+    "UFC-Que Choisir",
+    "Comparateurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt moyen, bien couvert par les médias de test ; à intégrer dans des ateliers de réparation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-courses-anti-gaspi",
+   "name": "Courses malignes et anti-gaspillage",
+   "sector": "pratique",
+   "category": "pratique.conso",
+   "subcategory": "pratique.conso.achats",
+   "desc": "Planifier ses menus, lire les dates, conserver et accommoder les restes.",
+   "audience": "25-55 ans, familles, étudiants, colocataires",
+   "skills": [
+    "Planifier la semaine",
+    "Lire une date limite",
+    "Conserver",
+    "Cuisiner les restes"
+   ],
+   "appSkills": [
+    "antigaspi-courses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Planifier et acheter",
+     "goal": "Préparer des courses pour une semaine avec liste et budget",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "DLC et DDM",
+     "goal": "Lire correctement les dates et conserver selon les produits",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisiner les restes",
+     "goal": "Réaliser 3 recettes antigaspi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mois sans gaspillage",
+     "goal": "Réduire de moitié ses déchets alimentaires en 4 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent antigaspi",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cuisine-pro",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "gout",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "zero-dechet",
+    "gourmand",
+    "maison",
+    "argent",
+    "cuisine"
+   ],
+   "competitors": [
+    "Too Good To Go",
+    "Associations antigaspi"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Besoin d'économies très partagé, fort lien avec la cuisine ; hygiène alimentaire à cadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-premiers-secours",
+   "name": "Premiers secours : gestes qui sauvent",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.gestes",
+   "desc": "Alerter, protéger, masser, utiliser un défibrillateur, traiter un étouffement et une hémorragie.",
+   "audience": "Tous adultes, familles, salariés, associations",
+   "skills": [
+    "Alerter",
+    "Pratiquer un massage cardiaque",
+    "Utiliser un défibrillateur",
+    "Traiter un étouffement"
+   ],
+   "appSkills": [
+    "premiers-secours"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sensibilisation",
+     "goal": "Réaliser les 5 gestes de base sur mannequin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gestes appris",
+     "goal": "Enchaîner alerte, massage et défibrillateur en autonomie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mises en situation",
+     "goal": "Réagir à 5 scénarios d'accident domestique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réviser et recycler",
+     "goal": "Remettre à niveau ses gestes et corriger ses erreurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      180,
+      360
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur-relais",
+     "goal": "Animer des initiations et orienter vers un organisme habilité",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      215,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 5,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 1,
+    "cost": 2,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "entreprises",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "soin",
+    "geste",
+    "famille",
+    "solidarite",
+    "corps"
+   ],
+   "competitors": [
+    "Croix-Rouge",
+    "Protection civile",
+    "Pompiers",
+    "Organismes de PSC1"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Demande très forte, forte propension à payer ; la formation certifiante (PSC1) reste réservée aux organismes habilités. L'offre peut se limiter à une initiation non certifiante qui oriente vers une formation agréée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-secourisme-enfant-bebe",
+   "name": "Secours pour bébé et enfant",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.gestes",
+   "desc": "Étouffement, chute, fièvre, brûlure, intoxication : gestes adaptés aux 0-10 ans.",
+   "audience": "Parents, grands-parents, assistantes maternelles, baby-sitters",
+   "skills": [
+    "Dégager un nourrisson",
+    "Masser un enfant",
+    "Traiter une brûlure",
+    "Appeler les secours"
+   ],
+   "appSkills": [
+    "secourisme-enfant",
+    "premiers-secours"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gestes pour bébé",
+     "goal": "Pratiquer l'étouffement et le massage cardiaque sur mannequin nourrisson",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accidents domestiques",
+     "goal": "Traiter chute, brûlure et ingestion avec les bons gestes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fièvre et convulsions",
+     "goal": "Identifier l'urgence et bien appeler le 15",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mises en situation",
+     "goal": "Enchaîner 5 scénarios réalistes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur-relais",
+     "goal": "Animer des initiations et orienter vers un organisme habilité",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      325
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 1,
+    "cost": 2,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "famille",
+    "geste",
+    "solidarite",
+    "corps"
+   ],
+   "competitors": [
+    "Croix-Rouge",
+    "Pompiers",
+    "Pédiatres"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Très forte attente des jeunes parents et bonne propension à payer ; contrainte de certification pour une offre diplômante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-secours-rando-montagne",
+   "name": "Gestes de secours en randonnée et en milieu isolé",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.gestes",
+   "desc": "Prévenir et traiter entorse, hypothermie, coup de chaleur, morsure en sortie nature.",
+   "audience": "Randonneurs, groupes, familles, accompagnateurs",
+   "skills": [
+    "Évaluer une situation",
+    "Immobiliser",
+    "Traiter une hypothermie",
+    "Organiser les secours"
+   ],
+   "appSkills": [
+    "premiers-secours"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trousse et réflexes",
+     "goal": "Composer sa trousse et connaître les numéros d'urgence",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Entorses et plaies",
+     "goal": "Pratiquer immobilisation et pansements",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chaleur et froid",
+     "goal": "Traiter coup de chaleur et hypothermie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scénarios nature",
+     "goal": "Gérer un accident à plusieurs en milieu isolé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur-relais",
+     "goal": "Animer et orienter vers une formation certifiante",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      45,
+      75
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 3,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "montagne",
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "soin",
+    "geste",
+    "balade"
+   ],
+   "competitors": [
+    "Clubs de randonnée",
+    "Secouristes en montagne"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Public ciblé, demande saisonnière ; certains contenus recoupent la formation PSC1 et se vendent via clubs et refuges.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-prevention-incendie",
+   "name": "Prévention incendie à la maison",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.prevention",
+   "desc": "Détecteurs, électricité, cuisine, extincteurs, évacuation : réflexes simples.",
+   "audience": "Propriétaires, locataires, familles, copropriétés",
+   "skills": [
+    "Installer un détecteur",
+    "Repérer les risques",
+    "Utiliser un extincteur",
+    "Évacuer"
+   ],
+   "appSkills": [
+    "prevention-incendie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon logement",
+     "goal": "Faire le tour de son logement avec une grille de risques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Détecteurs et prises",
+     "goal": "Installer et tester les détecteurs et prises",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Extincteur",
+     "goal": "Utiliser un extincteur sur feu de cuisine",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Évacuer",
+     "goal": "Définir un plan d'évacuation familial",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent prévention",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "famille",
+    "geste",
+    "calme",
+    "soin"
+   ],
+   "competitors": [
+    "Pompiers",
+    "Assureurs",
+    "Mairies"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin réel mais peu spontané ; porté par assureurs et pompiers. Contenu à valider par des professionnels.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-securite-domestique-enfants",
+   "name": "Sécuriser sa maison pour un enfant",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.prevention",
+   "desc": "Chutes, brûlures, noyades, intoxications : sécuriser son logement avant l'arrivée de bébé.",
+   "audience": "Futurs parents, parents d'enfants de 0-6 ans, grands-parents",
+   "skills": [
+    "Évaluer son logement",
+    "Sécuriser escaliers et prises",
+    "Ranger les produits",
+    "Prévenir les noyades"
+   ],
+   "appSkills": [
+    "secourisme-enfant"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Visite à quatre pattes",
+     "goal": "Lister les dangers de son logement vu par un tout-petit",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équiper",
+     "goal": "Sécuriser prises, escaliers et fenêtres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Produits et médicaments",
+     "goal": "Ranger et étiqueter les produits dangereux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas particuliers",
+     "goal": "Adapter piscine, jardin et logement de vacances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent sécurité",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "maison",
+    "soin",
+    "geste",
+    "calme"
+   ],
+   "competitors": [
+    "PMI",
+    "Pompiers",
+    "Associations de parents"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Public ciblé et motivé ; bon couplage avec un atelier de secourisme du nourrisson.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-preparation-urgence",
+   "name": "Se préparer aux situations d'urgence",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.prevention",
+   "desc": "Sac d'urgence, eau, coupures, information, plan familial : se préparer à une crise.",
+   "audience": "25-60 ans, familles, villageois, voyageurs",
+   "skills": [
+    "Composer un sac",
+    "Stocker eau et vivres",
+    "Suivre une alerte",
+    "Définir un plan"
+   ],
+   "appSkills": [
+    "preparation-urgence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un sac de 72 h",
+     "goal": "Composer un sac d'urgence personnalisé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Eau, énergie, information",
+     "goal": "Préparer eau, énergie et radio de secours",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan familial",
+     "goal": "Définir lieux de rendez-vous et contacts",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scénarios",
+     "goal": "Simuler une coupure d'électricité de 24 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent préparation",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "famille",
+    "plein-air",
+    "geste",
+    "defi"
+   ],
+   "competitors": [
+    "Protection civile",
+    "Mairies",
+    "Blogs de préparation"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Sujet en hausse depuis les crises récentes ; contenu officiel disponible, atelier à valeur de passage à l'acte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-canicule-inondation-risques",
+   "name": "Vivre un épisode de canicule ou d'inondation",
+   "sector": "pratique",
+   "category": "pratique.secours",
+   "subcategory": "pratique.secours.prevention",
+   "desc": "Se préparer à canicule, tempête, crue et coupure : gestes et équipements de la vie courante.",
+   "audience": "Familles, seniors, urbains",
+   "skills": [
+    "Protéger un logement de la chaleur",
+    "Surveiller les proches fragiles",
+    "Réagir à une alerte",
+    "Ranger l'essentiel"
+   ],
+   "appSkills": [
+    "preparation-urgence",
+    "economies-energie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Canicule : tenir chez soi",
+     "goal": "Appliquer 6 gestes pour rafraîchir un logement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Repérer les fragiles",
+     "goal": "Mettre en place un réseau de voisins vigilants",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Inondation et tempête",
+     "goal": "Préparer et appliquer un plan d'action",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Retour d'expérience",
+     "goal": "Analyser un épisode vécu et ajuster son plan",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent risques",
+     "goal": "Animer des réunions de quartier",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 1,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "solidarite",
+    "famille",
+    "calme",
+    "plein-air"
+   ],
+   "competitors": [
+    "Mairies",
+    "Protection civile"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pertinent surtout avec les collectivités ; faible propension à payer mais forte utilité sociale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-organisation-personnelle",
+   "name": "Organisation personnelle : agenda et priorités",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.perso",
+   "desc": "Planifier sa semaine, capturer ses tâches, choisir des priorités réalistes.",
+   "audience": "25-45 ans, salariés, parents, étudiants",
+   "skills": [
+    "Capturer ses tâches",
+    "Prioriser",
+    "Planifier une semaine",
+    "Revoir chaque dimanche"
+   ],
+   "appSkills": [
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Vider sa tête",
+     "goal": "Lister toutes ses tâches en cours et les classer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma semaine type",
+     "goal": "Construire un agenda hebdomadaire réaliste",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Priorités",
+     "goal": "Utiliser une méthode de priorisation sur 10 tâches",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine durable",
+     "goal": "Tenir un rituel hebdomadaire pendant 4 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach organisation",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "calme",
+    "maison",
+    "defi",
+    "tech",
+    "geste"
+   ],
+   "competitors": [
+    "Coachs",
+    "Livres de productivité",
+    "Applis"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt large et récurrent ; compétition de contenus gratuits ; des ateliers à deux ou trois en motivation mutuelle fonctionnent bien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-desencombrer-ranger",
+   "name": "Désencombrer et ranger son logement",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.perso",
+   "desc": "Trier méthodiquement, donner, revendre et organiser ses espaces.",
+   "audience": "25-60 ans, familles, déménageurs, seniors",
+   "skills": [
+    "Trier par catégories",
+    "Décider de garder",
+    "Ranger durablement",
+    "Revendre ou donner"
+   ],
+   "appSkills": [
+    "organisation",
+    "vente-occasion"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trier une pièce",
+     "goal": "Trier une pièce en 3 piles (garder, donner, vendre)",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Catégories",
+     "goal": "Trier un placard ou un bureau par catégories",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ranger durablement",
+     "goal": "Installer des rangements simples et des habitudes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Une maison entière",
+     "goal": "Planifier un tri complet sur 6 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach désencombrement",
+     "goal": "Accompagner à domicile et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "zero-dechet",
+    "recup",
+    "deco",
+    "calme"
+   ],
+   "competitors": [
+    "Coachs en rangement",
+    "Livres de méthode"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Tendance forte portée par les livres et les séries, bonne propension à payer pour l'accompagnement à domicile ; se marie à la revente et au don.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-demenagement-organiser",
+   "name": "Organiser un déménagement",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.perso",
+   "desc": "Calendrier, cartons, devis, changement d'adresse, états des lieux : ne rien oublier.",
+   "audience": "25-50 ans, familles, étudiants, expatriés",
+   "skills": [
+    "Planifier 8 semaines",
+    "Comparer des devis",
+    "Emballer",
+    "Changer d'adresse"
+   ],
+   "appSkills": [
+    "demenagement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan sur 8 semaines",
+     "goal": "Dresser un calendrier de déménagement complet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Devis et budget",
+     "goal": "Comparer trois devis et un budget",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cartons et logistique",
+     "goal": "Emballer une pièce de façon organisée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Changement d'adresse",
+     "goal": "Prévenir tous les organismes via un tableau de bord",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent déménagement",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "expatries",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "deco",
+    "argent",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "Déménageurs",
+    "Applis",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel et saisonnier ; trouve sa place en complément d'un désencombrement ou d'une agence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-apprendre-a-apprendre",
+   "name": "Apprendre à apprendre",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.apprendre",
+   "desc": "Méthodes de mémorisation, révision espacée et organisation des études.",
+   "audience": "Étudiants, lycéens, adultes en formation, parents",
+   "skills": [
+    "Réviser par espacement",
+    "Prendre des notes utiles",
+    "Gérer l'attention",
+    "Planifier"
+   ],
+   "appSkills": [
+    "apprendre-a-apprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes habitudes",
+     "goal": "Diagnostiquer ses méthodes de travail actuelles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mémoire et révision",
+     "goal": "Appliquer la répétition espacée sur un cours",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Notes et fiches",
+     "goal": "Produire des notes utilisables en 20 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Planning d'examens",
+     "goal": "Bâtir un plan de révision sur 4 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach d'apprentissage",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "ados",
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "lecture",
+    "calme",
+    "defi",
+    "tech"
+   ],
+   "competitors": [
+    "Coachs d'études",
+    "Soutien scolaire",
+    "Livres"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin récurrent des étudiants et parents, mais fort concurrent : soutien scolaire et YouTube ; plus de valeur dans l'accompagnement collectif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-memoire-techniques",
+   "name": "Techniques de mémoire",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.apprendre",
+   "desc": "Palais de mémoire, acronymes, noms et visages : entraîner sa mémoire de façon ludique.",
+   "audience": "25-70 ans, étudiants, seniors, curieux",
+   "skills": [
+    "Créer un palais de mémoire",
+    "Retenir des noms",
+    "Mémoriser une liste",
+    "Réviser par images"
+   ],
+   "appSkills": [
+    "apprendre-a-apprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier palais",
+     "goal": "Mémoriser une liste de 15 mots avec la méthode des lieux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Noms et visages",
+     "goal": "Retenir 10 prénoms en une soirée",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chiffres et dates",
+     "goal": "Retenir 20 chiffres avec un système",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Appliquer à un sujet",
+     "goal": "Mémoriser un plan de cours de 40 notions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîneur de mémoire",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "science",
+    "defi",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs de mémoire",
+    "Livres",
+    "Chaînes YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Effet démonstratif fort, bon pour un atelier court ; intérêt maintenu si le contenu reste utile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-entretien-embauche",
+   "name": "Réussir un entretien d'embauche",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.carriere",
+   "desc": "Préparer son récit, répondre aux questions pièges et poser les siennes.",
+   "audience": "Jeunes diplômés, personnes en reconversion, seniors en recherche",
+   "skills": [
+    "Préparer son récit",
+    "Répondre à des questions pièges",
+    "Poser des questions",
+    "Négocier"
+   ],
+   "appSkills": [
+    "negociation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon histoire en 3 minutes",
+     "goal": "Raconter son parcours de façon claire et convaincante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Questions pièges",
+     "goal": "Répondre à 10 questions classiques",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Simulation",
+     "goal": "Mener un entretien filmé et le débriefer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Négocier et conclure",
+     "goal": "Défendre son salaire et ses conditions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach emploi",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "recit",
+    "voix",
+    "jeu",
+    "strategie"
+   ],
+   "competitors": [
+    "Pôle emploi",
+    "Coachs",
+    "Associations d'insertion"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande régulière ; les dispositifs publics gratuits (France Travail, missions locales) sont nombreux, l'atelier de simulation est le plus utile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-cv-linkedin-recherche-emploi",
+   "name": "CV, lettre et profil en ligne",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.carriere",
+   "desc": "Écrire un CV clair, adapter une lettre, optimiser son profil professionnel en ligne.",
+   "audience": "Chercheurs d'emploi, étudiants, reconvertis",
+   "skills": [
+    "Structurer un CV",
+    "Écrire une lettre",
+    "Optimiser un profil",
+    "Utiliser son réseau"
+   ],
+   "appSkills": [
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon CV",
+     "goal": "Rédiger un CV d'une page lisible",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lettre ciblée",
+     "goal": "Adapter une lettre à une offre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Profil en ligne",
+     "goal": "Optimiser son profil professionnel et sa photo",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réseau",
+     "goal": "Contacter 5 personnes et en tirer un rendez-vous",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach emploi",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "argent",
+    "tech",
+    "recit",
+    "calme"
+   ],
+   "competitors": [
+    "Pôle emploi",
+    "Coachs",
+    "Sites de CV"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin récurrent, solide public, forte concurrence de services publics et d'outils d'IA.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-reconversion-bilan",
+   "name": "Faire le point : bilan et reconversion",
+   "sector": "pratique",
+   "category": "pratique.organisation",
+   "subcategory": "pratique.organisation.carriere",
+   "desc": "Identifier ses compétences, ses envies et un plan d'action de reconversion.",
+   "audience": "30-50 ans, salariés en questionnement",
+   "skills": [
+    "Faire un bilan de compétences",
+    "Explorer des métiers",
+    "Tester",
+    "Financer"
+   ],
+   "appSkills": [
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Où j'en suis",
+     "goal": "Dresser son bilan de compétences et d'envies",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Explorer",
+     "goal": "Interroger 3 professionnels d'un métier visé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tester",
+     "goal": "Réaliser un test grandeur nature (stage, bénévolat)",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Financer et planifier",
+     "goal": "Monter un plan de financement et de formation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach de transition",
+     "goal": "Accompagner et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "recit",
+    "defi",
+    "calme",
+    "couple"
+   ],
+   "competitors": [
+    "Cabinets de bilan",
+    "CPF",
+    "Coachs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin fort et solvable (CPF), très encadré par des cabinets ; la communauté de pairs apporte une valeur complémentaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-zero-dechet-maison",
+   "name": "Zéro déchet à la maison",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.zero-dechet",
+   "desc": "Réduire ses déchets au quotidien : cuisine, salle de bain, courses, objets.",
+   "audience": "25-45 ans, urbains, familles, couples écolos",
+   "skills": [
+    "Faire un audit poubelle",
+    "Choisir le vrac",
+    "Fabriquer ses produits",
+    "Réparer plutôt que jeter"
+   ],
+   "appSkills": [
+    "zero-dechet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Audit de ma poubelle",
+     "goal": "Peser et classer ses déchets d'une semaine",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courses et cuisine",
+     "goal": "Remplacer 5 produits jetables par des alternatives",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Salle de bain et ménage",
+     "goal": "Fabriquer 3 produits maison",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mois zéro déchet",
+     "goal": "Réduire sa poubelle de moitié en 4 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent zéro déchet",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "zero-dechet",
+    "recup",
+    "maison",
+    "cuisine",
+    "famille"
+   ],
+   "competitors": [
+    "Associations zéro déchet",
+    "Boutiques de vrac",
+    "Influenceurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt de fond mais tendance moins montante qu'avant ; porté par les collectivités.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-compost-appartement",
+   "name": "Composter en appartement",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.zero-dechet",
+   "desc": "Lombricompost, bokashi, compost partagé : choisir et réussir sa méthode.",
+   "audience": "Urbains, familles, copropriétés",
+   "skills": [
+    "Choisir une méthode",
+    "Équilibrer les apports",
+    "Éviter les odeurs",
+    "Utiliser le compost"
+   ],
+   "appSkills": [
+    "zero-dechet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bac",
+     "goal": "Installer un lombricomposteur ou un bokashi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équilibre et odeurs",
+     "goal": "Résoudre un problème d'odeur ou de mouches",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Utiliser le compost",
+     "goal": "Intégrer le terreau à des plantes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compost partagé",
+     "goal": "Lancer un compost de pied d'immeuble",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent compost",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "jardin-partage",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "jardin",
+    "plante",
+    "nature",
+    "maison"
+   ],
+   "competitors": [
+    "Mairies",
+    "Associations de compost"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Dynamique portée par la loi sur le tri des biodéchets ; dépend largement de la collectivité qui équipe et finance.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-produits-menagers-maison",
+   "name": "Produits ménagers et cosmétiques maison",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.zero-dechet",
+   "desc": "Fabriquer lessive, nettoyants et crèmes simples avec vinaigre, bicarbonate et huiles.",
+   "audience": "25-50 ans, familles, curieux de santé",
+   "skills": [
+    "Fabriquer sa lessive",
+    "Choisir les ingrédients",
+    "Étiqueter",
+    "Respecter les consignes"
+   ],
+   "appSkills": [
+    "zero-dechet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trois produits",
+     "goal": "Fabriquer lessive, spray et pâte à récurer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ingrédients",
+     "goal": "Choisir ingrédients et dosages selon l'usage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cosmétiques simples",
+     "goal": "Réaliser une crème et un baume simples",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Hygiène et sécurité",
+     "goal": "Respecter règles d'étiquetage et d'hygiène",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent produits maison",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      200
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "zero-dechet",
+    "maison",
+    "soin",
+    "savon",
+    "artisanat"
+   ],
+   "competitors": [
+    "Ateliers DIY",
+    "Blogs"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Résultat tangible rapporté à la maison ; sécurité et étiquetage à encadrer si on vend les produits.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-economies-energie",
+   "name": "Économies d'énergie à la maison",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.energie",
+   "desc": "Chauffage, eau chaude, veille, isolation légère : comprendre et réduire sa facture.",
+   "audience": "Locataires, propriétaires, familles",
+   "skills": [
+    "Lire une facture",
+    "Régler son chauffage",
+    "Repérer les fuites thermiques",
+    "Choisir ses ampoules"
+   ],
+   "appSkills": [
+    "economies-energie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire sa facture",
+     "goal": "Repérer abonnement, consommation et taxes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chauffage et eau chaude",
+     "goal": "Régler son chauffage et réduire son eau chaude",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Veille et appareils",
+     "goal": "Mesurer la consommation de 5 appareils",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Isolation légère",
+     "goal": "Appliquer joints, rideaux et petits travaux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent énergie",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "argent",
+    "zero-dechet",
+    "reparation",
+    "tech"
+   ],
+   "competitors": [
+    "Conseillers info-énergie",
+    "Associations",
+    "Fournisseurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin très fort avec le prix de l'énergie, mais service public gratuit (info-énergie) ; les ateliers de quartier restent utiles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-comparer-offres-energie",
+   "name": "Choisir son contrat d'énergie et d'internet",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.energie",
+   "desc": "Lire et comparer offres d'électricité, gaz, internet, mobile : éviter les pièges.",
+   "audience": "Tous âges, locataires, expatriés",
+   "skills": [
+    "Lire une offre",
+    "Comparer sur un tableau",
+    "Changer de fournisseur",
+    "Gérer une facture"
+   ],
+   "appSkills": [
+    "assurances-comprendre",
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire une offre",
+     "goal": "Distinguer prix du kWh, abonnement et options",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comparer",
+     "goal": "Comparer deux offres sur un exemple de consommation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Changer",
+     "goal": "Résilier et souscrire sans coupure",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Litiges",
+     "goal": "Contester une facture auprès du médiateur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent contrats",
+     "goal": "Animer des permanences et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "tech",
+    "calme"
+   ],
+   "competitors": [
+    "Comparateurs",
+    "Médiateur de l'énergie"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais comparateurs gratuits ; à greffer sur les ateliers de factures et d'économies d'énergie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-entretien-linge",
+   "name": "Entretien du linge",
+   "sector": "pratique",
+   "category": "pratique.maison-sobre",
+   "subcategory": "pratique.maison-sobre.entretien",
+   "desc": "Lire les étiquettes, détacher, repasser, réparer et faire durer ses vêtements.",
+   "audience": "25-55 ans, familles, étudiants, jeunes actifs",
+   "skills": [
+    "Lire une étiquette",
+    "Détacher",
+    "Régler un lavage",
+    "Repasser"
+   ],
+   "appSkills": [
+    "entretien-linge"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Étiquettes et lavage",
+     "goal": "Lire une étiquette et régler un lavage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Détacher",
+     "goal": "Traiter 10 taches courantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pliage et repassage",
+     "goal": "Plier et repasser efficacement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Faire durer ses vêtements",
+     "goal": "Réparer et entretenir pour deux ans de plus",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent entretien",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "textile",
+    "zero-dechet",
+    "geste",
+    "mode"
+   ],
+   "competitors": [
+    "Blogs de ménage",
+    "Pressings"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Compétence utile, familière, peu d'envie d'y payer ; complète bien un atelier de réparation textile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-entretien-auto-base",
+   "name": "Entretien de base de sa voiture",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.voiture",
+   "desc": "Niveaux, pneus, voyants, batterie : les contrôles que tout conducteur peut faire.",
+   "audience": "25-55 ans, jeunes conducteurs, familles",
+   "skills": [
+    "Vérifier huile et liquides",
+    "Contrôler les pneus",
+    "Lire un voyant",
+    "Changer une roue"
+   ],
+   "appSkills": [
+    "entretien-auto"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sous le capot",
+     "goal": "Vérifier huile, liquide de refroidissement et lave-glace",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pneus et freins",
+     "goal": "Contrôler pression, usure et signes de freins usés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Voyants et pannes",
+     "goal": "Interpréter 10 voyants et agir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Changer une roue",
+     "goal": "Changer une roue en 15 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent entretien auto",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "entreprise",
+    "salle-polyvalente",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "geste",
+    "reparation",
+    "tech",
+    "defi"
+   ],
+   "competitors": [
+    "Garages",
+    "Vidéos YouTube"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin récurrent chez les jeunes conducteurs ; fort concurrent gratuit mais le geste en vrai reste rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-conduite-eco-sure",
+   "name": "Conduite économique et sûre",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.voiture",
+   "desc": "Anticiper, réduire sa consommation, rester sûr : une demi-journée pour changer ses habitudes.",
+   "audience": "Conducteurs 25-60 ans, salariés, professionnels",
+   "skills": [
+    "Anticiper",
+    "Réduire la consommation",
+    "Voir les angles morts",
+    "Gérer la fatigue"
+   ],
+   "appSkills": [
+    "conduite-eco"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je consomme moins",
+     "goal": "Appliquer 5 gestes qui réduisent la consommation de 10 %",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Anticipation",
+     "goal": "Appliquer une conduite fluide en ville",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sécurité active",
+     "goal": "Réduire les angles morts et les distances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conduite en conditions difficiles",
+     "goal": "Réagir à pluie, nuit et verglas",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent conduite",
+     "goal": "Animer et former des hôtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      160,
+      325
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 1,
+    "wtp": 4,
+    "space": 2,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "entreprise",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "argent",
+    "geste",
+    "defi",
+    "tech"
+   ],
+   "competitors": [
+    "Auto-écoles",
+    "Assureurs"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Besoin plutôt couvert par auto-écoles et entreprises ; encadrement de conduite sur route et responsabilité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-velo-urbain-securite",
+   "name": "Circuler à vélo en ville en sécurité",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.velo-ville",
+   "desc": "Maîtriser les intersections, le partage de voie et le comportement à adopter sur piste ou voie partagée.",
+   "audience": "Adultes 25-55 ans, nouveaux cyclistes, parents",
+   "skills": [
+    "Se placer en intersection",
+    "Signaler",
+    "Anticiper les portières",
+    "Choisir un itinéraire"
+   ],
+   "appSkills": [
+    "entretien-auto",
+    "conduite-eco"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers tours",
+     "goal": "Rouler 1 h en ville avec un moniteur",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Intersections",
+     "goal": "Maîtriser carrefours et ronds-points",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itinéraires",
+     "goal": "Planifier un trajet domicile-travail sûr",
+     "format": "cercle",
+     "duration": "2 h, mensuel",
+     "group": "6-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vélo et enfants",
+     "goal": "Rouler avec un enfant en siège ou remorque",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent vélo",
+     "goal": "Animer des sorties et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "entreprise",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "balade",
+    "ville",
+    "plein-air",
+    "corps",
+    "reparation"
+   ],
+   "competitors": [
+    "Associations cyclistes",
+    "Vélo-écoles",
+    "Mairies"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Dynamique forte dans les grandes villes et soutien des collectivités ; vélo-écoles associatives existantes, bon potentiel de partenariats.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-organiser-voyage",
+   "name": "Organiser un voyage de A à Z",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.voyage",
+   "desc": "Itinéraire, budget, réservations, papiers, assurances : préparer un voyage sans stress.",
+   "audience": "25-55 ans, couples, familles, groupes d'amis",
+   "skills": [
+    "Fixer un budget",
+    "Réserver malin",
+    "Préparer ses papiers",
+    "Anticiper les imprévus"
+   ],
+   "appSkills": [
+    "organisation-voyage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon projet",
+     "goal": "Définir dates, budget et envies d'un voyage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réserver",
+     "goal": "Comparer transports et hébergements et réserver",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Papiers et santé",
+     "goal": "Préparer visas, assurances et vaccins",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Imprévus",
+     "goal": "Préparer un plan B et gérer un incident",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent voyage",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 1,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voyage",
+    "argent",
+    "maison",
+    "calme",
+    "convivial"
+   ],
+   "competitors": [
+    "Agences de voyage",
+    "Blogs",
+    "Forums"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé, saturé de contenus gratuits ; valeur de l'atelier = être guidé et échanger des astuces.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-voyage-petit-budget",
+   "name": "Voyager petit budget",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.voyage",
+   "desc": "Trains de nuit, vols décalés, hébergements partagés, échanges : voyager mieux avec peu.",
+   "audience": "18-35 ans, étudiants, jeunes actifs",
+   "skills": [
+    "Trouver des vols bon marché",
+    "Chercher un hébergement",
+    "Budgéter",
+    "Voyager léger"
+   ],
+   "appSkills": [
+    "organisation-voyage",
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon budget voyage",
+     "goal": "Estimer le coût réel d'un week-end ou d'un mois",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Transports malins",
+     "goal": "Trouver des billets de train et d'avion à prix réduit",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Hébergements",
+     "goal": "Comparer auberges, échanges et locations",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Voyager léger",
+     "goal": "Préparer un sac de 7 kg",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent voyage",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      130
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voyage",
+    "argent",
+    "defi",
+    "plein-air",
+    "convivial"
+   ],
+   "competitors": [
+    "Blogs de voyage",
+    "Forums",
+    "Applis"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt très fort chez les jeunes qui paient peu ; revenus faibles, compensés par des partenariats.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pratique-voyager-seule-en-famille",
+   "name": "Voyager seul(e) ou en famille avec des enfants",
+   "sector": "pratique",
+   "category": "pratique.mobilite",
+   "subcategory": "pratique.mobilite.voyage",
+   "desc": "Préparer un premier voyage solo ou un voyage avec enfants : sécurité, rythme, logistique.",
+   "audience": "Voyageurs solos, parents, seniors",
+   "skills": [
+    "Choisir sa destination",
+    "Assurer sa sécurité",
+    "Adapter le rythme",
+    "Voyager avec des enfants"
+   ],
+   "appSkills": [
+    "organisation-voyage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier voyage solo",
+     "goal": "Planifier un séjour solo de 4 jours",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sécurité",
+     "goal": "Appliquer 10 règles de prudence en voyage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Avec des enfants",
+     "goal": "Organiser un voyage adapté à l'âge",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Retours d'expérience",
+     "goal": "Partager et analyser un voyage vécu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent voyage",
+     "goal": "Animer des ateliers et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-2",
+     "price": [
+      80,
+      160
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voyage",
+    "famille",
+    "convivial",
+    "calme",
+    "argent"
+   ],
+   "competitors": [
+    "Blogs",
+    "Groupes de voyageurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande réelle, très servie en ligne ; bon sujet de cercle de partage plus que de formation payante.",
+   "confidence": "estimation"
+  }
+ ]
+}
