@@ -258,7 +258,7 @@
       var s = C.data.sById[id], d = st.desires[id], p = 'desires.' + id;
       var cur = (st.skills[id] && st.skills[id].level) || 0;
       var t = U.clamp(d.target || 2, 2, C.LEVEL_MAX); if (t <= cur) t = Math.min(C.LEVEL_MAX, cur + 1);
-      var opts = [2, 3, 4, 5].filter(function (k) { return k > cur; }).map(function (k) { return [k, k + ' · ' + C.LEVELS[k]]; });
+      var opts = [2, 3, 4, 5].filter(function (k) { return k > cur; }).map(function (k) { return [k, k + ' · ' + C.LEVELS_SHORT[k]]; });
       html += '<section class="panel' + (i >= 5 ? ' dim' : '') + '" style="margin-top:16px' + (i >= 5 ? ';opacity:.6' : '') + '"><div class="ph"><div class="row"><span class="prio">' + (i + 1) + '</span><span class="h3">' + E(s.name) + '</span>' + ui.uniTag(s.universe) + '</div>' +
         '<div class="row"><button class="btn ghost sm" data-act="prioUp" data-id="' + E(id) + '" aria-label="Monter ' + E(s.name) + '"' + (i === 0 ? ' disabled' : '') + '>' + ui.icon('up') + '</button><button class="btn ghost sm" data-act="prioDown" data-id="' + E(id) + '" aria-label="Descendre ' + E(s.name) + '"' + (i === ys.length - 1 ? ' disabled' : '') + '>' + ui.icon('down') + '</button><button class="btn ghost sm" data-act="dropDesire" data-id="' + E(id) + '" aria-label="Retirer ' + E(s.name) + '">' + ui.icon('x') + '</button></div></div><div class="pb">' +
         '<div class="lbl">Pourquoi</div><div style="margin-top:8px">' + ui.chips(p + '.motive', C.MOTIVES, d.motive, 'Motivation') + '</div>' +

@@ -34,6 +34,7 @@ async function newPage(browser, width, errs) {
   return { ctx, page };
 }
 const vis = async (page, sel, t = 4000) => { try { await page.waitForSelector(sel, { state: 'visible', timeout: t }); return true; } catch (e) { return false; } };
+const noOverflow2 = async (page, name) => { const ov = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); ok(ov <= 0, name + ' : aucun débordement à 375 px (' + ov + ' px)'); };
 const shot = (page, name, full = true) => page.screenshot({ path: path.join(SHOTS, name + '.png'), fullPage: full });
 async function download(page, clickSel) {
   const [d] = await Promise.all([page.waitForEvent('download', { timeout: 5000 }), page.click(clickSel)]);
@@ -68,6 +69,16 @@ async function download(page, clickSel) {
     await chips.nth(0).click(); await chips.nth(1).click(); await chips.nth(1).click(); await chips.nth(1).click();
     await page.click('[data-act="openUni"][data-u="parole"]');
     await page.locator('#dompanel .schip').nth(0).click();
+    ok(await page.locator('.lvlegend li').count() === 5 && /anime le niveau 4, forme les hôtes/.test(await page.textContent('.lvlegend')), 'inventaire : légende des 5 niveaux et palier animé');
+    ok(/au niveau 3, vous animez les ateliers de niveau 2/.test(await page.textContent('.rulehelp')), 'inventaire : aide en une ligne sur la règle d’animation');
+    const cyc = page.locator('#dompanel .schip').nth(2), cycId = await cyc.getAttribute('data-id');
+    const lv = id => page.evaluate(i => (Cordes.ui.st.skills[i] || {}).level || 0, id);
+    const seq = []; for (let i = 0; i < 6; i++) { await cyc.click(); seq.push(await lv(cycId)); }
+    ok(seq.join() === '1,2,3,4,5,0', 'inventaire : cycle 0 → 5 puis retour à 0 (' + seq.join(' ') + ')');
+    await cyc.focus(); await page.keyboard.press('5');
+    ok(await lv(cycId) === 5 && /5 · Référent/.test(await cyc.textContent()) && await cyc.locator('.dots i.on').count() === 5, 'inventaire : touche 5 → Référent, 5 pastilles');
+    await page.keyboard.press('0');
+    ok(await lv(cycId) === 0, 'inventaire : touche 0 → remise à zéro');
     await shot(page, 'e2e-375-03-maitrise');
     const known = await page.evaluate(() => Object.values(Cordes.ui.st.skills).filter(s => s.level > 0).length);
     ok(known >= 4, 'compétences notées par appui (' + known + ')');
@@ -89,6 +100,8 @@ async function download(page, clickSel) {
     await page.click('[data-act="next"]');
     await page.locator('[data-act="set"][data-val="3"]').first().click();
     await page.locator('[data-act="toggle"][data-val="atelier"]').first().click();
+    ok(await page.locator('[data-bind$=".target"]').first().evaluate(el => [...el.parentNode.querySelectorAll('button')].map(b => b.dataset.val).join()) === '2,3,4,5', 'envies : niveau visé sur l’échelle 2 à 5');
+    ok(await page.locator('section.panel').first().locator('.palpath li').count() === 3 && /un hôte de niveau 4 \(je maîtrise\)/.test(await page.locator('section.panel').first().locator('.palpath').textContent()), 'envies : paliers et « qui peut vous faire progresser »');
     await shot(page, 'e2e-375-05-affinage');
     await page.click('[data-act="next"]');
     for (let i = 1; i <= 8; i++) await page.locator(`[data-act="answer"][data-q="q${i}"]`).nth(i % 3).click();
@@ -99,6 +112,7 @@ async function download(page, clickSel) {
     ok(await page.locator('svg.radar').count() === 1, 'radar rendu');
     ok(await page.locator('svg.constel').count() === 1, 'constellation rendue');
     ok(await page.locator('details.desire').count() === 3, '3 plans d’apprentissage');
+    ok(/≈ \d+ h · \d/.test(await page.locator('details.desire').first().locator('.palpath').textContent()), 'plan par paliers : heures et budget de chaque atelier');
     await page.locator('details.desire').first().locator('[data-tab="ou"]').click();
     ok(await page.locator('.tabpanel:not([hidden]) .resitem').count() >= 3, 'où apprendre : ressources listées');
     await page.locator('details.desire').first().locator('[data-tab="autour"]').click();
@@ -159,6 +173,7 @@ async function download(page, clickSel) {
     ok(await page.locator('section.panel .h3').count() >= 3, 'compétences fortes présélectionnées');
     await page.locator('input[type=number][data-bind$=".years"]').first().fill('9');
     await page.locator('[data-bind$=".proof"][data-val="realisations"]').first().click();
+    ok(/Vous pouvez animer les ateliers de niveau 3 \(Je consolide\)/.test(await page.locator('.animtext').first().textContent()), 'forces : palier animé affiché selon le niveau');
     await shot(page, 'e2e-1440-01-forces');
     await page.click('[data-act="next"]');
     await page.click('[data-bind="offer.goals"][data-val="complement"]');
@@ -171,6 +186,10 @@ async function download(page, clickSel) {
     ok(page.url().endsWith('#/offre'), 'arrivée sur le plan de valorisation');
     const nOff = await page.locator('article.offer').count();
     ok(nOff >= 3 && nOff <= 6, nOff + ' offres générées');
+    ok(await vis(page, '#ladder') && /Vous êtes niveau 4 : vous pouvez animer les ateliers de niveau 3 \(Je consolide\)/.test(await page.textContent('#ladder')), 'offreur : « vous êtes niveau 4 : vous pouvez animer les ateliers de niveau 3 »');
+    ok(await page.locator('#ladder .ladder5').first().locator(':scope > div').count() === 5 && /Pour animer le palier \d : monter au niveau \d/.test(await page.textContent('#ladder')), 'offreur : échelle de progression vers le palier supérieur');
+    ok(await page.locator('article.offer .animline').count() === nOff, 'offreur : chaque offre affiche son palier');
+    ok(/Monter au niveau \d .* pour animer le palier \d/.test(await page.textContent('#s-route ~ .roadmap')), 'feuille de route : monter d’un niveau');
     ok(await page.locator('.chtable .gtr:not(.h)').count() >= 5, 'canaux classés');
     ok(await vis(page, 'text=Cordes · bientôt'), 'canal « notre plateforme · bientôt »');
     const net0 = await page.textContent('#sim-counters .counter:nth-child(4) .v');
@@ -187,7 +206,7 @@ async function download(page, clickSel) {
     const ics = await download(page, '#s-route ~ .spread [data-act="ics"], .spread [data-act="ics"]');
     ok(ics.content.includes('BEGIN:VEVENT'), 'feuille de route exportée en .ics');
     const pass = await download(page, '.actionsbar [data-act="passport"]');
-    ok(pass.content.includes('Ce que je propose'), 'passeport avec les offres');
+    ok(pass.content.includes('Ce que je propose') && pass.content.includes('Échelle de maîtrise et règle d’animation'), 'passeport avec les offres, l’échelle et la règle');
     // liste d'attente hôte fondateur
     await page.click('a[href="#/attente/host"]');
     await page.fill('#wl-email', 'nora@example.org');
@@ -204,7 +223,7 @@ async function download(page, clickSel) {
     ok(d.length && /m$/.test(d[0]), 'distances affichées (' + d.join(', ') + ')');
     await shot(page, 'e2e-1440-04-autour');
     // comment ça marche, démo, comparer
-    await page.goto(URL + '#/comment'); ok(await vis(page, 'text=JaccardIDF'), 'page Comment ça marche'); await shot(page, 'e2e-1440-05-comment', false);
+    await page.goto(URL + '#/comment'); ok(await vis(page, 'text=JaccardIDF') && await page.locator('#d-echelle .scaletable tbody tr').count() === 6, 'page Comment ça marche, avec l’échelle 0 à 5 et la règle'); await shot(page, 'e2e-1440-05-comment', false);
     await page.goto(URL + '#/comparer'); await page.click('[data-act="cmpDemo"]');
     await page.waitForSelector('text=Trocs possibles', { timeout: 5000 }); ok(true, 'comparaison avec un ami');
     await shot(page, 'e2e-1440-06-comparer');
@@ -306,6 +325,7 @@ async function download(page, clickSel) {
     ok(await page.locator('table.matrix tbody tr').count() === 5, 'A7 · matrice de trocs à 5 membres (dont moi)');
     ok(await page.locator('table.matrix td.hot').count() >= 5, 'A7 · trocs trouvés dans la matrice');
     ok(await page.locator('text=Qui anime quoi').count() === 1, 'A7 · qui anime quoi');
+    ok(/animé par \S+, niveau \d.*atelier de niveau \d/.test(await page.textContent('.wrap')), 'A7 · qui anime quoi : niveau de l’hôte et palier animé');
     await noOverflow('groupe');
     await shot(page, 'e2e-375-15-groupe');
     // A3 + A6 tableau de bord
@@ -326,6 +346,42 @@ async function download(page, clickSel) {
     await page.click('[data-act="dataErase"]'); await page.waitForTimeout(200);
     ok(await page.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('cordes.')).length === 0 && !Cordes.ui.st.mode), 'A2 · suppression totale en un geste');
     await shot(page, 'e2e-375-17-donnees');
+  }
+  /* ---------- échelle 0 à 5 : migration, ancien lien, troc de démo, 375 px ---------- */
+  console.log('Échelle 0 à 5 · 375 px');
+  {
+    const { page } = await newPage(browser, 375, errs);
+    await page.goto(URL);
+    // bilan enregistré avec l'ancienne échelle (0 à 4)
+    await page.evaluate(() => localStorage.setItem('cordes.v1', JSON.stringify({ version: 1, mode: 'learn', step: 'done', context: { firstName: 'Ana', city: 'Lyon' },
+      skills: { 'latte-art': { level: 1 }, 'dj-mix': { level: 2 }, 'eloquence': { level: 3 }, 'beatmaking': { level: 4 } }, desires: { 'podcast': { verdict: 'yes', target: 3, priority: 1 } } })));
+    await page.reload(); await page.waitForTimeout(200);
+    const m = await page.evaluate(() => { const s = Cordes.ui.st; return { v: s.version, l: ['latte-art', 'dj-mix', 'eloquence', 'beatmaking'].map(id => s.skills[id].level).join(), t: s.skills.beatmaking.teach, d: s.desires.podcast.target }; });
+    ok(m.v === 2 && m.l === '1,2,4,4' && m.t === true && m.d === 4, 'migration du bilan local : 1→1, 2→2, 3→4, 4→4 + teach, schéma 2 (' + m.l + ')');
+    await page.reload(); await page.waitForTimeout(150);
+    ok(await page.evaluate(() => Cordes.ui.st.skills.eloquence.level === 4 && JSON.parse(localStorage.getItem('cordes.v1')).version === 2), 'migration enregistrée, sans double conversion');
+    await page.goto(URL + '#/bilan/maitrise'); await page.waitForTimeout(150);
+    ok(/4 · Maîtrise/.test(await page.textContent('#mres')), 'inventaire : niveau migré affiché');
+    await page.goto(URL + '#/resultats'); await page.waitForTimeout(200);
+    ok(/vous pouvez animer les ateliers de niveau 3 \(Je consolide\)/.test(await page.textContent('#partager ~ section.panel')), 'passerelle demandeur → offreur : palier animable');
+    await noOverflow2(page, 'résultats migrés');
+    // ancien lien de partage (schéma 1)
+    const legacy = 'j' + Buffer.from(JSON.stringify({ v: 1, m: 'learn', n: 'Old', c: 'Lyon', s: [['eloquence', 3, 0, 2], ['latte-art', 4, 0, 2]], d: [['dj-mix', 2, 1, 1]] })).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    await page.goto(URL + '#b=' + legacy); await page.waitForSelector('text=Le bilan de Old', { timeout: 5000 });
+    ok(/niveau 4, Je maîtrise/.test(await page.textContent('.wrap')), 'ancien lien de partage lu avec la nouvelle échelle');
+    // troc de démonstration : Inès × Claire
+    await page.goto(URL + '#/demo'); await page.click('[data-act="loadDemo"][data-id="ines"]'); await page.waitForTimeout(300);
+    await page.goto(URL + '#/comparer'); await page.click('[data-act="cmpDemo"]');
+    await page.waitForSelector('text=Trocs proposés', { timeout: 5000 });
+    const tx = await page.textContent('.wrap');
+    ok(/palier 3, animé par Inès \(niveau 4\)/.test(tx) && /palier 2, animé par Claire \(niveau 3\)/.test(tx), 'troc de démo valide : anglais (Inès 4 → palier 3) contre pain au levain (Claire 3 → palier 2)');
+    ok(await page.locator('.rulehelp').count() >= 1, 'troc : règle d’animation rappelée');
+    await noOverflow2(page, 'comparaison');
+    await shot(page, 'e2e-375-18-troc');
+    await page.goto(URL + '#/comment'); await page.waitForTimeout(150);
+    await page.evaluate(() => document.getElementById('d-echelle').scrollIntoView()); await page.waitForTimeout(200);
+    await noOverflow2(page, 'comment ça marche');
+    await shot(page, 'e2e-375-19-echelle', false);
   }
   await browser.close();
   console.log('\nErreurs console : ' + (errs.length ? '\n  ' + errs.join('\n  ') : 'aucune'));

@@ -173,6 +173,8 @@
     C.loadData(W.CORDES_DATA, W.CORDES_RESOURCES);
     C.buildGraph(12);
     ui.st = C.loadState() || C.defaultState();
+    // bilan converti depuis l'ancienne échelle (0 à 4) : on enregistre tout de suite la version 2
+    if (ui.st.migratedFrom) { delete ui.st.migratedFrom; C.saveState(ui.st); }
     document.addEventListener('click', onClick);
     document.addEventListener('input', onInput);
     document.addEventListener('change', onInput);

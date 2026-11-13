@@ -58,7 +58,7 @@
     var L = plan.ladder || []; if (!L.length) return '';
     return '<section class="panel" id="ladder" style="margin-bottom:16px"><div class="ph"><span class="t">Ce que vous pouvez animer</span><span class="hint">niveau n : ateliers de niveau n-1</span></div><div class="pb">' +
       L.slice(0, 4).map(function (x, i) {
-        return '<div' + (i ? ' style="margin-top:16px"' : '') + '><div class="spread" style="margin-bottom:8px"><span class="h3" style="font-size:17px">' + E(x.s.name) + '</span><span class="animnote">' + ui.pill('Vous êtes niveau ' + x.level, 'int') + '</span></div>' +
+        return '<div' + (i ? ' style="margin-top:16px"' : '') + '><div class="spread" style="margin-bottom:8px"><span class="h3" style="font-size:17px">' + E(x.s.name) + '</span><span class="animnote">' + (x.trainsHosts ? ui.pill('forme les hôtes', 'int') : x.palier ? ui.pill('anime le niveau ' + x.palier, 'int') : '') + '</span></div>' +
           '<p class="sp" style="margin-bottom:8px;color:var(--fg)">Vous êtes niveau ' + x.level + ' : ' + E(x.text) + '.</p>' +
           '<div class="ladder5" role="list" aria-label="Échelle de ' + E(x.s.name) + '">' + x.rungs.map(function (r) {
             return '<div role="listitem" class="' + (r.current ? 'cur' : r.done ? 'done' : '') + '"' + (r.current ? ' aria-current="true"' : '') + '><div class="lv">' + r.level + ' · ' + E(r.label) + '</div><div class="nm">' + E(r.milestone) + '</div><div class="an">' + (r.animates.length ? 'anime le niveau ' + r.animates.join(', ') + (r.level >= C.LEVEL_MAX ? ', forme les hôtes' : '') : 'n’anime pas') + '</div></div>';

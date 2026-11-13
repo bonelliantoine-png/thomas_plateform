@@ -7,17 +7,38 @@ Un bilan de tout ce qu’on sait faire et veut faire en dehors du travail (cuisi
 - Ouvrir `app/index.html` dans un navigateur récent (Chrome, Edge, Firefox, Safari). Aucun serveur, aucune installation, aucune étape de build : scripts classiques, compatibles `file://`.
 - Sans réseau, tout fonctionne sauf les polices Google (repli système), « Autour de moi » (OpenStreetMap, avec message et recherches préparées en repli) et le copilote IA.
 - Pages SEO : `seo/index.html` (générées, voir plus bas).
-- Démo en un clic : page d’accueil ou `#/demo` (Inès, demandeuse ; Malik, DJ-producteur ; Claire, cuisine et éloquence).
+- Démo en un clic : page d’accueil ou `#/demo` (Inès, demandeuse ; Malik, DJ-producteur ; Claire, cuisine et éloquence). Inès et Claire illustrent un troc valide selon la règle d’animation (voir plus bas).
 
 ### Tests
 
 ```
-node app/dev/test-engine.js          # moteur sous Node, vraies données : 391 vérifications
-node app/dev/e2e.js [dossier]        # Playwright (Chromium) en file:// à 375 et 1440 px : 84 vérifications, 0 erreur console tolérée
+node app/dev/test-engine.js          # moteur sous Node, vraies données : 485 vérifications
+node app/dev/e2e.js [dossier]        # Playwright (Chromium) en file:// à 375 et 1440 px : 108 vérifications, 0 erreur console tolérée
 node app/dev/build-seo.js [dossier]  # régénère seo/ (61 pages)
 ```
 
 `e2e.js` simule Nominatim et Overpass, contrôle les débordements horizontaux à 375 px et échoue à la moindre erreur ou alerte console.
+
+## Échelle de maîtrise et règle d’animation
+
+Toute l’app utilise une échelle de 0 à 5 (`C.LEVELS` dans `js/engine/core.js`) :
+
+| n | Libellé | Peut animer |
+|---|---|---|
+| 0 | Jamais pratiqué | non |
+| 1 | Je découvre | non |
+| 2 | Bases acquises | ateliers de niveau 1 (découverte) |
+| 3 | Je consolide | ateliers de niveau 2 |
+| 4 | Je maîtrise | ateliers de niveau 3 |
+| 5 | Référent | ateliers de niveau 4 et formation des hôtes |
+
+- Un atelier de niveau k amène du niveau k-1 au niveau k. Règle stricte : une personne de niveau n anime les ateliers de niveau n-1. Constante `C.TEACH_RULE = 'strict'` (par défaut) ou `'below'` (tout niveau inférieur), non exposée à l’utilisateur. Fonctions : `C.canAnimate(n, k)`, `C.topPalier(n)`, `C.animatedPaliers(n)`, `C.paliersOnPath(n, cur, cible)`, `C.hostLevel(k)`, `C.animateText(n)`. Le palier 5 (vers « référent ») n’a pas d’atelier au-dessus : il passe par la formation des hôtes, menée par un référent.
+- Jalons (`C.milestone(s, k)`) : niveau 1 = jalon générique formulé à partir du nom (« Première séance de poterie faite, gestes de base connus ») ; niveaux 2 à 5 = `levels[0..3]` de la taxonomie (données inchangées).
+- Inventaire : un appui monte d’un cran (le sixième remet à zéro), touches 0 à 5 au clavier sur une compétence ; légende des 5 niveaux et aide d’une ligne sur la règle.
+- Envies : niveau visé de 2 à 5, plan découpé en paliers (`plan.steps` : atelier, heures, coût, niveau de l’hôte requis), affiché comme « Qui peut vous faire progresser ».
+- Offreur : chaque offre cible le palier n-1 (« Vous êtes niveau 4 : vous pouvez animer les ateliers de niveau 3 (Je consolide) ») ; le prix conseillé dépend du palier animé (`C.PALIER_PRICE`) ; échelle de progression par compétence (`C.hostLadder`) et étape « Monter d’un niveau » dans la feuille de route.
+- Passerelle demandeur → offreur, liste d’attente : compétences au niveau 2 ou plus. Troc et groupe : B fait progresser A sur x si B peut animer un palier du chemin de A (niveau actuel + 1 → niveau visé), donc niveau(B) = niveau visé + 1 pour le dernier palier ; les compétences connues au mauvais niveau sont signalées avec le niveau d’hôte requis.
+- Migration (schéma 2, `version: 2`) : les bilans `cordes.v1`, la sauvegarde, l’historique et les liens `#b=` de l’ancienne échelle 0-4 sont convertis à la lecture : 1→1, 2→2, 3→4, 4→4 avec `teach: true` ; niveaux visés bornés à 2 au moins. La conversion est enregistrée au démarrage et n’est jamais appliquée deux fois. Les nouveaux liens portent `v: 2`.
 
 ## Architecture
 
@@ -65,8 +86,8 @@ Stockage local (tout sous le préfixe `cordes.`) : `cordes.v1` (bilan), `.waitli
 - **Similarité** : 0,36 × Jaccard des tags pondéré par la rareté (IDF) + 0,10 même univers + 0,08 même domaine + 0,18 lien `related` + 0,20 cosinus des attributs centrés + 0,08 Jaccard des soft skills. Graphe des 12 voisins précalculé.
 - **Paquet d’inspiration** : affinité (3 meilleures similarités aux ancres), contexte (budget, temps, présentiel, intentions), tendance, exploration, passerelle entre univers, demande ; diversité par MMR (λ = 0,72, pénalité d’univers répété) ; chaque « oui » renforce tags et univers, chaque « non » les pénalise.
 - **Archétype** : vecteur sur 6 axes issu de 8 questions, plus proche des 7 centroïdes ; confiance = écart au second.
-- **Plan** : heures = hoursToBasics × (facteur cible − facteur actuel), facteurs 0 / 0,3 / 1 / 3 / 7 ; semaines selon le temps hebdomadaire réparti entre envies ; budget = matériel + séances selon le format préféré.
-- **Prix conseillé** : position dans la fourchette `pricing[univers][format]` modulée par niveau, années, preuves, expérience, × ville (Paris +15 %), × jauge, arrondi à 5 €.
+- **Plan** : heures = hoursToBasics × (facteur cible − facteur actuel), facteurs 0 / 0,1 / 1 / 2,5 / 6 / 12 pour les niveaux 0 à 5 (hoursToBasics mène aux bases acquises) ; un palier par niveau à franchir, avec ses heures, son coût et l’hôte requis ; semaines selon le temps hebdomadaire réparti entre envies ; budget = matériel + séances selon le format préféré.
+- **Prix conseillé** : position dans la fourchette `pricing[univers][format]` modulée par le palier animé (−0,16 / −0,05 / +0,05 / +0,13 pour les ateliers de niveau 1 à 4), années, preuves, expérience, × ville (Paris +15 %), × jauge, arrondi à 5 €.
 - **Canaux, statut, niche, troc** : voir `#/comment`.
 - **Lot 2** : troc appliqué à toutes les paires d’un groupe ; adéquation d’un lieu (équipements, type, demande, bonus d’équipement distinctif) et fréquentation = créneaux × 4,33 × min(capacité, 8) × 60 % ; entonnoir par visite et temps médian par écran ; NPS ; test de prix monadique (12, 15 ou 19 € tiré une fois par appareil, indice = prix × part de « oui ») ; avant/après entre instantanés (niveaux gagnés, envies atteintes au niveau visé, nouvelles envies).
 
@@ -83,10 +104,14 @@ Stockage local (tout sous le préfixe `cordes.`) : `cordes.v1` (bilan), `.waitli
 - **A6 Questionnaire** : utilité 1 à 5, NPS, intérêt, test de prix, « qu’est-ce qui manque » ; résultats dans `#/admin/metrics`.
 - **A7 Groupe** : 2 à 8 liens (avec ou sans son bilan), matrice des trocs, qui anime quoi, envies et compétences communes, activités et projets ; bande de démo (3 profils + 2 amis fictifs).
 - **A8 Quartier** : « Le 11e ouvre à 50 inscrits : n/50 », inscriptions locales + valeur de démonstration fixe par zone, toujours libellée comme telle.
-- **A9 SEO** : `app/dev/build-seo.js` génère `seo/` : index + 30 « Apprendre X à Paris » + 30 « Donner des cours de X à Paris » (rang = demande, tendance, facilité à transmettre, revenu ; 3 par univers au plus), jalons et heures, budget, où apprendre, prix observés, offre et trame, canaux, cadre, JSON-LD, liens vers l’app.
+- **A9 SEO** : `app/dev/build-seo.js` génère `seo/` : index (avec l’échelle des 5 paliers et la règle) + 30 « Apprendre X à Paris » (5 paliers, heures cumulées, hôte requis) + 30 « Donner des cours de X à Paris » (rang = demande, tendance, facilité à transmettre, revenu ; 3 par univers au plus), jalons et heures, budget, où apprendre, prix observés, offre et trame, canaux, cadre, JSON-LD, liens vers l’app.
 - **A10 Lieu partenaire** : créneaux creux (7 jours × 3 moments), capacité, équipements, type, formule (heure creuse contre consommation, avantage membre, partage de recette) ; compétences compatibles, estimation de fréquentation et de consommations, fiche partenaire copiable et téléchargeable, inscription avec rôle « lieu ».
 
 ## Correctifs de cette version
+
+- Échelle 0 à 5 et règle d’animation (voir plus haut) ; démos et amis fictifs du groupe recalés sur la nouvelle échelle pour illustrer la règle (Inès, anglais 4, anime le palier 3 visé par Claire ; Claire, pain au levain 3, anime le palier 2 visé par Inès ; Claire, référente en éloquence, anime le palier 4 visé par Léa).
+- Trame d’atelier : « point d’attention : patience » au lieu d’un article mal accordé.
+- Page Comment ça marche : la colonne de texte ne déborde plus à 375 px.
 
 - Panneau latéral resté marqué `open` alors que masqué, qui interceptait les clics : état du tiroir rendu cohérent (minuteur annulé à la réouverture) et `[hidden]{display:none!important}`.
 - Enregistrement différé perdu si l’onglet se ferme dans les 250 ms : écriture forcée à `pagehide` et au passage en arrière-plan (seulement si une écriture est en attente).
