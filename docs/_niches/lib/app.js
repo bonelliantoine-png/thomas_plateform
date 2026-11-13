@@ -149,9 +149,10 @@ function renderTable() {
   ROWS = VIS.slice().sort(function (a, b) { var x = sortKey(a, k), y = sortKey(b, k); if (typeof x === 'string') return d * x.localeCompare(y); return d * (x - y) || b.s1 - a.s1; });
   X.order = ROWS.map(function (n) { return n.id; });
   RH = window.innerWidth <= 1040 ? 64 : 44;
-  $('xbody').innerHTML = '<div class="vt"><div class="vhead" role="row">' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
+  $('xbody').innerHTML = '<div class="vt"><div class="msort"><label>Trier par <select id="x-sort">' + COLS.filter(function (c) { return c[0] !== 'r'; }).map(function (c) { return '<option value="' + c[0] + '"' + (X.sort.k === c[0] ? ' selected' : '') + '>' + ({ name: 'Nom', sector: 'Secteur', verdict: 'Verdict', demand: 'Demande', wtp: 'Propension', format: 'Format', supply: 'Vivier', s1: 'Score', p1: 'Prix palier 1' }[c[0]]) + '</option>'; }).join('') + '</select></label></div><div class="vhead" role="row">' + COLS.map(function (c) { var on = X.sort.k === c[0]; return '<div role="columnheader" aria-sort="' + (on ? (X.sort.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (X.sort.d > 0 ? ' ↑' : ' ↓') : '') + '</button></div>'; }).join('') + '</div>' +
     (ROWS.length ? '<div class="vbody" id="vbody" tabindex="0" aria-label="Tableau des niches"><div class="vspace" id="vspace" style="height:' + ROWS.length * RH + 'px"></div></div>' : '<div class="empty">Aucune niche ne correspond. Effacer un filtre ou élargir la recherche.</div>') + '</div>';
   if (ROWS.length) { $('vbody').addEventListener('scroll', paintRows, { passive: true }); paintRows(); }
+  $('x-sort').addEventListener('change', function (e) { var k2 = e.target.value; X.sort.k = k2; X.sort.d = (k2 === 'name' || k2 === 'sector') ? 1 : -1; renderTable(); });
 }
 function paintRows() {
   var b = $('vbody'); if (!b) return;

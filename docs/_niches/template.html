@@ -196,6 +196,8 @@ select,input[type=number],input[type=text].in{height:30px;background:var(--bg);b
 .vhead>div{padding:8px 8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
 .vhead button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer;padding:0;text-align:left}
 .vhead button:hover{color:var(--fg)}
+.msort{display:none;padding:8px 14px;border-bottom:1px solid var(--line);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
+.msort select{margin-left:8px;text-transform:none;letter-spacing:0}
 .vbody{height:560px;overflow:auto;position:relative;overscroll-behavior:contain}
 .vspace{position:relative}
 .vrow{position:absolute;left:0;right:0;height:44px;border-bottom:1px solid var(--line);cursor:pointer;background:transparent;border-left:2px solid transparent;color:var(--fg);text-align:left;padding:0;width:100%}
@@ -362,6 +364,7 @@ footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:
   .nrow .ff{display:none}
   .trow.l1{padding-left:28px}.trow.l2{padding-left:40px}
   .vhead{display:none}
+  .msort{display:block}
   .vrow{display:grid;grid-template-columns:36px minmax(0,1fr) 92px;grid-template-rows:auto auto;height:64px;align-content:center;row-gap:2px}
   .vrow>span{padding:0 6px}
   .vrow .xc{display:none}
