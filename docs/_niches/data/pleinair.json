@@ -1,0 +1,8190 @@
+{
+ "sector": "pleinair",
+ "categories": [
+  {
+   "id": "pleinair.marche",
+   "name": "Randonnée et orientation",
+   "desc": "Marcher dehors et savoir s'orienter, de la balade en forêt à l'itinérance.",
+   "subcategories": [
+    {
+     "id": "pleinair.marche.rando",
+     "name": "Randonnée",
+     "desc": "Journée, itinérance, raquettes, en famille ou rapide."
+    },
+    {
+     "id": "pleinair.marche.orientation",
+     "name": "Orientation",
+     "desc": "Carte, boussole, GPS et course d'orientation."
+    },
+    {
+     "id": "pleinair.marche.jeux",
+     "name": "Jeux de piste",
+     "desc": "Géocaching et chasses au trésor nature."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.bivouac",
+   "name": "Bivouac et vie dehors",
+   "desc": "Dormir, cuisiner et se débrouiller dehors, avec peu de matériel.",
+   "subcategories": [
+    {
+     "id": "pleinair.bivouac.camping",
+     "name": "Camping et matériel",
+     "desc": "Choisir et alléger son équipement."
+    },
+    {
+     "id": "pleinair.bivouac.bushcraft",
+     "name": "Bushcraft",
+     "desc": "Feu, abri, couteau et cuisine rustique."
+    },
+    {
+     "id": "pleinair.bivouac.savoirs",
+     "name": "Savoirs de terrain",
+     "desc": "Nœuds, météo, premiers secours."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.eau",
+   "name": "Eau et nautisme",
+   "desc": "Pagaie, voile, surf, plongée et pêche.",
+   "subcategories": [
+    {
+     "id": "pleinair.eau.pagaie",
+     "name": "Pagaie",
+     "desc": "Kayak, paddle, canoë."
+    },
+    {
+     "id": "pleinair.eau.voile-surf",
+     "name": "Voile et surf",
+     "desc": "Voile légère, surf et planche."
+    },
+    {
+     "id": "pleinair.eau.sous-marin",
+     "name": "Sous l'eau",
+     "desc": "Plongée et snorkeling."
+    },
+    {
+     "id": "pleinair.eau.peche",
+     "name": "Pêche",
+     "desc": "Mouche, leurre, à pied."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.neige",
+   "name": "Neige et glace",
+   "desc": "Skier, glisser et se déplacer en sécurité en hiver.",
+   "subcategories": [
+    {
+     "id": "pleinair.neige.piste",
+     "name": "Ski et snowboard",
+     "desc": "Piste et nordique."
+    },
+    {
+     "id": "pleinair.neige.hors-piste",
+     "name": "Hors-piste et sécurité",
+     "desc": "Ski de rando et sécurité avalanche."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.vertical",
+   "name": "Verticalité et montagne",
+   "desc": "Grimper, assurer et progresser en terrain vertical.",
+   "subcategories": [
+    {
+     "id": "pleinair.vertical.falaise",
+     "name": "Escalade",
+     "desc": "Bloc, falaise et assurage."
+    },
+    {
+     "id": "pleinair.vertical.montagne",
+     "name": "Haute montagne",
+     "desc": "Via ferrata et alpinisme d'initiation."
+    },
+    {
+     "id": "pleinair.vertical.sous-terre",
+     "name": "Canyon et spéléologie",
+     "desc": "Descendre dans l'eau et sous terre."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.roue",
+   "name": "Vélo et voyage",
+   "desc": "Voyager à vélo et rouler en terrain varié.",
+   "subcategories": [
+    {
+     "id": "pleinair.roue.voyage",
+     "name": "Voyage à vélo",
+     "desc": "Bikepacking et itinérance."
+    },
+    {
+     "id": "pleinair.roue.vtt",
+     "name": "VTT et gravel",
+     "desc": "Rouler hors route."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.air",
+   "name": "Air et ciel",
+   "desc": "Voler, faire voler ou regarder depuis le ciel.",
+   "subcategories": [
+    {
+     "id": "pleinair.air.vol",
+     "name": "Vol",
+     "desc": "Parapente, cerf-volant et drone."
+    }
+   ]
+  },
+  {
+   "id": "pleinair.famille",
+   "name": "Dehors en famille",
+   "desc": "Sorties, jeux et veillées pour petits et grands.",
+   "subcategories": [
+    {
+     "id": "pleinair.famille.enfants",
+     "name": "Enfants et nature",
+     "desc": "Découverte, cabane, jeux de piste."
+    },
+    {
+     "id": "pleinair.famille.soirees",
+     "name": "Soirées dehors",
+     "desc": "Veillées, pique-niques et nuit étoilée."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "pleinair-rando-journee-paris",
+   "name": "Randonnée à la journée depuis Paris",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.rando",
+   "desc": "Choisir un itinéraire accessible en train, préparer son sac et randonner en forêt ou en vallée.",
+   "audience": "Citadins 25-55 ans, couples, amis",
+   "skills": [
+    "Choisir un itinéraire en train",
+    "Préparer son sac",
+    "Marcher à bonne allure",
+    "Respecter l'environnement"
+   ],
+   "appSkills": [
+    "randonnee-journee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première rando",
+     "goal": "Marcher 12 km avec un petit sac",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rando de 20 km",
+     "goal": "Marcher 20 km en autonomie",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Choisir et organiser",
+     "goal": "Préparer seul une sortie",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Randonneur autonome",
+     "goal": "Concevoir un itinéraire complet",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de sorties",
+     "goal": "Animer une communauté de randonneurs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "balade",
+    "nature",
+    "ville",
+    "convivial"
+   ],
+   "competitors": [
+    "Randos entre amis",
+    "Associations",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande massive et accès facile en train. Payer est rare (offre associative et gratuite). Valeur dans l'organisation et le lien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-rando-itinerante",
+   "name": "Randonnée itinérante sur plusieurs jours",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.rando",
+   "desc": "Planifier une itinérance de 3 à 5 jours : étapes, hébergement, sac et sécurité.",
+   "audience": "Randonneurs 28-60 ans",
+   "skills": [
+    "Planifier les étapes",
+    "Alléger le sac",
+    "Gérer l'eau et le ravitaillement",
+    "Soigner ses pieds"
+   ],
+   "appSkills": [
+    "randonnee-itinerante"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première itinérance",
+     "goal": "Marcher 2 jours avec hébergement",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Autonomie complète",
+     "goal": "Gérer 3 jours",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itinérance exigeante",
+     "goal": "Gérer 5 jours en terrain varié",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Randonnée en autonomie",
+     "goal": "Concevoir un trek",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      225,
+      450
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des départs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      360,
+      675
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "vacances",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "voyage",
+    "balade",
+    "nature",
+    "defi"
+   ],
+   "competitors": [
+    "Randos et voyages",
+    "Agences"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Fort attrait, mais accompagnement payant en moyenne montagne réservé aux accompagnateurs diplômés. Ateliers de préparation et sorties entre pairs sans paiement du service d'encadrement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-rando-raquettes",
+   "name": "Randonnée en raquettes à neige",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.rando",
+   "desc": "Marcher en raquettes, choisir ses itinéraires et connaître les risques d'avalanche.",
+   "audience": "Randonneurs 28-60 ans, familles",
+   "skills": [
+    "Mettre ses raquettes",
+    "Choisir un itinéraire",
+    "Évaluer la neige",
+    "S'équiper"
+   ],
+   "appSkills": [
+    "randonnee-raquettes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier pas dans la neige",
+     "goal": "Marcher 2 h en raquettes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Journée en raquettes",
+     "goal": "Marcher 4 h",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itinéraire choisi",
+     "goal": "Préparer une sortie",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      125,
+      225
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie hivernale",
+     "goal": "Concevoir un itinéraire",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      225,
+      365
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      350,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "montagne",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "mouvement"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "balade",
+    "montagne",
+    "famille"
+   ],
+   "competitors": [
+    "Accompagnateurs en montagne",
+    "Offices de tourisme"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique de vacances d'hiver, accompagnement par diplômé requis en montagne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-rando-famille-enfants",
+   "name": "Randonner avec des enfants",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.rando",
+   "desc": "Choisir des parcours, jeux et pauses adaptés pour des sorties joyeuses avec 3 à 12 ans.",
+   "audience": "Parents de 28-45 ans",
+   "skills": [
+    "Choisir un itinéraire",
+    "Motiver les enfants",
+    "Prévoir le sac",
+    "Gérer la fatigue"
+   ],
+   "appSkills": [
+    "randonnee-journee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première balade",
+     "goal": "Marcher 4 km avec jeux",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sortie de 8 km",
+     "goal": "Marcher 8 km",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rando en famille",
+     "goal": "Organiser une journée",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie familiale",
+     "goal": "Concevoir un séjour",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des sorties parents-enfants",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "famille",
+    "balade",
+    "nature",
+    "enfant"
+   ],
+   "competitors": [
+    "Associations",
+    "Applications"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Demande large chez les parents, besoin de parcours adaptés et de lien. Prix bas mais fréquence élevée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-rando-rapide-fastpacking",
+   "name": "Randonnée rapide et fastpacking",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.rando",
+   "desc": "Randonner léger et vite : allure, équipement minimaliste et sécurité.",
+   "audience": "Sportifs 28-50 ans",
+   "skills": [
+    "Sac minimaliste",
+    "Allure",
+    "Alimentation",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "randonnee-journee",
+    "trail-running"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sortie rapide",
+     "goal": "Marcher 20 km à bonne allure",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sac léger",
+     "goal": "Alléger son équipement",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Journée longue",
+     "goal": "Parcourir 35 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Traversée",
+     "goal": "Planifier 2 jours",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "defi",
+    "nature",
+    "sport",
+    "balade"
+   ],
+   "competitors": [
+    "Communautés trail",
+    "Marques"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Niche sportive, sorties entre pairs, public réduit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-carte-boussole",
+   "name": "Lecture de carte et boussole",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.orientation",
+   "desc": "Lire une carte IGN, prendre un azimut et se repérer sans GPS.",
+   "audience": "Randonneurs, familles, scouts",
+   "skills": [
+    "Lire une carte",
+    "Prendre un azimut",
+    "Se repérer",
+    "Estimer distance et temps"
+   ],
+   "appSkills": [
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire une carte",
+     "goal": "Repérer 10 éléments",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boussole en main",
+     "goal": "Prendre et suivre un azimut",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcours en forêt",
+     "goal": "Rejoindre 5 balises",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Navigation en terrain difficile",
+     "goal": "Naviguer dans le brouillard",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      165,
+      330
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent orientation",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      265,
+      495
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "balade",
+    "science",
+    "jeu"
+   ],
+   "competitors": [
+    "FFCO",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Compétence très recherchée et rare, formats d'atelier et de sortie bien rémunérés (30 à 60 €).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-gps-appli-rando",
+   "name": "GPS et applications de randonnée",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.orientation",
+   "desc": "Préparer et suivre un itinéraire sur smartphone, trace GPX, batterie et sauvegarde.",
+   "audience": "Randonneurs connectés 25-60 ans",
+   "skills": [
+    "Charger une trace",
+    "Lire sur l'application",
+    "Économiser la batterie",
+    "Sauvegarder"
+   ],
+   "appSkills": [
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première trace",
+     "goal": "Suivre un itinéraire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Préparer une sortie",
+     "goal": "Créer une trace",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Navigation hors réseau",
+     "goal": "Utiliser des cartes hors ligne",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sorties complexes",
+     "goal": "Partager une trace",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent navigation",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "tech",
+    "nature",
+    "balade",
+    "code"
+   ],
+   "competitors": [
+    "Applications",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin pratique, offre en ligne gratuite abondante. Valeur dans l'atelier mixte carte et appli.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-course-orientation",
+   "name": "Course d'orientation",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.orientation",
+   "desc": "Se déplacer d'une balise à l'autre, choisir un itinéraire et courir ou marcher vite.",
+   "audience": "Sportifs, familles, scolaires",
+   "skills": [
+    "Lire une carte",
+    "Choisir un itinéraire",
+    "Poinçonner",
+    "Gérer son effort"
+   ],
+   "appSkills": [
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première balise",
+     "goal": "Trouver 5 balises",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Parcours facile",
+     "goal": "Faire un parcours vert",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcours technique",
+     "goal": "Faire un parcours bleu",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition loisir",
+     "goal": "Participer à une épreuve",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Traceur de parcours",
+     "goal": "Concevoir un parcours",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "enfants"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "jeu",
+    "nature",
+    "sport",
+    "balade"
+   ],
+   "competitors": [
+    "FFCO",
+    "Clubs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sport pas assez connu, très ludique. Organisation possible entre pairs et en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-orientation-nocturne",
+   "name": "Orientation et balade de nuit",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.orientation",
+   "desc": "Se repérer et marcher de nuit : lampe, étoiles, sons et sécurité.",
+   "audience": "Amateurs de sensations, familles",
+   "skills": [
+    "Lampe frontale",
+    "Lire une carte de nuit",
+    "Repères naturels",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première nuit dehors",
+     "goal": "Marcher 3 km de nuit",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Repères de nuit",
+     "goal": "Utiliser carte et lampe",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Orientation nocturne",
+     "goal": "Rejoindre des balises",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Nuit en autonomie",
+     "goal": "Naviguer 10 km",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des soirées",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nuit",
+    "nature",
+    "balade",
+    "jeu"
+   ],
+   "competitors": [
+    "FFCO",
+    "Associations"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Format différenciant, attractif en entreprise, avec exigences de sécurité de nuit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-geocaching",
+   "name": "Géocaching et chasses au trésor",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.jeux",
+   "desc": "Trouver des caches GPS, créer les siennes et organiser des chasses au trésor.",
+   "audience": "Familles, curieux, enfants",
+   "skills": [
+    "Utiliser l'application",
+    "Trouver une cache",
+    "Créer une cache",
+    "Respecter les règles"
+   ],
+   "appSkills": [
+    "geocaching"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première cache",
+     "goal": "Trouver 3 caches",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Caches variées",
+     "goal": "Résoudre des énigmes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Créer une cache",
+     "goal": "Créer et publier",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chasse thématique",
+     "goal": "Concevoir un parcours",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des événements",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "jeu",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "jeu",
+    "balade",
+    "enigme",
+    "famille",
+    "ville"
+   ],
+   "competitors": [
+    "Geocaching.com",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté mondiale, pratique libre et gratuite, valeur dans les parcours thématiques (événements, EVG, entreprises).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-chasse-tresor-nature",
+   "name": "Chasse au trésor nature",
+   "sector": "pleinair",
+   "category": "pleinair.marche",
+   "subcategory": "pleinair.marche.jeux",
+   "desc": "Concevoir et animer une chasse au trésor avec énigmes dans un parc ou une forêt.",
+   "audience": "Familles, anniversaires, entreprises",
+   "skills": [
+    "Scénariser",
+    "Poser des énigmes",
+    "Préparer le matériel",
+    "Animer"
+   ],
+   "appSkills": [
+    "geocaching"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer une chasse",
+     "goal": "Participer à une chasse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Résoudre des énigmes",
+     "goal": "Résoudre 8 énigmes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Créer une chasse",
+     "goal": "Concevoir une chasse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chasse en équipe",
+     "goal": "Animer 30 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Concepteur",
+     "goal": "Vendre des chasses",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "plein-air",
+    "famille",
+    "fete",
+    "nature"
+   ],
+   "competitors": [
+    "Prestataires d'événements",
+    "Escape games"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte pour anniversaires et équipes, marché de prestataires. Les particuliers peuvent concevoir leur propre chasse.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-bivouac-leger",
+   "name": "Bivouac léger : dormir dehors une nuit",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.camping",
+   "desc": "Monter une tente ou un tarp, choisir son emplacement et passer une nuit confortable.",
+   "audience": "Randonneurs, citadins aventureux",
+   "skills": [
+    "Choisir un emplacement",
+    "Monter sa tente",
+    "Isoler du sol",
+    "Respecter les règles"
+   ],
+   "appSkills": [
+    "bivouac-leger"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première nuit",
+     "goal": "Dormir une nuit en bivouac",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Emplacement choisi",
+     "goal": "Choisir un lieu légal",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bivouac confortable",
+     "goal": "Gérer froid et humidité",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      80,
+      155
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Bivouac en autonomie",
+     "goal": "Planifier un week-end",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      195,
+      390
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des bivouacs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      310,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-soir",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nuit",
+    "nature",
+    "voyage",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "Marques"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Très tendance, format sortie bien rémunéré (40 à 90 €), équipements loués ou prêtés. Lieu légal à choisir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-sac-ultraleger",
+   "name": "Alléger son sac : équipement ultraléger",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.camping",
+   "desc": "Peser, trier et choisir un matériel léger pour randonner ou bivouaquer.",
+   "audience": "Randonneurs 28-55 ans",
+   "skills": [
+    "Peser son matériel",
+    "Trier",
+    "Choisir un duvet",
+    "Choisir une tente"
+   ],
+   "appSkills": [
+    "bivouac-leger"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon sac pesé",
+     "goal": "Peser et lister son matériel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trier",
+     "goal": "Gagner 2 kg",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matériel choisi",
+     "goal": "Choisir ses pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sac ultraléger",
+     "goal": "Réduire à moins de 6 kg",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent matériel",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "voyage",
+    "nature",
+    "geste",
+    "argent"
+   ],
+   "competitors": [
+    "Boutiques outdoor",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier concret apprécié des randonneurs, concurrence des magasins qui conseillent gratuitement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-camping-famille",
+   "name": "Camper en famille : organisation et repas",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.camping",
+   "desc": "Préparer une sortie camping avec enfants : matériel, repas, jeux et rythme.",
+   "audience": "Parents 30-45 ans",
+   "skills": [
+    "Choisir un terrain",
+    "Monter la tente",
+    "Préparer les repas",
+    "Occuper les enfants"
+   ],
+   "appSkills": [
+    "bivouac-leger"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première nuit en famille",
+     "goal": "Dormir en famille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Week-end réussi",
+     "goal": "Organiser un week-end",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séjour de 4 jours",
+     "goal": "Organiser 4 jours",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie campeur",
+     "goal": "Planifier des vacances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des séjours",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "famille",
+    "nature",
+    "voyage",
+    "convivial"
+   ],
+   "competitors": [
+    "Campings",
+    "Blogs"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin pratique de parents, utile en atelier de préparation avant l'été.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-bushcraft-feu",
+   "name": "Bushcraft : allumer un feu et cuisiner",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.bushcraft",
+   "desc": "Allumer un feu en sécurité, choisir son bois et cuisiner au feu de camp.",
+   "audience": "Amateurs de nature 25-50 ans, familles",
+   "skills": [
+    "Choisir son bois",
+    "Allumer sans briquet",
+    "Gérer un feu",
+    "Cuisiner"
+   ],
+   "appSkills": [
+    "bushcraft-feu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier feu",
+     "goal": "Allumer un feu avec briquet et amadou",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Feu maîtrisé",
+     "goal": "Allumer avec ferrocérium",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisine au feu",
+     "goal": "Cuisiner un repas",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Feu en conditions difficiles",
+     "goal": "Allumer sous la pluie",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      210,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bushcraft",
+     "goal": "Animer des stages",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      335,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "gourmand",
+    "geste",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de bushcraft",
+    "Stages"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Forte demande, stages payants (60 à 100 € la demi-journée). Réglementation sur feu et lieux à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-abri-tarp",
+   "name": "Abri, tarp et hamac",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.bushcraft",
+   "desc": "Installer un tarp, un hamac ou un abri naturel pour dormir dehors confortablement.",
+   "audience": "Randonneurs, bushcrafteurs",
+   "skills": [
+    "Choisir des arbres",
+    "Installer un tarp",
+    "Tendre un hamac",
+    "Isoler"
+   ],
+   "appSkills": [
+    "bushcraft-feu",
+    "noeuds-cordes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tarp",
+     "goal": "Installer un tarp",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hamac confortable",
+     "goal": "Dormir en hamac",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Abri naturel",
+     "goal": "Construire un abri",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      70,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Nuit extrême",
+     "goal": "Passer une nuit par mauvais temps",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      180,
+      360
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des stages",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      290,
+      540
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "bivouac",
+    "nuit",
+    "geste"
+   ],
+   "competitors": [
+    "Écoles de bushcraft"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Complémentaire du bivouac, public de niche.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-couteau-bois-sculpture",
+   "name": "Couteau, hachette et sculpture sur bois",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.bushcraft",
+   "desc": "Utiliser un couteau et une hachette en sécurité, tailler cuillères et bâtons.",
+   "audience": "Bricoleurs, bushcrafteurs, familles",
+   "skills": [
+    "Tenir un couteau",
+    "Affûter",
+    "Tailler",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "bushcraft-feu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier couteau",
+     "goal": "Tailler un bâton",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cuillère en bois",
+     "goal": "Tailler une cuillère",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Hachette et fendage",
+     "goal": "Fendre du bois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièces avancées",
+     "goal": "Sculpter un bol",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des stages",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "nature",
+    "fabrication",
+    "geste",
+    "calme"
+   ],
+   "competitors": [
+    "Écoles de bushcraft",
+    "Artisans"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier très concret et accessible, rendement par objet réalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-cuisine-plein-air",
+   "name": "Cuisine en plein air et au réchaud",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.bushcraft",
+   "desc": "Cuisiner léger avec un réchaud, un feu ou un trangia lors d'une sortie.",
+   "audience": "Randonneurs, campeurs, familles",
+   "skills": [
+    "Choisir un réchaud",
+    "Recettes légères",
+    "Hygiène",
+    "Gérer l'eau"
+   ],
+   "appSkills": [
+    "bivouac-leger"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier repas",
+     "goal": "Cuisiner un repas au réchaud",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Menu de week-end",
+     "goal": "Planifier les repas",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Menu léger",
+     "goal": "Préparer des déshydratés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cuisine en autonomie",
+     "goal": "Préparer 3 jours de repas",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "cuisine-pro",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "plein-air",
+    "nature",
+    "cuisine",
+    "bivouac"
+   ],
+   "competitors": [
+    "Blogs",
+    "Marques"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Double public cuisine et plein air, très convivial.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-noeuds-cordes",
+   "name": "Nœuds et manipulation de cordes",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.savoirs",
+   "desc": "Les nœuds utiles dehors : amarrage, tarp, hamac, secours et sécurité.",
+   "audience": "Randonneurs, voileux, grimpeurs, scouts",
+   "skills": [
+    "Nœud de chaise",
+    "Demi-clés",
+    "Nœud de cabestan",
+    "Cordes utilisées"
+   ],
+   "appSkills": [
+    "noeuds-cordes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes 5 nœuds",
+     "goal": "Réaliser 5 nœuds essentiels",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nœuds pour l'abri",
+     "goal": "Installer tarp et hamac",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Nœuds de sécurité",
+     "goal": "Réaliser 10 nœuds",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rappel et assurage",
+     "goal": "Choisir selon l'usage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "geste",
+    "voile",
+    "bushcraft",
+    "fabrication"
+   ],
+   "competitors": [
+    "Marins",
+    "Scouts"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier rapide à fort rendement, utile en complément d'autres niches. Peu de revenus seuls.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-premiers-secours-isole",
+   "name": "Premiers secours en milieu isolé",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.savoirs",
+   "desc": "Bilan, gestes d'urgence, alerte et improvisation lors d'un accident loin des secours.",
+   "audience": "Randonneurs, accompagnateurs, familles",
+   "skills": [
+    "Bilan d'urgence",
+    "Immobiliser",
+    "Alerter",
+    "Improviser"
+   ],
+   "appSkills": [
+    "premiers-secours-isole"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Réflexes de base",
+     "goal": "Réaliser un bilan et alerter",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Situations de nature",
+     "goal": "Gérer chute et hypothermie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Accident en groupe",
+     "goal": "Gérer une situation complexe",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Soins prolongés",
+     "goal": "Gérer 2 h d'attente",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur",
+     "goal": "Animer avec un organisme agréé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "securite",
+    "soin",
+    "nature",
+    "geste"
+   ],
+   "competitors": [
+    "Croix-Rouge",
+    "Organismes agréés"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin réel et vendu, mais les formations certifiantes relèvent d'organismes agréés. Atelier de sensibilisation possible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-meteo-montagne",
+   "name": "Lire la météo et les conditions en montagne",
+   "sector": "pleinair",
+   "category": "pleinair.bivouac",
+   "subcategory": "pleinair.bivouac.savoirs",
+   "desc": "Lire bulletins, nuages, vent et risques pour choisir ou annuler une sortie.",
+   "audience": "Randonneurs, skieurs, alpinistes débutants",
+   "skills": [
+    "Lire un bulletin",
+    "Reconnaître les nuages",
+    "Estimer le vent",
+    "Décider de renoncer"
+   ],
+   "appSkills": [
+    "meteo-montagne"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire la météo",
+     "goal": "Comprendre un bulletin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nuages et vent",
+     "goal": "Reconnaître 8 nuages",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prise de décision",
+     "goal": "Choisir ou renoncer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Prévision de terrain",
+     "goal": "Anticiper une journée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne",
+    "nature"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "montagne",
+    "science",
+    "securite",
+    "nature"
+   ],
+   "competitors": [
+    "Météo-France",
+    "Clubs"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Savoir fondamental peu enseigné, intérêt par ateliers en amont de sorties.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-kayak-initiation",
+   "name": "Kayak : initiation et sorties",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.pagaie",
+   "desc": "Pagayer droit, tourner, se relever d'un chavirage et faire une sortie en rivière ou en mer.",
+   "audience": "Adultes 25-55 ans, familles",
+   "skills": [
+    "Pagayer droit",
+    "Tourner",
+    "Chavirer et se relever",
+    "Lire l'eau"
+   ],
+   "appSkills": [
+    "kayak"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers coups de pagaie",
+     "goal": "Pagayer droit 1 h",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rivière calme",
+     "goal": "Naviguer 10 km",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Eau vive niveau 1",
+     "goal": "Gérer un petit courant",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      110,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie",
+     "goal": "Planifier une sortie",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      190,
+      310
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      300,
+      540
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "nature",
+    "sport",
+    "balade"
+   ],
+   "competitors": [
+    "Bases nautiques",
+    "Clubs de kayak"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Marché de bases nautiques bien établi, encadrement par moniteurs diplômés, sorties entre pairs possibles avec matériel loué.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-stand-up-paddle",
+   "name": "Stand-up paddle",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.pagaie",
+   "desc": "Monter debout, pagayer et tourner sur eau calme, en sécurité.",
+   "audience": "Jeunes actifs, familles, touristes",
+   "skills": [
+    "Monter debout",
+    "Pagayer",
+    "Tourner",
+    "Chuter"
+   ],
+   "appSkills": [
+    "stand-up-paddle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas debout",
+     "goal": "Tenir debout 30 min",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Balade de 5 km",
+     "goal": "Pagayer 5 km",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Paddle sportif",
+     "goal": "Naviguer 10 km",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      90,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Paddle yoga ou surf",
+     "goal": "Varier les pratiques",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      160,
+      260
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      250,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "nature",
+    "sport",
+    "balade"
+   ],
+   "competitors": [
+    "Bases nautiques",
+    "Marques"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique populaire en été, location et cours payants dominants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-canoe-riviere",
+   "name": "Canoë en rivière et descente",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.pagaie",
+   "desc": "Descendre une rivière en canoë, lire les courants et passer les petits obstacles.",
+   "audience": "Familles, amis",
+   "skills": [
+    "Pagayer à deux",
+    "Lire un courant",
+    "Passer un obstacle",
+    "Réagir à un chavirage"
+   ],
+   "appSkills": [
+    "kayak"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Balade en canoë",
+     "goal": "Descendre 5 km",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Passage de seuil",
+     "goal": "Passer un petit seuil",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Journée sur l'eau",
+     "goal": "Descendre 15 km",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      110,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rivière en autonomie",
+     "goal": "Organiser une descente",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      190,
+      310
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      300,
+      540
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "nature",
+    "famille",
+    "balade"
+   ],
+   "competitors": [
+    "Bases nautiques"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique familiale à forte saisonnalité, offres nombreuses en base nautique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-voile-deriveur",
+   "name": "Voile : initiation sur dériveur",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.voile-surf",
+   "desc": "Gréer, barrer, virer de bord et naviguer en petite embarcation.",
+   "audience": "Adultes 25-55 ans, familles",
+   "skills": [
+    "Gréer un bateau",
+    "Barrer",
+    "Virer de bord",
+    "Lire le vent"
+   ],
+   "appSkills": [
+    "voile-deriveur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers bords",
+     "goal": "Naviguer 1 h",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Manœuvres",
+     "goal": "Virer de bord",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Navigation autonome",
+     "goal": "Naviguer 3 h",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      160,
+      290
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Régates amicales",
+     "goal": "Participer à une régate",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      290,
+      470
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      450,
+      810
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "bateau",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "nature",
+    "voyage",
+    "sport"
+   ],
+   "competitors": [
+    "Clubs de voile",
+    "Écoles"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique plutôt côtière, très encadrée. Moniteurs diplômés obligatoires.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-surf-debutant",
+   "name": "Surf : débutant sur la côte",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.voile-surf",
+   "desc": "Ramer, se lever, lire les vagues et choisir sa planche.",
+   "audience": "Jeunes actifs 20-40 ans, touristes",
+   "skills": [
+    "Ramer",
+    "Se lever",
+    "Lire les vagues",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "surf"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première vague",
+     "goal": "Se lever sur 3 vagues",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vagues vertes",
+     "goal": "Surfer 10 vagues",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Surf autonome",
+     "goal": "Choisir son spot",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      160,
+      290
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Technique",
+     "goal": "Enchaîner les virages",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      290,
+      470
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      450,
+      810
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "sport",
+    "voyage",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de surf"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande saisonnière et distante de Paris, marché d'écoles de surf. Utile en stage groupé de vacances.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-windsurf-kitesurf",
+   "name": "Windsurf et kitesurf : initiation",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.voile-surf",
+   "desc": "Découvrir la planche à voile ou le kite en sécurité, avec matériel et instructeur.",
+   "audience": "Adultes sportifs 25-45 ans",
+   "skills": [
+    "Lire le vent",
+    "Utiliser le matériel",
+    "Se déplacer",
+    "Sécurité"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première glisse",
+     "goal": "Se tenir sur la planche",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Navigation de base",
+     "goal": "Faire des allers-retours",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Gérer vent et matériel",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      200,
+      350
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Perfectionnement",
+     "goal": "Enchaîner",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      350,
+      570
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      550,
+      990
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "sport",
+    "defi",
+    "voyage"
+   ],
+   "competitors": [
+    "Écoles de kite",
+    "Bases nautiques"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Public de niche, matériel coûteux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-plongee-bouteille",
+   "name": "Plongée sous-marine : baptême et débutant",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.sous-marin",
+   "desc": "Découvrir la plongée avec bouteille, les signes, l'équipement et les règles de sécurité.",
+   "audience": "Adultes 25-55 ans, touristes",
+   "skills": [
+    "Équipement",
+    "Signes de communication",
+    "Équilibrage",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "plongee-bouteille"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Baptême",
+     "goal": "Plonger 20 minutes à 5 m",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plongée encadrée",
+     "goal": "Plonger 40 minutes à 12 m",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plongée autonome",
+     "goal": "Plonger à 20 m",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      270,
+      480
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Perfectionnement",
+     "goal": "Plonger à 30 m",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      480,
+      780
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      750,
+      1350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "bateau",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "voyage",
+    "emotion",
+    "sport"
+   ],
+   "competitors": [
+    "Clubs de plongée",
+    "Centres"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Encadrement par diplômés obligatoire, offres de baptêmes à 40-60 € en piscine ouvertes à Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-snorkeling-palmes-masque",
+   "name": "Snorkeling : palmes, masque et tuba",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.sous-marin",
+   "desc": "Utiliser palmes, masque et tuba en sécurité et observer la vie marine.",
+   "audience": "Familles, touristes",
+   "skills": [
+    "Régler masque et tuba",
+    "Palmer",
+    "Respirer",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "apnee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers coups de palme",
+     "goal": "Nager 15 minutes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Observation",
+     "goal": "Reconnaître 5 espèces",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Balade de 1 h",
+     "goal": "Naviguer en sécurité",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      90,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Apnée douce",
+     "goal": "Plonger 3 m",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      160,
+      260
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      250,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "bateau"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "animaux",
+    "voyage",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs",
+    "Bases nautiques"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique de vacances, forte saisonnalité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-peche-mouche",
+   "name": "Pêche à la mouche : initiation",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.peche",
+   "desc": "Lancer à la mouche, choisir ses mouches et lire une rivière à truites.",
+   "audience": "Amateurs de nature 30-60 ans",
+   "skills": [
+    "Lancer",
+    "Choisir une mouche",
+    "Lire une rivière",
+    "Relâcher"
+   ],
+   "appSkills": [
+    "peche-loisir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers lancers",
+     "goal": "Lancer 10 m",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire la rivière",
+     "goal": "Choisir un poste",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pêche autonome",
+     "goal": "Pêcher une journée",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Montage de mouches",
+     "goal": "Monter ses mouches",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      225,
+      450
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des stages",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      360,
+      675
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "eau",
+    "calme",
+    "geste",
+    "plein-air"
+   ],
+   "competitors": [
+    "Fédérations de pêche",
+    "Guides"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public passionné qui paie le matériel et les guides, accès à la rivière loin de Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-peche-leurre",
+   "name": "Pêche au leurre en eau douce",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.peche",
+   "desc": "Choisir leurres, lancer, ferrer et lire un plan d'eau à brochets et perches.",
+   "audience": "Pêcheurs 20-50 ans",
+   "skills": [
+    "Choisir un leurre",
+    "Lancer",
+    "Ferrer",
+    "Lire un plan d'eau"
+   ],
+   "appSkills": [
+    "peche-loisir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers leurres",
+     "goal": "Pêcher une journée",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire l'eau",
+     "goal": "Choisir un poste",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pêche ciblée",
+     "goal": "Cibler une espèce",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Techniques avancées",
+     "goal": "Pêcher en bateau",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      165,
+      330
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      265,
+      495
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "eau",
+    "sport",
+    "geste",
+    "plein-air"
+   ],
+   "competitors": [
+    "Fédérations de pêche",
+    "Magasins"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pratique répandue, public masculin, offres de guides payantes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-peche-a-pied",
+   "name": "Pêche à pied : sur l'estran",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.peche",
+   "desc": "Reconnaître les coquillages, respecter les tailles et les marées, cuisiner sa pêche.",
+   "audience": "Familles, touristes",
+   "skills": [
+    "Lire les marées",
+    "Reconnaître les coquillages",
+    "Respecter les tailles",
+    "Préparer"
+   ],
+   "appSkills": [
+    "peche-loisir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première pêche",
+     "goal": "Récolter en marée basse",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marée et sécurité",
+     "goal": "Lire un coefficient",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisiner les prises",
+     "goal": "Préparer un repas",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sortie encadrée",
+     "goal": "Participer à un suivi",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "eau",
+    "gourmand",
+    "famille",
+    "plein-air"
+   ],
+   "competitors": [
+    "Associations",
+    "Offices de tourisme"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Pratique littorale, saisonnière, distance de Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-peche-enfants",
+   "name": "Pêche avec des enfants",
+   "sector": "pleinair",
+   "category": "pleinair.eau",
+   "subcategory": "pleinair.eau.peche",
+   "desc": "Initier des enfants à la pêche au coup, poser sa ligne, relâcher et respecter le vivant.",
+   "audience": "Parents, grands-parents",
+   "skills": [
+    "Monter une ligne",
+    "Poser l'appât",
+    "Ferrer",
+    "Relâcher"
+   ],
+   "appSkills": [
+    "peche-loisir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première touche",
+     "goal": "Attraper un poisson",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ligne montée",
+     "goal": "Monter sa ligne",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Journée de pêche",
+     "goal": "Pêcher en autonomie",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Respect du vivant",
+     "goal": "Relâcher en sécurité",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un permis",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "eau",
+    "famille",
+    "calme",
+    "plein-air"
+   ],
+   "competitors": [
+    "Fédérations",
+    "Associations"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Public familial et ludique, bonne image mais faible fréquence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-ski-alpin-debutant",
+   "name": "Ski alpin : de la première descente aux pistes bleues",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.piste",
+   "desc": "Chasse-neige, virages, freinage et remontées mécaniques.",
+   "audience": "Adultes 25-55 ans, familles",
+   "skills": [
+    "Chasse-neige",
+    "Virages",
+    "Freiner",
+    "Remontées mécaniques"
+   ],
+   "appSkills": [
+    "ski-alpin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première descente",
+     "goal": "Descendre en chasse-neige",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Virages parallèles",
+     "goal": "Enchaîner des virages",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      85,
+      155
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pistes rouges",
+     "goal": "Descendre en sécurité",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      250,
+      450
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pistes noires",
+     "goal": "Skier sur terrain varié",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      450,
+      730
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      700,
+      1260
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "vacances",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "sport",
+    "famille",
+    "voyage"
+   ],
+   "competitors": [
+    "ESF",
+    "Écoles de ski"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Marché structuré d'écoles de ski, enseignement uniquement par diplômés. Valeur surtout sur la préparation et l'entretien du matériel à Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-snowboard-debutant",
+   "name": "Snowboard : débutant",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.piste",
+   "desc": "Équilibre, virages et freinage sur planche, en station.",
+   "audience": "Jeunes actifs 18-40 ans",
+   "skills": [
+    "Équilibre",
+    "Virages",
+    "Freiner",
+    "Chuter"
+   ],
+   "appSkills": [
+    "snowboard"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première descente",
+     "goal": "Glisser en pente douce",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Virages",
+     "goal": "Enchaîner des virages",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      85,
+      155
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pistes rouges",
+     "goal": "Descendre en sécurité",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      250,
+      450
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Freestyle",
+     "goal": "Réaliser des sauts",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      450,
+      730
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      700,
+      1260
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "vacances",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "sport",
+    "voyage",
+    "defi"
+   ],
+   "competitors": [
+    "ESF",
+    "Écoles"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Public réduit, encadrement diplômé obligatoire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-ski-de-fond",
+   "name": "Ski de fond : classique et skating",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.piste",
+   "desc": "Technique classique et skating, farts et matériel pour des sorties nordiques.",
+   "audience": "Adultes 30-65 ans, familles",
+   "skills": [
+    "Pas alternatif",
+    "Skating",
+    "Fartage",
+    "Choisir son matériel"
+   ],
+   "appSkills": [
+    "ski-de-fond"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas",
+     "goal": "Skier 5 km",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pas alterné",
+     "goal": "Maîtriser la technique",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Skating",
+     "goal": "Skater 10 km",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sortie nordique",
+     "goal": "Skier 20 km",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      255,
+      415
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      400,
+      720
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "sport",
+    "nature",
+    "balade"
+   ],
+   "competitors": [
+    "Écoles nordiques",
+    "Clubs"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Pratique saisonnière, nordique hors des stations parisiennes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-fartage-entretien-ski",
+   "name": "Fartage et entretien des skis et du snowboard",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.piste",
+   "desc": "Affûter les carres, farter, réparer une semelle et stocker son matériel.",
+   "audience": "Skieurs et snowboardeurs réguliers",
+   "skills": [
+    "Affûter les carres",
+    "Farter",
+    "Réparer une semelle",
+    "Stocker"
+   ],
+   "appSkills": [
+    "ski-alpin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes skis entretenus",
+     "goal": "Farter ses skis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Carres affûtées",
+     "goal": "Affûter à la main",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réparation de semelle",
+     "goal": "Réparer un impact",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Atelier complet",
+     "goal": "Préparer une saison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer un atelier",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "sport",
+    "geste",
+    "argent"
+   ],
+   "competitors": [
+    "Magasins de sport",
+    "Ateliers de ski"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pas d'enseignement sportif : volet matériel ouvert, avant la saison. Demande saisonnière en automne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-ski-randonnee",
+   "name": "Ski de randonnée : peaux de phoque et montée",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.hors-piste",
+   "desc": "Monter avec des peaux, changer de mode, descendre hors piste et lire la neige.",
+   "audience": "Skieurs confirmés 28-50 ans",
+   "skills": [
+    "Montée avec peaux",
+    "Changer de mode",
+    "Descendre",
+    "Choisir un itinéraire"
+   ],
+   "appSkills": [
+    "ski-randonnee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première montée",
+     "goal": "Monter 400 m avec peaux",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      70,
+      145
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Journée à ski",
+     "goal": "Gérer 800 m de dénivelé",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      110,
+      200
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itinéraire choisi",
+     "goal": "Décider seul",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      325,
+      575
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sortie engagée",
+     "goal": "Gérer 1 500 m",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      575,
+      935
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide",
+     "goal": "Encadrer avec un diplôme d'État",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      900,
+      1620
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "sport",
+    "montagne",
+    "defi"
+   ],
+   "competitors": [
+    "Guides de haute montagne",
+    "Clubs alpins"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique exigeante, formation avec guides, hors zone parisienne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-dva-avalanche",
+   "name": "Sécurité avalanche : DVA, pelle et sonde",
+   "sector": "pleinair",
+   "category": "pleinair.neige",
+   "subcategory": "pleinair.neige.hors-piste",
+   "desc": "Utiliser DVA, pelle et sonde, et organiser une recherche de victime d'avalanche.",
+   "audience": "Skieurs hors-piste, raquetteurs",
+   "skills": [
+    "Utiliser un DVA",
+    "Sonder",
+    "Pelleter",
+    "Organiser les secours"
+   ],
+   "appSkills": [
+    "meteo-montagne"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers réflexes",
+     "goal": "Trouver un DVA enterré",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Recherche complète",
+     "goal": "Réaliser une recherche en 5 min",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire les bulletins",
+     "goal": "Évaluer le risque",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      160,
+      290
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gestion de groupe",
+     "goal": "Décider d'un itinéraire",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      290,
+      470
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur",
+     "goal": "Animer avec un organisme agréé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      450,
+      810
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "neige",
+    "securite",
+    "montagne",
+    "geste"
+   ],
+   "competitors": [
+    "ANENA",
+    "Guides"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Sujet vital, formations par guides et organismes agréés, ateliers de pratique possibles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-escalade-bloc-exterieur",
+   "name": "Escalade de bloc en forêt",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.falaise",
+   "desc": "Grimper en bloc à Fontainebleau : lecture de blocs, parades et placements de pad.",
+   "audience": "Grimpeurs 22-45 ans",
+   "skills": [
+    "Lire un bloc",
+    "Placer un pad",
+    "Parer",
+    "Respecter le site"
+   ],
+   "appSkills": [
+    "escalade-falaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bloc",
+     "goal": "Réussir 5 blocs faciles",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Blocs variés",
+     "goal": "Réussir des blocs 4",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bloc autonome",
+     "goal": "Choisir et parer",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Blocs avancés",
+     "goal": "Réussir des blocs 6",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      50,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "sport",
+    "nature",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs d'escalade",
+    "Salles"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Fontainebleau à 1 h de Paris, communauté intense. Encadrement payant par diplômés, sorties entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-escalade-falaise",
+   "name": "Escalade en falaise et grandes voies",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.falaise",
+   "desc": "Passer de la salle à la falaise : assurage, relais, vérifications et sécurité.",
+   "audience": "Grimpeurs de salle 22-50 ans",
+   "skills": [
+    "Assurer",
+    "Poser des dégaines",
+    "Relais",
+    "Rappel"
+   ],
+   "appSkills": [
+    "escalade-falaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première falaise",
+     "goal": "Grimper 5 voies en moulinette",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mousquetonnage",
+     "goal": "Grimper en tête",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Gérer relais et rappel",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      270,
+      480
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grande voie",
+     "goal": "Grimper une voie de 5 longueurs",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      480,
+      780
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      750,
+      1350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "sport",
+    "montagne",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs d'escalade",
+    "Guides"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin fort en sécurité, encadrement par diplômés obligatoire pour l'enseignement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-assurage-manipulations-cordes",
+   "name": "Assurage et manipulation de cordes",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.falaise",
+   "desc": "Assurer, descendre en rappel, faire un relais et vérifier un système.",
+   "audience": "Grimpeurs de salle",
+   "skills": [
+    "Assurer",
+    "Rappeler",
+    "Faire un relais",
+    "Vérifier"
+   ],
+   "appSkills": [
+    "noeuds-cordes",
+    "escalade-falaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Assurage sûr",
+     "goal": "Assurer en moulinette",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nœud et rappel",
+     "goal": "Descendre en rappel",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Relais",
+     "goal": "Installer un relais",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      180,
+      320
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sauvetage",
+     "goal": "Gérer un incident",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      320,
+      520
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur",
+     "goal": "Animer avec un organisme agréé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      500,
+      900
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "sport",
+    "securite",
+    "geste",
+    "montagne"
+   ],
+   "competitors": [
+    "Clubs",
+    "Guides"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Besoin de sécurité réel, encadrement strict.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-via-ferrata",
+   "name": "Via ferrata : initiation",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.montagne",
+   "desc": "Équipement, longes, progression et passage de ponts et de passages aériens.",
+   "audience": "Adultes 25-55 ans, familles",
+   "skills": [
+    "Longe et casque",
+    "Progresser",
+    "Passer un pont",
+    "Évaluer un parcours"
+   ],
+   "appSkills": [
+    "via-ferrata"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première via",
+     "goal": "Réaliser une via facile",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vias variées",
+     "goal": "Réaliser une via de 2 h",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Choisir et partir seul",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      200,
+      350
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vias engagées",
+     "goal": "Réaliser une via longue",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      350,
+      570
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      550,
+      990
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "sport",
+    "montagne",
+    "defi",
+    "emotion"
+   ],
+   "competitors": [
+    "Guides",
+    "Clubs"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique très populaire en été, encadrement par diplômés, accès montagne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-alpinisme-initiation",
+   "name": "Alpinisme : initiation",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.montagne",
+   "desc": "Crampons, piolet, cordée, glacier et sécurité sur un sommet accessible.",
+   "audience": "Randonneurs expérimentés 28-50 ans",
+   "skills": [
+    "Crampons et piolet",
+    "Cordée",
+    "Lire un glacier",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "alpinisme-initiation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier sommet",
+     "goal": "Gravir un 3 000 m facile",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      100,
+      200
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Crampons et piolet",
+     "goal": "Utiliser le matériel",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      150,
+      275
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cordée",
+     "goal": "Progresser en cordée",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      450,
+      800
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Course engagée",
+     "goal": "Gravir une arête",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      800,
+      1300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide",
+     "goal": "Encadrer avec un diplôme d'État",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      1250,
+      2250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "sport",
+    "montagne",
+    "defi",
+    "nature"
+   ],
+   "competitors": [
+    "Guides de haute montagne",
+    "Clubs alpins"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique très encadrée, loin de Paris, forte valeur par séjour.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-randonnee-refuges-montagne",
+   "name": "Randonnée en haute montagne : refuges et itinéraires",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.montagne",
+   "desc": "Organiser une randonnée en refuge : réservation, étapes, sécurité et météo.",
+   "audience": "Randonneurs 30-60 ans",
+   "skills": [
+    "Réserver un refuge",
+    "Planifier",
+    "Lire la météo",
+    "Marcher en altitude"
+   ],
+   "appSkills": [
+    "randonnee-itinerante",
+    "meteo-montagne"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première nuit en refuge",
+     "goal": "Passer une nuit",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Randonnée de 2 jours",
+     "goal": "Planifier 2 jours",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trek de 5 jours",
+     "goal": "Planifier 5 jours",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      85,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Haute montagne",
+     "goal": "Gérer l'altitude",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      210,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des départs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      335,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "vacances",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "montagne",
+    "voyage",
+    "nature",
+    "balade"
+   ],
+   "competitors": [
+    "Clubs alpins",
+    "Guides"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Sujet de préparation facile à vendre en atelier avant les départs d'été.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-canyoning-initiation",
+   "name": "Canyoning : initiation",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.sous-terre",
+   "desc": "Descendre un canyon : sauts, toboggans, rappels et progression en eau vive.",
+   "audience": "Adultes sportifs 20-45 ans",
+   "skills": [
+    "Équipement",
+    "Rappel",
+    "Saut et toboggan",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "canyoning"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier canyon",
+     "goal": "Descendre un canyon facile",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rappels",
+     "goal": "Descendre trois rappels",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Choisir un canyon",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      200,
+      350
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Canyon engagé",
+     "goal": "Descendre un canyon sportif",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      350,
+      570
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      550,
+      990
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "eau",
+    "sport",
+    "defi",
+    "emotion"
+   ],
+   "competitors": [
+    "Guides de canyon",
+    "Bureaux"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique de vacances, très encadrée, loin de Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-speleologie-initiation",
+   "name": "Spéléologie : initiation en cavité facile",
+   "sector": "pleinair",
+   "category": "pleinair.vertical",
+   "subcategory": "pleinair.vertical.sous-terre",
+   "desc": "Évoluer sous terre : lumière, progression, sécurité et protection du milieu.",
+   "audience": "Aventuriers 20-50 ans",
+   "skills": [
+    "Progresser",
+    "Utiliser un éclairage",
+    "Gérer le froid",
+    "Respecter le milieu"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première cavité",
+     "goal": "Parcourir une cavité facile",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Passages étroits",
+     "goal": "Passer un puits",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Explorer en équipe",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      180,
+      320
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exploration",
+     "goal": "Participer à une expédition",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      320,
+      520
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec une fédération",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      500,
+      900
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "science",
+    "emotion",
+    "defi"
+   ],
+   "competitors": [
+    "Fédération de spéléologie",
+    "Clubs"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique très de niche, formation par clubs fédéraux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-bikepacking",
+   "name": "Bikepacking : voyager léger à vélo",
+   "sector": "pleinair",
+   "category": "pleinair.roue",
+   "subcategory": "pleinair.roue.voyage",
+   "desc": "Choisir ses sacoches, préparer un itinéraire, bivouaquer et réparer en route.",
+   "audience": "Cyclistes 28-50 ans",
+   "skills": [
+    "Choisir des sacoches",
+    "Préparer un itinéraire",
+    "Bivouaquer",
+    "Réparer en route"
+   ],
+   "appSkills": [
+    "bikepacking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première nuit à vélo",
+     "goal": "Rouler 80 km avec un bivouac",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Week-end à vélo",
+     "goal": "Rouler 2 jours",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itinérance",
+     "goal": "Rouler 4 jours",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      80,
+      155
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grande traversée",
+     "goal": "Planifier 10 jours",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      195,
+      390
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des départs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      310,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "velo",
+    "voyage",
+    "nature",
+    "bivouac"
+   ],
+   "competitors": [
+    "Communautés bikepacking",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Pratique en forte croissance, atelier de préparation à 40-60 € bien vendu, sorties entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-voyage-velo-itinerant",
+   "name": "Voyage à vélo : itinérance sur plusieurs jours",
+   "sector": "pleinair",
+   "category": "pleinair.roue",
+   "subcategory": "pleinair.roue.voyage",
+   "desc": "Organiser un voyage à vélo : itinéraire, hébergement, bagages et dépannage.",
+   "audience": "Cyclistes 28-65 ans, couples",
+   "skills": [
+    "Planifier un itinéraire",
+    "Choisir les bagages",
+    "Dépanner",
+    "Gérer les étapes"
+   ],
+   "appSkills": [
+    "bikepacking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier week-end",
+     "goal": "Rouler 2 jours",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Voyage d'une semaine",
+     "goal": "Rouler 7 jours",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Grand voyage",
+     "goal": "Planifier 3 semaines",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      70,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Voyage au long cours",
+     "goal": "Rouler 2 mois",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      180,
+      360
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des départs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      290,
+      540
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "velo",
+    "voyage",
+    "plein-air",
+    "nature",
+    "convivial"
+   ],
+   "competitors": [
+    "Voyageurs à vélo",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public engagé et solvable, atelier de préparation efficace.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-reparer-velo-en-route",
+   "name": "Réparer son vélo en route",
+   "sector": "pleinair",
+   "category": "pleinair.roue",
+   "subcategory": "pleinair.roue.voyage",
+   "desc": "Savoir réparer crevaison, chaîne et dérailleur sur la route avec un kit minimal.",
+   "audience": "Cyclistes voyageurs, sportifs",
+   "skills": [
+    "Kit minimal",
+    "Crevaison",
+    "Chaîne cassée",
+    "Dérailleur tordu"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Kit de route",
+     "goal": "Constituer son kit",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réparation rapide",
+     "goal": "Réparer en 15 min",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Panne complexe",
+     "goal": "Gérer une panne",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie longue",
+     "goal": "Planifier un voyage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "velo",
+    "reparation",
+    "plein-air",
+    "voyage",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers vélo",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Complémentaire de la mécanique vélo, risque de doublon avec le secteur maison.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-vtt-initiation",
+   "name": "VTT : initiation en forêt",
+   "sector": "pleinair",
+   "category": "pleinair.roue",
+   "subcategory": "pleinair.roue.vtt",
+   "desc": "Position, freinage, virages et franchissements pour rouler en sentier.",
+   "audience": "Cyclistes 25-50 ans, ados",
+   "skills": [
+    "Position",
+    "Freinage",
+    "Virages",
+    "Franchissements"
+   ],
+   "appSkills": [
+    "vtt"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sentiers",
+     "goal": "Rouler 15 km en forêt",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Technique",
+     "goal": "Maîtriser freinage et virages",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sentiers techniques",
+     "goal": "Franchir racines et pierres",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      125,
+      225
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Descentes",
+     "goal": "Maîtriser les descentes",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      225,
+      365
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      350,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "velo",
+    "sport",
+    "nature",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs de VTT",
+    "Écoles"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Forêts accessibles depuis Paris, offres d'écoles de pilotage diplômées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-gravel-aventure",
+   "name": "Gravel : rouler sur chemins et routes",
+   "sector": "pleinair",
+   "category": "pleinair.roue",
+   "subcategory": "pleinair.roue.vtt",
+   "desc": "Choisir son vélo, régler la pression, naviguer et organiser une sortie.",
+   "audience": "Cyclistes 28-50 ans",
+   "skills": [
+    "Choisir un gravel",
+    "Pression des pneus",
+    "Naviguer",
+    "Organiser"
+   ],
+   "appSkills": [
+    "vtt",
+    "velo-route"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première sortie",
+     "goal": "Rouler 40 km sur chemins",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      5
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sortie de 80 km",
+     "goal": "Rouler 80 km",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie engagée",
+     "goal": "Rouler 120 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Aventure",
+     "goal": "Planifier 2 jours",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      35,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer des sorties",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "velo",
+    "sport",
+    "nature",
+    "voyage"
+   ],
+   "competitors": [
+    "Communautés gravel",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pratique en forte croissance, bonne communauté, produit à tester.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-parapente-initiation",
+   "name": "Parapente : baptême et initiation",
+   "sector": "pleinair",
+   "category": "pleinair.air",
+   "subcategory": "pleinair.air.vol",
+   "desc": "Découvrir le vol libre en tandem ou en stage, avec un instructeur diplômé.",
+   "audience": "Adultes 25-55 ans, touristes",
+   "skills": [
+    "Gonfler une voile",
+    "Décoller",
+    "Piloter",
+    "Atterrir"
+   ],
+   "appSkills": [
+    "parapente"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Baptême tandem",
+     "goal": "Voler 20 minutes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      175
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premiers vols",
+     "goal": "Décoller en solo",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      240
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vol autonome",
+     "goal": "Voler 30 minutes",
+     "format": "stage",
+     "duration": "2 jours",
+     "group": "4-6",
+     "price": [
+      395,
+      705
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vols de distance",
+     "goal": "Voler en thermique",
+     "format": "stage",
+     "duration": "3 jours",
+     "group": "3-6",
+     "price": [
+      705,
+      1145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Moniteur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "3 jours",
+     "group": "1-3",
+     "price": [
+      1100,
+      1980
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "montagne"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "plein-air",
+    "emotion",
+    "sport",
+    "montagne",
+    "voyage"
+   ],
+   "competitors": [
+    "Écoles de parapente",
+    "Clubs"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Pratique spectaculaire, encadrement et agrément obligatoires, loin de Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-cerf-volant-acrobatique",
+   "name": "Cerf-volant : pilotage et acrobaties",
+   "sector": "pleinair",
+   "category": "pleinair.air",
+   "subcategory": "pleinair.air.vol",
+   "desc": "Monter un cerf-volant, le piloter et réaliser des figures.",
+   "audience": "Familles, enfants, adultes",
+   "skills": [
+    "Choisir un cerf-volant",
+    "Piloter",
+    "Figures",
+    "Sécurité"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier vol",
+     "goal": "Faire voler un cerf-volant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pilotage",
+     "goal": "Réaliser des virages",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cerf-volant double",
+     "goal": "Réaliser des figures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spectacle",
+     "goal": "Piloter en musique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plein-air",
+    "famille",
+    "jeu",
+    "nature",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs de cerf-volant"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique ludique pour familles, faible monétisation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-drone-paysage",
+   "name": "Drone loisir : voler et filmer des paysages",
+   "sector": "pleinair",
+   "category": "pleinair.air",
+   "subcategory": "pleinair.air.vol",
+   "desc": "Réglementation, pilotage, plans et montage de séquences en drone de loisir.",
+   "audience": "Photographes et vidéastes 25-55 ans",
+   "skills": [
+    "Réglementation",
+    "Pilotage",
+    "Plans de caméra",
+    "Montage"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier vol",
+     "goal": "Piloter en sécurité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plans de base",
+     "goal": "Réaliser 5 plans",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séquence complète",
+     "goal": "Monter un film",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet vidéo",
+     "goal": "Réaliser un court métrage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "video",
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "tech",
+    "video",
+    "photo",
+    "nature"
+   ],
+   "competitors": [
+    "Télépilotes",
+    "Marques"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Demande réelle, cadre réglementaire strict (zones, enregistrement). Public photo et vidéo.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-sorties-nature-enfants",
+   "name": "Sorties nature pour enfants",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.enfants",
+   "desc": "Observer, toucher et jouer dehors : sorties à thème pour enfants de 4 à 10 ans.",
+   "audience": "Parents de 28-45 ans, écoles",
+   "skills": [
+    "Observation",
+    "Jeux sensoriels",
+    "Gestion du groupe",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première sortie",
+     "goal": "Découvrir 5 éléments",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Thème de saison",
+     "goal": "Réaliser un carnet",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie à thème",
+     "goal": "Mener une enquête",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Aventure nature",
+     "goal": "Animer un petit groupe",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un BAFA",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "famille",
+    "enfant",
+    "balade",
+    "jeu",
+    "plein-air"
+   ],
+   "competitors": [
+    "Centres de loisirs",
+    "Fermes pédagogiques"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Forte demande des parents, public solvable, encadrement enfants à respecter (BAFA, déclaration).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-cabane-dans-les-bois",
+   "name": "Construire une cabane dans les bois",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.enfants",
+   "desc": "Construire des cabanes de branchages avec des enfants, en respectant le milieu.",
+   "audience": "Familles, scouts",
+   "skills": [
+    "Choisir un lieu",
+    "Construire une structure",
+    "Respecter le milieu",
+    "Jouer"
+   ],
+   "appSkills": [
+    "bushcraft-feu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première cabane",
+     "goal": "Construire une cabane",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cabane solide",
+     "goal": "Assembler des branches",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cabane de groupe",
+     "goal": "Construire à plusieurs",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Village de cabanes",
+     "goal": "Organiser un chantier",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "famille",
+    "enfant",
+    "fabrication",
+    "bois",
+    "plein-air"
+   ],
+   "competitors": [
+    "Centres de loisirs",
+    "Scouts"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Atelier classique et plébiscité, objet temporaire, réglementation sur les sites.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-jeu-de-piste-famille",
+   "name": "Jeu de piste et grand jeu en famille",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.enfants",
+   "desc": "Concevoir un grand jeu avec énigmes, équipes et défis dans un parc ou une forêt.",
+   "audience": "Parents, animateurs",
+   "skills": [
+    "Scénariser",
+    "Concevoir des épreuves",
+    "Gérer les équipes",
+    "Animer"
+   ],
+   "appSkills": [
+    "geocaching"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer un grand jeu",
+     "goal": "Participer à un jeu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équipes",
+     "goal": "Résoudre des défis",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Créer un jeu",
+     "goal": "Concevoir un jeu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grand événement",
+     "goal": "Animer 40 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Concepteur",
+     "goal": "Vendre des jeux",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "plein-air",
+    "famille",
+    "fete",
+    "nature"
+   ],
+   "competitors": [
+    "Prestataires",
+    "Scouts"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande saisonnière élevée (anniversaires), marché de prestataires, valeur d'un produit prêt à jouer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-ecole-du-dehors",
+   "name": "École du dehors et pédagogie en nature",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.enfants",
+   "desc": "Animer des activités éducatives dehors : observation, jeux sensoriels, projets collectifs.",
+   "audience": "Enseignants, éducateurs, parents",
+   "skills": [
+    "Choisir des activités",
+    "Gérer un groupe en nature",
+    "Évaluer les risques",
+    "Relier aux apprentissages"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dehors avec les enfants",
+     "goal": "Animer 3 activités",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séance structurée",
+     "goal": "Concevoir une séance",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet de classe",
+     "goal": "Concevoir une année",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Formateur",
+     "goal": "Former des animateurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent",
+     "goal": "Piloter un programme",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "ecole"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "enfant",
+    "famille",
+    "science",
+    "plein-air"
+   ],
+   "competitors": [
+    "Associations",
+    "Éducation nationale"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Demande institutionnelle croissante, B2B plutôt que grand public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-veillee-feu-camp",
+   "name": "Veillée autour du feu : contes, chants et grillades",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.soirees",
+   "desc": "Organiser une veillée sûre et conviviale : feu, histoires, chants et cuisine simple.",
+   "audience": "Amis, familles, groupes",
+   "skills": [
+    "Organiser un feu",
+    "Raconter",
+    "Chanter",
+    "Cuisiner"
+   ],
+   "appSkills": [
+    "bushcraft-feu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une soirée au feu",
+     "goal": "Participer à une veillée",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Contes et chants",
+     "goal": "Animer 20 minutes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Veillée thématique",
+     "goal": "Organiser une soirée",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel annuel",
+     "goal": "Organiser pour 30 personnes",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer des veillées",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "convivial",
+    "plein-air",
+    "nuit",
+    "nature",
+    "musique",
+    "recit"
+   ],
+   "competitors": [
+    "Gîtes",
+    "Associations"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Format ritualisé, très convivial. Réglementation feu à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-pique-nique-soiree-dehors",
+   "name": "Pique-nique et soirée dehors",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.soirees",
+   "desc": "Organiser pique-niques thématiques, cinéma en plein air et soirées au parc.",
+   "audience": "Amis, couples, familles",
+   "skills": [
+    "Choisir un lieu",
+    "Préparer un panier",
+    "Organiser",
+    "Respecter le site"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un premier pique-nique",
+     "goal": "Organiser un pique-nique",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pique-nique thématique",
+     "goal": "Concevoir un thème",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirée au parc",
+     "goal": "Organiser une soirée",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Événement annuel",
+     "goal": "Organiser pour 40 personnes",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      145,
+      270
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "convivial",
+    "plein-air",
+    "gourmand",
+    "ville",
+    "fete",
+    "apero"
+   ],
+   "competitors": [
+    "Collectifs",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique très populaire et gratuite, très faible volonté de payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "pleinair-etoiles-ciel-nocturne",
+   "name": "Observation du ciel et des étoiles en plein air",
+   "sector": "pleinair",
+   "category": "pleinair.famille",
+   "subcategory": "pleinair.famille.soirees",
+   "desc": "Repérer constellations, planètes et étoiles filantes à l'œil nu et aux jumelles.",
+   "audience": "Familles, couples, curieux",
+   "skills": [
+    "Se repérer dans le ciel",
+    "Utiliser une application",
+    "Jumelles",
+    "Choisir un site"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier ciel",
+     "goal": "Repérer 5 constellations",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Planètes",
+     "goal": "Reconnaître les planètes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jumelles et télescope",
+     "goal": "Observer la Lune",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Astrophotographie",
+     "goal": "Photographier le ciel",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      165,
+      330
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer des soirées",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      265,
+      495
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ciel",
+    "nuit",
+    "nature",
+    "science",
+    "plein-air"
+   ],
+   "competitors": [
+    "Clubs d'astronomie",
+    "Planétariums"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé en soirée d'été, plutôt associatif, bonne valeur en famille et entreprise.",
+   "confidence": "estimation"
+  }
+ ]
+}
