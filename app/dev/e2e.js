@@ -585,7 +585,8 @@ async function download(page, clickSel) {
     await page.fill('#v-name', 'Lieu Test'); await page.dispatchEvent('#v-name', 'change'); await page.waitForTimeout(100);
     await page.click('[data-act="vSlot"][data-k="1:soir"]');
     await page.click('[data-act="vDlSheet"]'); await page.waitForTimeout(200);
-    await page.click('[data-act="vKitDl"][data-item="affiche"]'); await page.waitForTimeout(600);
+    await page.click('[data-act="vKitDl"][data-item="affiche"]');
+    await page.waitForFunction(() => window.__saved.some(n => /affiche-lieu-test\.png$/.test(n)), null, { timeout: 6000 }).catch(() => null);
     const saved = await page.evaluate(() => window.__saved);
     ok(saved.indexOf('cordes-lieu-lieu-test.html') >= 0 && saved.some(n => /affiche-lieu-test\.png$/.test(n)), 'page publiée : fiche et affiche du lieu routées par la plateforme (' + saved.join(', ') + ')');
     ok(saved.indexOf('cordes-bon-cadeau.png') >= 0 && saved.some(n => /corde-story\.png$/.test(n)), 'page publiée : téléchargements routés par la plateforme (' + saved.join(', ') + ')');
