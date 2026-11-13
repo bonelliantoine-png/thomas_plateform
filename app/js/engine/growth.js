@@ -423,6 +423,7 @@
       var a = s.attrs, need = UNI_EQUIP[s.universe] || [];
       if (a.physical >= 3 && !big) return null;
       if (s.regulated === 'alcool' && C.VENUE_LICENSED.indexOf(v.type) < 0) return null;
+      if (C.VENUE_LICENSED.indexOf(v.type) >= 0 && (s.regulated === 'enfants' || /enfant/.test(s.id))) return null;
       if (s.regulated === 'securite' || s.regulated === 'animaux') return null;
       if (s.universe === 'pleinair' && eq.indexOf('exterieur') < 0) return null;
       if (U.overlap(s.formats, ['atelier', 'cours', 'communaute', 'evenement']) === 0) return null;

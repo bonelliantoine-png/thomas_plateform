@@ -12,12 +12,12 @@ Un bilan de tout ce qu’on sait faire et veut faire en dehors du travail (cuisi
 ### Tests
 
 ```
-node app/dev/test-engine.js          # moteur sous Node, vraies données : 485 vérifications
-node app/dev/e2e.js [dossier]        # Playwright (Chromium) en file:// à 375 et 1440 px : 108 vérifications, 0 erreur console tolérée
+node app/dev/test-engine.js          # moteur sous Node, vraies données : 616 vérifications
+node app/dev/e2e.js [dossier]        # Playwright (Chromium) en file:// à 375 et 1440 px : 210 vérifications, 0 erreur console tolérée
 node app/dev/build-seo.js [dossier]  # régénère seo/ (61 pages)
 ```
 
-`e2e.js` simule Nominatim et Overpass, contrôle les débordements horizontaux à 375 px et échoue à la moindre erreur ou alerte console.
+`e2e.js` simule Nominatim et Overpass, contrôle les débordements horizontaux à 375 px et échoue à la moindre erreur ou alerte console. Il simule aussi la page publiée (`window.claude` avec `downloads` et `sample`) et vérifie qu'aucun appel réseau ne sort des nouveaux écrans.
 
 ## Échelle de maîtrise et règle d’animation
 
@@ -40,6 +40,18 @@ Toute l’app utilise une échelle de 0 à 5 (`C.LEVELS` dans `js/engine/core.js
 - Passerelle demandeur → offreur, liste d’attente : compétences au niveau 2 ou plus. Troc et groupe : B fait progresser A sur x si B peut animer un palier du chemin de A (niveau actuel + 1 → niveau visé), donc niveau(B) = niveau visé + 1 pour le dernier palier ; les compétences connues au mauvais niveau sont signalées avec le niveau d’hôte requis.
 - Migration (schéma 2, `version: 2`) : les bilans `cordes.v1`, la sauvegarde, l’historique et les liens `#b=` de l’ancienne échelle 0-4 sont convertis à la lecture : 1→1, 2→2, 3→4, 4→4 avec `teach: true` ; niveaux visés bornés à 2 au moins. La conversion est enregistrée au démarrage et n’est jamais appliquée deux fois. Les nouveaux liens portent `v: 2`.
 
+## Brief V2 : curieux et lieux partenaires (`docs/_brief/BRIEF-V2-APP.md`)
+
+**Idées à vivre** (`#/idees`, `#/idees/<occasion>`, `#i=`) : 9 occasions (`js/data/occasions.js`, saisons, intro, 3 mises en avant vérifiées), réglages (personnes, budget, lieu, zone, goûts, âge des enfants), 6 idées par page (`js/engine/ideas.js` : filtres durs, score pondéré par occasion, MMR λ = 0,7, 2 idées par univers au plus, une nouveauté au moins), fiche idée, sélection de 2 à 5 idées envoyée au groupe (message par gabarit ou réécrit par l'IA, lien `#i=` compressé), vue reçue avec vote, bon cadeau Canvas 1080 × 1350 et version imprimable A6. Domaines non ludiques écartés par une liste éditoriale (`CORDES_IDEAS_EXCLUDE`).
+
+**Ta corde cachée** (`#/test`, `#/test/q`, `#/test/r`, `#t=`) : 8 questions (`js/data/quiz.js`), 13 cordes toutes atteignables, trois savoir-faire (évidente, voisine, surprise hors des univers du profil, « une autre surprise »), défi de la semaine (`js/data/defis.js` : 60 défis rédigés pour les savoir-faire les plus tirés, repli par gabarit), carte story ou carrée, comparaison de deux résultats, passerelles vers le bilan (graines `st.deck.seed`, +1 au score du paquet) et vers la liste d'attente (colonne `source` dans le CSV). Stockage `cordes.quiz` et `cordes.ideas`.
+
+**Accueil** : trois portes au même niveau (idées, test, bilan) ; une seule principale selon la saison (`C.OCCASION_SEASONS`). Tuiles « Une idée à vivre avec ces envies » et « Fais passer le test à un ami » dans les résultats et l'offre.
+
+**Lieux partenaires** (`#/lieu`, `#/lieu/pitch`, `#/l/<slug>`) : 20 types en 6 familles avec ticket, formules recommandées et pitch de l'étude (`js/data/venues.js`), 7 formules, plusieurs cochables, migration des fiches v1 (`studio`, `atelier`, `formula`). Simulateur `C.venueGain` (`js/engine/venues.js`) qui retrouve les chiffres de l'étude (café 130 € et 91 €, bar 217 € et 152 €, cave 325 € et 227 €, studio 69 €, boutique 130 € et 45 €, soirée 300 € et 210 €), hypothèses badgées estimation ou hypothèse, barres SVG, comparaison des 7 formules. Fiche enrichie (HTML autonome A4 et texte), charte d'une page en 10 clauses (texte et HTML avec zones de signature, mention juriste), kit (affiche A4, chevalet A6, story, 3 publications, message, version imprimable, tout télécharger), mode présentation en 4 diapositives (clavier et balayage). Mise en avant : « À faire chez … » sous les idées, lieux partenaires dans « Où apprendre », lieux prêts à côté du compteur de quartier. 6 lieux fictifs de démonstration, toujours signalés. Pas de QR code : aucun encodeur local.
+
+**Mesure** : événements `idees_*`, `test_*`, `venue_*` ; entonnoirs des curieux et des lieux et coefficient viral estimé (ouvertures `#i=` et `#t=` / partages) dans `#/admin/metrics`.
+
 ## Architecture
 
 ```
@@ -47,6 +59,7 @@ app/
   index.html               coquille : barre d’app, vue, pied, panneau latéral, toast ; ordre de chargement des scripts
   css/app.css              design system Chrome néon (tokens d’Antoine, un accent cyan, statuts colorés), mobile d’abord, impression
   js/data/                 taxonomie (17 univers, 432 compétences) et ressources (plateformes, statuts, prix…) : figées, ne pas modifier
+                           occasions.js, quiz.js, defis.js, venues.js : contenus éditoriaux du brief V2
   js/engine/               moteur pur, sans DOM (sauf téléchargement), testé sous Node
     core.js                espace de noms window.Cordes, utilitaires, normalisation défensive des données (anomalies relevées, jamais d’exception)
     similarity.js          similarité entre compétences et graphe des 12 voisins
@@ -57,13 +70,14 @@ app/
     troc.js share.js       troc entre deux bilans ; état localStorage « cordes.v1 » et lien #b=
     osm.js ai.js demo.js export.js   OpenStreetMap, copilote Claude, profils de démo, JSON/.ics/passeport
     growth.js              lot 2 : liste d’attente, mesure, questionnaire, historique, groupe, quartier, lieu, données
+    ideas.js quiz.js venues.js   brief V2 : idées à vivre, ta corde cachée, lieux partenaires
   js/ui/                   écrans (une route = { render, mount, title }), actions déléguées data-act, champs data-bind
     app.js                 routeur par hash, rendu (protégé contre la réentrance), enregistrement différé et forcé à la fermeture
     screens-*.js card.js   parcours, résultats, offre, accueil, outils, croissance ; carte image Canvas
   dev/                     tests et générateur SEO
 ```
 
-Stockage local (tout sous le préfixe `cordes.`) : `cordes.v1` (bilan), `.waitlist`, `.history`, `.survey`, `.priceArm`, `.metrics` (et `.metrics.demo`, `.metrics.off`), `.venue`, `.geo`, `.apikey`. La page `#/donnees` les liste, les exporte et les efface.
+Stockage local (tout sous le préfixe `cordes.`) : `cordes.v1` (bilan), `.quiz`, `.ideas`, `.waitlist`, `.history`, `.survey`, `.priceArm`, `.metrics` (et `.metrics.demo`, `.metrics.off`), `.venue`, `.geo`, `.apikey`. La page `#/donnees` les liste, les exporte et les efface.
 
 ## Écrans
 
@@ -80,6 +94,9 @@ Stockage local (tout sous le préfixe `cordes.`) : `cordes.v1` (bilan), `.waitli
 | `#/donnees` | données sur l’appareil, export, suppression (A2) |
 | `#/admin/metrics` | entonnoir, temps passé, questionnaire et test du prix (A3, A6) |
 | `#/copilote`, `#/comment`, `#/demo`, `#b=…` | copilote IA ; transparence des algorithmes ; démos ; bilan partagé |
+| `#/idees`, `#/idees/<occasion>`, `#i=…` | idées à vivre ; sélection reçue |
+| `#/test`, `#/test/q`, `#/test/r`, `#t=…` | ta corde cachée ; résultat reçu et comparaison |
+| `#/lieu`, `#/lieu/pitch`, `#/l/<slug>` | lieu partenaire en 4 étapes ; mode présentation ; fiche publique |
 
 ## Algorithmes (détail et poids en direct dans `#/comment`)
 
