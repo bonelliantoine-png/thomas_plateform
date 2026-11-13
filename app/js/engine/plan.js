@@ -61,7 +61,7 @@
       var cost = lessonFmt ? Math.max(Math.round((lesson.lo + lesson.hi) / 2), Math.round(monthly * wk / 4.33)) : 0;
       if (k === cur + 1) cost += matMid;
       steps.push({ k: k, label: C.LEVELS[k], from: C.LEVELS[k - 1], milestone: C.milestone(s, k), hours: h, weeks: wk, cost: cost,
-        workshop: (k === 1 ? 'Atelier découverte' : 'Atelier de niveau ' + k) + ' · ' + C.LEVELS[k], host: C.hostLevel(k), hostExact: C.TEACH_RULE !== 'below' });
+        workshop: C.palierName(k) + ' · ' + C.LEVELS[k], host: C.hostLevel(k), hostExact: C.TEACH_RULE !== 'below' });
     }
     var total = steps.reduce(function (a, x) { return a + x.cost; }, 0);
     var now = new Date();

@@ -41,8 +41,8 @@
     var rows = [];
     for (var k = cur + 1; k <= target; k++) {
       var x = steps.filter(function (y) { return y.k === k; })[0];
-      rows.push('<li><span class="k">' + k + '</span><div><div class="pt">' + (k === 1 ? 'Atelier découverte' : 'Atelier de niveau ' + k) + ' · ' + E(C.LEVELS[k]) + '</div><div class="pm">' + E(C.milestone(s, k)) + '</div>' +
-        '<div class="pw">Qui peut vous faire progresser : un hôte de niveau ' + C.hostLevel(k) + (C.TEACH_RULE === 'below' ? ' ou plus' : '') + ' (' + E(C.LEVELS[C.hostLevel(k)].toLowerCase()) + ')' + (x ? ' · ≈ ' + x.hours + ' h · ' + U.eur(x.cost) : '') + '</div></div></li>');
+      rows.push('<li><span class="k">' + k + '</span><div><div class="pt">' + C.palierName(k) + ' · ' + E(C.LEVELS[k]) + '</div><div class="pm">' + E(C.milestone(s, k)) + '</div>' +
+        '<div class="pw">Qui peut vous faire progresser : ' + (k >= C.LEVEL_MAX ? 'un référent (niveau 5), qui forme les hôtes' : 'un hôte de niveau ' + C.hostLevel(k) + (C.TEACH_RULE === 'below' ? ' ou plus' : '') + ' (' + E(C.LEVELS[C.hostLevel(k)].toLowerCase()) + ')') + (x ? ' · ≈ ' + x.hours + ' h · ' + U.eur(x.cost) : '') + '</div></div></li>');
     }
     return rows.length ? '<ol class="palpath" aria-label="Paliers à franchir">' + rows.join('') + '</ol>' : '';
   };

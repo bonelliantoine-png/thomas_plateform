@@ -161,7 +161,7 @@
     else phases = [
       [0.10, 'Accueil', 'Tour de table : prénom, niveau, ce qui donne envie'],
       [0.15, 'Démonstration', 'Démonstration commentée : ' + G],
-      [0.35, 'Pratique guidée', (size > 2 ? 'En binômes' : 'Pas à pas') + ', correction individuelle, accent sur la ' + soft],
+      [0.35, 'Pratique guidée', (size > 2 ? 'En binômes' : 'Pas à pas') + ', correction individuelle ; point d’attention : ' + soft],
       [0.25, 'Défi', 'Chacun réalise sa version, vers « ' + N + ' » pour les plus à l’aise'],
       [0.15, 'Clôture', 'Photo des réalisations, fiche-mémo, proposition d’un arc de 3 séances']];
     var t = 0;
