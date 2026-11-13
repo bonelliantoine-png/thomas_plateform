@@ -225,7 +225,7 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 5,
     "trend": 3,
     "wtp": 3,
     "space": 1,
@@ -236,7 +236,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -370,7 +370,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -493,7 +493,7 @@
    ],
    "scores": {
     "demand": 2,
-    "trend": 1,
+    "trend": 0,
     "wtp": 3,
     "space": 3,
     "community": 4,
@@ -503,7 +503,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -631,7 +631,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -760,7 +760,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -892,7 +892,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -1022,7 +1022,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -1150,7 +1150,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -1280,7 +1280,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -1408,7 +1408,7 @@
     "regulatory": 5,
     "cost": 5,
     "local": 5,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "salle-polyvalente"
@@ -1662,7 +1662,7 @@
     "regulatory": 5,
     "cost": 5,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "salle-polyvalente"
@@ -2048,7 +2048,7 @@
     "regulatory": 3,
     "cost": 5,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -2434,7 +2434,7 @@
     "regulatory": 5,
     "cost": 4,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -3712,7 +3712,7 @@
     "community": 3,
     "format": 4,
     "supply": 3,
-    "hostIncome": 4,
+    "hostIncome": 5,
     "regulatory": 5,
     "cost": 4,
     "local": 3,
@@ -5920,7 +5920,7 @@
     "regulatory": 2,
     "cost": 1,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -6048,7 +6048,7 @@
     "regulatory": 2,
     "cost": 1,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "studio-danse",
@@ -6174,7 +6174,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "salle-sport",
@@ -6301,7 +6301,7 @@
     "regulatory": 4,
     "cost": 3,
     "local": 4,
-    "online": 1
+    "online": 0
    },
    "venues": [
     "parc",
