@@ -73,13 +73,16 @@
   C.LEVEL_DESC = ['Rien encore', 'A fait une première séance, connaît les gestes de base', 'Fait seul un résultat simple et reproductible',
     'Régulier, varie, corrige ses erreurs', 'Résultat sûr et personnel, explique le pourquoi', 'Niveau avancé reconnu, crée ses méthodes'];
   // niveau requis pour animer l'atelier de niveau k (le minimum en mode « below »)
-  C.hostLevel = function (k) { return U.clamp(k, 1, C.LEVEL_MAX - 1) + 1; };
+  C.hostLevel = function (k) { return Math.min(C.LEVEL_MAX, U.clamp(k, 1, C.LEVEL_MAX) + 1); };
   // une personne de niveau n peut-elle animer l'atelier de niveau k ?
+  // le palier 5 (vers « référent ») n'a pas d'atelier au-dessus : il passe par la formation des hôtes, menée par un référent
   C.canAnimate = function (n, k) {
     n = U.num(n); k = U.num(k);
-    if (k < 1 || k > C.LEVEL_MAX - 1 || n < 2) return false;
+    if (k < 1 || k > C.LEVEL_MAX || n < 2) return false;
+    if (k === C.LEVEL_MAX) return n === C.LEVEL_MAX;
     return C.TEACH_RULE === 'below' ? n >= k + 1 : n === k + 1;
   };
+  C.palierName = function (k) { return k === 1 ? 'Atelier découverte' : k >= C.LEVEL_MAX ? 'Formation des hôtes' : 'Atelier de niveau ' + k; };
   // palier le plus haut qu'anime une personne de niveau n (0 si aucun)
   C.topPalier = function (n) { n = U.clamp(n, 0, C.LEVEL_MAX); return n >= 2 ? n - 1 : 0; };
   // paliers animés par une personne de niveau n

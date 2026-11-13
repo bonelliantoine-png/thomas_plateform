@@ -250,7 +250,7 @@
    "competitors": [
     "Toastmasters",
     "formations en entreprise",
-    "Cours Florent"
+    "cours de théâtre privés"
    ],
    "regulated": null,
    "verdict": "prioritaire",
@@ -510,7 +510,7 @@
     "confiance"
    ],
    "competitors": [
-    "Eloquentia",
+    "concours d'éloquence universitaires",
     "clubs d'éloquence des universités"
    ],
    "regulated": null,
@@ -1432,7 +1432,6 @@
    ],
    "competitors": [
     "The Moth",
-    "Raconte-moi",
     "soirées de récits"
    ],
    "regulated": null,
@@ -1829,8 +1828,8 @@
    ],
    "competitors": [
     "Studios de podcast",
-    "Podcastiste",
-    "Audacy"
+    "formations en podcast",
+    "studios de podcast"
    ],
    "regulated": null,
    "verdict": "prioritaire",
@@ -4446,7 +4445,7 @@
    ],
    "regulated": null,
    "verdict": "ecarter",
-   "why": "Atelier sensible mais très niche ; mieux en complément du cours de LSF.",
+   "why": "Atelier sensible mais trop étroit : peu d'hôtes qualifiés et très peu de demande hors cours de LSF existants.",
    "confidence": "estimation"
   },
   {

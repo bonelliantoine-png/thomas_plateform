@@ -2224,7 +2224,7 @@
    ],
    "competitors": [
     "Bars à jeux",
-    "Loups-garous"
+    "bars à jeux"
    ],
    "regulated": null,
    "verdict": "a-tester",
@@ -2356,7 +2356,7 @@
    ],
    "regulated": null,
    "verdict": "ecarter",
-   "why": "Proche des jeux de bluff et d'enquête ; manque de différenciation.",
+   "why": "Doublon des jeux de bluff et des murder party ; sans valeur ajoutée propre.",
    "confidence": "estimation"
   },
   {
@@ -3395,9 +3395,9 @@
     "strategie"
    ],
    "competitors": [
-    "Ludovox",
-    "Festival de Cannes",
-    "Cocktail Games"
+    "forums de créateurs",
+    "Festival international des jeux",
+    "éditeurs de jeux"
    ],
    "regulated": null,
    "verdict": "a-tester",
@@ -4054,7 +4054,7 @@
     "convivial"
    ],
    "competitors": [
-    "Ludistes",
+    "clubs de jeux narratifs",
     "éditeurs de jeux narratifs"
    ],
    "regulated": null,
@@ -4183,7 +4183,7 @@
    ],
    "competitors": [
     "Studios de JDR",
-    "Ludovox",
+    "forums de créateurs",
     "forums"
    ],
    "regulated": null,
@@ -4316,7 +4316,7 @@
    ],
    "competitors": [
     "Associations de GN",
-    "Mad Mage"
+    "associations de GN"
    ],
    "regulated": null,
    "verdict": "a-tester",
@@ -5744,9 +5744,9 @@
     "balade"
    ],
    "competitors": [
-    "Fugue",
+    "jeux de piste",
     "Explor Games",
-    "Hidden Paris"
+    "jeux de piste touristiques"
    ],
    "regulated": null,
    "verdict": "a-tester",
@@ -6262,7 +6262,7 @@
     "animation"
    ],
    "competitors": [
-    "Blind test",
+    "bars animés",
     "bars"
    ],
    "regulated": null,

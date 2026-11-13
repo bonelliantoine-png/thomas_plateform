@@ -795,7 +795,7 @@
    ],
    "competitors": [
     "Associations swing",
-    "Paris Swing Dance",
+    "associations de swing",
     "écoles de danse"
    ],
    "regulated": null,
@@ -926,7 +926,7 @@
    "competitors": [
     "Clubs de danse",
     "MJC",
-    "Dance Club"
+    "clubs de danse"
    ],
    "regulated": null,
    "verdict": "a-tester",
@@ -1950,7 +1950,7 @@
    "competitors": [
     "Studios de danse",
     "MJC",
-    "Urban Dance"
+    "studios de danse urbaine"
    ],
    "regulated": null,
    "verdict": "prioritaire",
@@ -2847,7 +2847,7 @@
    ],
    "competitors": [
     "Studios de danse",
-    "Tap Dance Club"
+    "écoles de claquettes"
    ],
    "regulated": null,
    "verdict": "plus-tard",
@@ -3873,7 +3873,7 @@
     "convivial"
    ],
    "competitors": [
-    "Cours Florent",
+    "cours de théâtre privés",
     "conservatoires",
     "troupes amateurs"
    ],
@@ -4523,7 +4523,7 @@
     "collectif"
    ],
    "competitors": [
-    "Cours Florent",
+    "cours de théâtre privés",
     "stages de mise en scène"
    ],
    "regulated": null,
@@ -4788,7 +4788,6 @@
    ],
    "competitors": [
     "Magic Dealers",
-    "Magic Boutique",
     "clubs de magie"
    ],
    "regulated": null,
@@ -6981,7 +6980,7 @@
    ],
    "regulated": null,
    "verdict": "ecarter",
-   "why": "Atelier gracieux mais saisonnier et peu demandé ; mieux dans un mix famille.",
+   "why": "Atelier gracieux mais saisonnier et peu demandé ; sans hôte spécialisé, il ne justifie pas une offre dédiée.",
    "confidence": "estimation"
   },
   {
