@@ -231,7 +231,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -367,7 +367,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -489,9 +489,9 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,
@@ -500,7 +500,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -633,7 +633,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -766,7 +766,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -888,7 +888,7 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 3,
     "trend": 3,
     "wtp": 3,
     "space": 3,
@@ -899,7 +899,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -1022,7 +1022,7 @@
     "demand": 5,
     "trend": 4,
     "wtp": 3,
-    "space": 3,
+    "space": 2,
     "community": 4,
     "format": 3,
     "supply": 4,
@@ -1030,7 +1030,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -1165,7 +1165,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -1287,7 +1287,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
     "wtp": 3,
     "space": 4,
@@ -1298,7 +1298,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 0
    },
    "venues": [
     "tiers-lieu",
@@ -1421,8 +1421,8 @@
    "scores": {
     "demand": 5,
     "trend": 4,
-    "wtp": 3,
-    "space": 2,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 4,
@@ -1566,7 +1566,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -1698,9 +1698,9 @@
     "supply": 4,
     "hostIncome": 4,
     "regulatory": 4,
-    "cost": 4,
+    "cost": 2,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -1823,9 +1823,9 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 5,
     "format": 3,
@@ -1834,7 +1834,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -1965,7 +1965,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -2100,7 +2100,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -2223,16 +2223,16 @@
    "scores": {
     "demand": 4,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -2364,7 +2364,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -2488,7 +2488,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 2,
@@ -2499,7 +2499,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -2622,10 +2622,10 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
-    "wtp": 3,
-    "space": 3,
+    "wtp": 1,
+    "space": 1,
     "community": 4,
     "format": 3,
     "supply": 4,
@@ -2633,7 +2633,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -2766,7 +2766,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -2899,7 +2899,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "tiers-lieu",
@@ -3030,9 +3030,9 @@
     "supply": 4,
     "hostIncome": 4,
     "regulatory": 4,
-    "cost": 4,
+    "cost": 2,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -3165,9 +3165,9 @@
     "supply": 4,
     "hostIncome": 5,
     "regulatory": 4,
-    "cost": 4,
+    "cost": 5,
     "local": 4,
-    "online": 5
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -3302,7 +3302,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -3435,7 +3435,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -3569,7 +3569,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -3691,7 +3691,7 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
@@ -3702,7 +3702,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -3832,9 +3832,9 @@
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
-    "cost": 3,
+    "cost": 2,
     "local": 3,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "atelier-artisan",
@@ -3956,7 +3956,7 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 3,
@@ -3967,7 +3967,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -4094,9 +4094,9 @@
     "supply": 4,
     "hostIncome": 3,
     "regulatory": 4,
-    "cost": 4,
+    "cost": 3,
     "local": 4,
-    "online": 4
+    "online": 0
    },
    "venues": [
     "tiers-lieu",
@@ -4232,7 +4232,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -4366,7 +4366,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -4500,7 +4500,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "tiers-lieu",
@@ -4635,7 +4635,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -4759,7 +4759,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 5,
     "format": 3,
@@ -4768,7 +4768,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -4900,7 +4900,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "boutique",
@@ -5023,15 +5023,15 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
-    "space": 2,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 3,
     "supply": 4,
     "hostIncome": 4,
     "regulatory": 4,
     "cost": 4,
-    "local": 4,
+    "local": 2,
     "online": 4
    },
    "venues": [
@@ -5157,16 +5157,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 4,
     "community": 5,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 0
    },
    "venues": [
     "salle-polyvalente",
@@ -5287,7 +5287,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
@@ -5298,7 +5298,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "atelier-artisan",
@@ -5421,16 +5421,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -5562,7 +5562,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -5696,7 +5696,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "domicile",
@@ -5818,9 +5818,9 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 2,
     "community": 5,
     "format": 3,
@@ -5828,7 +5828,7 @@
     "hostIncome": 4,
     "regulatory": 3,
     "cost": 3,
-    "local": 4,
+    "local": 3,
     "online": 4
    },
    "venues": [
@@ -5962,7 +5962,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -6095,7 +6095,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -6226,9 +6226,9 @@
     "supply": 4,
     "hostIncome": 3,
     "regulatory": 4,
-    "cost": 4,
+    "cost": 2,
     "local": 4,
-    "online": 4
+    "online": 0
    },
    "venues": [
     "boutique"
@@ -6360,7 +6360,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -6483,7 +6483,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 2,
     "community": 5,
     "format": 3,
@@ -6492,7 +6492,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -6615,7 +6615,7 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 2,
@@ -6626,7 +6626,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -6746,7 +6746,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
@@ -6757,7 +6757,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "tiers-lieu",
@@ -6888,7 +6888,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7019,9 +7019,9 @@
     "supply": 4,
     "hostIncome": 3,
     "regulatory": 3,
-    "cost": 3,
+    "cost": 2,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "atelier-artisan",
@@ -7144,7 +7144,7 @@
    "scores": {
     "demand": 3,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 4,
     "community": 5,
     "format": 3,
@@ -7153,7 +7153,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7274,7 +7274,7 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 4,
@@ -7283,9 +7283,9 @@
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
-    "cost": 3,
+    "cost": 2,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "atelier-artisan",
@@ -7417,7 +7417,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7547,10 +7547,10 @@
     "format": 3,
     "supply": 4,
     "hostIncome": 4,
-    "regulatory": 4,
+    "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7671,7 +7671,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 4,
@@ -7682,7 +7682,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7804,18 +7804,18 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 3,
     "community": 5,
     "format": 3,
-    "supply": 3,
+    "supply": 1,
     "hostIncome": 3,
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7936,18 +7936,18 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 4,
-    "community": 5,
+    "community": 1,
     "format": 3,
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -8067,18 +8067,18 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 4,
-    "community": 4,
+    "community": 2,
     "format": 3,
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "atelier-artisan",

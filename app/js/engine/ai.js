@@ -87,9 +87,10 @@
     lines.push('Prénom : ' + (c.firstName || 'non précisé') + ' · ville : ' + (c.city || 'non précisée') + ' · ' + U.num(c.hoursPerWeek, 3) + ' h par semaine · budget ' + U.num(c.budgetPerMonth, 50) + ' € par mois');
     lines.push('Parcours : ' + ({ learn: 'apprendre', offer: 'transmettre', both: 'apprendre et transmettre' }[st.mode] || 'apprendre'));
     var sk = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level > 0; }).sort(function (a, b) { return st.skills[b].level - st.skills[a].level; });
+    lines.push('Échelle de maîtrise : 0 jamais pratiqué, 1 je découvre, 2 bases acquises, 3 je consolide, 4 je maîtrise, 5 référent. Règle : une personne de niveau n anime les ateliers de niveau n-1.');
     if (sk.length) lines.push('Compétences : ' + sk.map(function (id) { var v = st.skills[id]; return C.data.sById[id].name + ' (niveau ' + v.level + '/5, ' + C.LEVELS[v.level].toLowerCase() + (v.years ? ', ' + v.years + ' ans' : '') + ')'; }).join(' ; '));
     var ds = C.yesDesires(st);
-    if (ds.length) lines.push('Envies : ' + ds.map(function (id) { var d = st.desires[id]; return C.data.sById[id].name + ' (cible ' + (d.target || 2) + '/4, horizon ' + (d.horizon || '3m') + ')'; }).join(' ; '));
+    if (ds.length) lines.push('Envies : ' + ds.map(function (id) { var d = st.desires[id]; return C.data.sById[id].name + ' (cible ' + (d.target || 2) + '/5, horizon ' + (d.horizon || '3m') + ')'; }).join(' ; '));
     var a = st.style && st.style.archetype && C.ARCHETYPES.filter(function (x) { return x.id === st.style.archetype; })[0];
     if (a) lines.push('Profil d’apprenant : ' + a.name + '. ' + a.pref);
     if (st.mode !== 'learn' && st.offer) lines.push('Objectifs de transmission : ' + U.arr(st.offer.goals).map(function (g) { return C.GOALS[g] || g; }).join(', ') + ' · revenu visé ' + U.num(st.offer.incomeTarget) + ' € par mois · ' + U.num(st.offer.hoursPerWeek) + ' h par semaine');

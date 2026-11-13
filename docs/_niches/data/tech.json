@@ -377,8 +377,8 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
-    "space": 3,
+    "wtp": 2,
+    "space": 2,
     "community": 4,
     "format": 2,
     "supply": 3,
@@ -510,8 +510,8 @@
    "scores": {
     "demand": 4,
     "trend": 5,
-    "wtp": 3,
-    "space": 2,
+    "wtp": 2,
+    "space": 1,
     "community": 3,
     "format": 3,
     "supply": 3,
@@ -1324,9 +1324,9 @@
    "scores": {
     "demand": 2,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 1,
     "space": 3,
-    "community": 5,
+    "community": 1,
     "format": 3,
     "supply": 3,
     "hostIncome": 2,
@@ -1453,7 +1453,7 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 2,
@@ -1590,12 +1590,12 @@
    "scores": {
     "demand": 4,
     "trend": 5,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 3,
     "supply": 3,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 3,
     "local": 4,
@@ -1723,9 +1723,9 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 2,
-    "wtp": 3,
+    "wtp": 2,
     "space": 4,
     "community": 4,
     "format": 2,
@@ -2268,7 +2268,7 @@
     "format": 2,
     "supply": 4,
     "hostIncome": 4,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 3,
     "local": 3,
     "online": 3
@@ -2400,7 +2400,7 @@
     "community": 4,
     "format": 2,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 3,
     "local": 4,
@@ -2927,13 +2927,13 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
     "wtp": 4,
     "space": 4,
     "community": 4,
     "format": 2,
-    "supply": 3,
+    "supply": 1,
     "hostIncome": 3,
     "regulatory": 3,
     "cost": 3,
@@ -3063,7 +3063,7 @@
     "demand": 4,
     "trend": 4,
     "wtp": 4,
-    "space": 2,
+    "space": 1,
     "community": 4,
     "format": 3,
     "supply": 4,
@@ -3199,7 +3199,7 @@
     "demand": 5,
     "trend": 4,
     "wtp": 3,
-    "space": 2,
+    "space": 1,
     "community": 4,
     "format": 3,
     "supply": 4,
@@ -3333,8 +3333,8 @@
    "scores": {
     "demand": 4,
     "trend": 3,
-    "wtp": 3,
-    "space": 2,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 4,
@@ -3811,7 +3811,7 @@
     {
      "n": 1,
      "title": "Mon premier titre animé",
-     "goal": "Animer un texte sur 5 secondes",
+     "goal": "Animer un texte de 5 secondes avec entrée et sortie propres",
      "format": "atelier",
      "duration": "1 h 30",
      "group": "2-6",
@@ -4260,7 +4260,7 @@
     {
      "n": 5,
      "title": "Former à l'identité visuelle",
-     "goal": "Animer et relire des chartes",
+     "goal": "Animer un atelier et relire 3 chartes graphiques d'apprenants",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -4273,8 +4273,8 @@
    "scores": {
     "demand": 4,
     "trend": 3,
-    "wtp": 3,
-    "space": 3,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 4,
@@ -4356,7 +4356,7 @@
     {
      "n": 2,
      "title": "Scène et son",
-     "goal": "Régler caméra, micro et lumière",
+     "goal": "Régler caméra, micro et lumière pour un direct sans écho",
      "format": "atelier",
      "duration": "3 h",
      "group": "2-6",
@@ -4405,12 +4405,12 @@
    "scores": {
     "demand": 4,
     "trend": 3,
-    "wtp": 3,
-    "space": 2,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 3,
     "local": 3,
@@ -4539,11 +4539,11 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
-    "community": 4,
+    "community": 1,
     "format": 3,
     "supply": 3,
     "hostIncome": 4,
@@ -4682,7 +4682,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "fablab",
@@ -4905,7 +4905,7 @@
     {
      "n": 3,
      "title": "Réparer avec méthode",
-     "goal": "Comparer matériaux et solidité",
+     "goal": "Comparer 3 matériaux et choisir le plus solide pour une pièce",
      "format": "chantier",
      "duration": "4 × 2 h",
      "group": "4-6",
@@ -4951,7 +4951,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "fablab",
@@ -5084,7 +5084,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "fablab",
@@ -5174,7 +5174,7 @@
     {
      "n": 3,
      "title": "Serveur à la maison",
-     "goal": "Héberger un service sécurisé",
+     "goal": "Héberger un service accessible et sécurisé sur son réseau",
      "format": "chantier",
      "duration": "4 × 2 h",
      "group": "4-6",
@@ -5209,9 +5209,9 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,
@@ -5308,7 +5308,7 @@
     {
      "n": 3,
      "title": "Maison cohérente",
-     "goal": "Relier plusieurs équipements",
+     "goal": "Relier 3 équipements dans un scénario fiable",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -5320,7 +5320,7 @@
     {
      "n": 4,
      "title": "Sécurité et vie privée",
-     "goal": "Protéger son réseau domestique",
+     "goal": "Protéger son réseau domestique et ses objets connectés",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -5332,7 +5332,7 @@
     {
      "n": 5,
      "title": "Former à la domotique",
-     "goal": "Accompagner des foyers",
+     "goal": "Accompagner 3 foyers et rédiger un guide d'installation",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -5354,7 +5354,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "domicile",
@@ -5476,7 +5476,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
@@ -5487,7 +5487,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "fablab",
@@ -5563,7 +5563,7 @@
     {
      "n": 2,
      "title": "Suiveur de ligne",
-     "goal": "Programmer un parcours simple",
+     "goal": "Programmer un robot qui suit une ligne sur un parcours",
      "format": "atelier",
      "duration": "3 h",
      "group": "2-6",
@@ -5575,7 +5575,7 @@
     {
      "n": 3,
      "title": "Défi en équipe",
-     "goal": "Résoudre un parcours en groupe",
+     "goal": "Résoudre un parcours à plusieurs en 2 heures de projet",
      "format": "chantier",
      "duration": "4 × 2 h",
      "group": "4-6",
@@ -5587,7 +5587,7 @@
     {
      "n": 4,
      "title": "Robot amélioré",
-     "goal": "Améliorer vitesse et fiabilité",
+     "goal": "Améliorer vitesse et fiabilité et le prouver par des essais",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -5599,7 +5599,7 @@
     {
      "n": 5,
      "title": "Animer un atelier robotique",
-     "goal": "Encadrer d'autres ados",
+     "goal": "Encadrer un groupe d'ados et former des hôtes",
      "format": "coaching",
      "duration": "4 × 2 h",
      "group": "1-3",
@@ -5621,7 +5621,7 @@
     "regulatory": 4,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "fablab",
@@ -5711,7 +5711,7 @@
     {
      "n": 3,
      "title": "Plans maîtrisés",
-     "goal": "Réaliser 5 plans aériens cadrés",
+     "goal": "Réaliser 5 plans aériens cadrés et stables",
      "format": "arc",
      "duration": "3 sorties",
      "group": "4-8",
@@ -5735,7 +5735,7 @@
     {
      "n": 5,
      "title": "Former au drone",
-     "goal": "Encadrer de nouveaux pilotes",
+     "goal": "Encadrer de nouveaux pilotes avec checklist de sécurité",
      "format": "coaching",
      "duration": "3 × 2 h",
      "group": "1-3",
@@ -5754,10 +5754,10 @@
     "format": 5,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 4,
-    "cost": 3,
+    "regulatory": 2,
+    "cost": 1,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "parc",
@@ -5856,7 +5856,7 @@
     {
      "n": 4,
      "title": "Objet vendable",
-     "goal": "Concevoir pour la production",
+     "goal": "Concevoir un objet reproductible en série avec finitions",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -5868,7 +5868,7 @@
     {
      "n": 5,
      "title": "Former à la découpe laser",
-     "goal": "Animer et former aux règles de sécurité",
+     "goal": "Animer l'atelier et former aux règles de sécurité de la machine",
      "format": "coaching",
      "duration": "4 × 2 h",
      "group": "1-3",
@@ -5882,15 +5882,15 @@
     "demand": 4,
     "trend": 3,
     "wtp": 3,
-    "space": 3,
+    "space": 1,
     "community": 4,
     "format": 4,
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
-    "cost": 3,
+    "cost": 1,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "fablab",
@@ -6150,12 +6150,12 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 4,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 3,
     "local": 3,
@@ -6238,7 +6238,7 @@
     {
      "n": 2,
      "title": "Rangement durable",
-     "goal": "Trier et nommer ses fichiers",
+     "goal": "Trier et nommer 500 fichiers avec une règle simple",
      "format": "atelier",
      "duration": "2 h",
      "group": "2-6",
@@ -6274,7 +6274,7 @@
     {
      "n": 5,
      "title": "Former à l'archivage",
-     "goal": "Animer et dépanner des familles",
+     "goal": "Animer un atelier et dépanner 3 familles",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -6382,7 +6382,7 @@
     {
      "n": 3,
      "title": "Pistage et publicité",
-     "goal": "Réduire pistes et cookies",
+     "goal": "Réduire pistes, cookies et publicités ciblées",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -6552,12 +6552,12 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 2,
+    "wtp": 1,
     "space": 3,
     "community": 4,
     "format": 4,
     "supply": 3,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 4,
     "local": 4,
@@ -6651,7 +6651,7 @@
     {
      "n": 3,
      "title": "Outils de contrôle",
-     "goal": "Configurer les réglages adaptés",
+     "goal": "Configurer les réglages adaptés à l'âge de chaque enfant",
      "format": "cercle",
      "duration": "6 × 1 h 30",
      "group": "6-10",
@@ -6675,7 +6675,7 @@
     {
      "n": 5,
      "title": "Animer un cercle de parents",
-     "goal": "Faciliter un groupe de parole",
+     "goal": "Faciliter un groupe de parole et partager des solutions",
      "format": "coaching",
      "duration": "3 × 1 h",
      "group": "1-3",
@@ -6809,7 +6809,7 @@
     {
      "n": 5,
      "title": "Animer un repair atelier numérique",
-     "goal": "Former des bénévoles",
+     "goal": "Former des bénévoles aux gestes de base de réparation",
      "format": "coaching",
      "duration": "4 × 2 h",
      "group": "1-3",
@@ -6829,9 +6829,9 @@
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
-    "cost": 3,
+    "cost": 2,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -6931,7 +6931,7 @@
     {
      "n": 4,
      "title": "Administrateur de son PC",
-     "goal": "Diagnostiquer et réparer seul",
+     "goal": "Diagnostiquer et réparer seul un problème courant",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -6943,7 +6943,7 @@
     {
      "n": 5,
      "title": "Former à Linux",
-     "goal": "Animer une install-party",
+     "goal": "Animer une install-party et accompagner 5 installations",
      "format": "coaching",
      "duration": "4 × 2 h",
      "group": "1-3",
@@ -6954,14 +6954,14 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 2,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 3,
     "format": 3,
     "supply": 3,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 4,
     "local": 4,
@@ -7040,7 +7040,7 @@
     {
      "n": 2,
      "title": "Cloud et agenda libres",
-     "goal": "Migrer fichiers et agenda",
+     "goal": "Migrer ses fichiers et son agenda vers un service libre",
      "format": "atelier",
      "duration": "2 h",
      "group": "2-6",
@@ -7064,7 +7064,7 @@
     {
      "n": 4,
      "title": "Hébergement collectif",
-     "goal": "Organiser un service partagé",
+     "goal": "Organiser un service partagé pour une association ou un voisinage",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -7087,9 +7087,9 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
-    "wtp": 2,
+    "wtp": 1,
     "space": 3,
     "community": 4,
     "format": 3,
@@ -7198,7 +7198,7 @@
     {
      "n": 4,
      "title": "Autonomie confiante",
-     "goal": "Dépanner un souci courant",
+     "goal": "Dépanner seul un souci courant (son, réseau, mise à jour)",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-6",
@@ -7210,7 +7210,7 @@
     {
      "n": 5,
      "title": "Animer un atelier entre pairs",
-     "goal": "Accompagner d'autres seniors",
+     "goal": "Accompagner d'autres seniors avec patience et vocabulaire clair",
      "format": "coaching",
      "duration": "4 × 1 h",
      "group": "1-2",
@@ -7228,11 +7228,11 @@
     "community": 4,
     "format": 4,
     "supply": 4,
-    "hostIncome": 5,
+    "hostIncome": 2,
     "regulatory": 4,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7357,16 +7357,16 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 2,
-    "space": 2,
+    "wtp": 1,
+    "space": 1,
     "community": 4,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "mediatheque",
@@ -7465,7 +7465,7 @@
     {
      "n": 4,
      "title": "Famille connectée",
-     "goal": "Animer un rendez-vous récurrent",
+     "goal": "Animer un rendez-vous vidéo récurrent avec ses petits-enfants",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-6",
@@ -7490,12 +7490,12 @@
    "scores": {
     "demand": 5,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 4,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 3,
     "local": 4,
@@ -7584,7 +7584,7 @@
     {
      "n": 3,
      "title": "Photolivre",
-     "goal": "Créer un photolivre imprimé",
+     "goal": "Créer et commander un photolivre de 20 pages",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -7608,7 +7608,7 @@
     {
      "n": 5,
      "title": "Former à la photo numérique",
-     "goal": "Animer et accompagner",
+     "goal": "Animer un atelier et accompagner 5 seniors",
      "format": "coaching",
      "duration": "4 × 1 h",
      "group": "1-2",
@@ -7630,7 +7630,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7692,7 +7692,7 @@
     {
      "n": 1,
      "title": "Réglages de base",
-     "goal": "Créer un profil enfant sécurisé",
+     "goal": "Créer un profil enfant sécurisé sur tablette et téléphone",
      "format": "atelier",
      "duration": "1 h 30",
      "group": "2-6",
@@ -7716,7 +7716,7 @@
     {
      "n": 3,
      "title": "Règles et limites",
-     "goal": "Configurer horaires et filtres",
+     "goal": "Configurer horaires, filtres et validations d'achat",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -7740,7 +7740,7 @@
     {
      "n": 5,
      "title": "Animer un atelier de parents",
-     "goal": "Guider d'autres parents",
+     "goal": "Guider un groupe et partager des règles qui marchent",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -7994,7 +7994,7 @@
     {
      "n": 4,
      "title": "Déploiement suivi",
-     "goal": "Mesurer les gains sur 2 mois",
+     "goal": "Mesurer les gains et ajuster les usages sur 2 mois",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -8006,7 +8006,7 @@
     {
      "n": 5,
      "title": "Former les référents IA",
-     "goal": "Animer des ateliers en interne",
+     "goal": "Animer des ateliers en interne et former d'autres référents",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -8103,7 +8103,7 @@
     {
      "n": 2,
      "title": "Facturation sans effort",
-     "goal": "Automatiser devis et factures",
+     "goal": "Automatiser devis et factures de bout en bout",
      "format": "atelier",
      "duration": "2 h",
      "group": "2-6",
@@ -8115,7 +8115,7 @@
     {
      "n": 3,
      "title": "Outils intégrés",
-     "goal": "Relier ses outils sans doublons",
+     "goal": "Relier agenda, notes et facturation sans doublons",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -8127,7 +8127,7 @@
     {
      "n": 4,
      "title": "Entreprise fluide",
-     "goal": "Documenter ses processus",
+     "goal": "Documenter ses processus et les tenir à jour",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -8139,7 +8139,7 @@
     {
      "n": 5,
      "title": "Former les indépendants",
-     "goal": "Animer et coacher des pairs",
+     "goal": "Animer un atelier et coacher 3 pairs",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -8259,7 +8259,7 @@
     {
      "n": 4,
      "title": "Données fiables",
-     "goal": "Détecter et corriger des biais",
+     "goal": "Détecter et corriger des biais de lecture dans 3 graphiques",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -8282,8 +8282,8 @@
     }
    ],
    "scores": {
-    "demand": 3,
-    "trend": 4,
+    "demand": 2,
+    "trend": 2,
     "wtp": 3,
     "space": 2,
     "community": 4,
@@ -8418,7 +8418,7 @@
    "scores": {
     "demand": 3,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 3,
@@ -8503,7 +8503,7 @@
     {
      "n": 2,
      "title": "Un niveau jouable",
-     "goal": "Créer un niveau avec obstacles",
+     "goal": "Créer un niveau avec obstacles et objectif clair",
      "format": "atelier",
      "duration": "2 h",
      "group": "2-6",
@@ -8651,7 +8651,7 @@
     {
      "n": 3,
      "title": "Règles personnalisées",
-     "goal": "Programmer une mécanique de jeu",
+     "goal": "Programmer une mécanique de jeu originale",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -8675,7 +8675,7 @@
     {
      "n": 5,
      "title": "Animer un atelier de modding",
-     "goal": "Encadrer des jeunes",
+     "goal": "Encadrer un groupe de jeunes avec règles de bonne conduite",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -8800,7 +8800,7 @@
     {
      "n": 4,
      "title": "Contributeur régulier",
-     "goal": "Valider et corriger des données",
+     "goal": "Valider et corriger des données sur sa zone",
      "format": "stage",
      "duration": "1 journée",
      "group": "4-8",
@@ -8825,16 +8825,16 @@
    "scores": {
     "demand": 2,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 1,
     "space": 2,
     "community": 5,
     "format": 4,
     "supply": 2,
-    "hostIncome": 3,
+    "hostIncome": 0,
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "nature",
@@ -8911,7 +8911,7 @@
     {
      "n": 2,
      "title": "Carte thématique",
-     "goal": "Ajouter itinéraires et notes",
+     "goal": "Ajouter itinéraires et notes à sa carte",
      "format": "atelier",
      "duration": "2 h",
      "group": "2-6",
@@ -8923,7 +8923,7 @@
     {
      "n": 3,
      "title": "Carnet de voyage numérique",
-     "goal": "Intégrer photos et récits",
+     "goal": "Intégrer photos et récits dans une carte",
      "format": "arc",
      "duration": "3 × 2 h",
      "group": "3-6",
@@ -8935,7 +8935,7 @@
     {
      "n": 4,
      "title": "Carte partagée",
-     "goal": "Rendre une carte collaborative",
+     "goal": "Rendre une carte collaborative avec 3 contributeurs",
      "format": "stage",
      "duration": "1 journée",
      "group": "3-8",
@@ -8947,7 +8947,7 @@
     {
      "n": 5,
      "title": "Former à la cartographie",
-     "goal": "Animer des ateliers cartes",
+     "goal": "Animer des ateliers cartes pour des groupes",
      "format": "coaching",
      "duration": "4 × 1 h 30",
      "group": "1-3",
@@ -8958,9 +8958,9 @@
     }
    ],
    "scores": {
-    "demand": 3,
-    "trend": 3,
-    "wtp": 3,
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,

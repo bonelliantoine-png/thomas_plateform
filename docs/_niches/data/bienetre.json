@@ -219,7 +219,7 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 4,
+    "wtp": 3,
     "space": 2,
     "community": 4,
     "format": 3,
@@ -357,8 +357,8 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
-    "space": 4,
+    "wtp": 2,
+    "space": 3,
     "community": 5,
     "format": 3,
     "supply": 4,
@@ -366,7 +366,7 @@
     "regulatory": 4,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "parc",
@@ -500,7 +500,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "tiers-lieu",
@@ -635,7 +635,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "salle-polyvalente",
@@ -760,16 +760,16 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 2,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 2,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "tiers-lieu",
@@ -897,7 +897,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 5,
     "format": 2,
@@ -906,7 +906,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "tiers-lieu",
@@ -1035,12 +1035,12 @@
     "space": 4,
     "community": 4,
     "format": 3,
-    "supply": 3,
+    "supply": 2,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 3,
     "local": 2,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "nature",
@@ -1162,7 +1162,7 @@
    "scores": {
     "demand": 4,
     "trend": 5,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,
@@ -1171,7 +1171,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 2
+    "online": 4
    },
    "venues": [
     "cafe",
@@ -1436,10 +1436,10 @@
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "tiers-lieu",
@@ -1563,16 +1563,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "cafe",
@@ -1832,15 +1832,15 @@
     "demand": 5,
     "trend": 4,
     "wtp": 4,
-    "space": 2,
-    "community": 4,
+    "space": 1,
+    "community": 5,
     "format": 4,
     "supply": 4,
     "hostIncome": 4,
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "studio-danse",
@@ -1968,7 +1968,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 4,
     "community": 4,
     "format": 3,
@@ -2244,7 +2244,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "parc",
@@ -2377,7 +2377,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "entreprise",
@@ -2501,7 +2501,7 @@
     "demand": 5,
     "trend": 4,
     "wtp": 3,
-    "space": 3,
+    "space": 2,
     "community": 5,
     "format": 2,
     "supply": 3,
@@ -2634,9 +2634,9 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 1,
     "trend": 3,
-    "wtp": 3,
+    "wtp": 1,
     "space": 4,
     "community": 5,
     "format": 3,
@@ -2645,7 +2645,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "parc",
@@ -2779,7 +2779,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "studio-danse",
@@ -2902,7 +2902,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
     "wtp": 2,
     "space": 4,
@@ -2913,7 +2913,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "salle-polyvalente",
@@ -3184,7 +3184,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "salle-sport",
@@ -3317,7 +3317,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "tiers-lieu",
@@ -3447,10 +3447,10 @@
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -3579,10 +3579,10 @@
     "format": 2,
     "supply": 4,
     "hostIncome": 4,
-    "regulatory": 4,
+    "regulatory": 3,
     "cost": 4,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -3712,10 +3712,10 @@
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 4,
+    "regulatory": 3,
     "cost": 4,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "salle-polyvalente",
@@ -3837,18 +3837,18 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 3,
     "wtp": 2,
     "space": 2,
     "community": 5,
     "format": 3,
-    "supply": 2,
+    "supply": 1,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 1,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "entreprise",
@@ -3966,7 +3966,7 @@
     }
    ],
    "scores": {
-    "demand": 2,
+    "demand": 1,
     "trend": 3,
     "wtp": 3,
     "space": 3,
@@ -3974,10 +3974,10 @@
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 4,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -4110,7 +4110,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "domicile",
@@ -4246,7 +4246,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 3,
-    "online": 2
+    "online": 0
    },
    "venues": [
     "salle-polyvalente",
@@ -4368,7 +4368,7 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
@@ -4379,7 +4379,7 @@
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "domicile",
@@ -4636,18 +4636,18 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 3,
-    "community": 5,
+    "community": 1,
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "entreprise",
@@ -4771,8 +4771,8 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
-    "space": 3,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 3,
@@ -4913,7 +4913,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 4
    },
    "venues": [
     "tiers-lieu",
@@ -5041,7 +5041,7 @@
     "demand": 4,
     "trend": 4,
     "wtp": 3,
-    "space": 3,
+    "space": 2,
     "community": 4,
     "format": 2,
     "supply": 3,
@@ -5171,8 +5171,8 @@
    "scores": {
     "demand": 5,
     "trend": 5,
-    "wtp": 3,
-    "space": 3,
+    "wtp": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 4,
@@ -5302,9 +5302,9 @@
     }
    ],
    "scores": {
-    "demand": 4,
+    "demand": 2,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 3,
     "community": 4,
     "format": 2,
@@ -5445,7 +5445,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "cafe",
@@ -5577,7 +5577,7 @@
     "format": 2,
     "supply": 3,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 2,
     "cost": 4,
     "local": 4,
     "online": 3
@@ -5710,10 +5710,10 @@
     "format": 3,
     "supply": 4,
     "hostIncome": 4,
-    "regulatory": 4,
+    "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "restaurant",
@@ -5847,7 +5847,7 @@
     "regulatory": 4,
     "cost": 3,
     "local": 3,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "nature",
@@ -5972,7 +5972,7 @@
    "scores": {
     "demand": 3,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 4,
     "community": 5,
     "format": 3,
@@ -5981,7 +5981,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 3,
-    "online": 2
+    "online": 0
    },
    "venues": [
     "parc",
@@ -6115,7 +6115,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "jardin-partage",
@@ -6239,18 +6239,18 @@
     }
    ],
    "scores": {
-    "demand": 3,
+    "demand": 2,
     "trend": 4,
     "wtp": 3,
     "space": 4,
     "community": 4,
     "format": 4,
-    "supply": 3,
+    "supply": 1,
     "hostIncome": 3,
-    "regulatory": 3,
+    "regulatory": 1,
     "cost": 3,
     "local": 2,
-    "online": 3
+    "online": 0
    },
    "venues": [
     "nature",
@@ -6371,7 +6371,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 3,
     "format": 3,
@@ -6380,7 +6380,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "salle-polyvalente",
@@ -6512,7 +6512,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "ecole",
@@ -6646,7 +6646,7 @@
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 4
+    "online": 3
    },
    "venues": [
     "ecole",
@@ -6772,16 +6772,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 2,
     "community": 4,
     "format": 3,
     "supply": 4,
-    "hostIncome": 4,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 2
    },
    "venues": [
     "salle-polyvalente",
@@ -6904,16 +6904,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 3,
     "community": 4,
     "format": 3,
     "supply": 4,
-    "hostIncome": 3,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 4,
     "local": 4,
-    "online": 4
+    "online": 1
    },
    "venues": [
     "salle-polyvalente",
@@ -7176,7 +7176,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "entreprise",
@@ -7439,7 +7439,7 @@
     "regulatory": 4,
     "cost": 4,
     "local": 3,
-    "online": 3
+    "online": 1
    },
    "venues": [
     "tiers-lieu",
@@ -7563,16 +7563,16 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 1,
     "space": 3,
     "community": 4,
     "format": 3,
     "supply": 3,
-    "hostIncome": 3,
+    "hostIncome": 1,
     "regulatory": 3,
     "cost": 3,
     "local": 4,
-    "online": 3
+    "online": 2
    },
    "venues": [
     "domicile",
@@ -7696,7 +7696,7 @@
    "scores": {
     "demand": 4,
     "trend": 4,
-    "wtp": 3,
+    "wtp": 2,
     "space": 3,
     "community": 4,
     "format": 3,
@@ -7830,7 +7830,7 @@
     "demand": 4,
     "trend": 4,
     "wtp": 3,
-    "space": 2,
+    "space": 1,
     "community": 4,
     "format": 2,
     "supply": 3,

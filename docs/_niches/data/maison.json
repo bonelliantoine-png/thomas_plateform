@@ -7841,7 +7841,9 @@
     "Ranger médicaments et produits",
     "Réagir en cas d'accident"
    ],
-   "appSkills": [],
+   "appSkills": [
+    "secourisme-enfant"
+   ],
    "levels": [
     {
      "n": 1,

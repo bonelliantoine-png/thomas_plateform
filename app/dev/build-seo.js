@@ -35,6 +35,10 @@ const lc = s => U.lc(s.short || s.name);
 const de = s => C.de(s);
 const eurR = (a, b) => a === b ? U.eur(a) : U.fmt(a) + ' à ' + U.eur(b);
 const paris = x => U.round5(x * 1.15);
+const LV = [1, 2, 3, 4, 5];
+// tableau de l'échelle : niveau, ce que sait faire la personne, ce qu'elle peut animer
+const scaleTable = () => `<div class="tw"><table><thead><tr><th>Niveau</th><th>Ce que sait faire la personne</th><th>Peut animer</th></tr></thead><tbody>${C.LEVELS.map((l, k) => `<tr><td><b>${k}</b> · ${E(l)}</td><td>${E(C.LEVEL_DESC[k])}</td><td>${C.topPalier(k) ? 'ateliers de niveau ' + C.topPalier(k) + (k >= C.LEVEL_MAX ? ' et formation des hôtes' : '') : 'non'}</td></tr>`).join('')}</tbody></table></div>`;
+const RULE = 'Un atelier de niveau k amène du niveau k-1 au niveau k. Une personne de niveau n anime les ateliers de niveau n-1 : le niveau 2 anime la découverte, le niveau 5 anime le niveau 4 et forme les hôtes.';
 
 /* ---------- gabarit ---------- */
 const CSS = `:root{--bg:#07080b;--grid:#12151c;--panel:#0e1015;--panel-2:#13161d;--hover:#161a23;--line:#1d2029;--line-2:#2b2f3b;--fg:#f2f4f8;--fg-2:#aeb4c2;--fg-3:#7c8394;--accent:#5ee7ff;--accent-ink:#03141a;--sent:#4f7dff;--int:#4dffb5;--no:#ff9ccb;--wait:#e6dcb4;--idle:#5d6477;--f-display:"Marcellus","Cormorant Garamond",Georgia,serif;--f-body:"Spectral",Georgia,serif;--f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;--r:8px;--gut:clamp(16px,3vw,32px);color-scheme:dark}
@@ -139,18 +143,20 @@ function learnPage(s) {
   st.desires[s.id] = { verdict: 'yes', target: 2, priority: 1, horizon: '3m', formats: ['atelier', 'cours'] };
   const p = C.learnPlan(st, s.id), w = p.where, a = s.attrs;
   const mat = C.COST_RANGE[a.cost], at = C.priceRange(s.universe, 'atelier'), co = C.priceRange(s.universe, 'cours');
-  const hrs = [1, 2, 3, 4].map(l => Math.max(1, Math.round(a.hoursToBasics * C.LEVEL_FACTOR[l])));
+  const hrs = LV.map(l => Math.max(1, Math.round(a.hoursToBasics * C.LEVEL_FACTOR[l])));
   const weeks2 = Math.ceil(hrs[1] / 2);
+  const step = k => p.steps.filter(x => x.k === k)[0];
   const u = C.universe(s.universe);
   const title = `Apprendre ${lc(s)} à Paris : niveaux, budget, où commencer`;
-  const desc = `${s.desc} Environ ${hrs[1]} h pour se débrouiller, ${mat[1] <= 20 ? 'presque aucun matériel' : 'matériel de ' + eurR(mat[0], mat[1])}, ateliers à Paris de ${eurR(paris(at.lo), paris(at.hi))}.`;
+  const desc = `${s.desc} Cinq paliers, environ ${hrs[1]} h pour acquérir les bases, ${mat[1] <= 20 ? 'presque aucun matériel' : 'matériel de ' + eurR(mat[0], mat[1])}, ateliers à Paris de ${eurR(paris(at.lo), paris(at.hi))}.`;
   const grp = (label, items) => items.length ? `<div class="grp"><span class="lbl">${E(label)}</span>${items.join('')}</div>` : '';
   const plat = x => item(x.p.name, x.p.url, x.p.bestFor || x.p.model, E(x.p.model ? x.p.model.slice(0, 100) : '') + (x.p.verify ? ' · à vérifier' : ''));
   let b = `<div class="kicker">Apprendre à Paris · ${E(u.name)}</div><h1>Apprendre ${E(lc(s))} à Paris</h1><p class="lead">${E(s.desc)} ${a.oneHourResult ? 'On repart avec un résultat montrable dès la première heure.' : 'Les premières séances servent surtout à poser le geste de base.'}</p>`;
-  b += `<div class="counters">${counter('Pour se débrouiller', hrs[1] + '<small> h</small>', 'soit ' + weeks2 + ' semaines à 2 h par semaine', 'sent')}${counter('Matériel de départ', mat[1] <= 20 ? '≈ 0<small> €</small>' : U.fmt(mat[0]) + '–' + U.fmt(mat[1]) + '<small> €</small>', 'budget indicatif')}${counter('Atelier à Paris', U.fmt(paris(at.lo)) + '–' + U.fmt(paris(at.hi)) + '<small> €</small>', 'par personne' + (at.fallback ? ' · estimation' : ''), 'int')}${counter('Cours particulier', U.fmt(paris(co.lo)) + '–' + U.fmt(paris(co.hi)) + '<small> €</small>', 'de l’heure' + (co.fallback ? ' · estimation' : ''), 'wait')}</div>`;
+  b += `<div class="counters">${counter('Bases acquises (niveau 2)', hrs[1] + '<small> h</small>', 'soit ' + weeks2 + ' semaines à 2 h par semaine', 'sent')}${counter('Matériel de départ', mat[1] <= 20 ? '≈ 0<small> €</small>' : U.fmt(mat[0]) + '–' + U.fmt(mat[1]) + '<small> €</small>', 'budget indicatif')}${counter('Atelier à Paris', U.fmt(paris(at.lo)) + '–' + U.fmt(paris(at.hi)) + '<small> €</small>', 'par personne' + (at.fallback ? ' · estimation' : ''), 'int')}${counter('Cours particulier', U.fmt(paris(co.lo)) + '–' + U.fmt(paris(co.hi)) + '<small> €</small>', 'de l’heure' + (co.fallback ? ' · estimation' : ''), 'wait')}</div>`;
   b += `<div class="row" style="margin-top:18px"><a class="btn primary lg" href="${APP_LINK}#/accueil">Faire mon bilan et obtenir mon plan</a><a class="btn lg" href="${APP_LINK}#/outils/autour/${s.universe}">Lieux autour de moi</a><a class="btn lg" href="${teachFile(s)}">Vous maîtrisez déjà ? Transmettre</a></div>`;
-  b += sec('Jalons', 'Les quatre étapes, et le temps qu’elles demandent');
-  b += `<div class="panel"><div class="pb"><div class="ladder">${s.levels.map((l, i) => `<div class="step"><span class="n">N${i + 1}</span><span class="t">${E(l)}</span><span class="h">≈ ${hrs[i]} h cumulées</span></div>`).join('')}</div></div></div>`;
+  b += sec('Paliers', 'Les cinq niveaux, le temps qu’ils demandent et qui les anime');
+  b += `<div class="panel"><div class="pb"><p class="prose" style="margin-bottom:6px;font-size:14px">${E(RULE)}</p><div class="ladder">${LV.map((k, i) => `<div class="step"><span class="n">N${k}</span><span class="t"><b style="font:500 12px var(--f-mono);display:block;color:var(--fg)">${E(C.LEVELS[k])} · atelier animé par un hôte de niveau ${C.hostLevel(k)}</b>${E(C.milestone(s, k))}</span><span class="h">≈ ${hrs[i]} h cumulées</span></div>`).join('')}</div></div></div>`;
+  b += `<p class="prose" style="margin-top:10px;font-size:14px">Pour les bases (niveau 2) : ${step(1) ? 'atelier découverte ≈ ' + step(1).hours + ' h et ' + U.eur(step(1).cost) + ', ' : ''}${step(2) ? 'puis atelier de niveau 2 ≈ ' + step(2).hours + ' h et ' + U.eur(step(2).cost) : ''}, matériel compris, à 2 h par semaine.</p>`;
   b += `<div class="note int"><span class="lbl">Premier pas cette semaine</span><span class="sp">${E(p.first.text)}${p.first.link ? ` · <a href="${E(p.first.link)}" rel="noopener">${E(p.first.label)}</a>` : ''}</span></div>`;
   b += sec('Où apprendre', 'Profs, ateliers, apps et communautés');
   b += `<div class="grid2"><section class="panel"><div class="ph"><span class="t">Avec quelqu’un</span></div><div class="pb">${grp('Profs et cours', w.teachers.map(plat))}${grp('Ateliers et stages', w.workshops.map(plat)) || ''}${!w.teachers.length && !w.workshops.length ? '<p class="prose">Pas de plateforme spécialisée référencée : passer par les communautés ci-contre.</p>' : ''}</div></section>`;
@@ -160,19 +166,20 @@ function learnPage(s) {
   if (s.regulated === 'sport') b += `<div class="note wait"><span class="lbl">À savoir</span><span class="sp">Activité sportive : choisir un encadrant diplômé (carte professionnelle) ou un club fédéré.</span></div>`;
   b += sec('Et ensuite', 'Compétences voisines');
   b += neighbors(s, learnFile);
-  const ld = { '@context': 'https://schema.org', '@type': 'HowTo', name: 'Apprendre ' + lc(s) + ' à Paris', description: desc, totalTime: 'PT' + hrs[1] + 'H', estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: String(mat[1]) }, step: s.levels.map((l, i) => ({ '@type': 'HowToStep', position: i + 1, text: l })) };
+  const ld = { '@context': 'https://schema.org', '@type': 'HowTo', name: 'Apprendre ' + lc(s) + ' à Paris', description: desc, totalTime: 'PT' + hrs[1] + 'H', estimatedCost: { '@type': 'MonetaryAmount', currency: 'EUR', value: String(mat[1]) }, step: LV.map((k, i) => ({ '@type': 'HowToStep', position: i + 1, name: 'Niveau ' + k + ' · ' + C.LEVELS[k], text: C.milestone(s, k) })) };
   return page(title + ' · Cordes', desc, `<a href="index.html">fiches</a> / apprendre / ${E(lc(s))}`, b, ld);
 }
 
 /* ---------- page « Donner des cours de X à Paris » ---------- */
 function teachPage(s) {
   const st = C.defaultState(); st.mode = 'offer'; st.context.city = CITY;
-  st.skills[s.id] = { level: 3, years: 4, proof: ['realisations'], teach: true, love: 3 };
+  st.skills[s.id] = { level: 4, years: 4, proof: ['realisations'], teach: true, love: 3 };
   st.offer.assets.teachExp = 1; st.offer.audiences = ['debutants'];
   const a = s.attrs, u = C.universe(s.universe);
   const fA = s.formats.indexOf('atelier') >= 0 ? 'atelier' : s.formats[0];
   const off = C.buildOffer(st, s.id, fA, 0);
   const cours = C.suggestPrice(st, s.id, 'cours', 1);
+  const byPal = [1, 2, 3, 4].map(k => ({ k, host: k + 1, atelier: C.suggestPrice(Object.assign({}, st, { skills: { [s.id]: Object.assign({}, st.skills[s.id], { level: k + 1 }) } }), s.id, fA, off.size, k), goal: C.milestone(s, k) }));
   const monthly = Math.round(4 * off.size * 0.7 * off.price);
   const plats = R.platforms.filter(p => p.sides.indexOf('offer') >= 0 && C.matchUniverse(p.universes, s.universe) && (p.kinds.length === 0 || p.kinds.some(k => s.formats.indexOf(k) >= 0 && ['cours', 'atelier', 'stage', 'coaching', 'evenement', 'communaute'].indexOf(k) >= 0)))
     .map(p => ({ p, f: C.feeOf(p), sc: p.reach * 1.2 + p.control - p.effort * 0.5 + (p.universes.indexOf('*') < 0 ? 1 : 0) })).sort((x, y) => y.sc - x.sc).slice(0, 7);
@@ -183,9 +190,11 @@ function teachPage(s) {
   let b = `<div class="kicker">Transmettre à Paris · ${E(u.name)}</div><h1>Donner des cours ${E(de(s))} à Paris</h1><p class="lead">Vous maîtrisez ${E(lc(s))} ? ${a.demand >= 2 ? 'C’est une compétence recherchée' : 'C’est une niche'}${a.teachable >= 2 ? ', qui se transmet bien en petit groupe' : ', plus facile à transmettre en individuel'}. Voici ce qu’elle se paie, sous quels formats, et où trouver vos premiers élèves.</p>`;
   b += `<div class="counters">${counter('Cours particulier', cours.price + '<small> € / h</small>', 'fourchette ' + eurR(cours.lo, cours.hi), 'int')}${counter(C.FORMATS[fA], off.price + '<small> ' + E(off.unit.replace('€ / ', '€/')) + '</small>', off.size + ' places · ' + off.duration + ' min', 'sent')}${counter('Quatre ateliers par mois', U.fmt(monthly) + '<small> €</small>', 'chiffre d’affaires à 70 % de remplissage', 'wait')}${counter('Demande', a.demand + '<small> / 3</small>', 'tendance ' + (a.trend >= 2 ? 'très en vogue' : a.trend === 1 ? 'en croissance' : a.trend < 0 ? 'en déclin' : 'stable'))}</div>`;
   b += `<div class="row" style="margin-top:18px"><a class="btn primary lg" href="${APP_LINK}#/accueil">Construire mon offre et mon plan 90 jours</a><a class="btn lg" href="${APP_LINK}#/attente/host">Devenir hôte fondateur</a><a class="btn lg" href="${learnFile(s)}">Fiche apprenant</a></div>`;
+  b += sec('Quel atelier animer', 'Votre niveau fixe le palier que vous animez');
+  b += `<div class="panel"><div class="pb"><p class="prose" style="margin-bottom:10px;font-size:14px">${E(RULE)}</p><div class="tw"><table><thead><tr><th>Votre niveau</th><th>Atelier animé</th><th>Objectif des participants</th><th class="r">Prix conseillé à Paris</th></tr></thead><tbody>${byPal.map(x => `<tr><td>${x.host} · ${E(C.LEVELS[x.host])}</td><td>${x.k === 1 ? 'Découverte' : 'Niveau ' + x.k} · ${E(C.LEVELS[x.k])}</td><td>${E(x.goal)}</td><td class="r">${U.eur(x.atelier.price)}</td></tr>`).join('')}</tbody></table></div><p class="prose" style="margin-top:10px;font-size:14px">${E(C.FORMATS[fA])}, ${E(off.unit)}. Au niveau 1, on n’anime pas encore ; au niveau 5, on forme aussi les hôtes.</p></div></div>`;
   b += sec('Une offre prête à publier', off.title);
   b += `<div class="grid2"><section class="panel"><div class="ph"><span class="t">Trame minutée</span><span class="hint">${off.duration} min · ${off.size} personnes</span></div><div class="pb"><p class="prose" style="margin-bottom:10px">${E(off.hook)}</p><div class="ladder">${off.outline.map(o => `<div class="step"><span class="n">${o.end ? o.start + '′' : '·'}</span><span class="t"><b style="font:500 12px var(--f-mono);display:block;color:var(--fg)">${E(o.label)}</b>${E(o.text)}</span><span class="h">${o.end ? (o.end - o.start) + ' min' : ''}</span></div>`).join('')}</div></div></section>`;
-  b += `<section class="panel"><div class="ph"><span class="t">Pourquoi ce prix</span></div><div class="pb"><div class="ladder">${off.pricing.steps.map(x => `<div class="step"><span class="n">·</span><span class="t">${E(x.label)}</span><span class="h">${E(x.val)}</span></div>`).join('')}</div><p class="prose" style="margin-top:10px;font-size:14px">Calcul pour un niveau « je maîtrise », 4 ans de pratique et des réalisations à montrer. Le bilan l’ajuste à votre profil.</p></div></section></div>`;
+  b += `<section class="panel"><div class="ph"><span class="t">Pourquoi ce prix</span></div><div class="pb"><div class="ladder">${off.pricing.steps.map(x => `<div class="step"><span class="n">·</span><span class="t">${E(x.label)}</span><span class="h">${E(x.val)}</span></div>`).join('')}</div><p class="prose" style="margin-top:10px;font-size:14px">Calcul pour un hôte de niveau 4 (je maîtrise) qui anime l’atelier de niveau 3, avec 4 ans de pratique et des réalisations à montrer. Le bilan l’ajuste à votre profil.</p></div></section></div>`;
   b += sec('Formats et prix', 'Ce qui se pratique pour cette compétence');
   b += `<div class="row" style="margin-bottom:12px">${s.formats.map(f => `<span class="pill"><i></i>${E(C.FORMATS[f])}</span>`).join('')}</div><div class="panel"><div class="pb">${priceTable(s)}</div></div>`;
   b += sec('Canaux', 'Où trouver vos premiers élèves');
@@ -203,8 +212,10 @@ function teachPage(s) {
 /* ---------- index ---------- */
 function indexPage() {
   const byU = {}; top.forEach(s => { (byU[s.universe] = byU[s.universe] || []).push(s); });
-  let b = `<div class="kicker">Fiches par compétence · Paris</div><h1>Apprendre ou transmettre à Paris</h1><p class="lead">Les ${top.length} compétences de loisir les plus demandées, chacune avec deux fiches : pour l’apprendre (jalons, heures, budget, où commencer) et pour la transmettre (prix conseillé, offre prête, canaux, cadre).</p>`;
+  let b = `<div class="kicker">Fiches par compétence · Paris</div><h1>Apprendre ou transmettre à Paris</h1><p class="lead">Les ${top.length} compétences de loisir les plus demandées, chacune avec deux fiches : pour l’apprendre (cinq paliers, heures, budget, où commencer) et pour la transmettre (prix conseillé, offre prête, canaux, cadre).</p>`;
   b += `<div class="row" style="margin-top:18px"><a class="btn primary lg" href="${APP_LINK}#/accueil">Faire mon bilan de compétences de vie</a><a class="btn lg" href="${APP_LINK}#/outils/recherches">Recherches préparées</a></div>`;
+  b += sec('Échelle', 'Cinq paliers, et qui anime chacun');
+  b += `<div class="panel"><div class="pb"><p class="prose" style="margin-bottom:10px">${E(RULE)}</p>${scaleTable()}</div></div>`;
   b += sec('Classement', 'Demande, tendance, facilité à transmettre');
   b += `<div class="idx">${top.map((s, i) => `<div><span class="u"><span class="sw" style="background:hsl(${C.universe(s.universe).hue} 38% 62%)"></span>${E(C.universe(s.universe).short)} · n° ${i + 1}</span><span class="nm">${E(s.name)}</span><span class="l"><a href="${learnFile(s)}">Apprendre</a><a href="${teachFile(s)}">Donner des cours</a></span></div>`).join('')}</div>`;
   b += `<p class="prose" style="margin-top:18px;font-size:14px">Rang = 3 × demande + 1,5 × tendance + 0,6 × facilité à transmettre + 0,4 × potentiel de revenu (attributs du catalogue Cordes, estimations éditoriales), trois compétences au plus par univers : ${Object.keys(byU).length} univers représentés.</p>`;

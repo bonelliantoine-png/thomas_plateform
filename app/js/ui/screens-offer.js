@@ -94,7 +94,7 @@
   function secNiche(st, plan) {
     var n = plan.niches;
     var html = sec('s-niche', '02 · Niche', 'Votre niche différenciante', 'croisement de deux compétences');
-    if (!n.length) return html + '<p class="empty">Noter au moins deux compétences au niveau « je me débrouille » dont une maîtrisée pour calculer une niche.</p>';
+    if (!n.length) return html + '<p class="empty">Noter au moins deux compétences au niveau 2 (bases acquises) ou plus, dont une au niveau 3, pour calculer une niche.</p>';
     var bar = function (l, v) { return '<div class="softrow"><div class="top"><span>' + E(l) + '</span><span class="faint num">' + Math.round(v * 100) + '</span></div>' + ui.meter(v * 100, 100, 'int') + '</div>'; };
     html += '<div class="grid2"><section class="panel"><div class="ph"><span class="t">Recommandée</span><span class="count">score ' + Math.round(n[0].score * 100) + '</span></div><div class="pb"><div class="h2">' + E(n[0].title) + '</div><p class="prose" style="margin-top:8px">' + E(n[0].concept) + '</p>' +
       '<div style="margin-top:12px">' + bar('Complémentarité', n[0].parts.comp) + bar('Demande', n[0].parts.demand) + bar('Potentiel de revenu', n[0].parts.monet) + bar('Rareté de la combinaison', n[0].parts.rare) + '</div>' +
