@@ -8,7 +8,7 @@ const vm = require('vm');
 const APP = path.resolve(__dirname, '..');
 const store = {};
 const win = {
-  localStorage: { getItem: k => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: k => { delete store[k]; } },
+  localStorage: { getItem: k => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: k => { delete store[k]; }, key: i => Object.keys(store)[i] || null, get length() { return Object.keys(store).length; } },
   location: { href: 'file:///app/index.html' },
   CompressionStream: globalThis.CompressionStream, DecompressionStream: globalThis.DecompressionStream
 };
@@ -21,7 +21,7 @@ const files = [
   'js/data/taxonomy-a.js', 'js/data/taxonomy-b.js', 'js/data/resources.js',
   'js/engine/core.js', 'js/engine/similarity.js', 'js/engine/inspiration.js', 'js/engine/archetype.js', 'js/engine/plan.js',
   'js/engine/pricing.js', 'js/engine/channels.js', 'js/engine/status.js', 'js/engine/niche.js', 'js/engine/offers.js',
-  'js/engine/troc.js', 'js/engine/share.js', 'js/engine/osm.js', 'js/engine/ai.js', 'js/engine/demo.js', 'js/engine/export.js', 'js/ui/charts.js'
+  'js/engine/troc.js', 'js/engine/share.js', 'js/engine/osm.js', 'js/engine/ai.js', 'js/engine/demo.js', 'js/engine/export.js', 'js/engine/growth.js', 'js/ui/charts.js'
 ];
 for (const f of files) {
   const p = path.join(APP, f);
@@ -168,6 +168,92 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
   ok(tr.pairs.length >= 1, 'troc : au moins une paire bilatérale');
   inRange(tr.compat, 0, 100, 'compatibilité troc');
   console.log(`\nTroc Claire × Inès : ${tr.pairs.length} paire(s), compatibilité ${tr.compat} %, idées : ${tr.ideas.slice(0, 2).join(' · ')}`);
+
+  /* ---------- lot 2 : croissance et étude ---------- */
+  console.log('\nLot 2');
+  const ines = C.buildDemo('ines'), malik = C.buildDemo('malik'), claire = C.buildDemo('claire');
+  // A1 liste d'attente
+  const pre = C.waitlist.prefill(claire);
+  ok(pre.wants.length === C.yesDesires(claire).length && pre.offers.every(id => claire.skills[id].level >= 3) && pre.offers.length >= 3, 'A1 · pré-remplissage : envies et compétences ≥ 3 (' + pre.wants.length + ' + ' + pre.offers.length + ')');
+  ok(C.zoneOf('Paris', '11e') === 'Paris 11e' && C.zoneOf('paris 18') === 'Paris 18e' && C.zoneOf('75003') === 'Paris 3e' && C.zoneOf('lyon') === 'Lyon', 'A1 · zones : arrondissements et villes');
+  ok(C.waitlist.validate({ role: 'apprendre', zone: 'Paris 11e', consent: false }).length === 1, 'A1 · consentement obligatoire');
+  ok(C.waitlist.validate({ role: 'apprendre', zone: 'Paris 11e', consent: true, email: 'x@' }).length === 1, 'A1 · e-mail vérifié');
+  const e1 = C.waitlist.add({ role: 'apprendre', zone: 'Paris 11e', city: 'Paris', arr: '11e', consent: true, email: 'a@b.fr', wants: pre.wants, offers: pre.offers });
+  C.waitlist.add({ role: 'transmettre', zone: 'Paris 11e', consent: true, email: 'a@b.fr' });
+  C.waitlist.add({ role: 'lieu', zone: 'Lyon', consent: true, venue: { name: 'Café « test »; quai', type: 'cafe' } });
+  ok(C.waitlist.list().length === 2, 'A1 · dédoublonnage par e-mail');
+  C.waitlist.add({ id: undefined, role: 'apprendre', zone: 'Nantes', consent: true }); C.waitlist.add({ id: undefined, role: 'lieu', zone: 'Nantes', consent: true });
+  ok(C.waitlist.list().length === 4 && C.waitlist.list().every(x => x.id), 'A1 · chaque inscription reçoit un identifiant');
+  C.waitlist.list().filter(x => x.zone === 'Nantes').forEach(x => C.waitlist.remove(x.id));
+  ok(!!e1.consentAt, 'A1 · date de consentement');
+  const csv = C.waitlist.csv();
+  ok(csv.split('\r\n').length === 4 && /"Café « test »; quai \(cafe\)"/.test(csv) && csv.startsWith('\ufeffdate;role;zone'), 'A1 · export CSV (en-tête, échappement)');
+  ok((await C.waitlist.send(e1)).sent === false, 'A1 · envoi désactivé par défaut');
+  let posted = null; C.WAITLIST_ENDPOINT = 'https://example.org/form';
+  await C.waitlist.send(e1, (url, o) => { posted = { url, o }; return Promise.resolve({ ok: true }); });
+  ok(posted && posted.o.method === 'POST' && JSON.parse(posted.o.body).consent === true && JSON.parse(posted.o.body).zone === 'Paris 11e', 'A1 · POST JSON vers WAITLIST_ENDPOINT');
+  C.WAITLIST_ENDPOINT = '';
+  // A8 compteur de quartier
+  const q = C.quarterCount('Paris 11e');
+  ok(q.local === 1 && q.demo >= 9 && q.demo <= 38 && q.total === q.demo + 1 && q.missing === 50 - q.total, 'A8 · compteur : ' + q.total + '/50 dont ' + q.demo + ' de démonstration');
+  ok(C.quarterCount('Paris 11e').demo === q.demo, 'A8 · valeur de démonstration stable');
+  // A3 mesure
+  C.metrics.clear();
+  ['accueil', 'bilan/contexte', 'bilan/maitrise', 'bilan/envies', 'resultats'].forEach((r, i) => C.track('view', { r }));
+  C.track('use', { k: 'passport' });
+  const ev = C.metrics.events(); ev.forEach((e, i) => { e.t = 1e12 + i * 60000; });
+  const rep = C.metricsReport(ev);
+  ok(rep.sessions === 1 && rep.funnel.find(f => f.id === 'results').n === 1 && rep.funnel.find(f => f.id === 'survey').n === 0, 'A3 · entonnoir par étape');
+  ok(rep.durations.length === 5 && rep.durations.every(d => d.median === 60), 'A3 · temps passé par écran');
+  C.metrics.setOff(true); ok(C.track('view', { r: 'x' }) === false, 'A3 · refus de la mesure respecté'); C.metrics.setOff(false);
+  const sim = C.simulateMetrics(80, 'test');
+  const srep = C.metricsReport(sim);
+  ok(srep.sessions === 80 && srep.funnel.every((f, i) => i === 0 || f.n <= srep.funnel[i - 1].n || f.id === 'waitlist' || f.id === 'survey'), 'A3 · données simulées et entonnoir décroissant');
+  ok(C.metrics.events().length === 6, 'A3 · simulation stockée à part');
+  console.log('  simulation : ' + srep.funnel.map(f => f.label + ' ' + f.n).join(' · '));
+  // A6 questionnaire et prix
+  const arm = C.priceArm();
+  ok(C.PRICE_ARMS.indexOf(arm) >= 0 && C.priceArm() === arm, 'A6 · prix tiré au hasard et mémorisé (' + arm + ' €)');
+  C.survey.save({ u: 5, nps: 10, int: 'oui', pay: 'oui' }); C.survey.save({ u: 3, nps: 5, int: 'non', pay: 'non' });
+  const sr = C.surveyReport(C.survey.list());
+  ok(sr.n === 2 && sr.avgUtility === 4 && sr.nps === 0 && sr.arms.find(a => a.price === arm).n === 2, 'A6 · utilité, NPS et test de prix agrégés');
+  ok(C.metricsReport(C.metrics.events()).survey.n === 2, 'A6 · réponses visibles dans la mesure');
+  console.log('  test du prix (simulé) : ' + srep.survey.arms.map(a => a.price + ' € → ' + Math.round(a.rate * 100) + ' % de oui (n=' + a.n + ')').join(' · '));
+  // A5 historique
+  const past = C.demoPastSnapshot(ines), cmp = C.compareSnapshots(past, C.snapshot(ines));
+  ok(cmp.realized.length >= 1 && cmp.gained.length >= 1 && cmp.newDesires.length >= 1 && cmp.days >= 90, 'A5 · avant/après : ' + cmp.realized.length + ' envie(s) réalisée(s), ' + cmp.gained.length + ' niveau(x) gagné(s), ' + cmp.newDesires.length + ' nouvelle(s)');
+  C.history.upsertToday(ines); C.history.upsertToday(ines);
+  ok(C.history.list().length === 1, 'A5 · un instantané par jour');
+  const rics = C.toICS([C.rebilanEvent(new Date(2026, 0, 1))]);
+  ok(/RRULE:FREQ=MONTHLY;INTERVAL=3/.test(rics) && /DTSTART;VALUE=DATE:20260401/.test(rics), 'A5 · rappel .ics à 90 jours, récurrent');
+  // A7 groupe
+  const names = ['Inès', 'Malik', 'Claire', 'Yanis', 'Léa'];
+  const grp = C.groupCompare([ines, malik, claire, C.buildFriend('yanis'), C.buildFriend('lea')].map((st, i) => ({ name: names[i], st })));
+  ok(grp.n === 5 && grp.matrix.length === 5 && grp.matrix[0][0] === null && grp.matrix.every(r => r.length === 5), 'A7 · matrice 5 × 5');
+  const t01 = C.troc(C.buildFriend('lea'), ines).aFromB.length;
+  ok(t01 >= 1 && grp.matrix[0][4].length === t01, 'A7 · matrice cohérente avec le troc à deux (Inès → Léa : ' + t01 + ')');
+  ok(grp.links >= 6, 'A7 · liens de transmission (' + grp.links + ')');
+  ok(grp.hosts.every(h => h.teacher !== null && h.learners.indexOf(h.teacher) < 0), 'A7 · qui anime quoi');
+  ok(grp.projects.length >= 1, 'A7 · activités de groupe');
+  console.log('  groupe : ' + grp.links + ' liens · ' + grp.hosts.slice(0, 4).map(h => C.data.sById[h.want].name + ' par ' + names[h.teacher]).join(' · '));
+  // A10 lieu
+  const v = Object.assign(C.defaultVenue(), { name: 'Le Comptoir', type: 'cafe', city: 'Paris', arr: '11e', slots: ['1:matin', '2:aprem', '3:soir'], capacity: 12, equip: ['tables', 'machine', 'calme'], formula: 'creuse' });
+  const vm2 = C.venueMatch(v, 10);
+  ok(vm2.skills.length === 10 && vm2.skills.every(x => x.s.attrs.physical < 3 && x.s.regulated !== 'alcool'), 'A10 · compétences compatibles filtrées');
+  ok(vm2.skills.some(x => x.s.domain === 'cuisine.cafe'), 'A10 · machine à café → compétences café');
+  const ve = C.venueEstimate(v);
+  ok(ve.sessions === 13 && ve.seats === 8 && ve.visitors === Math.round(3 * 4.33 * 8 * 0.6) && ve.conso === ve.visitors * 6, 'A10 · estimation de fréquentation (' + ve.visitors + ' participants, ' + ve.conso + ' €)');
+  const studio = C.venueMatch(Object.assign({}, v, { type: 'studio', equip: ['parquet', 'sono'] }), 10);
+  ok(studio.universes.some(u => u === 'sport' || u === 'scene' || u === 'bienetre'), 'A10 · studio → corps et scène');
+  ok(/FICHE LIEU PARTENAIRE · Le Comptoir/.test(C.venueSheet(v)) && /Paris 11e/.test(C.venueSheet(v)), 'A10 · fiche partenaire');
+  console.log('  lieu : ' + vm2.skills.slice(0, 5).map(x => x.s.name).join(', '));
+  // A2 export complet et suppression
+  store['cordes.apikey'] = 'sk-ant-secret';
+  const all = JSON.parse(C.exportAll());
+  ok(all.data['cordes.waitlist'].length === 2 && !/sk-ant-secret/.test(JSON.stringify(all)), 'A2 · export complet, clé masquée');
+  store['autre.cle'] = '1';
+  const nErased = C.eraseAll();
+  ok(nErased >= 5 && Object.keys(store).length === 1 && store['autre.cle'] === '1', 'A2 · suppression totale des clés cordes.* (' + nErased + ')');
 
   // robustesse : données manquantes ou mal formées
   const broken = { universes: [{ id: 'cuisine' }], domains: [], skills: [{ id: 'x', name: 'X', universe: 'nope', domain: 'cuisine.zz', related: ['inconnu'] }, { id: 'y', name: 'Y', universe: 'cuisine', attrs: { demand: 9 }, related: ['x', 'zzz'] }], softSkills: [] };

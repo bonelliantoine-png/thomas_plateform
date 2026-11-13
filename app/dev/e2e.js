@@ -191,6 +191,7 @@ async function download(page, clickSel) {
     // liste d'attente hôte fondateur
     await page.click('a[href="#/attente/host"]');
     await page.fill('#wl-email', 'nora@example.org');
+    await page.check('#wl-consent');
     await page.click('[data-act="wlSave"]');
     ok(await vis(page, 'text=Inscription enregistrée'), 'liste d’attente hôte fondateur');
     // autour de moi (outil complet)
@@ -217,6 +218,114 @@ async function download(page, clickSel) {
     await page.goto(URL + '#/outils/autour'); await page.fill('#osm-city', 'Lyon'); await page.click('[data-act="osmRun"]');
     await page.waitForSelector('#osm-body .note.no', { timeout: 10000 });
     ok(await page.locator('#osm-body .linkgrid a').count() >= 3, 'échec Overpass : message clair et recherches préparées');
+  }
+  /* ---------- lot 2 : croissance et étude, 375 px ---------- */
+  console.log('Lot 2 · 375 px');
+  {
+    const { page } = await newPage(browser, 375, errs);
+    const noOverflow = async name => { const ov = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); ok(ov <= 0, name + ' : aucun débordement à 375 px (' + ov + ' px)'); };
+    await page.goto(URL);
+    await page.evaluate(() => { const st = Cordes.buildDemo('ines'); delete st.demo; st.context.firstName = 'Lou'; st.context.city = 'Paris'; localStorage.setItem('cordes.v1', JSON.stringify(st)); });
+    await page.goto(URL + '#/resultats'); await page.reload(); await page.waitForTimeout(250);
+    ok(await page.locator('#usages ~ .tiles .tile, .tiles .tile[data-act]').count() === 12, 'résultats : 12 utilisations du bilan');
+    ok(await page.evaluate(() => Cordes.history.list().length === 1), 'A5 · instantané daté à l’arrivée aux résultats');
+    // A4 carte image
+    await page.click('[data-act="card"].tile');
+    await page.waitForSelector('#card-prev img', { timeout: 8000 });
+    const png = await download(page, '#drawer [data-act="cardDl"]');
+    ok(/carte-carre\.png$/.test(png.name) && png.size > 20000, 'A4 · carte carrée téléchargée en PNG (' + png.size + ' o)');
+    const dims = await page.evaluate(() => { const i = document.querySelector('#card-prev img'); return [i.naturalWidth, i.naturalHeight]; });
+    ok(dims[0] === 1080 && dims[1] === 1080, 'A4 · 1080 × 1080');
+    await page.click('#drawer [data-act="cardFmt"][data-val="story"]');
+    await page.waitForSelector('#card-prev img.story', { timeout: 8000 });
+    ok(await page.evaluate(() => document.querySelector('#card-prev img').naturalHeight === 1920), 'A4 · format story 1080 × 1920');
+    await shot(page, 'e2e-375-10-carte', false);
+    await page.keyboard.press('Escape'); await page.waitForTimeout(200);
+    // A6 questionnaire
+    ok(await vis(page, '#survey'), 'A6 · questionnaire en fin de bilan');
+    ok(await page.isDisabled('[data-act="svSend"]'), 'A6 · envoi bloqué tant que les 4 questions ne sont pas répondues');
+    for (const [k, v] of [['u', '4'], ['nps', '9'], ['int', 'oui'], ['pay', 'peut-etre']]) await page.click(`[data-act="svSet"][data-k="${k}"][data-v="${v}"]`);
+    await page.fill('#sv-miss', 'Des cours le dimanche matin');
+    await page.click('[data-act="svSend"]');
+    ok(await vis(page, '#survey .note.int'), 'A6 · réponses enregistrées');
+    const sv = await page.evaluate(() => ({ list: JSON.parse(localStorage.getItem('cordes.survey')), arm: JSON.parse(localStorage.getItem('cordes.priceArm')) }));
+    ok(sv.list.length === 1 && [12, 15, 19].includes(sv.arm) && sv.list[0].arm === sv.arm && sv.list[0].nps === 9, 'A6 · prix testé mémorisé (' + sv.arm + ' €)');
+    // A8 compteur
+    ok(/Le 11e ouvre|ouvre à 50 inscrits/.test(await page.textContent('#avis ~ .grid2 .quarter')), 'A8 · compteur d’ouverture affiché');
+    await shot(page, 'e2e-375-11-fin-resultats', false);
+    // A5 progrès
+    await page.goto(URL + '#/progres'); await page.waitForTimeout(200);
+    ok(await vis(page, 'text=Ce qui a bougé'), 'A5 · écran de progrès');
+    const rics = await download(page, '[data-act="progIcs"]');
+    ok(/RRULE:FREQ=MONTHLY;INTERVAL=3/.test(rics.content), 'A5 · rappel .ics tous les 3 mois');
+    await page.evaluate(() => { const l = Cordes.history.list(); l[0].at = new Date(Date.now() - 95 * 864e5).toISOString(); l[0].skills['anglais-conversation'] = 2; localStorage.setItem('cordes.history', JSON.stringify(l)); });
+    await page.reload(); await page.waitForTimeout(200);
+    ok(/\+1/.test(await page.textContent('.counters .counter:nth-child(2) .v')), 'A5 · avant/après : niveau gagné détecté');
+    await noOverflow('progrès');
+    await shot(page, 'e2e-375-12-progres');
+    // A1 liste d'attente
+    await page.goto(URL + '#/attente'); await page.waitForTimeout(200);
+    ok(await page.locator('.chip.on[data-act="wlSkill"]').count() >= 5, 'A1 · compétences pré-remplies depuis le bilan (' + await page.locator('.chip.on[data-act="wlSkill"]').count() + ')');
+    ok(await page.isVisible('#wl-arr'), 'A1 · arrondissement proposé pour Paris');
+    await page.selectOption('#wl-arr', '11e');
+    await page.fill('#wl-email', 'lou@example.org');
+    await page.click('[data-act="wlSave"]');
+    ok(await page.evaluate(() => !localStorage.getItem('cordes.waitlist')), 'A1 · refus sans consentement');
+    await page.check('#wl-consent');
+    await page.click('[data-act="wlSave"]');
+    ok(await vis(page, 'text=Inscription enregistrée'), 'A1 · inscription enregistrée');
+    const wl = await page.evaluate(() => JSON.parse(localStorage.getItem('cordes.waitlist'))[0]);
+    ok(wl.zone === 'Paris 11e' && wl.consent && wl.wants.length >= 3 && wl.role === 'apprendre', 'A1 · zone, rôle, envies et consentement stockés');
+    ok(/1 inscription sur cet appareil/.test(await page.textContent('#wl-quarter')), 'A8 · compteur local incrémenté');
+    const wcsv = await download(page, '[data-act="wlCsv"]');
+    ok(/Paris 11e/.test(wcsv.content) && /lou@example.org/.test(wcsv.content), 'A1 · export CSV');
+    await noOverflow('liste d’attente');
+    await shot(page, 'e2e-375-13-attente');
+    // A10 lieu partenaire
+    await page.goto(URL + '#/lieu'); await page.waitForTimeout(200);
+    await page.fill('#v-name', 'Café des Volontaires');
+    await page.fill('#v-city', 'Paris'); await page.dispatchEvent('#v-city', 'change'); await page.waitForTimeout(150);
+    await page.selectOption('#v-arr', '11e');
+    for (const k of ['1:aprem', '2:aprem', '4:matin']) await page.click(`[data-act="vSlot"][data-k="${k}"]`);
+    await page.click('[data-act="vEquip"][data-v="machine"]');
+    await page.click('[data-act="vFormula"][data-v="membre"]');
+    ok(await page.locator('#venue-out .resitem').count() >= 8, 'A10 · compétences compatibles');
+    ok(/Café de spécialité|Latte art/.test(await page.textContent('#venue-out')), 'A10 · équipement pris en compte (machine à café)');
+    ok(/FICHE LIEU PARTENAIRE · Café des Volontaires/.test(await page.textContent('#venue-out .copyblock')), 'A10 · fiche partenaire générée');
+    await page.click('[data-act="vJoin"]');
+    await page.waitForTimeout(100);
+    ok(await page.evaluate(() => Cordes.ui.st.waitlist.role !== 'lieu'), 'A10 · consentement exigé');
+    await page.check('#v-consent'); await page.click('[data-act="vJoin"]'); await page.waitForTimeout(200);
+    ok(await page.evaluate(() => { const l = JSON.parse(localStorage.getItem('cordes.waitlist')); const v = l.find(x => x.role === 'lieu'); return v && v.venue.name === 'Café des Volontaires' && v.venue.slots.length === 3 && v.zone === 'Paris 11e'; }), 'A10 · lieu inscrit à la liste d’attente (rôle lieu)');
+    await noOverflow('lieu partenaire');
+    await shot(page, 'e2e-375-14-lieu');
+    // A7 groupe
+    await page.goto(URL + '#/groupe'); await page.waitForTimeout(150);
+    await page.click('[data-act="grpDemo"]');
+    await page.waitForSelector('table.matrix', { timeout: 8000 });
+    ok(await page.locator('table.matrix tbody tr').count() === 5, 'A7 · matrice de trocs à 5 membres (dont moi)');
+    ok(await page.locator('table.matrix td.hot').count() >= 5, 'A7 · trocs trouvés dans la matrice');
+    ok(await page.locator('text=Qui anime quoi').count() === 1, 'A7 · qui anime quoi');
+    await noOverflow('groupe');
+    await shot(page, 'e2e-375-15-groupe');
+    // A3 + A6 tableau de bord
+    await page.goto(URL + '#/admin/metrics'); await page.waitForTimeout(200);
+    ok(await page.locator('.frow').count() === 8, 'A3 · entonnoir à 8 étapes');
+    const funnel = await page.$$eval('.frow .num > b', b => b.map(x => +x.textContent));
+    ok(funnel.length === 8 && funnel[0] >= 1 && funnel[4] >= 1 && funnel[6] >= 1 && funnel[7] >= 1, 'A3 · étapes mesurées sur cet appareil (' + funnel.join(' · ') + ')');
+    ok(/1/.test(await page.textContent('#q ~ .counters .counter .v')), 'A6 · réponse visible dans le tableau de bord');
+    await page.click('[data-act="mSrc"][data-val="demo"]'); await page.click('[data-act="mSim"]'); await page.waitForTimeout(200);
+    ok(/Données fictives/i.test(await page.textContent('.note.wait .lbl')) && await page.locator('.ph .t', { hasText: 'Test du prix' }).count() === 1, 'A3 · démonstration clairement marquée, test du prix');
+    await noOverflow('mesure');
+    await shot(page, 'e2e-375-16-mesure');
+    // A2 données
+    await page.goto(URL + '#/donnees'); await page.waitForTimeout(150);
+    const all = await download(page, '[data-act="dataExport"]');
+    const parsed = JSON.parse(all.content);
+    ok(parsed.data['cordes.v1'] && parsed.data['cordes.waitlist'].length === 2 && parsed.data['cordes.history'].length >= 1, 'A2 · export complet JSON (' + Object.keys(parsed.data).join(', ') + ' · ' + (parsed.data['cordes.waitlist'] || []).length + ' inscriptions)');
+    await page.click('[data-act="dataErase"]'); await page.waitForTimeout(200);
+    ok(await page.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('cordes.')).length === 0 && !Cordes.ui.st.mode), 'A2 · suppression totale en un geste');
+    await shot(page, 'e2e-375-17-donnees');
   }
   await browser.close();
   console.log('\nErreurs console : ' + (errs.length ? '\n  ' + errs.join('\n  ') : 'aucune'));

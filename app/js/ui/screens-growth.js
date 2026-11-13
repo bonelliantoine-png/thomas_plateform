@@ -304,8 +304,8 @@
         '<div class="splitlegend">' + [['oui', 'Oui', 'var(--int)'], ['peut-etre', 'Peut-être', 'var(--wait)'], ['non', 'Non', 'var(--no)']].map(function (x) { var n = S.interest[x[0]] || 0; return '<div><span class="sq" style="background:' + x[2] + '"></span><span>' + x[1] + '</span><span class="num">' + n + '</span><span class="pc num">' + U.pct(n / tot) + '</span></div>'; }).join('') + '</div>' +
         '<div class="lbl" style="margin-top:16px">Utilité perçue</div>' + [5, 4, 3, 2, 1].map(function (k) { var n = S.utility[k] || 0; return '<div class="learnrow" style="grid-template-columns:24px 1fr 40px;margin-top:6px"><span class="num">' + k + '</span>' + ui.meter(n / tot * 100, 100, 'int') + '<span class="num faint" style="text-align:right">' + n + '</span></div>'; }).join('') + '</div></section>' +
         '<section class="panel"><div class="ph"><span class="t">Test du prix</span><span class="hint">un prix tiré au hasard par répondant</span></div><div class="gtable">' +
-        '<div class="gtr h" style="grid-template-columns:70px 50px minmax(0,1fr) 70px"><span>Prix</span><span>n</span><span>Oui · peut-être · non</span><span>Indice</span></div>' +
-        S.arms.map(function (a) { var best = S.best && S.best.price === a.price; return '<div class="gtr' + (best ? ' sel' : '') + '" style="grid-template-columns:70px 50px minmax(0,1fr) 70px"><span class="num"><b>' + a.price + ' €</b></span><span class="num">' + a.n + '</span><span><span class="split" style="margin:0 0 4px"><b style="flex:' + a.yes + ';background:var(--int)"></b><b style="flex:' + a.maybe + ';background:var(--wait)"></b><b style="flex:' + a.no + ';background:var(--no)"></b></span><span class="faint num">' + a.yes + ' · ' + a.maybe + ' · ' + a.no + ' · ' + U.pct(a.rate) + ' de oui</span></span><span class="num">' + String(Math.round(a.revenueIndex * 10) / 10).replace('.', ',') + '</span></div>'; }).join('') +
+        '<div class="gtr h" style="grid-template-columns:58px 34px minmax(0,1fr) 52px"><span>Prix</span><span>n</span><span>Oui · peut-être · non</span><span>Indice</span></div>' +
+        S.arms.map(function (a) { var best = S.best && S.best.price === a.price; return '<div class="gtr' + (best ? ' sel' : '') + '" style="grid-template-columns:58px 34px minmax(0,1fr) 52px"><span class="num"><b>' + a.price + ' €</b></span><span class="num">' + a.n + '</span><span><span class="split" style="margin:0 0 4px"><b style="flex:' + a.yes + ';background:var(--int)"></b><b style="flex:' + a.maybe + ';background:var(--wait)"></b><b style="flex:' + a.no + ';background:var(--no)"></b></span><span class="faint num">' + a.yes + ' · ' + a.maybe + ' · ' + a.no + ' · ' + U.pct(a.rate) + ' de oui</span></span><span class="num">' + String(Math.round(a.revenueIndex * 10) / 10).replace('.', ',') + '</span></div>'; }).join('') +
         '</div><div class="pb"><p class="faint" style="font-size:11.5px">Indice = prix × part de « oui » : le revenu attendu par personne interrogée. ' + (S.best ? 'Meilleur à ce stade : ' + S.best.price + ' €.' : '') + ' Un écart n’est fiable qu’à partir de 30 réponses par prix environ.</p></div></section></div>';
       var miss = C.survey.list().filter(function (x) { return x.miss; }).slice(-6).reverse();
       if (src === 'local' && miss.length) html += '<section class="panel" style="margin-top:16px"><div class="ph"><span class="t">Ce qui manque, en clair</span></div><div class="pb"><ul class="clean">' + miss.map(function (x) { return '<li>' + E(x.miss) + '</li>'; }).join('') + '</ul></div></section>';
@@ -371,7 +371,7 @@
         ui.cmpSwitch('groupe') +
         '<section class="panel" style="margin-top:16px"><div class="pb"><label class="lbl" for="grp-in">Liens de bilan, un par ligne (2 à 8)</label><textarea class="input" id="grp-in" style="margin-top:8px;font:12px var(--f-mono);min-height:110px" placeholder="…index.html#b=z…&#10;…index.html#b=z…">' + E(g.input) + '</textarea>' +
         (st.mode ? '<label class="toggle" style="margin-top:6px"><input type="checkbox" id="grp-me"' + (g.me ? ' checked' : '') + '> Inclure mon bilan' + (st.context.firstName ? ' (' + E(st.context.firstName) + ')' : '') + '</label>' : '') +
-        '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="grpRun">Comparer</button><button class="btn ghost" data-act="grpDemo">Essayer avec les 3 profils de démo</button>' + (st.mode ? '<button class="btn ghost" data-act="share">' + ui.icon('share') + ' Mon lien à envoyer</button>' : '') + '</div>' +
+        '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="grpRun">Comparer</button><button class="btn ghost" data-act="grpDemo">Essayer avec une bande de démo</button>' + (st.mode ? '<button class="btn ghost" data-act="share">' + ui.icon('share') + ' Mon lien à envoyer</button>' : '') + '</div>' +
         (g.error ? '<div class="note no" style="margin-top:12px"><span class="lbl">Comparaison impossible</span><span class="sp">' + E(g.error) + '</span></div>' : '') + '</div></section>';
       if (g.result) html += groupHTML(g.members, g.result);
       return html + '</div>';
@@ -409,7 +409,9 @@
     }).catch(function (e) { ui._grp.error = e.message + ' Vérifier que chaque lien est complet.'; ui.render(); });
   };
   ui.actions.grpDemo = function () {
-    Promise.all(C.DEMOS.map(function (d) { return C.encodeShare(C.buildDemo(d.id)); })).then(function (codes) {
+    var sts = C.DEMOS.map(function (d) { return C.buildDemo(d.id); }).concat(C.GROUP_FRIENDS.map(function (f) { return C.buildFriend(f.id); }));
+    if (ui.st.mode && !ui.st.demo) sts = sts.slice(0, 4);
+    Promise.all(sts.map(function (st) { return C.encodeShare(st); })).then(function (codes) {
       ui._grp = { input: codes.map(function (c) { return C.shareUrl(c); }).join('\n'), me: !!(ui.st.mode && !ui.st.demo) };
       ui.render(); ui.actions.grpRun();
     });

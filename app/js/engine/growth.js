@@ -58,7 +58,8 @@
       return errs;
     },
     add: function (e) {
-      var entry = Object.assign({ id: uid(), at: new Date().toISOString(), source: 'prototype', wants: [], offers: [] }, e);
+      var entry = Object.assign({ at: new Date().toISOString(), source: 'prototype', wants: [], offers: [] }, e);
+      if (!entry.id) entry.id = uid();
       entry.consentAt = entry.consent ? (entry.consentAt || entry.at) : null;
       var l = C.waitlist.list().filter(function (x) { return x.id !== entry.id && !(entry.email && x.email === entry.email); });
       l.push(entry); LS.set(C.KEYS.waitlist, l);
@@ -97,7 +98,8 @@
   C.zoneLabel = function (zone) { var m = String(zone || '').match(/^Paris (\d+)(er|e)$/); return m ? 'Le ' + m[1] + m[2] : String(zone || ''); };
 
   /* ---------- A3 · mesure d'audience anonyme ---------- */
-  var SESSION = uid();
+  // identifiant de visite aléatoire, gardé le temps de l'onglet (sessionStorage), jamais relié à une personne
+  var SESSION = (function () { try { var k = W.sessionStorage && W.sessionStorage.getItem('cordes.session'); if (!k) { k = uid(); W.sessionStorage.setItem('cordes.session', k); } return k; } catch (e) { return uid(); } })();
   C.metrics = {
     session: function () { return SESSION; },
     off: function () { return !!LS.get(C.KEYS.metricsOff, false); },
@@ -176,7 +178,8 @@
   C.simulateMetrics = function (n, seed) {
     n = n || 60; seed = seed || 'demo';
     var out = [], t0 = Date.now() - 21 * 86400000;
-    var rnd = (function () { var i = 0; return function () { i++; return U.hash(seed + '|' + i); }; })();
+    // générateur pseudo-aléatoire reproductible (mulberry32)
+    var rnd = (function () { var a = Math.floor(U.hash(seed) * 4294967295) >>> 0; return function () { a = (a + 0x6D2B79F5) >>> 0; var t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })();
     var arms = [12, 15, 19];
     for (var k = 0; k < n; k++) {
       var s = 'demo-' + k, t = t0 + Math.floor(rnd() * 20 * 86400000), mode = rnd() < 0.62 ? 'learn' : rnd() < 0.6 ? 'offer' : 'both';
@@ -330,6 +333,20 @@
     return { n: n, matrix: M, links: links, density: n > 1 ? links / (n * (n - 1)) : 0, hosts: hostList, commonSkills: commonSkills, commonWants: commonWants, projects: projects, ideas: ideas };
   };
 
+  // deux amis fictifs qui complètent les trois profils de démonstration pour la comparaison de groupe
+  C.GROUP_FRIENDS = [
+    { id: 'yanis', name: 'Yanis', city: 'Lyon', skills: [['escalade-bloc', 4], ['chant-technique', 3], ['podcast', 3], ['randonnee-journee', 3]], desires: [['dj-mix', 2], ['patisserie-francaise', 2], ['photo-smartphone', 2]] },
+    { id: 'lea', name: 'Léa', city: 'Lyon', skills: [['poterie-tournage', 4], ['latte-art', 3], ['fermentation-lacto', 3], ['dessin-illustration', 3]], desires: [['eloquence', 2], ['beatmaking', 2], ['anglais-conversation', 2], ['escalade-bloc', 2]] }
+  ];
+  C.buildFriend = function (id) {
+    var f = C.GROUP_FRIENDS.filter(function (x) { return x.id === id; })[0]; if (!f) return null;
+    var st = C.defaultState(); st.mode = 'both'; st.demo = 'ami-' + f.id; st.step = 'done';
+    st.context.firstName = f.name; st.context.city = f.city;
+    f.skills.forEach(function (r) { var id2 = C.resolve([r[0]]); if (id2) st.skills[id2] = { level: r[1], love: 2 }; });
+    f.desires.forEach(function (r, i) { var id2 = C.resolve([r[0]]); if (id2 && !st.skills[id2]) st.desires[id2] = { verdict: 'yes', target: r[1], priority: i + 1, horizon: '3m', formats: ['atelier'], motive: [] }; });
+    return st;
+  };
+
   /* ---------- A10 · lieu partenaire ---------- */
   C.VENUE_TYPES = [['cafe', 'Café'], ['bar', 'Bar'], ['studio', 'Studio'], ['atelier', 'Atelier ou fab lab'], ['librairie', 'Librairie ou tiers-lieu'], ['autre', 'Autre lieu']];
   C.VENUE_EQUIP = [['tables', 'Grandes tables'], ['cuisine', 'Cuisine ou plan de travail'], ['evier', 'Point d’eau'], ['machine', 'Machine à café pro'], ['ecran', 'Écran ou projecteur'], ['sono', 'Sono'], ['piano', 'Piano ou instruments'], ['parquet', 'Parquet ou espace dégagé'], ['etabli', 'Établi et outils'], ['exterieur', 'Terrasse ou cour'], ['calme', 'Coin calme'], ['pmr', 'Accès PMR']];
@@ -342,6 +359,7 @@
   C.VENUE_MOMENTS = [['matin', 'Matin'], ['aprem', 'Après-midi'], ['soir', 'Soir']];
   var UNI_EQUIP = { cuisine: ['cuisine', 'evier', 'machine'], musique: ['sono', 'piano', 'calme'], image: ['tables', 'calme'], artisanat: ['tables', 'etabli', 'evier'], maison: ['etabli', 'tables'], nature: ['exterieur', 'evier'], sport: ['parquet', 'exterieur'], pleinair: ['exterieur'], scene: ['parquet', 'sono'], parole: ['tables', 'calme', 'ecran'], jeux: ['tables'], tech: ['ecran', 'tables'], bienetre: ['parquet', 'calme'], style: ['tables', 'evier'], savoirs: ['ecran', 'tables', 'calme'], pratique: ['tables'], social: ['tables'] };
   var TYPE_UNI = { cafe: ['cuisine', 'parole', 'jeux', 'image', 'social', 'savoirs', 'pratique'], bar: ['cuisine', 'jeux', 'musique', 'parole', 'social', 'scene'], studio: ['sport', 'scene', 'bienetre', 'musique'], atelier: ['artisanat', 'maison', 'tech', 'image', 'style'], librairie: ['parole', 'savoirs', 'jeux', 'image', 'social'], autre: [] };
+  var SIGNATURE = ['machine', 'piano', 'etabli', 'parquet', 'cuisine', 'sono', 'exterieur', 'evier'];
   C.VENUE_TICKET = { cafe: 6, bar: 9, studio: 0, atelier: 0, librairie: 5, autre: 4 };
   C.defaultVenue = function () { return { name: '', type: 'cafe', city: '', arr: '', slots: [], capacity: 8, equip: ['tables'], formula: 'creuse', contact: '' }; };
   C.venueMatch = function (v, n) {
@@ -358,7 +376,10 @@
       if (s.domain === 'cuisine.cafe' && eq.indexOf('machine') >= 0) equipFit = 1.2;
       if (s.universe === 'cuisine' && s.domain !== 'cuisine.cafe' && eq.indexOf('cuisine') < 0 && s.attrs.cost >= 2) return null;
       var typeFit = tu.indexOf(s.universe) >= 0 ? 1 : 0.2;
-      var score = 0.38 * Math.min(1, equipFit) + 0.24 * typeFit + 0.18 * a.demand / 3 + 0.1 * a.teachable / 3 + 0.06 * a.social / 3 + 0.04 * (a.oneHourResult ? 1 : 0);
+      // équipement distinctif (machine à café, piano, établi, parquet…) : bonus, c'est ce qui rend le lieu unique
+      var signature = U.overlap(need, U.arr(eq).filter(function (k) { return SIGNATURE.indexOf(k) >= 0; })) ? 0.1 : 0;
+      if (s.domain === 'cuisine.cafe' && eq.indexOf('machine') >= 0) signature = 0.16;
+      var score = 0.38 * Math.min(1, equipFit) + 0.24 * typeFit + 0.18 * a.demand / 3 + 0.1 * a.teachable / 3 + 0.06 * a.social / 3 + 0.04 * (a.oneHourResult ? 1 : 0) + signature;
       return { s: s, score: score };
     }).filter(function (x) { return x && x.score > 0.45; }).sort(function (x, y) { return y.score - x.score; });
     // diversité : 3 compétences au plus par univers
