@@ -258,7 +258,7 @@ async function download(page, clickSel) {
     ok(await vis(page, 'text=Ce qui a bougé'), 'A5 · écran de progrès');
     const rics = await download(page, '[data-act="progIcs"]');
     ok(/RRULE:FREQ=MONTHLY;INTERVAL=3/.test(rics.content), 'A5 · rappel .ics tous les 3 mois');
-    await page.evaluate(() => { const l = Cordes.history.list(); l[0].at = new Date(Date.now() - 95 * 864e5).toISOString(); l[0].skills['anglais-conversation'] = 2; localStorage.setItem('cordes.history', JSON.stringify(l)); });
+    await page.evaluate(() => { const l = Cordes.history.list(); l[0].at = new Date(Date.now() - 95 * 864e5).toISOString(); l[0].skills['anglais-conversation'] = 3; localStorage.setItem('cordes.history', JSON.stringify(l)); });
     await page.reload(); await page.waitForTimeout(200);
     ok(/\+1/.test(await page.textContent('.counters .counter:nth-child(2) .v')), 'A5 · avant/après : niveau gagné détecté');
     await noOverflow('progrès');

@@ -95,6 +95,8 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
     C.yesDesires(st).forEach(id => {
       const p = C.learnPlan(st, id);
       ok(p && p.hours > 0 && p.weeks > 0, 'plan ' + id);
+      ok(p.target >= 2 && p.target <= 5 && p.steps.length === p.target - p.cur && p.steps.every((x, i) => x.k === p.cur + 1 + i && x.host === Math.min(5, x.k + 1) && x.hours >= 1 && x.cost >= 0 && x.milestone === C.milestone(p.s, x.k)), 'plan par paliers ' + id + ' (' + p.cur + ' → ' + p.target + ')');
+      ok(Math.abs(p.steps.reduce((a, x) => a + x.hours, 0) - p.hours) <= p.steps.length + 1, 'heures des paliers cohérentes avec le total ' + id);
       inRange(p.hours, 1, 5000, 'heures ' + id);
       ok(p.first && p.first.text.length > 10, 'premier pas ' + id);
       ok(p.milestones.length >= 3, 'jalons ' + id);
@@ -121,6 +123,8 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
       ok(plan.offers.length >= 3 && plan.offers.length <= 6, '3 à 6 offres (' + plan.offers.length + ')');
       plan.offers.forEach(o => {
         inRange(o.price, 1, 5000, 'prix ' + o.title);
+        ok(o.palier === st.skills[o.s.id].level - 1 && C.canAnimate(st.skills[o.s.id].level, o.palier), 'offre au palier animable n-1 : ' + o.s.id + ' niveau ' + st.skills[o.s.id].level + ' → palier ' + o.palier);
+        ok(o.animate === 'Vous êtes niveau ' + o.level + ' : ' + C.animateText(o.level) && /vous pouvez animer les ateliers de niveau [1-4] \(/.test(o.animate), 'affichage explicite du palier animé (' + o.animate + ')');
         ok(o.outline.length >= 3, 'trame ' + o.title);
         ok(o.pricing.steps.length >= 2, 'explication du prix');
       });
@@ -135,6 +139,9 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
       plan.niches.forEach(n => inRange(n.score, 0, 1, 'score niche'));
       console.log('  niches : ' + plan.niches.map(n => n.title + ' ' + n.score.toFixed(2)).join(' · '));
       ok(plan.roadmap.reduce((a, p) => a + p.tasks.length, 0) >= 14, 'feuille de route 90 j');
+      const prog = plan.roadmap.find(p => p.id === 'progresser');
+      ok(prog && prog.tasks.length >= 1 && (/Monter au niveau [2-5] .* pour animer le palier [1-4]/.test(prog.tasks[0].text) || /Niveau 5 atteint/.test(prog.tasks[0].text)), 'feuille de route : monter d’un niveau pour animer le palier suivant (' + (prog && prog.tasks[0].text) + ')');
+      ok(plan.ladder.length >= 1 && plan.ladder.every(x => x.rungs.length === 5 && x.rungs.filter(r => r.current).length === 1 && (x.next ? x.next.palier === x.level && x.next.level === x.level + 1 : x.level === 5)), 'échelle de progression de l’hôte');
       ok(plan.kit && plan.kit.posts.length === 10 && plan.kit.venue.length > 100, 'kit de lancement');
       ok(plan.collective.projects.length >= 1, 'projets collectifs');
       const o0 = plan.offers[0];
@@ -157,24 +164,84 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
     ok(/^BEGIN:VCALENDAR\r\n/.test(ics) && /END:VCALENDAR\r\n$/.test(ics) && ics.split('\r\n').every(l => Buffer.byteLength(l) <= 75), 'iCalendar valide (pliage 75 octets)');
     const html = C.passportHTML(st);
     ok(html.startsWith('<!DOCTYPE html>') && html.includes('cordes-data') && html.includes('<svg'), 'passeport HTML autonome');
-    ok(JSON.parse(C.toJSON(st)).profile.version === 1, 'export JSON');
+    ok(JSON.parse(C.toJSON(st)).profile.version === 2, 'export JSON (schéma 2)');
+    ok(html.includes('Échelle de maîtrise et règle d’animation') && html.includes('i<=5'), 'passeport : échelle 0 à 5 et règle expliquées');
   }
 
-  // troc entre deux profils
+  /* ---------- échelle 0 à 5 et règle d'animation ---------- */
+  console.log('\nÉchelle et règle');
+  ok(C.LEVELS.length === 6 && C.LEVELS[0] === 'Jamais pratiqué' && C.LEVELS[1] === 'Je découvre' && C.LEVELS[2] === 'Bases acquises' && C.LEVELS[3] === 'Je consolide' && C.LEVELS[4] === 'Je maîtrise' && C.LEVELS[5] === 'Référent', 'échelle : 6 libellés de 0 à 5');
+  ok(C.TEACH_RULE === 'strict', 'règle stricte par défaut');
+  ok(!C.canAnimate(1, 1) && !C.canAnimate(0, 1) && C.canAnimate(2, 1) && !C.canAnimate(2, 2) && C.canAnimate(3, 2) && !C.canAnimate(3, 1) && C.canAnimate(5, 4) && !C.canAnimate(5, 3) && !C.canAnimate(4, 4), 'strict : le niveau n anime le niveau n-1 seulement');
+  ok(C.topPalier(1) === 0 && C.topPalier(2) === 1 && C.topPalier(5) === 4 && C.hostLevel(1) === 2 && C.hostLevel(4) === 5, 'palier animé et niveau d’hôte requis');
+  ok(C.canAnimate(5, 5) && !C.canAnimate(4, 5), 'palier 5 : formation des hôtes par un référent');
+  ok(C.paliersOnPath(3, 0, 2).join() === '2' && C.paliersOnPath(2, 0, 2).join() === '1' && C.paliersOnPath(4, 0, 2).length === 0 && C.paliersOnPath(4, 2, 3).join() === '3', 'paliers du chemin : niveau(A) = palier visé + 1');
+  ok(/vous pouvez animer les ateliers de niveau 3 \(Je consolide\)/.test(C.animateText(4)) && /former les hôtes/.test(C.animateText(5)) && /n’anime pas encore/.test(C.animateText(1)), 'texte « vous êtes niveau 4 : vous pouvez animer les ateliers de niveau 3 »');
+  C.TEACH_RULE = 'below';
+  ok(C.canAnimate(5, 1) && C.canAnimate(3, 1) && C.canAnimate(3, 2) && !C.canAnimate(3, 3) && C.animatedPaliers(4).join() === '1,2,3', 'mode « below » : tout niveau inférieur');
+  C.TEACH_RULE = 'strict';
+  ok(C.animatedPaliers(4).join() === '3', 'retour au mode strict');
+  const sk0 = D.sById['poterie-tournage'];
+  ok(C.milestone(sk0, 2) === sk0.levels[0] && C.milestone(sk0, 3) === sk0.levels[1] && C.milestone(sk0, 4) === sk0.levels[2] && C.milestone(sk0, 5) === sk0.levels[3], 'jalons : niveaux 2 à 5 = levels[0..3]');
+  ok(/^Première séance de poterie/.test(C.milestone(sk0, 1)) && /gestes de base/.test(C.milestone(sk0, 1)) && C.milestone(sk0, 0) === '', 'jalon générique du niveau 1, formulé par compétence (' + C.milestone(sk0, 1) + ')');
+  ok(D.skills.every(x => C.milestone(x, 1).length > 20 && C.milestone(x, 5) === x.levels[3]), 'jalons des 5 niveaux pour toutes les compétences');
+  // prix : le palier animé compte
+  const pst = C.defaultState(); pst.context.city = 'Paris';
+  const prices = [2, 3, 4, 5].map(n => { pst.skills['latte-art'] = { level: n, years: 3, proof: [] }; return C.suggestPrice(pst, 'latte-art', 'atelier', 6).price; });
+  ok(prices.every((x, i) => i === 0 || x >= prices[i - 1]) && prices[3] > prices[0], 'prix conseillé croissant avec le palier animé (' + prices.join(' · ') + ' €)');
+  ok(C.suggestPrice(pst, 'latte-art', 'atelier', 6).steps.some(x => /Palier animé : niveau 4/.test(x.label)), 'explication du prix : palier animé');
+
+  // migration de l'ancienne échelle (0 à 4) : 1→1, 2→2, 3→4, 4→4 + teach
+  const old = { version: 1, mode: 'both', context: { firstName: 'Ana' }, skills: { 'latte-art': { level: 1 }, 'dj-mix': { level: 2 }, 'eloquence': { level: 3 }, 'beatmaking': { level: 4 }, 'poterie-tournage': { level: 0 } },
+    desires: { 'podcast': { verdict: 'yes', target: 1 }, 'escalade-bloc': { verdict: 'yes', target: 2 }, 'chant-technique': { verdict: 'yes', target: 3 }, 'yoga-hatha': { verdict: 'yes', target: 4 } }, custom: [{ id: 'x-a', name: 'A', universe: 'savoirs', level: 3 }] };
+  store['cordes.v1'] = JSON.stringify(old);
+  const mig = C.loadState();
+  ok(mig.version === 2 && mig.migratedFrom === 1, 'migration : version de schéma marquée (2)');
+  ok(mig.skills['latte-art'].level === 1 && mig.skills['dj-mix'].level === 2 && mig.skills['eloquence'].level === 4 && mig.skills['beatmaking'].level === 4 && mig.skills['poterie-tournage'].level === 0, 'migration : 1→1, 2→2, 3→4, 4→4');
+  ok(mig.skills['beatmaking'].teach === true && !mig.skills['eloquence'].teach, 'migration : ancien niveau 4 → teach: true');
+  ok(mig.desires['podcast'].target === 2 && mig.desires['escalade-bloc'].target === 2 && mig.desires['chant-technique'].target === 4 && mig.desires['yoga-hatha'].target === 4 && mig.custom[0].level === 4, 'migration : niveaux visés (2 à 5) et compétences libres');
+  C.saveState(mig); const again = C.loadState();
+  ok(again.skills['eloquence'].level === 4 && again.desires['chant-technique'].target === 4, 'migration idempotente (pas de double conversion)');
+  delete store['cordes.v1'];
+  store['cordes.history'] = JSON.stringify([{ id: 'h1', at: '2026-01-01T00:00:00Z', skills: { 'eloquence': 3, 'dj-mix': 4 }, desires: { 'podcast': 1 }, done: [] }]);
+  const h0 = C.history.list()[0];
+  ok(h0.skills['eloquence'] === 4 && h0.skills['dj-mix'] === 4 && h0.desires['podcast'] === 2 && h0.v === 2, 'migration des instantanés d’historique');
+  delete store['cordes.history'];
+  // liens de partage : ancien format (v1) décodé avec conversion, nouveau format sans perte
+  const legacyCode = 'j' + Buffer.from(JSON.stringify({ v: 1, m: 'learn', n: 'Ana', c: 'Lyon', s: [['eloquence', 3, 0, 2], ['dj-mix', 4, 0, 3], ['latte-art', 2, 0, 1]], d: [['podcast', 3, 1, 1]] })).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const lg = await C.decodeShare('#b=' + legacyCode);
+  ok(lg.skills['eloquence'].level === 4 && lg.skills['dj-mix'].level === 4 && lg.skills['dj-mix'].teach && lg.skills['latte-art'].level === 2 && lg.desires['podcast'].target === 4 && lg.migratedFrom === 1, 'ancien lien de partage : décodage rétrocompatible');
+  const nst = C.defaultState(); nst.mode = 'learn'; nst.skills['eloquence'] = { level: 5, love: 2 }; nst.desires['podcast'] = { verdict: 'yes', target: 5, priority: 1 };
+  const rt = await C.decodeShare(await C.encodeShare(nst));
+  ok(rt.skills['eloquence'].level === 5 && rt.desires['podcast'].target === 5 && !rt.migratedFrom, 'nouveau lien : niveau 5 conservé');
+
+  // troc entre deux profils de démonstration, selon la règle
   const A = C.buildDemo('claire'), B = C.buildDemo('ines');
-  B.desires[Object.keys(A.skills).find(id => A.skills[id].level >= 3)] = { verdict: 'yes', target: 2, priority: 1 };
-  A.desires[Object.keys(B.skills).find(id => B.skills[id].level >= 3)] = { verdict: 'yes', target: 2, priority: 1 };
   const tr = C.troc(A, B);
-  ok(tr.pairs.length >= 1, 'troc : au moins une paire bilatérale');
+  ok(tr.pairs.length >= 1, 'troc Claire × Inès : au moins une paire bilatérale valide (' + tr.pairs.length + ')');
+  const cl = tr.aFromB.find(x => x.want === 'anglais-conversation'), inl = tr.bFromA.find(x => x.want === 'pain-levain');
+  ok(cl && cl.exact && cl.level === 4 && cl.cur === 2 && cl.target === 3 && cl.palier === 3, 'troc : Inès (anglais 4) anime le palier 3 visé par Claire (anglais 2 → 3)');
+  ok(inl && inl.exact && inl.level === 3 && inl.cur === 1 && inl.target === 2 && inl.palier === 2, 'troc : Claire (pain au levain 3) anime le palier 2 visé par Inès (1 → 2)');
+  ok(tr.pairs.some(p => p.aLearns.want === 'anglais-conversation' && p.bLearns.want === 'pain-levain'), 'troc : la paire anglais ⇄ pain au levain est proposée');
+  ok([].concat(tr.aFromB, tr.bFromA).every(x => x.paliers.every(k => C.canAnimate(x.level, k)) && x.paliers.every(k => k > x.cur && k <= x.target)), 'troc : chaque appariement respecte la règle');
   inRange(tr.compat, 0, 100, 'compatibilité troc');
-  console.log(`\nTroc Claire × Inès : ${tr.pairs.length} paire(s), compatibilité ${tr.compat} %, idées : ${tr.ideas.slice(0, 2).join(' · ')}`);
+  console.log(`  Troc Claire × Inès : ${tr.pairs.length} paire(s), compatibilité ${tr.compat} %, idées : ${tr.ideas.slice(0, 2).join(' · ')}`);
+  // cas négatif : une référente (5) ne fait pas progresser une débutante vers le niveau 2 en mode strict
+  const ref = C.defaultState(); ref.skills['latte-art'] = { level: 5 }; ref.desires['dj-mix'] = { verdict: 'yes', target: 2 };
+  const beg = C.defaultState(); beg.desires['latte-art'] = { verdict: 'yes', target: 2 }; beg.skills['dj-mix'] = { level: 3 };
+  const t2 = C.troc(beg, ref);
+  ok(t2.aFromB.filter(x => x.want === 'latte-art').length === 0 && t2.aMisses.some(x => x.want === 'latte-art' && x.level === 5), 'troc strict : un référent n’anime pas la découverte (signalé avec le niveau requis)');
+  ok(t2.bFromA.some(x => x.want === 'dj-mix' && x.palier === 2) && t2.pairs.length === 0, 'troc strict : appariement à sens unique (niveau 3 → palier 2)');
+  C.TEACH_RULE = 'below';
+  ok(C.troc(beg, ref).pairs.length === 1, 'mode « below » : le référent peut alors animer les paliers 1 et 2');
+  C.TEACH_RULE = 'strict';
 
   /* ---------- lot 2 : croissance et étude ---------- */
   console.log('\nLot 2');
   const ines = C.buildDemo('ines'), malik = C.buildDemo('malik'), claire = C.buildDemo('claire');
   // A1 liste d'attente
   const pre = C.waitlist.prefill(claire);
-  ok(pre.wants.length === C.yesDesires(claire).length && pre.offers.every(id => claire.skills[id].level >= 3) && pre.offers.length >= 3, 'A1 · pré-remplissage : envies et compétences ≥ 3 (' + pre.wants.length + ' + ' + pre.offers.length + ')');
+  ok(pre.wants.length === C.yesDesires(claire).length && pre.offers.every(id => claire.skills[id].level >= 2) && pre.offers.length >= 3, 'A1 · pré-remplissage : envies et compétences de niveau 2 ou plus (' + pre.wants.length + ' + ' + pre.offers.length + ')');
   ok(C.zoneOf('Paris', '11e') === 'Paris 11e' && C.zoneOf('paris 18') === 'Paris 18e' && C.zoneOf('75003') === 'Paris 3e' && C.zoneOf('lyon') === 'Lyon', 'A1 · zones : arrondissements et villes');
   ok(C.waitlist.validate({ role: 'apprendre', zone: 'Paris 11e', consent: false }).length === 1, 'A1 · consentement obligatoire');
   ok(C.waitlist.validate({ role: 'apprendre', zone: 'Paris 11e', consent: true, email: 'x@' }).length === 1, 'A1 · e-mail vérifié');
@@ -234,6 +301,9 @@ function inRange(x, a, b, msg) { ok(typeof x === 'number' && isFinite(x) && x >=
   ok(t01 >= 1 && grp.matrix[0][4].length === t01, 'A7 · matrice cohérente avec le troc à deux (Inès → Léa : ' + t01 + ')');
   ok(grp.links >= 6, 'A7 · liens de transmission (' + grp.links + ')');
   ok(grp.hosts.every(h => h.teacher !== null && h.learners.indexOf(h.teacher) < 0), 'A7 · qui anime quoi');
+  const gst = [ines, malik, claire, C.buildFriend('yanis'), C.buildFriend('lea')];
+  ok(grp.hosts.every(h => h.learners.every(j => { const path = C.desirePath(gst[j], h.want); return C.paliersOnPath(gst[h.teacher].skills[h.via].level, path.cur, path.target).length > 0; })), 'A7 · chaque hôte du groupe peut animer un palier de chaque apprenant');
+  ok(grp.hosts.some(h => h.want === 'eloquence' && names[h.teacher] === 'Claire' && h.palier === 4), 'A7 · Claire (référente, 5) anime le palier 4 visé par Léa');
   ok(grp.projects.length >= 1, 'A7 · activités de groupe');
   console.log('  groupe : ' + grp.links + ' liens · ' + grp.hosts.slice(0, 4).map(h => C.data.sById[h.want].name + ' par ' + names[h.teacher]).join(' · '));
   // A10 lieu
