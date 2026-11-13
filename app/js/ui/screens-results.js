@@ -95,6 +95,7 @@
   ui.whereHTML = function (st, p) {
     var w = p.where, g = [];
     function grp(label, items) { if (items.length) g.push('<div class="resgroup"><span class="lbl">' + E(label) + '</span><div class="reslist">' + items.join('') + '</div></div>'); }
+    if (C.venuesFor && ui.venueLine) { var vs = C.venuesFor(p.s.id, (st.context && st.context.city) || '', 3); if (vs.length) g.push('<div class="resgroup"><span class="lbl">Lieux partenaires près de chez vous</span><div class="reslist">' + vs.map(function (x) { return '<div class="resitem"><div class="nm">' + ui.venueLine(x, 'resultats') + '</div><div></div><div class="m">' + E(C.venueType(x.v.type).label) + ' · ' + E(C.venueSlotsText(x.v).join(', ')) + '</div></div>'; }).join('') + '</div></div>'); }
     grp('Profs et cours', w.teachers.map(platItem));
     grp('Ateliers et stages', w.workshops.map(platItem));
     grp('Apps et ressources pour apprendre seul', w.apps.map(function (a) { return resItem(a.name, a.url, a.desc, E(a.price)); }));

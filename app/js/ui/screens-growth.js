@@ -55,6 +55,7 @@
     return '<div class="quarter"><div class="spread"><div class="qt">' + E(lbl) + ' ouvre à ' + q.goal + ' inscrits</div><div class="qn num"><b>' + q.total + '</b> / ' + q.goal + '</div></div>' +
       '<div class="qbar" role="img" aria-label="' + q.total + ' inscrits sur ' + q.goal + '"><b class="demo" style="width:' + Math.round(q.demo / q.goal * 100) + '%"></b><b class="mine" style="width:' + Math.round(Math.min(q.local, q.goal - Math.min(q.demo, q.goal)) / q.goal * 100) + '%"></b></div>' +
       '<div class="legend" style="margin-top:8px"><span><span class="sw" style="background:var(--line-2)"></span>' + q.demo + ' valeur de démonstration</span><span><span class="sw" style="background:var(--int)"></span>' + plural(q.local, 'inscription') + ' sur cet appareil</span></div>' +
+      (function () { var nv = C.venuesAll ? C.venuesAll().filter(function (v) { return U.norm(C.zoneOf(v.city, v.arr)) === U.norm(q.zone); }).length : 0; return '<p class="sp vready" style="margin-top:8px"><b class="num">' + nv + '</b> lieu' + (nv > 1 ? 'x' : '') + ' prêt' + (nv > 1 ? 's' : '') + ' dans ' + E(/^Paris \d/.test(q.zone) ? 'le ' + q.zone.replace('Paris ', '') : q.zone) + ' · seuil d’ouverture complet : 150 inscrits, 8 hôtes, 2 lieux, 3 envies récurrentes</p>'; })() +
       (opts.noText ? '' : '<p class="sp" style="margin-top:10px">' + (q.open ? 'Le seuil est atteint : les premières séances peuvent être planifiées.' : 'Il manque ' + q.missing + ' personne' + (q.missing > 1 ? 's' : '') + ' pour ouvrir ' + E(/^Paris \d/.test(q.zone) ? 'le ' + q.zone.replace('Paris ', '') : q.zone) + '. Chaque voisin invité rapproche l’ouverture.') + '</p>') + '</div>';
   };
 
@@ -131,11 +132,12 @@
     f.email = (ui.$('#wl-email').value || '').trim(); f.consent = ui.$('#wl-consent').checked; f.city = ui.$('#wl-city').value.trim();
     if (ui.$('#wl-arr')) f.arr = ui.$('#wl-arr').value;
     var entry = { id: (ui.st.waitlist && ui.st.waitlist.id) || undefined, source: f.source || 'bilan', role: f.role, city: f.city, arr: C.isParis(f.city) ? f.arr : '', zone: C.zoneOf(f.city, f.arr), email: f.email || undefined, consent: f.consent, wants: f.role === 'lieu' ? [] : f.wants.slice(), offers: f.role === 'lieu' ? [] : f.offers.slice() };
-    if (f.role === 'lieu' && venue && venue.name) entry.venue = { name: venue.name, type: venue.type, capacity: venue.capacity, slots: venue.slots, equip: venue.equip, formula: venue.formula };
+    if (f.role === 'lieu' && venue && venue.name) entry.venue = { name: venue.name, type: venue.type, capacity: venue.capacity, slots: venue.slots, equip: venue.equip, formulas: C.migrateVenue(venue).formulas };
     var errs = C.waitlist.validate(entry);
     if (errs.length) { ui.toast(errs[0], 'no'); var foc = !entry.consent && errs[0].indexOf('consentement') >= 0 ? '#wl-consent' : !entry.zone ? '#wl-city' : '#wl-email'; if (ui.$(foc)) ui.$(foc).focus(); return; }
     saveEntry(entry);
   };
+  ui.saveWaitEntry = function (entry) { return saveEntry(entry); };
   function saveEntry(entry) {
     var saved = C.waitlist.add(entry);
     ui.st.waitlist = { id: saved.id, role: saved.role, zone: saved.zone, city: saved.city, arr: saved.arr, email: saved.email, at: saved.at, sent: false };
@@ -149,69 +151,7 @@
   }
   ui.actions.wlCsv = function () { C.download('cordes-liste-attente.csv', C.waitlist.csv(), 'text/csv;charset=utf-8'); ui.toast('Liste exportée en CSV'); };
 
-  /* ---------- A10 · lieu partenaire ---------- */
-  function venueState() { if (!ui._venue) ui._venue = Object.assign(C.defaultVenue(), C.LS.get(C.KEYS.venue, {}) || {}); return ui._venue; }
-  function venueSave() { C.LS.set(C.KEYS.venue, ui._venue); }
-  function venueOut(v) {
-    var m = C.venueMatch(v, 10), e = C.venueEstimate(v), sheet = C.venueSheet(v);
-    return '<div class="counters" style="grid-template-columns:1fr 1fr">' + ui.counter('Séances par mois', e.sessions, plural(e.slots, 'créneau creux', 'créneaux creux'), 'sent') + ui.counter('Participants', e.visitors, 'par mois · ' + e.newClients + ' nouveaux', 'int') +
-      ui.counter('Consommations', e.ticket ? U.fmt(e.conso) + '<small> €</small>' : '—', e.ticket ? 'ticket moyen ' + U.eur(e.ticket) : 'lieu sans consommation', e.ticket ? 'int' : '') + ui.counter('Univers', m.universes.length, m.universes.slice(0, 3).map(function (u) { return C.universe(u).short; }).join(', ') || 'à préciser', 'wait') + '</div>' +
-      (e.share ? '<p class="faint" style="margin-top:8px">Partage de recette : environ ' + U.eur(e.share) + ' par mois en plus (15 % de places à 12 €).</p>' : '') +
-      '<div class="lbl" style="margin-top:16px">Compétences compatibles · ' + m.total + ' au catalogue</div><div class="reslist">' + m.skills.map(function (x) { return '<div class="resitem"><div class="nm" style="font-size:15px">' + E(x.s.name) + '</div><span></span><div class="m">' + ui.uniTag(x.s.universe) + ' · demande ' + x.s.attrs.demand + '/3' + (x.s.attrs.oneHourResult ? ' · résultat en 1 h' : '') + '</div></div>'; }).join('') + '</div>' +
-      ui.copyBlock('Fiche partenaire', sheet, 'venuesheet');
-  }
-  ui.routes.lieu = {
-    title: 'Lieu partenaire',
-    render: function (st) {
-      var v = venueState(), done = ui.st.waitlist && ui.st.waitlist.role === 'lieu';
-      var grid = '<div class="slotgrid" role="group" aria-label="Créneaux creux"><span></span>' + C.VENUE_MOMENTS.map(function (m) { return '<span class="sh">' + E(m[1]) + '</span>'; }).join('') +
-        C.VENUE_DAYS.map(function (d, i) { return '<span class="sd">' + E(d) + '</span>' + C.VENUE_MOMENTS.map(function (m) { var k = i + ':' + m[0], on = v.slots.indexOf(k) >= 0; return '<button type="button" class="slot' + (on ? ' on' : '') + '" aria-pressed="' + on + '" aria-label="' + E(d + ' ' + m[1]) + '" data-act="vSlot" data-k="' + k + '">' + (on ? ui.icon('check') : '') + '</button>'; }).join(''); }).join('') + '</div>';
-      var html = '<div class="wrap"><div class="kicker">Parcours lieu partenaire · 2 minutes</div><h1 class="h1">Votre lieu, vos heures creuses</h1>' +
-        '<p class="lead">Café, bar, studio ou atelier : décrivez vos créneaux calmes, votre capacité et votre matériel. Cordes en déduit les séances qui s’y tiennent bien, une estimation de fréquentation et une fiche partenaire prête à envoyer.</p>' +
-        '<div class="venuegrid" style="margin-top:20px"><section class="panel"><div class="ph"><span class="t">Le lieu</span></div><div class="pb">' +
-        '<div class="grid2 tightgrid"><label class="field" style="margin-top:0"><span class="lbl">Nom du lieu</span><input class="input" id="v-name" value="' + E(v.name) + '" placeholder="Café des Volontaires"></label>' +
-        '<label class="field" style="margin-top:0"><span class="lbl">Ville</span><input class="input" id="v-city" value="' + E(v.city) + '" placeholder="Paris" autocomplete="address-level2"></label></div>' +
-        (C.isParis(v.city) ? '<label class="field"><span class="lbl">Arrondissement</span><select class="input" id="v-arr"><option value="">Choisir</option>' + C.PARIS_ARR.map(function (a) { return '<option' + (a === v.arr ? ' selected' : '') + '>' + a + '</option>'; }).join('') + '</select></label>' : '') +
-        '<div class="field"><span class="lbl">Type de lieu</span><div class="chips" style="margin-top:8px">' + C.VENUE_TYPES.map(function (t) { var on = v.type === t[0]; return '<button type="button" class="chip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="vType" data-v="' + t[0] + '"><i></i>' + E(t[1]) + '</button>'; }).join('') + '</div></div>' +
-        '<div class="field"><span class="lbl">Créneaux creux réguliers</span><p class="help" style="margin:0 0 8px">Les moments où des tables ou une salle restent libres chaque semaine.</p>' + grid + '</div>' +
-        '<div class="field"><div class="spread"><span class="lbl">Capacité d’accueil</span><output class="num" id="v-cap-out">' + U.num(v.capacity, 8) + ' places</output></div><input type="range" id="v-cap" min="2" max="30" step="1" value="' + U.num(v.capacity, 8) + '" aria-label="Capacité d’accueil"></div>' +
-        '<div class="field"><span class="lbl">Équipements</span><div class="chips" style="margin-top:8px">' + C.VENUE_EQUIP.map(function (q) { var on = v.equip.indexOf(q[0]) >= 0; return '<button type="button" class="chip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="vEquip" data-v="' + q[0] + '"><i></i>' + E(q[1]) + '</button>'; }).join('') + '</div></div>' +
-        '<div class="field"><span class="lbl">Formule souhaitée</span><div class="opts" style="margin-top:8px">' + C.VENUE_FORMULAS.map(function (f) { var on = v.formula === f[0]; return '<button type="button" class="opt' + (on ? ' on' : '') + '" role="radio" aria-checked="' + on + '" data-act="vFormula" data-v="' + f[0] + '"><span><b style="font:500 13px var(--f-mono);color:var(--fg);display:block">' + E(f[1]) + '</b>' + E(f[2]) + '</span></button>'; }).join('') + '</div></div>' +
-        '</div></section>' +
-        '<div class="stack venueside"><section class="panel"><div class="ph"><span class="t">Ce que Cordes vous apporterait</span><span class="hint">estimation prudente</span></div><div class="pb" id="venue-out">' + venueOut(v) + '</div></section>' +
-        '<section class="panel"><div class="ph"><span class="t">Devenir lieu partenaire</span></div><div class="pb">' +
-        (done ? '<div class="note int" style="margin-bottom:12px"><span class="lbl">Lieu inscrit</span><span class="sp">' + E(ui.st.waitlist.zone || '') + ' · nous revenons vers vous avant l’ouverture du quartier.</span></div>' : '') +
-        '<label class="field" style="margin-top:0"><span class="lbl">E-mail de contact (facultatif)</span><input class="input" type="email" id="v-email" value="' + E(v.contact || '') + '" autocomplete="email"></label>' +
-        '<label class="consent"><input type="checkbox" id="v-consent"><span>J’accepte que Cordes conserve cette fiche pour organiser des séances dans mon lieu. Suppression possible à tout moment depuis « Mes données ».</span></label>' +
-        '<div class="row" style="margin-top:14px"><button class="btn primary" data-act="vJoin">' + (done ? 'Mettre à jour' : 'Inscrire mon lieu') + '</button><button class="btn" data-act="vDl">' + ui.icon('dl') + ' Fiche en texte</button></div></div></section></div></div></div>';
-      return html;
-    },
-    mount: function (root) {
-      var v = venueState();
-      var refresh = function () { venueSave(); var o = ui.$('#venue-out'); if (o) o.innerHTML = venueOut(v); };
-      [['#v-name', 'name'], ['#v-email', 'contact']].forEach(function (p) { var el = ui.$(p[0], root); if (el) el.addEventListener('input', function () { v[p[1]] = el.value; refresh(); }); });
-      var city = ui.$('#v-city', root);
-      if (city) { city.addEventListener('input', function () { v.city = city.value; refresh(); }); city.addEventListener('change', function () { if (!!ui.$('#v-arr') !== C.isParis(city.value)) ui.render(); }); }
-      var arr = ui.$('#v-arr', root); if (arr) arr.addEventListener('change', function () { v.arr = arr.value; refresh(); });
-      var cap = ui.$('#v-cap', root); if (cap) cap.addEventListener('input', function () { v.capacity = +cap.value; ui.$('#v-cap-out').textContent = cap.value + ' places'; refresh(); });
-    }
-  };
-  function vToggle(key, val) { var v = venueState(), a = v[key], i = a.indexOf(val); if (i >= 0) a.splice(i, 1); else a.push(val); venueSave(); ui.render(); }
-  ui.actions.vSlot = function (el) { vToggle('slots', el.getAttribute('data-k')); };
-  ui.actions.vEquip = function (el) { vToggle('equip', el.getAttribute('data-v')); };
-  ui.actions.vType = function (el) { venueState().type = el.getAttribute('data-v'); venueSave(); ui.render(); };
-  ui.actions.vFormula = function (el) { venueState().formula = el.getAttribute('data-v'); venueSave(); ui.render(); };
-  ui.actions.vDl = function () { var v = venueState(); C.download('cordes-fiche-lieu.txt', C.venueSheet(v) + '\n', 'text/plain;charset=utf-8'); ui.toast('Fiche téléchargée'); };
-  ui.actions.vJoin = function () {
-    var v = venueState();
-    if (!v.name.trim()) { ui.toast('Indiquer le nom du lieu', 'no'); ui.$('#v-name').focus(); return; }
-    if (!v.slots.length) { ui.toast('Choisir au moins un créneau creux', 'no'); return; }
-    var entry = { id: (ui.st.waitlist && ui.st.waitlist.role === 'lieu' && ui.st.waitlist.id) || undefined, role: 'lieu', city: v.city, arr: C.isParis(v.city) ? v.arr : '', zone: C.zoneOf(v.city, v.arr), email: (v.contact || '').trim() || undefined, consent: ui.$('#v-consent').checked, wants: [], offers: [],
-      venue: { name: v.name.trim(), type: v.type, capacity: v.capacity, slots: v.slots.slice(), equip: v.equip.slice(), formula: v.formula, skills: C.venueMatch(v, 8).skills.map(function (x) { return x.s.id; }) } };
-    var errs = C.waitlist.validate(entry);
-    if (errs.length) { ui.toast(errs[0], 'no'); return; }
-    saveEntry(entry);
-  };
+  /* A10 · lieu partenaire : voir screens-venue.js */
 
   /* ---------- A6 · questionnaire de fin de bilan ---------- */
   function svState() { if (!ui._sv) ui._sv = { u: null, nps: null, int: null, pay: null, miss: '' }; return ui._sv; }
@@ -303,6 +243,8 @@
         '<section class="panel"><div class="ph"><span class="t">Coefficient viral estimé</span><span class="hint">liens #i= et #t=</span></div><div class="pb"><div class="counters" style="grid-template-columns:1fr 1fr 1fr">' +
         ui.counter('Partages', R.viral.shares, 'message, lien ou image') + ui.counter('Ouvertures', R.viral.opens, 'liens reçus ouverts', 'sent') + ui.counter('Coefficient', R.viral.k == null ? '·' : String(Math.round(R.viral.k * 100) / 100).replace('.', ','), 'ouvertures / partages', R.viral.k >= 1 ? 'int' : 'wait') + '</div>' +
         '<p class="faint" style="margin-top:10px;font-size:11.5px">' + (src === 'demo' ? 'Données fictives.' : 'Sur cet appareil seulement en prototype : le coefficient réel suppose la mesure agrégée.') + ' Au-dessus de 1, chaque partage ramène plus d’une visite.</p></div></section></div>';
+      if (R.venue && R.venue.length) html += '<section class="panel" style="margin-top:16px"><div class="ph"><span class="t">Entonnoir des lieux</span><span class="hint">parcours lieu partenaire</span></div><div class="pb">' +
+        R.venue.map(function (f, i) { return '<div class="frow cf"><div class="spread"><span>' + (i + 1) + ' · ' + E(f.label) + '</span><span class="num"><b>' + f.n + '</b></span></div>' + ui.meter(R.venue[0].n ? f.n / R.venue[0].n * 100 : 0, 100, i >= 3 ? 'int' : '') + '</div>'; }).join('') + '</div></section>';
       html += '<div class="section-h" id="q"><span class="kicker">Questionnaire de fin</span><h2 class="h2">Utilité, recommandation et test du prix</h2></div>';
       if (!S.n) return html + '<p class="empty">Aucune réponse au questionnaire pour l’instant.</p></div>';
       html += '<div class="counters">' + ui.counter('Réponses', S.n, U.pct(S.n / Math.max(1, res.n)) + ' des résultats') + ui.counter('Utilité', String(Math.round(S.avgUtility * 10) / 10).replace('.', ',') + '<small> / 5</small>', 'moyenne', 'int') +

@@ -57,6 +57,7 @@
     return '<article class="idea' + (on ? ' on' : '') + '"><div class="spread">' + ui.uniTag(it.s.universe) + (it.novelty >= 0.6 ? ui.pill('pépite', 'int') : it.pinned ? ui.pill('classique', 'idle') : '') + '</div>' +
       '<h3 class="it"><button type="button" class="linkbtn" data-act="idSheet" data-id="' + E(it.s.id) + '">' + E(it.title) + '</button></h3>' +
       '<p class="is">' + E(it.sub) + '</p><p class="iw">' + E(it.why) + '</p>' +
+      (f.place !== 'home' && ui.venueLine ? (function () { var vf = C.venuesFor(it.s.id, f.zone || 'Paris', 1)[0]; return vf && vf.near ? ui.venueLine(vf, 'idees') : ''; })() : '') +
       '<div class="ib"><span>Chez soi <b>' + (b.hi <= 0 ? '≈ 0 €' : eurR(b.lo, b.hi)) + '</b>' + (f.people > 1 && b.hi > 0 ? ' / pers.' : '') + '</span><span>En atelier <b>' + eurR(o.lo, o.hi) + '</b></span></div>' +
       '<div class="row ia"><button type="button" class="btn sm' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="idAdd" data-id="' + E(it.s.id) + '">' + ui.icon(on ? 'check' : 'plus') + (on ? ' Ajoutée' : ' Ajouter') + '</button><button type="button" class="btn ghost sm" data-act="idSheet" data-id="' + E(it.s.id) + '">Voir la fiche</button></div></article>';
   }

@@ -54,6 +54,30 @@
     return s + '</svg>';
   };
 
+  // barres horizontales : chiffre d'affaires (a) et marge (b) par ligne ; coût (cost) affiché à part ; lignes grisées (muted)
+  CH.barsSVG = function (rows, o) {
+    o = o || {};
+    // petit écran : libellé au-dessus de la barre, pour garder un texte lisible
+    var Wd = o.w || 600, cp = Wd < 480, lw = cp ? 0 : 230, rh = cp ? 58 : 38, oy = cp ? 30 : 0, H = rows.length * rh + 30, max = Math.max(1, Math.max.apply(null, rows.map(function (r) { return Math.max(r.a || 0, r.cost || 0); })));
+    var bw = Wd - lw - 70, sc = function (x) { return Math.max(0, x) / max * bw; };
+    var s = '<svg viewBox="0 0 ' + Wd + ' ' + H + '" width="100%" role="img" aria-label="' + E(rows.map(function (r) { return r.label + ' : ' + (r.cost ? 'coût ' + r.cost + ' €' : r.a + ' € de chiffre d’affaires, ' + r.b + ' € de marge'); }).join(' ; ')) + '" class="bars" style="max-width:' + Wd + 'px">';
+    rows.forEach(function (r, i) {
+      var y = 8 + i * rh, op = r.muted ? 0.35 : 1, by = y + oy;
+      s += '<g style="opacity:' + op + '"><text x="0" y="' + (y + 14) + '" style="font:500 10.5px var(--f-mono);fill:var(--fg)">' + E(r.label.length > 34 ? r.label.slice(0, 33) + '…' : r.label) + '</text>';
+      if (r.note) s += '<text x="0" y="' + (y + 27) + '" style="font:400 9px var(--f-mono);fill:var(--fg-3)">' + E(r.note.length > 40 ? r.note.slice(0, 39) + '…' : r.note) + '</text>';
+      if (r.cost) {
+        s += '<rect x="' + lw + '" y="' + (by + 4) + '" width="' + f(sc(r.cost)) + '" height="14" rx="2" style="fill:none;stroke:var(--wait);stroke-dasharray:3 2" />';
+        s += '<text x="' + f(lw + sc(r.cost) + 6) + '" y="' + (by + 15) + '" style="font:500 10.5px var(--f-mono);fill:var(--wait)">coût ' + U.fmt(r.cost) + ' €</text>';
+      } else {
+        s += '<rect x="' + lw + '" y="' + (by + 2) + '" width="' + f(sc(r.a)) + '" height="11" rx="2" style="fill:var(--accent)" /><rect x="' + lw + '" y="' + (by + 15) + '" width="' + f(sc(r.b)) + '" height="8" rx="2" style="fill:var(--int)" />';
+        s += '<text x="' + f(lw + sc(r.a) + 6) + '" y="' + (by + 12) + '" style="font:500 10.5px var(--f-mono);fill:var(--fg)">' + U.fmt(r.a) + ' €</text><text x="' + f(lw + sc(r.b) + 6) + '" y="' + (by + 23) + '" style="font:400 9.5px var(--f-mono);fill:var(--int)">' + U.fmt(r.b) + ' €</text>';
+      }
+      s += '</g>';
+    });
+    s += '<g style="font:400 9.5px var(--f-mono);fill:var(--fg-3)"><rect x="' + lw + '" y="' + (H - 14) + '" width="10" height="8" style="fill:var(--accent)" /><text x="' + (lw + 14) + '" y="' + (H - 7) + '">chiffre d’affaires</text><rect x="' + (lw + 130) + '" y="' + (H - 14) + '" width="10" height="8" style="fill:var(--int)" /><text x="' + (lw + 144) + '" y="' + (H - 7) + '">marge brute</text></g>';
+    return s + '</svg>';
+  };
+
   // constellation : compétences connues (pleines, plus proches du centre si maîtrisées) et envies (anneaux) par secteur d'univers
   CH.constellationSVG = function (st, o) {
     o = o || {};

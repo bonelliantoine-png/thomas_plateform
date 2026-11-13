@@ -162,7 +162,7 @@
       fl.forEach(function (f, i) { f.rate = fl[0].n ? f.n / fl[0].n : 0; f.conv = i && fl[i - 1].n ? f.n / fl[i - 1].n : (i ? 0 : 1); });
       return fl;
     };
-    var funnel = mkFunnel(C.FUNNEL), curious = mkFunnel(C.FUNNEL_CURIOUS);
+    var funnel = mkFunnel(C.FUNNEL), curious = mkFunnel(C.FUNNEL_CURIOUS), venue = C.FUNNEL_VENUE ? mkFunnel(C.FUNNEL_VENUE) : [];
     // coefficient viral estimé : ouvertures de liens reçus (#i=, #t=) rapportées aux partages
     var nShare = events.filter(function (ev) { return /^(idees_share|test_share|test_compare)$/.test(ev.e); }).length;
     var nRecv = events.filter(function (ev) { return /^(idees_recv|test_recv)$/.test(ev.e); }).length;
@@ -185,7 +185,7 @@
     events.forEach(function (ev) { var k = ev.e === 'use' && ev.p ? 'use:' + ev.p.k : ev.e === 'start' && ev.p ? 'start:' + ev.p.m : ev.e; if (ev.e !== 'view') counts[k] = (counts[k] || 0) + 1; });
     var survey = C.surveyReport(events.filter(function (ev) { return ev.e === 'survey' && ev.p; }).map(function (ev) { return ev.p; }));
     var first = events.length ? Math.min.apply(null, events.map(function (e) { return e.t; })) : null, last = events.length ? Math.max.apply(null, events.map(function (e) { return e.t; })) : null;
-    return { events: events.length, sessions: sess.length, funnel: funnel, curious: curious, viral: viral, durations: durations, medianSession: median(sessionLen), counts: counts, survey: survey, first: first, last: last };
+    return { events: events.length, sessions: sess.length, funnel: funnel, curious: curious, venue: venue, viral: viral, durations: durations, medianSession: median(sessionLen), counts: counts, survey: survey, first: first, last: last };
   };
   C.metricsCSV = function (events) {
     return 'horodatage;visite;evenement;proprietes\r\n' + events.map(function (ev) { return [new Date(ev.t).toISOString(), ev.s, ev.e, ev.p ? JSON.stringify(ev.p).replace(/;/g, ',') : ''].join(';'); }).join('\r\n') + '\r\n';
@@ -401,17 +401,28 @@
   C.VENUE_DAYS = ['lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.', 'dim.'];
   C.VENUE_MOMENTS = [['matin', 'Matin'], ['aprem', 'Après-midi'], ['soir', 'Soir']];
   var UNI_EQUIP = { cuisine: ['cuisine', 'evier', 'machine'], musique: ['sono', 'piano', 'calme'], image: ['tables', 'calme'], artisanat: ['tables', 'etabli', 'evier'], maison: ['etabli', 'tables'], nature: ['exterieur', 'evier'], sport: ['parquet', 'exterieur'], pleinair: ['exterieur'], scene: ['parquet', 'sono'], parole: ['tables', 'calme', 'ecran'], jeux: ['tables'], tech: ['ecran', 'tables'], bienetre: ['parquet', 'calme'], style: ['tables', 'evier'], savoirs: ['ecran', 'tables', 'calme'], pratique: ['tables'], social: ['tables'] };
-  var TYPE_UNI = { cafe: ['cuisine', 'parole', 'jeux', 'image', 'social', 'savoirs', 'pratique'], bar: ['cuisine', 'jeux', 'musique', 'parole', 'social', 'scene'], studio: ['sport', 'scene', 'bienetre', 'musique'], atelier: ['artisanat', 'maison', 'tech', 'image', 'style'], librairie: ['parole', 'savoirs', 'jeux', 'image', 'social'], autre: [] };
+  var TYPE_UNI = C.VENUE_TYPE_UNI = { cafe: ['cuisine', 'parole', 'jeux', 'image', 'social', 'savoirs', 'pratique'], bar: ['cuisine', 'jeux', 'musique', 'parole', 'social', 'scene'], studio: ['sport', 'scene', 'bienetre', 'musique'], atelier: ['artisanat', 'maison', 'tech', 'image', 'style'], librairie: ['parole', 'savoirs', 'jeux', 'image', 'social'], autre: [] };
   var SIGNATURE = ['machine', 'piano', 'etabli', 'parquet', 'cuisine', 'sono', 'exterieur', 'evier'];
   C.VENUE_TICKET = { cafe: 6, bar: 9, studio: 0, atelier: 0, librairie: 5, autre: 4 };
-  C.defaultVenue = function () { return { name: '', type: 'cafe', city: '', arr: '', slots: [], capacity: 8, equip: ['tables'], formula: 'creuse', contact: '' }; };
+  C.defaultVenue = function () { return { name: '', type: 'cafe', city: '', arr: '', slots: [], perSlot: 1, capacity: 8, equip: ['tables'], formula: 'creuse', formulas: ['creuse'], contact: '', sim: {} }; };
+  C.VENUE_LICENSED = ['bar'];
+  // adéquation d'une compétence à un lieu (null si l'équipement, la licence ou l'espace l'excluent)
+  C.venueSkillScore = function (v, s) { return scoreOne(v, s); };
   C.venueMatch = function (v, n) {
-    var eq = U.arr(v.equip), tu = TYPE_UNI[v.type] || [];
+    var out = C.data.skills.map(function (s) { return scoreOne(v, s); }).filter(function (x) { return x && x.score > 0.45; }).sort(function (x, y) { return y.score - x.score; });
+    // diversité : 3 compétences au plus par univers
+    var per = {}, res = [];
+    out.forEach(function (x) { if ((per[x.s.universe] = (per[x.s.universe] || 0) + 1) <= 3 && res.length < (n || 10)) res.push(x); });
+    var unis = {}; out.slice(0, 60).forEach(function (x) { unis[x.s.universe] = (unis[x.s.universe] || 0) + 1; });
+    return { skills: res, universes: Object.keys(unis).sort(function (a, b) { return unis[b] - unis[a]; }).slice(0, 6), total: out.length };
+  };
+  function scoreOne(v, s) {
+    var eq = U.arr(v.equip), tu = C.VENUE_TYPE_UNI[v.type] || [];
     var big = eq.indexOf('parquet') >= 0 || eq.indexOf('exterieur') >= 0;
-    var out = C.data.skills.map(function (s) {
+    {
       var a = s.attrs, need = UNI_EQUIP[s.universe] || [];
       if (a.physical >= 3 && !big) return null;
-      if (s.regulated === 'alcool' && v.type !== 'bar') return null;
+      if (s.regulated === 'alcool' && C.VENUE_LICENSED.indexOf(v.type) < 0) return null;
       if (s.regulated === 'securite' || s.regulated === 'animaux') return null;
       if (s.universe === 'pleinair' && eq.indexOf('exterieur') < 0) return null;
       if (U.overlap(s.formats, ['atelier', 'cours', 'communaute', 'evenement']) === 0) return null;
@@ -424,13 +435,8 @@
       if (s.domain === 'cuisine.cafe' && eq.indexOf('machine') >= 0) signature = 0.16;
       var score = 0.38 * Math.min(1, equipFit) + 0.24 * typeFit + 0.18 * a.demand / 3 + 0.1 * a.teachable / 3 + 0.06 * a.social / 3 + 0.04 * (a.oneHourResult ? 1 : 0) + signature;
       return { s: s, score: score };
-    }).filter(function (x) { return x && x.score > 0.45; }).sort(function (x, y) { return y.score - x.score; });
-    // diversité : 3 compétences au plus par univers
-    var per = {}, res = [];
-    out.forEach(function (x) { if ((per[x.s.universe] = (per[x.s.universe] || 0) + 1) <= 3 && res.length < (n || 10)) res.push(x); });
-    var unis = {}; out.slice(0, 60).forEach(function (x) { unis[x.s.universe] = (unis[x.s.universe] || 0) + 1; });
-    return { skills: res, universes: Object.keys(unis).sort(function (a, b) { return unis[b] - unis[a]; }).slice(0, 6), total: out.length };
-  };
+    }
+  }
   // fréquentation : une séance par créneau creux, groupes de 2 à 8, remplissage prudent de 60 %
   C.venueEstimate = function (v) {
     var slots = U.arr(v.slots).length;

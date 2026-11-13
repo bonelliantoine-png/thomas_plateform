@@ -172,6 +172,30 @@
     return canvas;
   };
 
+  /* ---------- kit du lieu : affiche A4, chevalet A6, story ---------- */
+  ui.VENUE_FORMATS = { affiche: [1240, 1754], chevalet: [874, 1240], story: [1080, 1920] };
+  ui.drawVenuePoster = function (canvas, v, fmt) {
+    var dims = ui.VENUE_FORMATS[fmt] || ui.VENUE_FORMATS.affiche, Wd = dims[0], H = dims[1], small = fmt === 'chevalet';
+    canvas.width = Wd; canvas.height = H;
+    var x = canvas.getContext('2d'), P = small ? 60 : 84, kit = C.venueKit(v);
+    frame(x, Wd, H, P, small ? 64 : 96, (v.name || 'NOTRE LIEU').toUpperCase().slice(0, 40));
+    var y = small ? 300 : 380;
+    x.fillStyle = T.fg; x.font = '400 ' + (small ? 74 : 104) + 'px ' + F.display; y += wrap(x, kit.title, P, y, Wd - 2 * P, small ? 84 : 116, 3) + (small ? 30 : 50);
+    x.fillStyle = T.fg2; x.font = '300 ' + (small ? 30 : 38) + 'px ' + F.body; y += wrap(x, 'Des séances d’une heure en petit groupe, avec des voisins. On repart en sachant faire.', P, y, Wd - 2 * P, small ? 40 : 50, 3) + (small ? 30 : 50);
+    x.fillStyle = T.fg3; x.font = '500 ' + (small ? 18 : 22) + 'px ' + F.mono; spaced(x, 'SÉANCES', P, y, 2); y += small ? 46 : 62;
+    kit.sessions.forEach(function (it) {
+      x.fillStyle = T.accent; rr(x, P, y - 22, 18, 18, 4); x.fill();
+      x.fillStyle = T.fg; x.font = '500 ' + (small ? 32 : 42) + 'px ' + F.mono; x.fillText(fit(x, it.s.short || it.s.name, Wd - 2 * P - 34), P + 34, y);
+      if (!small) { x.fillStyle = T.fg2; x.font = '300 30px ' + F.body; x.fillText(fit(x, 'En 1 h : ' + U.lc(it.oneHour), Wd - 2 * P - 34), P + 34, y + 44); }
+      y += small ? 64 : 120;
+    });
+    if (kit.slots.length) { y += 10; x.fillStyle = T.int; x.font = '500 ' + (small ? 24 : 30) + 'px ' + F.mono; wrap(x, 'Créneaux : ' + kit.slots.join(', '), P, y, Wd - 2 * P, small ? 32 : 40, 2); }
+    var fy = H - (small ? 56 : 80);
+    x.strokeStyle = T.line; x.lineWidth = 2; x.beginPath(); x.moveTo(P, fy - 44); x.lineTo(Wd - P, fy - 44); x.stroke();
+    x.fillStyle = T.fg2; x.font = '500 ' + (small ? 22 : 26) + 'px ' + F.mono; x.fillText(fit(x, kit.link, Wd - 2 * P), P, fy);
+    return canvas;
+  };
+
   // attendre les polices de la page (limité à 1,5 s) pour que le dessin soit fidèle
   ui.cardFontsReady = function () {
     if (!document.fonts || !document.fonts.load) return Promise.resolve();
