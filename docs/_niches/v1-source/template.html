@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Niches à adresser · étude · Cordes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080b; --grid:#12151c;
+  --panel:#0e1015; --panel-2:#13161d; --hover:#161a23;
+  --line:#1d2029; --line-2:#2b2f3b;
+  --fg:#f2f4f8; --fg-2:#aeb4c2; --fg-3:#7c8394;
+  --accent:#5ee7ff; --accent-ink:#03141a;
+  /* sémantique, distincte de l'accent */
+  --sent:#4f7dff;   /* cobalt : en attente, info, neutre actif */
+  --int:#4dffb5;    /* menthe : positif, en cours, succès */
+  --no:#ff9ccb;     /* rose bonbon : négatif, refus, erreur */
+  --wait:#e6dcb4;   /* sable clair : échéance, avertissement */
+  --idle:#5d6477;   /* inactif, abandonné */
+  --f-display:"Marcellus", "Cormorant Garamond", Georgia, serif;
+  --f-body:"Spectral", Georgia, serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:8px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{background-color:var(--bg);background-image:radial-gradient(var(--grid) 1px,transparent 1px);background-size:22px 22px;color:var(--fg);font-family:var(--f-mono);font-size:13px;line-height:1.5}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:8px;top:-40px;background:var(--accent);color:var(--accent-ink);padding:6px 10px;border-radius:6px;z-index:60;font-weight:600}
+.skip:focus{top:8px}
+
+/* barre d'app */
+.appbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;height:52px;display:flex;align-items:center;gap:14px;padding-inline:clamp(16px,3vw,32px);background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:grid;grid-template-columns:repeat(2,8px);gap:2px;flex:none}
+.brand i{width:8px;height:8px;border-radius:2px;display:block}
+.brand i:nth-child(1){background:var(--accent)}.brand i:nth-child(2){background:var(--int)}
+.brand i:nth-child(3),.brand i:nth-child(4){border:1px solid var(--line-2)}
+.crumb{color:var(--fg-3);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumb b{color:var(--fg);font-weight:500}
+.state{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--fg-2);font-size:11.5px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block;flex:none}
+
+/* mise en page document */
+.wrap{max-width:1280px;margin:0 auto;padding-inline:clamp(16px,3vw,32px);display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px}
+.toc{position:sticky;top:76px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;padding:28px 0 24px}
+.toc .lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);margin-bottom:10px}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc a{display:block;padding:6px 10px;color:var(--fg-2);font-size:12px;border-left:1px solid var(--line);text-decoration:none}
+.toc a:hover{color:var(--fg);background:var(--hover)}
+.toc a.on{color:var(--fg);border-left:2px solid var(--accent);padding-left:9px}
+.toc a span{color:var(--fg-3);margin-right:6px}
+main{min-width:0;padding:28px 0 80px}
+
+header.doc .crumbs{font-size:11.5px;color:var(--fg-3);letter-spacing:.04em}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4vw,40px);line-height:1.1;margin:10px 0 12px;letter-spacing:.005em}
+.chapo{font-family:var(--f-body);font-style:italic;font-weight:300;font-size:18px;line-height:1.55;color:var(--fg-2);max-width:68ch;margin:0 0 22px}
+.meta{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.meta>div{background:var(--panel);padding:12px 14px;min-width:0}
+.k{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);display:flex;align-items:center;gap:6px}
+.k .sq{width:6px;height:6px;border-radius:1px;display:inline-block;flex:none}
+.v{font-size:15px;font-weight:500;margin-top:4px}
+.v.big{font-size:28px;letter-spacing:-.02em}
+.sub{color:var(--fg-2);font-size:11.5px;margin-top:2px}
+
+section.s{margin-top:64px}
+.eyebrow{font-size:11.5px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(24px,3vw,30px);margin:6px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+h3{font-family:var(--f-display);font-weight:400;font-size:21px;margin:30px 0 10px}
+h4{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);font-weight:500;margin:22px 0 8px}
+.prose{font-family:var(--f-body);font-size:17px;line-height:1.6;font-weight:300;max-width:68ch;color:var(--fg)}
+.prose p{margin:0 0 14px}
+.prose strong{font-weight:500}
+.prose ul{margin:0 0 14px;padding-left:20px}.prose li{margin-bottom:6px}
+.note{font-size:11.5px;color:var(--fg-3);margin-top:8px;max-width:80ch}
+
+/* encarts */
+.callout{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:18px 0;max-width:80ch}
+.callout .ct{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--accent);margin-bottom:6px}
+.callout .prose{font-size:16px}
+.callout .prose p:last-child,.callout .prose ul:last-child{margin-bottom:0}
+.callout.reco{border-left-color:var(--int)}.callout.reco .ct{color:var(--int)}
+.callout.warn{border-left-color:var(--wait)}.callout.warn .ct{color:var(--wait)}
+.callout.risk{border-left-color:var(--no)}.callout.risk .ct{color:var(--no)}
+
+/* tags de nature de chiffre */
+.tag{display:inline-flex;align-items:center;gap:5px;height:18px;padding:0 7px;border-radius:999px;font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;vertical-align:2px;border:1px solid;white-space:nowrap}
+.tag::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.t-S{color:var(--int);border-color:color-mix(in srgb,var(--int) 36%,transparent);background:color-mix(in srgb,var(--int) 12%,transparent)}
+.t-E{color:var(--wait);border-color:color-mix(in srgb,var(--wait) 36%,transparent);background:color-mix(in srgb,var(--wait) 12%,transparent)}
+.t-H{color:var(--sent);border-color:color-mix(in srgb,var(--sent) 50%,transparent);background:color-mix(in srgb,var(--sent) 14%,transparent)}
+.t-S,.t-E,.t-H{font-weight:500}
+.ref{font-family:var(--f-mono);font-size:11px;color:var(--accent);margin-left:2px}
+
+/* pills */
+.pill{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 9px;border-radius:999px;font-size:11px;color:var(--fg);border:1px solid;white-space:nowrap}
+.pill i{width:6px;height:6px;border-radius:50%;display:inline-block}
+.p-int{background:color-mix(in srgb,var(--int) 14%,transparent);border-color:color-mix(in srgb,var(--int) 34%,transparent)}.p-int i{background:var(--int)}
+.p-sent{background:color-mix(in srgb,var(--sent) 14%,transparent);border-color:color-mix(in srgb,var(--sent) 38%,transparent)}.p-sent i{background:var(--sent)}
+.p-wait{background:color-mix(in srgb,var(--wait) 14%,transparent);border-color:color-mix(in srgb,var(--wait) 34%,transparent)}.p-wait i{background:var(--wait)}
+.p-no{background:color-mix(in srgb,var(--no) 14%,transparent);border-color:color-mix(in srgb,var(--no) 34%,transparent)}.p-no i{background:var(--no)}
+
+/* panneaux */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);margin:18px 0}
+.ph{min-height:46px;display:flex;align-items:center;gap:10px;padding:8px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ph .t{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.ph .h{color:var(--fg-3);font-size:11.5px}
+.ph .cnt{background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:11px;border-radius:999px;padding:1px 8px}
+.ph .act{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.pb{padding:14px}
+.btn{height:30px;padding:0 12px;border-radius:6px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--fg);font:inherit;font-size:12px;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--hover)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn.ghost{background:transparent}
+
+/* curseurs */
+.sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line)}
+.sl{background:var(--panel);padding:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:4px 12px;align-items:center}
+.sl label{font-size:12px;color:var(--fg)}
+.sl .w{font-size:15px;font-weight:500;text-align:right}
+.sl .d{grid-column:1/-1;color:var(--fg-3);font-size:11px}
+.sl input{grid-column:1/-1;width:100%;accent-color:var(--accent);height:22px;margin:0}
+.wsum{font-size:11.5px;color:var(--fg-2)}
+
+/* tableaux */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:12px}
+table.geo th{white-space:normal;min-width:96px;vertical-align:bottom}
+table.geo td:first-child{min-width:170px}
+th{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);font-weight:500;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:baseline}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;white-space:nowrap}
+td .nm{font-family:var(--f-display);font-size:15px}
+.bench td:first-child{font-family:var(--f-display);font-size:14.5px;white-space:nowrap}
+.bench td{color:var(--fg-2)}.bench td:first-child{color:var(--fg)}
+tbody tr.clk{cursor:pointer}tbody tr.clk:hover td{background:var(--hover)}
+
+/* classement en grille */
+.rk{display:grid;grid-template-columns:34px 40px minmax(0,1fr) 88px 96px 106px;align-items:center}
+.rk>div{padding:8px 10px;border-bottom:1px solid var(--line);min-width:0}
+.rk .hd{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
+.rk .row{display:contents;cursor:pointer}
+.rk .row:hover>div{background:var(--hover)}
+.rk .nmc{font-family:var(--f-display);font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .sec{color:var(--fg-2);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.delta{font-size:11px}.up{color:var(--int)}.down{color:var(--no)}.eq{color:var(--fg-3)}
+.bar{display:flex;align-items:center;gap:8px}
+.bar .g{flex:1;height:3px;background:var(--line-2);border-radius:2px;overflow:hidden;min-width:30px}
+.bar .g b{display:block;height:100%;background:var(--accent)}
+.bar .n{font-weight:500;min-width:30px;text-align:right}
+.rankcols{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:18px;align-items:start}
+
+/* matrice */
+.mx svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--fg-2);padding:10px 14px;border-top:1px solid var(--line)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:8px;height:8px;border-radius:2px;display:inline-block}
+
+/* secteurs détaillés */
+details.sec{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);margin:10px 0}
+details.sec>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:28px minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:12px 14px}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary:hover{background:var(--hover)}
+details.sec[open]>summary{border-bottom:1px solid var(--line)}
+.glyph{font-size:18px;color:var(--accent);text-align:center}
+.sname{font-family:var(--f-display);font-size:18px}
+.sname small{display:block;font-family:var(--f-mono);font-size:11px;color:var(--fg-3);margin-top:2px}
+.chev{color:var(--fg-3);font-size:12px;transition:transform .15s}
+details[open] .chev{transform:rotate(90deg)}
+.secbody{padding:4px 18px 18px}
+.figs{list-style:none;margin:0;padding:0}
+.figs li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.figs li:last-child{border-bottom:0}
+.sig{margin:0;padding-left:18px;font-family:var(--f-body);font-size:15px;color:var(--fg-2)}
+.sig li{margin:3px 0}
+
+/* explorateur */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line)}
+.search{position:relative;flex:1 1 240px;max-width:380px}
+.search input{width:100%;height:30px;background:var(--bg);border:1px solid var(--line-2);border-radius:6px;color:var(--fg);font:inherit;font-size:12.5px;padding:0 38px 0 30px}
+.search svg{position:absolute;left:9px;top:8px}
+.search kbd{position:absolute;right:7px;top:6px}
+kbd{font-family:var(--f-mono);font-size:10.5px;border:1px solid var(--line-2);border-bottom-width:2px;background:var(--panel-2);border-radius:4px;padding:0 5px;color:var(--fg-2)}
+select{height:30px;background:var(--bg);border:1px solid var(--line-2);border-radius:6px;color:var(--fg);font:inherit;font-size:12px;padding:0 8px;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line);align-items:center}
+.chips .lb{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);margin-right:4px;min-width:62px}
+.chip{height:26px;padding:0 10px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--fg-2);font:inherit;font-size:11.5px;display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.chip i{width:6px;height:6px;border-radius:50%;display:inline-block;background:var(--fg-3)}
+.chip b{color:var(--fg-3);font-weight:500}
+.chip[aria-pressed="true"]{background:var(--panel-2);color:var(--fg);border-color:var(--accent)}
+.chip.c-int[aria-pressed="true"]{border-color:var(--int)}.chip.c-int i{background:var(--int)}
+.chip.c-sent[aria-pressed="true"]{border-color:var(--sent)}.chip.c-sent i{background:var(--sent)}
+.chip.c-wait[aria-pressed="true"]{border-color:var(--wait)}.chip.c-wait i{background:var(--wait)}
+.chip.c-no[aria-pressed="true"]{border-color:var(--no)}.chip.c-no i{background:var(--no)}
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:6px;overflow:hidden}
+.seg button{height:28px;padding:0 10px;background:transparent;border:0;border-right:1px solid var(--line-2);color:var(--fg-2);font:inherit;font-size:11.5px;cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--panel-2);color:var(--fg)}
+.tree{padding:6px 0}
+.tsec>button,.tdom>button{width:100%;display:grid;align-items:center;gap:10px;background:transparent;border:0;color:var(--fg);font:inherit;text-align:left;cursor:pointer;padding:9px 14px}
+.tsec>button{grid-template-columns:16px 24px minmax(0,1fr) auto auto;border-top:1px solid var(--line)}
+.tsec:first-child>button{border-top:0}
+.tsec>button:hover,.tdom>button:hover{background:var(--hover)}
+.tsec .sname{font-size:16.5px}
+.tdom>button{grid-template-columns:16px minmax(0,1fr) auto;padding-left:52px;color:var(--fg-2)}
+.tdom>button .dn{font-size:12.5px}
+.tw-c{color:var(--fg-3);font-size:11px;white-space:nowrap}
+.tri{color:var(--fg-3);font-size:10px;transition:transform .15s;display:inline-block}
+[aria-expanded="true"] .tri{transform:rotate(90deg)}
+.nl{list-style:none;margin:0;padding:0}
+.nrow{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 120px 108px;gap:10px;align-items:center;width:100%;background:transparent;border:0;border-left:2px solid transparent;color:var(--fg);font:inherit;text-align:left;cursor:pointer;padding:8px 14px 8px 72px}
+.nrow:hover{background:var(--hover)}
+.nrow.sel{background:var(--panel-2);border-left-color:var(--accent)}
+.nrow .nn{font-family:var(--f-body);font-size:15px;line-height:1.3;min-width:0}
+.nrow .ff{font-size:11px;color:var(--fg-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.empty{padding:24px 14px;color:var(--fg-2);font-size:12.5px}
+.kb{display:flex;gap:14px;flex-wrap:wrap;color:var(--fg-3);font-size:11px;padding:10px 14px;border-top:1px solid var(--line)}
+@media (hover:none){.kb,.search kbd{display:none}}
+
+/* panneau latéral */
+.veil{position:fixed;inset:0;background:color-mix(in srgb,var(--bg) 60%,transparent);z-index:40;opacity:0;pointer-events:none;transition:opacity .15s}
+.veil.on{opacity:1;pointer-events:auto}
+aside.side{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--panel);border-left:1px solid var(--line);box-shadow:-24px 0 60px -20px #000;z-index:50;transform:translateX(102%);transition:transform .18s;display:flex;flex-direction:column}
+aside.side.on{transform:none}
+.sh{display:flex;align-items:flex-start;gap:10px;padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+.sh h3{margin:2px 0 0;font-size:24px;line-height:1.2}
+.sh .path{font-size:11px;color:var(--fg-3);letter-spacing:.04em}
+.sh .btn{margin-left:auto;flex:none}
+.sbody{overflow:auto;padding:14px 18px 30px;flex:1}
+.kv{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:12px 0}
+.kv>div{background:var(--panel-2);padding:9px 12px}
+.kv .val{font-family:var(--f-body);font-size:14.5px;line-height:1.45;margin-top:2px;color:var(--fg)}
+.top3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.top3>div{background:var(--panel-2);padding:10px 12px}
+.crit{display:grid;grid-template-columns:minmax(0,1fr) 90px 22px;gap:10px;align-items:center;padding:5px 0;font-size:11.5px;color:var(--fg-2)}
+.crit .g{height:3px;background:var(--line-2);border-radius:2px;overflow:hidden}
+.crit .g b{display:block;height:100%}
+.crit .val{text-align:right;color:var(--fg);font-weight:500}
+.skl{margin:0;padding-left:20px;font-family:var(--f-body);font-size:15px}
+.skl li{margin:3px 0}
+
+/* top 15 et portefeuilles */
+.topl{list-style:none;margin:0;padding:0;counter-reset:t}
+.topl li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:6px 14px;padding:14px;border-bottom:1px solid var(--line)}
+.topl li:last-child{border-bottom:0}
+.topl .rnk{font-size:22px;font-weight:500;letter-spacing:-.02em;color:var(--fg-3)}
+.topl .tn{font-family:var(--f-display);font-size:17px;background:none;border:0;color:var(--fg);padding:0;text-align:left;cursor:pointer;font-weight:400}
+.topl .tn:hover{color:var(--accent)}
+.topl .tm{font-size:11.5px;color:var(--fg-2);margin-top:2px}
+.topl .ta{grid-column:2/-1;font-family:var(--f-body);font-size:15.5px;line-height:1.55;color:var(--fg);font-weight:300;max-width:75ch}
+.topl .rs{text-align:right}
+.topl .sc{font-size:22px;font-weight:500;letter-spacing:-.02em}
+.pfs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pf{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column}
+.pf.rec{border-color:color-mix(in srgb,var(--int) 45%,transparent)}
+.pf .ph{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px}
+.pf .ph .act{margin-left:0}
+.pf .pn{font-family:var(--f-display);font-size:20px;line-height:1.2}
+.pf .pt{font-size:11px;color:var(--fg-3);text-transform:uppercase;letter-spacing:.1em}
+.pf ul{list-style:none;margin:0;padding:6px 0;border-bottom:1px solid var(--line)}
+.pf li button{width:100%;display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:8px;background:none;border:0;color:var(--fg);font:inherit;text-align:left;padding:6px 14px;cursor:pointer}
+.pf li button:hover{background:var(--hover)}
+.pf li .nn{font-family:var(--f-body);font-size:14.5px;line-height:1.3}
+.pf li .num{text-align:right;color:var(--fg-2)}
+.pf dl{margin:0;padding:10px 14px;display:grid;gap:10px;flex:1;align-content:start}
+.pf dt{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
+.pf dd{margin:0;font-family:var(--f-body);font-size:14.5px;line-height:1.45;color:var(--fg-2)}
+.pf .pr{padding:10px 14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--fg-2)}
+.dots{display:inline-flex;gap:3px;vertical-align:middle}
+.dots i{width:8px;height:8px;border-radius:2px;background:var(--line-2);display:inline-block}
+.dots i.on{background:var(--accent)}
+.srcl{list-style:none;margin:0;padding:0}
+.srcl li{display:grid;grid-template-columns:38px minmax(0,1fr);gap:10px;padding:9px 14px;border-bottom:1px solid var(--line)}
+.srcl li:last-child{border-bottom:0}
+.srcl .i{color:var(--fg-3);font-weight:500}
+.srcl .st{font-family:var(--f-body);font-size:14.5px;line-height:1.45}
+.srcl .se{font-size:11px;color:var(--fg-3);margin-top:2px;word-break:break-word}
+.srcl li:target{background:var(--panel-2)}
+.counters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:18px 0}
+.counters>div{background:var(--panel);padding:12px 14px}
+footer.ft{border-top:1px solid var(--line);margin-top:60px;padding:18px 0;color:var(--fg-3);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap}
+
+@media (max-width:1040px){
+  .rankcols{grid-template-columns:1fr}
+  .pfs{grid-template-columns:1fr}
+  .meta{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .nrow{grid-template-columns:minmax(0,1fr) 110px 100px;padding-left:44px}
+  .nrow .ff{display:none}
+  .tdom>button{padding-left:40px}
+}
+@media (max-width:900px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  .toc{position:sticky;top:52px;z-index:20;max-height:none;padding:8px 0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-inline:calc(-1 * clamp(16px,3vw,32px));padding-inline:clamp(16px,3vw,32px)}
+  .toc .lbl{display:none}
+  .toc ol{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+  .toc ol::-webkit-scrollbar{display:none}
+  .toc a{border-left:0;border-bottom:2px solid transparent;white-space:nowrap;padding:6px 8px}
+  .toc a.on{border-left:0;border-bottom-color:var(--accent);padding-left:8px}
+  html{scroll-padding-top:116px}
+  .sliders{grid-template-columns:1fr}
+  .rk{grid-template-columns:34px 44px minmax(0,1fr) 92px}
+  .rk .c-sec,.rk .c-v{display:none}
+}
+@media (max-width:560px){
+  .meta,.counters{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .meta>div:first-child{grid-column:1/-1}
+  .state .lbl2{display:none}
+  .crumb .cx{display:none}
+  .nrow{grid-template-columns:minmax(0,1fr) 84px;padding-left:20px;gap:6px}
+  .nrow .vv{display:none}
+  .tdom>button{padding-left:24px}
+  .tsec>button{grid-template-columns:14px 20px minmax(0,1fr) auto}
+  .tsec>button .tw-c.bst{display:none}
+  .figs li{grid-template-columns:1fr;gap:4px}
+  .topl li{grid-template-columns:30px minmax(0,1fr)}
+  .topl .rs{grid-column:2;text-align:left;display:flex;gap:10px;align-items:center}
+  .top3{grid-template-columns:1fr}
+  details.sec>summary{grid-template-columns:22px minmax(0,1fr) auto}
+  details.sec>summary .hide-s{display:none}
+  .prose{font-size:16px}
+  .chips .lb{min-width:0;width:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="appbar" role="banner">
+  <div class="brand" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="crumb"><span class="cx">cordes / études / </span><b>niches à adresser</b></div>
+  <div class="state"><span class="dot" style="background:var(--int)" aria-hidden="true"></span><span><span class="lbl2">Sources · </span>relevées 12 nov. 2026</span></div>
+</div>
+
+<div class="wrap">
+<nav class="toc" aria-label="Sommaire">
+  <div class="lbl">Sommaire</div>
+  <ol>
+    <li><a href="#synthese"><span>01</span>Synthèse</a></li>
+    <li><a href="#methode"><span>02</span>Méthode et poids</a></li>
+    <li><a href="#secteurs"><span>03</span>Diagnostic des 17 secteurs</a></li>
+    <li><a href="#explorer"><span>04</span>Arbre des niches</a></li>
+    <li><a href="#top"><span>05</span>Top 15</a></li>
+    <li><a href="#portefeuilles"><span>06</span>Portefeuilles</a></li>
+    <li><a href="#ecarter"><span>07</span>Niches à écarter</a></li>
+    <li><a href="#geo"><span>08</span>Niches géographiques</a></li>
+    <li><a href="#sources"><span>09</span>Sources</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+<header class="doc">
+  <div class="crumbs">ÉTUDE · CORDES · NICHES</div>
+  <h1>Niches à adresser pour la plateforme de compétences de vie</h1>
+  <p class="chapo">17 secteurs alignés sur les univers de l'application, __NNICHES__ niches notées sur une grille pondérée, trois portefeuilles de lancement et une recommandation pour Paris.</p>
+  <div class="meta" role="list">
+    <div role="listitem"><div class="k">Commanditaire</div><div class="v">Antoine</div><div class="sub">Lecture du 13 nov. 2026</div></div>
+    <div role="listitem"><div class="k">Date</div><div class="v">12 nov. 2026</div><div class="sub">Consultation des sources</div></div>
+    <div role="listitem"><div class="k"><span class="sq" style="background:var(--wait)"></span>Statut</div><div class="v">Étude v1</div><div class="sub">Aucune séance testée</div></div>
+    <div role="listitem"><div class="k">Périmètre</div><div class="v">__NNICHES__ niches</div><div class="sub">17 secteurs · France, Paris d'abord</div></div>
+    <div role="listitem"><div class="k">Sources</div><div class="v">__NSOURCES__</div><div class="sub">Publiques, françaises d'abord</div></div>
+  </div>
+</header>
+
+<!-- 01 -->
+<section class="s" id="synthese" aria-labelledby="h-syn">
+  <div class="eyebrow">01 · synthèse</div>
+  <h2 id="h-syn">Ce qu'il faut retenir</h2>
+  <div class="counters" id="counters"></div>
+  <div class="callout reco">
+    <div class="ct">Recommandation</div>
+    <div class="prose">
+      <p>Lancer avec le portefeuille <strong>« Soirées de quartier »</strong> sur cinq niches · <span id="reco-core"></span>. Ajouter la niche interne <strong>« Animer sa première séance »</strong> pour transformer les apprenants en hôtes dès le mois 3.</p>
+      <p>Périmètre de test · <strong>10e et 11e arrondissements, avec Belleville (20e)</strong>. Deuxième vague au mois 4 · <strong>« Créer avec l'IA »</strong>, animée par Antoine et vendue aussi en séances d'équipe.</p>
+    </div>
+  </div>
+  <div class="prose">
+    <p>Le format d'une heure en petit groupe trie sévèrement les savoir-faire. Les niches qui gagnent ont toutes un résultat qui se montre en fin de séance, un lieu partenaire qui possède déjà le matériel et un vivier d'hôtes amateurs. Le boire-manger et la musique cumulent ces trois atouts, avec des prix de marché à Paris de 60 à 150 € pour des formats que nous vendons 22 € la place.</p>
+    <p>Le sport porte la demande la plus massive (58 % des 15 ans et plus pratiquent régulièrement) mais son enseignement rémunéré est réservé aux diplômés déclarés. Il est écarté au lancement, avec le yoga, le pilates, l'escalade et les activités nautiques.</p>
+  </div>
+  <div class="callout warn">
+    <div class="ct">Point de vigilance</div>
+    <div class="prose"><p>Les notes sont des jugements argumentés, pas des mesures. Chaque chiffre porte sa nature · <span class="tag t-S">sourcé</span> <span class="tag t-E">estimation</span> <span class="tag t-H">hypothèse</span>. Plusieurs pages officielles n'ont pu être lues qu'à travers les extraits d'un moteur de recherche · elles sont signalées dans les sources et à confirmer avant toute diffusion externe.</p></div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="s" id="methode" aria-labelledby="h-met">
+  <div class="eyebrow">02 · méthode</div>
+  <h2 id="h-met">Grille de notation et poids</h2>
+  <div class="prose">
+    <p>Chaque niche reçoit une note de 1 à 5 sur dix critères. Le score sur 100 est la moyenne pondérée des notes ramenées entre 0 et 1. L'aptitude au format pèse le plus lourd (18 %), car elle reprend les cinq critères d'une bonne corde du dossier de cadrage · résultat en 1 h, résultat montrable, peu de matériel, pas de diplôme exigé par la loi, possibilité d'y revenir.</p>
+    <p>Le verdict est fixé avec les poids par défaut. Score de 68 et plus · prioritaire. De 60 à 68 · à tester. De 48 à 60 · plus tard. Sous 48, ou en présence d'un obstacle rédhibitoire (diplôme obligatoire, sécurité, matériel lourd) · écarter. Les curseurs servent à éprouver la robustesse du classement. La colonne Δ montre le gain ou la perte de rangs par rapport aux poids par défaut.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Critère</th><th>Ce qu'on mesure</th><th class="num">Poids par défaut</th></tr></thead>
+    <tbody id="crit-table"></tbody>
+  </table></div>
+
+  <div class="panel" id="weights">
+    <div class="ph"><span class="t">Poids des critères</span><span class="h wsum" id="wsum"></span><div class="act"><button class="btn" id="w-founder" type="button">Sans biais fondateur</button><button class="btn" id="w-reset" type="button">Réinitialiser</button></div></div>
+    <div class="sliders" id="sliders"></div>
+  </div>
+
+  <div class="rankcols">
+    <div class="panel" style="margin:0">
+      <div class="ph"><span class="t">Classement en direct</span><span class="cnt" id="rk-cnt">20</span><span class="h">sur __NNICHES__ niches</span></div>
+      <div class="rk" id="ranking" role="table" aria-label="Classement des niches"></div>
+    </div>
+    <div class="panel" style="margin:0">
+      <div class="ph"><span class="t">Secteurs</span><span class="h">moyenne des 3 meilleures niches</span></div>
+      <div class="pb" id="secrank" style="padding:8px 14px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="s" id="secteurs" aria-labelledby="h-sec">
+  <div class="eyebrow">03 · diagnostic</div>
+  <h2 id="h-sec">Diagnostic et bench des 17 secteurs</h2>
+  <div class="prose">
+    <p>Les 17 secteurs reprennent les univers figés de l'application. L'attractivité agrège la demande, la tendance, la propension à payer, la communauté et la monétisation. L'accessibilité agrège l'aptitude au format, le vivier d'offreurs, le risque réglementaire, l'espace concurrentiel et l'adéquation fondateurs. Les deux axes suivent les poids choisis plus haut. La taille de bulle représente le public potentiel en France.</p>
+  </div>
+  <div class="panel mx">
+    <div class="ph"><span class="t">Matrice attractivité × accessibilité</span><span class="h">lignes · médianes des 17 secteurs</span></div>
+    <div id="matrix" style="padding:8px"></div>
+    <div class="legend" id="mx-legend"></div>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Secteur</th><th class="num">Niches</th><th class="num">Prioritaires</th><th class="num">Score top 3</th><th class="num">Attractivité</th><th class="num">Accessibilité</th><th class="num">Public potentiel</th></tr></thead>
+    <tbody id="sec-table"></tbody>
+  </table></div>
+  <h3>Fiches secteur</h3>
+  <p class="note">Ouvrir une fiche pour lire les chiffres, le bench des acteurs et l'opportunité. Les prix de bench marqués « hypothèse » sont des ordres de grandeur non vérifiés.</p>
+  <div id="sec-details"></div>
+</section>
+
+<!-- 04 -->
+<section class="s" id="explorer" aria-labelledby="h-exp">
+  <div class="eyebrow">04 · explorateur</div>
+  <h2 id="h-exp">Arbre secteur, domaines, niches, compétences</h2>
+  <div class="prose"><p>Chaque niche est notée sur la grille et porte son public, sa taille estimée, ses concurrents, son format idéal, ses offreurs, ses lieux, ses risques et son verdict. Cliquer une niche ouvre sa fiche et la liste de ses compétences.</p></div>
+  <div class="panel">
+    <div class="toolbar">
+      <label class="search"><span class="sr">Rechercher une niche ou une compétence</span>
+        <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="var(--fg-3)" stroke-width="1.6"/><path d="M11 11l4 4" stroke="var(--fg-3)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Rechercher · niche, compétence, lieu" autocomplete="off"><kbd>/</kbd></label>
+      <label><span class="sr">Secteur</span><select id="f-sec"><option value="">Tous les secteurs</option></select></label>
+      <div class="seg" role="group" aria-label="Local ou en ligne" id="f-mode">
+        <button type="button" data-m="" aria-pressed="true">Tous</button><button type="button" data-m="local" aria-pressed="false">Local</button><button type="button" data-m="enligne" aria-pressed="false">En ligne</button>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" type="button" id="t-open">Tout déplier</button><button class="btn ghost" type="button" id="t-close">Tout replier</button><button class="btn" type="button" id="t-reset">Réinitialiser</button></div>
+    </div>
+    <div class="chips" id="f-verdict" role="group" aria-label="Filtrer par verdict"><span class="lb">Verdict</span></div>
+    <div class="chips" id="f-format" role="group" aria-label="Filtrer par format"><span class="lb">Format</span></div>
+    <div class="ph" style="min-height:38px;border-bottom:1px solid var(--line)"><span class="t">Niches affichées</span><span class="cnt" id="vis-cnt">0</span><span class="h" id="vis-h"></span></div>
+    <div class="tree" id="tree"></div>
+    <div class="kb"><span><kbd>/</kbd> rechercher</span><span><kbd>J</kbd> <kbd>K</kbd> niche suivante ou précédente</span><span><kbd>Entrée</kbd> ouvrir</span><span><kbd>Esc</kbd> fermer</span></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="s" id="top" aria-labelledby="h-top">
+  <div class="eyebrow">05 · classement final</div>
+  <h2 id="h-top">Top 15 des niches prioritaires</h2>
+  <div class="prose"><p>Classement avec les poids par défaut. Quatre niches du top 15 relèvent du boire-manger, trois de la musique, trois de l'IA. Les écarts sont serrés · entre le 1er et le 15e, moins de dix points.</p></div>
+  <div class="panel"><ol class="topl" id="top15"></ol></div>
+</section>
+
+<!-- 06 -->
+<section class="s" id="portefeuilles" aria-labelledby="h-pf">
+  <div class="eyebrow">06 · portefeuilles</div>
+  <h2 id="h-pf">Trois portefeuilles de lancement</h2>
+  <div class="prose"><p>Un portefeuille regroupe des niches qui partagent leurs lieux, leurs publics et leurs hôtes. C'est ce partage qui permet de fabriquer deux usages par mois et par abonné, condition de survie de l'abonnement selon le dossier de cadrage.</p></div>
+  <div class="pfs" id="pfs"></div>
+  <div class="callout reco">
+    <div class="ct">Portefeuille de départ recommandé · Soirées de quartier</div>
+    <div class="prose">
+      <p><strong>Niches de la phase 1</strong> · <span id="reco-core2"></span>. Plus la niche interne <span id="reco-plus"></span>. À ouvrir ensuite · <span id="reco-later"></span>.</p>
+      <ul>
+        <li>Meilleur score moyen des trois portefeuilles, avec les prix de marché les plus éloignés de notre place à 22 €.</li>
+        <li>Lieux immédiatement mobilisables · un coffee shop l'après-midi, un bar à platines le soir, un disquaire le samedi. Trois partenaires suffisent pour 12 séances.</li>
+        <li>Antoine anime trois des cinq niches (DJ, MAO, écoute). Les deux autres se recrutent chez les baristas et les barmen, déjà habitués à expliquer leur geste.</li>
+        <li>La soirée « mocktail puis set de 20 minutes » enchaîne deux cordes et fabrique le deuxième usage mensuel.</li>
+        <li>Le choix rejoint la proposition du dossier v2 (boire-manger et musique), en remplaçant le cocktail alcoolisé par le sans alcool pour lever la contrainte de licence.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout risk">
+    <div class="ct">Risques du portefeuille recommandé</div>
+    <div class="prose"><p>Alcool · uniquement dans un bar licencié qui vend lui-même, jamais encaissé par l'hôte. Matériel · machine expresso et contrôleurs fournis par le lieu, donc une règle de partage stable avec chaque partenaire. Saisonnalité faible, mais concurrence de Timeleft sur la promesse de lien du soir.</p></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="s" id="ecarter" aria-labelledby="h-ec">
+  <div class="eyebrow">07 · exclusions</div>
+  <h2 id="h-ec">Niches à écarter et pourquoi</h2>
+  <div class="prose">
+    <p>Trois motifs d'exclusion. <strong>L'enseignement sportif rémunéré</strong> exige une qualification enregistrée et une carte professionnelle, sous peine d'un an de prison et de 15 000 € d'amende · padel, pilates, yoga, escalade, kayak, boxe. <strong>La sécurité, la santé ou le matériel lourd</strong> · champignons, apiculture, menuiserie sur machines, premiers secours certifiants. <strong>Un score trop faible</strong> · niches de niche sans vivier ni demande suffisants.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Niche</th><th>Secteur</th><th>Motif</th><th>Détail</th><th class="num">Score</th></tr></thead>
+    <tbody id="ec-table"></tbody>
+  </table></div>
+  <div class="callout warn"><div class="ct">Porte de sortie</div><div class="prose"><p>Le sport peut revenir de deux façons · des hôtes titulaires d'une carte professionnelle, ou des sorties entre membres sans enseignement rémunéré (run club social, randonnée, ping-pong), qui servent les cercles sans constituer une offre payante.</p></div></div>
+</section>
+
+<!-- 08 -->
+<section class="s" id="geo" aria-labelledby="h-geo">
+  <div class="eyebrow">08 · géographie</div>
+  <h2 id="h-geo">Niches géographiques du portefeuille recommandé</h2>
+  <div class="prose">
+    <p>Critères · densité de 25-39 ans (environ 26 % de la population parisienne, <span class="tag t-S">sourcé</span> <a class="ref" href="#src-__IP__">[__IP__]</a>), densité de cafés et bars, offre d'ateliers déjà présente sur les plateformes, lieux abordables à heures creuses. Les notes de 1 à 3 par arrondissement sont des <span class="tag t-H">hypothèses</span> issues de l'observation des annonces, à valider par 30 entretiens et un comptage des lieux. L'étude stratégique approfondira.</p>
+  </div>
+  <div class="tw"><table class="geo">
+    <thead><tr id="geo-ph"></tr></thead>
+    <tbody id="geo-paris"></tbody>
+  </table></div>
+  <div class="callout reco"><div class="ct">Périmètre recommandé</div><div class="prose"><p>Démarrer sur l'axe <strong>10e · 11e</strong>, où se concentrent déjà les ateliers latte art, cocktails et sans alcool observés, et y adjoindre <strong>Belleville (20e)</strong> pour les lieux musique moins chers et le vivier d'hôtes. Trois arrondissements voisins, conformes à la feuille de route du dossier v2.</p></div></div>
+  <h3>Villes suivantes</h3>
+  <div class="tw"><table class="geo">
+    <thead><tr id="geo-vh"></tr></thead>
+    <tbody id="geo-villes"></tbody>
+  </table></div>
+  <p class="note">Notes de 1 à 3 · hypothèses. Présence de Timeleft à Bordeaux, Marseille et Toulouse <span class="tag t-S">sourcé</span> <a class="ref" href="#src-__TL__">[__TL__]</a>. Ordre proposé après Paris · Lyon, Bordeaux, Nantes, puis Lille et Toulouse.</p>
+</section>
+
+<!-- 09 -->
+<section class="s" id="sources" aria-labelledby="h-src">
+  <div class="eyebrow">09 · sources</div>
+  <h2 id="h-src">Sources</h2>
+  <div class="prose"><p>Consultées le 12 novembre 2026. Les montants d'entreprises non cotées sont déclaratifs. Les pages marquées « attribution à vérifier » ont été lues à travers un moteur de recherche · le chiffre est cité tel qu'il apparaît, la page exacte reste à confirmer. Une recherche complémentaire reste utile sur le yoga, la méditation et les volumes d'ateliers par arrondissement.</p></div>
+  <div class="panel"><ol class="srcl" id="srcl"></ol></div>
+</section>
+
+<footer class="ft"><span>Étude des niches · v1 · 12 nov. 2026</span><span>Données embarquées · aucune dépendance hors polices</span><span><kbd>/</kbd> rechercher · <kbd>Esc</kbd> fermer</span></footer>
+</main>
+</div>
+
+<div class="veil" id="veil" aria-hidden="true"></div>
+<aside class="side" id="side" role="dialog" aria-modal="true" aria-labelledby="side-title" aria-hidden="true" tabindex="-1">
+  <div class="sh"><div><div class="path" id="side-path"></div><h3 id="side-title">Niche</h3></div><button class="btn" type="button" id="side-close" aria-label="Fermer la fiche">Esc</button></div>
+  <div class="sbody" id="side-body"></div>
+</aside>
+
+<script type="application/json" id="data">/*__DATA__*/</script>
+<script>
+(function(){
+"use strict";
+var D = JSON.parse(document.getElementById('data').textContent);
+var C = D.crit, W0 = C.map(function(c){return c[3];}), W = W0.slice();
+var SHORT = {cuisine:"Cuisine",musique:"Musique",image:"Image",artisanat:"Artisanat",maison:"Maison",nature:"Nature",sport:"Sport",pleinair:"Plein air",scene:"Scène",parole:"Parole",jeux:"Jeux",tech:"Tech & IA",bienetre:"Bien-être",style:"Style",savoirs:"Savoirs",pratique:"Vie pratique",social:"Lien social"};
+var ATTR = [0,1,2,4,7], ACC = [5,6,8,3,9];
+var sec = {}, dom = {}, nid = {};
+D.sectors.forEach(function(s){ sec[s.id] = s; s.dom.forEach(function(d){ dom[d[0]] = {n:d[1], sec:s.id}; }); });
+D.niches.forEach(function(n){ nid[n.id] = n; });
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function fmt1(x){ return (Math.round(x*10)/10).toFixed(1).replace('.', ','); }
+function fmt0(x){ return String(Math.round(x)); }
+function score(n, w){ w = w || W; var t = 0, a = 0; for (var i=0;i<10;i++){ t += w[i]; a += w[i]*(n.s[i]-1)/4; } return t ? a*100/t : 0; }
+function sub(n, idx, w){ w = w || W; var t = 0, a = 0; idx.forEach(function(i){ t += w[i]; a += w[i]*(n.s[i]-1)/4; }); return t ? a*100/t : 50; }
+function vpill(v){ var x = D.verdicts[v]; return '<span class="pill p-'+x[1]+'"><i></i>'+x[0]+'</span>'; }
+function refs(a){ return (a||[]).map(function(i){ return '<a class="ref" href="#src-'+i+'">['+i+']</a>'; }).join(''); }
+function tag(t){ return '<span class="tag t-'+t+'">'+({S:"sourcé",E:"estimation",H:"hypothèse"})[t]+'</span>'; }
+function rankAll(w){ var arr = D.niches.map(function(n){ return {n:n, sc:score(n, w)}; }); arr.sort(function(a,b){ return b.sc - a.sc || a.n.n.localeCompare(b.n.n); }); return arr; }
+
+/* compteurs */
+(function(){
+  var c = {}; D.niches.forEach(function(n){ c[n.v] = (c[n.v]||0)+1; });
+  var cells = [["Niches notées", D.niches.length, "17 secteurs · 2 à 5 compétences chacune", "accent"], ["Prioritaires", c.prioritaire||0, "dont 1 niche interne stratégique", "int"], ["À tester", c.tester||0, "à valider en séance pilote", "sent"], ["À écarter", c.ecarter||0, "réglementation, sécurité ou score", "no"]];
+  $('counters').innerHTML = cells.map(function(x){ return '<div><div class="k"><span class="sq" style="background:var(--'+x[3]+')"></span>'+x[0]+'</div><div class="v big">'+x[1]+'</div><div class="sub">'+x[2]+'</div></div>'; }).join('');
+  function names(a){ return a.map(function(x){ return '<a href="#" data-open="'+D.byName[x]+'">'+esc(x)+'</a>'; }).join(', '); }
+  $('reco-core').innerHTML = names(D.reco.core); $('reco-core2').innerHTML = names(D.reco.core);
+  $('reco-plus').innerHTML = names(D.reco.plus); $('reco-later').innerHTML = names(D.reco.later);
+})();
+
+/* méthode */
+$('crit-table').innerHTML = C.map(function(c){ return '<tr><td><span class="nm">'+esc(c[1])+'</span></td><td style="font-family:var(--f-body);font-size:14.5px;color:var(--fg-2)">'+esc(c[2])+'</td><td class="num">'+c[3]+' %</td></tr>'; }).join('');
+$('sliders').innerHTML = C.map(function(c, i){ return '<div class="sl"><label for="w'+i+'">'+esc(c[1])+'</label><span class="w" id="wv'+i+'">'+W[i]+'</span><input type="range" id="w'+i+'" min="0" max="30" step="1" value="'+W[i]+'" aria-describedby="wd'+i+'"><span class="d" id="wd'+i+'">'+esc(c[2])+'</span></div>'; }).join('');
+C.forEach(function(c, i){ $('w'+i).addEventListener('input', function(e){ W[i] = +e.target.value; refresh(); }); });
+function setW(arr){ W = arr.slice(); C.forEach(function(c, i){ $('w'+i).value = W[i]; }); refresh(); }
+$('w-reset').addEventListener('click', function(){ setW(W0); });
+$('w-founder').addEventListener('click', function(){ var a = W.slice(); a[9] = 0; setW(a); });
+
+function renderWeights(){
+  var t = W.reduce(function(a,b){ return a+b; }, 0);
+  C.forEach(function(c, i){ $('wv'+i).textContent = t ? fmt0(W[i]*100/t) + '%' : '0%'; $('w'+i).setAttribute('aria-valuetext', W[i] + ' points, soit ' + (t ? fmt0(W[i]*100/t) : 0) + ' % du total'); });
+  var same = W.every(function(x, i){ return x === W0[i]; });
+  $('wsum').textContent = same ? 'poids par défaut · total 100' : 'poids modifiés · normalisés à 100';
+}
+function renderRanking(){
+  var r = rankAll(W), r0 = {}; D.niches.forEach(function(n){ r0[n.id] = n.r0; });
+  var h = '<div class="hd" role="columnheader">Rang</div><div class="hd" role="columnheader">Δ</div><div class="hd" role="columnheader">Niche</div><div class="hd c-sec" role="columnheader">Secteur</div><div class="hd" role="columnheader">Score</div><div class="hd c-v" role="columnheader">Verdict</div>';
+  r.slice(0, 20).forEach(function(x, i){
+    var d = r0[x.n.id] - (i+1), dc = d > 0 ? 'up' : d < 0 ? 'down' : 'eq', ds = d > 0 ? '↑' + d : d < 0 ? '↓' + (-d) : '·';
+    h += '<div class="row" role="row" tabindex="0" data-open="'+x.n.id+'"><div role="cell">'+(i+1)+'</div><div role="cell" class="delta '+dc+'" aria-label="variation '+d+'">'+ds+'</div><div role="cell" class="nmc">'+esc(x.n.n)+'</div><div role="cell" class="sec c-sec">'+esc(SHORT[x.n.sec])+'</div><div role="cell"><div class="bar"><span class="g"><b style="width:'+x.sc+'%"></b></span><span class="n">'+fmt0(x.sc)+'</span></div></div><div role="cell" class="c-v">'+vpill(x.n.v)+'</div></div>';
+  });
+  $('ranking').innerHTML = h;
+}
+function secStats(w){
+  return D.sectors.map(function(s){
+    var ns = D.niches.filter(function(n){ return n.sec === s.id; });
+    var scs = ns.map(function(n){ return score(n, w); }).sort(function(a,b){ return b-a; });
+    var top3 = (scs[0] + scs[1] + scs[2]) / 3;
+    var at = ns.reduce(function(a,n){ return a + sub(n, ATTR, w); }, 0) / ns.length;
+    var ac = ns.reduce(function(a,n){ return a + sub(n, ACC, w); }, 0) / ns.length;
+    var pr = ns.filter(function(n){ return n.v === 'prioritaire'; }).length;
+    return {s:s, n:ns.length, top3:top3, at:at, ac:ac, pr:pr};
+  });
+}
+function renderSecRank(st){
+  var a = st.slice().sort(function(x,y){ return y.top3 - x.top3; });
+  $('secrank').innerHTML = a.map(function(x, i){ return '<div style="display:grid;grid-template-columns:22px minmax(0,1fr) 110px;gap:8px;align-items:center;padding:5px 0;border-bottom:1px solid var(--line)"><span style="color:var(--fg-3)">'+(i+1)+'</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+esc(x.s.n)+'</span><span class="bar"><span class="g"><b style="width:'+x.top3+'%"></b></span><span class="n">'+fmt0(x.top3)+'</span></span></div>'; }).join('');
+}
+function renderSecTable(st){
+  var a = st.slice().sort(function(x,y){ return y.top3 - x.top3; });
+  $('sec-table').innerHTML = a.map(function(x){ return '<tr class="clk" tabindex="0" data-sec="'+x.s.id+'"><td><span class="glyph" aria-hidden="true" style="margin-right:8px">'+x.s.g+'</span><span class="nm">'+esc(x.s.n)+'</span></td><td class="num">'+x.n+'</td><td class="num">'+x.pr+'</td><td class="num">'+fmt0(x.top3)+'</td><td class="num">'+fmt0(x.at)+'</td><td class="num">'+fmt0(x.ac)+'</td><td class="num">≈ '+String(x.s.dm).replace('.', ',')+' M '+tag(x.s.dmT)+'</td></tr>'; }).join('');
+}
+
+/* matrice SVG */
+function quadColor(at, ac, mAt, mAc){ return at >= mAt && ac >= mAc ? 'int' : at >= mAt ? 'wait' : ac >= mAc ? 'sent' : 'idle'; }
+function median(a){ var b = a.slice().sort(function(x,y){ return x-y; }), m = b.length >> 1; return b.length % 2 ? b[m] : (b[m-1]+b[m])/2; }
+function renderMatrix(st){
+  var Wd = 760, H = 470, L = 52, R = 24, T = 22, B = 46;
+  var xs = st.map(function(x){ return x.ac; }), ys = st.map(function(x){ return x.at; });
+  var x0 = Math.floor(Math.min.apply(null, xs) - 6), x1 = Math.ceil(Math.max.apply(null, xs) + 6);
+  var y0 = Math.floor(Math.min.apply(null, ys) - 6), y1 = Math.ceil(Math.max.apply(null, ys) + 6);
+  function X(v){ return L + (v - x0) / (x1 - x0) * (Wd - L - R); }
+  function Y(v){ return H - B - (v - y0) / (y1 - y0) * (H - T - B); }
+  var mAc = median(xs), mAt = median(ys);
+  var s = '<svg viewBox="0 0 '+Wd+' '+H+'" role="img" aria-labelledby="mx-t mx-d"><title id="mx-t">Matrice attractivité et accessibilité des 17 secteurs</title><desc id="mx-d">Chaque bulle est un secteur, placé selon son accessibilité en abscisse et son attractivité en ordonnée. La taille de la bulle représente le public potentiel en France.</desc>';
+  s += '<rect x="'+L+'" y="'+T+'" width="'+(Wd-L-R)+'" height="'+(H-T-B)+'" fill="var(--bg)" stroke="var(--line)"/>';
+  for (var gx = Math.ceil(x0/10)*10; gx <= x1; gx += 10){ s += '<line x1="'+X(gx)+'" x2="'+X(gx)+'" y1="'+T+'" y2="'+(H-B)+'" stroke="var(--line)" stroke-width="1"/><text x="'+X(gx)+'" y="'+(H-B+16)+'" fill="var(--fg-3)" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="middle">'+gx+'</text>'; }
+  for (var gy = Math.ceil(y0/10)*10; gy <= y1; gy += 10){ s += '<line x1="'+L+'" x2="'+(Wd-R)+'" y1="'+Y(gy)+'" y2="'+Y(gy)+'" stroke="var(--line)" stroke-width="1"/><text x="'+(L-8)+'" y="'+(Y(gy)+3)+'" fill="var(--fg-3)" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="end">'+gy+'</text>'; }
+  s += '<line x1="'+X(mAc)+'" x2="'+X(mAc)+'" y1="'+T+'" y2="'+(H-B)+'" stroke="var(--line-2)" stroke-dasharray="4 3"/><line x1="'+L+'" x2="'+(Wd-R)+'" y1="'+Y(mAt)+'" y2="'+Y(mAt)+'" stroke="var(--line-2)" stroke-dasharray="4 3"/>';
+  var ql = [["LANCER", Wd-R-8, T+16, "end", "int"], ["CONQUÉRIR PLUS TARD", L+8, T+16, "start", "wait"], ["COMPLÉTER", Wd-R-8, H-B-8, "end", "sent"], ["ÉCARTER OU ATTENDRE", L+8, H-B-8, "start", "idle"]];
+  ql.forEach(function(q){ s += '<text x="'+q[1]+'" y="'+q[2]+'" fill="var(--'+q[4]+')" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1" text-anchor="'+q[3]+'">'+q[0]+'</text>'; });
+  s += '<text x="'+(L + (Wd-L-R)/2)+'" y="'+(H-10)+'" fill="var(--fg-3)" font-family="IBM Plex Mono, monospace" font-size="10.5" text-anchor="middle">ACCESSIBILITÉ →</text>';
+  s += '<text transform="translate(14 '+(T + (H-T-B)/2)+') rotate(-90)" fill="var(--fg-3)" font-family="IBM Plex Mono, monospace" font-size="10.5" text-anchor="middle">ATTRACTIVITÉ →</text>';
+  var pts = st.map(function(x){ return {x:X(x.ac), y:Y(x.at), r:5 + Math.sqrt(x.s.dm)*3.6, c:quadColor(x.at, x.ac, mAt, mAc), d:x}; }).sort(function(a,b){ return b.r - a.r; });
+  pts.forEach(function(p){ s += '<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="'+p.r.toFixed(1)+'" fill="color-mix(in srgb, var(--'+p.c+') 18%, transparent)" stroke="var(--'+p.c+')" stroke-width="1.2"><title>'+esc(p.d.s.n)+' · attractivité '+fmt0(p.d.at)+' · accessibilité '+fmt0(p.d.ac)+' · public ≈ '+p.d.s.dm+' M</title></circle>'; });
+  var boxes = [], circles = pts.map(function(p){ return {x:p.x, y:p.y, r:p.r}; });
+  pts.sort(function(a,b){ return a.y - b.y; }).forEach(function(p){
+    var lab = SHORT[p.d.s.id], w = lab.length * 6.2 + 4, h = 12;
+    var pick = null, best = null;
+    for (var dd = 0; dd < 4 && !pick; dd++){
+      var o = dd * 12, cs = [[p.x + p.r + 4 + o, p.y + 4, 'start'], [p.x - p.r - 4 - o, p.y + 4, 'end'], [p.x, p.y - p.r - 5 - o, 'middle'], [p.x, p.y + p.r + 13 + o, 'middle'], [p.x + p.r + 2, p.y - p.r - 2 - o, 'start'], [p.x - p.r - 2, p.y - p.r - 2 - o, 'end'], [p.x + p.r + 2, p.y + p.r + 10 + o, 'start'], [p.x - p.r - 2, p.y + p.r + 10 + o, 'end']];
+      for (var i = 0; i < cs.length; i++){
+        var c = cs[i], bx = c[2] === 'start' ? c[0] : c[2] === 'end' ? c[0] - w : c[0] - w/2, by = c[1] - 10;
+        if (bx < L + 2 || bx + w > Wd - R - 2 || by < T + 18 || by + h > H - B - 2) continue;
+        var hit = boxes.some(function(b){ return !(bx + w < b[0] || bx > b[0] + b[2] || by + h < b[1] || by > b[1] + b[3]); });
+        var hitC = circles.some(function(q){ var nx = Math.max(bx, Math.min(q.x, bx + w)), ny = Math.max(by, Math.min(q.y, by + h)); return (nx - q.x) * (nx - q.x) + (ny - q.y) * (ny - q.y) < q.r * q.r; });
+        if (!hit && !hitC){ pick = [c, bx, by, o]; break; }
+        if (!hit && !best) best = [c, bx, by, o];
+      }
+    }
+    if (!pick) pick = best || [[p.x + p.r + 4, p.y + 4, 'start'], p.x + p.r + 4, p.y - 6, 0];
+    boxes.push([pick[1], pick[2], w, h]);
+    if (pick[3] > 0){ var lx = pick[1] + (pick[0][2] === 'end' ? w : pick[0][2] === 'middle' ? w/2 : 0), ly = pick[2] + h/2; s += '<line x1="'+p.x.toFixed(1)+'" y1="'+p.y.toFixed(1)+'" x2="'+lx.toFixed(1)+'" y2="'+ly.toFixed(1)+'" stroke="var(--line-2)" stroke-width="1"/>'; }
+    s += '<text x="'+pick[0][0].toFixed(1)+'" y="'+pick[0][1].toFixed(1)+'" fill="var(--fg)" font-family="IBM Plex Mono, monospace" font-size="10.5" text-anchor="'+pick[0][2]+'">'+esc(lab)+'</text>';
+  });
+  s += '</svg>';
+  $('matrix').innerHTML = s;
+}
+$('mx-legend').innerHTML = [["int","Lancer · attractif et accessible"],["wait","Attractif, difficile d'accès"],["sent","Accessible, attractivité moindre"],["idle","Sous les deux médianes"]].map(function(x){ return '<span><i style="background:var(--'+x[0]+')"></i>'+x[1]+'</span>'; }).join('') + '<span style="color:var(--fg-3)">Bulle · public potentiel, de 2 à 31 M</span>';
+
+/* fiches secteur */
+(function(){
+  $('sec-details').innerHTML = D.sectors.map(function(s){
+    var ns = D.niches.filter(function(n){ return n.sec === s.id; }).sort(function(a,b){ return a.r0 - b.r0; });
+    var pr = ns.filter(function(n){ return n.v === 'prioritaire'; }).length;
+    var h = '<details class="sec" id="sec-'+s.id+'"><summary><span class="glyph" aria-hidden="true">'+s.g+'</span><span class="sname">'+esc(s.n)+'<small>'+ns.length+' niches · meilleure · '+esc(ns[0].n)+'</small></span><span class="hide-s">'+(pr ? '<span class="pill p-int"><i></i>'+pr+' prioritaire'+(pr>1?'s':'')+'</span>' : '<span class="pill p-wait"><i></i>aucune prioritaire</span>')+'</span><span class="chev" aria-hidden="true">▶</span></summary><div class="secbody">';
+    h += '<div class="prose" style="margin-top:12px"><p>'+esc(s.diag)+'</p></div>';
+    h += '<h4>Chiffres</h4><ul class="figs">' + s.ch.map(function(c){ return '<li><span>'+tag(c[0])+'</span><span>'+esc(c[1])+' '+refs(c[2])+'</span></li>'; }).join('') + '</ul>';
+    h += '<h4>Bench des acteurs</h4><div class="tw"><table class="bench"><thead><tr><th>Acteur</th><th>Modèle</th><th>Prix</th><th>Forces</th><th>Failles</th></tr></thead><tbody>' + s.b.map(function(b){ return '<tr><td>'+esc(b[0])+'</td><td>'+esc(b[1])+'</td><td>'+esc(b[2]).replace(/\(hypothèse\)|\(relevé indicatif\)/g, function(m){ return '<span class="tag t-H">'+(m.indexOf('hyp')>0?'hypothèse':'indicatif')+'</span>'; })+'</td><td>'+esc(b[3])+'</td><td>'+esc(b[4])+'</td></tr>'; }).join('') + '</tbody></table></div>';
+    h += '<h4>Signaux de tendance</h4><ul class="sig">' + s.sig.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('') + '</ul>';
+    h += '<div class="callout reco"><div class="ct">Opportunité pour nous</div><div class="prose"><p>'+esc(s.opp)+'</p></div></div>';
+    h += '<h4>Domaines et niches</h4><p class="note" style="margin-top:0">' + s.dom.map(function(d){ var c = ns.filter(function(n){ return n.dom === d[0]; }).length; return esc(d[1]) + ' (' + c + ')'; }).join(' · ') + ' · <a href="#explorer" data-sec-filter="'+s.id+'">Voir dans l\'arbre</a></p>';
+    return h + '</div></details>';
+  }).join('');
+})();
+
+/* explorateur */
+var F = {q:'', sec:'', mode:'', v:{}, f:{}}, OPEN = {}, VIS = [], SEL = null;
+(function(){
+  var vc = {}, fc = {}; D.niches.forEach(function(n){ vc[n.v] = (vc[n.v]||0)+1; fc[n.f] = (fc[n.f]||0)+1; });
+  $('f-verdict').insertAdjacentHTML('beforeend', Object.keys(D.verdicts).map(function(k){ var x = D.verdicts[k]; return '<button type="button" class="chip c-'+x[1]+'" aria-pressed="false" data-v="'+k+'"><i></i>'+x[0]+' <b>'+(vc[k]||0)+'</b></button>'; }).join(''));
+  $('f-format').insertAdjacentHTML('beforeend', Object.keys(D.fmt).filter(function(k){ return fc[k]; }).map(function(k){ return '<button type="button" class="chip" aria-pressed="false" data-f="'+k+'"><i></i>'+D.fmt[k]+' <b>'+fc[k]+'</b></button>'; }).join(''));
+  $('f-sec').insertAdjacentHTML('beforeend', D.sectors.map(function(s){ return '<option value="'+s.id+'">'+esc(s.n)+'</option>'; }).join(''));
+})();
+function norm(s){ return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+D.niches.forEach(function(n){ n._t = norm([n.n, n.k.join(' '), n.p, n.l, n.c, n.o, dom[n.dom].n, sec[n.sec].n].join(' ')); });
+function match(n){
+  if (F.sec && n.sec !== F.sec) return false;
+  if (F.mode === 'local' && n.m === 'enligne') return false;
+  if (F.mode === 'enligne' && n.m === 'local') return false;
+  var vk = Object.keys(F.v).filter(function(k){ return F.v[k]; }); if (vk.length && vk.indexOf(n.v) < 0) return false;
+  var fk = Object.keys(F.f).filter(function(k){ return F.f[k]; }); if (fk.length && fk.indexOf(n.f) < 0) return false;
+  if (F.q){ var ws = norm(F.q).split(/\s+/).filter(Boolean); for (var i=0;i<ws.length;i++){ if (n._t.indexOf(ws[i]) < 0) return false; } }
+  return true;
+}
+function filtering(){ return !!(F.q || F.sec || F.mode || Object.keys(F.v).some(function(k){ return F.v[k]; }) || Object.keys(F.f).some(function(k){ return F.f[k]; })); }
+function renderTree(){
+  var act = filtering(), h = '', total = 0; VIS = [];
+  D.sectors.forEach(function(s){
+    var ns = D.niches.filter(function(n){ return n.sec === s.id && match(n); });
+    if (!ns.length) return;
+    total += ns.length;
+    var open = act ? OPEN[s.id] !== false : !!OPEN[s.id];
+    var best = ns.reduce(function(a,n){ return Math.max(a, score(n)); }, 0);
+    h += '<div class="tsec"><button type="button" aria-expanded="'+open+'" data-tsec="'+s.id+'"><span class="tri" aria-hidden="true">▶</span><span class="glyph" aria-hidden="true">'+s.g+'</span><span class="sname">'+esc(s.n)+'</span><span class="tw-c">'+ns.length+' niche'+(ns.length>1?'s':'')+'</span><span class="tw-c bst">max '+fmt0(best)+'</span></button>';
+    if (open){
+      h += '<div role="group" aria-label="'+esc(s.n)+'">';
+      s.dom.forEach(function(d){
+        var dn = ns.filter(function(n){ return n.dom === d[0]; }); if (!dn.length) return;
+        var dopen = OPEN[d[0]] !== false;
+        h += '<div class="tdom"><button type="button" aria-expanded="'+dopen+'" data-tdom="'+d[0]+'"><span class="tri" aria-hidden="true">▶</span><span class="dn">'+esc(d[1])+'</span><span class="tw-c">'+dn.length+'</span></button>';
+        if (dopen){
+          dn.sort(function(a,b){ return score(b) - score(a); });
+          h += '<ul class="nl">' + dn.map(function(n){ VIS.push(n.id); var sc = score(n); return '<li><button type="button" class="nrow'+(SEL===n.id?' sel':'')+'" data-open="'+n.id+'"><span class="nn">'+esc(n.n)+'</span><span class="ff">'+D.fmt[n.f]+' · '+D.mode[n.m]+'</span><span class="bar"><span class="g"><b style="width:'+sc+'%"></b></span><span class="n">'+fmt0(sc)+'</span></span><span class="vv">'+vpill(n.v)+'</span></button></li>'; }).join('') + '</ul>';
+        }
+        h += '</div>';
+      });
+      h += '</div>';
+    }
+    h += '</div>';
+  });
+  $('tree').innerHTML = h || '<div class="empty">Aucune niche ne correspond · retirer un filtre ou vider la recherche.</div>';
+  $('vis-cnt').textContent = total;
+  $('vis-h').textContent = act ? 'filtres actifs' : 'déplier un secteur pour voir ses domaines';
+}
+$('tree').addEventListener('click', function(e){
+  var b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.tsec){ var id = b.dataset.tsec, cur = b.getAttribute('aria-expanded') === 'true'; OPEN[id] = !cur; renderTree(); focusSel('[data-tsec="'+id+'"]'); }
+  else if (b.dataset.tdom){ var d = b.dataset.tdom, c2 = b.getAttribute('aria-expanded') === 'true'; OPEN[d] = !c2; renderTree(); focusSel('[data-tdom="'+d+'"]'); }
+});
+function focusSel(q){ var el = $('tree').querySelector(q); if (el) el.focus(); }
+$('q').addEventListener('input', function(e){ F.q = e.target.value.trim(); renderTree(); });
+$('f-sec').addEventListener('change', function(e){ F.sec = e.target.value; renderTree(); });
+$('f-mode').addEventListener('click', function(e){ var b = e.target.closest('button'); if (!b) return; F.mode = b.dataset.m; Array.prototype.forEach.call(this.children, function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); renderTree(); });
+$('f-verdict').addEventListener('click', function(e){ var b = e.target.closest('button'); if (!b) return; var k = b.dataset.v; F.v[k] = !F.v[k]; b.setAttribute('aria-pressed', F.v[k] ? 'true' : 'false'); renderTree(); });
+$('f-format').addEventListener('click', function(e){ var b = e.target.closest('button'); if (!b) return; var k = b.dataset.f; F.f[k] = !F.f[k]; b.setAttribute('aria-pressed', F.f[k] ? 'true' : 'false'); renderTree(); });
+$('t-open').addEventListener('click', function(){ D.sectors.forEach(function(s){ OPEN[s.id] = true; s.dom.forEach(function(d){ OPEN[d[0]] = true; }); }); renderTree(); });
+$('t-close').addEventListener('click', function(){ D.sectors.forEach(function(s){ OPEN[s.id] = false; }); renderTree(); });
+$('t-reset').addEventListener('click', resetFilters);
+function resetFilters(){ F = {q:'', sec:'', mode:'', v:{}, f:{}}; OPEN = {}; $('q').value = ''; $('f-sec').value = ''; document.querySelectorAll('#f-verdict .chip, #f-format .chip').forEach(function(c){ c.setAttribute('aria-pressed', 'false'); }); Array.prototype.forEach.call($('f-mode').children, function(x, i){ x.setAttribute('aria-pressed', i === 0 ? 'true' : 'false'); }); renderTree(); }
+
+/* panneau latéral */
+var lastFocus = null;
+function openPanel(id){
+  var n = nid[id]; if (!n) return; SEL = id;
+  var r = rankAll(W), rank = 0; r.forEach(function(x, i){ if (x.n.id === id) rank = i + 1; });
+  var sc = score(n);
+  $('side-path').textContent = sec[n.sec].n + ' › ' + dom[n.dom].n;
+  $('side-title').textContent = n.n;
+  var h = '<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">' + vpill(n.v) + (n.vs ? '<span class="tag t-H">verdict stratégique</span>' : '') + (n.ko ? '<span class="pill p-no"><i></i>obstacle rédhibitoire</span>' : '') + '</div>';
+  h += '<div class="top3" style="margin-top:12px"><div><div class="k">Score</div><div class="v big">'+fmt0(sc)+'</div><div class="sub">sur 100, poids actuels</div></div><div><div class="k">Rang</div><div class="v big">'+rank+'</div><div class="sub">sur '+D.niches.length+' · défaut '+n.r0+'</div></div><div><div class="k">Format</div><div class="v" style="font-size:14px;margin-top:8px">'+D.fmt[n.f]+'</div><div class="sub">'+D.mode[n.m]+'</div></div></div>';
+  if (n.w) h += '<div class="callout reco" style="margin:14px 0 4px"><div class="ct">Pourquoi</div><div class="prose" style="font-size:15px"><p>'+esc(n.w)+'</p></div></div>';
+  h += '<h4>Compétences</h4><ol class="skl">' + n.k.map(function(k){ return '<li>'+esc(k)+'</li>'; }).join('') + '</ol>';
+  h += '<div class="kv">';
+  h += '<div><div class="k">Public cible</div><div class="val">'+esc(n.p)+'</div></div>';
+  h += '<div><div class="k">Taille estimée '+(n.zS && n.src.length ? tag('S') + ' ' : '')+tag('E')+'</div><div class="val">'+esc(n.z)+'</div></div>';
+  h += '<div><div class="k">Concurrents</div><div class="val">'+esc(n.c)+'</div></div>';
+  h += '<div><div class="k">Potentiel offreurs</div><div class="val">'+esc(n.o)+'</div></div>';
+  h += '<div><div class="k">Lieux partenaires</div><div class="val">'+esc(n.l)+'</div></div>';
+  h += '<div><div class="k">Risques</div><div class="val">'+esc(n.r)+'</div></div>';
+  h += '</div>';
+  h += '<h4>Notes sur la grille</h4>' + C.map(function(c, i){ var v = n.s[i], col = v >= 4 ? 'int' : v === 3 ? 'accent' : v === 2 ? 'wait' : 'no'; return '<div class="crit"><span>'+esc(c[1])+'</span><span class="g"><b style="width:'+(v*20)+'%;background:var(--'+col+')"></b></span><span class="val">'+v+'</span></div>'; }).join('');
+  if (n.src.length) h += '<h4>Sources</h4><p class="note" style="margin-top:0">' + refs(n.src) + '</p>';
+  $('side-body').innerHTML = h; $('side-body').scrollTop = 0;
+  if (!$('side').classList.contains('on')) lastFocus = document.activeElement;
+  $('side').classList.add('on'); $('veil').classList.add('on'); $('side').setAttribute('aria-hidden', 'false');
+  document.querySelectorAll('.nrow').forEach(function(b){ b.classList.toggle('sel', b.dataset.open === id); });
+  $('side-close').focus();
+}
+function closePanel(){
+  if (!$('side').classList.contains('on')) return;
+  $('side').classList.remove('on'); $('veil').classList.remove('on'); $('side').setAttribute('aria-hidden', 'true');
+  if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus();
+}
+$('side-close').addEventListener('click', closePanel);
+$('veil').addEventListener('click', closePanel);
+$('side').addEventListener('click', function(e){ var a = e.target.closest('a.ref'); if (a) closePanel(); });
+document.addEventListener('click', function(e){
+  var o = e.target.closest('[data-open]'); if (o && !o.closest('#side')){ e.preventDefault(); openPanel(o.dataset.open); return; }
+  var sf = e.target.closest('[data-sec-filter]'); if (sf){ resetFilters(); F.sec = sf.dataset.secFilter; $('f-sec').value = F.sec; renderTree(); }
+  var st = e.target.closest('tr[data-sec]'); if (st){ var d = $('sec-' + st.dataset.sec); d.open = true; d.scrollIntoView({block:'start'}); d.querySelector('summary').focus(); }
+});
+document.addEventListener('keydown', function(e){
+  var tgt = e.target, typing = tgt && (tgt.tagName === 'INPUT' || tgt.tagName === 'SELECT' || tgt.tagName === 'TEXTAREA');
+  if (e.key === 'Escape'){ if ($('side').classList.contains('on')){ closePanel(); e.preventDefault(); } else if (tgt === $('q')){ $('q').blur(); } return; }
+  if ((e.key === 'Enter' || e.key === ' ') && tgt && tgt.matches && tgt.matches('[data-open][role="row"], tr[data-sec]')){ e.preventDefault(); tgt.click(); return; }
+  if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === '/'){ e.preventDefault(); $('q').focus(); $('explorer').scrollIntoView({block:'start'}); return; }
+  if (e.key === 'j' || e.key === 'k' || e.key === 'J' || e.key === 'K'){
+    if (!VIS.length){ D.sectors.forEach(function(s){ OPEN[s.id] = true; }); renderTree(); }
+    if (!VIS.length) return;
+    var i = VIS.indexOf(SEL), dir = (e.key.toLowerCase() === 'j') ? 1 : -1;
+    i = i < 0 ? 0 : Math.min(VIS.length - 1, Math.max(0, i + dir));
+    var id = VIS[i];
+    if ($('side').classList.contains('on')) openPanel(id); else { SEL = id; renderTree(); var b = $('tree').querySelector('[data-open="'+id+'"]'); if (b){ b.focus(); b.scrollIntoView({block:'nearest'}); } }
+    e.preventDefault();
+  }
+});
+$('side').addEventListener('keydown', function(e){
+  if (e.key !== 'Tab') return;
+  var f = $('side').querySelectorAll('button, a[href]'); if (!f.length) return;
+  var first = f[0], last = f[f.length - 1];
+  if (e.shiftKey && document.activeElement === first){ last.focus(); e.preventDefault(); }
+  else if (!e.shiftKey && document.activeElement === last){ first.focus(); e.preventDefault(); }
+});
+
+/* top 15 (poids par défaut) */
+(function(){
+  var r = rankAll(W0).slice(0, 15);
+  $('top15').innerHTML = r.map(function(x, i){ var n = x.n; return '<li><span class="rnk">'+String(i+1).padStart(2,'0')+'</span><div><button type="button" class="tn" data-open="'+n.id+'">'+esc(n.n)+'</button><div class="tm">'+esc(sec[n.sec].n)+' · '+D.fmt[n.f]+' · '+D.mode[n.m]+'</div></div><div class="rs"><div class="sc">'+fmt0(x.sc)+'</div>'+vpill(n.v)+'</div><div class="ta">'+esc(n.w)+'</div></li>'; }).join('');
+})();
+
+/* portefeuilles */
+(function(){
+  $('pfs').innerHTML = D.portfolios.map(function(p){
+    var ns = p.niches.map(function(nm){ return nid[D.byName[nm]]; });
+    var avg = ns.reduce(function(a,n){ return a + score(n, W0); }, 0) / ns.length;
+    var h = '<article class="pf'+(p.id === 'A' ? ' rec' : '')+'"><div class="ph"><div><div class="pt">Portefeuille '+p.id+' · '+esc(p.tag)+'</div><div class="pn">'+esc(p.n)+'</div></div><div class="act" style="text-align:right"><div><div class="k" style="justify-content:flex-end">Score moyen</div><div class="v big">'+fmt0(avg)+'</div></div></div></div>';
+    if (p.id === 'A') h += '<div style="padding:8px 14px 0"><span class="pill p-int"><i></i>Recommandé pour démarrer</span></div>';
+    h += '<ul>' + ns.map(function(n){ return '<li><button type="button" data-open="'+n.id+'"><span class="nn">'+esc(n.n)+'</span><span class="num">'+fmt0(score(n, W0))+'</span></button></li>'; }).join('') + '</ul>';
+    h += '<dl>' + p.syn.map(function(s){ return '<div><dt>'+esc(s[0])+'</dt><dd>'+esc(s[1])+'</dd></div>'; }).join('') + '</dl>';
+    h += '<div class="pr"><span style="color:var(--no)">Risque</span> · '+esc(p.risk)+'</div></article>';
+    return h;
+  }).join('');
+})();
+
+/* exclusions */
+(function(){
+  var ex = D.niches.filter(function(n){ return n.v === 'ecarter'; });
+  function motive(n){ if (n.ko && (n.sec === 'sport' || n.sec === 'pleinair' || n.dom === 'bienetre.corps')) return ['Enseignement sportif réglementé', 0]; if (n.ko) return ['Sécurité, santé ou matériel', 1]; return ['Score insuffisant', 2]; }
+  ex.sort(function(a,b){ return motive(a)[1] - motive(b)[1] || a.r0 - b.r0; });
+  $('ec-table').innerHTML = ex.map(function(n){ var m = motive(n); return '<tr class="clk" tabindex="0" data-open="'+n.id+'" role="row"><td><span class="nm">'+esc(n.n)+'</span></td><td>'+esc(SHORT[n.sec])+'</td><td>'+(m[1] < 2 ? '<span class="pill p-no"><i></i>'+m[0]+'</span>' : '<span class="pill p-wait"><i></i>'+m[0]+'</span>')+'</td><td style="font-family:var(--f-body);font-size:14px;color:var(--fg-2)">'+esc(m[1] < 2 ? n.r : 'Score de ' + fmt0(score(n, W0)) + ' · demande ou vivier trop faibles')+'</td><td class="num">'+fmt0(score(n, W0))+'</td></tr>'; }).join('');
+})();
+
+/* géographie */
+(function(){
+  function dots(v){ var s = '<span class="dots" aria-label="'+v+' sur 3">'; for (var i=1;i<=3;i++) s += '<i class="'+(i<=v?'on':'')+'"></i>'; return s + '</span>'; }
+  $('geo-ph').innerHTML = '<th>Arrondissement</th>' + D.geo.pcrit.map(function(c){ return '<th>'+esc(c)+'</th>'; }).join('') + '<th>Observation</th>';
+  $('geo-paris').innerHTML = D.geo.paris.map(function(g){ return '<tr><td><span class="nm">'+esc(g[0])+'</span></td><td>'+dots(g[1])+'</td><td>'+dots(g[2])+'</td><td>'+dots(g[3])+'</td><td>'+dots(g[4])+'</td><td style="font-family:var(--f-body);font-size:14px;color:var(--fg-2);min-width:240px">'+esc(g[5])+'</td></tr>'; }).join('');
+  $('geo-vh').innerHTML = '<th>Ville</th>' + D.geo.vcrit.map(function(c){ return '<th>'+esc(c)+'</th>'; }).join('') + '<th>Quartiers candidats · signaux</th>';
+  $('geo-villes').innerHTML = D.geo.villes.map(function(g){ return '<tr><td><span class="nm">'+esc(g[0])+'</span></td><td>'+dots(g[1])+'</td><td>'+dots(g[2])+'</td><td>'+dots(g[3])+'</td><td style="font-family:var(--f-body);font-size:14px;color:var(--fg-2);min-width:240px">'+esc(g[4])+'</td></tr>'; }).join('');
+})();
+
+/* sources */
+$('srcl').innerHTML = D.sources.map(function(s){ var link = /^https?:/.test(s.u) ? '<a href="'+esc(s.u)+'" target="_blank" rel="noopener noreferrer">'+esc(s.u.replace(/^https?:\/\//, '').slice(0, 90))+(s.u.length > 98 ? '…' : '')+'</a>' : esc(s.u); return '<li id="src-'+s.i+'"><span class="i">'+s.i+'</span><div><div class="st">'+esc(s.t)+' '+(s.v ? '<span class="tag t-E">attribution à vérifier</span>' : '')+'</div><div class="se">'+esc(s.e)+' · consulté le 12 nov. 2026 · '+link+'</div></div></li>'; }).join('');
+
+/* sommaire actif */
+(function(){
+  var links = document.querySelectorAll('.toc a'), map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(ents){
+    ents.forEach(function(en){ if (en.isIntersecting){ links.forEach(function(a){ a.classList.remove('on'); a.removeAttribute('aria-current'); }); var a = map[en.target.id]; if (a){ a.classList.add('on'); a.setAttribute('aria-current', 'true'); if (a.scrollIntoView && window.innerWidth <= 900){ var ol = a.closest('ol'); ol.scrollLeft = a.offsetLeft - 20; } } } });
+  }, {rootMargin: '-30% 0px -60% 0px'});
+  document.querySelectorAll('main section.s').forEach(function(s){ io.observe(s); });
+})();
+
+function refresh(){ renderWeights(); renderRanking(); var st = secStats(W); renderSecRank(st); renderSecTable(st); renderMatrix(st); renderTree(); }
+refresh();
+})();
+</script>
+</body>
+</html>
