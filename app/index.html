@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07080b">
+<meta name="description" content="Cordes · bilan de compétences de vie : ce que vous savez faire, ce que vous voulez apprendre, et où, avec qui, comment.">
+<title>Cordes · Bilan de compétences de vie</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' rx='4' fill='%2307080b'/%3E%3Crect x='3' y='3' width='6' height='6' rx='1.6' fill='%235ee7ff'/%3E%3Crect x='11' y='3' width='6' height='6' rx='1.6' fill='%234dffb5'/%3E%3Crect x='3.5' y='11.5' width='5' height='5' rx='1.4' fill='none' stroke='%232b2f3b'/%3E%3Crect x='11.5' y='11.5' width='5' height='5' rx='1.4' fill='none' stroke='%232b2f3b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,500;1,300&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<a class="skip" href="#view">Aller au contenu</a>
+<header class="appbar">
+  <div class="in">
+    <a class="brand" href="#/accueil" aria-label="Cordes, accueil"><span id="logo"></span>Cordes</a>
+    <span class="crumb" id="crumb" aria-live="polite">accueil</span>
+    <nav class="topnav" aria-label="Navigation principale">
+      <a href="#/accueil">Accueil</a>
+      <a href="#/demo">Démo</a>
+      <a href="#/outils/autour">Autour de moi</a>
+      <a href="#/comparer">Comparer</a>
+      <a href="#/copilote">Copilote</a>
+      <a href="#/comment">Comment ça marche</a>
+    </nav>
+    <span class="savebadge" id="savebadge" aria-live="polite"></span>
+    <button class="btn ghost menubtn" data-act="menu" aria-label="Ouvrir le menu"><svg class="ic" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
+  </div>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer class="footer">
+  <div class="in">
+    <span>Cordes · prototype V1 · données locales, aucun compte · lieux © contributeurs OpenStreetMap</span>
+    <span class="shortcuts" aria-hidden="true"><span><kbd>/</kbd> rechercher</span><span><kbd>←</kbd> <kbd>→</kbd> <kbd>↓</kbd> cartes</span><span><kbd>Esc</kbd> fermer</span></span>
+  </div>
+</footer>
+<div class="veil" id="veil" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" hidden></aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data/taxonomy-a.js"></script>
+<script src="js/data/taxonomy-b.js"></script>
+<script src="js/data/resources.js"></script>
+<script src="js/engine/core.js"></script>
+<script src="js/engine/similarity.js"></script>
+<script src="js/engine/inspiration.js"></script>
+<script src="js/engine/archetype.js"></script>
+<script src="js/engine/plan.js"></script>
+<script src="js/engine/pricing.js"></script>
+<script src="js/engine/channels.js"></script>
+<script src="js/engine/status.js"></script>
+<script src="js/engine/niche.js"></script>
+<script src="js/engine/offers.js"></script>
+<script src="js/engine/troc.js"></script>
+<script src="js/engine/share.js"></script>
+<script src="js/engine/osm.js"></script>
+<script src="js/engine/ai.js"></script>
+<script src="js/engine/demo.js"></script>
+<script src="js/engine/export.js"></script>
+<script src="js/ui/dom.js"></script>
+<script src="js/ui/charts.js"></script>
+<script src="js/ui/app.js"></script>
+<script src="js/ui/screens-flow.js"></script>
+<script src="js/ui/screens-results.js"></script>
+<script src="js/ui/screens-offer.js"></script>
+<script src="js/ui/screens-home.js"></script>
+<script src="js/ui/screens-tools.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('logo').innerHTML = window.Cordes && Cordes.ui ? Cordes.ui.logo : '';</script>
+</body>
+</html>
