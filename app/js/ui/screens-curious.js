@@ -335,7 +335,7 @@
     var q = qzStore(), P = picksFor(r), liked = U.arr(q.liked), p = r.profile;
     ui._qzP = P;
     var html = '<div class="wrap"><div class="kicker">Ta corde cachée</div><h1 class="cordename" aria-live="polite">' + E(p.name) + '</h1><p class="lead">' + E(p.portrait) + '</p>';
-    html += '<div class="qres"><section class="panel"><div class="ph"><span class="t">Tes quatre axes</span></div><div class="pb chart">' + C.charts.axesSVG(r.axes, null, { size: 260 }) + '</div></section>' +
+    html += '<div class="qres"><section class="panel"><div class="ph"><span class="t">Tes quatre axes</span></div><div class="pb chart">' + C.charts.axesSVG(r.axes, null, { size: 290 }) + '</div></section>' +
       '<div class="picks">' + P.picks.map(function (x) {
         var on = liked.indexOf(x.s.id) >= 0;
         return '<article class="pick ' + x.role + '"><div class="spread"><span class="lbl">' + E(x.label) + '</span>' + ui.uniTag(x.s.universe) + '</div><h3 class="it">' + E(x.s.name) + '</h3>' +
@@ -440,16 +440,16 @@
       }
       if (x.loading) return '<div class="wrap"><div class="status"><span class="spin"></span>Lecture du résultat…</div></div>';
       if (!x.o) return '<div class="wrap narrow"><div class="note no" style="margin-top:30px"><span class="lbl">Lien incomplet</span><span class="sp">Ce lien a été coupé en route. Demander un nouveau lien, ou faire le test.</span></div><a class="btn primary" href="#/test" style="margin-top:14px">Faire le test</a></div>';
-      var them = C.quizScore(x.o.answers), tp = C.quizPicks(them, {}), name = x.o.name || 'Ton ami';
-      var html = '<div class="wrap"><div class="kicker">Ta corde cachée · résultat reçu</div><h1 class="h1 disp">La corde cachée de ' + E(name) + ' : <span class="accent">' + E(them.profile.name) + '</span></h1><p class="lead">' + E(them.profile.portrait) + '</p>' +
-        '<div class="ideas" style="margin-top:16px">' + tp.picks.map(function (p) { return '<article class="idea"><div class="spread"><span class="lbl">' + E(p.label) + '</span>' + ui.uniTag(p.s.universe) + '</div><h3 class="it">' + E(p.s.name) + '</h3><p class="is">En 1 h : ' + E(U.lc(p.oneHour)) + '</p></article>'; }).join('') + '</div>';
+      var them = C.quizScore(x.o.answers), tp = C.quizPicks(them, {}), name = x.o.name || 'ton ami', Name = name.charAt(0).toUpperCase() + name.slice(1);
+      var html = '<div class="wrap"><div class="kicker">Ta corde cachée · résultat reçu</div><h1 class="h1 disp">La corde cachée de ' + E(name) + ' : <span class="accent">' + E(them.profile.name) + '</span></h1><p class="lead">« ' + E(them.profile.portrait) + ' »</p>' +
+        '<div class="picks" style="margin-top:16px">' + tp.picks.map(function (p) { return '<article class="pick"><div class="spread"><span class="lbl">' + E(p.label) + '</span>' + ui.uniTag(p.s.universe) + '</div><h3 class="it">' + E(p.s.name) + '</h3><p class="is">En 1 h : ' + E(U.lc(p.oneHour)) + '</p></article>'; }).join('') + '</div>';
       var mine = quizRes();
       if (!mine) return html + '<div class="note int" style="margin-top:20px"><span class="lbl">Et toi ?</span><span class="sp">Fais le test pour comparer vos cordes et trouver ce que vous pourriez apprendre ensemble.</span></div><div class="row" style="margin-top:14px"><a class="btn primary lg" href="#/test" data-act="qzStartFromRecv">Faire le test</a></div></div>';
       var cmp = C.quizCompare(mine, them);
       if (ui._tcmpTrack !== code) { ui._tcmpTrack = code; C.track('test_compare'); }
       ui._together = cmp.together.map(function (s) { return s.id; });
-      html += '<div class="section-h"><span class="kicker">Comparaison</span><h2 class="h2">Toi, ' + E(mine.profile.name) + ' · ' + E(name) + ', ' + E(them.profile.name) + '</h2></div>' +
-        '<div class="grid2"><section class="panel"><div class="ph"><span class="t">Vos axes</span><span class="legend"><span><span class="sw" style="background:var(--accent)"></span>toi</span><span><span class="sw" style="border:1.5px dashed var(--int)"></span>' + E(name) + '</span></span></div><div class="pb chart">' + C.charts.axesSVG(mine.axes, them.axes, { size: 260 }) + '</div></section>' +
+      html += '<div class="section-h"><span class="kicker">Comparaison</span><h2 class="h2">Toi, ' + E(mine.profile.name) + ' · ' + E(Name) + ', ' + E(them.profile.name) + '</h2></div>' +
+        '<div class="grid2"><section class="panel"><div class="ph"><span class="t">Vos axes</span><span class="legend"><span><span class="sw" style="background:var(--accent)"></span>toi</span><span><span class="sw" style="border:1.5px dashed var(--int)"></span>' + E(name) + '</span></span></div><div class="pb chart">' + C.charts.axesSVG(mine.axes, them.axes, { size: 290 }) + '</div></section>' +
         '<section class="panel"><div class="ph"><span class="t">Ce que vous pourriez apprendre ensemble</span></div><div class="pb tight">' + cmp.together.map(function (s) { return '<div class="resitem"><div class="nm">' + E(s.name) + '</div>' + ui.uniTag(s.universe) + '<div class="d">En 1 h : ' + E(U.lc(s.levels[0])) + '</div></div>'; }).join('') +
         '<a class="btn primary" style="margin-top:14px" href="#/idees/amis" data-act="tTogether">Trouver une idée à vivre ensemble</a></div></section></div>';
       return html + '</div>';

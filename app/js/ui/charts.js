@@ -36,7 +36,7 @@
   // axes du test (social, physique, création, intellect) : un losange, un ou deux profils superposés
   CH.axesSVG = function (a, b, o) {
     o = o || {};
-    var S = o.size || 260, pad = 30, R = (S - 150) / 2, cx = S / 2, cy = S / 2, ax = C.QUIZ_AXES || [['so', 'Social'], ['ph', 'Physique'], ['cr', 'Création'], ['in', 'Intellect']];
+    var S = o.size || 260, pad = 30, R = (S - 140) / 2, cx = S / 2, cy = S / 2, ax = C.QUIZ_AXES || [['so', 'Social'], ['ph', 'Physique'], ['cr', 'Création'], ['in', 'Intellect']];
     var vals = [a, b].filter(Boolean).reduce(function (m, v) { ax.forEach(function (k) { m = Math.max(m, Math.abs(v[k[0]] || 0)); }); return m; }, 4);
     var pt = function (i, r) { var t = -Math.PI / 2 + i * Math.PI / 2; return [cx + Math.cos(t) * R * r, cy + Math.sin(t) * R * r]; };
     var rad = function (v) { return Math.max(0.06, Math.min(1, ((v || 0) + 1) / (vals + 1))); };

@@ -626,3 +626,4 @@ code{font:12px var(--f-mono);background:var(--panel-2);border:1px solid var(--li
 .qtiles{grid-template-columns:repeat(2,1fr)}@media (min-width:860px){.qtiles{grid-template-columns:repeat(3,1fr)}}
 .accent{color:var(--accent)}
 .frow.cf .meter b{opacity:.85}
+@media (max-width:979px){.qres>.panel{order:2}.qres .chart{min-height:0}}
