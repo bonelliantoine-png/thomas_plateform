@@ -1,0 +1,8189 @@
+{
+ "sector": "cuisine",
+ "categories": [
+  {
+   "id": "cuisine.boissons",
+   "name": "Boissons et bar",
+   "desc": "Café, thé, cocktails, vin, bière et boissons fermentées : tout ce qui se verse et se déguste.",
+   "subcategories": [
+    {
+     "id": "cuisine.boissons.cafe-the",
+     "name": "Café et thé",
+     "desc": "Extraire, servir et déguster café et thé."
+    },
+    {
+     "id": "cuisine.boissons.bar",
+     "name": "Cocktails et sans alcool",
+     "desc": "Cocktails classiques, mocktails, sirops et liqueurs maison."
+    },
+    {
+     "id": "cuisine.boissons.vin-biere",
+     "name": "Vin, bière et cidre",
+     "desc": "Déguster, accorder, brasser."
+    },
+    {
+     "id": "cuisine.boissons.ferment-boissons",
+     "name": "Boissons fermentées",
+     "desc": "Kombucha, kéfir et autres boissons vivantes."
+    }
+   ]
+  },
+  {
+   "id": "cuisine.boulange",
+   "name": "Pain, pâtisserie et chocolat",
+   "desc": "Pâtes levées, entremets, chocolat et douceurs.",
+   "subcategories": [
+    {
+     "id": "cuisine.boulange.pain",
+     "name": "Pains et viennoiseries",
+     "desc": "Levain, pâtes levées, croissants."
+    },
+    {
+     "id": "cuisine.boulange.patisserie",
+     "name": "Pâtisserie",
+     "desc": "Tartes, choux, macarons, entremets et gâteaux décorés."
+    },
+    {
+     "id": "cuisine.boulange.chocolat",
+     "name": "Chocolat et confiserie",
+     "desc": "Tempérage, bonbons, caramels, tablettes."
+    }
+   ]
+  },
+  {
+   "id": "cuisine.quotidien",
+   "name": "Cuisine du quotidien",
+   "desc": "Techniques de base, organisation, cuisine végétale et cuisine en famille.",
+   "subcategories": [
+    {
+     "id": "cuisine.quotidien.bases",
+     "name": "Techniques de base",
+     "desc": "Couteau, sauces, cuissons."
+    },
+    {
+     "id": "cuisine.quotidien.organisation",
+     "name": "Organisation et économies",
+     "desc": "Batch cooking, anti-gaspi, petit budget."
+    },
+    {
+     "id": "cuisine.quotidien.vegetal",
+     "name": "Cuisine végétale",
+     "desc": "Végétarien, vegan, protéines végétales."
+    },
+    {
+     "id": "cuisine.quotidien.famille",
+     "name": "Cuisine en famille et à tout âge",
+     "desc": "Cuisiner avec les enfants, pour bébé, pour les seniors."
+    }
+   ]
+  },
+  {
+   "id": "cuisine.monde",
+   "name": "Cuisines du monde",
+   "desc": "Asie, Méditerranée, Amériques, Afrique et régions de France.",
+   "subcategories": [
+    {
+     "id": "cuisine.monde.asie",
+     "name": "Asie",
+     "desc": "Raviolis, sushi, currys, nouilles."
+    },
+    {
+     "id": "cuisine.monde.mediterranee",
+     "name": "Méditerranée et Moyen-Orient",
+     "desc": "Pâtes fraîches, tajines, mezzés."
+    },
+    {
+     "id": "cuisine.monde.ameriques-afrique",
+     "name": "Amériques et Afrique",
+     "desc": "Tacos, ceviche, mafé, street food."
+    },
+    {
+     "id": "cuisine.monde.france",
+     "name": "Cuisine française et régionale",
+     "desc": "Bistrot, crêpes, plats mijotés."
+    }
+   ]
+  },
+  {
+   "id": "cuisine.conservation",
+   "name": "Fermentation et conservation",
+   "desc": "Lacto-fermentation, bocaux, miso, fromages et yaourts maison.",
+   "subcategories": [
+    {
+     "id": "cuisine.conservation.ferment",
+     "name": "Fermentation des aliments",
+     "desc": "Légumes lactofermentés, kimchi, miso."
+    },
+    {
+     "id": "cuisine.conservation.bocaux",
+     "name": "Conserves et confitures",
+     "desc": "Stérilisation, confitures, pickles."
+    },
+    {
+     "id": "cuisine.conservation.laitiers",
+     "name": "Produits laitiers maison",
+     "desc": "Yaourt, fromage frais, beurre."
+    }
+   ]
+  },
+  {
+   "id": "cuisine.feu-tables",
+   "name": "Feu et tables de fête",
+   "desc": "Grillades, fumage, apéro dînatoire, brunch, dessert de fête.",
+   "subcategories": [
+    {
+     "id": "cuisine.feu-tables.feu",
+     "name": "Feu et fumage",
+     "desc": "Barbecue, plancha, cuisine au feu de bois."
+    },
+    {
+     "id": "cuisine.feu-tables.tables",
+     "name": "Apéro, brunch et réceptions",
+     "desc": "Planches, bouchées, brunch, menus de fête."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "cuisine-latte-art",
+   "name": "Latte art",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.cafe-the",
+   "desc": "Dessiner dans la mousse de lait : cœur, tulipe, rosette.",
+   "audience": "25-40 ans urbains, amateurs de cafés de spécialité, cadeaux",
+   "skills": [
+    "Texturer le lait",
+    "Verser un cœur",
+    "Tulipe et rosette",
+    "Régler un espresso"
+   ],
+   "appSkills": [
+    "latte-art",
+    "cafe-filtre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cœur",
+     "goal": "Texturer le lait et verser un cœur reconnaissable",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tulipe et rosette",
+     "goal": "Verser une tulipe à trois couches et une rosette propre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régularité et contraste",
+     "goal": "Reproduire dix motifs de suite avec un lait stable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Motifs complexes et etching",
+     "goal": "Réaliser un cygne et un dessin au pic sur commande",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Préparer une compétition",
+     "goal": "Construire une routine de 6 min et former des baristas",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "coffee-shop",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cafe",
+    "dessin",
+    "convivial",
+    "geste",
+    "boisson"
+   ],
+   "competitors": [
+    "Funbooker",
+    "coffee shops",
+    "Ateliers de torréfacteurs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Résultat photographiable en 1 h, matériel fourni par le coffee shop. Les ateliers existants se vendent 85 à 150 € à Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cafe-filtre",
+   "name": "Café filtre et méthodes douces",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.cafe-the",
+   "desc": "Moudre, doser, extraire en V60, Aeropress ou chemex pour une tasse nette.",
+   "audience": "Amateurs de café, jeunes actifs, cadeaux",
+   "skills": [
+    "Moudre et doser",
+    "Recette V60",
+    "Aeropress",
+    "Lire un paquet de spécialité"
+   ],
+   "appSkills": [
+    "cafe-filtre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première V60",
+     "goal": "Doser, verser et obtenir une tasse nette en suivant une recette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comparer trois méthodes",
+     "goal": "Préparer le même café en V60, Aeropress et chemex et décrire les écarts",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Corriger son extraction",
+     "goal": "Ajuster mouture, température et ratio selon le goût obtenu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Recettes à la carte",
+     "goal": "Concevoir sa recette pour un café donné et la justifier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des hôtes café",
+     "goal": "Animer une dégustation comparée et former à l'extraction",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "coffee-shop",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cafe",
+    "the",
+    "geste",
+    "calme",
+    "boisson"
+   ],
+   "competitors": [
+    "Torréfacteurs",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Matériel léger, lieu évident chez les torréfacteurs. Moins visuel que le latte art donc moins viral, bonne deuxième corde.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cupping",
+   "name": "Dégustation de café (cupping)",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.cafe-the",
+   "desc": "Goûter à l'aveugle, nommer arômes, acidité et défauts.",
+   "audience": "Curieux de café, professionnels de la restauration",
+   "skills": [
+    "Protocole de cupping",
+    "Vocabulaire aromatique",
+    "Repérer les défauts",
+    "Comparer origines"
+   ],
+   "appSkills": [
+    "cafe-filtre",
+    "degustation-vin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Goûter comme un torréfacteur",
+     "goal": "Faire un cupping de trois cafés et noter les arômes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines et procédés",
+     "goal": "Relier un goût à son origine et à son procédé de lavage ou naturel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défauts et notes",
+     "goal": "Repérer les défauts et remplir une fiche de dégustation fiable",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      120,
+      185
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jury amateur",
+     "goal": "Classer six cafés à l'aveugle de façon reproductible",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer et former",
+     "goal": "Construire une session de cupping et former des animateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "coffee-shop",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cafe",
+    "science",
+    "reflexion",
+    "convivial",
+    "langue"
+   ],
+   "competitors": [
+    "Torréfacteurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public étroit mais fidèle, tarif correct. Se vend surtout comme complément à d'autres ateliers café.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-the-gongfu",
+   "name": "Thé : infusions et gongfu cha",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.cafe-the",
+   "desc": "Infuser un thé en gongfu, comprendre les familles de thés et leurs températures.",
+   "audience": "Adultes curieux, bien-être, seniors, cadeaux",
+   "skills": [
+    "Familles de thés",
+    "Gongfu cha",
+    "Températures et temps",
+    "Accords thé et douceurs"
+   ],
+   "appSkills": [
+    "the-infusions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières infusions",
+     "goal": "Infuser trois familles de thé avec bons temps et températures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gongfu cha",
+     "goal": "Mener une session gongfu avec plusieurs infusions successives",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un thé",
+     "goal": "Décrire un thé et ajuster l'infusion à ce qu'on goûte",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Composer une dégustation",
+     "goal": "Construire une séance thématique et un accord avec desserts",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte de salon de thé",
+     "goal": "Animer des cérémonies et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cafe",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "emotion"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "the",
+    "calme",
+    "bien-etre",
+    "convivial",
+    "voyage"
+   ],
+   "competitors": [
+    "Maisons de thé",
+    "Mariage Frères"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle et calme, offre de salons déjà présente mais peu d'ateliers pratiques. Panier moyen modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cocktails-classiques",
+   "name": "Cocktails classiques à la maison",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.bar",
+   "desc": "Shaker, mélanger et équilibrer les grands classiques sans matériel de pro.",
+   "audience": "Jeunes actifs, couples, EVJF, team building",
+   "skills": [
+    "Doser et équilibrer",
+    "Shaker et mélanger",
+    "Glace et dilution",
+    "Garnitures"
+   ],
+   "appSkills": [
+    "cocktails"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trois classiques",
+     "goal": "Réaliser un daiquiri, un old fashioned et un spritz équilibrés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équilibrer un sour",
+     "goal": "Corriger acidité et sucre d'un sour pour qu'il soit rond",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Créer sa carte",
+     "goal": "Écrire quatre recettes cohérentes avec leur logique d'équilibre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Variations et techniques",
+     "goal": "Maîtriser les techniques de glace, clarification et sirops maison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      190,
+      290
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Bartender hôte",
+     "goal": "Animer une soirée cocktails et former des hôtes bar",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      360,
+      550
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "domicile",
+    "cave"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cocktail",
+    "apero",
+    "convivial",
+    "fete",
+    "geste"
+   ],
+   "competitors": [
+    "Funbooker",
+    "Bars à cocktails",
+    "Wine and Paint"
+   ],
+   "regulated": "alcool",
+   "verdict": "prioritaire",
+   "why": "Forte demande et bon consentement à payer, déjà bien proposé en team building. Se démarque par le lien avec les produits locaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-mocktails",
+   "name": "Mixologie sans alcool",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.bar",
+   "desc": "Composer des boissons sans alcool aussi complexes qu'un cocktail : sirops, shrubs, infusions.",
+   "audience": "Jeunes actifs sobres, femmes enceintes, familles, entreprises",
+   "skills": [
+    "Sirops maison",
+    "Shrubs et vinaigres",
+    "Équilibre sans alcool",
+    "Dressage"
+   ],
+   "appSkills": [
+    "cocktails",
+    "the-infusions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trois mocktails",
+     "goal": "Préparer trois boissons sans alcool équilibrées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sirops et infusions",
+     "goal": "Fabriquer deux sirops et une infusion pour sa base",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Structure d'un mocktail",
+     "goal": "Remplacer l'alcool par amertume, acidité ou tanin",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carte sans alcool",
+     "goal": "Composer une carte de quatre boissons pour un événement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une carte sans alcool",
+     "goal": "Former des hôtes à vendre le zéro alcool",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "domicile",
+    "cave"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cocktail",
+    "bien-etre",
+    "convivial",
+    "gourmand",
+    "geste"
+   ],
+   "competitors": [
+    "Bars sans alcool",
+    "Wine and Paint"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Tendance forte du zéro alcool, peu d'offre de qualité en atelier, matériel et réglementation légers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-sirops-shrubs",
+   "name": "Sirops, shrubs et infusions maison",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.bar",
+   "desc": "Transformer fruits, herbes et épices en sirops et boissons concentrées.",
+   "audience": "Familles, jardiniers, seniors, cadeaux",
+   "skills": [
+    "Sirops de fruits",
+    "Cordiaux d'herbes",
+    "Shrubs",
+    "Conservation"
+   ],
+   "appSkills": [
+    "conserves-bocaux",
+    "the-infusions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier sirop",
+     "goal": "Fabriquer un sirop de saison et le mettre en bouteille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Herbes et fleurs",
+     "goal": "Réaliser un cordial de fleurs ou d'herbes du jardin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conserver sans risque",
+     "goal": "Stériliser et étiqueter pour six mois de conservation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme de saison",
+     "goal": "Concevoir quatre recettes de gamme cohérentes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier cueillette et sirop",
+     "goal": "Animer un atelier à partir de cueillettes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "jardin-partage",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "nature",
+    "plante",
+    "cadeau",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Ateliers anti-gaspi"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Public réel mais peu payant (on le fait à la maison). Intéressant en couplage cueillette ou jardin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-liqueurs-maison",
+   "name": "Rhums arrangés et liqueurs maison",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.bar",
+   "desc": "Macérer fruits et épices dans un alcool, doser le sucre, embouteiller.",
+   "audience": "Adultes 30-60 ans, cadeaux, convivialité",
+   "skills": [
+    "Choisir l'alcool",
+    "Macération",
+    "Dosage du sucre",
+    "Embouteillage"
+   ],
+   "appSkills": [
+    "cocktails"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier rhum arrangé",
+     "goal": "Préparer une macération et son étiquetage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Liqueurs de saison",
+     "goal": "Réaliser deux liqueurs et suivre la macération",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équilibrer un arrangé",
+     "goal": "Corriger sucre, durée et fruits selon la dégustation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme à offrir",
+     "goal": "Créer une gamme de quatre bouteilles cohérentes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier macération",
+     "goal": "Animer un atelier et former à la réglementation de la vente",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "domicile",
+    "cave"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "boisson",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cocktail",
+    "cadeau",
+    "gourmand",
+    "objet-souvenir",
+    "convivial"
+   ],
+   "competitors": [
+    "Boutiques de spiritueux"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Bon produit à offrir. La vente de bouteilles faites maison est encadrée : à garder pour la pratique personnelle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-degustation-vin",
+   "name": "Initiation à la dégustation du vin",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.vin-biere",
+   "desc": "Voir, sentir, goûter et décrire le vin avec un vocabulaire simple.",
+   "audience": "Jeunes actifs, couples, entreprises, touristes",
+   "skills": [
+    "Les quatre sens",
+    "Cépages et régions",
+    "Lecture d'étiquette",
+    "Vocabulaire"
+   ],
+   "appSkills": [
+    "degustation-vin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Goûter sans complexe",
+     "goal": "Décrire trois vins avec un vocabulaire simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cépages à l'aveugle",
+     "goal": "Reconnaître quatre cépages marquants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vignobles de France",
+     "goal": "Placer six régions et leurs styles à la dégustation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      275,
+      420
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire une carte et choisir",
+     "goal": "Choisir un vin pour un plat et un budget donnés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      270,
+      410
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une dégustation",
+     "goal": "Construire une séance et former des animateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      505,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 1,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cave",
+    "bar",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "vin",
+    "convivial",
+    "apero",
+    "langue",
+    "patrimoine"
+   ],
+   "competitors": [
+    "O'Chateau",
+    "Cavistes",
+    "Funbooker",
+    "Wine and Paint"
+   ],
+   "regulated": "alcool",
+   "verdict": "prioritaire",
+   "why": "Demande très large, bonne disposition à payer. Concurrence dense, mais qualité inégale et peu de progression sur plusieurs niveaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-vins-nature",
+   "name": "Vins nature et vignerons",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.vin-biere",
+   "desc": "Comprendre le vin sans intrants, goûter des cuvées, rencontrer les vignerons.",
+   "audience": "25-45 ans urbains, couples, curieux",
+   "skills": [
+    "Vinification naturelle",
+    "Défauts vs signature",
+    "Rencontre vigneron",
+    "Accords"
+   ],
+   "appSkills": [
+    "degustation-vin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Qu'est-ce que le vin nature",
+     "goal": "Goûter cinq cuvées et distinguer sulfites, levures et filtration",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Défauts et signatures",
+     "goal": "Différencier un vin vivant d'un vin fautif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régions et vignerons",
+     "goal": "Situer six domaines et raconter leur approche",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      275,
+      420
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Composer une soirée",
+     "goal": "Choisir et accorder une sélection de six bouteilles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      270,
+      410
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un salon",
+     "goal": "Animer une rencontre avec un vigneron et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      505,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cave",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "vin",
+    "convivial",
+    "nature",
+    "voyage",
+    "apero"
+   ],
+   "competitors": [
+    "Cavistes nature",
+    "Bars à vins"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Public engagé et prêt à payer, mais lieu et caviste partenaire indispensables. Offre déjà présente en cave.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-accords-mets-vins",
+   "name": "Accords mets et vins",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.vin-biere",
+   "desc": "Associer plats et boissons pour créer des accords justes et surprenants.",
+   "audience": "Couples, gourmets, entreprises",
+   "skills": [
+    "Principes d'accord",
+    "Fromages et vins",
+    "Plats du quotidien",
+    "Accords surprise"
+   ],
+   "appSkills": [
+    "degustation-vin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Quatre accords simples",
+     "goal": "Tester quatre accords classiques et dire pourquoi ils marchent",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fromages et vins",
+     "goal": "Associer six fromages à trois vins avec méthode",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Accords inattendus",
+     "goal": "Concevoir un accord original et l'argumenter",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      275,
+      420
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu accordé",
+     "goal": "Composer un menu de quatre plats et ses boissons",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      270,
+      410
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Sommelier d'un soir",
+     "goal": "Animer un repas accordé et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      505,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cave",
+    "restaurant",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "vin",
+    "gourmand",
+    "convivial",
+    "apero",
+    "reflexion"
+   ],
+   "competitors": [
+    "Cavistes",
+    "Restaurants",
+    "Funbooker"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Cible gourmets prêts à payer, assez bien servie en cave. À privilégier en dîner mêlant cuisine et boisson.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-brassage-biere",
+   "name": "Brassage de bière amateur",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.vin-biere",
+   "desc": "Brasser 5 à 20 litres chez soi : empâtage, houblonnage, fermentation.",
+   "audience": "25-45 ans, bricoleurs, groupes d'amis",
+   "skills": [
+    "Empâter et filtrer",
+    "Houblonner",
+    "Fermenter",
+    "Mettre en bouteille"
+   ],
+   "appSkills": [
+    "brassage-biere"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier brassin",
+     "goal": "Réaliser un brassin simple de bout en bout avec un brasseur",
+     "format": "atelier",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Recette maison",
+     "goal": "Adapter une recette de base en changeant malts et houblons",
+     "format": "atelier",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Maîtriser la fermentation",
+     "goal": "Contrôler température et hygiène pour un résultat net",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créer sa recette",
+     "goal": "Concevoir une recette originale et la reproduire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Brasser pour les autres",
+     "goal": "Animer un brassage collectif et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cave",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "boisson",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "biere",
+    "fabrication",
+    "convivial",
+    "science",
+    "fete"
+   ],
+   "competitors": [
+    "Brasseries",
+    "Kits de brassage",
+    "Funbooker"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Public passionné, long (une demi-journée), brasseur local nécessaire. Marge correcte, concurrence faible en ateliers pratiques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-biere-styles",
+   "name": "Bières artisanales : styles et dégustation",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.vin-biere",
+   "desc": "Reconnaître IPA, stout, saison et lambic, et accorder avec des plats.",
+   "audience": "Jeunes actifs, amateurs de bière, entreprises",
+   "skills": [
+    "Familles de bières",
+    "Houblons et malts",
+    "Service et verres",
+    "Accords"
+   ],
+   "appSkills": [
+    "brassage-biere",
+    "degustation-vin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Tour des styles",
+     "goal": "Goûter six styles et dire ce qui les distingue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Houblons, malts et levures",
+     "goal": "Relier un goût à un ingrédient",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Service et conservation",
+     "goal": "Servir à bonne température dans le bon verre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Accords bière et plats",
+     "goal": "Composer un menu bière en quatre temps",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      190,
+      290
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une dégustation",
+     "goal": "Construire une session et former des animateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      360,
+      550
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cave",
+    "restaurant"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "biere",
+    "convivial",
+    "apero",
+    "langue",
+    "fete"
+   ],
+   "competitors": [
+    "Bars à bières",
+    "Brasseries",
+    "Funbooker"
+   ],
+   "regulated": "alcool",
+   "verdict": "a-tester",
+   "why": "Public large, peu de progression, lieu partenaire facile (bar à bières). Surtout une porte d'entrée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-kombucha",
+   "name": "Kombucha maison",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.ferment-boissons",
+   "desc": "Fermenter son thé : scoby, première et seconde fermentation, aromatisation.",
+   "audience": "25-45 ans, santé et bien-être, familles",
+   "skills": [
+    "Cultiver un scoby",
+    "Première fermentation",
+    "Seconde fermentation",
+    "Hygiène"
+   ],
+   "appSkills": [
+    "fermentation-lacto",
+    "the-infusions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier kombucha",
+     "goal": "Lancer une première fermentation avec son scoby",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Aromatiser",
+     "goal": "Réussir une seconde fermentation pétillante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Maîtriser acidité et pétillance",
+     "goal": "Contrôler durée, température et pression",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme de saison",
+     "goal": "Concevoir trois recettes et les stabiliser",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier fermentation",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "the",
+    "bien-etre",
+    "convivial",
+    "zero-dechet",
+    "gourmand"
+   ],
+   "competitors": [
+    "Kombucheries",
+    "Ateliers de fermentation"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Boom du kombucha, mais public qui se débrouille seul après un atelier. Bon couplage avec la lacto-fermentation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-kefir",
+   "name": "Kéfir de fruits et de lait",
+   "sector": "cuisine",
+   "category": "cuisine.boissons",
+   "subcategory": "cuisine.boissons.ferment-boissons",
+   "desc": "Cultiver des grains de kéfir et obtenir des boissons pétillantes.",
+   "audience": "Familles, seniors curieux de fermentation",
+   "skills": [
+    "Entretenir ses grains",
+    "Kéfir d'eau",
+    "Kéfir de lait",
+    "Aromatisation"
+   ],
+   "appSkills": [
+    "fermentation-lacto",
+    "fromage-yaourt-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers grains",
+     "goal": "Démarrer et nourrir ses grains de kéfir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Kéfir d'eau pétillant",
+     "goal": "Obtenir deux saveurs pétillantes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kéfir de lait",
+     "goal": "Fabriquer un kéfir de lait et un fromage frais",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dépanner ses grains",
+     "goal": "Diagnostiquer un grain faible et le relancer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier fermentation",
+     "goal": "Former des hôtes et transmettre des grains",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      135
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "boisson"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "zero-dechet",
+    "famille",
+    "gourmand",
+    "nature"
+   ],
+   "competitors": [
+    "Ateliers de fermentation"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Intérêt réel mais très faible dépense : les grains se partagent gratuitement. Atelier d'appoint.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-pain-levain",
+   "name": "Pain au levain",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.pain",
+   "desc": "Faire son levain, pétrir, façonner et cuire un pain croustillant à la maison.",
+   "audience": "25-50 ans, familles, curieux de fermentation",
+   "skills": [
+    "Rafraîchir le levain",
+    "Pétrissage et pliage",
+    "Façonnage",
+    "Cuisson en cocotte"
+   ],
+   "appSkills": [
+    "pain-levain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier pain",
+     "goal": "Fabriquer un pain au levain et l'emporter cuit",
+     "format": "atelier",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rafraîchir et conduire",
+     "goal": "Entretenir un levain et planifier sa fournée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Hydratation et alvéolage",
+     "goal": "Ajuster hydratation et pliages pour une mie ouverte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pains spéciaux",
+     "goal": "Réaliser seigle, complet et baguette de tradition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Boulanger hôte",
+     "goal": "Animer un atelier et former des hôtes boulanger",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "convivial",
+    "geste",
+    "famille",
+    "fabrication"
+   ],
+   "competitors": [
+    "Boulangers",
+    "Ateliers Cook'n Pain"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Demande large et durable, long mais très valorisant. Concurrence modérée, bon lien avec un boulanger de quartier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-focaccia-pizza",
+   "name": "Pizza napolitaine et focaccia",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.pain",
+   "desc": "Pâtes longues, hydratation et cuisson à haute température pour pizzas et pains plats.",
+   "audience": "Familles, amis, entreprises",
+   "skills": [
+    "Pâte à haute hydratation",
+    "Étaler sans rouleau",
+    "Cuisson au four ou à la pierre",
+    "Garnitures"
+   ],
+   "appSkills": [
+    "pizza-napolitaine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma pizza napolitaine",
+     "goal": "Étaler et cuire une pizza qui cloque bien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pâte longue",
+     "goal": "Préparer une pâte à 24 h et la maîtriser",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisson maîtrisée",
+     "goal": "Obtenir un bord léopard au four domestique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pizzas de saison",
+     "goal": "Composer six garnitures et cuire en série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Pizzaïolo hôte",
+     "goal": "Animer une soirée pizza et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "restaurant",
+    "domicile",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "gourmand",
+    "famille",
+    "fete",
+    "geste"
+   ],
+   "competitors": [
+    "Pizzerias",
+    "Cuisine d'amis"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Demande énorme, résultat immédiat, mangeable à plusieurs. Idéal soirée, famille et entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-viennoiserie-croissant",
+   "name": "Croissants et brioches",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.pain",
+   "desc": "Tourer une pâte, former des croissants et cuire des brioches pur beurre.",
+   "audience": "Pâtissiers amateurs, couples, familles",
+   "skills": [
+    "Beurrage et tourage",
+    "Façonnage",
+    "Pousse et cuisson",
+    "Brioche tressée"
+   ],
+   "appSkills": [
+    "viennoiserie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Brioche du dimanche",
+     "goal": "Réaliser une brioche moelleuse et la cuire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pâte feuilletée levée",
+     "goal": "Tourer sans casser le beurre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Croissants façonnés",
+     "goal": "Faire des croissants alvéolés et dorés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Viennoiseries variées",
+     "goal": "Produire pains au chocolat et chaussons",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur viennoiserie",
+     "goal": "Animer un stage tourage et former",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 2,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "geste",
+    "famille",
+    "cadeau",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de boulangers",
+    "Chefs pâtissiers"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Très gourmand mais technique : le résultat ne vient qu'au niveau 2. Demande forte en week-end.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-tartes-cremes",
+   "name": "Tartes, crèmes et pâtes de base",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.patisserie",
+   "desc": "Pâte sablée, crème pâtissière et tarte aux fruits comme socle de la pâtisserie.",
+   "audience": "Débutants, familles, étudiants",
+   "skills": [
+    "Pâtes sablée et brisée",
+    "Crème pâtissière",
+    "Cuisson à blanc",
+    "Dressage"
+   ],
+   "appSkills": [
+    "patisserie-francaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première tarte",
+     "goal": "Réaliser une tarte aux fruits avec crème pâtissière",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les trois pâtes",
+     "goal": "Maîtriser sablée, brisée et sucrée sans se tromper",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Crèmes et textures",
+     "goal": "Réaliser crème au beurre, mousseline et ganache",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tarte signature",
+     "goal": "Créer une tarte personnelle et sa version industrielle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef pâtissier hôte",
+     "goal": "Animer un cours de base et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "convivial",
+    "famille",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers de pâtisserie",
+    "Ladurée",
+    "Cours Ferrandi"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Forte demande, base qui ouvre à toute la pâtisserie, marché bien rempli mais offre peu progressive.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-macarons",
+   "name": "Macarons",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.patisserie",
+   "desc": "Réussir coques, ganaches et pieds réguliers, avec méthode et patience.",
+   "audience": "Femmes 25-50 ans, EVJF, cadeaux",
+   "skills": [
+    "Meringue italienne",
+    "Macaronnage",
+    "Pieds et cuisson",
+    "Ganaches"
+   ],
+   "appSkills": [
+    "patisserie-francaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers macarons",
+     "goal": "Réaliser une fournée de coques lisses",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pieds réguliers",
+     "goal": "Contrôler macaronnage et cuisson",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Saveurs et ganaches",
+     "goal": "Concevoir trois ganaches équilibrées",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme saisonnière",
+     "goal": "Réaliser une boîte de huit saveurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier macarons",
+     "goal": "Animer un cours et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 4,
+    "space": 1,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "cadeau",
+    "fete",
+    "convivial",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de pâtisserie",
+    "Funbooker"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Très présent déjà sur les plateformes d'activités, techniquement exigeant et saturé. À ne pas prioriser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-choux-eclairs",
+   "name": "Pâte à choux, éclairs et religieuses",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.patisserie",
+   "desc": "Pocher, cuire et garnir des choux en versions salées et sucrées.",
+   "audience": "Pâtissiers amateurs, gourmands",
+   "skills": [
+    "Pâte à choux",
+    "Pochage",
+    "Crèmes de garniture",
+    "Glaçage"
+   ],
+   "appSkills": [
+    "patisserie-francaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers choux",
+     "goal": "Cuire des choux gonflés et creux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Éclairs et religieuses",
+     "goal": "Pocher des formes régulières et les garnir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Crèmes et glaçages",
+     "goal": "Réaliser crème et glaçage au chocolat",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carte de saison",
+     "goal": "Réaliser six parfums en série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte pâtisserie",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "geste",
+    "famille",
+    "convivial",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers de pâtisserie"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Peu différenciant face aux ateliers pâtisserie existants, mais facile à intégrer comme module.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-entremets",
+   "name": "Entremets et pâtisserie moderne",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.patisserie",
+   "desc": "Monter un entremets en couches : biscuit, croustillant, mousse et glaçage miroir.",
+   "audience": "Pâtissiers confirmés, gourmets",
+   "skills": [
+    "Mousses et inserts",
+    "Glaçage miroir",
+    "Montage et démoulage",
+    "Décor"
+   ],
+   "appSkills": [
+    "patisserie-francaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier entremets",
+     "goal": "Monter un entremets simple deux textures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Insert et croustillant",
+     "goal": "Intégrer insert et croustillant sans fuite",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Glaçage miroir",
+     "goal": "Réussir un glaçage brillant et régulier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entremets signature",
+     "goal": "Composer un entremets original de six textures",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Stage chef",
+     "goal": "Animer un stage et former des pâtissiers",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "cadeau",
+    "fete",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ferrandi",
+    "Ateliers de pâtisserie"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Technique, long et coûteux en matériel : public restreint, mais prêt à payer plus cher.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cake-design",
+   "name": "Cake design et gâteaux décorés",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.patisserie",
+   "desc": "Recouvrir, dresser et décorer un gâteau pour les anniversaires.",
+   "audience": "Parents, anniversaires, entreprises créatives",
+   "skills": [
+    "Ganache et crème",
+    "Pâte à sucre",
+    "Montage",
+    "Décor modelé"
+   ],
+   "appSkills": [
+    "cake-design"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gâteau d'anniversaire",
+     "goal": "Recouvrir et décorer un gâteau simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pâte à sucre",
+     "goal": "Modeler fleurs et figurines de base",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Montage en étages",
+     "goal": "Monter un gâteau de trois étages stable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Wedding cake",
+     "goal": "Concevoir et livrer un gâteau personnalisé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur décor",
+     "goal": "Animer un stage et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "fete",
+    "famille",
+    "cadeau",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers cake design"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Beau potentiel pour les parents et les fêtes, mais cible spécialisée et matériel plus cher.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-chocolat-bonbons",
+   "name": "Bonbons de chocolat et ganaches",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.chocolat",
+   "desc": "Tempérer le chocolat, mouler et fourrer des bonbons à offrir.",
+   "audience": "Familles, cadeaux de fin d'année, entreprises",
+   "skills": [
+    "Tempérage",
+    "Ganaches",
+    "Moulage",
+    "Coloration"
+   ],
+   "appSkills": [
+    "chocolat-confiserie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers bonbons",
+     "goal": "Tempérer et mouler dix bonbons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ganaches et pralinés",
+     "goal": "Réaliser trois ganaches équilibrées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Moulage et finition",
+     "goal": "Obtenir des coques brillantes et régulières",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Boîte signature",
+     "goal": "Créer une boîte de saveurs originales",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier chocolat",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "enfants"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "cadeau",
+    "fete",
+    "famille",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de chocolatiers",
+    "Funbooker"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Pic de demande autour des fêtes, résultat à offrir, matériel modeste. Marché assez occupé mais très porteur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-bean-to-bar",
+   "name": "Chocolat bean to bar",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.chocolat",
+   "desc": "Passer de la fève à la tablette : torréfaction, broyage, conchage.",
+   "audience": "Gourmets, curieux de procédés",
+   "skills": [
+    "Torréfier les fèves",
+    "Broyer et concher",
+    "Tempérer",
+    "Moulage"
+   ],
+   "appSkills": [
+    "chocolat-confiserie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "De la fève à la tablette",
+     "goal": "Fabriquer une tablette à partir de fèves",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Origines",
+     "goal": "Comparer trois fèves et décrire leurs notes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Torréfaction maîtrisée",
+     "goal": "Ajuster profil de torréfaction et finesse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tablette d'auteur",
+     "goal": "Créer deux recettes originales",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      190,
+      290
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier fabrication",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      360,
+      550
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 2,
+    "supply": 1,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "cuisine-pro",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "enfants"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "science",
+    "fabrication",
+    "cadeau",
+    "langue"
+   ],
+   "competitors": [
+    "Chocolatiers bean to bar"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Peu de gens, matériel plus coûteux, durée longue. Niche pour passionnés, pas pour le gros de la demande.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-caramel-confiserie",
+   "name": "Caramels, nougats et confiseries",
+   "sector": "cuisine",
+   "category": "cuisine.boulange",
+   "subcategory": "cuisine.boulange.chocolat",
+   "desc": "Cuire un sucre, faire des caramels, guimauves et nougats.",
+   "audience": "Familles, enfants, cadeaux",
+   "skills": [
+    "Cuisson du sucre",
+    "Caramels",
+    "Guimauves",
+    "Emballage"
+   ],
+   "appSkills": [
+    "chocolat-confiserie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Caramels tendres",
+     "goal": "Cuire un caramel et le couper",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Guimauves et pâtes de fruits",
+     "goal": "Réaliser deux confiseries souples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sucre cuit",
+     "goal": "Maîtriser les paliers de cuisson du sucre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme de Noël",
+     "goal": "Concevoir une boîte de confiseries",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier confiseur",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 1,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "cadeau",
+    "famille",
+    "fete",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Très bon pour les familles et les fêtes, concurrence faible et matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-couteau-bases",
+   "name": "Couteau et techniques de base",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.bases",
+   "desc": "Tenir un couteau, tailler en brunoise, émincer, lever des filets.",
+   "audience": "Étudiants, jeunes actifs, couples",
+   "skills": [
+    "Tenue du couteau",
+    "Tailles de base",
+    "Mise en place",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "techniques-couteau"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Couteau en confiance",
+     "goal": "Tailler oignon, carotte et herbes avec une tenue sûre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mise en place",
+     "goal": "Préparer une mise en place complète pour trois plats",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisiner vite",
+     "goal": "Enchaîner quatre tailles en temps limité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Techniques de chef",
+     "goal": "Lever, découper volaille et poisson proprement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur geste",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "geste",
+    "convivial",
+    "ville",
+    "zero-dechet",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de cuisine",
+    "Cours Atelier des Chefs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel mais peu spectaculaire, attire surtout les débutants. Solide en entrée de gamme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-sauces-meres",
+   "name": "Sauces et fonds de cuisine",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.bases",
+   "desc": "Maîtriser vinaigrette, béchamel, jus et émulsions pour cuisiner sans recette.",
+   "audience": "Jeunes actifs, couples",
+   "skills": [
+    "Émulsions",
+    "Roux",
+    "Réductions",
+    "Assaisonnement"
+   ],
+   "appSkills": [
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq sauces de base",
+     "goal": "Réussir vinaigrette, mayonnaise, béchamel, jus et sauce tomate",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Émulsions stables",
+     "goal": "Corriger une sauce qui tourne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réduire et lier",
+     "goal": "Concevoir une sauce à partir de ce qu'on a",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Assaisonner juste",
+     "goal": "Équilibrer sel, acidité, gras et sucre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine",
+     "goal": "Former des hôtes sur les bases",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 1,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "geste",
+    "science",
+    "convivial",
+    "reflexion"
+   ],
+   "competitors": [
+    "Écoles de cuisine"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais sans désir fort : se vend mal seul. À intégrer à d'autres ateliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuissons-viande-poisson",
+   "name": "Cuissons de la viande et du poisson",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.bases",
+   "desc": "Saisir, rôtir, pocher : réussir ses cuissons au point.",
+   "audience": "Amateurs, couples, bricoleurs de cuisine",
+   "skills": [
+    "Saisir",
+    "Rôtir",
+    "Pocher",
+    "Repos et découpe"
+   ],
+   "appSkills": [
+    "techniques-couteau"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un steak juste saignant",
+     "goal": "Cuire une viande à la bonne température",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poissons et crustacés",
+     "goal": "Cuire poisson et coquillages sans les sécher",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rôtir et braiser",
+     "goal": "Réussir un rôti et un plat mijoté",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cuisson basse température",
+     "goal": "Utiliser sonde et sous-vide à bon escient",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur cuissons",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 1,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "gout"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "geste",
+    "science",
+    "convivial",
+    "reflexion"
+   ],
+   "competitors": [
+    "Écoles de cuisine"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Demande moyenne, matériel de cuisson spécifique et risque sanitaire. Réservé à un partenaire équipé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-batch-cooking",
+   "name": "Batch cooking et organisation de repas",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.organisation",
+   "desc": "Cuisiner en une session les repas de la semaine, avec liste, stockage et recettes.",
+   "audience": "Actifs pressés, familles, étudiants",
+   "skills": [
+    "Planifier un menu",
+    "Liste de courses",
+    "Cuisson groupée",
+    "Stockage"
+   ],
+   "appSkills": [
+    "batch-cooking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma semaine en 2 h",
+     "goal": "Préparer cinq repas en une session",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Planifier et acheter",
+     "goal": "Établir un menu et une liste en 20 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Varier sans s'ennuyer",
+     "goal": "Décliner une base en trois plats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Budget et nutrition",
+     "goal": "Tenir un budget cible avec repas équilibrés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte organisation",
+     "goal": "Former des hôtes au coaching repas",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "famille",
+    "zero-dechet",
+    "maison",
+    "argent"
+   ],
+   "competitors": [
+    "Blogs et applis",
+    "Ateliers cuisine entreprise"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Besoin quotidien très fort, mais forte substitution gratuite en ligne. Fonctionne bien en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-anti-gaspi",
+   "name": "Cuisine anti-gaspi",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.organisation",
+   "desc": "Cuisiner fanes, épluchures, restes et fonds de frigo pour ne rien jeter.",
+   "audience": "Familles, étudiants, jeunes actifs, entreprises",
+   "skills": [
+    "Fanes et épluchures",
+    "Restes",
+    "Bouillons",
+    "Conservation"
+   ],
+   "appSkills": [
+    "anti-gaspi"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Zéro épluchure",
+     "goal": "Cuisiner un plat complet avec les parties souvent jetées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Restes du frigo",
+     "goal": "Composer un repas avec ce qui reste",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bouillons et pestos",
+     "goal": "Fabriquer fonds et pestos de fanes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan anti-gaspi",
+     "goal": "Concevoir son organisation de frigo",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier anti-gaspi",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "zero-dechet",
+    "gourmand",
+    "famille",
+    "maison",
+    "argent"
+   ],
+   "competitors": [
+    "Associations anti-gaspi",
+    "Too Good To Go"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Cause forte mais très faible consentement à payer : on se sent déjà informé. Bon pour des financements associatifs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-petit-budget",
+   "name": "Cuisine étudiante à petit budget",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.organisation",
+   "desc": "Cuisiner équilibré avec 4 € par repas : bases, courses, matériel minimal.",
+   "audience": "Étudiants, jeunes en premier logement",
+   "skills": [
+    "Courses malines",
+    "Plats de base",
+    "Matériel minimal",
+    "Cuisiner à plusieurs"
+   ],
+   "appSkills": [
+    "batch-cooking",
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq plats pour moins de 4 €",
+     "goal": "Cuisiner cinq recettes de base avec peu de matériel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courses malines",
+     "goal": "Faire un panier hebdomadaire sous 25 €",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisiner à plusieurs",
+     "goal": "Organiser un repas collectif tournant",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan de repas",
+     "goal": "Planifier le mois en variant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte de résidence",
+     "goal": "Animer en résidence étudiante",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      135
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 0,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "ecole",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "argent",
+    "gourmand",
+    "famille",
+    "ville",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations étudiantes",
+    "Crous"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande réelle, mais public sans budget. À financer par les résidences ou les écoles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-vegetarienne",
+   "name": "Cuisine végétarienne du quotidien",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.vegetal",
+   "desc": "Cuisiner des légumes et légumineuses variés, rassasiants et savoureux.",
+   "audience": "Flexitariens, familles, jeunes actifs",
+   "skills": [
+    "Cuisson des légumes",
+    "Légumineuses",
+    "Assaisonnement",
+    "Menus"
+   ],
+   "appSkills": [
+    "cuisine-vegetarienne",
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un repas sans viande",
+     "goal": "Préparer un repas complet végétarien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Légumineuses et céréales",
+     "goal": "Combiner protéines et céréales",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Saveurs et textures",
+     "goal": "Rendre un plat végétal gourmand",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menus de la semaine",
+     "goal": "Composer cinq jours équilibrés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte végétal",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "cuisine-pro",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "famille",
+    "nature",
+    "convivial",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers vegan",
+    "Livres de cuisine"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très porteur, public sensible aux thèmes durables. Peu d'ateliers de qualité à progression claire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-patisserie-vegan",
+   "name": "Pâtisserie vegan et sans gluten",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.vegetal",
+   "desc": "Remplacer œufs, beurre et gluten sans perdre le plaisir.",
+   "audience": "Vegans, allergiques, parents, curieux",
+   "skills": [
+    "Substituts d'œufs",
+    "Textures",
+    "Farines alternatives",
+    "Cuisson"
+   ],
+   "appSkills": [
+    "patisserie-francaise",
+    "cuisine-vegetarienne"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gâteau sans œuf",
+     "goal": "Réaliser un gâteau moelleux sans œuf ni beurre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Farines sans gluten",
+     "goal": "Choisir et mélanger trois farines",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Crèmes végétales",
+     "goal": "Réaliser crème et mousse végétales",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pâtisserie complète",
+     "goal": "Composer un entremets sans allergènes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur vegan",
+     "goal": "Animer un stage et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "famille",
+    "soin",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers pâtisserie vegan"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Besoin réel (allergies, régimes) avec peu d'offre de qualité. Précision indispensable sur les allergènes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-tofu-tempeh",
+   "name": "Tofu, tempeh et protéines végétales",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.vegetal",
+   "desc": "Faire son tofu, son tempeh ou son seitan et les cuisiner.",
+   "audience": "Végétariens, curieux de fermentation",
+   "skills": [
+    "Faire son tofu",
+    "Fermenter un tempeh",
+    "Seitan",
+    "Marinades"
+   ],
+   "appSkills": [
+    "cuisine-vegetarienne",
+    "fermentation-lacto"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tofu",
+     "goal": "Cailler et presser un tofu maison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tempeh maison",
+     "goal": "Fermenter un tempeh et le cuisiner",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Marinades et textures",
+     "goal": "Rendre un tofu croustillant ou fondant",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu protéiné",
+     "goal": "Composer un repas végétal riche en protéines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier protéines végétales",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "nature",
+    "science",
+    "convivial",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers vegan"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Public enthousiaste mais petit. Bon pour des communautés engagées, pas pour du grand public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-enfants",
+   "name": "Cuisine avec les enfants",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.famille",
+   "desc": "Cuisiner avec des enfants de 4 à 12 ans : recettes simples, gestes adaptés, fierté du résultat.",
+   "audience": "Parents, enfants 4-12 ans, anniversaires",
+   "skills": [
+    "Gestes adaptés",
+    "Hygiène",
+    "Recettes courtes",
+    "Dressage"
+   ],
+   "appSkills": [
+    "cuisiner-legumes",
+    "pates-fraiches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers gestes",
+     "goal": "Réaliser une recette simple avec des enfants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Recettes salées",
+     "goal": "Cuisiner un plat complet en autonomie guidée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pâtisserie en famille",
+     "goal": "Réaliser un gâteau d'anniversaire à plusieurs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Goûter de fête",
+     "goal": "Organiser un goûter cuisiné",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur famille",
+     "goal": "Former des hôtes à encadrer les enfants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "enfants",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "gout"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "gourmand",
+    "fete",
+    "convivial",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers enfants",
+    "Petits Chefs"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Demande forte, panier élevé en anniversaire, mais encadrement de mineurs : adulte référent obligatoire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-diversification-bebe",
+   "name": "Cuisine pour bébé et diversification",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.famille",
+   "desc": "Introduire les aliments, préparer des purées, des finger foods et des repas à partager.",
+   "audience": "Parents de nourrissons, futurs parents",
+   "skills": [
+    "Étapes de diversification",
+    "Textures",
+    "Finger foods",
+    "Allergènes"
+   ],
+   "appSkills": [
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières purées",
+     "goal": "Préparer et conserver des purées maison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Menus de 6 à 12 mois",
+     "goal": "Composer des repas équilibrés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Finger foods",
+     "goal": "Préparer des bouchées adaptées",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Famille et bébé",
+     "goal": "Cuisiner un repas partagé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur parentalité",
+     "goal": "Animer en groupe de parents",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "toucher"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "soin",
+    "gourmand",
+    "maison",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Pédiatres",
+    "Associations parentales"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Demande ciblée, sérieux requis et risque de conseils de santé. À réserver à un professionnel formé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-seniors-solo",
+   "name": "Cuisiner pour soi quand on vit seul",
+   "sector": "cuisine",
+   "category": "cuisine.quotidien",
+   "subcategory": "cuisine.quotidien.famille",
+   "desc": "Cuisiner de petites portions avec plaisir, repas simples et variés.",
+   "audience": "Seniors, personnes seules, veufs",
+   "skills": [
+    "Petites portions",
+    "Plats simples",
+    "Congélation",
+    "Convivialité"
+   ],
+   "appSkills": [
+    "batch-cooking",
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un bon repas pour moi",
+     "goal": "Préparer un repas complet en petite quantité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Menus d'une semaine",
+     "goal": "Planifier cinq repas variés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Recettes de partage",
+     "goal": "Cuisiner pour inviter à plusieurs",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cercle de table",
+     "goal": "Tenir un cercle de repas régulier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur de table",
+     "goal": "Former des hôtes de repas partagés",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      135
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "parole"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "solidarite",
+    "convivial",
+    "gourmand",
+    "famille",
+    "maison"
+   ],
+   "competitors": [
+    "Centres sociaux",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utilité sociale forte, très peu de revenu direct. Financement par mairies et caisses de retraite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-raviolis-asiatiques",
+   "name": "Raviolis et dumplings asiatiques",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.asie",
+   "desc": "Pâte, farce, pliage : gyoza, jiaozi, xiaolongbao.",
+   "audience": "Familles, jeunes actifs, couples, touristes",
+   "skills": [
+    "Pâte de raviolis",
+    "Farces",
+    "Pliages",
+    "Cuisson"
+   ],
+   "appSkills": [
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers raviolis",
+     "goal": "Plier et cuire dix gyoza",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pâte maison",
+     "goal": "Rouler une pâte fine et la fourrer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soupes et vapeur",
+     "goal": "Cuire à la poêle, à la vapeur et en soupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gammes régionales",
+     "goal": "Réaliser quatre farces régionales",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine asiatique",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "convivial",
+    "geste",
+    "famille"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde",
+    "Funbooker"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Très gourmand, résultat à plusieurs mains, matériel simple. Concurrence présente, mais excellent format convivial.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-sushi-japonais",
+   "name": "Sushis, makis et cuisine japonaise",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.asie",
+   "desc": "Cuire le riz, préparer le poisson, rouler et dresser.",
+   "audience": "Couples, amis, entreprises",
+   "skills": [
+    "Riz à sushi",
+    "Découpe du poisson",
+    "Roulage",
+    "Sauces"
+   ],
+   "appSkills": [
+    "sushi",
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Makis et nigiris",
+     "goal": "Rouler dix makis et mouler des nigiris",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Riz parfait",
+     "goal": "Cuire et assaisonner un riz à sushi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Poissons et sécurité",
+     "goal": "Choisir et découper en sécurité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu japonais",
+     "goal": "Composer un repas de quatre plats",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine japonaise",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "convivial",
+    "geste",
+    "voyage"
+   ],
+   "competitors": [
+    "Ateliers sushi",
+    "Funbooker"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Demande énorme, fortes marges, mais déjà très présent et exigeant côté sécurité du poisson cru.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-curries-thai-indien",
+   "name": "Currys thaïs et indiens",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.asie",
+   "desc": "Pâtes de curry, épices fraîches, lait de coco et riz.",
+   "audience": "Jeunes actifs, familles, couples",
+   "skills": [
+    "Pâtes de curry",
+    "Épices",
+    "Équilibre des saveurs",
+    "Accompagnements"
+   ],
+   "appSkills": [
+    "cuisine-indienne",
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un curry maison",
+     "goal": "Préparer un curry avec sa pâte et son riz",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Épices et torréfaction",
+     "goal": "Torréfier et moudre ses épices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équilibre des saveurs",
+     "goal": "Équilibrer piquant, acide, sucré et salé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repas indien complet",
+     "goal": "Composer thali ou menu thaï",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine du monde",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "voyage",
+    "convivial",
+    "plante"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Public large, peu de progressions. Les cuisinières de diaspora peuvent être hôtes crédibles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-ramen-nouilles",
+   "name": "Ramen et soupes de nouilles",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.asie",
+   "desc": "Bouillon, tare, nouilles et garnitures pour un ramen maison.",
+   "audience": "Jeunes actifs, étudiants, amateurs de culture japonaise",
+   "skills": [
+    "Bouillon",
+    "Tare",
+    "Œuf mollet",
+    "Nouilles"
+   ],
+   "appSkills": [
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bol",
+     "goal": "Assembler un ramen avec bouillon prêt",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bouillon et tare",
+     "goal": "Fabriquer un bouillon et sa tare",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Nouilles maison",
+     "goal": "Faire et cuire des nouilles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ramen d'auteur",
+     "goal": "Concevoir un bol personnel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte ramen",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "convivial",
+    "voyage",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers ramen"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Tendance jeune, concurrence faible, mais public modeste et plus de temps pour le bouillon.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-pates-fraiches-farcies",
+   "name": "Pâtes fraîches farcies",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.mediterranee",
+   "desc": "Pétrir, laminer, farcir et plier ravioli, tortellini et agnolotti.",
+   "audience": "Couples, amis, familles, entreprises",
+   "skills": [
+    "Pâte à l'œuf",
+    "Laminage",
+    "Farces",
+    "Pliage"
+   ],
+   "appSkills": [
+    "pates-fraiches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers raviolis",
+     "goal": "Faire une pâte à l'œuf et plier douze raviolis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Farces et sauces",
+     "goal": "Réaliser deux farces et leurs sauces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Laminage et formats",
+     "goal": "Étaler fin et plier trois formats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu de pâtes",
+     "goal": "Composer un menu de quatre plats de pâtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte pâtes fraîches",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "convivial",
+    "geste",
+    "famille"
+   ],
+   "competitors": [
+    "Ateliers de pâtes",
+    "Funbooker"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Très demandé, résultat à manger tout de suite, matériel simple, forte capacité à rejouer. Concurrence modérée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-tajine-couscous",
+   "name": "Tajine, couscous et cuisine du Maghreb",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.mediterranee",
+   "desc": "Cuisiner semoule roulée, tajines, pâtisseries et épices du Maghreb.",
+   "audience": "Familles, expatriés, couples",
+   "skills": [
+    "Semoule roulée",
+    "Tajine",
+    "Mélanges d'épices",
+    "Pâtisseries"
+   ],
+   "appSkills": [
+    "tajine-couscous"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier couscous",
+     "goal": "Préparer semoule, bouillon et légumes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tajines et épices",
+     "goal": "Réaliser deux tajines avec ras el hanout",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pâtisseries du Maghreb",
+     "goal": "Réaliser cornes de gazelle et makrouts",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repas de fête",
+     "goal": "Composer un menu festif",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine maghrébine",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "famille",
+    "convivial",
+    "voyage"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Forte demande locale et hôtes très crédibles dans les familles de la diaspora. Offre pro peu structurée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-mezze-liban",
+   "name": "Mezzés et cuisine du Levant",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.mediterranee",
+   "desc": "Houmous, taboulé, falafels et pains plats pour un repas à partager.",
+   "audience": "Amis, couples, végétariens",
+   "skills": [
+    "Houmous et mutabal",
+    "Taboulé",
+    "Falafels",
+    "Pains plats"
+   ],
+   "appSkills": [
+    "tajine-couscous",
+    "cuisine-vegetarienne"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mezzé",
+     "goal": "Réaliser houmous, taboulé et falafels",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assaisonnement du Levant",
+     "goal": "Doser sumac, za'atar et citron",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pains et fritures",
+     "goal": "Cuire un pain plat et frire sans graisse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Table de fête",
+     "goal": "Composer 8 mezzés pour 10 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte du Levant",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "convivial",
+    "apero",
+    "gourmand",
+    "famille"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Convient très bien aux repas partagés et aux végétariens. Offre peu présente en atelier de qualité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-tacos-mexique",
+   "name": "Tacos, salsas et cuisine mexicaine",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.ameriques-afrique",
+   "desc": "Nixtamaliser le maïs, pressoir à tortillas, salsas, tacos et margaritas.",
+   "audience": "Jeunes actifs, amis, entreprises",
+   "skills": [
+    "Tortillas de maïs",
+    "Salsas",
+    "Garnitures",
+    "Margarita"
+   ],
+   "appSkills": [
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers tacos",
+     "goal": "Presser des tortillas et garnir des tacos",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Salsas et piments",
+     "goal": "Réaliser trois salsas différentes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Marinades et braisés",
+     "goal": "Cuire carnitas et al pastor",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Table mexicaine",
+     "goal": "Composer un repas complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine du monde",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "expatries"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "convivial",
+    "fete",
+    "gourmand",
+    "apero"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Tendance forte, très festif et partageable, concurrence moyenne. Se couple naturellement avec cocktails.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-afrique-ouest",
+   "name": "Mafé, thiéboudienne et cuisine d'Afrique de l'Ouest",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.ameriques-afrique",
+   "desc": "Cuisiner les plats emblématiques d'Afrique de l'Ouest.",
+   "audience": "Familles, expatriés, curieux",
+   "skills": [
+    "Sauces d'arachide",
+    "Riz au poisson",
+    "Piments",
+    "Accompagnements"
+   ],
+   "appSkills": [
+    "tajine-couscous"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mafé",
+     "goal": "Cuisiner un mafé et son riz",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Thiéboudienne",
+     "goal": "Préparer le plat national du Sénégal",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sauces et épices",
+     "goal": "Réaliser trois sauces de base",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repas de fête",
+     "goal": "Composer un menu complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine africaine",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "expatries"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "cuisine-du-monde",
+    "famille",
+    "convivial",
+    "gourmand",
+    "voyage"
+   ],
+   "competitors": [
+    "Cuisinières traiteurs"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Forte base de cuisinières expertes en région parisienne, peu d'offre structurée en atelier. Public encore à convaincre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-cuisine-bistrot",
+   "name": "Cuisine de bistrot et plats mijotés",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.france",
+   "desc": "Bourguignon, blanquette, soupe à l'oignon : les grands classiques.",
+   "audience": "Couples, seniors, touristes",
+   "skills": [
+    "Plats mijotés",
+    "Fonds",
+    "Jus",
+    "Cuisson longue"
+   ],
+   "appSkills": [
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un plat qui mijote",
+     "goal": "Cuisiner un bourguignon ou une blanquette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fonds et jus",
+     "goal": "Faire un fond de veau ou de légumes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plats d'hiver",
+     "goal": "Cuire trois plats mijotés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dîner bistrot",
+     "goal": "Composer un menu bistrot",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine française",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "restaurant"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "seniors",
+    "touristes"
+   ],
+   "senses": [
+    "gout",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "patrimoine",
+    "convivial",
+    "famille",
+    "geste"
+   ],
+   "competitors": [
+    "Écoles de cuisine"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Marché de niche pour touristes et seniors, désir moins fort que les cuisines du monde.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-crepes-galettes",
+   "name": "Crêpes et galettes bretonnes",
+   "sector": "cuisine",
+   "category": "cuisine.monde",
+   "subcategory": "cuisine.monde.france",
+   "desc": "Pâte, étalement sur la bilig et garnitures pour des crêpes parfaites.",
+   "audience": "Familles, enfants, étudiants",
+   "skills": [
+    "Pâte à crêpes",
+    "Étaler",
+    "Garnitures",
+    "Cidre"
+   ],
+   "appSkills": [
+    "pain-levain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes crêpes",
+     "goal": "Réussir pâte et retournement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Galettes de sarrasin",
+     "goal": "Faire galettes fines et garnies",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirée crêpes",
+     "goal": "Organiser un repas de crêpes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Crêpier d'événement",
+     "goal": "Cuire en série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte crêpier",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      135
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cuisine-pro",
+    "domicile",
+    "restaurant"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "etudiants"
+   ],
+   "senses": [
+    "gout",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "gourmand",
+    "famille",
+    "fete",
+    "convivial",
+    "geste"
+   ],
+   "competitors": [
+    "Crêperies"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Très ancré mais peu valorisé : demande surtout familiale à Chandeleur. Intéressant à intégrer à des fêtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-lacto-legumes",
+   "name": "Fermentation lacto des légumes",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.ferment",
+   "desc": "Saler, tasser et laisser fermenter : choucroute, pickles, kimchi.",
+   "audience": "Curieux, santé, jardiniers, familles",
+   "skills": [
+    "Saumure",
+    "Tasser et peser",
+    "Surveiller",
+    "Conserver"
+   ],
+   "appSkills": [
+    "fermentation-lacto"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première choucroute",
+     "goal": "Lancer un bocal et sa saumure",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Légumes variés",
+     "goal": "Fermenter trois légumes avec bonne saumure",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kimchi et pickles",
+     "goal": "Réaliser un kimchi et ses variantes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dépanner une fermentation",
+     "goal": "Reconnaître ce qui est sain",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte fermentation",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "zero-dechet",
+    "science",
+    "nature",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Ateliers de fermentation"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Intérêt croissant pour le vivant, résultat différé qui incite à revenir, peu d'offre, matériel très léger.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-miso-koji",
+   "name": "Miso, koji et fermentations japonaises",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.ferment",
+   "desc": "Cultiver le koji et faire miso, shio-koji et amazake.",
+   "audience": "Curieux de gastronomie, végétariens",
+   "skills": [
+    "Culture de koji",
+    "Miso",
+    "Shio-koji",
+    "Amazake"
+   ],
+   "appSkills": [
+    "fermentation-lacto",
+    "cuisine-asiatique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir le koji",
+     "goal": "Préparer du shio-koji et mariner avec",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier miso",
+     "goal": "Lancer un miso maison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisiner avec le koji",
+     "goal": "Réaliser trois plats avec koji",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme de ferments",
+     "goal": "Concevoir une gamme de quatre ferments",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier koji",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 1,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "science",
+    "zero-dechet",
+    "cuisine-du-monde",
+    "nature"
+   ],
+   "competitors": [
+    "Ateliers fermentation"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Très niche, public passionné. Très peu d'offre en France, mais audience réduite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-kimchi",
+   "name": "Kimchi et cuisine coréenne",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.ferment",
+   "desc": "Faire son kimchi et cuisiner bibimbap, bulgogi et pancakes.",
+   "audience": "Fans de culture coréenne, jeunes",
+   "skills": [
+    "Salage du chou",
+    "Pâte pimentée",
+    "Fermentation",
+    "Plats coréens"
+   ],
+   "appSkills": [
+    "cuisine-asiatique",
+    "fermentation-lacto"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier kimchi",
+     "goal": "Préparer et mettre en pot un kimchi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plats coréens",
+     "goal": "Cuisiner bibimbap et pajeon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fermenter selon la saison",
+     "goal": "Faire trois kimchis différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dîner coréen",
+     "goal": "Composer un repas complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuisine coréenne",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "cuisine-du-monde",
+    "gourmand",
+    "voyage",
+    "convivial",
+    "nature"
+   ],
+   "competitors": [
+    "Ateliers cuisine du monde"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Portée par la vague culturelle coréenne chez les 18-35 ans, peu d'ateliers dédiés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-conserves-bocaux",
+   "name": "Conserves et stérilisation en bocaux",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.bocaux",
+   "desc": "Stériliser légumes et plats en bocaux sans risque.",
+   "audience": "Jardiniers, familles, seniors",
+   "skills": [
+    "Stérilisation",
+    "Choix des bocaux",
+    "Salaisons",
+    "Étiquetage"
+   ],
+   "appSkills": [
+    "conserves-bocaux"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers bocaux",
+     "goal": "Stériliser tomates ou haricots sans risque",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Soupes et plats",
+     "goal": "Mettre en conserve plats cuisinés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sécurité sanitaire",
+     "goal": "Respecter températures et temps",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Garde-manger de l'année",
+     "goal": "Planifier une saison de conserves",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte conserves",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "jardin-partage",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "jardin",
+    "gourmand",
+    "famille",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers jardin"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Demande saisonnière modeste, très pratique pour jardins partagés. Faible disposition à payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-confitures",
+   "name": "Confitures, chutneys et pâtes de fruits",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.bocaux",
+   "desc": "Cuire des confitures et chutneys avec peu de sucre, sans pectine industrielle.",
+   "audience": "Familles, seniors, cadeaux",
+   "skills": [
+    "Cuisson des fruits",
+    "Pectine naturelle",
+    "Chutneys",
+    "Pots"
+   ],
+   "appSkills": [
+    "conserves-bocaux"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première confiture",
+     "goal": "Cuire et mettre en pot une confiture",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Peu de sucre",
+     "goal": "Réduire sucre et garder la prise",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chutneys",
+     "goal": "Réaliser deux chutneys salés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme de saison",
+     "goal": "Concevoir une gamme de quatre pots",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte confiture",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "jardin-partage",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "cadeau",
+    "nature",
+    "famille",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Ateliers de saison"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Public stable, cadeaux, mais forte faculté de pratiquer seul. Prix plafonné.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-fromage-maison",
+   "name": "Fromage frais et affiné maison",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.laitiers",
+   "desc": "Cailler, mouler et affiner des fromages frais et à pâte molle.",
+   "audience": "Curieux, familles, amateurs de fromage",
+   "skills": [
+    "Cailler",
+    "Moulage",
+    "Affinage",
+    "Sels"
+   ],
+   "appSkills": [
+    "fromage-yaourt-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier fromage frais",
+     "goal": "Cailler et égoutter un fromage frais",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pâtes molles",
+     "goal": "Mouler et affiner un camembert",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Affinage maîtrisé",
+     "goal": "Gérer humidité et températures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ma cave de fromages",
+     "goal": "Concevoir trois recettes de pâtes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte fromager",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "cuisine-pro",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "gout",
+    "toucher"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "fabrication",
+    "science",
+    "nature",
+    "convivial"
+   ],
+   "competitors": [
+    "Fromageries",
+    "Ateliers de fermentation"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Niche gourmande, public rare mais passionné et prêt à payer. Contraintes d'hygiène.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-yaourt-beurre",
+   "name": "Yaourt, beurre et crèmes maison",
+   "sector": "cuisine",
+   "category": "cuisine.conservation",
+   "subcategory": "cuisine.conservation.laitiers",
+   "desc": "Faire yaourt, beurre, crème et fromage blanc avec peu de matériel.",
+   "audience": "Familles, enfants, écoresponsables",
+   "skills": [
+    "Yaourt",
+    "Beurre baratté",
+    "Fromage blanc",
+    "Crèmes"
+   ],
+   "appSkills": [
+    "fromage-yaourt-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Yaourts et beurre",
+     "goal": "Faire un yaourt et un beurre en atelier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fromage blanc et faisselles",
+     "goal": "Fabriquer fromage blanc et crème",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fermentations laitières",
+     "goal": "Utiliser plusieurs ferments",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Produits de la ferme",
+     "goal": "Concevoir une gamme de produits",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte laitier",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      135
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 1,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "cuisine-pro",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "gout",
+    "toucher"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "famille",
+    "gourmand",
+    "maison",
+    "nature"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Intéressant en famille et à la ferme urbaine, faible disposition à payer. Complément seulement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-barbecue-fumage",
+   "name": "Barbecue et fumage",
+   "sector": "cuisine",
+   "category": "cuisine.feu-tables",
+   "subcategory": "cuisine.feu-tables.feu",
+   "desc": "Maîtriser la braise, le fumage à chaud et les cuissons indirectes.",
+   "audience": "Hommes 30-55 ans, amis, familles, entreprises",
+   "skills": [
+    "Gestion du feu",
+    "Cuisson indirecte",
+    "Fumage",
+    "Marinades"
+   ],
+   "appSkills": [
+    "barbecue-fumoir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un barbecue maîtrisé",
+     "goal": "Allumer, régler et cuire sans brûler",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cuissons indirectes",
+     "goal": "Réussir poulet et ribs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fumage à chaud",
+     "goal": "Fumer viande et poisson avec fumoir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pitmaster d'un soir",
+     "goal": "Mener un repas de dix invités",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      130,
+      200
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte barbecue",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      245,
+      380
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "domicile",
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "convivial",
+    "gourmand",
+    "plein-air",
+    "fete",
+    "geste"
+   ],
+   "competitors": [
+    "Magasins de barbecue",
+    "Stages de pitmasters"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Demande forte en saison, public masculin peu servi, mais extérieur et feu imposent sécurité et lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-plancha-bois",
+   "name": "Cuisine au feu de bois et plein air",
+   "sector": "cuisine",
+   "category": "cuisine.feu-tables",
+   "subcategory": "cuisine.feu-tables.feu",
+   "desc": "Cuire sur braise, en cocotte ou à la plancha lors de sorties.",
+   "audience": "Familles, amis, randonneurs",
+   "skills": [
+    "Feu de camp",
+    "Cuisine en cocotte",
+    "Plancha",
+    "Sécurité du feu"
+   ],
+   "appSkills": [
+    "barbecue-fumoir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Repas au feu",
+     "goal": "Cuire un repas simple sur braise",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cocotte et marmite",
+     "goal": "Réaliser un plat mijoté au feu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuisine itinérante",
+     "goal": "Cuisiner en sortie",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu d'un week-end",
+     "goal": "Planifier un week-end de cuisine plein air",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte plein air",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "nature",
+    "jardin-partage",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat",
+    "mouvement"
+   ],
+   "outputs": [
+    "plat"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "plein-air",
+    "nature",
+    "convivial",
+    "gourmand",
+    "famille"
+   ],
+   "competitors": [
+    "Écoles de nature"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Public de niche, lieux et autorisations à gérer, saison courte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-planches-apero",
+   "name": "Planches, bouchées et apéro dînatoire",
+   "sector": "cuisine",
+   "category": "cuisine.feu-tables",
+   "subcategory": "cuisine.feu-tables.tables",
+   "desc": "Composer des planches de charcuterie, fromages et petites bouchées.",
+   "audience": "Jeunes actifs, couples, entreprises",
+   "skills": [
+    "Composition de planches",
+    "Bouchées froides",
+    "Dressage",
+    "Accords"
+   ],
+   "appSkills": [
+    "degustation-vin",
+    "cocktails"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma planche d'apéro",
+     "goal": "Composer une planche équilibrée en 20 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bouchées froides",
+     "goal": "Réaliser huit bouchées en série",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Apéro dînatoire",
+     "goal": "Concevoir un buffet pour douze",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Traiteur à la maison",
+     "goal": "Gérer quantités et budget d'un buffet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte réceptions",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "restaurant",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "apero",
+    "convivial",
+    "gourmand",
+    "fete",
+    "deco"
+   ],
+   "competitors": [
+    "Funbooker",
+    "Traiteurs"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Demande énorme, matériel simple, grande visibilité sur les réseaux. Concurrence modérée sur le format atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-brunch-oeufs",
+   "name": "Brunch, œufs et petits-déjeuners de fête",
+   "sector": "cuisine",
+   "category": "cuisine.feu-tables",
+   "subcategory": "cuisine.feu-tables.tables",
+   "desc": "Œufs pochés, pancakes, granolas et brunch du dimanche.",
+   "audience": "Couples, jeunes actifs, familles",
+   "skills": [
+    "Œufs pochés",
+    "Pancakes",
+    "Granola",
+    "Sauces"
+   ],
+   "appSkills": [
+    "patisserie-francaise",
+    "cuisiner-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Brunch en 1 h",
+     "goal": "Préparer œufs, pancakes et granola",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cuisson des œufs",
+     "goal": "Réussir cinq cuissons d'œufs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Brunch de groupe",
+     "goal": "Préparer un brunch pour huit",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carte de brunch",
+     "goal": "Composer une carte de saison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte brunch",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "restaurant",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "convivial",
+    "couple",
+    "famille",
+    "cafe"
+   ],
+   "competitors": [
+    "Brunchs d'hôtels"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "ecarter",
+   "why": "Besoin faible d'apprentissage, forte substitution par les contenus en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "cuisine-desserts-glaces",
+   "name": "Glaces, sorbets et desserts glacés",
+   "sector": "cuisine",
+   "category": "cuisine.feu-tables",
+   "subcategory": "cuisine.feu-tables.tables",
+   "desc": "Turbiner, mixer et dresser des glaces et sorbets de saison.",
+   "audience": "Familles, enfants, gourmands",
+   "skills": [
+    "Bases de glace",
+    "Sorbets",
+    "Parfums de saison",
+    "Cornets"
+   ],
+   "appSkills": [
+    "patisserie-francaise"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma glace maison",
+     "goal": "Préparer une glace et un sorbet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Textures",
+     "goal": "Obtenir une glace crémeuse sans cristaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parfums de saison",
+     "goal": "Créer quatre parfums",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coupe glacée",
+     "goal": "Composer des desserts glacés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte glacier",
+     "goal": "Animer et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "restaurant",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "famille",
+    "fete",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers glaciers"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "plus-tard",
+   "why": "Saisonnalité forte, matériel parfois coûteux (turbine), demande surtout en été.",
+   "confidence": "estimation"
+  }
+ ]
+}

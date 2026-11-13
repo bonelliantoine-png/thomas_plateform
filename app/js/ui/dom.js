@@ -24,9 +24,27 @@
   ui.logo = '<svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><rect x="1" y="1" width="8" height="8" rx="2.2" style="fill:var(--accent)"/><rect x="11" y="1" width="8" height="8" rx="2.2" style="fill:var(--int)"/><rect x="1.5" y="11.5" width="7" height="7" rx="2" style="fill:none;stroke:var(--line-2)"/><rect x="11.5" y="11.5" width="7" height="7" rx="2" style="fill:none;stroke:var(--line-2)"/></svg>';
 
   ui.dots = function (n, max, label) {
-    max = max || 4; var h = '';
+    max = max || C.LEVEL_MAX || 5; var h = '';
     for (var i = 1; i <= max; i++) h += '<i class="' + (i <= n ? 'on' : '') + '"></i>';
     return '<span class="dots" role="img" aria-label="' + E(label || (n + ' sur ' + max)) + '">' + h + '</span>';
+  };
+  // légende de l'échelle 1 à 5 : pastilles, libellé et palier animé
+  ui.levelLegend = function () {
+    return '<ol class="lvlegend" aria-label="Échelle de maîtrise">' + C.LEVELS.slice(1).map(function (l, i) {
+      var k = i + 1, t = C.topPalier(k);
+      return '<li class="l' + k + '"><span class="n">' + k + '</span>' + ui.dots(k, C.LEVEL_MAX, 'niveau ' + k) + '<span class="t">' + E(l) + '</span><span class="a">' + (t ? 'anime le niveau ' + t + (k >= C.LEVEL_MAX ? ', forme les hôtes' : '') : 'n’anime pas') + '</span></li>';
+    }).join('') + '</ol>';
+  };
+  // chemin par paliers : un atelier par niveau, son objectif, l'hôte qui l'anime (et heures et coût si le plan est fourni)
+  ui.palierPath = function (s, cur, target, steps) {
+    steps = steps || [];
+    var rows = [];
+    for (var k = cur + 1; k <= target; k++) {
+      var x = steps.filter(function (y) { return y.k === k; })[0];
+      rows.push('<li><span class="k">' + k + '</span><div><div class="pt">' + (k === 1 ? 'Atelier découverte' : 'Atelier de niveau ' + k) + ' · ' + E(C.LEVELS[k]) + '</div><div class="pm">' + E(C.milestone(s, k)) + '</div>' +
+        '<div class="pw">Qui peut vous faire progresser : un hôte de niveau ' + C.hostLevel(k) + (C.TEACH_RULE === 'below' ? ' ou plus' : '') + ' (' + E(C.LEVELS[C.hostLevel(k)].toLowerCase()) + ')' + (x ? ' · ≈ ' + x.hours + ' h · ' + U.eur(x.cost) : '') + '</div></div></li>');
+    }
+    return rows.length ? '<ol class="palpath" aria-label="Paliers à franchir">' + rows.join('') + '</ol>' : '';
   };
   ui.meter = function (v, max, cls) { return '<span class="meter ' + (cls || '') + '" role="img" aria-label="' + Math.round(v) + ' sur ' + max + '"><b style="width:' + Math.round(U.clamp(v / max, 0, 1) * 100) + '%"></b></span>'; };
   ui.pill = function (text, kind, dot) { return '<span class="pill ' + (kind || '') + '">' + (dot === false ? '' : '<i></i>') + E(text) + '</span>'; };

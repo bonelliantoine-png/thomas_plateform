@@ -1,0 +1,8123 @@
+{
+ "sector": "style",
+ "categories": [
+  {
+   "id": "style.beaute",
+   "name": "Maquillage et beauté",
+   "desc": "Gestes de maquillage, d'ongles, de soin et de parfum pour se sentir bien dans son image.",
+   "subcategories": [
+    {
+     "id": "style.beaute.maquillage",
+     "name": "Maquillage",
+     "desc": "Du teint naturel au maquillage de soirée, pour tous les âges."
+    },
+    {
+     "id": "style.beaute.ongles",
+     "name": "Ongles et body art",
+     "desc": "Manucure, nail art et henné."
+    },
+    {
+     "id": "style.beaute.soins",
+     "name": "Soins et cosmétiques maison",
+     "desc": "Routines simples et produits faits maison."
+    },
+    {
+     "id": "style.beaute.parfum",
+     "name": "Parfum",
+     "desc": "Créer et comprendre les familles olfactives."
+    }
+   ]
+  },
+  {
+   "id": "style.cheveux",
+   "name": "Coiffure et cheveux",
+   "desc": "Coiffures du quotidien, soins capillaires, coupe et barbe.",
+   "subcategories": [
+    {
+     "id": "style.cheveux.coiffures",
+     "name": "Tresses et coiffures",
+     "desc": "Tresses, chignons et coiffures d'enfants."
+    },
+    {
+     "id": "style.cheveux.textures",
+     "name": "Textures et soins",
+     "desc": "Cheveux bouclés, crépus ou fins : routines et coiffures protectrices."
+    },
+    {
+     "id": "style.cheveux.coupe",
+     "name": "Coupe, barbe et rasage",
+     "desc": "Entretien et coupe à la maison."
+    }
+   ]
+  },
+  {
+   "id": "style.couture",
+   "name": "Couture et retouches",
+   "desc": "Coudre, retoucher et créer ses vêtements.",
+   "subcategories": [
+    {
+     "id": "style.couture.initiation",
+     "name": "Initiation à la couture",
+     "desc": "Machine et couture à la main pour démarrer."
+    },
+    {
+     "id": "style.couture.retouches",
+     "name": "Retouches et réparations",
+     "desc": "Raccourcir, ajuster et réparer."
+    },
+    {
+     "id": "style.couture.creation",
+     "name": "Patronage et création",
+     "desc": "Prendre ses mesures et créer ses vêtements."
+    }
+   ]
+  },
+  {
+   "id": "style.custo",
+   "name": "Customisation et seconde main",
+   "desc": "Donner une seconde vie aux vêtements et chaussures, acheter et vendre malin.",
+   "subcategories": [
+    {
+     "id": "style.custo.custo",
+     "name": "Customisation",
+     "desc": "Peinture, broderie, teinture et transformation."
+    },
+    {
+     "id": "style.custo.secondemain",
+     "name": "Seconde main",
+     "desc": "Chiner, vendre, troquer."
+    },
+    {
+     "id": "style.custo.entretien",
+     "name": "Entretien",
+     "desc": "Laver, détacher et entretenir chaussures et vêtements."
+    }
+   ]
+  },
+  {
+   "id": "style.image",
+   "name": "Image, garde-robe et conseil",
+   "desc": "Trouver son style, composer sa garde-robe et choisir en confiance.",
+   "subcategories": [
+    {
+     "id": "style.image.garderobe",
+     "name": "Garde-robe",
+     "desc": "Trier, composer et acheter mieux."
+    },
+    {
+     "id": "style.image.conseil",
+     "name": "Conseil en image",
+     "desc": "Couleurs, coupes, shopping et tenues."
+    },
+    {
+     "id": "style.image.accessoires",
+     "name": "Accessoires",
+     "desc": "Foulards, bijoux et petite maroquinerie."
+    }
+   ]
+  },
+  {
+   "id": "style.costumes",
+   "name": "Costumes, personnages et scène",
+   "desc": "Se transformer : cosplay, déguisements, maquillage artistique et époque.",
+   "subcategories": [
+    {
+     "id": "style.costumes.cosplay",
+     "name": "Cosplay et déguisements",
+     "desc": "Fabriquer son costume et ses accessoires."
+    },
+    {
+     "id": "style.costumes.maquillage",
+     "name": "Maquillage artistique",
+     "desc": "Face painting, effets spéciaux et personnages."
+    },
+    {
+     "id": "style.costumes.epoque",
+     "name": "Perruques et costumes d'époque",
+     "desc": "Coiffures de scène et reconstitution historique."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "style-maquillage-naturel",
+   "name": "Maquillage naturel du quotidien",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Un teint frais et un regard net en 5 minutes, avec peu de produits.",
+   "audience": "Femmes 20-55 ans, reprise de confiance, ados avec parents, cadeaux",
+   "skills": [
+    "Préparer sa peau",
+    "Unifier le teint",
+    "Mettre en valeur le regard",
+    "Choisir ses produits"
+   ],
+   "appSkills": [
+    "maquillage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon teint en 5 minutes",
+     "goal": "Réaliser un teint léger et un regard net sur soi-même",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Regard et lèvres",
+     "goal": "Choisir 2 produits et les appliquer sans trace ni excès",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine du matin",
+     "goal": "Tenir une routine de 5 minutes pendant 3 semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Look sur mesure",
+     "goal": "Adapter son maquillage à sa carnation, sa tenue et l'occasion",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier maquillage",
+     "goal": "Guider 6 personnes avec hygiène et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "photo",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "mode",
+    "couleur",
+    "convivial",
+    "cadeau"
+   ],
+   "competitors": [
+    "Marques de cosmétiques",
+    "Instituts",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande massive, très adaptée au petit groupe et au cadeau. Résultat visible immédiatement et photographiable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-soiree",
+   "name": "Maquillage de soirée et de photo",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Maquillage plus intense, longue tenue et rendu photo, pour fêtes et mariages.",
+   "audience": "Invitées de mariage, jeunes actives, EVJF, photographes amateurs",
+   "skills": [
+    "Teint longue tenue",
+    "Smoky de base",
+    "Lèvres marquées",
+    "Fixer"
+   ],
+   "appSkills": [
+    "maquillage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma soirée prête",
+     "goal": "Réaliser un maquillage de soirée complet en 30 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Regard intense",
+     "goal": "Réussir un dégradé de 3 teintes et un trait net",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tenue et photo",
+     "goal": "Obtenir un rendu stable 6 heures et sans reflets au flash",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Looks sur mesure",
+     "goal": "Concevoir 3 looks adaptés à sa morphologie et à la tenue",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier fête",
+     "goal": "Guider 6 invitées et former des hôtes de niveau 2",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "photo",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "fete",
+    "mode",
+    "couleur",
+    "convivial",
+    "photo"
+   ],
+   "competitors": [
+    "Maquilleuses à domicile",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Cadeau et événements (EVJF, mariage) porteurs, mais saisonnalité et offre de maquilleuses à domicile à vérifier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-regard-eyeliner",
+   "name": "Regard : eye-liner et ombres",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Maîtriser le trait, l'ombre et le dégradé selon la forme de l'œil.",
+   "audience": "Étudiantes, jeunes actives, amateurs de beauté",
+   "skills": [
+    "Tracer un trait net",
+    "Choisir l'ombre",
+    "Dégrader",
+    "Retirer les erreurs"
+   ],
+   "appSkills": [
+    "maquillage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier trait",
+     "goal": "Tracer un eye-liner à peu près symétrique sur soi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ombres et dégradés",
+     "goal": "Réaliser un fondu régulier sur 3 teintes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Regard de jour et de nuit",
+     "goal": "Adapter l'intensité du regard à deux occasions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Regard signature",
+     "goal": "Définir et reproduire son style de regard en 10 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier regard",
+     "goal": "Corriger les gestes de 6 participantes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "couleur",
+    "dessin",
+    "geste",
+    "convivial"
+   ],
+   "competitors": [
+    "YouTube",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche dans le maquillage généraliste, utile comme module. Attire peu de public à lui seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-peaux-matures",
+   "name": "Maquillage pour peaux matures",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Techniques adaptées aux peaux de plus de 50 ans : lumière, texture, produits doux.",
+   "audience": "Femmes 50-75 ans, retraitées actives, mères de mariées",
+   "skills": [
+    "Préparer une peau mature",
+    "Corriger en douceur",
+    "Redonner de la lumière",
+    "Choisir ses couleurs"
+   ],
+   "appSkills": [
+    "maquillage",
+    "soins-visage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma lumière retrouvée",
+     "goal": "Réaliser un teint lumineux en 10 minutes sans marquer les rides",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Regard et lèvres",
+     "goal": "Adapter formes, textures et couleurs à son âge",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine douce",
+     "goal": "Tenir 3 semaines avec un carnet de produits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style assumé",
+     "goal": "Choisir ses produits et ses couleurs en autonomie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer pour les seniors",
+     "goal": "Guider un groupe de 6 avec bienveillance et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "photo",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "soin",
+    "couleur",
+    "calme",
+    "convivial"
+   ],
+   "competitors": [
+    "Instituts",
+    "Marques",
+    "Ateliers beauté seniors"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public sous-servi, disponible en journée et prêt à payer. Peu d'offres dédiées aux plus de 50 ans.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-ados-premiers-pas",
+   "name": "Premiers pas en maquillage, parent et ado",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Découvrir le maquillage léger, l'hygiène des produits et l'estime de soi en duo.",
+   "audience": "Ados 13-17 ans et un parent",
+   "skills": [
+    "Hygiène",
+    "Teint léger",
+    "Peau jeune",
+    "Respecter ses envies"
+   ],
+   "appSkills": [
+    "maquillage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers produits",
+     "goal": "Choisir 4 produits adaptés et les appliquer en duo",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Peau jeune",
+     "goal": "Reconnaître ses besoins et éviter les excès",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine simple",
+     "goal": "Tenir une routine de 5 minutes pendant 3 semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Définir ses envies dans un budget convenu avec son parent",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer en duo",
+     "goal": "Conduire un atelier pour 3 duos parent-ado",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "photo",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "mode",
+    "soin",
+    "couleur",
+    "cadeau"
+   ],
+   "competitors": [
+    "Boutiques",
+    "Écoles de maquillage"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin réel des parents d'ados et bon potentiel en duo. À encadrer sur l'hygiène et le choix des produits.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-homme-routine",
+   "name": "Routine express pour hommes",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.maquillage",
+   "desc": "Soin du visage, teint et sourcils en 5 minutes pour un rendu naturel.",
+   "audience": "Hommes 22-55 ans, jeunes actifs, pères",
+   "skills": [
+    "Nettoyer",
+    "Hydrater",
+    "Unifier",
+    "Entretenir sourcils et barbe"
+   ],
+   "appSkills": [
+    "soins-visage",
+    "maquillage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma routine de 5 minutes",
+     "goal": "Appliquer nettoyant, hydratant et protection solaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Teint naturel",
+     "goal": "Corriger discrètement rougeurs et cernes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soin et barbe",
+     "goal": "Entretenir peau et barbe en 10 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine adaptée",
+     "goal": "Ajuster sa routine à la saison et à sa peau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier hommes",
+     "goal": "Guider 6 participants et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "mode",
+    "convivial",
+    "argent",
+    "geste"
+   ],
+   "competitors": [
+    "Marques",
+    "Barbiers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande croissante mais tabou à lever ; bonne place pour des ateliers hommes en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-ongles-manucure-maison",
+   "name": "Manucure maison",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.ongles",
+   "desc": "Limer, soigner les cuticules et poser un vernis tenant, sans machine.",
+   "audience": "Femmes 20-50 ans, amies, ados avec parents",
+   "skills": [
+    "Limer",
+    "Soigner les cuticules",
+    "Poser une base",
+    "Vernis tenant"
+   ],
+   "appSkills": [
+    "manucure-nail-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première manucure",
+     "goal": "Réaliser une manucure complète sur soi en 1 h 30",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pose parfaite",
+     "goal": "Poser un vernis sans bavure et qui tient 5 jours",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine ongles",
+     "goal": "Tenir une routine de soin pendant 4 semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Manucure sur mesure",
+     "goal": "Adapter forme et couleur à ses mains et à l'occasion",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier ongles",
+     "goal": "Guider un groupe avec hygiène",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "couleur",
+    "convivial",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Instituts",
+    "Ongleries"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande large et matériel peu coûteux, mais l'offre d'ongleries est dense. À tester en soirée entre amies.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-ongles-nail-art",
+   "name": "Nail art créatif",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.ongles",
+   "desc": "Motifs, dégradés, stickers et pointillés pour créer des ongles uniques.",
+   "audience": "Femmes 18-40 ans, créatives, amateurs de dessin",
+   "skills": [
+    "Préparer",
+    "Dessiner un motif",
+    "Faire un dégradé",
+    "Poser des décors"
+   ],
+   "appSkills": [
+    "manucure-nail-art",
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers motifs",
+     "goal": "Réaliser 3 motifs simples sur 10 ongles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dégradés et pointillés",
+     "goal": "Réussir un fondu et un dotting régulier",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pose de saison",
+     "goal": "Réaliser une pose complète à thème en 1 h 30",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style signature",
+     "goal": "Créer un motif original et le reproduire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier nail art",
+     "goal": "Corriger les gestes d'un groupe de 6",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "dessin",
+    "mode",
+    "convivial",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ongleries",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Attrait créatif et photo ; concurrence d'ongleries très présentes. Format d'atelier en groupe plus rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-henne-body-art",
+   "name": "Henné et body art",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.ongles",
+   "desc": "Dessiner motifs éphémères au henné naturel pour fêtes et vacances.",
+   "audience": "Amies, invitées de mariage, voyageurs, EVJF",
+   "skills": [
+    "Préparer la pâte",
+    "Tenir le cône",
+    "Dessiner des motifs",
+    "Soigner la tenue"
+   ],
+   "appSkills": [
+    "henne-body-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Dessiner un motif simple sur la main avec un cône",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs traditionnels",
+     "goal": "Maîtriser 3 motifs classiques",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Composition",
+     "goal": "Réaliser un motif complet sur l'avant-bras",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Créer ses propres motifs sans croquis",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier henné",
+     "goal": "Guider 6 personnes avec henné naturel",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "fete",
+    "couleur",
+    "cadeau",
+    "convivial"
+   ],
+   "competitors": [
+    "Artistes de henné",
+    "Salons"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Niche festive, bon potentiel événementiel, fort en été. Attention aux faux hennés noirs (allergies).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-soins-visage-routine",
+   "name": "Soins du visage : routine simple",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.soins",
+   "desc": "Nettoyer, hydrater, protéger : une routine adaptée à son type de peau.",
+   "audience": "Adultes 20-60 ans, hommes et femmes",
+   "skills": [
+    "Reconnaître son type de peau",
+    "Choisir ses produits",
+    "Nettoyer",
+    "Protéger"
+   ],
+   "appSkills": [
+    "soins-visage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma peau, ma routine",
+     "goal": "Choisir 3 produits adaptés à son type de peau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gestes justes",
+     "goal": "Appliquer nettoyage, soin et protection dans le bon ordre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine tenue",
+     "goal": "Tenir 4 semaines avec un carnet de peau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine ajustée",
+     "goal": "Adapter sa routine à la saison et à ses besoins",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier soins",
+     "goal": "Guider un groupe sans conseil médical",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "mode",
+    "calme",
+    "argent",
+    "cadeau"
+   ],
+   "competitors": [
+    "Instituts",
+    "Marques",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande large, offre pléthorique de contenus gratuits et d'instituts. Mieux vendu avec un produit maison.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cosmetiques-maison",
+   "name": "Cosmétiques maison : baume, gommage, masque",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.soins",
+   "desc": "Fabriquer 3 cosmétiques simples avec peu d'ingrédients, pour soi ou en cadeau.",
+   "audience": "Adultes 25-55 ans, amateurs de naturel, cadeaux",
+   "skills": [
+    "Peser",
+    "Mélanger",
+    "Conserver",
+    "Étiqueter"
+   ],
+   "appSkills": [
+    "cosmetiques-maison",
+    "savonnerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers produits",
+     "goal": "Fabriquer un baume, un gommage et un masque à emporter",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formules simples",
+     "goal": "Maîtriser ratios, conservation et étiquetage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mini-collection",
+     "goal": "Réaliser 5 produits cohérents pour offrir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Formules personnelles",
+     "goal": "Concevoir ses propres recettes testées",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier cosmétiques",
+     "goal": "Guider 8 personnes avec règles d'hygiène",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cuisine-pro",
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "zero-dechet",
+    "cadeau",
+    "odorat",
+    "convivial"
+   ],
+   "competitors": [
+    "Ateliers DIY",
+    "Boutiques bio"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Résultat à emporter, cadeau idéal, tendance zéro déchet forte. Cadre à préciser : usage personnel uniquement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-parfum-creation",
+   "name": "Composer son parfum",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.parfum",
+   "desc": "Découvrir les notes, accorder trois huiles et repartir avec son flacon.",
+   "audience": "Curieux 25-55 ans, couples, cadeaux, EVJF",
+   "skills": [
+    "Reconnaître les notes",
+    "Construire une pyramide",
+    "Doser",
+    "Faire macérer"
+   ],
+   "appSkills": [
+    "parfum-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier accord",
+     "goal": "Composer un parfum de 3 notes et repartir avec son flacon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Familles olfactives",
+     "goal": "Reconnaître 8 familles d'odeurs et leurs usages",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      75,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parfum abouti",
+     "goal": "Affiner un mélange de 6 notes en équilibre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      210,
+      295
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Signature olfactive",
+     "goal": "Créer un parfum personnel reproductible",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      315,
+      490
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier parfum",
+     "goal": "Guider un groupe et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      560,
+      980
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles",
+    "touristes"
+   ],
+   "senses": [
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "odorat",
+    "cadeau",
+    "objet-souvenir",
+    "couple",
+    "convivial"
+   ],
+   "competitors": [
+    "Fragonard",
+    "Parfumeurs",
+    "Ateliers touristiques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon cadeau, expérience mémorable, prix élevé accepté. Concurrence touristique à Paris, à contourner par la proximité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-parfum-culture-nez",
+   "name": "Culture du parfum : développer son nez",
+   "sector": "style",
+   "category": "style.beaute",
+   "subcategory": "style.beaute.parfum",
+   "desc": "Apprendre à comparer, nommer et mémoriser des odeurs, de la rose au cuir.",
+   "audience": "Curieux, amateurs de parfum, couples",
+   "skills": [
+    "Comparer des odeurs",
+    "Nommer",
+    "Mémoriser",
+    "Raconter"
+   ],
+   "appSkills": [
+    "parfum-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières odeurs",
+     "goal": "Reconnaître 6 matières à l'aveugle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Familles et notes",
+     "goal": "Classer 12 odeurs par famille",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mémoire olfactive",
+     "goal": "Reconnaître 15 odeurs lors d'un quiz",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Nez averti",
+     "goal": "Décrire un parfum complexe avec précision",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une dégustation d'odeurs",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "odorat",
+    "gourmand",
+    "collection",
+    "convivial",
+    "histoire"
+   ],
+   "competitors": [
+    "Boutiques de parfum",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public curieux mais étroit. Le parfum à emporter vend mieux que la culture seule.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-coiffure-tresses",
+   "name": "Coiffure : tresses",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.coiffures",
+   "desc": "Tresse simple, épi, cascade et tresse africaine pour soi et pour les autres.",
+   "audience": "Parents, ados, femmes 18-50 ans, filles de tous âges",
+   "skills": [
+    "Tresse simple",
+    "Tresse épi",
+    "Tresse à 4 mèches",
+    "Fixer"
+   ],
+   "appSkills": [
+    "coiffure-tresses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première tresse",
+     "goal": "Réaliser une tresse à 3 brins sur soi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Épi et cascade",
+     "goal": "Réussir 3 types de tresses en 15 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tresses sur autrui",
+     "goal": "Tresser une personne en 20 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coiffures de fête",
+     "goal": "Créer un chignon tressé tenant toute la soirée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier coiffure",
+     "goal": "Guider un groupe et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "ados",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "geste",
+    "cadeau",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "YouTube",
+    "Coiffeurs",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande très large et pratique, notamment chez les parents. Résultat montrable et reproductible dès la première séance.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-coiffure-chignons-fete",
+   "name": "Chignons et coiffures de fête",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.coiffures",
+   "desc": "Chignons bas, banane, couronne et coiffures d'invitées en moins de 15 minutes.",
+   "audience": "Invitées de mariage, EVJF, jeunes actives",
+   "skills": [
+    "Préparer",
+    "Réaliser un chignon",
+    "Fixer",
+    "Accessoiriser"
+   ],
+   "appSkills": [
+    "coiffure-tresses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier chignon",
+     "goal": "Réaliser un chignon bas en 15 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coiffures de cérémonie",
+     "goal": "Réaliser 3 coiffures de fête",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tenue toute la soirée",
+     "goal": "Fixer une coiffure sans abîmer les cheveux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coiffure sur mesure",
+     "goal": "Adapter la coiffure à la tenue et au visage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier fête",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "fete",
+    "geste",
+    "cadeau",
+    "convivial"
+   ],
+   "competitors": [
+    "Coiffeurs à domicile",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Attrait événementiel fort, forte disposition à payer et cadeau d'EVJF. Réutilisable pour fêtes de fin d'année.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-coiffure-enfants",
+   "name": "Coiffures d'enfants rapides",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.coiffures",
+   "desc": "Coiffures qui tiennent pour l'école et les fêtes, en moins de 5 minutes.",
+   "audience": "Parents et grands-parents d'enfants 3-12 ans",
+   "skills": [
+    "Démêler en douceur",
+    "Attaches",
+    "Tresses faciles",
+    "Accessoires"
+   ],
+   "appSkills": [
+    "coiffure-tresses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières coiffures",
+     "goal": "Réaliser 3 coiffures rapides sur un enfant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tresses d'écolière",
+     "goal": "Réussir 2 tresses en 5 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coiffures de fête",
+     "goal": "Réaliser une coiffure d'occasion en 10 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine du matin",
+     "goal": "Tenir 5 matins sans conflit",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer pour des parents",
+     "goal": "Guider un groupe de parents",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "salle-polyvalente",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "mode",
+    "geste",
+    "enfants",
+    "convivial"
+   ],
+   "competitors": [
+    "YouTube",
+    "Coiffeurs"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin pratique des parents ; peu de volonté de payer pour un sujet « simple ». À associer à d'autres ateliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cheveux-boucles-routine",
+   "name": "Cheveux bouclés et texturés : la routine",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.textures",
+   "desc": "Comprendre sa boucle, nettoyer, hydrater et définir sans abîmer.",
+   "audience": "Personnes aux cheveux bouclés, frisés ou crépus",
+   "skills": [
+    "Reconnaître sa texture",
+    "Nettoyer",
+    "Hydrater",
+    "Définir les boucles"
+   ],
+   "appSkills": [
+    "coiffure-bouclee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma texture, ma routine",
+     "goal": "Identifier sa texture et choisir 3 produits adaptés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hydratation et définition",
+     "goal": "Appliquer la méthode complète sur ses cheveux",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine tenue",
+     "goal": "Tenir 4 semaines avec un carnet de résultats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine adaptée",
+     "goal": "Adapter la routine à la saison et à la coupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier boucles",
+     "goal": "Guider 6 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "soin",
+    "convivial",
+    "geste",
+    "couleur"
+   ],
+   "competitors": [
+    "Salons spécialisés",
+    "YouTube",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public très motivé, sous-servi, communauté forte. Prix acceptable pour un conseil concret.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-coiffures-protectrices",
+   "name": "Twists et coiffures protectrices",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.textures",
+   "desc": "Vanilles, twists, nattes collées pour cheveux crépus et frisés, à faire soi-même.",
+   "audience": "Personnes aux cheveux crépus, mères d'enfants métissés",
+   "skills": [
+    "Diviser",
+    "Twister",
+    "Nattes collées",
+    "Entretenir"
+   ],
+   "appSkills": [
+    "coiffure-bouclee",
+    "coiffure-tresses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers twists",
+     "goal": "Réaliser 6 twists propres sur soi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vanilles et nattes",
+     "goal": "Réaliser une coiffure protectrice complète",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coiffures sur autrui",
+     "goal": "Coiffer une personne en 2 heures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien durable",
+     "goal": "Faire tenir une coiffure 3 semaines sans abîmer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier textures",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "ados"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "geste",
+    "soin",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Salons afro",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel et communauté engagée, hôtes qualifiés non professionnels nombreux. Demande moyenne mais fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cheveux-soins-naturels",
+   "name": "Soins capillaires naturels",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.textures",
+   "desc": "Masques, rinçages et shampoings maison pour cheveux plus doux.",
+   "audience": "Adultes, familles, amateurs de naturel",
+   "skills": [
+    "Choisir ses ingrédients",
+    "Fabriquer un masque",
+    "Rincer",
+    "Conserver"
+   ],
+   "appSkills": [
+    "cosmetiques-maison",
+    "coiffure-bouclee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier masque",
+     "goal": "Fabriquer un masque capillaire et l'appliquer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rinçages et shampoings",
+     "goal": "Préparer 2 soins maison adaptés à son cheveu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine naturelle",
+     "goal": "Tenir 4 semaines avec un carnet de résultats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Soins personnalisés",
+     "goal": "Composer ses recettes selon texture et budget",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier naturel",
+     "goal": "Guider 6 personnes avec règles d'hygiène",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cuisine-pro",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "zero-dechet",
+    "cadeau",
+    "convivial",
+    "plante"
+   ],
+   "competitors": [
+    "Blogs naturels",
+    "Boutiques bio"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Contenu gratuit abondant et recouvrement avec les cosmétiques maison. À fusionner dans cet atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-coupe-cheveux-maison",
+   "name": "Coupe de cheveux à la maison",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.coupe",
+   "desc": "Entretenir frange, pointes et coupe courte avec les bons outils et les bons gestes.",
+   "audience": "Parents, hommes, étudiants, familles",
+   "skills": [
+    "Choisir ses outils",
+    "Diviser",
+    "Couper droit",
+    "Rattraper"
+   ],
+   "appSkills": [
+    "coupe-cheveux-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes pointes et ma frange",
+     "goal": "Couper une frange et égaliser des pointes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coupe unie",
+     "goal": "Réaliser une coupe simple sur cheveux mi-longs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dégradés",
+     "goal": "Réaliser un dégradé à la tondeuse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coupe sur mesure",
+     "goal": "Adapter la coupe à la forme du visage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier coupe",
+     "goal": "Guider un groupe avec prudence",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "geste",
+    "argent",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Salons de coiffure",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin d'économie réel, mais enjeu d'assurance et de l'image : rester sur l'entretien, pas la coupe complexe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-barbe-rasage",
+   "name": "Barbe et rasage traditionnel",
+   "sector": "style",
+   "category": "style.cheveux",
+   "subcategory": "style.cheveux.coupe",
+   "desc": "Tailler sa barbe, raser au rasoir droit ou mécanique et prendre soin de sa peau.",
+   "audience": "Hommes 20-60 ans, cadeaux, pères",
+   "skills": [
+    "Choisir sa forme",
+    "Tailler",
+    "Raser",
+    "Soigner la peau"
+   ],
+   "appSkills": [
+    "barbe-rasage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma barbe dessinée",
+     "goal": "Tailler les contours de sa barbe proprement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rasage mécanique",
+     "goal": "Réaliser un rasage net et sans irritation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rasage au rasoir droit",
+     "goal": "Raser en sécurité avec un rasoir droit",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style de barbe",
+     "goal": "Entretenir un style choisi pendant un mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier barbe",
+     "goal": "Guider un groupe avec règles d'hygiène",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "soin",
+    "cadeau",
+    "geste",
+    "convivial"
+   ],
+   "competitors": [
+    "Barbiers",
+    "Boutiques"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Ambiance et cadeau pour hommes, concurrence de barbiers. Risque de coupure à encadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-couture-machine",
+   "name": "Couture à la machine : premier projet",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.initiation",
+   "desc": "Enfiler, régler, coudre droit et réaliser un tote bag ou une pochette.",
+   "audience": "Débutants 20-60 ans, parents, étudiants",
+   "skills": [
+    "Enfiler et régler",
+    "Coudre droit",
+    "Boucler les coutures",
+    "Finir proprement"
+   ],
+   "appSkills": [
+    "couture-creation",
+    "couture-patronage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première pochette",
+     "goal": "Terminer une pochette à fermeture éclair",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Droites et courbes",
+     "goal": "Réussir des coutures droites et courbes sur 3 tissus",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Premier vêtement simple",
+     "goal": "Coudre une jupe ou un haut simple",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions soignées",
+     "goal": "Soigner ourlets, coutures et repassage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier couture",
+     "goal": "Guider un groupe et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "fabrication",
+    "mode",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers de couture",
+    "Boutiques de tissus",
+    "Cours municipaux"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande stable et appétence forte pour le fait-main ; parcours en 5 niveaux très naturel. Parc de machines à prévoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-couture-main-bases",
+   "name": "Couture à la main : bases et boutons",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.initiation",
+   "desc": "Points de base, coudre un bouton, faire un ourlet invisible, sans machine.",
+   "audience": "Tous publics, étudiants, seniors, voyageurs",
+   "skills": [
+    "Enfiler une aiguille",
+    "Points de base",
+    "Boutons",
+    "Ourlet invisible"
+   ],
+   "appSkills": [
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier point",
+     "goal": "Coudre un bouton et faire un ourlet à la main en 1 h 30",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Points utiles",
+     "goal": "Maîtriser 5 points de base sur chutes de tissu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petit projet à la main",
+     "goal": "Réaliser une pochette cousue sans machine",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions invisibles",
+     "goal": "Réussir un ourlet invisible et une reprise propre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier couture main",
+     "goal": "Initier 6 débutants et former des hôtes de niveau 2",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "domicile",
+    "salle-polyvalente",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "geste",
+    "calme",
+    "zero-dechet",
+    "convivial"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Matériel presque nul, besoin universel, très reproductible. Porte d'entrée évidente vers les autres ateliers de couture.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-couture-enfants-doudou",
+   "name": "Couture avec les enfants : un doudou",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.initiation",
+   "desc": "Coudre un petit doudou en feutrine à la main, parent et enfant ensemble.",
+   "audience": "Parents d'enfants 6-12 ans, grands-parents",
+   "skills": [
+    "Choisir un patron",
+    "Coudre à la main",
+    "Rembourrer",
+    "Personnaliser"
+   ],
+   "appSkills": [
+    "couture-creation",
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier doudou",
+     "goal": "Terminer un doudou en feutrine en 1 h 30 avec son enfant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Doudou personnalisé",
+     "goal": "Ajouter yeux, détails et petite broderie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle de couture en famille",
+     "goal": "Réaliser 3 petits objets en 3 séances",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Couture autonome",
+     "goal": "Coudre seul à la maison avec un patron simple",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer pour des familles",
+     "goal": "Guider 4 duos parent-enfant avec sécurité des aiguilles",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "textile",
+    "cadeau",
+    "enfants",
+    "geste"
+   ],
+   "competitors": [
+    "Boutiques créatives",
+    "Ateliers parents-enfants"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Bon pour le week-end en famille et cadeau. Encadrement enfants et aiguilles à gérer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-retouches-vetements",
+   "name": "Retouches de vêtements",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.retouches",
+   "desc": "Raccourcir, rétrécir et ajuster un vêtement acheté, à la main ou à la machine.",
+   "audience": "Actifs, étudiants, familles, amateurs de seconde main",
+   "skills": [
+    "Prendre les mesures",
+    "Raccourcir",
+    "Ajuster",
+    "Épingler"
+   ],
+   "appSkills": [
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier ourlet",
+     "goal": "Raccourcir un pantalon ou une jupe avec un ourlet propre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ajustements simples",
+     "goal": "Reprendre un vêtement en taille sur les côtés",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Retouches avancées",
+     "goal": "Reprendre manches et doublure d'une veste",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Retouches maîtrisées",
+     "goal": "Ajuster un vêtement sans déformer son tombé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier retouches",
+     "goal": "Guider 6 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "reparation",
+    "zero-dechet",
+    "mode",
+    "argent"
+   ],
+   "competitors": [
+    "Retoucheries",
+    "Ateliers de couture"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin concret et récurrent, économie directe. Peu d'ateliers pédagogiques à petit prix.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-raccommodage-visible",
+   "name": "Raccommodage visible",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.retouches",
+   "desc": "Réparer pulls, jeans et chaussettes avec des points décoratifs : sashiko, reprisage, patch brodé.",
+   "audience": "Amateurs de seconde main, créatifs, seniors",
+   "skills": [
+    "Reprisage",
+    "Sashiko",
+    "Pièce brodée",
+    "Choisir les fils"
+   ],
+   "appSkills": [
+    "couture-retouches",
+    "broderie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier raccommodage",
+     "goal": "Réparer un trou avec un point décoratif visible",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sashiko et reprisage",
+     "goal": "Maîtriser 2 techniques sur pull et jean",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Patchs brodés",
+     "goal": "Réaliser une réparation créative et solide",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style visible",
+     "goal": "Composer sa propre approche sur 3 vêtements",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier raccommodage",
+     "goal": "Guider 8 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "salle-polyvalente",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "reparation",
+    "zero-dechet",
+    "mode",
+    "couleur"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Créatrices en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance forte, public engagé, peu de concurrence en atelier. Vendre le résultat esthétique plus que l'économie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-fermeture-eclair-boutons",
+   "name": "Changer une fermeture éclair et des boutons",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.retouches",
+   "desc": "Remplacer un zip, une pression ou un bouton, pour sauver un vêtement.",
+   "audience": "Actifs, étudiants, parents",
+   "skills": [
+    "Défaire",
+    "Choisir une fermeture",
+    "Coudre le zip",
+    "Tester"
+   ],
+   "appSkills": [
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un bouton solide",
+     "goal": "Recoudre un bouton et une pression qui tiennent",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fermeture à glissière",
+     "goal": "Remplacer un zip simple sans abîmer le tissu",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Zip invisible",
+     "goal": "Poser un zip invisible droit et discret",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vêtement sauvé",
+     "goal": "Remplacer le zip d'une pièce de valeur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier réparation",
+     "goal": "Guider 6 personnes lors d'un Repair café",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "reparation",
+    "zero-dechet",
+    "geste",
+    "argent"
+   ],
+   "competitors": [
+    "Retoucheries",
+    "Repair cafés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais module naturel d'un atelier de retouches, peu vendeur seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-patronage-premier-vetement",
+   "name": "Patronage et premier vêtement",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.creation",
+   "desc": "Prendre ses mesures, tracer un patron simple et coudre un vêtement sur mesure.",
+   "audience": "Couturiers confirmés, reconvertis, créatifs",
+   "skills": [
+    "Prendre ses mesures",
+    "Tracer un patron",
+    "Couper",
+    "Assembler"
+   ],
+   "appSkills": [
+    "couture-patronage",
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes mesures, mon patron",
+     "goal": "Prendre 12 mesures et tracer une base de jupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jupe sur mesure",
+     "goal": "Coudre une jupe ajustée de A à Z",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chemisier ou robe",
+     "goal": "Réaliser un vêtement ajusté avec patron adapté",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      180,
+      250
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir un patron original et le valider en toile",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      270,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier patronage",
+     "goal": "Transmettre la méthode à 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      480,
+      840
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "mode",
+    "fabrication",
+    "geste",
+    "couleur"
+   ],
+   "competitors": [
+    "Écoles de couture",
+    "Cours municipaux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Plus exigeant que la couture simple, public passionné et prêt à payer. Demande moyenne mais très fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-couture-maillots-lingerie",
+   "name": "Coudre un maillot de bain ou de la lingerie",
+   "sector": "style",
+   "category": "style.couture",
+   "subcategory": "style.couture.creation",
+   "desc": "Utiliser tissus élastiques, élastiques et finitions spécifiques.",
+   "audience": "Couturières intermédiaires, passionnées de mode",
+   "skills": [
+    "Tissus élastiques",
+    "Doublures",
+    "Élastiques",
+    "Finitions"
+   ],
+   "appSkills": [
+    "couture-patronage",
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier maillot",
+     "goal": "Coudre un maillot simple en tissu élastique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Élastiques et doublures",
+     "goal": "Maîtriser les finitions sur 3 échantillons",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      60,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ensemble complet",
+     "goal": "Réaliser un haut et un bas assortis",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      165,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ajustement fin",
+     "goal": "Adapter le patron à sa morphologie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      250,
+      385
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier maillot",
+     "goal": "Transmettre la méthode à 6 couturières",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      440,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "mode",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Cours spécialisés",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche saisonnière et technique, public étroit. Plutôt un stage de saison.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-sneakers-custom",
+   "name": "Customiser ses sneakers",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Peindre, patcher et personnaliser ses baskets : préparation, peinture et protection.",
+   "audience": "Ados 15-30 ans, collectionneurs, créatifs, cadeaux",
+   "skills": [
+    "Préparer le cuir",
+    "Peindre",
+    "Dessiner un motif",
+    "Protéger"
+   ],
+   "appSkills": [
+    "customisation-sneakers"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières baskets perso",
+     "goal": "Peindre un motif simple sur une paire neuve ou usagée",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs et dégradés",
+     "goal": "Réaliser un dégradé propre et réversible",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      60,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Paire complète",
+     "goal": "Customiser une paire de A à Z avec protection",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      165,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce unique",
+     "goal": "Concevoir un design original et durable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      250,
+      385
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier sneakers",
+     "goal": "Guider 6 participants et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      440,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "mode",
+    "dessin",
+    "couleur",
+    "recup",
+    "cadeau"
+   ],
+   "competitors": [
+    "Boutiques sneakers",
+    "Artistes custom",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public jeune, visuel et prêt à payer pour une pièce unique. Très photogénique et partageable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-jean-custom",
+   "name": "Customiser un jean : patchs et peinture",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Patchs, broderie, peinture textile et déchirures pour transformer un jean.",
+   "audience": "Ados, jeunes actifs, amateurs de mode vintage",
+   "skills": [
+    "Choisir un jean",
+    "Coudre un patch",
+    "Peindre",
+    "Broder"
+   ],
+   "appSkills": [
+    "customisation-vetements",
+    "broderie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon jean unique",
+     "goal": "Poser 3 patchs et une peinture sur un vieux jean",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Techniques mixtes",
+     "goal": "Combiner broderie, peinture et déchirures maîtrisées",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce complète",
+     "goal": "Transformer un jean entier avec une idée cohérente",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Concevoir une série de 3 pièces",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier jean",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "mode",
+    "recup",
+    "couleur",
+    "textile",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers DIY",
+    "Friperies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune demandeur, matériel simple, mais concurrence avec la customisation de sneakers. À tester en duo.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-broderie-vetements",
+   "name": "Broderie sur vêtements",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Broder un motif, des initiales ou un col pour personnaliser ses vêtements.",
+   "audience": "Adultes 25-65 ans, couturières, cadeaux",
+   "skills": [
+    "Tracer",
+    "Points de broderie",
+    "Broder sur tissu",
+    "Finir"
+   ],
+   "appSkills": [
+    "broderie",
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Broder un motif de 5 cm sur un vêtement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Points essentiels",
+     "goal": "Maîtriser 6 points de broderie sur échantillon",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce complète",
+     "goal": "Broder un col ou une poche proprement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Broderie personnelle",
+     "goal": "Dessiner et broder un motif original",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier broderie",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "couleur",
+    "calme",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de broderie",
+    "Boutiques créatives"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large et fidèle, très bon cadeau. Offre existante dans les boutiques créatives.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-teinture-tie-dye",
+   "name": "Teinture, tie-dye et shibori",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Teindre avec de la couleur, du pliage et des teintures naturelles ou synthétiques.",
+   "audience": "Familles, ados, créatifs, amateurs de mode",
+   "skills": [
+    "Plier",
+    "Nouer",
+    "Teindre",
+    "Fixer"
+   ],
+   "appSkills": [
+    "teinture-naturelle",
+    "customisation-vetements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tie-dye",
+     "goal": "Teindre un t-shirt avec un pliage simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pliages shibori",
+     "goal": "Maîtriser 3 pliages et leurs résultats",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dégradés et motifs",
+     "goal": "Réaliser une pièce soignée avec fixation correcte",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Palette personnelle",
+     "goal": "Composer ses couleurs à partir de 3 teintes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier teinture",
+     "goal": "Guider 8 participants avec sécurité",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "jardin-partage",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "couleur",
+    "textile",
+    "famille",
+    "recup",
+    "fete"
+   ],
+   "competitors": [
+    "Ateliers DIY",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très visuel et familial, mais saisonnier et salissant. À tester en été et en extérieur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-upcycling-vetements",
+   "name": "Transformer un vêtement : upcycling",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Découper, assembler et customiser des vêtements pour créer une pièce neuve.",
+   "audience": "Créatifs, amateurs de mode durable, étudiants",
+   "skills": [
+    "Choisir un vêtement",
+    "Démonter",
+    "Assembler",
+    "Finir"
+   ],
+   "appSkills": [
+    "upcycling-vetements",
+    "customisation-vetements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première transformation",
+     "goal": "Transformer une chemise en haut ou en sac",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assemblages",
+     "goal": "Combiner 2 vêtements en une pièce nouvelle",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce originale",
+     "goal": "Concevoir et coudre une pièce unique",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mini-collection",
+     "goal": "Réaliser 3 pièces cohérentes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier upcycling",
+     "goal": "Guider 6 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recup",
+    "mode",
+    "textile",
+    "zero-dechet",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de couture",
+    "Friperies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance mode durable ; courbe d'apprentissage plus longue que prévu. Public engagé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-sac-chutes-tissu",
+   "name": "Sac et pochettes en chutes de tissu",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.custo",
+   "desc": "Transformer chutes et vieux tissus en tote bag, pochette ou trousse.",
+   "audience": "Familles, couturières, adultes zéro déchet",
+   "skills": [
+    "Choisir ses chutes",
+    "Couper",
+    "Assembler",
+    "Doubler"
+   ],
+   "appSkills": [
+    "couture-creation",
+    "patchwork"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tote bag",
+     "goal": "Terminer un sac simple avec des chutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poches et doublures",
+     "goal": "Coudre un sac doublé avec une poche",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série cohérente",
+     "goal": "Réaliser 3 pièces assorties",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sac signature",
+     "goal": "Concevoir et reproduire un modèle original",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier chutes",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "recup",
+    "zero-dechet",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers couture",
+    "Ressourceries"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Accessible et écologique, mais valeur perçue moindre. Intéressant pour les cadeaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-friperie-chasse",
+   "name": "Chiner en friperie : repérer les bonnes pièces",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.secondemain",
+   "desc": "Sortie guidée en friperie : reconnaître matières, marques et pièces durables.",
+   "audience": "Étudiants, jeunes actifs, amateurs de mode durable",
+   "skills": [
+    "Repérer les matières",
+    "Lire les étiquettes",
+    "Essayer",
+    "Négocier"
+   ],
+   "appSkills": [
+    "friperie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chasse",
+     "goal": "Choisir 3 pièces durables dans une friperie",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Matières et coupes",
+     "goal": "Reconnaître laine, lin et synthétique au toucher",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style et budget",
+     "goal": "Composer 3 tenues avec 50 euros",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Œil de chineur",
+     "goal": "Repérer des pièces vintage de qualité en 20 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des chasses",
+     "goal": "Guider 6 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "mode",
+    "ville",
+    "recup",
+    "zero-dechet",
+    "balade"
+   ],
+   "competitors": [
+    "Friperies",
+    "Blogueuses mode"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public jeune et engagé, format sortie original, partenaires évidents (friperies). Forte viralité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-vide-dressing-vendre",
+   "name": "Vendre ses vêtements : photos, prix, annonces",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.secondemain",
+   "desc": "Photographier, décrire et fixer le prix de ses vêtements pour les vendre en ligne.",
+   "audience": "Étudiants, parents, jeunes actifs",
+   "skills": [
+    "Trier",
+    "Photographier",
+    "Rédiger",
+    "Fixer le prix"
+   ],
+   "appSkills": [
+    "vente-occasion",
+    "friperie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première annonce",
+     "goal": "Publier 3 annonces soignées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Photos qui vendent",
+     "goal": "Photographier 10 pièces sur fond neutre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prix et négociation",
+     "goal": "Fixer et négocier 10 prix réalistes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Boutique régulière",
+     "goal": "Tenir une boutique en ligne 4 semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier vente",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "mode",
+    "recup",
+    "tech",
+    "photo"
+   ],
+   "competitors": [
+    "Vinted",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin pratique, mais information très disponible en ligne. Valeur accrue en groupe avec photo.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-troc-vetements",
+   "name": "Soirée troc de vêtements",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.secondemain",
+   "desc": "Échanger vêtements, accessoires et conseils, avec animation et retouches express.",
+   "audience": "Amies, quartiers, associations, étudiants",
+   "skills": [
+    "Trier",
+    "Estimer",
+    "Échanger",
+    "Retoucher"
+   ],
+   "appSkills": [
+    "friperie",
+    "couture-retouches"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première soirée troc",
+     "goal": "Échanger 5 vêtements avec d'autres participants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      10,
+      14
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tri et conseils",
+     "goal": "Trier son dressing et choisir sans regret",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      13,
+      19
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Troc régulier",
+     "goal": "Participer à 3 soirées en 3 mois",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Organisation d'un troc",
+     "goal": "Organiser une soirée de 20 personnes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des trocs",
+     "goal": "Former des hôtes organisateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      95,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "cafe"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "recup",
+    "zero-dechet",
+    "convivial",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Format social très vivant, sans coût d'achat, fort potentiel de communauté. Prix faible mais fort pouvoir de fidélisation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cordonnerie-entretien",
+   "name": "Entretenir et cirer ses chaussures",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.entretien",
+   "desc": "Nettoyer, cirer, resemeler un talon et prolonger la vie des chaussures en cuir.",
+   "audience": "Actifs, amateurs de belles chaussures, cadeaux",
+   "skills": [
+    "Nettoyer",
+    "Cirer",
+    "Faire briller",
+    "Réparer un talon"
+   ],
+   "appSkills": [
+    "cordonnerie-cirage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes chaussures neuves",
+     "goal": "Nettoyer et cirer une paire en cuir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Brillance miroir",
+     "goal": "Réaliser un cirage soigné",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petites réparations",
+     "goal": "Remplacer un talon ou un bout",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien de saison",
+     "goal": "Entretenir 5 paires de chaussures",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier chaussures",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "boutique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "service",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "geste",
+    "reparation",
+    "mode",
+    "cadeau",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Cordonniers",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public plus restreint mais valeur élevée ; lien naturel avec boutiques de chaussures et cordonniers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-entretien-vetements-taches",
+   "name": "Détacher et entretenir ses vêtements",
+   "sector": "style",
+   "category": "style.custo",
+   "subcategory": "style.custo.entretien",
+   "desc": "Lessive, taches, repassage et soin de la laine : faire durer ses vêtements.",
+   "audience": "Étudiants, jeunes actifs, parents",
+   "skills": [
+    "Lire les étiquettes",
+    "Détacher",
+    "Laver",
+    "Repasser"
+   ],
+   "appSkills": [
+    "detachage-linge",
+    "entretien-linge"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les bons réflexes",
+     "goal": "Lire les étiquettes et trier son linge",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Taches courantes",
+     "goal": "Détacher 8 types de taches",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Laine et délicats",
+     "goal": "Laver sans abîmer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Linge durable",
+     "goal": "Faire durer ses pièces plusieurs années",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier entretien",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "zero-dechet",
+    "argent",
+    "reparation",
+    "mode"
+   ],
+   "competitors": [
+    "Blogs",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Utile et très pratique, mais public peu enclin à payer. À associer à des ateliers de réparation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-garde-robe-capsule",
+   "name": "Garde-robe capsule",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.garderobe",
+   "desc": "Composer 30 pièces qui vont ensemble, trier et acheter mieux.",
+   "audience": "Femmes et hommes 25-55 ans, minimalistes, jeunes actifs",
+   "skills": [
+    "Faire l'inventaire",
+    "Choisir une palette",
+    "Associer",
+    "Compléter"
+   ],
+   "appSkills": [
+    "garde-robe-capsule"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon inventaire",
+     "goal": "Trier son dressing en 3 piles et lister ses manques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Palette et basiques",
+     "goal": "Choisir sa palette et 10 basiques",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Capsule de saison",
+     "goal": "Composer 15 tenues avec 30 pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Capsule durable",
+     "goal": "Maintenir sa capsule pendant un an",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier capsule",
+     "goal": "Guider 8 personnes et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "maison",
+    "argent",
+    "zero-dechet",
+    "organisation"
+   ],
+   "competitors": [
+    "Conseillers en image",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Tendance minimaliste forte, besoin concret, résonance avec la mode durable. Résultat mesurable en tenues photographiées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-dressing-tri-rangement",
+   "name": "Faire le tri de son dressing",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.garderobe",
+   "desc": "Trier, ranger, donner et revendre : un dressing clair en une demi-journée.",
+   "audience": "Actifs, parents, déménageurs",
+   "skills": [
+    "Trier",
+    "Ranger",
+    "Donner",
+    "Revendre"
+   ],
+   "appSkills": [
+    "garde-robe-capsule",
+    "rangement-desencombrement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon dressing trié",
+     "goal": "Trier 50 pièces en garder, donner, vendre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rangement durable",
+     "goal": "Ranger par catégories avec un système simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dressing clair",
+     "goal": "Tenir le système 4 semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dressing fonctionnel",
+     "goal": "Optimiser son dressing à son quotidien",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier tri",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "domicile",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "organisation",
+    "zero-dechet",
+    "mode",
+    "argent"
+   ],
+   "competitors": [
+    "Home organizers",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin large, mais substituable par l'auto-organisation. Intéressant en accompagnement à domicile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-mode-responsable-acheter-mieux",
+   "name": "Acheter moins, mieux : mode responsable",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.garderobe",
+   "desc": "Lire les étiquettes, comparer et choisir des vêtements durables et réparables.",
+   "audience": "Jeunes actifs, étudiants, familles",
+   "skills": [
+    "Lire une étiquette",
+    "Comparer",
+    "Calculer le coût par port",
+    "Réparer"
+   ],
+   "appSkills": [
+    "friperie",
+    "garde-robe-capsule"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire une étiquette",
+     "goal": "Reconnaître 5 matières et leur impact",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comparer des pièces",
+     "goal": "Comparer qualité, prix et réparabilité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Budget mode",
+     "goal": "Planifier 6 mois d'achats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Consommation consciente",
+     "goal": "Tenir un an sans achat impulsif",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier mode durable",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "zero-dechet",
+    "argent",
+    "debat",
+    "ville"
+   ],
+   "competitors": [
+    "Associations",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt réel, mais rapport à la mode très idéologique et public déjà averti.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-colorimetrie-personnelle",
+   "name": "Colorimétrie personnelle",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Découvrir ses couleurs flatteuses avec un nuancier, du maquillage et des vêtements.",
+   "audience": "Femmes 25-60 ans, hommes, amies, cadeaux",
+   "skills": [
+    "Tester des tons",
+    "Lire sa carnation",
+    "Associer",
+    "Choisir ses couleurs"
+   ],
+   "appSkills": [
+    "colorimetrie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes couleurs",
+     "goal": "Identifier sa saison de couleurs avec un nuancier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mes tenues",
+     "goal": "Associer 8 couleurs de sa palette",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Shopping ciblé",
+     "goal": "Choisir 5 pièces dans sa palette",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      180,
+      250
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Palette complète",
+     "goal": "Composer sa garde-robe autour de sa palette",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      270,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier colorimétrie",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      480,
+      840
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "mode",
+    "convivial",
+    "cadeau",
+    "soin"
+   ],
+   "competitors": [
+    "Conseillères en image",
+    "Instituts"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Forte tendance, séances en petit groupe rares, cadeau apprécié. Offre en ligne abondante mais peu locale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-morphologie-coupes",
+   "name": "Trouver les coupes qui vous mettent à l'aise",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Repérer les coupes, tissus et longueurs qui conviennent à son corps, sans injonction.",
+   "audience": "Femmes et hommes de toute morphologie",
+   "skills": [
+    "Se mesurer",
+    "Repérer ses coupes",
+    "Essayer",
+    "Choisir"
+   ],
+   "appSkills": [
+    "relooking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes mesures",
+     "goal": "Prendre ses mesures et repérer ses repères",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coupes qui conviennent",
+     "goal": "Identifier 5 coupes qui mettent à l'aise",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Essayage guidé",
+     "goal": "Choisir 3 pièces en boutique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style assumé",
+     "goal": "Définir sa silhouette en autonomie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier coupes",
+     "goal": "Guider 6 personnes avec respect",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "soin",
+    "couleur",
+    "convivial",
+    "argent"
+   ],
+   "competitors": [
+    "Conseillères en image",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin important ; sujet sensible nécessitant un cadre bienveillant. Offre existante chez les conseillères en image.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-personal-shopping-sortie",
+   "name": "Personal shopping : sortie shopping accompagnée",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Une demi-journée en boutique avec un conseil sur mesure, pour acheter en confiance.",
+   "audience": "Actifs, hommes, personnes en transition, cadeaux",
+   "skills": [
+    "Définir un budget",
+    "Choisir des pièces",
+    "Essayer",
+    "Décider"
+   ],
+   "appSkills": [
+    "personal-shopping",
+    "relooking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon objectif shopping",
+     "goal": "Cibler 3 pièces et fixer un budget",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Essayages guidés",
+     "goal": "Choisir et essayer 8 pièces",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      75,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tenues complètes",
+     "goal": "Composer 3 tenues avec 5 pièces",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      210,
+      295
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Achats en autonomie",
+     "goal": "Acheter seul avec sa méthode",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      315,
+      490
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des sorties shopping",
+     "goal": "Accompagner des clients",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      560,
+      980
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "ville",
+    "argent",
+    "cadeau",
+    "convivial"
+   ],
+   "competitors": [
+    "Personal shoppers",
+    "Grands magasins"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Prix élevé accepté et très bon cadeau, mais dépend de partenariats avec des boutiques. À tester auprès de clientes existantes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-relooking-image-personnelle",
+   "name": "Relooking : une image qui vous ressemble",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Coupe, couleurs, tenues et maintien : une journée pour changer de regard sur soi.",
+   "audience": "Personnes en transition de vie, reconversion, séparation",
+   "skills": [
+    "Définir son image",
+    "Choisir couleurs et coupes",
+    "Maquillage et coiffure",
+    "Se photographier"
+   ],
+   "appSkills": [
+    "relooking",
+    "colorimetrie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Faire le point",
+     "goal": "Définir 3 mots-clés pour son image",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tenues et couleurs",
+     "goal": "Choisir 5 pièces et 2 couleurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      100,
+      145
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Look complet",
+     "goal": "Réaliser un look cohérent de la tête aux pieds",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      270,
+      380
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Image assumée",
+     "goal": "Entretenir sa nouvelle image 3 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      405,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un relooking",
+     "goal": "Accompagner un client de A à Z",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      720,
+      1260
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "journee",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "service",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "soin",
+    "couleur",
+    "photo",
+    "convivial"
+   ],
+   "competitors": [
+    "Conseillères en image",
+    "Salons"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande ponctuelle mais budget élevé, concurrence de conseillères établies. À proposer en duo ou en groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-tenue-entretien-prise-de-parole",
+   "name": "Tenues pour un entretien ou une prise de parole",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Choisir et porter une tenue adaptée à un entretien, un oral ou une présentation.",
+   "audience": "Étudiants, jeunes diplômés, cadres en recherche d'emploi",
+   "skills": [
+    "Choisir selon le poste",
+    "Soigner les détails",
+    "Maintien",
+    "Photographier"
+   ],
+   "appSkills": [
+    "relooking",
+    "pitch-presentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma tenue d'entretien",
+     "goal": "Choisir une tenue adaptée à un poste",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Détails qui comptent",
+     "goal": "Soigner chaussures, coupe et accessoires",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entretien blanc",
+     "goal": "Passer un entretien filmé et se voir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Image professionnelle",
+     "goal": "Construire une garde-robe pro de 8 pièces",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier tenues",
+     "goal": "Guider 8 jeunes diplômés",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "ecole",
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "parole"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "argent",
+    "parole",
+    "ville",
+    "defi"
+   ],
+   "competitors": [
+    "Missions locales",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel des jeunes diplômés, budget limité, partenariats écoles et missions locales possibles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-style-masculin-premiers-pas",
+   "name": "Style masculin : premiers pas",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.conseil",
+   "desc": "Basiques, coupes, couleurs et entretien pour hommes qui veulent s'habiller mieux.",
+   "audience": "Hommes 20-50 ans, jeunes actifs, étudiants",
+   "skills": [
+    "Choisir ses basiques",
+    "Associer",
+    "Entretenir",
+    "Acheter"
+   ],
+   "appSkills": [
+    "garde-robe-capsule",
+    "colorimetrie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes basiques",
+     "goal": "Choisir 10 pièces indispensables",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Associations simples",
+     "goal": "Composer 5 tenues avec ses pièces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Garde-robe cohérente",
+     "goal": "Compléter avec 10 pièces ciblées",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Définir son style et son budget",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier style homme",
+     "goal": "Guider 6 participants",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "argent",
+    "convivial",
+    "ville",
+    "couleur"
+   ],
+   "competitors": [
+    "Conseillers en image",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public réceptif mais plus difficile à toucher ; formules en couple ou entre amis fonctionnent.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-foulards-noeuds",
+   "name": "Foulards, noeuds et cravates",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.accessoires",
+   "desc": "Nouer un foulard, un carré de soie, une cravate ou un noeud papillon de 10 façons.",
+   "audience": "Adultes 25-70 ans, voyageurs, cadeaux",
+   "skills": [
+    "Plier un carré",
+    "Nouer",
+    "Assortir",
+    "Entretenir"
+   ],
+   "appSkills": [
+    "foulards-noeuds"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers noeuds",
+     "goal": "Réaliser 5 façons de nouer un foulard",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Associations",
+     "goal": "Assortir foulard et tenue",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style personnel",
+     "goal": "Créer 3 looks distincts",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Collection",
+     "goal": "Entretenir et ranger sa collection",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier foulards",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "objet-souvenir",
+    "cadeau",
+    "convivial",
+    "geste"
+   ],
+   "competitors": [
+    "Boutiques de soie",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Concept charmant, public limité mais disposé à payer pour un cadeau. Partenariats avec boutiques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-bijoux-fantaisie",
+   "name": "Bijoux fantaisie : perles et fils",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.accessoires",
+   "desc": "Enfiler, monter et fermer des bijoux fantaisie avec perles, fils et pinces.",
+   "audience": "Adultes 20-60 ans, familles, amies",
+   "skills": [
+    "Choisir ses perles",
+    "Monter un collier",
+    "Poser les fermoirs",
+    "Finir"
+   ],
+   "appSkills": [
+    "bijoux-perles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bracelet",
+     "goal": "Réaliser un bracelet avec fermoir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Collier et boucles",
+     "goal": "Réaliser 2 pièces assorties",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parure complète",
+     "goal": "Réaliser un ensemble de 3 pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Créer ses propres modèles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier bijoux",
+     "goal": "Guider 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles",
+    "ados"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "objet-souvenir",
+    "cadeau",
+    "convivial",
+    "couleur"
+   ],
+   "competitors": [
+    "Boutiques de loisirs créatifs",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon cadeau et convivial, matériel peu coûteux. Marché concurrentiel mais fortement ancré.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maroquinerie-cuir-debutant",
+   "name": "Petite maroquinerie : un porte-cartes en cuir",
+   "sector": "style",
+   "category": "style.image",
+   "subcategory": "style.image.accessoires",
+   "desc": "Couper, coller et coudre à la main un porte-cartes ou une ceinture en cuir.",
+   "audience": "Adultes 25-60 ans, cadeaux, bricoleurs",
+   "skills": [
+    "Choisir un cuir",
+    "Couper",
+    "Coudre au point sellier",
+    "Finir les tranches"
+   ],
+   "appSkills": [
+    "maroquinerie-cuir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier porte-cartes",
+     "goal": "Terminer un porte-cartes en cuir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Point sellier",
+     "goal": "Maîtriser le point sellier sur échantillon",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      75,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce plus complexe",
+     "goal": "Réaliser un portefeuille",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      210,
+      295
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce personnalisée",
+     "goal": "Concevoir et réaliser son modèle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      315,
+      490
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier cuir",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      560,
+      980
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "geste",
+    "mode",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de maroquinerie",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Cadeau très demandé et prix accepté, mais matériel d'atelier nécessaire. À tester dans un atelier partenaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cosplay-premier-costume",
+   "name": "Cosplay : premier costume",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.cosplay",
+   "desc": "Choisir un personnage, trouver les matières et assembler un premier costume.",
+   "audience": "Ados et adultes 14-35 ans, fans de manga, jeu vidéo, cinéma",
+   "skills": [
+    "Choisir un personnage",
+    "Récupérer des vêtements",
+    "Coudre",
+    "Assembler"
+   ],
+   "appSkills": [
+    "cosplay-costumes",
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier costume",
+     "goal": "Assembler un costume reconnaissable avec des vêtements récupérés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accessoires et maquillage",
+     "goal": "Fabriquer 2 accessoires fidèles",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Costume complet",
+     "goal": "Réaliser un costume soigné",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Costume de convention",
+     "goal": "Réaliser un costume prêt à défiler",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier cosplay",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "mode",
+    "textile",
+    "fabrication",
+    "fete"
+   ],
+   "competitors": [
+    "Clubs de cosplay",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté très engagée, public jeune moins solvable, saison de conventions. Bon pour des stages.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-cosplay-armures-eva",
+   "name": "Armures et accessoires en mousse EVA",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.cosplay",
+   "desc": "Découper, thermoformer et peindre mousse EVA pour armures, casques et armes.",
+   "audience": "Cosplayeurs, fans, parents, amateurs de jeu de rôle",
+   "skills": [
+    "Découper",
+    "Thermoformer",
+    "Coller",
+    "Peindre"
+   ],
+   "appSkills": [
+    "cosplay-costumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier accessoire",
+     "goal": "Fabriquer un bouclier ou un casque en mousse EVA",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formes et volumes",
+     "goal": "Thermoformer et assembler 3 pièces",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      60,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Armure complète",
+     "goal": "Réaliser une armure portable",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      165,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions pro",
+     "goal": "Peindre et vieillir une pièce",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      250,
+      385
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier EVA",
+     "goal": "Guider 6 personnes avec règles de sécurité",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      440,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "fabrication",
+    "mode",
+    "fete",
+    "recup"
+   ],
+   "competitors": [
+    "Clubs de cosplay",
+    "YouTube"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Public passionné mais très étroit, besoin d'espace, de ventilation et de matériel de coupe. À écarter hors partenariat avec un fablab.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-deguisements-fete-maison",
+   "name": "Déguisements de fête faits maison",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.cosplay",
+   "desc": "Créer en quelques heures un déguisement original pour Halloween, carnaval, soirée.",
+   "audience": "Parents, amis, associations, écoles",
+   "skills": [
+    "Choisir un thème",
+    "Récupérer",
+    "Assembler",
+    "Maquiller"
+   ],
+   "appSkills": [
+    "cosplay-costumes",
+    "customisation-vetements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon déguisement du soir",
+     "goal": "Fabriquer un costume en 2 heures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accessoires faits maison",
+     "goal": "Créer 3 accessoires",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Costume d'équipe",
+     "goal": "Fabriquer 5 costumes cohérents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Costume soigné",
+     "goal": "Réaliser un costume abouti",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier déguisement",
+     "goal": "Guider 10 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "famille",
+    "recup",
+    "mode",
+    "humour"
+   ],
+   "competitors": [
+    "Boutiques de déguisements",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pic saisonnier fort (Halloween, carnaval), très convivial. Rapidement rentable en période de fêtes, creux le reste de l'année.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-artistique",
+   "name": "Maquillage artistique et face painting",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.maquillage",
+   "desc": "Peindre un visage : animaux, super-héros, fantasy, avec hygiène et fixation.",
+   "audience": "Parents, animateurs, étudiants, amateurs",
+   "skills": [
+    "Préparer",
+    "Peindre",
+    "Dessiner",
+    "Fixer"
+   ],
+   "appSkills": [
+    "maquillage-artistique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier visage",
+     "goal": "Peindre un papillon ou un tigre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages",
+     "goal": "Maîtriser 5 modèles de visage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Visage complet",
+     "goal": "Réaliser un personnage détaillé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Créer ses propres visages",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un stand de maquillage",
+     "goal": "Gérer 10 enfants en 2 heures",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "couleur",
+    "dessin",
+    "fete",
+    "famille",
+    "scene"
+   ],
+   "competitors": [
+    "Artistes de face painting",
+    "Animateurs"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Cible parents et animateurs, bon réemploi. Hygiène et peaux d'enfants à encadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-effets-speciaux",
+   "name": "Maquillage d'effets spéciaux",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.maquillage",
+   "desc": "Plaies, bleus, vieillissement et créatures avec latex, cire et peinture.",
+   "audience": "Passionnés de cinéma, étudiants, Halloween",
+   "skills": [
+    "Préparer",
+    "Modeler",
+    "Colorer",
+    "Retirer"
+   ],
+   "appSkills": [
+    "maquillage-effets-speciaux"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première plaie",
+     "goal": "Réaliser une plaie réaliste en 20 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bleus et brûlures",
+     "goal": "Maîtriser 3 effets de peau",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vieillissement",
+     "goal": "Vieillir un visage avec maquillage et latex",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créature complète",
+     "goal": "Créer un personnage complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier effets spéciaux",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "video",
+    "fete",
+    "couleur",
+    "humour"
+   ],
+   "competitors": [
+    "Écoles de maquillage",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Niche très visuelle et photographiable, saisonnière. Matériaux à manipuler avec précautions.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-maquillage-drag",
+   "name": "Transformation drag : maquillage et personnage",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.maquillage",
+   "desc": "Concevoir un personnage de scène : maquillage, perruque, costume et attitude.",
+   "audience": "Artistes, passionnés de scène, étudiants, curieux",
+   "skills": [
+    "Contouring",
+    "Sourcils",
+    "Lèvres",
+    "Personnage"
+   ],
+   "appSkills": [
+    "maquillage-artistique",
+    "perruques"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier personnage",
+     "goal": "Réaliser un maquillage de personnage complet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Contouring et volumes",
+     "goal": "Maîtriser le contouring de scène",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Personnage complet",
+     "goal": "Composer un personnage avec perruque et costume",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Numéro de scène",
+     "goal": "Présenter un numéro de 3 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier drag",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "studio-musique"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "mouvement"
+   ],
+   "outputs": [
+    "photo",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "mode",
+    "fete",
+    "humour",
+    "couleur"
+   ],
+   "competitors": [
+    "Collectifs drag",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit mais engagé, forte dimension scénique. À tester plus tard avec un partenaire culturel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-perruques-scene",
+   "name": "Perruques et coiffures de scène",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.epoque",
+   "desc": "Choisir, couper et coiffer une perruque pour le théâtre, le cosplay et les fêtes.",
+   "audience": "Cosplayeurs, comédiens, drag, costumiers",
+   "skills": [
+    "Choisir",
+    "Fixer",
+    "Coiffer",
+    "Entretenir"
+   ],
+   "appSkills": [
+    "perruques",
+    "coiffure-tresses"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première perruque",
+     "goal": "Poser et coiffer une perruque",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coupe et coiffage",
+     "goal": "Couper et styliser une perruque",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coiffure d'époque",
+     "goal": "Réaliser une coiffure d'époque",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Perruque sur mesure",
+     "goal": "Concevoir une perruque",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier perruques",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "scene",
+    "mode",
+    "geste",
+    "fete",
+    "fabrication"
+   ],
+   "competitors": [
+    "Costumiers",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Marché très restreint et technique, déjà couvert par les costumiers. À garder comme module du cosplay ou du théâtre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "style-costume-epoque-reconstitution",
+   "name": "Costume d'époque et reconstitution historique",
+   "sector": "style",
+   "category": "style.costumes",
+   "subcategory": "style.costumes.epoque",
+   "desc": "Réaliser une tenue médiévale, Renaissance ou XVIIIe, de la tunique aux accessoires.",
+   "audience": "Reconstituteurs, fêtes médiévales, passionnés d'histoire",
+   "skills": [
+    "Choisir une époque",
+    "Tailler",
+    "Coudre à la main",
+    "Accessoiriser"
+   ],
+   "appSkills": [
+    "couture-creation",
+    "cosplay-costumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première tenue",
+     "goal": "Réaliser une tunique médiévale",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tissus et coupes",
+     "goal": "Choisir matières et patrons d'une époque",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tenue complète",
+     "goal": "Réaliser une tenue complète d'époque",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      180,
+      250
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Authenticité",
+     "goal": "Documenter et reproduire une tenue historique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      270,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier d'époque",
+     "goal": "Guider 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      480,
+      840
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "vetement",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "histoire",
+    "textile",
+    "mode",
+    "fete",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Associations d'histoire vivante",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public fidèle mais étroit, à relier aux associations d'histoire vivante. À reconsidérer plus tard.",
+   "confidence": "estimation"
+  }
+ ]
+}

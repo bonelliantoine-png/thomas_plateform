@@ -1,0 +1,7770 @@
+{
+ "sector": "scene",
+ "categories": [
+  {
+   "id": "scene.couple",
+   "name": "Danses à deux",
+   "desc": "Danses de couple et de salon, du bal du samedi à la première danse de mariage.",
+   "subcategories": [
+    {
+     "id": "scene.couple.latines",
+     "name": "Danses latines",
+     "desc": "Salsa, bachata, kizomba et zouk, danses sociales très pratiquées en soirée."
+    },
+    {
+     "id": "scene.couple.salon",
+     "name": "Swing, tango et danses de salon",
+     "desc": "Lindy hop, rock, valse et tango, danses de salon à rythme varié."
+    },
+    {
+     "id": "scene.couple.bal",
+     "name": "Bal, mariage et danses collectives",
+     "desc": "Danses qui se pratiquent en groupe, de la contredanse à la première danse."
+    }
+   ]
+  },
+  {
+   "id": "scene.solo",
+   "name": "Danse en solo",
+   "desc": "Danses qui se pratiquent seul ou en groupe, urbaines, scéniques et du monde.",
+   "subcategories": [
+    {
+     "id": "scene.solo.urbaine",
+     "name": "Danses urbaines",
+     "desc": "Hip-hop, breakdance, afrobeats et chorégraphies pour les réseaux."
+    },
+    {
+     "id": "scene.solo.scenique",
+     "name": "Danses scéniques",
+     "desc": "Contemporain, jazz, claquettes et classique pour adultes, du plaisir à la scène."
+    },
+    {
+     "id": "scene.solo.monde",
+     "name": "Danses du monde",
+     "desc": "Orientale, flamenco, bollywood et autres danses de tradition."
+    }
+   ]
+  },
+  {
+   "id": "scene.theatre",
+   "name": "Théâtre, impro et mise en scène",
+   "desc": "Jouer, improviser, conter et mettre en scène, devant des amis ou un public.",
+   "subcategories": [
+    {
+     "id": "scene.theatre.impro",
+     "name": "Improvisation",
+     "desc": "Jeux d'impro courts ou longs, pour s'amuser, se libérer ou travailler en équipe."
+    },
+    {
+     "id": "scene.theatre.jeu",
+     "name": "Jeu d'acteur",
+     "desc": "Interpréter un rôle, du texte classique à la caméra."
+    },
+    {
+     "id": "scene.theatre.recit",
+     "name": "Conte et lecture en scène",
+     "desc": "Dire une histoire ou lire un texte avec le corps et la voix."
+    },
+    {
+     "id": "scene.theatre.mise-en-scene",
+     "name": "Mise en scène et technique",
+     "desc": "Diriger, éclairer et sonoriser un spectacle."
+    }
+   ]
+  },
+  {
+   "id": "scene.magie",
+   "name": "Magie et mentalisme",
+   "desc": "Tours de cartes, mentalisme et magie pour enfants.",
+   "subcategories": [
+    {
+     "id": "scene.magie.close-up",
+     "name": "Magie rapprochée",
+     "desc": "Magie avec des cartes, des pièces et des objets du quotidien."
+    },
+    {
+     "id": "scene.magie.mental",
+     "name": "Mentalisme",
+     "desc": "Effets de lecture de pensée et de prédiction, entre psychologie et magie."
+    },
+    {
+     "id": "scene.magie.jeune",
+     "name": "Magie et ballons pour enfants",
+     "desc": "Animations pour anniversaires et fêtes de famille."
+    }
+   ]
+  },
+  {
+   "id": "scene.cirque",
+   "name": "Cirque et arts du geste",
+   "desc": "Jonglerie, aérien, équilibre, clown et marionnettes.",
+   "subcategories": [
+    {
+     "id": "scene.cirque.jonglerie",
+     "name": "Jonglerie",
+     "desc": "Balles, diabolo, massues et objets lumineux."
+    },
+    {
+     "id": "scene.cirque.aerien",
+     "name": "Aérien et acrobatie",
+     "desc": "Tissu, cerceau et portés acrobatiques."
+    },
+    {
+     "id": "scene.cirque.comique",
+     "name": "Équilibre, clown et mime",
+     "desc": "Monocycle, personnages clownesques et expression silencieuse."
+    },
+    {
+     "id": "scene.cirque.objets",
+     "name": "Marionnettes et objets",
+     "desc": "Jouer avec marionnettes, ombres et voix détournées."
+    }
+   ]
+  },
+  {
+   "id": "scene.humour",
+   "name": "Humour, animation et cabaret",
+   "desc": "Faire rire, animer et monter sur scène.",
+   "subcategories": [
+    {
+     "id": "scene.humour.humour",
+     "name": "Humour",
+     "desc": "Stand-up et sketchs."
+    },
+    {
+     "id": "scene.humour.animation",
+     "name": "Animation et présentation",
+     "desc": "Tenir un micro, animer une soirée ou un karaoké."
+    },
+    {
+     "id": "scene.humour.cabaret",
+     "name": "Cabaret et performance",
+     "desc": "Burlesque, drag et formes de cabaret."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "scene-salsa-cubaine",
+   "name": "Salsa cubaine",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.latines",
+   "desc": "Danser la salsa cubaine à deux : pas de base, tours et figures de rueda.",
+   "audience": "Jeunes actifs 25-40 ans, couples, célibataires cherchant une activité sociale",
+   "skills": [
+    "Pas de base à deux",
+    "Guider et suivre",
+    "Tours simples",
+    "Figures de rueda"
+   ],
+   "appSkills": [
+    "salsa-bachata"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas de salsa",
+     "goal": "Tenir le rythme et enchaîner les pas de base en changeant de partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tours et enchaînements",
+     "goal": "Guider et suivre trois figures simples sur un morceau complet",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Salsa en soirée",
+     "goal": "Danser une soirée entière avec des partenaires variés sans se perdre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style et musicalité",
+     "goal": "Interpréter la musique avec des pauses, du jeu de jambes et un style personnel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer la salsa et former",
+     "goal": "Construire un cours progressif et corriger guidage et appuis",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "bar",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "fete",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de danse",
+    "MJC",
+    "soirées salsa"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte mais offre de cours très dense et peu chère à Paris ; l'espace se trouve dans les formats courts sans engagement et les mixes (apéro, soirée).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-bachata",
+   "name": "Bachata sensuelle et dominicaine",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.latines",
+   "desc": "Apprendre la bachata dominicaine et sensuelle : connexion, ondulations et musicalité.",
+   "audience": "Jeunes actifs 22-38 ans, amateurs de danses sociales",
+   "skills": [
+    "Pas de base dominicains",
+    "Connexion à deux",
+    "Ondulations",
+    "Musicalité"
+   ],
+   "appSkills": [
+    "salsa-bachata"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Bachata, premiers pas",
+     "goal": "Marcher en rythme et danser un morceau simple avec un partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Connexion et guidage",
+     "goal": "Guider et suivre des tours et des changements de direction fluides",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bachata sensuelle",
+     "goal": "Enchaîner ondulations et pas glissés en gardant la connexion",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Musicalité et style",
+     "goal": "Jouer avec les accents de la guitare et improviser un duo de 3 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre la bachata",
+     "goal": "Préparer un cours à rôles inversés et corriger la posture des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "fete",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de danse latine",
+    "congrès de bachata"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très en vogue chez les 25-35 ans, mais l'offre existante est abondante ; un angle découverte entre amis ou en afterwork reste différenciant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-kizomba",
+   "name": "Kizomba et urban kiz",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.latines",
+   "desc": "Découvrir la kizomba : marche lente, proximité et écoute du partenaire.",
+   "audience": "Adultes 28-45 ans, amateurs de danse sociale lente",
+   "skills": [
+    "Marche kizomba",
+    "Connexion buste",
+    "Cercles et saidas",
+    "Gestion du rythme lent"
+   ],
+   "appSkills": [
+    "salsa-bachata"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Kizomba, la marche",
+     "goal": "Marcher en rythme lent et pivoter avec un partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Saidas et cercles",
+     "goal": "Enchaîner cinq figures de base en gardant la connexion du buste",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kizomba en soirée",
+     "goal": "Danser plusieurs morceaux d'affilée avec des inconnus à l'aise",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Urban kiz et fusion",
+     "goal": "Mêler musicalité, jeu de jambes et pauses dans un style personnel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider un cours de kizomba",
+     "goal": "Structurer un cours et corriger la connexion de façon sûre",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 1,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "expatries"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "fete"
+   ],
+   "competitors": [
+    "Écoles de danse",
+    "soirées kizomba"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Communauté fidèle mais plus réduite, et la tendance a baissé depuis le pic de 2018 ; une niche de passionnés plus qu'un marché large.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-zouk-bresilien",
+   "name": "Zouk brésilien",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.latines",
+   "desc": "S'initier au zouk brésilien : fluidité, mouvements de tête et danse en connexion.",
+   "audience": "Adultes 25-45 ans, curieux de danse brésilienne",
+   "skills": [
+    "Base zouk",
+    "Balancement et ondulation",
+    "Rotations",
+    "Connexion douce"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Zouk, première danse",
+     "goal": "Trouver le balancement de base et danser un morceau lent à deux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ondulations et rotations",
+     "goal": "Guider et suivre des rotations fluides sans à-coups",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Zouk consolidé",
+     "goal": "Enchaîner quatre figures avec transitions propres sur un morceau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Zouk expressif",
+     "goal": "Improviser en musique en variant dynamiques et connexions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le zouk",
+     "goal": "Bâtir un cours progressif et dépanner les problèmes de guidage",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de danse",
+    "associations brésiliennes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche passionnée à Paris mais peu de volume ; peu rentable avant d'avoir un vivier d'hôtes sur le créneau.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-lindy-hop",
+   "name": "Lindy hop et swing",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.salon",
+   "desc": "Danser le lindy hop : swing out, charleston et jeu d'équipe avec la musique.",
+   "audience": "Étudiants et jeunes actifs 22-40 ans, amateurs de jazz",
+   "skills": [
+    "Rythme triple",
+    "Swing out",
+    "Charleston",
+    "Danse sociale"
+   ],
+   "appSkills": [
+    "swing-lindy-hop"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier swing",
+     "goal": "Danser le pas de base et un swing out guidé sur du jazz",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Swing out et charleston",
+     "goal": "Enchaîner swing out, charleston et un tour sans perdre le rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lindy en bal",
+     "goal": "Danser plusieurs morceaux de swing avec des partenaires différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Swing musical",
+     "goal": "Improviser sur des tempos variés et jouer avec les breaks du jazz",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée swing",
+     "goal": "Concevoir un cours et un bal, former des suiveurs et guideurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "jazz",
+    "convivial",
+    "fete"
+   ],
+   "competitors": [
+    "Associations swing",
+    "Paris Swing Dance",
+    "écoles de danse"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté soudée et soirées nombreuses ; l'offre est surtout associative, ce qui laisse de la place pour des initiations courtes de type sortie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-rock-boogie",
+   "name": "Rock et boogie à deux",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.salon",
+   "desc": "Apprendre le rock 4 temps et 6 temps pour danser sur n'importe quel morceau rythmé.",
+   "audience": "Couples 30-60 ans, familles, préparation de mariages",
+   "skills": [
+    "Rock 4 temps",
+    "Rock 6 temps",
+    "Tours",
+    "Guidage"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier rock",
+     "goal": "Danser le rock 4 temps sur trois morceaux sans s'arrêter",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tours et passes",
+     "goal": "Enchaîner huit passes de rock à deux avec fluidité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rock en soirée",
+     "goal": "Danser rock et boogie en bal en adaptant le style au tempo",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rock acrobatique léger",
+     "goal": "Intégrer des figures et jeux de pieds dans une chorégraphie à deux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des cours de rock",
+     "goal": "Concevoir une progression adaptée aux couples novices",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 0,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "couple",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de danse",
+    "MJC",
+    "Dance Club"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande stable chez les couples et seniors, surtout via mariages ; l'offre associative est bon marché et le revenu d'un hôte reste modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-valse-viennoise",
+   "name": "Valse et danses de bal",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.salon",
+   "desc": "Apprendre valse, foxtrot et quickstep pour mariages, soirées de gala et bals.",
+   "audience": "Couples 25-60 ans, fiancés, seniors",
+   "skills": [
+    "Valse lente",
+    "Valse viennoise",
+    "Foxtrot",
+    "Posture de bal"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières valses",
+     "goal": "Danser une valse lente avec posture et pas corrects sur 3 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Valse et foxtrot",
+     "goal": "Enchaîner trois danses de salon en gardant le cavalier-cavalière fluide",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bal de gala",
+     "goal": "Danser valse viennoise et foxtrot en salle sans croiser les autres couples",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style de compétition",
+     "goal": "Maîtriser la ligne et les figures de la valse viennoise standard",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner les danses de salon",
+     "goal": "Construire un parcours de cours et corriger la posture finement",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 0,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "couple",
+    "fete",
+    "musique"
+   ],
+   "competitors": [
+    "Écoles de danse de salon",
+    "cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public assez fidèle et un vrai besoin avant les mariages ; les cours réguliers existent mais l'initiation courte autour d'un événement est moins couverte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-tango-argentin",
+   "name": "Tango argentin",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.salon",
+   "desc": "Marcher, se connecter et improviser à deux en tango argentin dans les milongas.",
+   "audience": "Adultes 30-60 ans, passionnés de culture argentine",
+   "skills": [
+    "Marche du tango",
+    "Abrazo",
+    "Giros et ochos",
+    "Improvisation à deux"
+   ],
+   "appSkills": [
+    "tango-argentin"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas de tango",
+     "goal": "Marcher en connexion et faire un ocho en abrazo ouvert",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marche et giros",
+     "goal": "Guider et suivre une marche fluide, un giro et un ocho sans à-coup",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Milonga",
+     "goal": "Danser une tanda complète avec un partenaire inconnu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Musicalité du tango",
+     "goal": "Interpréter pauses et variations sur des orchestres différents",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le tango",
+     "goal": "Animer un cours de pratica et corriger la connexion avec justesse",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "expatries",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "danse",
+    "musique",
+    "voyage",
+    "couple"
+   ],
+   "competitors": [
+    "Écoles de tango",
+    "milongas"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté parisienne forte et attachée ; peu de nouveaux entrants, ce qui demande une porte d'entrée sans engagement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-west-coast-swing",
+   "name": "West coast swing",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.salon",
+   "desc": "Danser le west coast swing : élastique, glisser et improvisation sur de la pop actuelle.",
+   "audience": "Jeunes actifs 25-40 ans, danseurs de salon",
+   "skills": [
+    "Anchor step",
+    "Sugar push",
+    "Élastique",
+    "Improvisation"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier WCS",
+     "goal": "Danser un sugar push et une passe en gardant l'élastique",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Passes et glisses",
+     "goal": "Enchaîner six figures de base avec un bon ancrage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "WCS en soirée",
+     "goal": "Danser sur de la pop et du blues avec des partenaires différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Musicalité et style",
+     "goal": "Jouer avec les accents et créer des pauses expressives",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer le WCS",
+     "goal": "Former des élèves à l'élastique et au guidage",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de WCS",
+    "associations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche assez petite et très associative ; trop peu d'hôtes et d'élèves pour un marché de quartier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-bal-folk",
+   "name": "Bal folk et danses traditionnelles",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.bal",
+   "desc": "Danser scottish, mazurka et bourrée dans un bal ouvert à tous les niveaux.",
+   "audience": "Familles, seniors, amateurs de musique trad 25-70 ans",
+   "skills": [
+    "Scottish",
+    "Mazurka",
+    "Bourrée",
+    "Cercle circassien"
+   ],
+   "appSkills": [
+    "bal-folk"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bal",
+     "goal": "Danser scottish et cercle circassien sans connaître les pas à l'avance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mazurka et bourrée",
+     "goal": "Danser mazurka, valse trad et bourrée en rythme avec le groupe",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bal en autonomie",
+     "goal": "Suivre un bal entier sans l'aide d'un meneur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fin connaisseur",
+     "goal": "Reconnaître les danses à l'oreille et varier les pas et ornements",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un bal",
+     "goal": "Mener une initiation de bal et dialoguer avec les musiciens",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      100
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "fete",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Associations de bal folk",
+    "festivals"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public enthousiaste et soudé mais l'offre est associative et gratuite ou peu chère ; revenu d'hôte faible mais format convivial très fort.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-premiere-danse-mariage",
+   "name": "Première danse de mariage",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.bal",
+   "desc": "Préparer sa première danse : choisir le morceau, apprendre une chorégraphie simple et gérer le stress.",
+   "audience": "Fiancés 25-40 ans, couples, témoins",
+   "skills": [
+    "Choix du morceau",
+    "Chorégraphie simple",
+    "Posture",
+    "Gestion du stress"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Notre première danse",
+     "goal": "Apprendre 5 pas de base et lancer son ouverture sur son morceau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chorégraphie complète",
+     "goal": "Danser un enchaînement de 2 minutes en rythme et en confiance",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prête pour le jour J",
+     "goal": "Répéter en conditions réelles avec tenue et invités",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      135,
+      235
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Première danse à thème",
+     "goal": "Intégrer un effet surprise, un tableau ou un mash-up",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      205,
+      355
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Préparer des couples",
+     "goal": "Concevoir des chorégraphies sur mesure et gérer plusieurs couples",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "couple",
+    "fete",
+    "cadeau"
+   ],
+   "competitors": [
+    "Écoles de danse",
+    "chorégraphes de mariage"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin ponctuel mais motivé, avec un budget de mariage ; format court en petit groupe de couples, facile à vendre en cadeau.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-fest-noz",
+   "name": "Danses bretonnes et fest-noz",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.bal",
+   "desc": "Apprendre les danses de fest-noz : an dro, gavotte et laridé, en cercle et en chaîne.",
+   "audience": "Familles, bretons de Paris, curieux de culture régionale",
+   "skills": [
+    "An dro",
+    "Gavotte",
+    "Laridé",
+    "Danse en cercle"
+   ],
+   "appSkills": [
+    "bal-folk"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier fest-noz",
+     "goal": "Danser an dro et laridé en cercle avec les autres",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gavotte et plinn",
+     "goal": "Danser quatre danses bretonnes en suivant le rythme des chanteurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fest-noz en autonomie",
+     "goal": "Mener sa danse d'un bout à l'autre d'une soirée",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Styles régionaux",
+     "goal": "Reconnaître les variantes de pays et danser avec les bons ornements",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre",
+     "goal": "Animer une initiation pour des débutants et guider un cercle",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "expatries"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "patrimoine",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations bretonnes de Paris",
+    "cercles celtiques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Attachement culturel fort mais public limité en Île-de-France ; peu de potentiel de revenu direct.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-country-line-dance",
+   "name": "Danse country et line dance",
+   "sector": "scene",
+   "category": "scene.couple",
+   "subcategory": "scene.couple.bal",
+   "desc": "Danser en ligne sur de la country : sans partenaire, très accessible et festif.",
+   "audience": "Adultes 30-65 ans, amis, seniors actifs",
+   "skills": [
+    "Pas de base en ligne",
+    "Mémoriser une chorégraphie",
+    "Rythme country",
+    "Aisance en groupe"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première line dance",
+     "goal": "Suivre une chorégraphie de 32 temps avec le groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trois chorégraphies",
+     "goal": "Enchaîner trois danses en ligne sans modèle devant soi",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirée country",
+     "goal": "Danser une soirée entière en suivant les annonces du DJ",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chorégraphie perso",
+     "goal": "Adapter les pas d'une line dance à un autre morceau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une line dance",
+     "goal": "Apprendre et enseigner une chorégraphie à un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "convivial",
+    "fete"
+   ],
+   "competitors": [
+    "Clubs de country",
+    "Zumba",
+    "MJC"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique de masse chez les plus de 40 ans mais très peu chère ; peu de valeur ajoutée possible pour une plateforme jeune.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-hip-hop",
+   "name": "Hip-hop pour débutants",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.urbaine",
+   "desc": "Apprendre les bases du hip-hop : grooves, rythme et premiers enchaînements.",
+   "audience": "Ados, étudiants, jeunes actifs 16-35 ans",
+   "skills": [
+    "Grooves",
+    "Isolations",
+    "Enchaînement court",
+    "Lecture du rythme"
+   ],
+   "appSkills": [
+    "danse-hip-hop"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers grooves",
+     "goal": "Tenir trois grooves de base en rythme et en place",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier enchaînement",
+     "goal": "Mémoriser et danser 16 temps sur un morceau",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style et variations",
+     "goal": "Varier dynamiques et intentions sur un enchaînement de 32 temps",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Freestyle",
+     "goal": "Improviser 30 secondes sur un beat sans repères",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Choréguer et enseigner",
+     "goal": "Construire une chorégraphie de 2 minutes et la transmettre",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "ados",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "danse",
+    "musique",
+    "mouvement",
+    "jeunes"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "MJC",
+    "Urban Dance"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Forte demande chez les jeunes ; les studios et MJC sont partout, donc il faut un angle précis comme l'afterwork ou la chorégraphie du jour.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-breakdance",
+   "name": "Breakdance : bases au sol",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.urbaine",
+   "desc": "Apprendre le toprock, le six-pas et les freezes pour rentrer dans la culture break.",
+   "audience": "Ados et jeunes 14-30 ans, curieux de culture hip-hop",
+   "skills": [
+    "Toprock",
+    "Six-pas",
+    "Freezes",
+    "Transitions"
+   ],
+   "appSkills": [
+    "danse-hip-hop"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Top rock et six-pas",
+     "goal": "Enchaîner un toprock et un six-pas fluide sur du break",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Freezes et transitions",
+     "goal": "Tenir deux freezes et lier un enchaînement de 8 temps",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Premier round",
+     "goal": "Danser un round de 30 secondes devant le groupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Power moves de base",
+     "goal": "Apprendre une base de power move en sécurité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le break",
+     "goal": "Encadrer une initiation avec échauffements et consignes de sécurité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "danse",
+    "mouvement",
+    "defi",
+    "jeunes"
+   ],
+   "competitors": [
+    "Crews et studios de break",
+    "MJC"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Pratique exigeante et communautaire, avec risque de blessure ; peu de hosts rémunérables hors clubs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-choregraphie-video-courte",
+   "name": "Chorégraphie pour vidéo courte",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.urbaine",
+   "desc": "Apprendre et filmer une chorégraphie virale de 30 secondes pour les réseaux.",
+   "audience": "Ados, jeunes 15-30 ans, créateurs de contenu",
+   "skills": [
+    "Mémoriser vite",
+    "Rythme et placement",
+    "Cadrage",
+    "Montage court"
+   ],
+   "appSkills": [
+    "danse-hip-hop",
+    "montage-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chorégraphie",
+     "goal": "Apprendre 8 temps et danser en place en moins d'une heure",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chorégraphie complète",
+     "goal": "Mémoriser 30 secondes et les danser en rythme en face caméra",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chorégraphie filmée",
+     "goal": "Cadrer, lumière et montage d'une vidéo prête à publier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créer sa chorégraphie",
+     "goal": "Composer 30 secondes originales et les filmer en plan séquence",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher un créateur",
+     "goal": "Former un groupe à créer des vidéos et gérer la publication",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 5,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "video",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "video",
+    "fete",
+    "jeunes"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "influenceurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très prisé par les 15-25 ans, avec un résultat montrable en 1 h ; la valeur monte vite dès qu'il y a un contenu à partager.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-afrobeats-danses-afro",
+   "name": "Afrobeats et danses afro",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.urbaine",
+   "desc": "Danser l'afrobeats, le coupé-décalé et l'amapiano avec énergie et groupe.",
+   "audience": "Jeunes actifs 20-40 ans, communautés afro-descendantes",
+   "skills": [
+    "Pas afrobeats",
+    "Isolations",
+    "Coupé-décalé",
+    "Chorégraphie de groupe"
+   ],
+   "appSkills": [
+    "danse-orientale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier afrobeats",
+     "goal": "Tenir deux pas de base et une phrase de 16 temps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pas et groove",
+     "goal": "Enchaîner trois pas afro sur du rythme rapide",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chorégraphie de groupe",
+     "goal": "Danser une chorégraphie de 2 minutes en synchro",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style et énergie",
+     "goal": "Varier les pas et improviser 30 secondes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cours afro",
+     "goal": "Structurer un cours et transmettre l'énergie d'un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "danse",
+    "musique",
+    "fete",
+    "convivial"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "collectifs afro"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte tendance chez les 20-35 ans à Paris, avec une communauté vibrante ; l'offre grandit mais reste inégale en qualité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-voguing",
+   "name": "Voguing et danse ballroom",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.urbaine",
+   "desc": "Découvrir le voguing : poses, catwalk et attitude issus de la culture ballroom.",
+   "audience": "Jeunes 18-35 ans, communauté LGBT+, passionnés de mode",
+   "skills": [
+    "Hand performance",
+    "Catwalk",
+    "Duckwalk",
+    "Pose et attitude"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier vogue",
+     "goal": "Faire un catwalk et trois poses en rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hands et duckwalk",
+     "goal": "Enchaîner hand performance et duckwalk en musique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Battle amical",
+     "goal": "Défier un partenaire dans un battle de 1 minute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style perso",
+     "goal": "Composer une phrase personnelle de 16 temps",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre la culture ballroom",
+     "goal": "Animer un atelier en respectant les codes de la communauté",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 5,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "danse",
+    "mode",
+    "fete",
+    "humour",
+    "scene"
+   ],
+   "competitors": [
+    "Maisons ballroom",
+    "studios"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche forte mais communautaire ; peu d'hôtes et un tissu qui préfère ses propres espaces.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-danse-contemporaine",
+   "name": "Danse contemporaine et impro",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.scenique",
+   "desc": "Explorer la danse contemporaine : poids, sol et improvisation guidée.",
+   "audience": "Adultes 25-50 ans, curieux de danse non codée",
+   "skills": [
+    "Poids et sol",
+    "Improvisation guidée",
+    "Fluidité",
+    "Composition courte"
+   ],
+   "appSkills": [
+    "danse-contemporaine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Bouger autrement",
+     "goal": "Explorer trois qualités de mouvement en suivant des consignes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Improvisation guidée",
+     "goal": "Improviser 2 minutes avec une consigne et un partenaire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Phrase chorégraphique",
+     "goal": "Mémoriser et danser une phrase de 32 temps",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Composition",
+     "goal": "Créer une pièce de 3 minutes en solo ou duo",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider l'improvisation",
+     "goal": "Conduire un groupe et donner un feedback précis",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 0,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "mouvement",
+    "corps",
+    "bien-etre",
+    "scene"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "CND",
+    "conservatoires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande stable avec des professionnels et amateurs ; plus difficile à rendre « montrable » en 1 h, mais les ateliers d'impro fonctionnent bien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-danse-jazz",
+   "name": "Modern jazz et comédie musicale",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.scenique",
+   "desc": "Danser en jazz : isolations, sauts, tours et chorégraphie de comédie musicale.",
+   "audience": "Adultes 20-45 ans, anciens danseurs",
+   "skills": [
+    "Isolations",
+    "Sauts et tours",
+    "Chorégraphie",
+    "Expression"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier jazz",
+     "goal": "Enchaîner un échauffement et une phrase de 16 temps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tours et sauts",
+     "goal": "Maîtriser pirouettes simples, chassés et sauts sur une chorégraphie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chorégraphie de comédie musicale",
+     "goal": "Danser une chorégraphie de 2 minutes avec expression",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style jazz",
+     "goal": "Choisir ses nuances et varier la dynamique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le jazz",
+     "goal": "Construire un cours et corriger sans blesser",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "mouvement",
+    "scene",
+    "musique"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "MJC"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Offre dense et peu chère chez les écoles de danse ; peu de différence à proposer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-claquettes",
+   "name": "Claquettes : rythme et pas de base",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.scenique",
+   "desc": "Apprendre les claquettes : shuffles, flaps et premiers rythmes avec les pieds.",
+   "audience": "Adultes 25-60 ans, amateurs de comédie musicale",
+   "skills": [
+    "Shuffle",
+    "Flap",
+    "Pas de base",
+    "Rythme au sol"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers claquements",
+     "goal": "Faire shuffle, flap et step sur un rythme simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Enchaînement de rythmes",
+     "goal": "Jouer une phrase de 16 temps en rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Claquettes sur de la musique",
+     "goal": "Danser sur du jazz et de la comédie musicale",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Improviser au pied",
+     "goal": "Improviser 30 secondes en dialoguant avec la musique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre les claquettes",
+     "goal": "Animer un cours et corriger le son des pieds",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "rythme",
+    "musique",
+    "scene"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "Tap Dance Club"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Petite niche attachante mais coûteuse en chaussures et en lieu adapté ; peu d'hôtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-classique-adulte-debutant",
+   "name": "Danse classique adulte débutant",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.scenique",
+   "desc": "Découvrir la danse classique à l'âge adulte : barre, placement et petits enchaînements.",
+   "audience": "Adultes 25-55 ans, femmes surtout, ex-danseuses",
+   "skills": [
+    "Placement",
+    "Barre",
+    "Port de bras",
+    "Enchaînement"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Barre au sol et à la barre",
+     "goal": "Tenir les cinq positions et réaliser un plié correct",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Placement et équilibre",
+     "goal": "Exécuter une barre complète de 20 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petit enchaînement",
+     "goal": "Danser un adage et un petit saut",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Élégance et lignes",
+     "goal": "Corriger sa technique et sa présence",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner la barre",
+     "goal": "Concevoir un cours pour adultes et corriger le placement",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 0,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "corps",
+    "bien-etre",
+    "scene"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "barre au sol",
+    "Pilates"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique de long terme, très encadrée par les écoles de danse ; faible besoin d'une plateforme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-danse-orientale",
+   "name": "Danse orientale et raqs sharqi",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.monde",
+   "desc": "Apprendre la danse orientale : isolations, ondulations et enchaînement avec voile.",
+   "audience": "Femmes 20-55 ans, loisirs et bien-être",
+   "skills": [
+    "Isolations",
+    "Ondulations",
+    "Pas de base",
+    "Utilisation du voile"
+   ],
+   "appSkills": [
+    "danse-orientale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première danse orientale",
+     "goal": "Faire trois isolations et un déplacement en rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ondulations et shimmies",
+     "goal": "Enchaîner huit mouvements en musique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chorégraphie complète",
+     "goal": "Danser une chorégraphie de 2 minutes en tenue",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Solo expressif",
+     "goal": "Interpréter un morceau avec son style",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner l'oriental",
+     "goal": "Concevoir un cours et corriger la technique en sécurité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "monde",
+    "mouvement",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "studios de danse du monde"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique appréciée mais populaire en cours réguliers en association ; peu de différenciation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-flamenco",
+   "name": "Flamenco : palmas et premiers pas",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.monde",
+   "desc": "S'initier au flamenco : compás, palmas, zapateado et braceo.",
+   "audience": "Adultes 25-55 ans, passionnés d'Espagne",
+   "skills": [
+    "Compás",
+    "Palmas",
+    "Zapateado",
+    "Braceo"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Palmas et compás",
+     "goal": "Compter un compás de 12 temps et frapper les palmas",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Zapateado de base",
+     "goal": "Enchaîner un zapateado simple en rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petite chorégraphie",
+     "goal": "Danser une alegrías simple sur 2 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Expression et jaleos",
+     "goal": "Improviser avec la guitare et les jaleos",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le flamenco",
+     "goal": "Transmettre le compás et corriger posture et sonorité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "expatries"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "musique",
+    "voyage",
+    "scene"
+   ],
+   "competitors": [
+    "Écoles de flamenco",
+    "associations espagnoles"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche ancrée et exigeante ; très peu d'hôtes disponibles en dehors des professeurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-bollywood",
+   "name": "Danse bollywood",
+   "sector": "scene",
+   "category": "scene.solo",
+   "subcategory": "scene.solo.monde",
+   "desc": "Danser sur des classiques et des tubes de Bollywood : énergie, mains et expressions.",
+   "audience": "Femmes 15-45 ans, amis, familles indiennes",
+   "skills": [
+    "Mudras de base",
+    "Pas de base",
+    "Chorégraphie",
+    "Expression du visage"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bollywood",
+     "goal": "Apprendre un enchaînement de 32 temps sur un tube",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chorégraphie complète",
+     "goal": "Danser un morceau en entier avec expression",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bollywood en groupe",
+     "goal": "Synchroniser un groupe de 6 sur un morceau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style et narration",
+     "goal": "Raconter une histoire par la danse",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des professeurs de bollywood",
+     "goal": "Concevoir un cours progressif et corriger posture et expressions",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 5,
+    "cost": 1,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "ouie"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "monde",
+    "fete",
+    "convivial"
+   ],
+   "competitors": [
+    "Studios de danse indienne",
+    "associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Format festif et facile à vendre pour EVJF, anniversaires et entreprises ; les hôtes qualifiés sont encore peu nombreux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-improvisation-courte",
+   "name": "Improvisation théâtrale courte",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.impro",
+   "desc": "Jouer des scènes improvisées de 2 minutes : écoute, accepter, construire à deux.",
+   "audience": "Jeunes actifs 22-45 ans, timides, équipes d'entreprise",
+   "skills": [
+    "Accepter et construire",
+    "Écoute du partenaire",
+    "Personnages",
+    "Fin de scène"
+   ],
+   "appSkills": [
+    "improvisation-theatrale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première impro",
+     "goal": "Jouer trois mini-scènes en acceptant les propositions du partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scènes à deux",
+     "goal": "Construire une scène de 2 minutes avec début, milieu, fin",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Personnages et enjeux",
+     "goal": "Créer des personnages clairs et un conflit en scène",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Impro devant un public",
+     "goal": "Jouer un match amical de 20 minutes devant 30 spectateurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer l'impro",
+     "goal": "Conduire un atelier et donner des retours qui font progresser",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "humour",
+    "jeu",
+    "convivial",
+    "recit"
+   ],
+   "competitors": [
+    "Ligues d'impro",
+    "Improvidence",
+    "La Ligue d'Impro"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon format : résultat en une séance, groupe, humour et lien social ; usage en équipe et en cadeau, avec une communauté d'hôtes dense.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-impro-longue-forme",
+   "name": "Impro longue forme : harold et cabaret",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.impro",
+   "desc": "Enchaîner des scènes liées en impro longue : thèmes, retours et fil rouge.",
+   "audience": "Improvisateurs 25-45 ans déjà initiés",
+   "skills": [
+    "Thèmes récurrents",
+    "Callback",
+    "Enchaînement de scènes",
+    "Rôles de groupe"
+   ],
+   "appSkills": [
+    "improvisation-theatrale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découverte des formats longs",
+     "goal": "Jouer une scène en enchaînant avec la suivante sur un thème",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fil rouge",
+     "goal": "Relier trois scènes par un thème ou un personnage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Harold",
+     "goal": "Jouer un harold de 20 minutes avec retours",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spectacle d'impro",
+     "goal": "Monter un format de 45 minutes avec une troupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Diriger une troupe",
+     "goal": "Coacher un groupe et préparer un spectacle",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "humour",
+    "jeu",
+    "recit"
+   ],
+   "competitors": [
+    "Ligues d'impro",
+    "Theatre du Marais"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique de passionnés, avec un public déjà formé ; peu d'entrants sans passage préalable par l'impro courte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-impro-entreprise",
+   "name": "Impro pour équipes et entreprises",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.impro",
+   "desc": "Utiliser l'impro pour la cohésion d'équipe, l'écoute et l'agilité en entreprise.",
+   "audience": "Équipes 8-20 personnes, RH, managers",
+   "skills": [
+    "Écoute",
+    "Prise de risque",
+    "Cohésion",
+    "Débrief pédagogique"
+   ],
+   "appSkills": [
+    "improvisation-theatrale",
+    "facilitation-graphique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Impro d'équipe",
+     "goal": "Pratiquer cinq jeux d'impro pour souder l'équipe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter et rebondir",
+     "goal": "Appliquer « oui et » dans une réunion simulée",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prise de parole",
+     "goal": "Improviser un discours de 1 minute sur un sujet imposé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      135,
+      275
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coopération",
+     "goal": "Résoudre un problème en équipe avec des contraintes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      260
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Concevoir une formation",
+     "goal": "Construire un séminaire d'impro pour une entreprise",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "entreprise",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-midi",
+    "journee"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "humour",
+    "jeu",
+    "entreprise"
+   ],
+   "competitors": [
+    "Cabinets de team building",
+    "Improvidence"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Les entreprises paient bien pour le team building ; l'impro est un format simple, ludique et facile à répliquer avec des hôtes formés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-theatre-amateur",
+   "name": "Théâtre : premier rôle sur scène",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.jeu",
+   "desc": "Monter une scène de théâtre : lire un texte, s'engager et jouer devant un petit public.",
+   "audience": "Adultes 25-60 ans, retraités, ex-comédiens",
+   "skills": [
+    "Mémoriser un texte",
+    "Jeu en scène",
+    "Voix et diction",
+    "Trac"
+   ],
+   "appSkills": [
+    "theatre-amateur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier texte",
+     "goal": "Lire et incarner une scène de 1 minute",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scène à deux",
+     "goal": "Mémoriser et jouer une scène de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rôle complet",
+     "goal": "Jouer un rôle dans une pièce courte de 15 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Interprétation",
+     "goal": "Faire des choix de jeu et expliquer sa lecture",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Mettre en scène",
+     "goal": "Diriger des acteurs et mener un spectacle de fin de stage",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "recit",
+    "voix",
+    "convivial"
+   ],
+   "competitors": [
+    "Cours Florent",
+    "conservatoires",
+    "troupes amateurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle mais très desservi par les cours annuels traditionnels ; l'arc court et sans engagement annuel est un angle possible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-theatre-alexandrin",
+   "name": "Dire l'alexandrin et le théâtre classique",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.jeu",
+   "desc": "Dire Molière, Racine ou Rostand : scansion, souffle et intention dans le vers.",
+   "audience": "Adultes 25-65 ans, amateurs de littérature, ex-lycéens",
+   "skills": [
+    "Scansion",
+    "Respiration",
+    "Intention",
+    "Diction"
+   ],
+   "appSkills": [
+    "lecture-voix-haute"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Entrer dans le vers",
+     "goal": "Scander 12 syllabes et dire un quatrain avec sens",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dire un monologue",
+     "goal": "Dire un extrait de 1 minute avec respiration juste",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Scène classique",
+     "goal": "Jouer une scène de Molière à deux avec ses nuances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      80,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Interpréter Racine",
+     "goal": "Faire ressortir le sens et le rythme du vers",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      115
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre",
+     "goal": "Conduire un groupe de lecture et corriger la diction",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 1,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "scene",
+    "lecture",
+    "voix",
+    "histoire",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Cours de théâtre",
+    "lectures de la Comédie-Française"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public cultivé mais petit ; faible besoin et difficilement monétisable hors événements.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-jeu-devant-camera",
+   "name": "Jeu d'acteur devant la caméra",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.jeu",
+   "desc": "S'entraîner au jeu devant la caméra : cadrage, regard, naturel et prise de texte.",
+   "audience": "Jeunes 18-35 ans, aspirants acteurs, créateurs vidéo",
+   "skills": [
+    "Jeu naturel",
+    "Regard caméra",
+    "Prise de texte",
+    "Cadrage"
+   ],
+   "appSkills": [
+    "theatre-amateur",
+    "montage-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers gros plans",
+     "goal": "Dire une réplique face caméra avec naturel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scène filmée",
+     "goal": "Jouer une scène de 1 minute en plan fixe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      135
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Casting et self-tape",
+     "goal": "Préparer un self-tape de 2 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scène avec partenaire",
+     "goal": "Jouer en champ contrechamp avec nuances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher un acteur",
+     "goal": "Diriger un jeu d'acteur sur un tournage court",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "vue"
+   ],
+   "outputs": [
+    "video",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "video",
+    "recit"
+   ],
+   "competitors": [
+    "Cours de cinéma",
+    "agences de figuration"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt réel, notamment par les créateurs de contenu et les aspirants comédiens ; l'espace est partagé avec de nombreux cours privés à tarif élevé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-conte-scene",
+   "name": "Conte : raconter en public",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.recit",
+   "desc": "Raconter un conte à voix haute devant un groupe : structure, rythme et présence.",
+   "audience": "Adultes 30-65 ans, parents, bibliothécaires",
+   "skills": [
+    "Structure du conte",
+    "Rythme et silences",
+    "Présence",
+    "Mémoriser sans lire"
+   ],
+   "appSkills": [
+    "conte-narration",
+    "conte-oral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Raconter un conte",
+     "goal": "Raconter un conte de 5 minutes sans notes à des amis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure et images",
+     "goal": "Adapter un conte et le dire avec précision",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conte en public",
+     "goal": "Raconter 10 minutes devant 20 personnes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conte original",
+     "goal": "Créer et raconter une histoire personnelle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le conte",
+     "goal": "Animer un atelier de contes et en conduire un spectacle",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 2,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "scene",
+    "voix",
+    "famille"
+   ],
+   "competitors": [
+    "Conteurs professionnels",
+    "médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle (parents, bibliothèques), peu d'offre pour adultes ; les revenus d'hôte restent modestes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-lecture-theatralisee",
+   "name": "Lecture théâtralisée à plusieurs voix",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.recit",
+   "desc": "Lire à plusieurs voix une pièce ou un roman en jouant les personnages.",
+   "audience": "Retraités, amateurs de théâtre, cercles de lecture",
+   "skills": [
+    "Lecture à voix haute",
+    "Jeu des personnages",
+    "Écoute",
+    "Rythme"
+   ],
+   "appSkills": [
+    "lecture-voix-haute"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire à voix haute",
+     "goal": "Lire un texte à plusieurs voix en gardant le rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages en voix",
+     "goal": "Faire vivre trois personnages distincts en lecture",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lecture publique",
+     "goal": "Lire 15 minutes devant un public",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lecture dirigée",
+     "goal": "Donner de la forme sonore et des regards",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de lecture",
+     "goal": "Conduire un cercle de lecture théâtralisée",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 1,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "voix",
+    "recit",
+    "scene"
+   ],
+   "competitors": [
+    "Cercles de lecture",
+    "bibliothèques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique douce et conviviale mais sans réel pouvoir d'achat ; mieux vaut l'intégrer dans un mix lecture et café.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-mise-en-scene",
+   "name": "Mise en scène : diriger des acteurs",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.mise-en-scene",
+   "desc": "Mettre en scène une courte pièce : lecture, découpage, direction d'acteurs.",
+   "audience": "Adultes 28-55 ans, metteurs en scène amateurs, enseignants",
+   "skills": [
+    "Lecture de texte",
+    "Direction d'acteurs",
+    "Découpage",
+    "Espace scénique"
+   ],
+   "appSkills": [
+    "mise-en-scene"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire pour mettre en scène",
+     "goal": "Choisir un texte court et définir une intention",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Diriger deux acteurs",
+     "goal": "Diriger une scène de 5 minutes en donnant des consignes claires",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Spectacle court",
+     "goal": "Mettre en scène 20 minutes avec lumières et décor simples",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mise en scène sensible",
+     "goal": "Défendre un parti pris devant une équipe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des metteurs en scène",
+     "goal": "Accompagner des metteurs en scène sur lecture, découpage et direction",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 1,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "recit",
+    "ecriture",
+    "collectif"
+   ],
+   "competitors": [
+    "Cours Florent",
+    "stages de mise en scène"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche étroite, avec peu de demande hors compagnies amateurs ; difficile en petit groupe court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-regie-son-lumiere",
+   "name": "Régie son et lumière de spectacle",
+   "sector": "scene",
+   "category": "scene.theatre",
+   "subcategory": "scene.theatre.mise-en-scene",
+   "desc": "Apprendre la régie : brancher, régler les lumières et le son pour un petit spectacle.",
+   "audience": "Adultes 20-45 ans, bénévoles de troupes, techniciens débutants",
+   "skills": [
+    "Console lumière",
+    "Console son",
+    "Câblage",
+    "Conduite de spectacle"
+   ],
+   "appSkills": [
+    "regie-lumiere-son"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier plan de feu",
+     "goal": "Brancher deux projecteurs et un micro, régler le niveau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Console et conduite",
+     "goal": "Programmer 10 repères lumière et son",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      120,
+      210
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régie d'une soirée",
+     "goal": "Assurer la régie d'un spectacle de 30 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      135,
+      235
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création lumière",
+     "goal": "Concevoir un plan de feu pour un spectacle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      175,
+      305
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des régisseurs",
+     "goal": "Encadrer des techniciens débutants sur une vraie régie",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 1,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 2,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "tech",
+    "son",
+    "lumiere",
+    "fabrication"
+   ],
+   "competitors": [
+    "Écoles techniques",
+    "théâtres"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin chronique des petites salles et troupes amateurs ; matériel coûteux mais un format découverte reste simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-magie-close-up",
+   "name": "Magie de close-up avec un jeu de cartes",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.close-up",
+   "desc": "Apprendre cinq tours de cartes à faire en soirée, sans matériel truqué.",
+   "audience": "Adultes 20-60 ans, amateurs d'astuces, cadeaux",
+   "skills": [
+    "Forcer une carte",
+    "Fausse coupe",
+    "Misdirection",
+    "Présentation"
+   ],
+   "appSkills": [
+    "magie-close-up"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq tours à retenir",
+     "goal": "Réussir trois tours de cartes simples devant des amis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Techniques de base",
+     "goal": "Faire des coupes fausses et forcer une carte sans être vu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine de 5 minutes",
+     "goal": "Enchaîner trois tours avec une présentation travaillée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Magie personnelle",
+     "goal": "Créer une routine originale avec patter",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des magiciens",
+     "goal": "Enseigner le close-up et conseiller sur la présentation",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 2,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "magie",
+    "scene",
+    "jeu",
+    "geste",
+    "convivial"
+   ],
+   "competitors": [
+    "Magic Dealers",
+    "Magic Boutique",
+    "clubs de magie"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Résultat immédiat et montrable dès la première heure, matériel presque nul, bonne image de cadeau ; communauté dense de passionnés pour former des hôtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-magie-pieces-objets",
+   "name": "Magie avec pièces et objets du quotidien",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.close-up",
+   "desc": "Faire disparaître et apparaître pièces, élastiques et stylos, avec des objets que l'on a sur soi.",
+   "audience": "Adultes 20-55 ans, curieux, collègues",
+   "skills": [
+    "Escamotage",
+    "Pièce et élastique",
+    "Lecture du public",
+    "Rythme"
+   ],
+   "appSkills": [
+    "magie-close-up"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Disparaître une pièce",
+     "goal": "Faire disparaître une pièce de façon convaincante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pièces et objets",
+     "goal": "Réussir quatre effets avec pièces et élastiques",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine de rue",
+     "goal": "Enchaîner trois effets en conditions réelles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Maîtrise du geste",
+     "goal": "Perfectionner un escamotage de pièce",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre la magie d'objets",
+     "goal": "Animer une initiation et corriger l'escamotage de débutants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "magie",
+    "geste",
+    "jeu",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de magie",
+    "boutiques de magie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très peu coûteux et rapide, mais proche du close-up cartes ; à proposer en complément.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-mentalisme-salon",
+   "name": "Mentalisme de salon",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.mental",
+   "desc": "Apprendre des effets de prédiction et de lecture de pensée pour animer une soirée.",
+   "audience": "Adultes 25-55 ans, curieux de psychologie, animateurs",
+   "skills": [
+    "Prédiction",
+    "Lecture de pensée",
+    "Suggestion",
+    "Conduite de l'attention"
+   ],
+   "appSkills": [
+    "mentalisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier effet mental",
+     "goal": "Réaliser deux effets de prédiction avec papier et stylo",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trois effets de salon",
+     "goal": "Enchaîner trois effets avec patter",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une soirée de mentalisme",
+     "goal": "Animer 15 minutes pour un groupe de 10",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Personnage de mentaliste",
+     "goal": "Créer une présentation personnelle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des mentalistes",
+     "goal": "Construire un numéro sur mesure et corriger la présentation de débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "magie",
+    "scene",
+    "psychologie",
+    "convivial"
+   ],
+   "competitors": [
+    "Magiciens",
+    "mentalistes professionnels"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Attrait fort pour la curiosité psychologique et peu de concurrents en atelier ; bon format pour cadeaux et soirées d'entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-cold-reading",
+   "name": "Cold reading et lecture du langage corporel",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.mental",
+   "desc": "Lire les signaux du corps et du visage et les restituer sans rien promettre de magique.",
+   "audience": "Adultes 25-50 ans, commerciaux, curieux de psychologie",
+   "skills": [
+    "Observation",
+    "Micro-expressions",
+    "Questions ouvertes",
+    "Restitution"
+   ],
+   "appSkills": [
+    "mentalisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Observer autrement",
+     "goal": "Repérer cinq indices gestuels chez un partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Posture et micro-signaux",
+     "goal": "Interpréter trois signaux dans un jeu de rôle",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lecture en soirée",
+     "goal": "Mener une lecture de 3 minutes avec un volontaire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lecture fine",
+     "goal": "Conduire un échange en gardant de l'éthique",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'observation",
+     "goal": "Concevoir un atelier d'observation en gardant un cadre éthique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "psychologie",
+    "magie",
+    "parole",
+    "jeu"
+   ],
+   "competitors": [
+    "Formations en communication",
+    "mentalistes"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Intérêt passager et risque de promesses abusives ; mieux intégré au mentalisme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-magie-enfants",
+   "name": "Magie pour enfants et anniversaires",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.jeune",
+   "desc": "Préparer un spectacle de 20 minutes pour enfants : tours simples, humour et participation.",
+   "audience": "Parents, animateurs 25-50 ans, étudiants",
+   "skills": [
+    "Tours pour enfants",
+    "Participation du public",
+    "Humour",
+    "Gestion de groupe"
+   ],
+   "appSkills": [
+    "magie-enfants"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tour pour enfants",
+     "goal": "Réussir deux tours adaptés aux 5-8 ans",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Spectacle de 10 minutes",
+     "goal": "Enchaîner cinq tours adaptés aux 5-8 ans avec humour et participation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un anniversaire réussi",
+     "goal": "Animer 20 minutes pour 10 enfants sans perdre leur attention",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spectacle personnel",
+     "goal": "Créer un personnage et un fil conducteur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Devenir animateur pro",
+     "goal": "Se lancer comme animateur d'anniversaires",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "magie",
+    "famille",
+    "humour",
+    "scene",
+    "enfants"
+   ],
+   "competitors": [
+    "Animateurs indépendants",
+    "Magic Dealers"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Marché des anniversaires actif, avec un vrai revenu pour les hôtes ; la cible est plutôt les parents animateurs que les enfants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-sculpture-ballons",
+   "name": "Sculpture sur ballons",
+   "sector": "scene",
+   "category": "scene.magie",
+   "subcategory": "scene.magie.jeune",
+   "desc": "Modeler chien, fleur et épée avec des ballons à modeler, et animer un anniversaire.",
+   "audience": "Parents, animateurs 20-50 ans",
+   "skills": [
+    "Gonflage",
+    "Torsades",
+    "Chien et fleur",
+    "Animation d'enfants"
+   ],
+   "appSkills": [
+    "sculpture-ballons"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier chien",
+     "goal": "Faire un chien et une fleur en ballon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Figures simples",
+     "goal": "Réaliser six figures sans éclater les ballons",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animation de fête",
+     "goal": "Faire 10 figures en 30 minutes pour des enfants",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créations complexes",
+     "goal": "Construire un personnage ou un décor",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      75,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Vivre de la sculpture de ballons",
+     "goal": "Animer un atelier ballons et chiffrer une prestation d'anniversaire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      120
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "enfants",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fete",
+    "famille",
+    "objet",
+    "enfants",
+    "fabrication"
+   ],
+   "competitors": [
+    "Animateurs d'événements"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Matériel presque nul et résultat immédiat, avec une forte demande des parents ; la valeur par séance est faible mais l'hôte peut multiplier les événements.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-jonglage-3-balles",
+   "name": "Jonglage à 3 balles",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.jonglerie",
+   "desc": "Apprendre à jongler avec 3 balles : cascade, colonnes et premières figures.",
+   "audience": "Tous publics dès 10 ans, étudiants, parents",
+   "skills": [
+    "Lancer et rattraper",
+    "Cascade",
+    "Colonnes",
+    "Rythme"
+   ],
+   "appSkills": [
+    "jonglerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première cascade",
+     "goal": "Tenir une cascade de 10 lancers avec 3 balles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cascade stable",
+     "goal": "Atteindre 50 lancers et varier les hauteurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Figures de base",
+     "goal": "Réaliser trois figures (colonnes, douche, cascade inversée)",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jonglage varié",
+     "goal": "Changer d'objet, de rythme et de contrainte",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le jonglage",
+     "goal": "Concevoir une progression et animer un atelier",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "geste",
+    "defi",
+    "jeu",
+    "scene",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "clubs de jonglage"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Compétence accessible, très motivante et rapide à montrer ; matériel de 10 € et une communauté d'hôtes jonglant en parc.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-diabolo",
+   "name": "Diabolo : lancer et figures",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.jonglerie",
+   "desc": "Apprendre le diabolo : accélération, lancers et premières figures de base.",
+   "audience": "Jeunes 12-35 ans, familles",
+   "skills": [
+    "Accélération",
+    "Lancer",
+    "Rattraper",
+    "Figures simples"
+   ],
+   "appSkills": [
+    "jonglerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier lancer",
+     "goal": "Lancer le diabolo à 2 mètres et le rattraper",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Figures de base",
+     "goal": "Réaliser trois figures simples sans laisser tomber le diabolo",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enchaînement",
+     "goal": "Enchaîner quatre figures avec rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style et fluidité",
+     "goal": "Jouer avec le rythme et la difficulté",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le diabolo",
+     "goal": "Animer un atelier avec du matériel adapté à chaque âge",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      60,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "etudiants",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "geste",
+    "jeu",
+    "defi",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "clubs de jonglage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Même cible que le jonglage mais en plus petit ; à proposer comme variante de découverte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-poi-lumineux",
+   "name": "Jonglerie lumineuse : poi et staff LED",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.jonglerie",
+   "desc": "S'initier aux poi lumineux : moulinets, plans et symétries, avec LED sécurisées.",
+   "audience": "Jeunes 18-40 ans, festivaliers, danseurs",
+   "skills": [
+    "Moulinets",
+    "Plans de rotation",
+    "Symétries",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "jonglerie-feu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers moulinets",
+     "goal": "Faire des moulinets à gauche et à droite en rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plans et symétries",
+     "goal": "Enchaîner trois figures de base en gardant le même plan de rotation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Flow et musique",
+     "goal": "Danser deux minutes avec des poi LED",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un style à soi",
+     "goal": "Composer un enchaînement de 2 minutes sur une musique choisie",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      75,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre les poi",
+     "goal": "Animer un atelier poi LED avec consignes de sécurité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      120
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "geste",
+    "scene",
+    "nuit",
+    "fete",
+    "mouvement"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "artistes de rue"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très esthétique et attractif pour les soirées ; le matériel LED est un coût modéré, sans risque du feu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-tissu-aerien",
+   "name": "Tissu aérien : premières montées",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.aerien",
+   "desc": "Monter, poser et tenir quelques figures au tissu aérien, avec encadrement sécurisé.",
+   "audience": "Adultes 20-45 ans, souvent femmes, curieux de cirque",
+   "skills": [
+    "Montée au tissu",
+    "Pose",
+    "Figures de base",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "tissu-aerien"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première montée",
+     "goal": "Monter à 2 mètres et tenir une pose avec assurance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Figures de base",
+     "goal": "Enchaîner trois figures simples avec entrées et sorties maîtrisées",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un enchaînement",
+     "goal": "Réaliser une séquence de 1 minute avec montée, pose et descente",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création",
+     "goal": "Composer un enchaînement original de 2 minutes sur une musique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrer en sécurité",
+     "goal": "Animer un atelier encadré avec vérifications d'accroche et parades",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "mouvement",
+    "scene",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "studios aérien"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Forte demande mais nécessite structure, accroches et assurance ; l'hôte doit être très qualifié.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-cerceau-aerien",
+   "name": "Cerceau aérien",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.aerien",
+   "desc": "Apprendre les figures de base au cerceau aérien : assis, suspendu et enchaînements.",
+   "audience": "Adultes 20-45 ans",
+   "skills": [
+    "Prises de cerceau",
+    "Poses",
+    "Chutes contrôlées",
+    "Enchaînement"
+   ],
+   "appSkills": [
+    "tissu-aerien"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cerceau",
+     "goal": "Monter dans le cerceau et tenir trois poses",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Figures de base",
+     "goal": "Enchaîner cinq figures sans aide, assis ou suspendu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un petit enchaînement",
+     "goal": "Réaliser un enchaînement d'une minute avec transitions propres",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création",
+     "goal": "Créer un enchaînement original de 2 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrer en sécurité",
+     "goal": "Animer un atelier encadré avec contrôle du matériel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "mouvement",
+    "scene",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "studios aérien"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Proche du tissu avec les mêmes contraintes d'accroche et d'assurance.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-portes-acrobatiques",
+   "name": "Portés acrobatiques à deux",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.aerien",
+   "desc": "Découvrir les portés acrobatiques : porteur, voltigeur, équilibre et confiance.",
+   "audience": "Couples, amis 20-40 ans, curieux de cirque",
+   "skills": [
+    "Position du porteur",
+    "Voltige",
+    "Équilibre",
+    "Confiance"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier porté",
+     "goal": "Tenir une position de base à deux en sécurité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Portés simples",
+     "goal": "Enchaîner quatre figures sans effort",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Duo dynamique",
+     "goal": "Monter un enchaînement de 1 minute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un numéro à deux",
+     "goal": "Composer un numéro de 2 minutes avec trois portés enchaînés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrer en sécurité",
+     "goal": "Animer une initiation avec parades et consignes de sécurité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-sport",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "couple",
+    "mouvement",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'acrosport",
+    "écoles de cirque"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Format ludique pour couples et amis, utile pour la confiance ; nécessite un lieu avec tapis.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-monocycle",
+   "name": "Monocycle : monter et avancer",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.comique",
+   "desc": "Apprendre à monter sur un monocycle, avancer et tourner, avec appui puis seul.",
+   "audience": "Jeunes et adultes 12-45 ans, familles",
+   "skills": [
+    "Monter",
+    "Pédaler",
+    "Tourner",
+    "Équilibre"
+   ],
+   "appSkills": [
+    "equilibre-monocycle-fil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Monter avec appui",
+     "goal": "Monter sur un monocycle et avancer 5 mètres avec appui",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premiers mètres seul",
+     "goal": "Avancer de 20 mètres sans soutien",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Virages",
+     "goal": "Tourner et s'arrêter avec contrôle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Figures",
+     "goal": "Pédaler en arrière, rouler à une main",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le monocycle",
+     "goal": "Animer un atelier et accompagner des débutants pas à pas",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "defi",
+    "mouvement",
+    "geste",
+    "plein-air",
+    "scene"
+   ],
+   "competitors": [
+    "Écoles de cirque",
+    "clubs de monocycle"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique très niche ; apprentissage plus long, donc peu compatible avec un format court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-clown-bases",
+   "name": "Clown et burlesque : trouver son personnage",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.comique",
+   "desc": "Explorer le clown : nez rouge, échec comme moteur, jeu avec le public.",
+   "audience": "Adultes 25-55 ans, thérapeutes, comédiens amateurs",
+   "skills": [
+    "Nez rouge",
+    "Échec comme moteur",
+    "Présence",
+    "Relation au public"
+   ],
+   "appSkills": [
+    "clown-burlesque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rencontre avec le clown",
+     "goal": "Entrer en scène avec le nez rouge et jouer 2 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Échec et plaisir",
+     "goal": "Transformer un raté en jeu avec le public",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Solo clown",
+     "goal": "Présenter un solo de 3 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Trouver son clown",
+     "goal": "Créer un personnage cohérent",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      95,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrer un stage de clown",
+     "goal": "Animer un stage et accompagner chacun vers son personnage",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "humour",
+    "corps",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Stages de clown",
+    "écoles de théâtre"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Un stage qui touche et marque, surtout les adultes en quête de lâcher-prise ; public limité mais motivé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-mime-expression-corporelle",
+   "name": "Mime et expression corporelle",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.comique",
+   "desc": "Apprendre les bases du mime : mur invisible, marche sur place et personnage.",
+   "audience": "Adultes 20-60 ans, ex-comédiens, enseignants",
+   "skills": [
+    "Mur invisible",
+    "Isolations",
+    "Expression du visage",
+    "Narration silencieuse"
+   ],
+   "appSkills": [
+    "clown-burlesque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers gestes",
+     "goal": "Faire un mur invisible et une marche sur place",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Isolations",
+     "goal": "Enchaîner cinq isolations",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Scène silencieuse",
+     "goal": "Jouer une scène de 2 minutes sans mot",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Personnage",
+     "goal": "Créer et raconter une histoire en silence",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre le mime",
+     "goal": "Animer un atelier de mime avec progression et retours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "corps",
+    "humour",
+    "mouvement"
+   ],
+   "competitors": [
+    "Cours de théâtre",
+    "stages de mime"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche ancienne, peu populaire ; mieux intégrée aux ateliers de clown ou de théâtre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-marionnettes",
+   "name": "Marionnettes et théâtre d'objet",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.objets",
+   "desc": "Fabriquer et animer une marionnette simple et raconter une histoire avec des objets.",
+   "audience": "Familles, enseignants, bibliothécaires 25-55 ans",
+   "skills": [
+    "Animer une marionnette",
+    "Fabriquer",
+    "Voix de personnage",
+    "Histoire courte"
+   ],
+   "appSkills": [
+    "marionnettes-theatre-objet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première marionnette",
+     "goal": "Animer une marionnette en la rendant vivante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Spectacle de 3 minutes",
+     "goal": "Jouer une histoire courte avec voix et objet",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Théâtre d'objet",
+     "goal": "Raconter une histoire avec des objets du quotidien",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création",
+     "goal": "Écrire et jouer un spectacle de 10 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier marionnettes",
+     "goal": "Conduire un atelier de fabrication et de jeu pour familles",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "emotion"
+   ],
+   "outputs": [
+    "objet",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "scene",
+    "famille",
+    "fabrication",
+    "recit",
+    "enfants"
+   ],
+   "competitors": [
+    "Compagnies de marionnettes",
+    "médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public familial réceptif, avec un produit montrable en 1 h ; la valeur monétaire reste modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-ventriloquie",
+   "name": "Ventriloquie : parler sans bouger les lèvres",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.objets",
+   "desc": "Apprendre les bases de la ventriloquie : lèvres immobiles, voix de personnage et dialogue.",
+   "audience": "Adultes 25-55 ans, animateurs, amateurs d'humour",
+   "skills": [
+    "Lèvres immobiles",
+    "Voix de personnage",
+    "Dialogue",
+    "Rythme comique"
+   ],
+   "appSkills": [
+    "ventriloquie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sons",
+     "goal": "Prononcer sans bouger les lèvres trois lettres",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une voix à soi",
+     "goal": "Créer une voix de personnage et un dialogue de 1 minute",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sketch avec marionnette",
+     "goal": "Jouer un sketch de 3 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spectacle",
+     "goal": "Monter 10 minutes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre la ventriloquie",
+     "goal": "Animer un atelier et corriger la voix de personnage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "parole",
+    "geste"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "scene",
+    "humour",
+    "voix",
+    "magie"
+   ],
+   "competitors": [
+    "Ventriloques pros",
+    "clubs de magie"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Petit public passionné ; l'effet fort en soirée est compensé par un faible vivier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-theatre-ombres",
+   "name": "Théâtre d'ombres",
+   "sector": "scene",
+   "category": "scene.cirque",
+   "subcategory": "scene.cirque.objets",
+   "desc": "Fabriquer des silhouettes et jouer une histoire derrière un écran lumineux.",
+   "audience": "Familles, enseignants, bibliothécaires",
+   "skills": [
+    "Découper des silhouettes",
+    "Éclairage",
+    "Manipulation",
+    "Narration"
+   ],
+   "appSkills": [
+    "marionnettes-theatre-objet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières ombres",
+     "goal": "Fabriquer une silhouette et la jouer derrière un drap",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Histoire d'ombres",
+     "goal": "Raconter 3 minutes avec trois personnages",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Spectacle",
+     "goal": "Monter un spectacle de 10 minutes avec musique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création",
+     "goal": "Concevoir ses décors et personnages",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier d'ombres",
+     "goal": "Conduire un atelier de création d'ombres pour familles",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "scene",
+    "famille",
+    "papier",
+    "fabrication",
+    "enfants"
+   ],
+   "competitors": [
+    "Compagnies de théâtre d'ombres",
+    "médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Atelier gracieux mais saisonnier et peu demandé ; mieux dans un mix famille.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-stand-up-5-minutes",
+   "name": "Stand-up : écrire et jouer 5 minutes",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.humour",
+   "desc": "Écrire un set de 5 minutes et le jouer sur scène en open mic.",
+   "audience": "Jeunes actifs 22-40 ans, amateurs d'humour",
+   "skills": [
+    "Trouver ses sujets",
+    "Écrire une vanne",
+    "Rythme et silences",
+    "Présence scénique"
+   ],
+   "appSkills": [
+    "stand-up"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières vannes",
+     "goal": "Écrire trois blagues et les dire devant le groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un set de 3 minutes",
+     "goal": "Écrire et jouer un set de 3 minutes sans notes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Open mic",
+     "goal": "Jouer 5 minutes devant un vrai public",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Set personnel",
+     "goal": "Affiner sa voix comique et enchaîner 10 minutes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des humoristes",
+     "goal": "Donner des retours d'écriture et de jeu sur les sets d'un groupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "texte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "humour",
+    "scene",
+    "ecriture",
+    "voix",
+    "convivial"
+   ],
+   "competitors": [
+    "Cours de stand-up",
+    "Paname Art Café",
+    "open mics"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Forte tendance, ateliers déjà vendus 60 à 150 € et public renouvelé ; l'arc de 3 séances amène un set joué, très partageable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-ecriture-sketch",
+   "name": "Écrire un sketch ou une parodie",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.humour",
+   "desc": "Écrire un sketch de 3 minutes : situation, chute, personnages et dialogues.",
+   "audience": "Jeunes actifs, créateurs vidéo, troupes",
+   "skills": [
+    "Situation comique",
+    "Chute",
+    "Dialogue",
+    "Rythme"
+   ],
+   "appSkills": [
+    "ecriture-creative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier sketch",
+     "goal": "Écrire une scène comique de 1 page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sketch complet",
+     "goal": "Écrire un sketch de 3 minutes avec une chute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sketch joué",
+     "goal": "Jouer et filmer le sketch",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série de sketchs",
+     "goal": "Écrire un recueil de 5 sketchs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier comique",
+     "goal": "Animer un atelier d'écriture comique et corriger rythme et chute",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "humour",
+    "ecriture",
+    "scene",
+    "video",
+    "jeu"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "troupes d'humour"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Complémentaire au stand-up ; l'écriture humoristique est un angle qui se démarque.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-mc-animation-soiree",
+   "name": "Animer une soirée : devenir MC",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.animation",
+   "desc": "Prendre le micro : présenter, enchaîner les temps forts et relancer le public.",
+   "audience": "Adultes 22-45 ans, organisateurs, témoins de mariage",
+   "skills": [
+    "Prendre le micro",
+    "Enchaîner",
+    "Relancer le public",
+    "Gérer l'imprévu"
+   ],
+   "appSkills": [
+    "mc-animation-scene"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier micro",
+     "goal": "Présenter une soirée en 2 minutes avec aisance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer un moment",
+     "goal": "Conduire 15 minutes d'animation devant 20 personnes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "MC de soirée",
+     "goal": "Animer une soirée de 2 heures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animation d'événement",
+     "goal": "Adapter son style à mariage, entreprise ou festival",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des MC",
+     "goal": "Coacher des animateurs sur prise de micro et gestion de public",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "parole",
+    "fete",
+    "convivial",
+    "humour"
+   ],
+   "competitors": [
+    "Agences d'événementiel",
+    "DJ",
+    "animateurs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Débouché réel en mariages et événements, donc un revenu d'hôte intéressant ; le niveau d'entrée est accessible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-karaoke-animation",
+   "name": "Animer un karaoké et un blind-test musical",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.animation",
+   "desc": "Créer l'ambiance d'un karaoké : choisir les morceaux, lancer les timides et rythmer la soirée.",
+   "audience": "Jeunes actifs 22-40 ans, barmen, organisateurs",
+   "skills": [
+    "Choix des morceaux",
+    "Lancer les timides",
+    "Rythme de soirée",
+    "Technique son"
+   ],
+   "appSkills": [
+    "mc-animation-scene",
+    "quiz-animation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lancer le karaoké",
+     "goal": "Mener 5 chansons en lançant le groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Soirée karaoké",
+     "goal": "Animer 2 heures avec 20 invités",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Blind-test musical",
+     "goal": "Préparer et animer un blind-test de 1 h",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animation en bar",
+     "goal": "Adapter l'animation à un lieu",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs de karaoké",
+     "goal": "Coacher des animateurs sur ambiance, enchaînements et sono",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "performance",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "fete",
+    "voix",
+    "convivial",
+    "jeu"
+   ],
+   "competitors": [
+    "Bars karaoké",
+    "Lucky Strike"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Activité sociale très répandue, avec des bars déjà équipés ; la valeur est en animation de petits groupes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-cabaret-burlesque",
+   "name": "Néo-burlesque : premier numéro",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.cabaret",
+   "desc": "Créer un numéro burlesque de 3 minutes : costume, attitude, humour et gestuelle.",
+   "audience": "Femmes et hommes 25-50 ans, EVJF, curieux",
+   "skills": [
+    "Posture et attitude",
+    "Effeuillage théâtral",
+    "Humour",
+    "Création de numéro"
+   ],
+   "appSkills": [
+    "clown-burlesque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Attitude burlesque",
+     "goal": "Marcher, regarder et poser avec confiance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier effeuillage",
+     "goal": "Jouer un effeuillage de 1 minute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      120,
+      210
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Numéro complet",
+     "goal": "Créer un numéro de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      135,
+      235
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scène burlesque",
+     "goal": "Présenter un numéro devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      175,
+      305
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Diriger un numéro",
+     "goal": "Animer un atelier et mettre en scène le numéro d'une élève",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "mode",
+    "humour",
+    "fete",
+    "corps"
+   ],
+   "competitors": [
+    "Ateliers burlesque",
+    "EVJF"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Atelier recherché pour EVJF et anniversaires, qui se facture plus cher ; la cible est étroite mais bien disposée à payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "scene-drag-performance",
+   "name": "Drag et performance de scène",
+   "sector": "scene",
+   "category": "scene.humour",
+   "subcategory": "scene.humour.cabaret",
+   "desc": "S'initier à l'art du drag : maquillage, personnage, lip-sync et présence scénique.",
+   "audience": "Jeunes 20-40 ans, communauté LGBT+, curieux",
+   "skills": [
+    "Maquillage",
+    "Personnage",
+    "Lip-sync",
+    "Présence scénique"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Créer son personnage",
+     "goal": "Choisir un nom et une silhouette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Maquillage et costume",
+     "goal": "Se maquiller et tenir un look",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      120,
+      210
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lip-sync",
+     "goal": "Jouer un lip-sync de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      135,
+      235
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Numéro de scène",
+     "goal": "Monter un numéro de 5 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      175,
+      305
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner des artistes drag",
+     "goal": "Coacher un artiste sur son personnage, son maquillage et son numéro",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "emotion",
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "mode",
+    "fete",
+    "humour",
+    "deguisement"
+   ],
+   "competitors": [
+    "Maisons drag",
+    "bars de Paris"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Culture communautaire à respecter ; le potentiel est surtout dans les bars et collectifs, pas dans les ateliers grand public.",
+   "confidence": "estimation"
+  }
+ ]
+}

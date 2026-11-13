@@ -1,0 +1,8086 @@
+{
+ "sector": "maison",
+ "categories": [
+  {
+   "id": "maison.reparer",
+   "name": "Réparer et entretenir",
+   "desc": "Prolonger la vie des vélos, appareils et véhicules du quotidien.",
+   "subcategories": [
+    {
+     "id": "maison.reparer.velo",
+     "name": "Vélo",
+     "desc": "Entretien et réparation des vélos classiques et électriques."
+    },
+    {
+     "id": "maison.reparer.electro",
+     "name": "Électroménager et high-tech",
+     "desc": "Diagnostiquer et réparer appareils, téléphones et ordinateurs."
+    },
+    {
+     "id": "maison.reparer.auto",
+     "name": "Auto, moto et scooter",
+     "desc": "Entretien courant et achats de véhicules."
+    }
+   ]
+  },
+  {
+   "id": "maison.bricolage",
+   "name": "Bricolage de base",
+   "desc": "Les gestes de tous les jours pour être autonome chez soi.",
+   "subcategories": [
+    {
+     "id": "maison.bricolage.fixation",
+     "name": "Percer, fixer, monter",
+     "desc": "Fixations, montage et pose d'étagères."
+    },
+    {
+     "id": "maison.bricolage.eau-elec",
+     "name": "Plomberie et électricité",
+     "desc": "Petits dépannages sans risque."
+    },
+    {
+     "id": "maison.bricolage.bois",
+     "name": "Menuiserie et outillage",
+     "desc": "Travail du bois et outils bien choisis."
+    }
+   ]
+  },
+  {
+   "id": "maison.renovation",
+   "name": "Rénovation et finitions",
+   "desc": "Murs, sols et mobilier : refaire à neuf soi-même.",
+   "subcategories": [
+    {
+     "id": "maison.renovation.murs",
+     "name": "Murs et enduits",
+     "desc": "Peinture, papier peint, chaux et tadelakt."
+    },
+    {
+     "id": "maison.renovation.sols",
+     "name": "Sols",
+     "desc": "Carrelage et parquet."
+    },
+    {
+     "id": "maison.renovation.mobilier",
+     "name": "Mobilier",
+     "desc": "Restaurer, relooker, rempailler, regarnir."
+    }
+   ]
+  },
+  {
+   "id": "maison.amenagement",
+   "name": "Aménager et décorer",
+   "desc": "Penser l'espace, la lumière et le rangement.",
+   "subcategories": [
+    {
+     "id": "maison.amenagement.deco",
+     "name": "Décoration et lumière",
+     "desc": "Couleurs, ambiance et mise en valeur."
+    },
+    {
+     "id": "maison.amenagement.espaces",
+     "name": "Petits espaces et rangement",
+     "desc": "Faire plus avec moins de mètres carrés."
+    },
+    {
+     "id": "maison.amenagement.plans",
+     "name": "Plans et projets",
+     "desc": "Préparer un chantier ou un réaménagement."
+    }
+   ]
+  },
+  {
+   "id": "maison.energie",
+   "name": "Énergie et entretien écologique",
+   "desc": "Consommer moins, entretenir mieux, connecter sa maison.",
+   "subcategories": [
+    {
+     "id": "maison.energie.economies",
+     "name": "Économies d'énergie",
+     "desc": "Factures, isolation et chauffage."
+    },
+    {
+     "id": "maison.energie.domotique",
+     "name": "Maison connectée",
+     "desc": "Ampoules, prises et réseau."
+    },
+    {
+     "id": "maison.energie.entretien",
+     "name": "Entretien du quotidien",
+     "desc": "Ménage écologique, linge et cuir."
+    }
+   ]
+  },
+  {
+   "id": "maison.construire",
+   "name": "Extérieur et constructions",
+   "desc": "Terrasse, abri, pergola et petite maçonnerie.",
+   "subcategories": [
+    {
+     "id": "maison.construire.bois-ext",
+     "name": "Constructions en bois",
+     "desc": "Terrasses, cabanes et claustras."
+    },
+    {
+     "id": "maison.construire.maconnerie",
+     "name": "Petite maçonnerie",
+     "desc": "Dalles, murets et fours."
+    }
+   ]
+  },
+  {
+   "id": "maison.foyer",
+   "name": "Vivre au quotidien",
+   "desc": "Logement, déménagement et sécurité à la maison.",
+   "subcategories": [
+    {
+     "id": "maison.foyer.logement",
+     "name": "Logement et déménagement",
+     "desc": "Droits, organisation et logistique."
+    },
+    {
+     "id": "maison.foyer.securite",
+     "name": "Sécurité domestique",
+     "desc": "Prévention des accidents et adaptation du logement."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "maison-velo-crevaison-freins",
+   "name": "Réparer son vélo : crevaison et freins",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.velo",
+   "desc": "Changer une chambre à air, régler des freins et sortir d'une panne courante.",
+   "audience": "Cyclistes urbains 25-45 ans, étudiants, familles",
+   "skills": [
+    "Démonter une roue",
+    "Réparer une crevaison",
+    "Régler les freins",
+    "Contrôler pneus et pression"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première crevaison",
+     "goal": "Démonter la roue et changer une chambre à air en 30 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Freins réglés",
+     "goal": "Centrer les patins ou plaquettes et obtenir un freinage net",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entretien de saison",
+     "goal": "Faire un contrôle complet : pneus, câbles, serrages, éclairage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic en roulant",
+     "goal": "Trouver une panne à l'oreille et corriger seul",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la mécanique de base",
+     "goal": "Animer un atelier vélo et transmettre un protocole de contrôle",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "geste",
+    "ville",
+    "recup",
+    "tech"
+   ],
+   "competitors": [
+    "Ateliers vélo associatifs",
+    "Vélocistes",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande forte portée par le vélo urbain, geste enseignable en 2 h, matériel léger. Offre associative abondante mais peu de formats payants soignés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-velo-transmission",
+   "name": "Entretenir chaîne et dérailleur",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.velo",
+   "desc": "Nettoyer, graisser, régler la transmission et changer chaîne et cassette.",
+   "audience": "Cyclistes réguliers, sportifs du dimanche",
+   "skills": [
+    "Nettoyer la transmission",
+    "Mesurer l'usure d'une chaîne",
+    "Régler un dérailleur",
+    "Changer cassette et plateaux"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chaîne propre",
+     "goal": "Dégraisser, graisser et contrôler une chaîne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dérailleur réglé",
+     "goal": "Régler les butées et le câble pour passer les vitesses sans accroc",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Changer la chaîne",
+     "goal": "Mesurer l'usure et remplacer chaîne et cassette seul",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Transmission sur mesure",
+     "goal": "Monter et régler une transmission complète sur un autre vélo",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent atelier",
+     "goal": "Former des pairs aux réglages fins et au choix des pièces",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "reparation",
+    "geste",
+    "tech",
+    "sport"
+   ],
+   "competitors": [
+    "Vélocistes",
+    "Tutoriels vidéo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Complément naturel de la crevaison, utile aux cyclistes sportifs. Les vélocistes vendent surtout la main-d'œuvre, peu de formation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-velo-electrique",
+   "name": "Entretien du vélo électrique et cargo",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.velo",
+   "desc": "Entretien courant d'un VAE ou d'un cargo : freins, batterie, câbles, bons réflexes.",
+   "audience": "Propriétaires de VAE et de vélos cargo, familles",
+   "skills": [
+    "Entretien de la batterie",
+    "Freins à disque",
+    "Contrôle capteurs et câbles",
+    "Savoir quand voir un pro"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Connaître mon VAE",
+     "goal": "Comprendre moteur, batterie et affichage et les soigner",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Freins à disque",
+     "goal": "Purger ou régler des freins à disque hydrauliques simples",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entretien complet",
+     "goal": "Faire le contrôle annuel hors partie électronique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostiquer une panne",
+     "goal": "Trier panne mécanique et panne électrique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cargo",
+     "goal": "Animer un atelier propriétaires de cargos",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "reparation",
+    "famille",
+    "tech",
+    "ville"
+   ],
+   "competitors": [
+    "Vélocistes"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Parc de VAE en forte croissance mais la partie électrique reste à faire par un pro, ce qui limite le périmètre enseignable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-velo-remise-en-etat",
+   "name": "Remettre en état un vieux vélo",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.velo",
+   "desc": "Chantier collectif : remonter et rendre roulant un vélo de récup en 5 séances.",
+   "audience": "Étudiants, bricoleurs, fans de vélos vintage",
+   "skills": [
+    "Évaluer un cadre",
+    "Démonter et nettoyer",
+    "Remonter et régler",
+    "Remplacer les pièces d'usure"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Diagnostic du vélo",
+     "goal": "Juger si un vieux vélo vaut la remise en état",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Démontage complet",
+     "goal": "Démonter, nettoyer et trier les pièces d'un vélo",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vélo roulant",
+     "goal": "Remonter et régler un vélo prêt à rouler",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vélo personnalisé",
+     "goal": "Transformer un cadre : vitesse unique, bagages, éclairage",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      250,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent chantier",
+     "goal": "Piloter un chantier collectif et former les nouveaux",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      200,
+      400
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "reparation",
+    "fabrication",
+    "ville"
+   ],
+   "competitors": [
+    "Ateliers vélo associatifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Format chantier attractif et visible, mais le marché est occupé par les ateliers associatifs à prix libre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-electromenager-diagnostic",
+   "name": "Réparer son petit électroménager",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Diagnostiquer et remplacer une pièce sur grille-pain, mixeur, bouilloire ou aspirateur.",
+   "audience": "Foyers urbains 30-60 ans, anti-gaspi",
+   "skills": [
+    "Diagnostiquer une panne",
+    "Démonter sans casser",
+    "Tester au multimètre",
+    "Remplacer un cordon ou un fusible"
+   ],
+   "appSkills": [
+    "petit-electromenager"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pourquoi ça ne marche plus",
+     "goal": "Poser un diagnostic simple sur un appareil en panne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Première réparation",
+     "goal": "Ouvrir et changer une pièce simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tester au multimètre",
+     "goal": "Mesurer continuité et tension en sécurité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réparer sans notice",
+     "goal": "Remplacer une carte ou un moteur sur un appareil inconnu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un repair café",
+     "goal": "Encadrer des réparations et former des bénévoles",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "recup",
+    "tech",
+    "zero-dechet",
+    "solidarite"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Fabricants"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Forte demande liée à l'indice de réparabilité et à l'anti-gaspi, beaucoup de repair cafés gratuits qui tirent le prix vers le bas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-lave-linge-lave-vaisselle",
+   "name": "Dépanner lave-linge et lave-vaisselle",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Détartrer, vider un filtre, changer joint, pompe ou courroie sur gros électroménager.",
+   "audience": "Propriétaires et locataires 30-60 ans",
+   "skills": [
+    "Nettoyer filtres et siphons",
+    "Changer un joint de porte",
+    "Remplacer une pompe",
+    "Lire un code d'erreur"
+   ],
+   "appSkills": [
+    "petit-electromenager"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Entretenir sa machine",
+     "goal": "Nettoyer filtre, bac et tuyaux pour éviter les pannes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Panne simple",
+     "goal": "Traiter une vidange bloquée ou une fuite de joint",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Changer une pièce",
+     "goal": "Remplacer pompe, courroie ou charbons",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostiquer à l'oreille",
+     "goal": "Reconnaître l'origine d'une panne à partir des symptômes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent dépannage",
+     "goal": "Former des pairs et choisir quand appeler un pro",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "maison",
+    "zero-dechet",
+    "argent"
+   ],
+   "competitors": [
+    "Dépanneurs",
+    "Tutoriels vidéo"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Dépannage à 100 à 200 € la visite : économie directe pour l'apprenant, mais gestes liés à l'eau et à l'électricité qui demandent un cadre clair.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-smartphone-ecran-batterie",
+   "name": "Réparer un smartphone : écran et batterie",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Remplacer écran et batterie d'un téléphone courant avec les bons outils.",
+   "audience": "Étudiants, jeunes actifs, bricoleurs",
+   "skills": [
+    "Ouvrir sans abîmer",
+    "Changer une batterie",
+    "Remplacer un écran",
+    "Utiliser les bons outils"
+   ],
+   "appSkills": [
+    "reparation-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ouvrir un téléphone",
+     "goal": "Démonter proprement un smartphone et ranger les vis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Batterie neuve",
+     "goal": "Remplacer une batterie sur un modèle courant",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Changer un écran",
+     "goal": "Poser un écran neuf avec joint d'étanchéité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic carte",
+     "goal": "Repérer une panne de charge ou de connecteur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent réparation",
+     "goal": "Former des pairs et choisir les pièces",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "tech",
+    "reparation",
+    "recup",
+    "argent"
+   ],
+   "competitors": [
+    "Boutiques de réparation",
+    "Tutoriels vidéo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Bonne demande mais les réparateurs pro sont nombreux, rapides et peu chers. L'intérêt réside dans l'apprentissage et l'économie de réparations répétées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-ordinateur-ssd-ram",
+   "name": "Ressusciter un vieil ordinateur",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Nettoyer, ajouter RAM et SSD, réinstaller un système et gagner des années d'usage.",
+   "audience": "Particuliers, seniors, petites associations",
+   "skills": [
+    "Ouvrir et nettoyer un PC",
+    "Installer SSD et RAM",
+    "Réinstaller un système",
+    "Sauvegarder ses données"
+   ],
+   "appSkills": [
+    "reparation-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Nettoyer et diagnostiquer",
+     "goal": "Ouvrir, dépoussiérer et tester un ordinateur lent",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "SSD et RAM",
+     "goal": "Poser un SSD et de la mémoire sur un portable",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Système frais",
+     "goal": "Installer un système propre et sauvegarder ses données",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Linux léger",
+     "goal": "Donner une seconde vie à une machine ancienne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent atelier",
+     "goal": "Animer des installations collectives et former des bénévoles",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "reparation",
+    "recup",
+    "zero-dechet",
+    "code"
+   ],
+   "competitors": [
+    "Associations Emmaüs Connect",
+    "Boutiques informatiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte demande des seniors et des budgets serrés, mais l'offre associative gratuite est dense et le consentement à payer reste limité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-soudure-etain",
+   "name": "Soudure à l'étain et petits circuits",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Souder composants et fils, réparer un jack, une carte ou fabriquer un circuit simple.",
+   "audience": "Bricoleurs, musiciens, makers 20-50 ans",
+   "skills": [
+    "Choisir fer et étain",
+    "Souder un fil",
+    "Dessouder un composant",
+    "Lire un schéma simple"
+   ],
+   "appSkills": [
+    "soudure-etain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première soudure",
+     "goal": "Réaliser des soudures propres sur une plaque d'essai",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réparer un jack",
+     "goal": "Souder et remplacer un connecteur audio ou USB",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Circuit complet",
+     "goal": "Monter un petit circuit à partir d'un schéma",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réparer une carte",
+     "goal": "Dessouder et remplacer un composant de surface",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent électronique",
+     "goal": "Concevoir un kit et animer des ateliers de soudure",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "tech",
+    "fabrication",
+    "reparation",
+    "musique",
+    "recup"
+   ],
+   "competitors": [
+    "Fablabs",
+    "Kits d'électronique"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier court avec résultat visible et matériel peu cher. Intérêt transversal (musique, réparation, fabrication) mais demande de niche.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-trottinette-electrique",
+   "name": "Entretenir et réparer sa trottinette électrique",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.electro",
+   "desc": "Pneus, freins, roulements et diagnostic des pannes simples d'une trottinette électrique.",
+   "audience": "Utilisateurs urbains de trottinettes, étudiants",
+   "skills": [
+    "Changer un pneu ou une chambre",
+    "Régler les freins",
+    "Contrôler câbles et connecteurs",
+    "Entretenir la batterie"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pneu et freins",
+     "goal": "Changer un pneu et régler le frein arrière",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Roulements et jeux",
+     "goal": "Resserrer, graisser et supprimer les jeux",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Panne électrique simple",
+     "goal": "Contrôler fusible, connecteur et contacteur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic complet",
+     "goal": "Localiser une panne moteur ou contrôleur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent micromobilité",
+     "goal": "Former des pairs et conseiller l'achat",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "tech",
+    "ville",
+    "recup"
+   ],
+   "competitors": [
+    "Boutiques de réparation"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Parc important mais marché de la réparation structuré et réglementation sécurité évolutive : niche secondaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-auto-vidange-freins",
+   "name": "Entretien auto : vidange, plaquettes, filtres",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.auto",
+   "desc": "Les gestes d'entretien d'une voiture récente sans risque, avec garage libre-service.",
+   "audience": "Automobilistes 25-55 ans, petits budgets",
+   "skills": [
+    "Lire le carnet d'entretien",
+    "Vidanger et changer le filtre",
+    "Changer des plaquettes",
+    "Contrôler niveaux et pneus"
+   ],
+   "appSkills": [
+    "entretien-auto-base"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sous le capot",
+     "goal": "Repérer niveaux, filtres et points de contrôle",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vidange guidée",
+     "goal": "Réaliser une vidange avec changement de filtre",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plaquettes et disques",
+     "goal": "Changer des plaquettes de frein en sécurité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic courant",
+     "goal": "Interpréter un voyant, un bruit ou une usure",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      325,
+      545
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mécanique",
+     "goal": "Animer un atelier entre pairs et vérifier la sécurité",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      520
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "argent",
+    "geste",
+    "tech"
+   ],
+   "competitors": [
+    "Garages libre-service",
+    "Tutoriels vidéo"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Économie directe et demande réelle, mais risque de sécurité sur le freinage et besoin d'un lieu équipé (pont, fosse) qui alourdit le modèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-auto-roue-pneus",
+   "name": "Changer une roue et lire ses pneus",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.auto",
+   "desc": "Changer une roue, vérifier pression et usure, utiliser cric et clé en sécurité.",
+   "audience": "Conducteurs débutants, jeunes permis, femmes",
+   "skills": [
+    "Utiliser cric et chandelle",
+    "Dévisser en croix",
+    "Lire l'usure d'un pneu",
+    "Régler la pression"
+   ],
+   "appSkills": [
+    "entretien-auto-base"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Changer ma roue",
+     "goal": "Remplacer une roue en moins de 20 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pression et usure",
+     "goal": "Lire l'âge et l'usure d'un pneu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Panne sur la route",
+     "goal": "Réagir à une crevaison sur autoroute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rotation et équilibrage",
+     "goal": "Comprendre permutation et géométrie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent sécurité",
+     "goal": "Animer des ateliers pour jeunes conducteurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "reparation",
+    "geste",
+    "securite",
+    "argent"
+   ],
+   "competitors": [
+    "Auto-écoles",
+    "Assureurs"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Atelier court utile mais besoin ponctuel, peu de raisons de revenir, et les assureurs ou constructeurs le proposent parfois.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-scooter-moto-entretien",
+   "name": "Entretenir son scooter ou sa moto",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.auto",
+   "desc": "Vidange, filtre, bougie, courroie, chaîne : le bon entretien d'un deux-roues motorisé.",
+   "audience": "Motards 125 cc, livreurs, étudiants",
+   "skills": [
+    "Vidanger un moteur",
+    "Changer une bougie",
+    "Entretenir une chaîne",
+    "Contrôler pneus et freins"
+   ],
+   "appSkills": [
+    "mecanique-moto-scooter"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Entretien de base",
+     "goal": "Faire les niveaux, la chaîne et les pneus",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vidange et filtre",
+     "goal": "Réaliser une vidange complète",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Courroie et variateur",
+     "goal": "Changer courroie, galets et rouleaux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic moteur",
+     "goal": "Identifier un défaut d'allumage ou d'alimentation",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      300,
+      505
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mécanique",
+     "goal": "Animer un atelier et choisir les pièces",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "geste",
+    "tech",
+    "ville"
+   ],
+   "competitors": [
+    "Garages",
+    "Clubs moto"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Public ciblé et motivé par l'économie, mais peu nombreux et besoin d'un lieu équipé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-auto-achat-occasion",
+   "name": "Acheter une voiture d'occasion sans se faire avoir",
+   "sector": "maison",
+   "category": "maison.reparer",
+   "subcategory": "maison.reparer.auto",
+   "desc": "Inspecter une voiture, lire un historique, négocier et repérer les vices cachés.",
+   "audience": "Acheteurs de première voiture, jeunes actifs",
+   "skills": [
+    "Inspecter la carrosserie",
+    "Lire un historique",
+    "Essayer et écouter",
+    "Négocier"
+   ],
+   "appSkills": [
+    "entretien-auto-base"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les points clés",
+     "goal": "Connaître les 10 points d'inspection d'une occasion",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Inspection guidée",
+     "goal": "Inspecter une voiture réelle avec une grille",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un dossier",
+     "goal": "Comparer cote, contrôle technique et historique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Négocier un prix",
+     "goal": "Appuyer une négociation sur des défauts concrets",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent expert",
+     "goal": "Former des acheteurs et accompagner des visites",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "tech",
+    "ville",
+    "geste"
+   ],
+   "competitors": [
+    "Experts automobiles",
+    "Forums"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Bonne demande mais la valeur se capte mieux par l'accompagnement individuel sur une voiture réelle que par l'atelier collectif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-percer-cheviller",
+   "name": "Percer et cheviller sans se tromper",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.fixation",
+   "desc": "Choisir cheville et foret, percer droit dans tous les murs et fixer proprement.",
+   "audience": "Locataires et propriétaires de tous âges",
+   "skills": [
+    "Repérer cloison ou mur plein",
+    "Choisir chevilles et vis",
+    "Percer droit",
+    "Fixer en sécurité"
+   ],
+   "appSkills": [
+    "perceuse-fixations"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier trou",
+     "goal": "Percer un mur et poser une cheville adaptée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Étagère d'aplomb",
+     "goal": "Fixer une étagère de niveau sur cloison ou brique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charges lourdes",
+     "goal": "Fixer un meuble haut ou un TV en sécurité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas difficiles",
+     "goal": "Traiter béton, carrelage et plaque fine",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bricolage",
+     "goal": "Animer un atelier et choisir l'outillage",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "boutique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "geste",
+    "reparation",
+    "deco"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "Tutoriels vidéo"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin universel, résultat net en 90 minutes, matériel peu cher. Les enseignes proposent des ateliers gratuits, la différenciation vient du petit groupe et du lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-monter-meuble-kit",
+   "name": "Monter et ajuster un meuble en kit",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.fixation",
+   "desc": "Lire une notice, monter solidement, rattraper les défauts et fixer au mur.",
+   "audience": "Étudiants, jeunes actifs, déménagements",
+   "skills": [
+    "Organiser les pièces",
+    "Assembler et serrer",
+    "Corriger un défaut",
+    "Fixer au mur"
+   ],
+   "appSkills": [
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Monter sans stress",
+     "goal": "Assembler un meuble courant sans erreur de sens",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Meuble stable",
+     "goal": "Corriger les jeux et fixer au mur",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Adapter un meuble",
+     "goal": "Recouper et modifier un meuble en kit",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Hacks de kit",
+     "goal": "Transformer un meuble commercial en pièce personnalisée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent montage",
+     "goal": "Animer des ateliers et des services de montage",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "geste",
+    "deco",
+    "fabrication"
+   ],
+   "competitors": [
+    "Services de montage",
+    "TaskRabbit"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Demande large mais valeur perçue faible : les gens préfèrent payer un service de montage plutôt qu'apprendre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-etageres-suspensions-lourdes",
+   "name": "Poser étagères et suspensions lourdes",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.fixation",
+   "desc": "Poser étagères, patères et miroirs de 20 kg et plus dans un mur plein ou une cloison.",
+   "audience": "Propriétaires, locataires, familles",
+   "skills": [
+    "Repérer montants",
+    "Choisir tringles et équerres",
+    "Mettre de niveau",
+    "Calculer la charge"
+   ],
+   "appSkills": [
+    "perceuse-fixations"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Étagère posée",
+     "goal": "Poser une étagère avec cheville adaptée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Alignement parfait",
+     "goal": "Poser plusieurs étagères alignées au niveau laser",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bibliothèque murale",
+     "goal": "Poser un système modulaire jusqu'au plafond",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Murs difficiles",
+     "goal": "Fixer dans brique creuse, plâtre et isolant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pose",
+     "goal": "Former et contrôler les fixations d'un chantier collectif",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "deco",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Très proche de percer et cheviller : à fusionner en pratique avec elle, sinon cannibalisation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-plomberie-fuites-robinet",
+   "name": "Plomberie : fuites, robinets, chasse d'eau",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.eau-elec",
+   "desc": "Changer un joint, un mitigeur, un flexible et arrêter les petites fuites.",
+   "audience": "Locataires et propriétaires 28-65 ans",
+   "skills": [
+    "Couper l'eau",
+    "Changer un joint",
+    "Poser un mitigeur",
+    "Réparer une chasse d'eau"
+   ],
+   "appSkills": [
+    "plomberie-basique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Couper l'eau, trouver la fuite",
+     "goal": "Localiser et couper l'arrivée d'eau en urgence",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un joint, un robinet",
+     "goal": "Remplacer joint et cartouche sur un robinet",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mitigeur et flexible",
+     "goal": "Poser un mitigeur neuf sans fuite",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      110,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chasse d'eau et siphon",
+     "goal": "Réparer un mécanisme de WC et un siphon",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      225,
+      380
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent plomberie",
+     "goal": "Animer un atelier et distinguer ce qui relève d'un pro",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      180,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "reparation",
+    "geste",
+    "argent"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "Plombiers"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Peur de la fuite et facture d'urgence élevée : motivation forte, pédagogie sur banc de test facile à reproduire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-debouchage-siphons",
+   "name": "Déboucher et entretenir canalisations et siphons",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.eau-elec",
+   "desc": "Démonter un siphon, déboucher sans produits agressifs, prévenir les odeurs.",
+   "audience": "Foyers urbains, copropriétaires",
+   "skills": [
+    "Démonter un siphon",
+    "Déboucher à la ventouse",
+    "Utiliser un furet",
+    "Prévenir les bouchons"
+   ],
+   "appSkills": [
+    "plomberie-basique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Siphon propre",
+     "goal": "Démonter, nettoyer et remonter un siphon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Débouchage sans chimie",
+     "goal": "Choisir ventouse, furet et solutions douces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Évacuations lentes",
+     "goal": "Diagnostiquer une colonne et un évier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien préventif",
+     "goal": "Mettre en place un entretien annuel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent plomberie",
+     "goal": "Former des pairs et vérifier une installation",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "reparation",
+    "geste",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Plombiers",
+    "Tutoriels vidéo"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel, urgent, mal adapté à un atelier planifié. À intégrer dans un module plomberie plus large.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-electricite-prises-luminaires",
+   "name": "Électricité : prises, interrupteurs, luminaires",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.eau-elec",
+   "desc": "Remplacer une prise, un interrupteur ou un luminaire en respectant la norme.",
+   "audience": "Propriétaires et locataires 28-60 ans",
+   "skills": [
+    "Couper et vérifier l'absence de tension",
+    "Changer une prise",
+    "Câbler un luminaire",
+    "Lire un tableau électrique"
+   ],
+   "appSkills": [
+    "electricite-domestique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sécurité d'abord",
+     "goal": "Couper, vérifier et consigner avant toute intervention",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Prise et interrupteur",
+     "goal": "Remplacer proprement prise et interrupteur",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Luminaire en toute sécurité",
+     "goal": "Poser un plafonnier ou une applique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      110,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Va-et-vient et circuit",
+     "goal": "Câbler un va-et-vient sur banc d'essai",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      225,
+      380
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent électricité",
+     "goal": "Animer l'atelier et savoir quand appeler un électricien",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      180,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "geste",
+    "tech",
+    "deco"
+   ],
+   "competitors": [
+    "Électriciens",
+    "Enseignes de bricolage"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Forte envie d'autonomie, très bon format sur banc pédagogique. Risque mitigé par la consigne stricte de coupure et la limite de périmètre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-joint-silicone-salle-de-bain",
+   "name": "Joints de salle de bain et silicone",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.eau-elec",
+   "desc": "Refaire un joint silicone, un joint de carrelage et traiter les moisissures.",
+   "audience": "Locataires et propriétaires",
+   "skills": [
+    "Retirer l'ancien joint",
+    "Préparer le support",
+    "Appliquer et lisser",
+    "Traiter la moisissure"
+   ],
+   "appSkills": [
+    "isolation-calfeutrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un joint net",
+     "goal": "Refaire un joint de baignoire propre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Joints carrelage",
+     "goal": "Remplacer joints de carrelage et nettoyer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Étanchéité douche",
+     "goal": "Traiter une zone humide durablement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rénover une salle de bain",
+     "goal": "Planifier une remise en état complète",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent finitions",
+     "goal": "Animer un chantier collectif de finitions",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "geste",
+    "reparation",
+    "deco"
+   ],
+   "competitors": [
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Geste simple et utile mais court, à intégrer à un format salle de bain.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-menuiserie-assemblages",
+   "name": "Menuiserie : assemblages et petits meubles",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.bois",
+   "desc": "Tracer, scier, assembler (tenon, queue d'aronde) et fabriquer un petit meuble en bois.",
+   "audience": "25-60 ans, amateurs de fait-main",
+   "skills": [
+    "Tracer et scier droit",
+    "Réaliser un tenon",
+    "Assembler et coller",
+    "Poncer et finir"
+   ],
+   "appSkills": [
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première planche",
+     "goal": "Scier, raboter et assembler une boîte simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assemblage solide",
+     "goal": "Réaliser des tenons et mortaises propres",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      115,
+      195
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petit meuble",
+     "goal": "Fabriquer une étagère ou un tabouret complet",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      310
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meuble de précision",
+     "goal": "Concevoir et fabriquer un meuble avec tiroir",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      310
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent atelier bois",
+     "goal": "Animer un atelier et former des assistants",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      365,
+      650
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "deco",
+    "geste",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers de menuiserie",
+    "Écoles de bois"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Offre en ateliers partagés bien installée à Paris, demande forte, tarifs soutenus (60 à 150 € pour 3 h). Besoin d'un lieu équipé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-petit-meuble-sur-mesure",
+   "name": "Fabriquer une étagère ou un meuble sur mesure",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.bois",
+   "desc": "Dessiner, débiter, assembler et finir un meuble adapté à son intérieur.",
+   "audience": "Propriétaires, locataires créatifs",
+   "skills": [
+    "Mesurer et dessiner",
+    "Débiter les pièces",
+    "Assembler et caler",
+    "Finition huile ou vernis"
+   ],
+   "appSkills": [
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan de l'étagère",
+     "goal": "Dessiner et chiffrer son meuble",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Débit et ponçage",
+     "goal": "Découper et poncer des planches avec précision",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Assemblage solide",
+     "goal": "Assembler et monter un meuble complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions pro",
+     "goal": "Appliquer huile, cire ou teinte sans traces",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      195,
+      345
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent design",
+     "goal": "Concevoir des meubles à plusieurs pour des clients",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      390,
+      720
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "deco",
+    "maison",
+    "geste"
+   ],
+   "competitors": [
+    "Fabriques de meubles",
+    "Makers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Projet motivant mais long et coûteux en matériaux : adapté à des stages de journée plus qu'à un atelier court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-affutage-couteaux-outils",
+   "name": "Affûter couteaux, ciseaux et outils",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.bois",
+   "desc": "Affûter couteaux de cuisine, ciseaux à bois et ciseaux à pierre sur pierres à eau.",
+   "audience": "Cuisiniers amateurs, menuisiers, jardiniers",
+   "skills": [
+    "Choisir une pierre",
+    "Tenir l'angle",
+    "Affûter un couteau",
+    "Passer au cuir"
+   ],
+   "appSkills": [
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon couteau qui coupe",
+     "goal": "Retrouver une lame tranchante sur pierre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Angle constant",
+     "goal": "Garder un angle régulier sans guide",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tous les outils",
+     "goal": "Affûter ciseaux, rabots et cisailles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fil rasoir",
+     "goal": "Obtenir un fil poli sur couteau japonais",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent affûtage",
+     "goal": "Animer un atelier et réaliser un service d'affûtage",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "boutique",
+    "cuisine-pro"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "geste",
+    "gourmand",
+    "fabrication",
+    "bois",
+    "cuisine-du-monde"
+   ],
+   "competitors": [
+    "Coutelleries",
+    "Ateliers de forge"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Geste simple, résultat net, matériel contenu et valeur claire (couteaux de qualité). Peu d'offre concurrente en atelier, demande modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-electroportatif-decoupe",
+   "name": "Maîtriser perceuse, scie sauteuse et ponceuse",
+   "sector": "maison",
+   "category": "maison.bricolage",
+   "subcategory": "maison.bricolage.bois",
+   "desc": "Choisir et utiliser en sécurité les outils électroportatifs de base.",
+   "audience": "Débutants en bricolage, étudiantes, jeunes propriétaires",
+   "skills": [
+    "Choisir ses outils",
+    "Régler et changer les lames",
+    "Scier droit et courbe",
+    "Poncer et finir"
+   ],
+   "appSkills": [
+    "perceuse-fixations",
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Prendre en main",
+     "goal": "Utiliser perceuse et visseuse en sécurité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scier droit",
+     "goal": "Découper bois et panneaux à la scie sauteuse et circulaire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Poncer propre",
+     "goal": "Choisir granulométrie et ponceuse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet complet",
+     "goal": "Réaliser un projet avec 4 outils différents",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent outillage",
+     "goal": "Animer des ateliers d'initiation",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "geste",
+    "maison"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "Ateliers de bricolage pour femmes"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Peur des outils chez les débutantes : segment fidèle et en croissance, avec un besoin réel de cadre sécurité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-peinture-murs-plafond",
+   "name": "Peinture murs et plafonds : préparer et finir",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.murs",
+   "desc": "Reboucher, poncer, sous-coucher et peindre sans traces ni coulures.",
+   "audience": "Locataires, propriétaires, primo-accédants",
+   "skills": [
+    "Reboucher et poncer",
+    "Protéger et délimiter",
+    "Peindre au rouleau",
+    "Faire les finitions"
+   ],
+   "appSkills": [
+    "peinture-murs"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un mur propre",
+     "goal": "Préparer et peindre un mur sans traces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plafond et angles",
+     "goal": "Peindre un plafond et des raccords nets",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chantier d'une pièce",
+     "goal": "Planifier et réaliser la peinture d'une pièce",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Effets décoratifs",
+     "goal": "Réaliser une patine ou un dégradé",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      250,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent peinture",
+     "goal": "Superviser un chantier collectif et former des aides",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      200,
+      400
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "deco",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "Peintres"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin courant et très visible, valeur économique forte (devis pro élevés). Le format reste difficile hors chantier réel ou salle équipée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-papier-peint-pose",
+   "name": "Poser du papier peint",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.murs",
+   "desc": "Préparer, découper, raccorder et poser lés de papier peint sans bulles.",
+   "audience": "Locataires, propriétaires, adeptes de déco",
+   "skills": [
+    "Préparer le mur",
+    "Mesurer et couper",
+    "Encoller et poser",
+    "Raccorder un motif"
+   ],
+   "appSkills": [
+    "pose-papier-peint"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier lé",
+     "goal": "Poser un lé droit sans bulle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Raccords nets",
+     "goal": "Raccorder un motif et traiter les angles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce complète",
+     "goal": "Papier peint d'une pièce de 10 m²",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas techniques",
+     "goal": "Poser panoramique, intissé et plafond",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pose",
+     "goal": "Former à la pose et conseiller les finitions",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "deco",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Poseurs",
+    "Magasins de déco"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très prisé en déco, résultat spectaculaire. Marché de niche mais valeur perçue élevée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-enduit-chaux-terre",
+   "name": "Enduits à la chaux et à la terre",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.murs",
+   "desc": "Préparer un enduit chaux ou terre, l'appliquer et le finir en intérieur.",
+   "audience": "Propriétaires d'ancien, éco-bâtisseurs",
+   "skills": [
+    "Préparer les supports",
+    "Gâcher un enduit",
+    "Appliquer en couches",
+    "Lisser et finir"
+   ],
+   "appSkills": [
+    "enduits-chaux-tadelakt"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier enduit",
+     "goal": "Appliquer chaux ou terre sur un petit support",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couches maîtrisées",
+     "goal": "Respecter épaisseurs, temps de prise et finitions",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce entière",
+     "goal": "Enduire un mur de A à Z",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions décoratives",
+     "goal": "Réaliser badigeons et effets",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      325,
+      545
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent écoconstruction",
+     "goal": "Animer des chantiers collectifs",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      520
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "domicile",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "deco",
+    "fabrication",
+    "nature",
+    "geste"
+   ],
+   "competitors": [
+    "Réseau écoconstruction",
+    "Artisans"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande de niche, forte image écologique, mais format chantier long et lieux difficiles à mobiliser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-tadelakt-salle-de-bain",
+   "name": "Tadelakt : enduit de salle de bain",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.murs",
+   "desc": "Réaliser un enduit tadelakt, le lisser à la pierre et le savonner.",
+   "audience": "Propriétaires, décorateurs, amateurs d'ambiance maison",
+   "skills": [
+    "Préparer le support",
+    "Appliquer le tadelakt",
+    "Lisser à la pierre",
+    "Savonner et protéger"
+   ],
+   "appSkills": [
+    "enduits-chaux-tadelakt"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un échantillon tadelakt",
+     "goal": "Réaliser un plateau en tadelakt savonné",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs et pigments",
+     "goal": "Obtenir une teinte uniforme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mur de douche",
+     "goal": "Traiter une paroi étanche",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meuble et lavabo",
+     "goal": "Appliquer le tadelakt sur objet et mobilier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      195,
+      345
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent finitions",
+     "goal": "Animer et conseiller sur des chantiers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      390,
+      720
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "deco",
+    "maison",
+    "fabrication",
+    "geste",
+    "couleur"
+   ],
+   "competitors": [
+    "Artisans",
+    "Magasins de matériaux"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Résultat très beau, marché étroit. Utile en module de formation courte à fort prix.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-carrelage-pose",
+   "name": "Poser du carrelage",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.sols",
+   "desc": "Préparer un sol, mesurer, découper et poser du carrelage au sol ou en crédence.",
+   "audience": "Propriétaires, rénovateurs de salle de bain",
+   "skills": [
+    "Préparer le support",
+    "Tracer et mesurer",
+    "Poser à la colle",
+    "Réaliser les joints"
+   ],
+   "appSkills": [
+    "pose-sols"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première rangée",
+     "goal": "Poser quelques carreaux d'aplomb sur un support d'essai",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Calepinage et découpes",
+     "goal": "Découper à la carrelette et calepiner une pièce",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Crédence complète",
+     "goal": "Poser et jointoyer une crédence de cuisine",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sol de salle de bain",
+     "goal": "Réaliser un sol avec pentes et étanchéité",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      300,
+      505
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pose",
+     "goal": "Piloter un chantier et former aux finitions",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "deco",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Carreleurs",
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Gros enjeu financier et métier technique. Demande sérieuse mais sensible à la qualité, formats de stage avec banc d'essai ou chantier réel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-parquet-flottant-plinthes",
+   "name": "Poser un parquet flottant et des plinthes",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.sols",
+   "desc": "Préparer un sol, poser un parquet clipsé, ajuster les plinthes et seuils.",
+   "audience": "Locataires et propriétaires",
+   "skills": [
+    "Préparer le sol",
+    "Poser sous-couche",
+    "Clipser les lames",
+    "Poser plinthes et seuils"
+   ],
+   "appSkills": [
+    "pose-sols"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première rangée",
+     "goal": "Poser une rangée de lames clipsées",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pièce rectangulaire",
+     "goal": "Poser un parquet de 10 m² avec découpes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      60,
+      100
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cas complexes",
+     "goal": "Contourner tuyaux, seuils et portes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plinthes et finitions",
+     "goal": "Découper à onglet et poser plinthes",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      250,
+      420
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pose",
+     "goal": "Piloter un chantier collectif",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      200,
+      400
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "maison",
+    "deco",
+    "geste",
+    "bois",
+    "fabrication"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "Poseurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pose accessible et économiquement intéressante. Format lourd à organiser en atelier collectif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-poncer-vitrifier-parquet",
+   "name": "Poncer et vitrifier un parquet ancien",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.sols",
+   "desc": "Choisir ponceuse et grains, poncer, boucher, huiler ou vitrifier un parquet ancien.",
+   "audience": "Propriétaires d'ancien, rénovateurs",
+   "skills": [
+    "Choisir les grains",
+    "Poncer sans creuser",
+    "Boucher les fentes",
+    "Finir à l'huile ou au vitrificateur"
+   ],
+   "appSkills": [
+    "pose-sols",
+    "restauration-meubles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une surface test",
+     "goal": "Poncer 1 m² de parquet sans creuser",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pièce entière",
+     "goal": "Planifier et poncer un sol",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Finition durable",
+     "goal": "Appliquer huile dure ou vitrificateur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rénover un parquet abîmé",
+     "goal": "Remplacer des lames et réparer",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      300,
+      505
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent rénovation",
+     "goal": "Former aux travaux de sol",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "maison",
+    "bois",
+    "deco",
+    "geste"
+   ],
+   "competitors": [
+    "Artisans parqueteurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Chantier technique et bruyant, pertinent en chantier réel plutôt qu'en atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-restauration-meuble-ancien",
+   "name": "Restaurer un meuble ancien",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.mobilier",
+   "desc": "Décaper, réparer, teinter et cirer un meuble ancien pour lui donner une seconde vie.",
+   "audience": "Chineurs, propriétaires, passionnés de récup",
+   "skills": [
+    "Décaper en sécurité",
+    "Réparer un placage",
+    "Teindre et cirer",
+    "Collage et assemblage"
+   ],
+   "appSkills": [
+    "restauration-meubles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Décaper et nettoyer",
+     "goal": "Décaper une pièce et choisir une finition",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réparer une fissure",
+     "goal": "Recoller et renforcer un assemblage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      115,
+      195
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Finition cirée",
+     "goal": "Appliquer cire, huile ou vernis",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      310
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Restauration complète",
+     "goal": "Restaurer un meuble de A à Z",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      310
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent restauration",
+     "goal": "Former et accompagner des projets personnels",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      365,
+      650
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recup",
+    "bois",
+    "deco",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de restauration",
+    "Chineurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Fort attrait pour la récup et le vintage, mais soit un meuble apporté par chaque participant, soit des matières coûteuses.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-relooking-meuble-peinture",
+   "name": "Relooker un meuble à la peinture",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.mobilier",
+   "desc": "Poncer, apprêter et peindre un meuble avec peinture crayeuse, laque ou patine.",
+   "audience": "Amateurs de déco, locataires, étudiants",
+   "skills": [
+    "Poncer et dégraisser",
+    "Choisir sous-couche",
+    "Peindre sans traces",
+    "Patiner et protéger"
+   ],
+   "appSkills": [
+    "restauration-meubles",
+    "decoration-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un meuble qui change de couleur",
+     "goal": "Peindre un petit meuble en trois couches",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Patines et effets",
+     "goal": "Réaliser vieilli, dégradé, pochoir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Meuble complet",
+     "goal": "Relooker un buffet ou une commode",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions durables",
+     "goal": "Choisir vernis et cire selon l'usage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent relooking",
+     "goal": "Animer des ateliers et vendre ses créations",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recup",
+    "deco",
+    "couleur",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Magasins de peinture déco",
+    "Ateliers DIY"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Formats déjà vendus 50 à 90 € en ateliers de peinture déco, résultat visible, public fidèle et très féminin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-rempaillage-cannage",
+   "name": "Rempailler et canner une chaise",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.mobilier",
+   "desc": "Réaliser un cannage naturel ou un rempaillage cordé sur chaise ancienne.",
+   "audience": "Amateurs d'artisanat, chineurs, seniors actifs",
+   "skills": [
+    "Préparer le cadre",
+    "Tisser le cannage",
+    "Rempailler à la corde",
+    "Vernir et protéger"
+   ],
+   "appSkills": [
+    "restauration-meubles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cannage",
+     "goal": "Tisser un cannage simple sur un cadre d'essai",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rempaillage cordé",
+     "goal": "Rempailler une assise de chaise",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chaise complète",
+     "goal": "Restaurer une chaise de A à Z",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Motifs et matières",
+     "goal": "Réaliser rotin, jonc et cordes tressées",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent artisanat",
+     "goal": "Transmettre le geste à d'autres",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 1,
+    "space": 4,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recup",
+    "fabrication",
+    "deco",
+    "geste",
+    "calme"
+   ],
+   "competitors": [
+    "Artisans cannier",
+    "Ateliers d'artisanat"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Geste rare, public de niche très motivé, peu d'offre. Marché étroit mais fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-refection-fauteuil",
+   "name": "Réfection de fauteuil et tapisserie d'ameublement",
+   "sector": "maison",
+   "category": "maison.renovation",
+   "subcategory": "maison.renovation.mobilier",
+   "desc": "Dégarnir, sangler, garnir et recouvrir un fauteuil ou une chaise.",
+   "audience": "Chineurs, amateurs de mobilier, décorateurs",
+   "skills": [
+    "Dégarnir",
+    "Sangler et ressorts",
+    "Garnir",
+    "Recouvrir"
+   ],
+   "appSkills": [
+    "restauration-meubles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une assise neuve",
+     "goal": "Recouvrir une assise de chaise",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sangler et garnir",
+     "goal": "Réaliser la structure d'un fauteuil",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      225
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fauteuil complet",
+     "goal": "Refaire un fauteuil de A à Z",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      225,
+      360
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions de tapissier",
+     "goal": "Poser galons, clous et passepoils",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      210,
+      360
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent tapisserie",
+     "goal": "Animer un atelier tapissier",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      420,
+      750
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recup",
+    "deco",
+    "fabrication",
+    "textile",
+    "geste"
+   ],
+   "competitors": [
+    "Tapissiers d'ameublement",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Savoir-faire rare, prix élevés, valeur de la pièce restaurée. Demande réduite, mais très engagée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-deco-petit-budget-couleurs",
+   "name": "Décoration petit budget : couleurs et chine",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.deco",
+   "desc": "Choisir une palette, harmoniser et décorer avec peu de moyens.",
+   "audience": "Primo-arrivants, locataires, étudiants",
+   "skills": [
+    "Choisir une palette",
+    "Équilibrer textures et matières",
+    "Chiner malin",
+    "Mettre en scène"
+   ],
+   "appSkills": [
+    "decoration-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma palette",
+     "goal": "Choisir trois couleurs cohérentes pour une pièce",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plan d'ambiance",
+     "goal": "Composer un mood board complet",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chiner et customiser",
+     "goal": "Trouver et adapter 3 pièces à moindre coût",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce transformée",
+     "goal": "Appliquer un plan sur une vraie pièce",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent déco",
+     "goal": "Conseiller et animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "maison",
+    "couleur",
+    "recup"
+   ],
+   "competitors": [
+    "Décorateurs",
+    "Magazines",
+    "Ateliers déco"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande très large et très visuelle, offre dense en ligne. Le pouvoir de payer vient du conseil personnalisé sur sa propre pièce.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-eclairage-ambiance",
+   "name": "Penser la lumière de son intérieur",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.deco",
+   "desc": "Choisir ampoules, températures et luminaires pour créer des ambiances.",
+   "audience": "Propriétaires, locataires, passionnés de déco",
+   "skills": [
+    "Températures de couleur",
+    "Placer les sources",
+    "Choisir ses luminaires",
+    "Gradation et scènes"
+   ],
+   "appSkills": [
+    "decoration-interieur",
+    "domotique-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les trois couches de lumière",
+     "goal": "Comprendre éclairage général, tâche et ambiance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bonne ampoule",
+     "goal": "Choisir lumens, kelvins et IRC",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan lumière",
+     "goal": "Planifier l'éclairage d'une pièce",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lumière connectée",
+     "goal": "Programmer scènes et variation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent éclairage",
+     "goal": "Conseiller sur des projets",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "maison",
+    "tech",
+    "couleur"
+   ],
+   "competitors": [
+    "Boutiques de luminaires",
+    "Éclairagistes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Sujet pertinent mais peu connu, difficile à vendre seul : à intégrer aux ateliers de déco.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-home-staging",
+   "name": "Home staging pour vendre ou louer",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.deco",
+   "desc": "Mettre en valeur un logement pour la vente ou la location : tri, couleurs, photos.",
+   "audience": "Propriétaires vendeurs, bailleurs, agents",
+   "skills": [
+    "Dépersonnaliser",
+    "Désencombrer",
+    "Éclairer et peindre",
+    "Photographier"
+   ],
+   "appSkills": [
+    "decoration-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Diagnostic d'un logement",
+     "goal": "Repérer ce qui freine une visite",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Petits travaux malins",
+     "goal": "Faire un plan à moins de 500 euros",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mise en scène",
+     "goal": "Préparer un logement avant photos",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Visite à fort effet",
+     "goal": "Valoriser un bien en un week-end",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent staging",
+     "goal": "Accompagner les projets de vente",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "maison",
+    "argent",
+    "photo"
+   ],
+   "competitors": [
+    "Home stagers",
+    "Agences"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Usage ponctuel au moment de la vente : bon pour du service individuel, peu pour un rendez-vous récurrent.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-optimiser-petit-logement",
+   "name": "Optimiser un petit logement",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.espaces",
+   "desc": "Gagner de la place : rangement vertical, mobilier multifonction, circulation.",
+   "audience": "Citadins 22-40 ans, locataires de studios",
+   "skills": [
+    "Mesurer et dessiner",
+    "Choisir du mobilier multifonction",
+    "Ranger en hauteur",
+    "Zoner un espace"
+   ],
+   "appSkills": [
+    "amenagement-petit-espace"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon plan de 25 m²",
+     "goal": "Redessiner l'espace avec un plan simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rangements malins",
+     "goal": "Aménager placard, entrée et cuisine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mobilier modulable",
+     "goal": "Choisir lit, table et rangement évolutifs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet complet",
+     "goal": "Mettre en œuvre un réaménagement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aménagement",
+     "goal": "Conseiller et animer",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "deco",
+    "ville",
+    "argent"
+   ],
+   "competitors": [
+    "Décorateurs",
+    "Magazines",
+    "Marques de mobilier"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Problème très parisien, forte demande, peu d'offre en atelier concret sur sa propre pièce.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-desencombrement-tri",
+   "name": "Désencombrer et ranger durablement",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.espaces",
+   "desc": "Trier, donner, vendre, ranger : méthode pour ne plus retomber dans le désordre.",
+   "audience": "Foyers urbains 30-55 ans, parents, déménageurs",
+   "skills": [
+    "Trier par catégories",
+    "Décider de garder",
+    "Ranger par zones",
+    "Entretenir un système"
+   ],
+   "appSkills": [
+    "rangement-desencombrement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tiroir",
+     "goal": "Trier une zone et décider de garder ou non",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une pièce libérée",
+     "goal": "Désencombrer et ranger une pièce",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Maison rangée",
+     "goal": "Appliquer une méthode sur tout le logement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Système durable",
+     "goal": "Installer des routines et un revente-don",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent organisation",
+     "goal": "Accompagner des clients et animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "zero-dechet",
+    "bien-etre",
+    "calme",
+    "argent"
+   ],
+   "competitors": [
+    "Coachs d'organisation",
+    "Livres",
+    "Vidéos"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très populaire depuis la vague du rangement japonais, valeur du service à domicile démontrée. Le collectif fonctionne mieux en parcours qu'en atelier isolé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-chambre-enfant-evolutive",
+   "name": "Aménager une chambre d'enfant évolutive",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.espaces",
+   "desc": "Planifier une chambre qui accompagne l'enfant de 3 à 12 ans : sécurité, rangement, couleurs.",
+   "audience": "Parents de jeunes enfants 28-42 ans",
+   "skills": [
+    "Zoner jeu, repos, étude",
+    "Choisir un mobilier évolutif",
+    "Sécuriser",
+    "Choisir couleurs et lumière"
+   ],
+   "appSkills": [
+    "amenagement-petit-espace",
+    "decoration-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan de chambre",
+     "goal": "Zoner une chambre avec un plan simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rangements accessibles",
+     "goal": "Aménager des rangements à hauteur d'enfant",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chambre qui grandit",
+     "goal": "Planifier des évolutions à 3, 6 et 10 ans",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chambre partagée",
+     "goal": "Aménager un espace pour deux enfants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aménagement",
+     "goal": "Conseiller d'autres parents",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "famille",
+    "deco",
+    "couleur"
+   ],
+   "competitors": [
+    "Magasins de mobilier",
+    "Décorateurs"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais limité dans le temps, difficile à rendre récurrent.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-plans-3d-sketchup",
+   "name": "Plans en 3D avec SketchUp",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.plans",
+   "desc": "Modéliser sa pièce, tester des aménagements et sortir des plans cotés.",
+   "audience": "Propriétaires, bricoleurs, étudiants en architecture",
+   "skills": [
+    "Prendre ses mesures",
+    "Modéliser une pièce",
+    "Placer le mobilier",
+    "Exporter plans et cotes"
+   ],
+   "appSkills": [
+    "plans-sketchup"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma pièce en 3D",
+     "goal": "Modéliser une pièce simple avec ses ouvertures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mobilier et matières",
+     "goal": "Meubler et habiller l'espace",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plans cotés",
+     "goal": "Produire des plans pour un devis",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet complet",
+     "goal": "Modéliser un réaménagement avec options",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent 3D",
+     "goal": "Former d'autres et vendre des plans",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "maison",
+    "deco",
+    "code",
+    "fabrication"
+   ],
+   "competitors": [
+    "Formations en ligne",
+    "Écoles"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande modeste, nombreux tutoriels gratuits, mais utile en soutien d'un projet de rénovation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-preparer-travaux-devis",
+   "name": "Préparer ses travaux : devis, artisans, planning",
+   "sector": "maison",
+   "category": "maison.amenagement",
+   "subcategory": "maison.amenagement.plans",
+   "desc": "Décrire un chantier, comparer des devis, planifier et suivre des artisans.",
+   "audience": "Propriétaires, primo-accédants, copropriétaires",
+   "skills": [
+    "Décrire un besoin",
+    "Comparer des devis",
+    "Planifier un chantier",
+    "Suivre et réceptionner"
+   ],
+   "appSkills": [
+    "rangement-desencombrement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon projet en une page",
+     "goal": "Décrire un chantier et un budget",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire un devis",
+     "goal": "Comparer trois devis et repérer les pièges",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Planifier un chantier",
+     "goal": "Établir un planning réaliste",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivre et réceptionner",
+     "goal": "Contrôler les travaux et les réserves",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent projet",
+     "goal": "Accompagner des propriétaires",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "deco",
+    "droit"
+   ],
+   "competitors": [
+    "Courtiers en travaux",
+    "Architectes"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin clair mais souvent traité en accompagnement individuel. Attention à ne pas fournir de conseil juridique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-factures-energie",
+   "name": "Réduire ses factures d'énergie",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.economies",
+   "desc": "Lire une facture, repérer les fuites d'énergie et agir sur chauffage, eau chaude et veilles.",
+   "audience": "Foyers 30-65 ans, copropriétaires",
+   "skills": [
+    "Lire une facture",
+    "Mesurer une conso",
+    "Réduire veilles et chauffage",
+    "Choisir un contrat"
+   ],
+   "appSkills": [
+    "isolation-calfeutrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire ma facture",
+     "goal": "Comprendre abonnement, kWh et taxes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Traquer le gaspillage",
+     "goal": "Mesurer 5 appareils avec un wattmètre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan d'économies",
+     "goal": "Établir un plan chiffré sur son logement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Comparer les offres",
+     "goal": "Choisir un contrat adapté",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent énergie",
+     "goal": "Animer un atelier de quartier",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "zero-dechet",
+    "tech"
+   ],
+   "competitors": [
+    "ADEME",
+    "Associations",
+    "Fournisseurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin fort et durable, mais forte concurrence d'ateliers gratuits (collectivités). Valeur payée par les entreprises et copropriétés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-isolation-calfeutrage",
+   "name": "Isolation et calfeutrage du quotidien",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.economies",
+   "desc": "Boucher les courants d'air, poser joints, isolants de fenêtres et boudins de porte.",
+   "audience": "Locataires, propriétaires de vieux immeubles",
+   "skills": [
+    "Repérer les fuites d'air",
+    "Poser des joints",
+    "Isoler un coffre de volet",
+    "Calfeutrer une porte"
+   ],
+   "appSkills": [
+    "isolation-calfeutrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chasse aux courants d'air",
+     "goal": "Repérer fuites à la caméra et à la bougie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Joints de fenêtre",
+     "goal": "Poser joints et films isolants",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce plus chaude",
+     "goal": "Isoler volets, portes et radiateurs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rénovation légère",
+     "goal": "Choisir isolants et ordre de travaux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent énergie",
+     "goal": "Animer un atelier et conseiller",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "argent",
+    "zero-dechet",
+    "geste"
+   ],
+   "competitors": [
+    "Associations énergie",
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Sujet utile et très concret l'hiver, demande saisonnière marquée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-radiateurs-chauffage",
+   "name": "Purger ses radiateurs et régler son chauffage",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.economies",
+   "desc": "Purger, équilibrer, programmer thermostat et robinets thermostatiques.",
+   "audience": "Propriétaires et locataires en chauffage collectif",
+   "skills": [
+    "Purger un radiateur",
+    "Poser un robinet thermostatique",
+    "Programmer un thermostat",
+    "Lire sa chaudière"
+   ],
+   "appSkills": [
+    "plomberie-basique",
+    "domotique-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Radiateurs purgés",
+     "goal": "Purger et vérifier un circuit",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Robinets thermostatiques",
+     "goal": "Remplacer et régler des robinets",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chauffage programmé",
+     "goal": "Programmer des scénarios selon le logement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Équilibrage",
+     "goal": "Régler un circuit hydraulique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent chauffage",
+     "goal": "Former et conseiller",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "argent",
+    "geste",
+    "tech"
+   ],
+   "competitors": [
+    "Chauffagistes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais saisonnier et vite épuisé en un atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-domotique-ampoules-prises",
+   "name": "Domotique : ampoules, prises et scénarios",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.domotique",
+   "desc": "Installer ampoules et prises connectées et créer des routines utiles.",
+   "audience": "Technophiles 25-50 ans, familles",
+   "skills": [
+    "Choisir un protocole",
+    "Installer ampoules et prises",
+    "Créer des scénarios",
+    "Protéger sa vie privée"
+   ],
+   "appSkills": [
+    "domotique-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première ampoule connectée",
+     "goal": "Installer et piloter une ampoule",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scénarios utiles",
+     "goal": "Programmer matin, soir et absence",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écosystème cohérent",
+     "goal": "Relier plusieurs marques et appareils",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Maison automatisée",
+     "goal": "Utiliser Home Assistant ou équivalent",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent domotique",
+     "goal": "Former et concevoir des installations",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "maison",
+    "code",
+    "argent"
+   ],
+   "competitors": [
+    "Boutiques de domotique",
+    "Forums"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Curiosité forte et diversité des produits, ateliers payants plutôt orientés sur Home Assistant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-wifi-reseau-domestique",
+   "name": "Wifi et réseau domestique sans panne",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.domotique",
+   "desc": "Placer sa box, étendre le wifi, sécuriser ses appareils et dépanner une coupure.",
+   "audience": "Foyers tous âges, télétravailleurs",
+   "skills": [
+    "Positionner la box",
+    "Choisir répéteur ou mesh",
+    "Sécuriser son wifi",
+    "Diagnostiquer une panne"
+   ],
+   "appSkills": [
+    "domotique-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma box expliquée",
+     "goal": "Comprendre ce qui est derrière la box",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Wifi dans toute la maison",
+     "goal": "Optimiser la couverture",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réseau sécurisé",
+     "goal": "Sécuriser réseau et appareils",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diagnostic de panne",
+     "goal": "Isoler une panne wifi ou ethernet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent réseau",
+     "goal": "Former et accompagner",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "maison",
+    "code"
+   ],
+   "competitors": [
+    "Prestataires d'assistance",
+    "Opérateurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais l'assistance à domicile et les opérateurs répondent déjà. Faible volonté de payer pour un atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-menage-ecologique",
+   "name": "Produits ménagers maison et entretien écologique",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.entretien",
+   "desc": "Fabriquer lessive, multi-usage, pierre d'argile et savoir quoi mélanger ou non.",
+   "audience": "Familles, adeptes du zéro déchet 25-50 ans",
+   "skills": [
+    "Recettes de base",
+    "Sécurité des mélanges",
+    "Choisir les contenants",
+    "Remplacer un produit courant"
+   ],
+   "appSkills": [
+    "menage-ecologique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers produits",
+     "goal": "Fabriquer lessive et multi-usage en 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sécurité des mélanges",
+     "goal": "Connaître les associations interdites",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine ménage",
+     "goal": "Remplacer 5 produits du quotidien",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cosmétique voisine",
+     "goal": "Étendre à des soins simples",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent zéro déchet",
+     "goal": "Animer et former des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "maison",
+    "cadeau",
+    "nature",
+    "soin"
+   ],
+   "competitors": [
+    "Associations zéro déchet",
+    "Magasins bio",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Atelier court à matériel peu coûteux, volume de demande soutenu, mais tarif plafonné par l'offre associative et municipale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-detachage-linge",
+   "name": "Détachage et entretien du linge",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.entretien",
+   "desc": "Traiter taches, laver sans abîmer, repasser et conserver textiles et laine.",
+   "audience": "Foyers 25-60 ans",
+   "skills": [
+    "Identifier une tache",
+    "Choisir un détachant",
+    "Lire les étiquettes",
+    "Entretenir laine et soie"
+   ],
+   "appSkills": [
+    "detachage-linge"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Tache à tache",
+     "goal": "Traiter 10 taches courantes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lessive comprise",
+     "goal": "Choisir cycles, températures et produits",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Textiles délicats",
+     "goal": "Entretenir laine, soie et cuir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rénovation de vêtement",
+     "goal": "Redonner vie à un vêtement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent entretien",
+     "goal": "Animer et conseiller",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "maison",
+    "mode",
+    "soin",
+    "textile"
+   ],
+   "competitors": [
+    "Pressings",
+    "Livres"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile, peu concurrentiel, mais demande modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-cuir-chaussures-entretien",
+   "name": "Entretenir cuir et chaussures",
+   "sector": "maison",
+   "category": "maison.energie",
+   "subcategory": "maison.energie.entretien",
+   "desc": "Nettoyer, nourrir, cirer, ressemeler et protéger chaussures et maroquinerie.",
+   "audience": "Amateurs de belles chaussures, jeunes actifs",
+   "skills": [
+    "Nettoyer le cuir",
+    "Nourrir et cirer",
+    "Reteindre et réparer",
+    "Choisir un cordonnier"
+   ],
+   "appSkills": [
+    "detachage-linge"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un cuir soigné",
+     "goal": "Nettoyer et nourrir une paire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cirage miroir",
+     "goal": "Réaliser un brillant",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petites réparations",
+     "goal": "Remplacer lacets et talonnettes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rénovation complète",
+     "goal": "Restaurer une paire abîmée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cuir",
+     "goal": "Animer un atelier et conseiller",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "atelier-artisan",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mode",
+    "geste",
+    "soin",
+    "collection",
+    "cadeau"
+   ],
+   "competitors": [
+    "Cordonniers",
+    "Cireurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public de niche amateur, bon pour des soirées ou cadeaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-terrasse-bois",
+   "name": "Construire une terrasse en bois",
+   "sector": "maison",
+   "category": "maison.construire",
+   "subcategory": "maison.construire.bois-ext",
+   "desc": "Préparer le sol, poser lambourdes et lames, fixer et finir une terrasse.",
+   "audience": "Propriétaires de maisons 35-65 ans",
+   "skills": [
+    "Mesurer et préparer",
+    "Poser les lambourdes",
+    "Fixer les lames",
+    "Finir et protéger"
+   ],
+   "appSkills": [
+    "cabane-terrasse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan d'une terrasse",
+     "goal": "Concevoir un plan et un chiffrage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure et fondations",
+     "goal": "Poser plots et lambourdes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lames et finitions",
+     "goal": "Poser les lames et réaliser les finitions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      285
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Escalier et rampes",
+     "goal": "Construire marches et garde-corps",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      375,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent construction",
+     "goal": "Piloter un chantier collectif",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      300,
+      600
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "nature",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "journee",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "maison",
+    "nature",
+    "geste"
+   ],
+   "competitors": [
+    "Menuisiers",
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Chantier long en extérieur, peu compatible avec un format récurrent à Paris.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-cabane-abri-jardin",
+   "name": "Construire une cabane ou un abri de jardin",
+   "sector": "maison",
+   "category": "maison.construire",
+   "subcategory": "maison.construire.bois-ext",
+   "desc": "Plan, fondations, ossature, bardage et toiture d'un petit abri en bois.",
+   "audience": "Propriétaires de jardin, familles, bricoleurs",
+   "skills": [
+    "Dessiner un plan",
+    "Poser les fondations",
+    "Monter l'ossature",
+    "Poser bardage et toit"
+   ],
+   "appSkills": [
+    "cabane-terrasse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan d'une cabane",
+     "goal": "Dessiner et chiffrer un abri",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ossature",
+     "goal": "Monter une ossature bois d'un petit abri",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bardage et toiture",
+     "goal": "Terminer l'enveloppe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      285
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions et électricité",
+     "goal": "Aménager l'intérieur",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      375,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent construction",
+     "goal": "Piloter et former",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      300,
+      600
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "nature",
+    "famille",
+    "maison"
+   ],
+   "competitors": [
+    "Fabricants d'abris",
+    "Menuisiers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Projet de rêve très visuel mais long, cher et peu adapté aux petits logements urbains.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-claustra-palissade",
+   "name": "Fabriquer un claustra et une palissade",
+   "sector": "maison",
+   "category": "maison.construire",
+   "subcategory": "maison.construire.bois-ext",
+   "desc": "Concevoir et poser un claustra, une palissade ou un brise-vue en bois.",
+   "audience": "Propriétaires de jardin ou de balcon",
+   "skills": [
+    "Dimensionner",
+    "Débiter et assembler",
+    "Fixer au sol",
+    "Protéger le bois"
+   ],
+   "appSkills": [
+    "cabane-terrasse",
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un panneau",
+     "goal": "Assembler un panneau de claustra",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poteaux et fixations",
+     "goal": "Poser en sécurité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Brise-vue complet",
+     "goal": "Réaliser un ensemble",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finitions durables",
+     "goal": "Protéger et entretenir",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      195,
+      345
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent construction",
+     "goal": "Former et superviser",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      390,
+      720
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "maison",
+    "nature",
+    "deco"
+   ],
+   "competitors": [
+    "Menuisiers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Projet ponctuel pour propriétaires, peu de récurrence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-petite-maconnerie",
+   "name": "Petite maçonnerie : dalle, muret, scellement",
+   "sector": "maison",
+   "category": "maison.construire",
+   "subcategory": "maison.construire.maconnerie",
+   "desc": "Gâcher béton et mortier, couler une petite dalle, sceller et monter un muret.",
+   "audience": "Propriétaires, bricoleurs 30-65 ans",
+   "skills": [
+    "Dosage du béton",
+    "Coffrer",
+    "Gâcher mortier",
+    "Monter un muret"
+   ],
+   "appSkills": [
+    "cabane-terrasse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mortier",
+     "goal": "Doser, gâcher et appliquer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scellement",
+     "goal": "Sceller un poteau ou une platine",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dalle de jardin",
+     "goal": "Couler une petite dalle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Muret en briques",
+     "goal": "Monter un muret droit",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      325,
+      545
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent maçonnerie",
+     "goal": "Superviser et former",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      520
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "maison",
+    "geste",
+    "fabrication",
+    "nature"
+   ],
+   "competitors": [
+    "Maçons",
+    "Enseignes de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Gestes physiques, matériaux lourds, besoins de lieu : peu adaptés au contexte parisien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-four-pizza-briques",
+   "name": "Construire un four à pizza en briques",
+   "sector": "maison",
+   "category": "maison.construire",
+   "subcategory": "maison.construire.maconnerie",
+   "desc": "Chantier de montage d'un four à pizza ou à pain en briques réfractaires.",
+   "audience": "Propriétaires de jardin, passionnés de cuisson",
+   "skills": [
+    "Choisir les briques",
+    "Monter la voûte",
+    "Isoler",
+    "Allumer et cuire"
+   ],
+   "appSkills": [
+    "cabane-terrasse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan d'un four",
+     "goal": "Dimensionner et choisir les matériaux",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      90
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Base et sol",
+     "goal": "Monter l'assise et le sol",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Voûte",
+     "goal": "Monter une voûte en briques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      285
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mise en service",
+     "goal": "Chauffer et cuire pizza et pain",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      375,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent four",
+     "goal": "Superviser des chantiers",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      300,
+      600
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "nature"
+   ],
+   "moments": [
+    "journee",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "geste",
+    "gout",
+    "vue"
+   ],
+   "outputs": [
+    "objet",
+    "plat"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "gourmand",
+    "fabrication",
+    "convivial",
+    "nature",
+    "maison"
+   ],
+   "competitors": [
+    "Constructeurs de fours",
+    "Poêliers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Chantier spectaculaire mais rare : intéressant en kit ou en week-end d'été.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-etat-des-lieux-droits-locataire",
+   "name": "État des lieux et droits du locataire",
+   "sector": "maison",
+   "category": "maison.foyer",
+   "subcategory": "maison.foyer.logement",
+   "desc": "Faire un état des lieux solide, comprendre dépôt de garantie, charges et réparations.",
+   "audience": "Étudiants, jeunes actifs, expatriés",
+   "skills": [
+    "Inspecter un logement",
+    "Constater et photographier",
+    "Comprendre charges et réparations",
+    "Négocier un dépôt"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier état des lieux",
+     "goal": "Remplir un état des lieux sans oubli",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Droits et devoirs",
+     "goal": "Connaître réparations, charges et préavis",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cas de litige",
+     "goal": "Réagir à un dépôt retenu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dossier solide",
+     "goal": "Préparer un dossier de location",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent locataires",
+     "goal": "Informer et orienter sans conseil juridique",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "maison",
+    "droit",
+    "ville"
+   ],
+   "competitors": [
+    "ADIL",
+    "Associations de locataires"
+   ],
+   "regulated": "droit",
+   "verdict": "plus-tard",
+   "why": "Besoin réel, offre gratuite importante. Périmètre limité par la frontière du conseil juridique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-demenagement-organiser",
+   "name": "Déménager sans stress",
+   "sector": "maison",
+   "category": "maison.foyer",
+   "subcategory": "maison.foyer.logement",
+   "desc": "Trier, emballer, planifier et organiser un déménagement efficace.",
+   "audience": "Jeunes actifs, familles, seniors",
+   "skills": [
+    "Faire un rétroplanning",
+    "Trier avant d'emballer",
+    "Emballer et étiqueter",
+    "Organiser le jour J"
+   ],
+   "appSkills": [
+    "rangement-desencombrement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon plan de déménagement",
+     "goal": "Construire un rétroplanning de 8 semaines",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cartons et étiquettes",
+     "goal": "Emballer par pièces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jour J",
+     "goal": "Organiser le chargement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Installation rapide",
+     "goal": "Ranger et s'installer en 3 jours",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent organisation",
+     "goal": "Accompagner des déménagements",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "argent",
+    "ville",
+    "geste"
+   ],
+   "competitors": [
+    "Déménageurs",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel, bon pour un contenu en ligne ou un accompagnement, rarement un atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-securite-domestique-enfants",
+   "name": "Sécuriser sa maison pour les enfants",
+   "sector": "maison",
+   "category": "maison.foyer",
+   "subcategory": "maison.foyer.securite",
+   "desc": "Repérer et éliminer les dangers domestiques pour des enfants de 0 à 6 ans.",
+   "audience": "Parents de jeunes enfants",
+   "skills": [
+    "Repérer les risques",
+    "Sécuriser prises et fenêtres",
+    "Ranger médicaments et produits",
+    "Réagir en cas d'accident"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Visite de sécurité",
+     "goal": "Repérer les dangers pièce par pièce",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équipements utiles",
+     "goal": "Choisir et poser barrières et cache-prises",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Accidents courants",
+     "goal": "Réagir à brûlure, chute et étouffement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Maison évolutive",
+     "goal": "Adapter la sécurité à l'âge",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent prévention",
+     "goal": "Animer une réunion de parents",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "maison",
+    "bien-etre",
+    "soin"
+   ],
+   "competitors": [
+    "PMI",
+    "Associations de prévention"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Parents très demandeurs avant la marche de l'enfant, mais formations gratuites en PMI. Cadre enfants à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "maison-adapter-logement-senior",
+   "name": "Adapter le logement d'un proche âgé",
+   "sector": "maison",
+   "category": "maison.foyer",
+   "subcategory": "maison.foyer.securite",
+   "desc": "Évaluer les risques de chute, installer barres, éclairages et aménagements adaptés.",
+   "audience": "Aidants familiaux 45-65 ans, seniors",
+   "skills": [
+    "Repérer les risques de chute",
+    "Choisir barres et sièges",
+    "Aménager salle de bain",
+    "Mobiliser des aides"
+   ],
+   "appSkills": [
+    "amenagement-petit-espace"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Repérer les risques",
+     "goal": "Faire le tour d'un logement avec une grille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Aménagements simples",
+     "goal": "Installer éclairage et barres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Salle de bain adaptée",
+     "goal": "Planifier douche et WC adaptés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Aides et artisans",
+     "goal": "Monter un dossier d'aides",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aidants",
+     "goal": "Orienter et animer",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "famille",
+    "solidarite",
+    "soin"
+   ],
+   "competitors": [
+    "Ergothérapeutes",
+    "Associations d'aidants"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Besoin en forte croissance avec le vieillissement, mais forte frontière avec les ergothérapeutes. Mieux vaut un rôle d'information.",
+   "confidence": "estimation"
+  }
+ ]
+}

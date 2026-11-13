@@ -3,7 +3,7 @@
 (function (W) {
   'use strict';
   var C = W.Cordes = W.Cordes || {};
-  C.version = '1.0.0';
+  C.version = '1.1.0';
   C.anomalies = [];
 
   /* ---------- utilitaires ---------- */
@@ -61,8 +61,54 @@
     entreprise: 'Entreprise', communaute: 'Club ou cercle'
   };
   C.FORMAT_IDS = Object.keys(C.FORMATS);
-  C.LEVELS = ['Pas encore', 'Je connais un peu', 'Je me débrouille', 'Je maîtrise', 'Je pourrais l’enseigner'];
-  C.LEVELS_SHORT = ['0', 'Un peu', 'Débrouille', 'Maîtrise', 'Enseigne'];
+  /* ---------- échelle de maîtrise (0 à 5) et règle d'animation ----------
+     Un atelier « de niveau k » amène du niveau k-1 au niveau k. Règle stricte : une personne de niveau n
+     anime les ateliers de niveau n-1 (le niveau 1 n'anime pas ; le niveau 5 anime le niveau 4 et forme les hôtes).
+     'below' : une personne de niveau n anime tout atelier de niveau inférieur à n. Non exposé à l'utilisateur. */
+  C.TEACH_RULE = 'strict';
+  C.LEVEL_MAX = 5;
+  C.SCHEMA_VERSION = 2;
+  C.LEVELS = ['Jamais pratiqué', 'Je découvre', 'Bases acquises', 'Je consolide', 'Je maîtrise', 'Référent'];
+  C.LEVELS_SHORT = ['0', 'Découvre', 'Bases', 'Consolide', 'Maîtrise', 'Référent'];
+  C.LEVEL_DESC = ['Rien encore', 'A fait une première séance, connaît les gestes de base', 'Fait seul un résultat simple et reproductible',
+    'Régulier, varie, corrige ses erreurs', 'Résultat sûr et personnel, explique le pourquoi', 'Niveau avancé reconnu, crée ses méthodes'];
+  // niveau requis pour animer l'atelier de niveau k (le minimum en mode « below »)
+  C.hostLevel = function (k) { return U.clamp(k, 1, C.LEVEL_MAX - 1) + 1; };
+  // une personne de niveau n peut-elle animer l'atelier de niveau k ?
+  C.canAnimate = function (n, k) {
+    n = U.num(n); k = U.num(k);
+    if (k < 1 || k > C.LEVEL_MAX - 1 || n < 2) return false;
+    return C.TEACH_RULE === 'below' ? n >= k + 1 : n === k + 1;
+  };
+  // palier le plus haut qu'anime une personne de niveau n (0 si aucun)
+  C.topPalier = function (n) { n = U.clamp(n, 0, C.LEVEL_MAX); return n >= 2 ? n - 1 : 0; };
+  // paliers animés par une personne de niveau n
+  C.animatedPaliers = function (n) { var t = C.topPalier(n), o = []; if (!t) return o; if (C.TEACH_RULE === 'below') { for (var k = 1; k <= t; k++) o.push(k); } else o.push(t); return o; };
+  // paliers du chemin cur → target qu'une personne de niveau n peut animer
+  C.paliersOnPath = function (n, cur, target) {
+    var o = []; cur = U.clamp(cur, 0, C.LEVEL_MAX); target = U.clamp(target, 0, C.LEVEL_MAX);
+    for (var k = cur + 1; k <= target; k++) if (C.canAnimate(n, k)) o.push(k);
+    return o;
+  };
+  // « vous pouvez animer les ateliers de niveau 3 (Je consolide) »
+  C.animateText = function (n) {
+    var t = C.topPalier(n);
+    if (!t) return n === 1 ? 'Au niveau 1, on n’anime pas encore : passer au niveau 2 pour animer la découverte' : '';
+    var lab = function (k) { return 'niveau ' + k + ' (' + C.LEVELS[k] + ')'; };
+    if (C.TEACH_RULE === 'below' && t > 1) return 'vous pouvez animer les ateliers de niveau 1 à ' + t + ', jusqu’au ' + lab(t);
+    return 'vous pouvez animer les ateliers de ' + lab(t) + (n >= C.LEVEL_MAX ? ' et former les hôtes' : '');
+  };
+  // jalon observable du niveau k pour une compétence : 1 = première séance (générique), 2 à 5 = levels[0..3]
+  C.milestone = function (s, k) {
+    k = U.clamp(k, 0, C.LEVEL_MAX);
+    if (!s || !k) return '';
+    if (k === 1) return 'Première séance ' + C.de(s) + ' faite, gestes de base connus';
+    return (s.levels && s.levels[k - 2]) || C.LEVEL_DESC[k];
+  };
+  // ancienne échelle (0 à 4 : un peu, débrouille, maîtrise, pourrait enseigner) vers la nouvelle (0 à 5)
+  C.OLD_LEVEL_MAP = [0, 1, 2, 4, 4];
+  C.migrateLevel = function (old) { old = Math.round(U.clamp(old, 0, 4)); return C.OLD_LEVEL_MAP[old]; };
+  C.migrateTarget = function (old) { return Math.max(2, C.migrateLevel(old)); };
   C.REG_IDS = ['sport', 'alcool', 'alimentaire', 'enfants', 'sante', 'securite', 'animaux', 'droit'];
   C.ATTR_DEFAULTS = { social: 1, physical: 1, creative: 1, intellectual: 1, cost: 1, hoursToBasics: 20, oneHourResult: false, online: 1, demand: 1, monetization: 1, teachable: 2, trend: 0 };
   C.UNIVERSE_IDS = ['cuisine', 'musique', 'image', 'artisanat', 'maison', 'nature', 'sport', 'pleinair', 'scene', 'parole', 'jeux', 'tech', 'bienetre', 'style', 'savoirs', 'pratique', 'social'];

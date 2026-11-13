@@ -1,4 +1,5 @@
-/* Offres générées, trames minutées, feuille de route 90 jours, kit de lancement, collectif. */
+/* Offres générées, trames minutées, feuille de route 90 jours, kit de lancement, collectif.
+   Une personne de niveau n anime les ateliers de niveau n-1 (règle C.TEACH_RULE) : chaque offre cible ce palier. */
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
@@ -37,7 +38,10 @@
     var o = st.offer || {};
     var ids = U.arr(o.strong).filter(function (id) { return C.data.sById[id]; });
     if (!ids.length) ids = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 3; });
-    var sc = function (id) { var s = C.data.sById[id], v = st.skills[id] || {}; return U.num(v.level, 3) * 2 + s.attrs.teachable + s.attrs.monetization + s.attrs.demand + U.num(v.love, 2); };
+    if (!ids.length) ids = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 2; });
+    // seules les compétences qui permettent d'animer un palier (niveau 2 ou plus) donnent une offre
+    ids = ids.filter(function (id) { return C.topPalier(U.num((st.skills[id] || {}).level, 0)) >= 1; });
+    var sc = function (id) { var s = C.data.sById[id], v = st.skills[id] || {}; return U.num(v.level, 3) * 1.6 + s.attrs.teachable + s.attrs.monetization + s.attrs.demand + U.num(v.love, 2); };
     return ids.sort(function (a, b) { return sc(b) - sc(a); }).slice(0, 6);
   };
 
@@ -72,26 +76,38 @@
     return plan.map(function (p, i) { return C.buildOffer(st, p.id, p.f, i); });
   };
 
+  // textes d'un palier k : objectif (jalon du niveau k), public (niveau k-1) et suite (jalon k+1)
+  C.palierTexts = function (s, k) {
+    k = U.clamp(k, 1, C.LEVEL_MAX - 1);
+    return {
+      k: k, goal: k === 1 ? 'les gestes de base' : lc(C.milestone(s, k)), next: lc(C.milestone(s, k + 1)),
+      who: k === 1 ? 'débutants complets' : 'personnes au niveau ' + (k - 1) + ' (' + C.LEVELS[k - 1].toLowerCase() + ')',
+      tag: (k === 1 ? 'Atelier découverte' : 'Atelier de niveau ' + k) + ' · ' + C.LEVELS[k]
+    };
+  };
   C.buildOffer = function (st, id, fmt, i) {
     var s = C.data.sById[id], o = st.offer || {}, spec = FMT_SPEC[fmt] || { dur: 90, size: [4, 8] };
+    var lvl = U.clamp(U.num(((st.skills || {})[id] || {}).level, 3), 0, C.LEVEL_MAX);
+    var pal = Math.max(1, C.topPalier(lvl)), P = C.palierTexts(s, pal);
     var aud = U.arr(o.audiences);
     var size = fmt === 'atelier' ? (s.attrs.teachable >= 3 ? 6 : 4) : fmt === 'entreprise' ? 12 : Math.round((spec.size[0] + spec.size[1]) / 2);
     if (fmt === 'atelier' && s.attrs.cost >= 3) size = 4;
     var dur = spec.dur;
     if (fmt === 'atelier' && s.attrs.hoursToBasics <= 8) dur = 90;
-    var pr = C.suggestPrice(st, id, fmt, size);
-    var L = s.levels, name = s.short || s.name;
+    var pr = C.suggestPrice(st, id, fmt, size, pal);
+    var name = s.short || s.name;
     var audTxt = aud.length ? aud.map(function (a) { return (C.AUDIENCES[a] || a).toLowerCase(); }).slice(0, 2).join(' et ') : 'adultes débutants';
     var title, hook;
+    var dis = pal === 1 ? 'découverte' : 'vers le niveau ' + pal + ' (' + C.LEVELS[pal].toLowerCase() + ')';
     switch (fmt) {
-      case 'atelier': title = name + ' · ' + lc(L[0]) + ' en ' + minutes(dur); hook = 'En petit groupe de ' + size + ', chacun repart en sachant ' + lc(L[0]) + ', photo à l’appui.'; break;
-      case 'cours': title = 'Cours particulier de ' + lc(name) + ' · progression sur mesure'; hook = 'Un objectif fixé à la première heure, puis une étape par séance jusqu’à « ' + lc(L[1]) + ' ».'; break;
-      case 'stage': title = 'Stage ' + lc(name) + ' · de zéro à « ' + lc(L[1]) + ' » en une journée'; hook = 'Une journée intensive pour franchir le cap que l’on met des mois à passer seul.'; break;
+      case 'atelier': title = pal === 1 ? name + ' · atelier découverte en ' + minutes(dur) : name + ' · atelier de niveau ' + pal + ' (' + C.LEVELS[pal].toLowerCase() + ') en ' + minutes(dur); hook = 'En petit groupe de ' + size + ', pour ' + P.who + ' : chacun repart en sachant ' + P.goal + ', photo à l’appui.'; break;
+      case 'cours': title = 'Cours particulier de ' + lc(name) + ' · ' + dis; hook = 'Un objectif fixé à la première heure, puis une étape par séance jusqu’à « ' + P.goal + ' ».'; break;
+      case 'stage': title = 'Stage ' + lc(name) + ' · ' + (pal === 1 ? 'de zéro aux gestes de base' : 'cap sur « ' + P.goal + ' »') + ' en une journée'; hook = 'Une journée intensive pour ' + P.who + ' : franchir le palier que l’on met des mois à passer seul.'; break;
       case 'prestation': title = ({ cuisine: name + ' pour vos événements', musique: name + ' pour vos soirées', scene: name + ' pour vos soirées et mariages', maison: name + ' à domicile', style: name + ' sur rendez-vous' }[s.universe]) || name + ' · prestation sur mesure'; hook = 'Vous recevez, je m’occupe de ' + lc(name) + ' : préparation, animation, rangement.'; break;
-      case 'coaching': title = 'Accompagnement ' + lc(name) + ' · 6 séances vers « ' + lc(L[2]) + ' »'; hook = 'Un suivi personnalisé avec un exercice entre chaque séance et un point d’étape mesurable.'; break;
+      case 'coaching': title = 'Accompagnement ' + lc(name) + ' · 6 séances vers « ' + P.goal + ' »'; hook = 'Un suivi personnalisé pour ' + P.who + ', avec un exercice entre chaque séance et un point d’étape mesurable.'; break;
       case 'entreprise': title = 'Team building ' + lc(name) + ' · ' + minutes(dur) + ' pour 8 à 20 collègues'; hook = 'Une activité qui fait coopérer les équipes et produit un résultat concret à montrer.'; break;
-      case 'evenement': title = 'Soirée ' + lc(name) + ' · découverte conviviale'; hook = 'Une soirée ouverte où l’on essaie, on échange et on repart avec l’envie de continuer.'; break;
-      case 'contenu': title = 'Mini-formation vidéo ' + lc(name) + ' · 8 modules'; hook = 'Tout ce qu’il faut pour atteindre « ' + lc(L[0]) + ' » chez soi, à son rythme.'; break;
+      case 'evenement': title = 'Soirée ' + lc(name) + ' · ' + (pal === 1 ? 'découverte conviviale' : 'pratique de niveau ' + pal); hook = 'Une soirée ouverte où l’on essaie, on échange et on repart avec l’envie de continuer.'; break;
+      case 'contenu': title = 'Mini-formation vidéo ' + lc(name) + ' · 8 modules, ' + dis; hook = 'Tout ce qu’il faut pour atteindre « ' + P.goal + ' » chez soi, à son rythme.'; break;
       case 'communaute': title = 'Cercle ' + lc(name) + ' · un rendez-vous par mois'; hook = 'Un groupe stable qui pratique ensemble, avec un thème et un défi chaque mois.'; break;
       case 'produit': title = 'Créations ' + lc(name) + ' · pièces uniques'; hook = 'Des pièces faites main, vendues en direct, en boutique partenaire ou en ligne.'; break;
       default: title = name; hook = s.desc;
@@ -103,16 +119,18 @@
     mat.push('Fiche-mémo d’une page remise en fin de séance');
     return {
       id: 'o' + i + '-' + id + '-' + fmt, s: s, fmt: fmt, title: title, hook: hook, duration: dur, size: size, audience: audTxt,
-      price: pr.price, pricing: pr, unit: pr.unit, outline: C.outline(s, fmt, dur, size), material: mat, regulated: s.regulated
+      price: pr.price, pricing: pr, unit: pr.unit, outline: C.outline(s, fmt, dur, size, pal), material: mat, regulated: s.regulated,
+      palier: pal, level: lvl, palierTag: P.tag, animate: 'Vous êtes niveau ' + lvl + ' : ' + C.animateText(lvl)
     };
   };
 
-  C.outline = function (s, fmt, dur, size) {
-    var L = s.levels, soft = (s.soft[0] && C.data.softById[s.soft[0]]) ? C.data.softById[s.soft[0]].name.toLowerCase() : 'précision';
+  C.outline = function (s, fmt, dur, size, pal) {
+    var P = C.palierTexts(s, pal || 2), G = P.goal, N = P.next;
+    var L = [G.charAt(0).toUpperCase() + G.slice(1), N], soft = (s.soft[0] && C.data.softById[s.soft[0]]) ? C.data.softById[s.soft[0]].name.toLowerCase() : 'précision';
     var phases;
     if (fmt === 'cours' || fmt === 'coaching') phases = [
-      [0.10, 'Diagnostic', 'Ce que la personne sait déjà faire, ce qu’elle veut atteindre, un exercice test'],
-      [0.10, 'Objectif du jour', 'Une seule étape visée : « ' + lc(L[0]) + ' »'],
+      [0.10, 'Diagnostic', (P.k === 1 ? 'Ce que la personne a déjà essayé' : 'Vérifier les acquis du niveau ' + (P.k - 1)) + ', ce qu’elle veut atteindre, un exercice test'],
+      [0.10, 'Objectif du jour', 'Une seule étape visée : « ' + G + ' »'],
       [0.40, 'Technique', 'Démonstration, décomposition du geste, répétitions corrigées une par une'],
       [0.25, 'Mise en situation', 'Application autonome, vous observez et notez 2 points à travailler'],
       [0.15, 'Suite', 'Exercice pour la semaine, prochain objectif, trace écrite ou vidéo']];
@@ -123,28 +141,28 @@
       [0.25, 'Défi', 'Présentation des réalisations, vote, photo de groupe'],
       [0.15, 'Débrief', 'Ce qui a marché dans la coopération, fiche-mémo, contact pour une suite']];
     else if (fmt === 'stage') phases = [
-      [0.08, 'Accueil', 'Tour de table, niveau et attentes de chacun'],
-      [0.20, 'Bases', 'Démonstration et exercices : « ' + lc(L[0]) + ' »'],
+      [0.08, 'Accueil', 'Tour de table : chacun situe son niveau sur l’échelle de 0 à 5, attentes'],
+      [0.20, 'Bases', 'Démonstration et exercices : « ' + G + ' »'],
       [0.10, 'Pause', 'Pause, regard collectif sur les essais'],
-      [0.30, 'Approfondissement', 'Vers « ' + lc(L[1]) + ' », correction individuelle (' + soft + ')'],
+      [0.30, 'Approfondissement', 'Vers « ' + N + ' », correction individuelle (' + soft + ')'],
       [0.22, 'Projet', 'Réalisation personnelle de bout en bout'],
       [0.10, 'Restitution', 'Présentation, photos, ressources pour continuer seul']];
     else if (fmt === 'evenement' || fmt === 'communaute') phases = [
       [0.15, 'Accueil', 'Arrivée, présentation rapide, thème de la soirée'],
-      [0.20, 'Découverte', 'Démonstration courte et commentée : ' + lc(L[0])],
+      [0.20, 'Découverte', 'Démonstration courte et commentée : ' + G],
       [0.40, 'Pratique libre', 'Petits groupes, vous passez de table en table'],
       [0.15, 'Moment commun', 'Mini défi ou partage des réalisations'],
       [0.10, 'Suite', 'Prochaine date, inscription au cercle, photo']];
     else if (fmt === 'contenu') phases = [
-      [0.12, 'Module 1', 'Matériel minimum et installation'], [0.18, 'Modules 2 et 3', 'Le geste de base : ' + lc(L[0])],
-      [0.30, 'Modules 4 à 6', 'Exercices progressifs vers « ' + lc(L[1]) + ' »'], [0.25, 'Module 7', 'Erreurs fréquentes et corrections'],
+      [0.12, 'Module 1', 'Matériel minimum et installation'], [0.18, 'Modules 2 et 3', 'Le geste de base : ' + G],
+      [0.30, 'Modules 4 à 6', 'Exercices progressifs vers « ' + N + ' »'], [0.25, 'Module 7', 'Erreurs fréquentes et corrections'],
       [0.15, 'Module 8', 'Projet final et partage dans la communauté']];
     else if (fmt === 'produit') return [{ start: 0, end: 0, label: 'Gamme', text: '3 pièces de prix différents (entrée, cœur, pièce signature)' }, { start: 0, end: 0, label: 'Vente', text: 'Marché de créateurs, boutique partenaire en dépôt-vente, boutique en ligne' }, { start: 0, end: 0, label: 'Atelier associé', text: 'Proposer un atelier pour faire soi-même : il fait vendre les pièces' }];
     else phases = [
       [0.10, 'Accueil', 'Tour de table : prénom, niveau, ce qui donne envie'],
-      [0.15, 'Démonstration', 'Démonstration commentée : ' + lc(L[0])],
+      [0.15, 'Démonstration', 'Démonstration commentée : ' + G],
       [0.35, 'Pratique guidée', (size > 2 ? 'En binômes' : 'Pas à pas') + ', correction individuelle, accent sur la ' + soft],
-      [0.25, 'Défi', 'Chacun réalise sa version, vers « ' + lc(L[1]) + ' » pour les plus à l’aise'],
+      [0.25, 'Défi', 'Chacun réalise sa version, vers « ' + N + ' » pour les plus à l’aise'],
       [0.15, 'Clôture', 'Photo des réalisations, fiche-mémo, proposition d’un arc de 3 séances']];
     var t = 0;
     return phases.map(function (ph) {
@@ -154,6 +172,19 @@
     }).map(function (x, i, arr) { if (i === arr.length - 1) x.end = dur; return x; });
   };
 
+  /* ---------- échelle de progression de l'hôte ----------
+     Pour chaque compétence : niveau actuel, palier(s) animé(s), et ce qu'il faut pour animer le palier suivant. */
+  C.hostLadder = function (st, ids) {
+    ids = U.arr(ids && ids.length ? ids : C.strongSkills(st));
+    return ids.map(function (id) {
+      var s = C.data.sById[id]; if (!s) return null;
+      var n = U.clamp(U.num(((st.skills || {})[id] || {}).level, 0), 0, C.LEVEL_MAX), F = C.LEVEL_FACTOR;
+      var rungs = []; for (var k = 1; k <= C.LEVEL_MAX; k++) rungs.push({ level: k, label: C.LEVELS[k], milestone: C.milestone(s, k), animates: C.animatedPaliers(k), current: k === n, done: k < n });
+      var next = n < C.LEVEL_MAX ? { level: n + 1, label: C.LEVELS[n + 1], milestone: C.milestone(s, n + 1), palier: n, hours: Math.max(1, Math.round(s.attrs.hoursToBasics * (F[n + 1] - F[n]))) } : null;
+      return { s: s, level: n, palier: C.topPalier(n), paliers: C.animatedPaliers(n), text: C.animateText(n), next: next, trainsHosts: n >= C.LEVEL_MAX, rungs: rungs };
+    }).filter(Boolean).sort(function (a, b) { return (a.next ? a.next.hours : 1e9) - (b.next ? b.next.hours : 1e9); });
+  };
+
   /* ---------- feuille de route 90 jours ---------- */
   C.roadmap = function (st, offers, channels, status, niche) {
     var o = st.offer || {}, first = offers.filter(function (x) { return x.size > 1 && x.duration; })[0] || offers[0], now = new Date();
@@ -161,6 +192,8 @@
     var regs = C.regulationsFor(offers.map(function (x) { return x.s; }));
     var proj = C.projectsFor(offers.map(function (x) { return x.s; }), 1)[0];
     var stp = status && status.s && status.s.steps && status.s.steps[0];
+    // monter d'un niveau pour animer le palier suivant (compétence la mieux placée sous le niveau 5)
+    var up = C.hostLadder(st, U.uniq(offers.map(function (x) { return x.s.id; }))).filter(function (x) { return x.next; })[0];
     var d = function (n) { return U.addDays(now, n); };
     var ph = [
       { id: 'tester', label: 'Tester', range: 'Sem. 1-2', tasks: [
@@ -184,7 +217,12 @@
         { id: 'r14', due: d(72), text: 'Fixer un créneau régulier, par exemple le jeudi à 19 h, et le tenir 6 semaines' }].concat(U.arr(o.audiences).indexOf('entreprises') >= 0 || offers.some(function (x) { return x.fmt === 'entreprise'; }) ? [{ id: 'r15', due: d(78), text: 'Proposer la version entreprise à 3 CSE ou entreprises du quartier' }] : []) },
       { id: 'collectif', label: 'Collectif', range: 'Mois 3', tasks: [
         { id: 'r16', due: d(84), text: proj ? 'Rejoindre ou lancer le projet « ' + proj.p.name + ' » (' + proj.p.size[0] + ' à ' + proj.p.size[1] + ' personnes, ' + proj.p.weeks + ' semaines)' : 'Rejoindre un projet collectif local' },
-        { id: 'r17', due: d(90), text: 'Bilan à J+90 : chiffre d’affaires, taux de remplissage, prix, canal le plus rentable' + (niche ? ', test de la niche « ' + niche.title + ' »' : '') }] }
+        { id: 'r17', due: d(90), text: 'Bilan à J+90 : chiffre d’affaires, taux de remplissage, prix, canal le plus rentable' + (niche ? ', test de la niche « ' + niche.title + ' »' : '') }] },
+      { id: 'progresser', label: 'Monter d’un niveau', range: 'Mois 1 à 3', tasks: up ? [
+        { id: 'r18', due: d(30), text: 'Monter au niveau ' + up.next.level + ' en ' + C.nm(up.s) + ' (' + up.next.label.toLowerCase() + ') pour animer le palier ' + up.next.palier + ' : objectif « ' + lc(up.next.milestone) + ' », environ ' + up.next.hours + ' h' },
+        { id: 'r19', due: d(45), text: 'Suivre un atelier de niveau ' + up.next.level + ' animé par un hôte de niveau ' + C.hostLevel(up.next.level) + (up.next.level >= C.LEVEL_MAX ? ' ou un référent reconnu de la discipline' : '') },
+        { id: 'r20', due: d(88), text: 'Faire valider le niveau ' + up.next.level + ' par une réalisation montrée, puis ajouter l’atelier de niveau ' + up.next.palier + ' à vos offres' }] : [
+        { id: 'r18', due: d(60), text: 'Niveau 5 atteint : proposer une formation des hôtes de niveau 4 pour essaimer vos ateliers' }] }
     ];
     return ph;
   };
@@ -193,17 +231,17 @@
   C.launchKit = function (st, offers, niche) {
     var c = st.context || {}, o = st.offer || {}, first = offers[0];
     if (!first) return null;
-    var s = first.s, v = (st.skills && st.skills[s.id]) || {};
+    var s = first.s, v = (st.skills && st.skills[s.id]) || {}, G = C.palierTexts(s, first.palier || 1).goal;
     var name = c.firstName || 'Votre prénom', city = c.city || 'votre ville';
     var yrs = v.years ? v.years + ' ans de pratique' : 'une pratique de longue date';
     var others = offers.map(function (x) { return x.s.short || x.s.name; }).filter(function (n, i, a) { return a.indexOf(n) === i && n !== (s.short || s.name); });
     var aud = first.audience;
     var bioShort = name + ' · ' + C.nm(s) + (others[0] ? ' et ' + lc(others[0]) : '') + ' à ' + city + '. ' + yrs.charAt(0).toUpperCase() + yrs.slice(1) + ', des ateliers en petit groupe où l’on repart avec un résultat.';
     var bioLong = 'Je m’appelle ' + name + ' et je pratique ' + C.nm(s) + ' depuis ' + (v.years ? v.years + ' ans' : 'longtemps') + '. ' +
-      'J’anime à ' + city + ' des séances pour ' + aud + ' : on y apprend à ' + lc(s.levels[0]) + ', puis on va plus loin à son rythme. ' +
+      'J’anime à ' + city + ' des séances pour ' + aud + ' : on y apprend à ' + G + ', puis on va plus loin à son rythme. ' +
       (niche ? 'Ma particularité : je mêle ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ', ce qui donne des séances qu’on ne trouve pas ailleurs. ' : '') +
       'Prochaine date et réservation en message.';
-    var pitch = 'Vous avez toujours voulu essayer ' + C.nm(s) + ' ? En ' + C.minutes(first.duration) + ', en groupe de ' + first.size + ', vous repartez en sachant ' + lc(s.levels[0]) + '. C’est ' + U.eur(first.price) + ', le matériel est fourni, et c’est à ' + city + '.';
+    var pitch = 'Vous avez toujours voulu essayer ' + C.nm(s) + ' ? En ' + C.minutes(first.duration) + ', en groupe de ' + first.size + ', vous repartez en sachant ' + G + '. C’est ' + U.eur(first.price) + ', le matériel est fourni, et c’est à ' + city + '.';
     var mat = C.COST_RANGE[s.attrs.cost];
     var posts = [
       'Avant / après : ce que mes participants savent faire en ' + C.minutes(first.duration) + ' (photos de la dernière séance)',
@@ -211,7 +249,7 @@
       'Le matériel minimum pour commencer ' + C.nm(s) + ' : ' + (mat[1] <= 20 ? 'presque rien' : 'moins de ' + mat[1] + ' €'),
       'Coulisses : je prépare la séance de jeudi (trame, matériel, playlist)',
       'Témoignage d’une participante et photo de sa première réalisation',
-      'Défi de la semaine : ' + lc(s.levels[0]) + '. Montrez-moi vos essais',
+      'Défi de la semaine : ' + G + '. Montrez-moi vos essais',
       niche ? 'Pourquoi ' + C.nm(niche.a) + ' et ' + C.nm(niche.b) + ' vont si bien ensemble' : 'Ce que ' + C.nm(s) + ' m’a appris en dehors ' + C.de(s),
       'Prochaine date : jeudi 19 h, ' + first.size + ' places, ' + U.eur(first.price) + ', lien en bio',
       'Question ouverte : qu’aimeriez-vous apprendre en ' + C.nm(s) + ' ?',
@@ -247,6 +285,6 @@
     var niches = C.niches(st, 3);
     var regs = C.regulationsFor(U.uniq(offers.map(function (x) { return x.s.id; })).map(function (id) { return C.data.sById[id]; }));
     var roadmap = C.roadmap(st, offers, channels, statuses[0], niches[0]);
-    return { offers: offers, channels: channels, statuses: statuses, niches: niches, matrix: C.niceMatrix(st), regs: regs, roadmap: roadmap, kit: C.launchKit(st, offers, niches[0]), collective: C.collective(st, offers), entre: C.computeEntrepreneur((st.offer || {}).entrepreneur) };
+    return { offers: offers, channels: channels, statuses: statuses, niches: niches, matrix: C.niceMatrix(st), regs: regs, roadmap: roadmap, kit: C.launchKit(st, offers, niches[0]), collective: C.collective(st, offers), ladder: C.hostLadder(st, U.uniq(offers.map(function (x) { return x.s.id; }))), entre: C.computeEntrepreneur((st.offer || {}).entrepreneur) };
   };
 })(window);

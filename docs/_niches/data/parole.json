@@ -1,0 +1,7552 @@
+{
+ "sector": "parole",
+ "categories": [
+  {
+   "id": "parole.oral",
+   "name": "Prise de parole et voix",
+   "desc": "Parler devant un groupe, poser sa voix, raconter et produire de l'audio.",
+   "subcategories": [
+    {
+     "id": "parole.oral.oratoire",
+     "name": "Parler en public",
+     "desc": "Éloquence, pitch, débat et discours pour toutes les occasions."
+    },
+    {
+     "id": "parole.oral.voix",
+     "name": "Voix et diction",
+     "desc": "Travailler sa voix, lire à voix haute, doubler."
+    },
+    {
+     "id": "parole.oral.recit-oral",
+     "name": "Récit et storytelling",
+     "desc": "Raconter des histoires vraies ou inventées à voix haute."
+    },
+    {
+     "id": "parole.oral.media",
+     "name": "Podcast et micro",
+     "desc": "Produire de l'audio : podcast, interview et chronique."
+    }
+   ]
+  },
+  {
+   "id": "parole.relation",
+   "name": "Communication et relations",
+   "desc": "Écouter, s'affirmer, négocier et rencontrer.",
+   "subcategories": [
+    {
+     "id": "parole.relation.ecoute",
+     "name": "Écoute et conflits",
+     "desc": "Communication non violente, écoute active et conversations délicates."
+    },
+    {
+     "id": "parole.relation.negociation",
+     "name": "Affirmation et négociation",
+     "desc": "S'affirmer, négocier et parler de soi en entretien."
+    },
+    {
+     "id": "parole.relation.sociabilite",
+     "name": "Aisance sociale",
+     "desc": "Briser la glace et rencontrer sans pression."
+    }
+   ]
+  },
+  {
+   "id": "parole.langues",
+   "name": "Langues du monde",
+   "desc": "Parler, voyager et se faire comprendre dans une autre langue.",
+   "subcategories": [
+    {
+     "id": "parole.langues.europe",
+     "name": "Langues européennes",
+     "desc": "Anglais, espagnol, italien, allemand et portugais en conversation et en voyage."
+    },
+    {
+     "id": "parole.langues.asie",
+     "name": "Langues d'Asie et du monde arabe",
+     "desc": "Japonais, coréen, mandarin et arabe de voyage ou de culture."
+    },
+    {
+     "id": "parole.langues.signes",
+     "name": "Langue des signes et communication",
+     "desc": "LSF et communication gestuelle."
+    },
+    {
+     "id": "parole.langues.rares",
+     "name": "Langues anciennes, régionales et inventées",
+     "desc": "Latin, grec, langues de France, espéranto et langues de fiction."
+    }
+   ]
+  },
+  {
+   "id": "parole.ecriture",
+   "name": "Écriture",
+   "desc": "Raconter par écrit, des nouvelles au blog, en passant par la poésie et l'écriture de soi.",
+   "subcategories": [
+    {
+     "id": "parole.ecriture.fiction",
+     "name": "Fiction et récit",
+     "desc": "Nouvelles, roman, polar et scénario."
+    },
+    {
+     "id": "parole.ecriture.poesie",
+     "name": "Poésie et chansons",
+     "desc": "Vers, haïkus et paroles de chansons."
+    },
+    {
+     "id": "parole.ecriture.reel",
+     "name": "Écriture de soi",
+     "desc": "Journal, mémoires familiales et lettres."
+    },
+    {
+     "id": "parole.ecriture.pro",
+     "name": "Écriture web et édition",
+     "desc": "Blog, newsletter, auto-édition."
+    }
+   ]
+  },
+  {
+   "id": "parole.mots",
+   "name": "Traduction et mots",
+   "desc": "Traduire, sous-titrer et jouer avec la langue.",
+   "subcategories": [
+    {
+     "id": "parole.mots.traduction",
+     "name": "Traduction",
+     "desc": "Traduire des textes et sous-titrer."
+    },
+    {
+     "id": "parole.mots.jeu-de-mots",
+     "name": "Rhétorique et jeux de langue",
+     "desc": "Figures de style, étymologie et art de la formule."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "parole-prise-de-parole-public",
+   "name": "Prise de parole en public",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "Parler 3 minutes devant un groupe avec assurance, structure et gestion du trac.",
+   "audience": "Actifs 25-50 ans, étudiants, salariés en évolution",
+   "skills": [
+    "Gérer le trac",
+    "Structurer un propos",
+    "Posture et regard",
+    "Voix"
+   ],
+   "appSkills": [
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Oser parler",
+     "goal": "Prendre la parole 1 minute devant le groupe sans notes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structurer son propos",
+     "goal": "Délivrer un message en trois temps clair en 3 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Présence et voix",
+     "goal": "Capter l'attention avec posture, regard et silences",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Convaincre et émouvoir",
+     "goal": "Prononcer un discours de 8 minutes avec histoires et chiffres",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des orateurs",
+     "goal": "Conseiller d'autres orateurs et les faire progresser sur leurs prises de parole",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 5,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "scene",
+    "confiance",
+    "voix",
+    "entreprise"
+   ],
+   "competitors": [
+    "Toastmasters",
+    "formations en entreprise",
+    "Cours Florent"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte demande, aussi bien personnelle que professionnelle, avec des budgets d'entreprise ; l'arc de 3 séances produit un progrès mesurable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-pitch-3-minutes",
+   "name": "Pitch en 3 minutes",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "Présenter un projet ou une idée en 3 minutes : accroche, enjeux, demande claire.",
+   "audience": "Entrepreneurs, porteurs de projet 25-50 ans, étudiants",
+   "skills": [
+    "Accroche",
+    "Structure",
+    "Chiffres clés",
+    "Demande finale"
+   ],
+   "appSkills": [
+    "pitch-presentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon idée en une phrase",
+     "goal": "Résumer son idée en 30 secondes devant le groupe sans notes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Le pitch de 3 minutes",
+     "goal": "Structurer et délivrer un pitch avec accroche, enjeu et demande claire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pitch face aux objections",
+     "goal": "Répondre à cinq questions difficiles sans perdre le fil du pitch",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pitch devant un jury",
+     "goal": "Défendre son projet en 5 minutes devant un jury et tenir le temps",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des porteurs de projet",
+     "goal": "Retravailler les pitchs d'autres entrepreneurs et leur donner des retours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "entreprise",
+    "argent",
+    "scene"
+   ],
+   "competitors": [
+    "Incubateurs",
+    "Réseau Entreprendre",
+    "Bpifrance"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public solvable (entrepreneurs, salariés), besoin récurrent et résultat observable ; la concurrence passe par des programmes d'incubation souvent gratuits.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-concours-eloquence",
+   "name": "Concours d'éloquence et plaidoirie",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "Préparer une plaidoirie ou un discours de concours : argumentation, rhétorique et jeu.",
+   "audience": "Étudiants, lycéens et juristes 16-30 ans",
+   "skills": [
+    "Rhétorique",
+    "Plan de plaidoirie",
+    "Gestion du souffle",
+    "Gestuelle"
+   ],
+   "appSkills": [
+    "concours-eloquence",
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir l'éloquence",
+     "goal": "Prononcer un discours de 2 minutes avec un fil rouge clair",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plaider une cause",
+     "goal": "Construire une plaidoirie de 4 minutes avec exemple et conclusion",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répliquer à l'adversaire",
+     "goal": "Réfuter un argument imprévu en moins de 30 secondes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "La finale",
+     "goal": "Prononcer un discours de 7 minutes devant un jury avec gestion du temps",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîner une équipe",
+     "goal": "Préparer un groupe à un concours et corriger leurs prestations",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 4,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "debat",
+    "scene",
+    "confiance"
+   ],
+   "competitors": [
+    "Eloquentia",
+    "clubs d'éloquence des universités"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique de niche étudiante, déjà organisée par les universités ; peu de pouvoir d'achat.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-debat-joutes",
+   "name": "Débat et joutes oratoires",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "S'entraîner au débat contradictoire : écoute, relances, argumentation et courtoisie.",
+   "audience": "Étudiants et actifs 20-45 ans, citoyens engagés",
+   "skills": [
+    "Argumenter",
+    "Réfuter",
+    "Écoute active",
+    "Gérer son énergie"
+   ],
+   "appSkills": [
+    "debat-argumentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier débat",
+     "goal": "Défendre une position tirée au sort pendant 2 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un argumentaire solide",
+     "goal": "Structurer trois arguments avec exemples et une conclusion",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Débat contradictoire",
+     "goal": "Soutenir un débat de 10 minutes sans interrompre ni se faire déborder",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Modérer un débat",
+     "goal": "Arbitrer un échange à plusieurs voix et nuancer les positions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée de débats",
+     "goal": "Organiser et modérer une soirée de débat de 2 heures",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "debat",
+    "convivial",
+    "strategie"
+   ],
+   "competitors": [
+    "Cafés philo",
+    "Parlements de jeunes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique appréciée mais très associative, rarement payante ; fonctionne mieux dans un mix avec café ou apéro.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-discours-mariage-anniversaire",
+   "name": "Écrire et dire un discours de mariage ou d'anniversaire",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "Préparer un discours de 3 minutes drôle et touchant pour une fête de famille.",
+   "audience": "Témoins, parents, frères et sœurs 25-60 ans",
+   "skills": [
+    "Choisir ses anecdotes",
+    "Structure du discours",
+    "Humour",
+    "Dire sans notes"
+   ],
+   "appSkills": [
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon discours en une page",
+     "goal": "Écrire un discours de 3 minutes avec trois anecdotes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dire sans trembler",
+     "goal": "Répéter et dire son discours en gardant le contact visuel",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Humour et émotion",
+     "goal": "Doser anecdotes drôles et moment touchant sans dépasser 4 minutes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      135,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Devant 100 invités",
+     "goal": "Dire un discours au micro devant une grande salle avec aisance",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      150,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des témoins",
+     "goal": "Accompagner d'autres personnes dans l'écriture de leur discours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "texte",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "ecriture",
+    "fete",
+    "famille",
+    "humour"
+   ],
+   "competitors": [
+    "Coachs en prise de parole",
+    "rédacteurs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin ponctuel, fortement motivé, avec un public prêt à payer ; l'offre dédiée est quasi inexistante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-gerer-le-trac",
+   "name": "Gérer le trac et l'anxiété de performance",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.oratoire",
+   "desc": "Apprivoiser le trac par la respiration, l'ancrage et la préparation mentale.",
+   "audience": "Adultes 20-55 ans, étudiants, artistes amateurs",
+   "skills": [
+    "Respiration",
+    "Ancrage",
+    "Visualisation",
+    "Routine de préparation"
+   ],
+   "appSkills": [
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre mon trac",
+     "goal": "Identifier ses signaux physiques et pratiquer trois outils de respiration",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma routine anti-trac",
+     "goal": "Construire une routine de 5 minutes avant de prendre la parole",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parler malgré le trac",
+     "goal": "Parler 3 minutes devant un groupe en restant ancré et lisible",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gérer l'imprévu",
+     "goal": "Reprendre le fil après un trou de mémoire ou une interruption",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner d'autres personnes",
+     "goal": "Animer un atelier de préparation mentale pour des orateurs anxieux",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "souffle",
+    "bien-etre",
+    "scene",
+    "confiance"
+   ],
+   "competitors": [
+    "Sophrologues",
+    "coachs",
+    "Toastmasters"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin sincère et solvable ; il faut rester sur la préparation sans glisser vers le soin, ce qui demande un cadre clair.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-poser-sa-voix",
+   "name": "Poser sa voix : timbre, souffle et diction",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.voix",
+   "desc": "Améliorer la projection, la clarté et la chaleur de sa voix parlée.",
+   "audience": "Actifs 25-55 ans, enseignants, vendeurs",
+   "skills": [
+    "Respiration",
+    "Projection",
+    "Diction",
+    "Intonation"
+   ],
+   "appSkills": [
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma voix au quotidien",
+     "goal": "Respirer par le ventre et dire un texte avec clarté",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Projeter et articuler",
+     "goal": "Dire un texte de 2 minutes audible dans une salle de 30 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une voix expressive",
+     "goal": "Varier timbre, débit et pauses sur un texte de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Voix d'orateur",
+     "goal": "Tenir une voix posée et sans fatigue pendant 20 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des voix",
+     "goal": "Corriger souffle et diction de collègues ou d'élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voix",
+    "parole",
+    "souffle",
+    "scene",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Orthophonistes",
+    "coachs vocaux",
+    "chant"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande stable, aussi chez les enseignants et vendeurs ; peu d'ateliers courts hors thérapie ou chant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-voix-off-doublage",
+   "name": "Voix off et doublage",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.voix",
+   "desc": "S'essayer à la voix off : lire un texte de pub, doubler une scène, enregistrer une démo.",
+   "audience": "Jeunes 20-40 ans, créateurs de contenu",
+   "skills": [
+    "Lecture micro",
+    "Interprétation",
+    "Synchronisation",
+    "Démo"
+   ],
+   "appSkills": [
+    "voix-off"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier micro",
+     "goal": "Enregistrer 30 secondes de voix off propre et sans parasites",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Doubler une scène",
+     "goal": "Doubler 1 minute de film en restant synchrone avec l'image",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pub, narration, jeu",
+     "goal": "Enregistrer le même texte dans trois styles de voix off distincts",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ma démo de voix",
+     "goal": "Enregistrer et monter une démo de 2 minutes avec trois registres",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des apprentis",
+     "goal": "Diriger une séance d'enregistrement et donner des retours de jeu",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voix",
+    "son",
+    "video",
+    "scene",
+    "tech"
+   ],
+   "competitors": [
+    "Écoles de doublage",
+    "studios"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Fort attrait ludique et accessible avec un smartphone ; le marché pro est étroit mais l'atelier fonctionne en loisir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-lecture-voix-haute",
+   "name": "Lecture à voix haute",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.voix",
+   "desc": "Lire un texte à voix haute avec rythme et intention, seul ou en cercle.",
+   "audience": "Adultes 25-70 ans, parents, retraités",
+   "skills": [
+    "Rythme et souffle",
+    "Intention",
+    "Respect du texte",
+    "Écoute"
+   ],
+   "appSkills": [
+    "lecture-voix-haute"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire à voix haute",
+     "goal": "Lire une page avec une voix posée et sans bafouiller",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire pour un groupe",
+     "goal": "Lire un texte de 5 minutes en maintenant l'attention du groupe",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une lecture qui vit",
+     "goal": "Faire vivre un extrait avec rythme, pauses et intentions",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lecture publique",
+     "goal": "Lire 15 minutes devant 20 personnes et répondre à leurs questions",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de lecture",
+     "goal": "Conduire un cercle de lecture à voix haute et guider les lecteurs",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "mediatheque",
+    "cafe"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "lecture",
+    "voix",
+    "recit",
+    "cafe",
+    "calme"
+   ],
+   "competitors": [
+    "Bibliothèques",
+    "cercles de lecture",
+    "Lecteurs à voix haute"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique douce, peu de volonté de payer ; naturellement associée à un café ou une librairie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-raconter-histoire-orale",
+   "name": "Raconter une histoire vraie à l'oral",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.recit-oral",
+   "desc": "Raconter une anecdote personnelle en 5 minutes : début, tension, chute, émotion.",
+   "audience": "Adultes 25-55 ans, amis, amateurs de récits",
+   "skills": [
+    "Choisir une histoire",
+    "Tension et chute",
+    "Détails sensoriels",
+    "Rythme"
+   ],
+   "appSkills": [
+    "storytelling",
+    "conte-oral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un souvenir à raconter",
+     "goal": "Raconter une anecdote de 2 minutes avec un début et une chute",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure et tension",
+     "goal": "Raconter 5 minutes avec tension, détails sensoriels et émotion",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sans notes",
+     "goal": "Raconter 7 minutes devant 20 personnes sans aucune note",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Du récit à la scène",
+     "goal": "Adapter une histoire vraie en un récit de 10 minutes pour la scène",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organiser une soirée de récits",
+     "goal": "Programmer, présenter et coacher cinq conteurs d'une soirée",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "parole",
+    "scene",
+    "convivial",
+    "voix"
+   ],
+   "competitors": [
+    "The Moth",
+    "Raconte-moi",
+    "soirées de récits"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Format social, intime et facile à reproduire en petit groupe ; modèle déjà éprouvé en soirées de récits, avec une forte envie de lien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-storytelling-pro",
+   "name": "Storytelling pour convaincre",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.recit-oral",
+   "desc": "Utiliser le récit pour convaincre : structure narrative, personnage, enjeu et conclusion.",
+   "audience": "Marketeurs, managers, entrepreneurs 28-50 ans",
+   "skills": [
+    "Structure narrative",
+    "Personnage",
+    "Enjeu",
+    "Conclusion"
+   ],
+   "appSkills": [
+    "storytelling"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon histoire de marque",
+     "goal": "Écrire un récit de 1 minute avec un personnage et un enjeu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Faits en récit",
+     "goal": "Transformer des faits et chiffres en un récit de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      120,
+      210
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Storytelling en réunion",
+     "goal": "Capter l'attention d'un comité avec un récit et une demande claire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un récit en vidéo",
+     "goal": "Raconter une histoire de 2 minutes face caméra, structure comprise",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      150,
+      265
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former une équipe au récit",
+     "goal": "Concevoir une session de formation au récit pour une équipe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "recit",
+    "entreprise",
+    "parole",
+    "ecriture",
+    "argent"
+   ],
+   "competitors": [
+    "Agences de storytelling",
+    "formateurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Entreprises prêtes à payer, mais l'offre de formation est importante ; un angle de récit personnel ou de marque employeur peut se démarquer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-slam-poesie-orale",
+   "name": "Slam et poésie orale",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.recit-oral",
+   "desc": "Écrire et dire un texte de slam de 3 minutes, devant un public.",
+   "audience": "Jeunes 15-35 ans, poètes amateurs",
+   "skills": [
+    "Écrire un texte",
+    "Rythme et rimes",
+    "Voix et mise en scène",
+    "Gestion du public"
+   ],
+   "appSkills": [
+    "slam",
+    "poesie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier slam",
+     "goal": "Écrire 10 lignes et les dire au groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un texte de 3 minutes",
+     "goal": "Écrire et dire un slam de 3 minutes en respectant le rythme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sur scène ouverte",
+     "goal": "Passer sur une scène ouverte de slam devant un vrai public",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Slameur confirmé",
+     "goal": "Enchaîner trois textes de styles différents sur 10 minutes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      60,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une scène ouverte",
+     "goal": "Présenter une scène ouverte, accueillir les inscrits et coacher les débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "texte",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ecriture",
+    "voix",
+    "scene",
+    "recit",
+    "musique"
+   ],
+   "competitors": [
+    "Scènes de slam",
+    "Grand Corps Malade",
+    "bars"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté vivante et ouverte, peu de moyens ; l'atelier d'écriture et d'oralité marche en tiers-lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-podcast-a-z",
+   "name": "Podcast de A à Z",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.media",
+   "desc": "Concevoir, enregistrer et publier un premier épisode de podcast.",
+   "audience": "Jeunes actifs 22-45 ans, entrepreneurs, passionnés",
+   "skills": [
+    "Concept d'émission",
+    "Enregistrement",
+    "Montage audio",
+    "Publication"
+   ],
+   "appSkills": [
+    "podcast"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon concept de podcast",
+     "goal": "Définir un format, un titre et une ligne éditoriale en une page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier épisode",
+     "goal": "Enregistrer et monter 5 minutes d'audio propre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un podcast régulier",
+     "goal": "Publier trois épisodes à rythme fixe sur une plateforme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Podcast soigné",
+     "goal": "Améliorer prise de son, narration et habillage sonore",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des créateurs",
+     "goal": "Accompagner des créateurs de la conception à la diffusion",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "son",
+    "parole",
+    "recit",
+    "tech",
+    "creation"
+   ],
+   "competitors": [
+    "Studios de podcast",
+    "Podcastiste",
+    "Audacy"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Forte demande de création de contenu, avec un budget consacré par les marques et indépendants ; les ateliers dédiés sont peu fréquents.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-interview-enquete-sonore",
+   "name": "Interview et enquête sonore",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.media",
+   "desc": "Mener une interview, recueillir des témoignages et monter un reportage de 3 minutes.",
+   "audience": "Étudiants, journalistes en herbe, passionnés",
+   "skills": [
+    "Préparer l'interview",
+    "Relancer",
+    "Prise de son",
+    "Montage"
+   ],
+   "appSkills": [
+    "podcast"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première interview",
+     "goal": "Mener 5 minutes d'interview avec cinq questions préparées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Témoignage en reportage",
+     "goal": "Monter un reportage de 3 minutes avec voix et ambiance",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enquête de quartier",
+     "goal": "Produire un reportage de 5 minutes avec trois témoins",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      135,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Récit radio",
+     "goal": "Rédiger et enregistrer un récit sonore de 8 minutes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      150,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des intervieweurs",
+     "goal": "Encadrer un atelier de reportage sonore de A à Z",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      145,
+      240
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "son",
+    "parole",
+    "recit",
+    "ville",
+    "tech"
+   ],
+   "competitors": [
+    "Radios associatives",
+    "écoles de journalisme"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt réel mais déjà couvert par les radios associatives et formations de journalisme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-chronique-radio",
+   "name": "Chronique et animation radio",
+   "sector": "parole",
+   "category": "parole.oral",
+   "subcategory": "parole.oral.media",
+   "desc": "Animer une chronique de 3 minutes en direct : ton, rythme et préparation.",
+   "audience": "Étudiants, bénévoles de radios locales, curieux",
+   "skills": [
+    "Ton radio",
+    "Rythme",
+    "Préparation",
+    "Gestion du direct"
+   ],
+   "appSkills": [
+    "podcast",
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier micro radio",
+     "goal": "Lire 1 minute à l'antenne avec naturel et sans buter",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une chronique de 3 minutes",
+     "goal": "Écrire et dire une chronique avec accroche et chute",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer en direct",
+     "goal": "Animer 15 minutes avec un invité et gérer le temps",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Une émission régulière",
+     "goal": "Tenir une émission hebdomadaire sur plusieurs semaines",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs",
+     "goal": "Former de nouveaux chroniqueurs et corriger leur antenne",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "son",
+    "parole",
+    "voix",
+    "scene"
+   ],
+   "competitors": [
+    "Radios locales",
+    "Radio Campus"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Peu de débouchés pour le grand public et radios locales qui forment elles-mêmes ; faible valeur ajoutée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-communication-non-violente",
+   "name": "Communication non violente (CNV)",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.ecoute",
+   "desc": "Exprimer un besoin sans agressivité : observation, sentiment, besoin, demande.",
+   "audience": "Adultes 28-55 ans, parents, managers",
+   "skills": [
+    "Observer sans juger",
+    "Exprimer ses sentiments",
+    "Besoins",
+    "Demande claire"
+   ],
+   "appSkills": [
+    "debat-argumentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir la CNV",
+     "goal": "Reformuler un reproche en observation, besoin et demande",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "S'exprimer clairement",
+     "goal": "Formuler les quatre temps de la CNV sur un cas réel",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écouter avec empathie",
+     "goal": "Pratiquer l'écoute empathique pendant 5 minutes sans conseiller",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conflit sous tension",
+     "goal": "Mener une conversation difficile sans escalade",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de pratique",
+     "goal": "Conduire un cercle de pratique CNV de 8 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "jeunes-actifs",
+    "entreprises",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "couple",
+    "famille",
+    "bien-etre",
+    "ecoute"
+   ],
+   "competitors": [
+    "Formateurs CNV",
+    "associations",
+    "Psychologues"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large et réceptif, mais marché déjà saturé de stages ; le cercle de pratique régulier est moins couvert.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecoute-active",
+   "name": "Écoute active et reformulation",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.ecoute",
+   "desc": "S'entraîner à écouter vraiment : silence, reformulation et questions ouvertes.",
+   "audience": "Adultes 25-60 ans, aidants, managers, parents",
+   "skills": [
+    "Silence",
+    "Reformulation",
+    "Questions ouvertes",
+    "Empathie"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écouter 5 minutes",
+     "goal": "Écouter un partenaire 5 minutes sans l'interrompre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reformuler",
+     "goal": "Reformuler fidèlement ce que dit l'autre trois fois d'affilée",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écoute en tension",
+     "goal": "Garder son écoute dans une conversation chargée d'émotion",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien d'aide",
+     "goal": "Mener un entretien d'écoute de 20 minutes avec questions ouvertes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'écoute",
+     "goal": "Animer un atelier d'écoute active pour 8 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "ecoute",
+    "couple",
+    "famille",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Associations d'écoute",
+    "formateurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais difficile à vendre seul ; mieux comme module des ateliers de communication.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-conversation-difficile",
+   "name": "Annoncer une mauvaise nouvelle, dire non",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.ecoute",
+   "desc": "Dire non, annoncer une mauvaise nouvelle ou poser une limite sans culpabilité.",
+   "audience": "Adultes 25-50 ans, managers, personnes qui s'excusent trop",
+   "skills": [
+    "Dire non",
+    "Poser une limite",
+    "Annoncer",
+    "Gérer l'émotion"
+   ],
+   "appSkills": [
+    "debat-argumentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je peux dire non",
+     "goal": "Dire non de trois façons sans s'excuser",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poser une limite",
+     "goal": "Formuler une limite claire et polie en jeu de rôle",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Annoncer une mauvaise nouvelle",
+     "goal": "Mener une annonce difficile en 5 minutes avec empathie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conflit avec un proche",
+     "goal": "Gérer une conversation chargée en restant factuel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des managers",
+     "goal": "Accompagner des managers dans leurs conversations difficiles",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "confiance",
+    "entreprise",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Coachs",
+    "formations en entreprise"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin ressenti mais difficile à nommer ; une mise en scène par jeux de rôle en petit groupe est efficace.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-negociation-affirmation",
+   "name": "S'affirmer et négocier",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.negociation",
+   "desc": "Négocier un salaire, un loyer ou un prix : préparer, argumenter, conclure.",
+   "audience": "Actifs 25-50 ans, freelances, étudiants",
+   "skills": [
+    "Préparer",
+    "Argumenter",
+    "Gérer les objections",
+    "Conclure"
+   ],
+   "appSkills": [
+    "debat-argumentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier face-à-face",
+     "goal": "Poser une demande claire en jeu de rôle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Préparer une négociation",
+     "goal": "Construire un plan avec objectifs, marges et arguments",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Négocier en direct",
+     "goal": "Mener une négociation de 10 minutes jusqu'à un accord",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Négociation complexe",
+     "goal": "Gérer plusieurs parties aux intérêts opposés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des négociateurs",
+     "goal": "Préparer et débriefer des négociations réelles d'autres personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "argent",
+    "entreprise",
+    "strategie",
+    "confiance"
+   ],
+   "competitors": [
+    "Formateurs en négociation",
+    "coachs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Enjeu financier clair (salaire, loyer), donc propension à payer correcte ; les offres existantes sont plutôt corporate et chères.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-entretien-embauche",
+   "name": "Réussir son entretien d'embauche",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.negociation",
+   "desc": "Préparer son pitch personnel, répondre aux questions pièges et finir par une question forte.",
+   "audience": "Étudiants, jeunes diplômés, reconversions",
+   "skills": [
+    "Pitch personnel",
+    "Questions pièges",
+    "Posture",
+    "Négocier"
+   ],
+   "appSkills": [
+    "pitch-presentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Me présenter",
+     "goal": "Se présenter en 90 secondes avec un message clair",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les questions pièges",
+     "goal": "Répondre à dix questions classiques avec exemples",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Entretien filmé",
+     "goal": "S'entraîner en conditions réelles et corriger posture et débit",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      115,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Négocier son offre",
+     "goal": "Négocier salaire et conditions en fin d'entretien",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des candidats",
+     "goal": "Accompagner d'autres candidats et débriefer leurs entretiens",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "entreprise",
+    "argent",
+    "confiance"
+   ],
+   "competitors": [
+    "Pôle emploi",
+    "APEC",
+    "coachs carrière"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande saisonnière mais constante ; beaucoup de services gratuits existent, la valeur est dans le jeu de rôle personnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-aisance-sociale-small-talk",
+   "name": "Aisance sociale : briser la glace",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.sociabilite",
+   "desc": "Engager et relancer une conversation avec un inconnu, avec légèreté et curiosité.",
+   "audience": "Adultes 22-45 ans, timides, expatriés, nouveaux arrivants",
+   "skills": [
+    "Entrer en conversation",
+    "Questions ouvertes",
+    "Relancer",
+    "Quitter élégamment"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Oser dire bonjour",
+     "goal": "Engager trois conversations avec des inconnus pendant l'atelier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Relancer et approfondir",
+     "goal": "Tenir 5 minutes de conversation fluide avec un inconnu",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirée en confiance",
+     "goal": "Naviguer une soirée de 2 heures avec au moins trois conversations",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Présence et aisance",
+     "goal": "Mettre à l'aise un groupe et quitter une conversation avec élégance",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des ateliers d'aisance",
+     "goal": "Animer un atelier d'aisance sociale pour 10 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "parole",
+    "convivial",
+    "confiance",
+    "rencontre",
+    "apero"
+   ],
+   "competitors": [
+    "Meetups",
+    "ateliers de développement personnel"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin fréquent et peu servi en ateliers ; un format léger avec jeux et apéro lève la barrière du « stage ».",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-reseautage-networking",
+   "name": "Réseautage et networking sans malaise",
+   "sector": "parole",
+   "category": "parole.relation",
+   "subcategory": "parole.relation.sociabilite",
+   "desc": "Aborder un événement pro : se présenter, créer un contact et suivre après.",
+   "audience": "Freelances, entrepreneurs, jeunes diplômés 25-45 ans",
+   "skills": [
+    "Se présenter",
+    "Créer un contact",
+    "Suivi",
+    "Évaluer ses contacts"
+   ],
+   "appSkills": [
+    "pitch-presentation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Me présenter en 20 secondes",
+     "goal": "Se présenter de façon claire à trois personnes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Créer un contact",
+     "goal": "Entamer et conclure une conversation utile de 5 minutes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirée networking",
+     "goal": "Tenir 2 heures de réseautage avec trois contacts qualifiés",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réseau entretenu",
+     "goal": "Entretenir 20 contacts avec un suivi régulier",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un réseau",
+     "goal": "Animer une soirée de réseautage pour 20 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "parole",
+    "entreprise",
+    "argent",
+    "apero",
+    "rencontre"
+   ],
+   "competitors": [
+    "Réseaux d'affaires",
+    "Meetup",
+    "BNI"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Concurrence de réseaux et de meetups gratuits ; peu de plus-value hors parcours personnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-anglais-conversation",
+   "name": "Anglais : cercle de conversation",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.europe",
+   "desc": "Parler anglais en petit groupe sur des sujets du quotidien, sans cours magistral.",
+   "audience": "Actifs 25-50 ans, expatriés, étudiants",
+   "skills": [
+    "Se présenter",
+    "Raconter sa journée",
+    "Débattre simplement",
+    "Comprendre l'oral"
+   ],
+   "appSkills": [
+    "anglais-conversation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je me lance en anglais",
+     "goal": "Tenir 5 minutes de conversation simple en anglais",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Conversation du quotidien",
+     "goal": "Parler 15 minutes de sujets courants sans repasser par le français",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Anglais fluide",
+     "goal": "Participer à un débat de 30 minutes avec nuances et humour",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Anglais professionnel",
+     "goal": "Mener une présentation ou une réunion de 20 minutes en anglais",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation et corriger sans bloquer les autres",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      80
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "convivial",
+    "voyage",
+    "cafe",
+    "rencontre"
+   ],
+   "competitors": [
+    "Meetup",
+    "Tandem",
+    "Babbel",
+    "cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande très forte mais propension à payer faible, car meetups gratuits et applications abondent ; le cercle n'est rentable qu'avec un animateur natif et un cadre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-espagnol-voyage",
+   "name": "Espagnol de voyage et de conversation",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.europe",
+   "desc": "Se débrouiller en espagnol en voyage : restaurant, transports, rencontre.",
+   "audience": "Voyageurs, couples, retraités 25-65 ans",
+   "skills": [
+    "Commander",
+    "Demander son chemin",
+    "Se présenter",
+    "Comprendre un rythme rapide"
+   ],
+   "appSkills": [
+    "espagnol-conversation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Hola, premiers mots",
+     "goal": "Saluer et commander un plat en espagnol",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Se débrouiller en voyage",
+     "goal": "Jouer une scène de voyage de 5 minutes (hôtel, transport, restaurant)",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation courante",
+     "goal": "Tenir 10 minutes de conversation sur le quotidien",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Espagnol fluide",
+     "goal": "Raconter une histoire de 3 minutes avec passé et futur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation en espagnol de 8 personnes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries",
+    "seniors"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "convivial",
+    "cafe",
+    "rencontre"
+   ],
+   "competitors": [
+    "Instituto Cervantes",
+    "Meetup",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public de voyageurs, vaste et solvable pour des stages avant le départ ; l'offre associative (Cervantes, MJC) est solide.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-italien-voyage",
+   "name": "Italien : pour voyager et chanter",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.europe",
+   "desc": "Apprendre l'italien du voyage : commander, saluer, comprendre, avec chansons et cuisine.",
+   "audience": "Voyageurs, couples, gourmands 25-65 ans",
+   "skills": [
+    "Commander",
+    "Saluer",
+    "Phrases utiles",
+    "Prononciation"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Buongiorno",
+     "goal": "Saluer et commander un café en italien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Voyage en Italie",
+     "goal": "Gérer un restaurant et un hôtel en italien sans anglais",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation sur son quotidien",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Italien fluide",
+     "goal": "Raconter une histoire de 3 minutes avec passé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation avec chansons et cuisine",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "restaurant",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "ouie",
+    "gout"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "cuisine-du-monde",
+    "convivial"
+   ],
+   "competitors": [
+    "Istituto Italiano",
+    "Dante Alighieri"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public affectif et gourmand ; un mix avec cuisine ou vin est plus vendeur qu'un cours pur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-allemand-conversation",
+   "name": "Allemand : conversation et voyage",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.europe",
+   "desc": "Se remettre à l'allemand : parler de soi, du quotidien et du travail.",
+   "audience": "Étudiants, pros, retraités 20-60 ans",
+   "skills": [
+    "Se présenter",
+    "Phrases utiles",
+    "Compréhension orale",
+    "Prononciation"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Allemand, premiers pas",
+     "goal": "Se présenter et décrire sa journée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation de base",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Allemand professionnel",
+     "goal": "Gérer un échange professionnel simple au téléphone",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Allemand courant",
+     "goal": "Débattre de sujets courants avec arguments",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation en allemand",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 1,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "convivial"
+   ],
+   "competitors": [
+    "Goethe-Institut",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande en baisse et offre institutionnelle solide.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-portugais-bresilien",
+   "name": "Portugais du Brésil : parler et danser",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.europe",
+   "desc": "Débuter en portugais brésilien avec chansons, expressions et conversation.",
+   "audience": "Voyageurs, amateurs de culture brésilienne 25-55 ans",
+   "skills": [
+    "Phrases utiles",
+    "Chansons",
+    "Prononciation",
+    "Culture"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Oi, tudo bem",
+     "goal": "Saluer et se présenter en portugais brésilien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Voyage au Brésil",
+     "goal": "Jouer cinq scènes de voyage (hôtel, plage, restaurant) en portugais",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Portugais fluide",
+     "goal": "Raconter une histoire de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation avec chansons",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "expatries"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "musique",
+    "danse",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations lusophones",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Petite demande, mais très motivée par la musique et la danse ; à marier avec ateliers de scène.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-japonais-voyage",
+   "name": "Japonais de voyage",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.asie",
+   "desc": "Apprendre 50 phrases pour voyager au Japon : saluer, manger, se déplacer, remercier.",
+   "audience": "Voyageurs, fans de culture japonaise 20-50 ans",
+   "skills": [
+    "Politesse",
+    "Commander",
+    "Transports",
+    "Lecture de kana"
+   ],
+   "appSkills": [
+    "japonais"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers mots japonais",
+     "goal": "Saluer, remercier et commander en japonais",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Voyage au Japon",
+     "goal": "Jouer cinq situations de voyage (train, restaurant, hôtel, boutique)",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Hiragana et katakana",
+     "goal": "Lire les deux kana et déchiffrer menus et panneaux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation de base",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation avec jeux de rôle et corrections",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "touristes"
+   ],
+   "senses": [
+    "parole",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "culture-asiatique",
+    "cafe",
+    "geek"
+   ],
+   "competitors": [
+    "Maison de la culture du Japon",
+    "Inalco",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Engouement durable pour le Japon (voyage, pop culture), avec un public prêt à payer pour un format court avant un voyage ; l'offre ludique est peu couverte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-coreen-kdrama",
+   "name": "Coréen : K-pop, K-dramas et voyage",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.asie",
+   "desc": "Découvrir le coréen avec le hangeul, des phrases utiles et des paroles de chansons.",
+   "audience": "Jeunes 15-35 ans, fans de K-pop et K-dramas",
+   "skills": [
+    "Hangeul",
+    "Phrases utiles",
+    "Écoute de chansons",
+    "Prononciation"
+   ],
+   "appSkills": [
+    "coreen"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Lire le hangeul",
+     "goal": "Lire et écrire son nom et dix mots en hangeul",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Phrases du quotidien",
+     "goal": "Se présenter et commander en coréen",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chansons et séries",
+     "goal": "Comprendre et chanter un refrain de K-pop",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation de base",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation avec jeux et chansons",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      125
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "culture-asiatique",
+    "musique",
+    "fete",
+    "geek"
+   ],
+   "competitors": [
+    "Centre culturel coréen",
+    "Inalco",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Vague K-culture massive chez les 15-30 ans et offre locale encore limitée ; le public est très engagé mais budget étudiant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-mandarin-voyage",
+   "name": "Mandarin : premiers mots et tons",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.asie",
+   "desc": "Aborder le mandarin : les tons, le pinyin et 40 mots du quotidien.",
+   "audience": "Pros, voyageurs, parents 25-55 ans",
+   "skills": [
+    "Tons",
+    "Pinyin",
+    "Phrases de base",
+    "Chiffres"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les quatre tons",
+     "goal": "Prononcer et distinguer les quatre tons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Phrases de base",
+     "goal": "Se présenter et dire les chiffres en mandarin",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Voyage en Chine",
+     "goal": "Commander au restaurant en mandarin",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation de base",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation en mandarin",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "culture-asiatique",
+    "entreprise"
+   ],
+   "competitors": [
+    "Instituts Confucius",
+    "apps"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt stable mais difficulté d'apprentissage ; peu d'hôtes disponibles hors enseignants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-arabe-dialectal",
+   "name": "Arabe dialectal : se débrouiller",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.asie",
+   "desc": "Apprendre l'arabe dialectal (maghrébin ou levantin) pour parler en famille ou en voyage.",
+   "audience": "Descendants de familles arabophones, voyageurs 20-50 ans",
+   "skills": [
+    "Salutations",
+    "Quotidien",
+    "Compréhension",
+    "Prononciation"
+   ],
+   "appSkills": [
+    "arabe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Salam, les bases",
+     "goal": "Saluer et se présenter en arabe dialectal",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Au marché",
+     "goal": "Jouer une scène d'achat de 3 minutes avec marchandage",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation simple",
+     "goal": "Tenir 10 minutes de conversation de base",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arabe courant",
+     "goal": "Raconter une histoire de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Animer un cercle de conversation en arabe dialectal",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "expatries"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "voyage",
+    "famille",
+    "cafe"
+   ],
+   "competitors": [
+    "Institut du monde arabe",
+    "associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande identitaire forte (famille) et peu de formats informels ; budget faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-lsf-premiers-echanges",
+   "name": "Langue des signes : premiers échanges",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.signes",
+   "desc": "Apprendre 150 signes pour se présenter, dialoguer et épeler en LSF.",
+   "audience": "Adultes 20-60 ans, parents, professionnels du contact",
+   "skills": [
+    "Alphabet manuel",
+    "Se présenter",
+    "Dialogue simple",
+    "Expressions du visage"
+   ],
+   "appSkills": [
+    "langue-des-signes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers signes",
+     "goal": "Se présenter et épeler son nom en LSF",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un dialogue simple",
+     "goal": "Tenir 3 minutes de dialogue de base",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation en LSF",
+     "goal": "Raconter sa journée en LSF avec expressions du visage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "LSF fluide",
+     "goal": "Participer à un échange de 10 minutes avec une personne sourde",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une découverte de la LSF",
+     "goal": "Animer un atelier de découverte avec un interprète ou un hôte sourd",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "geste",
+    "vue",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "geste",
+    "solidarite",
+    "famille",
+    "inclusion"
+   ],
+   "competitors": [
+    "IVT",
+    "associations de personnes sourdes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt croissant (inclusion, parents, pros) avec peu d'ateliers courts ; la qualité dépend d'hôtes sourds ou qualifiés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-lsf-chanter",
+   "name": "Chanter en LSF : chansons signées",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.signes",
+   "desc": "Signer une chanson : choisir un morceau, traduire le sens et le rythmer en signes.",
+   "audience": "Adultes 20-55 ans, chorales, amateurs de musique",
+   "skills": [
+    "Signer au rythme",
+    "Traduction",
+    "Expression",
+    "Sens du texte"
+   ],
+   "appSkills": [
+    "langue-des-signes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chanson signée",
+     "goal": "Signer un refrain en suivant le rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chanson complète",
+     "goal": "Signer une chanson entière avec les paroles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Traduire une chanson",
+     "goal": "Traduire un texte en LSF avec les bons rythmes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Performance publique",
+     "goal": "Signer une chanson devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier",
+     "goal": "Animer un atelier de chansons signées pour 10 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "geste",
+    "musique",
+    "scene",
+    "inclusion"
+   ],
+   "competitors": [
+    "Chorales signées",
+    "associations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Atelier sensible mais très niche ; mieux en complément du cours de LSF.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-bebe-signes",
+   "name": "Signer avec bébé",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.signes",
+   "desc": "Utiliser une vingtaine de signes avec un bébé de 6 à 18 mois pour mieux se comprendre.",
+   "audience": "Parents de bébés, assistantes maternelles",
+   "skills": [
+    "Signes du quotidien",
+    "Observation",
+    "Jeu et chanson",
+    "Rythme de l'enfant"
+   ],
+   "appSkills": [
+    "langue-des-signes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers signes",
+     "goal": "Apprendre 15 signes pour bébé et les montrer en situation",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Signer au quotidien",
+     "goal": "Utiliser les signes dans les repas, le bain et le jeu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chansons et jeux signés",
+     "goal": "Intégrer les signes à des comptines et jeux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Signes en groupe",
+     "goal": "Animer un temps de signes avec 5 familles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des parents",
+     "goal": "Animer un atelier pour des parents de bébés",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "langue",
+    "geste",
+    "enfants"
+   ],
+   "competitors": [
+    "Ateliers signes bébé",
+    "PMI"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Cible parentale solvable, mais déjà approchée par des ateliers dédiés ; peu de variation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-latin-lecture",
+   "name": "Latin et grec ancien : lire pour le plaisir",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.rares",
+   "desc": "Lire des extraits de textes latins ou grecs avec traduction et commentaire, sans pression scolaire.",
+   "audience": "Adultes 30-70 ans, passionnés d'histoire, parents",
+   "skills": [
+    "Déclinaisons",
+    "Traduction",
+    "Contexte historique",
+    "Citations"
+   ],
+   "appSkills": [
+    "langues-anciennes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier texte latin",
+     "goal": "Lire et comprendre un court extrait avec traduction",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les déclinaisons",
+     "goal": "Analyser les cinq déclinaisons sur un exemple",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire Virgile",
+     "goal": "Traduire 10 lignes d'un auteur avec contexte",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Textes originaux",
+     "goal": "Lire un texte original avec peu d'aide",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de lecture",
+     "goal": "Animer un cercle de lecture de textes anciens",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "mediatheque",
+    "cafe"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "histoire",
+    "lecture",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Associations de latinistes",
+    "cours universitaires"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public fidèle mais petit ; la valeur marchande est faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-langues-regionales",
+   "name": "Langues de France : breton, occitan, corse",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.rares",
+   "desc": "S'initier à une langue régionale : salutations, chansons et conversation de base.",
+   "audience": "Descendants de familles régionales, curieux 25-65 ans",
+   "skills": [
+    "Salutations",
+    "Chansons",
+    "Phrases utiles",
+    "Prononciation"
+   ],
+   "appSkills": [
+    "langues-regionales"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers mots",
+     "goal": "Saluer et se présenter dans la langue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chansons",
+     "goal": "Chanter un refrain traditionnel",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conversation courte",
+     "goal": "Tenir 5 minutes de conversation de base",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Langue du quotidien",
+     "goal": "Raconter une histoire de 3 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle régional",
+     "goal": "Animer un cercle de conversation en langue régionale avec chants",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "expatries"
+   ],
+   "senses": [
+    "parole",
+    "ouie"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "patrimoine",
+    "voyage",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations régionales",
+    "Diwan",
+    "Ofis"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Attachement culturel mais public parisien restreint ; la rentabilité est faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-esperanto-langues-inventees",
+   "name": "Langues inventées : espéranto, elfique, dothraki",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.rares",
+   "desc": "Découvrir une langue construite : espéranto, quenya ou langue de fiction, et en créer une.",
+   "audience": "Curieux 15-50 ans, fans de fantasy, linguistes amateurs",
+   "skills": [
+    "Grammaire simple",
+    "Vocabulaire",
+    "Création de mots",
+    "Culture"
+   ],
+   "appSkills": [
+    "langues-anciennes",
+    "polyglotte-methode"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir une langue construite",
+     "goal": "Dire dix phrases dans la langue construite",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Parler espéranto",
+     "goal": "Tenir 5 minutes de conversation de base en espéranto",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Créer sa langue",
+     "goal": "Inventer 50 mots et une règle de grammaire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écrire dans sa langue",
+     "goal": "Rédiger un texte de 10 lignes dans sa langue",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de langue inventée",
+     "goal": "Guider un groupe dans la création de mots et de règles de langue",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 4,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "jeu",
+    "geek",
+    "ecriture",
+    "creation"
+   ],
+   "competitors": [
+    "Associations d'espéranto",
+    "conlangers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public curieux et créatif, très peu servi ; faible budget, mais fort potentiel de mix jeu de rôle et écriture.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-francais-fle-benevole",
+   "name": "Enseigner le français à des adultes (FLE bénévole)",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.rares",
+   "desc": "Animer un atelier de conversation en français pour des personnes nouvellement arrivées.",
+   "audience": "Bénévoles 20-70 ans, étudiants, retraités",
+   "skills": [
+    "Pédagogie simple",
+    "Reformulation",
+    "Jeux de conversation",
+    "Posture"
+   ],
+   "appSkills": [
+    "traduction"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier atelier",
+     "goal": "Animer 30 minutes de conversation simple en français",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Atelier de conversation",
+     "goal": "Animer 1 h avec jeux et reformulation",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Atelier thématique",
+     "goal": "Construire trois séances thématiques",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un parcours",
+     "goal": "Concevoir un parcours de 8 séances",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des bénévoles",
+     "goal": "Former d'autres bénévoles à animer des ateliers de conversation",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "expatries",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "parole"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "solidarite",
+    "rencontre",
+    "parole"
+   ],
+   "competitors": [
+    "Associations d'accueil",
+    "Alliance française"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Forte utilité sociale mais économie de bénévolat ; la plateforme peut servir de pont, pas de revenu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-apprendre-langue-seul",
+   "name": "Apprendre une langue seul : la méthode",
+   "sector": "parole",
+   "category": "parole.langues",
+   "subcategory": "parole.langues.rares",
+   "desc": "Construire un plan d'apprentissage autonome : vocabulaire, écoute, mémoire, pratique.",
+   "audience": "Autodidactes 20-55 ans, voyageurs, expatriés",
+   "skills": [
+    "Plan d'étude",
+    "Répétition espacée",
+    "Écoute",
+    "Pratique orale"
+   ],
+   "appSkills": [
+    "polyglotte-methode"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon plan d'apprentissage",
+     "goal": "Définir ses objectifs et un plan sur 3 mois",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma routine",
+     "goal": "Installer une routine quotidienne de 20 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Immersion maison",
+     "goal": "Créer un environnement d'immersion à la maison",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Polyglotte",
+     "goal": "Gérer deux langues en parallèle sans confusion",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des autodidactes",
+     "goal": "Accompagner d'autres apprenants dans leur méthode",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "memoire",
+    "reflexion",
+    "voyage"
+   ],
+   "competitors": [
+    "Polyglotte",
+    "coachs de langues"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public autodidacte curieux ; offre de contenu abondante mais peu de coaching incarné en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecriture-nouvelles",
+   "name": "Écriture de nouvelles",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.fiction",
+   "desc": "Écrire une nouvelle de 3 pages : idée, personnage, tension, chute.",
+   "audience": "Adultes 25-65 ans, amateurs de littérature",
+   "skills": [
+    "Trouver une idée",
+    "Personnage",
+    "Tension",
+    "Chute"
+   ],
+   "appSkills": [
+    "ecriture-creative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une page par jour",
+     "goal": "Écrire 1 page à partir d'une consigne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma première nouvelle",
+     "goal": "Écrire 3 pages avec une chute",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réécrire",
+     "goal": "Réviser un texte trois fois et couper 20 %",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Nouvelle aboutie",
+     "goal": "Écrire une nouvelle de 10 pages avec arc narratif",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier d'écriture",
+     "goal": "Animer un atelier d'écriture et donner des retours constructifs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "recit",
+    "lecture",
+    "creation",
+    "cafe"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "Institut du Roman"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public très motivé, mais offres nombreuses en bibliothèques, ateliers associatifs et en ligne ; le revenu par séance est modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecriture-roman",
+   "name": "Écrire un roman : du plan au premier jet",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.fiction",
+   "desc": "Construire un plan de roman et écrire les 10 premières pages avec un rythme tenable.",
+   "audience": "Aspirants romanciers 25-60 ans",
+   "skills": [
+    "Idée et pitch",
+    "Plan",
+    "Personnages",
+    "Rythme d'écriture"
+   ],
+   "appSkills": [
+    "ecriture-roman"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon idée de roman",
+     "goal": "Écrire un résumé d'une page avec personnages et enjeux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Le plan",
+     "goal": "Construire un plan chapitre par chapitre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Premier jet",
+     "goal": "Écrire 20 pages en suivant son plan",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réviser",
+     "goal": "Retravailler un chapitre avec un lecteur",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner des auteurs",
+     "goal": "Accompagner d'autres auteurs de l'idée au manuscrit",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "recit",
+    "creation",
+    "lecture"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "NaNoWriMo",
+    "coachs d'écriture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt massif, mais la persévérance est faible ; les ateliers récurrents et les accountability groups sont un angle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecrire-un-polar",
+   "name": "Écrire un polar ou un roman noir",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.fiction",
+   "desc": "Construire une enquête, semer des indices et écrire une scène de crime vraisemblable.",
+   "audience": "Amateurs de polars 25-65 ans",
+   "skills": [
+    "Intrigue",
+    "Indices",
+    "Suspect",
+    "Rythme"
+   ],
+   "appSkills": [
+    "ecriture-roman",
+    "ecriture-creative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon crime",
+     "goal": "Écrire une scène de crime vraisemblable",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "L'intrigue",
+     "goal": "Construire une enquête en cinq étapes avec indices",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chapitre 1",
+     "goal": "Écrire 10 pages avec tension",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rebondissements",
+     "goal": "Réviser pour semer indices et fausses pistes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier polar",
+     "goal": "Animer un atelier d'écriture de polar avec retours sur les intrigues",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "enigme",
+    "recit",
+    "jeu",
+    "lecture"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "festivals de polar"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Genre populaire, avec un public fidèle ; un lien fort avec les jeux d'enquête (murder party).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecriture-scenario",
+   "name": "Écrire un court-métrage ou un scénario",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.fiction",
+   "desc": "Écrire un scénario de 5 pages : situation, conflit, dialogue et chute.",
+   "audience": "Jeunes 18-40 ans, créateurs vidéo, cinéphiles",
+   "skills": [
+    "Situation",
+    "Conflit",
+    "Dialogue",
+    "Format scénario"
+   ],
+   "appSkills": [
+    "ecriture-scenario"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une scène",
+     "goal": "Écrire une scène de 1 page avec dialogue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un court-métrage",
+     "goal": "Écrire 5 pages avec un début, un conflit, une fin",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réécrire",
+     "goal": "Retravailler son scénario avec un retour",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pitcher son scénario",
+     "goal": "Pitcher son projet en 2 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner un auteur",
+     "goal": "Accompagner un auteur de court-métrage de l'idée au script final",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "librairie",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "video",
+    "recit",
+    "creation",
+    "scene"
+   ],
+   "competitors": [
+    "La Fémis",
+    "ateliers d'écriture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Cinéphilie et création vidéo croissantes ; la demande reste concentrée sur des formations longues.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecriture-jeunesse",
+   "name": "Écrire pour la jeunesse : album et conte",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.fiction",
+   "desc": "Écrire un texte d'album de 400 mots : narration simple, répétition, chute.",
+   "audience": "Parents, enseignants, illustrateurs 28-55 ans",
+   "skills": [
+    "Texte court",
+    "Voix de l'enfant",
+    "Rythme",
+    "Chute"
+   ],
+   "appSkills": [
+    "ecriture-creative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une histoire de 200 mots",
+     "goal": "Écrire un texte d'album avec une chute",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un album complet",
+     "goal": "Écrire 400 mots avec un rythme en 12 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Illustrer ensemble",
+     "goal": "Associer texte et illustrations avec un dessinateur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chercher un éditeur",
+     "goal": "Préparer un dossier d'envoi complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier jeunesse",
+     "goal": "Animer un atelier d'écriture jeunesse pour parents et enseignants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "famille",
+    "enfants",
+    "recit",
+    "papier"
+   ],
+   "competitors": [
+    "Ateliers d'écriture jeunesse"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche appréciée mais étroite, avec un marché éditorial difficile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-poesie-ecriture",
+   "name": "Poésie : écrire et dire",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.poesie",
+   "desc": "Écrire ses premiers poèmes : images, rythme, vers libre, lecture en cercle.",
+   "audience": "Adultes 25-70 ans, lecteurs de poésie",
+   "skills": [
+    "Images",
+    "Rythme",
+    "Vers libre",
+    "Lecture"
+   ],
+   "appSkills": [
+    "poesie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier poème",
+     "goal": "Écrire un poème de 8 vers",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Images et rythme",
+     "goal": "Écrire trois poèmes courts avec images fortes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon recueil",
+     "goal": "Constituer un recueil de 10 poèmes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lecture publique",
+     "goal": "Lire ses poèmes devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de poésie",
+     "goal": "Animer un atelier de poésie avec consignes et retours bienveillants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "voix",
+    "lecture",
+    "calme",
+    "cafe"
+   ],
+   "competitors": [
+    "Maison de la Poésie",
+    "librairies"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique douce ; peu de propension à payer, mais bon lien avec librairies et cafés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-haiku-ecriture-breve",
+   "name": "Haïku et écriture brève",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.poesie",
+   "desc": "Écrire des haïkus et des textes de 50 mots, entre observation et concision.",
+   "audience": "Adultes 25-70 ans, voyageurs, calmes",
+   "skills": [
+    "Observation",
+    "Syllabes",
+    "Saison",
+    "Concision"
+   ],
+   "appSkills": [
+    "poesie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier haïku",
+     "goal": "Écrire trois haïkus en 5-7-5",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Promenade haïku",
+     "goal": "Écrire cinq haïkus en marchant",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon recueil bref",
+     "goal": "Écrire dix textes brefs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sélectionner",
+     "goal": "Éditer et choisir cinq textes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une promenade d'écriture",
+     "goal": "Animer une promenade d'écriture avec consignes d'observation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "balade",
+    "nature",
+    "calme",
+    "voyage"
+   ],
+   "competitors": [
+    "Associations de haïku"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Format calme et poétique ; revenu faible, mais bien adapté aux sorties.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecriture-paroles-chansons",
+   "name": "Écrire des paroles de chansons",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.poesie",
+   "desc": "Écrire un couplet et un refrain qui se chantent : thème, rimes, prosodie.",
+   "audience": "Jeunes 16-40 ans, musiciens amateurs",
+   "skills": [
+    "Thème",
+    "Rimes",
+    "Prosodie",
+    "Refrain"
+   ],
+   "appSkills": [
+    "ecriture-paroles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier refrain",
+     "goal": "Écrire un refrain de 4 lignes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couplet et refrain",
+     "goal": "Écrire une chanson complète",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un texte sur une musique",
+     "goal": "Écrire sur une mélodie en respectant la prosodie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chanson finie",
+     "goal": "Enregistrer une maquette",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher un parolier",
+     "goal": "Accompagner un parolier ou un groupe sur prosodie et refrains",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "musique",
+    "voix",
+    "creation"
+   ],
+   "competitors": [
+    "Studios",
+    "ateliers d'écriture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public musicien présent ; il existe un lien direct avec la musique et le slam.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-journal-ecriture-de-soi",
+   "name": "Journal et écriture de soi",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.reel",
+   "desc": "Tenir un journal : routines d'écriture, bullet, gratitude et écriture libre.",
+   "audience": "Adultes 25-65 ans, en quête de calme",
+   "skills": [
+    "Écriture libre",
+    "Journal",
+    "Gratitude",
+    "Relecture"
+   ],
+   "appSkills": [
+    "journal-ecriture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier journal",
+     "goal": "Écrire 10 minutes sans s'arrêter",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ma routine d'écriture",
+     "goal": "Tenir un journal sept jours de suite",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écrire un souvenir",
+     "goal": "Écrire un souvenir de 2 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Faire un bilan",
+     "goal": "Rédiger un bilan d'année de 3 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      95
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle d'écriture",
+     "goal": "Animer un cercle d'écriture de soi dans un cadre bienveillant",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "bien-etre",
+    "calme",
+    "papier",
+    "recit"
+   ],
+   "competitors": [
+    "Ateliers de journaling"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance bien-être forte et accessibilité totale ; la valeur est dans la régularité d'un cercle et le mix papier/papeterie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-memoires-famille",
+   "name": "Écrire les mémoires d'un proche ou de sa famille",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.reel",
+   "desc": "Recueillir et écrire l'histoire d'un parent ou grand-parent en un petit livre.",
+   "audience": "Adultes 35-70 ans, petits-enfants, retraités",
+   "skills": [
+    "Interviewer",
+    "Chronologie",
+    "Écriture",
+    "Mise en page"
+   ],
+   "appSkills": [
+    "journal-ecriture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Interviewer un proche",
+     "goal": "Mener une interview de 30 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reconstituer la chronologie",
+     "goal": "Reconstituer les grandes étapes d'une vie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Premier chapitre",
+     "goal": "Écrire un chapitre de 5 pages",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Le livre de famille",
+     "goal": "Assembler un petit livre de 20 pages",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner d'autres familles",
+     "goal": "Accompagner d'autres familles dans leur projet",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "famille",
+    "histoire",
+    "cadeau",
+    "recit"
+   ],
+   "competitors": [
+    "Biographes",
+    "associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Fort ressort émotionnel, vrai budget cadeau et peu d'offre accessible entre atelier d'écriture et biographe pro.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-lettre-ecrite-main",
+   "name": "Lettres et cartes écrites à la main",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.reel",
+   "desc": "Écrire une belle lettre : ton, structure, papier et calligraphie simple.",
+   "audience": "Adultes 25-70 ans, amoureux du papier",
+   "skills": [
+    "Ton",
+    "Structure",
+    "Papier",
+    "Écriture lisible"
+   ],
+   "appSkills": [
+    "calligraphie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première lettre",
+     "goal": "Écrire une lettre claire à un proche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une lettre de remerciement",
+     "goal": "Écrire une lettre sincère et brève",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un carnet de lettres",
+     "goal": "Écrire cinq lettres à cinq personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Papier et plume",
+     "goal": "Soigner papier, plume et mise en page",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de lettres",
+     "goal": "Animer un atelier d'écriture de lettres avec papier et plume",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "emotion"
+   ],
+   "outputs": [
+    "texte",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "papier",
+    "cadeau",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "Papeteries",
+    "ateliers de calligraphie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Retour du papier en tendance ; bon pour des mixes calligraphie et cadeau.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-blog-newsletter",
+   "name": "Blog et newsletter",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.pro",
+   "desc": "Lancer un blog ou une newsletter : angle, rythme et premières publications.",
+   "audience": "Créateurs, indépendants 25-50 ans",
+   "skills": [
+    "Choisir un angle",
+    "Écrire pour le web",
+    "Rythme de publication",
+    "Audience"
+   ],
+   "appSkills": [
+    "blog-newsletter"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon angle",
+     "goal": "Définir sujet, lecteur et ton",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier article",
+     "goal": "Écrire et publier un article de 500 mots",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une newsletter régulière",
+     "goal": "Publier quatre numéros à rythme fixe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Trouver des lecteurs",
+     "goal": "Atteindre 100 abonnés",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des auteurs de newsletter",
+     "goal": "Accompagner des créateurs sur ligne éditoriale et régularité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "tech",
+    "argent",
+    "creation"
+   ],
+   "competitors": [
+    "Substack",
+    "formateurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Entrepreneurs prêts à payer, mais très concurrentiel en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-auto-edition",
+   "name": "Auto-éditer son livre",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.pro",
+   "desc": "Publier son livre : mise en page, couverture, ISBN, impression et diffusion.",
+   "audience": "Auteurs 30-65 ans",
+   "skills": [
+    "Mise en page",
+    "Couverture",
+    "ISBN",
+    "Diffusion"
+   ],
+   "appSkills": [
+    "ecriture-roman"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon manuscrit",
+     "goal": "Préparer son manuscrit pour la mise en page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mise en page",
+     "goal": "Mettre en page un livre de 100 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Couverture",
+     "goal": "Concevoir et valider une couverture",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      115,
+      195
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Publier",
+     "goal": "Publier sur une plateforme d'impression",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner des auteurs",
+     "goal": "Accompagner d'autres auteurs de A à Z",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "papier",
+    "tech",
+    "creation"
+   ],
+   "competitors": [
+    "Amazon KDP",
+    "Librinova",
+    "Bookelis"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public étroit mais motivé ; les plateformes d'édition concurrencent le conseil.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-ecrire-pour-le-web",
+   "name": "Écrire pour le web et les réseaux",
+   "sector": "parole",
+   "category": "parole.ecriture",
+   "subcategory": "parole.ecriture.pro",
+   "desc": "Écrire clair, court et accrocheur : titres, posts, e-mails et SEO de base.",
+   "audience": "Actifs 25-50 ans, indépendants",
+   "skills": [
+    "Titres",
+    "Concision",
+    "Ton",
+    "SEO de base"
+   ],
+   "appSkills": [
+    "blog-newsletter"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écrire clair",
+     "goal": "Réécrire un texte court et le raccourcir de moitié",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Titres et accroches",
+     "goal": "Écrire dix titres et en choisir un",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Posts efficaces",
+     "goal": "Publier un post avec un appel à l'action",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Stratégie éditoriale",
+     "goal": "Planifier un mois de publications",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former une équipe",
+     "goal": "Former une équipe à l'écriture web avec grille de relecture",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "tech",
+    "entreprise",
+    "argent"
+   ],
+   "competitors": [
+    "Formateurs",
+    "Udemy"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande professionnelle stable ; offre abondante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-traduction-initiation",
+   "name": "Traduction littéraire : initiation",
+   "sector": "parole",
+   "category": "parole.mots",
+   "subcategory": "parole.mots.traduction",
+   "desc": "Traduire une page de roman ou de nouvelle : fidélité, style et choix.",
+   "audience": "Bilingues 25-60 ans, étudiants en langues",
+   "skills": [
+    "Fidélité",
+    "Registre",
+    "Choix",
+    "Relecture"
+   ],
+   "appSkills": [
+    "traduction"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première page",
+     "goal": "Traduire une page courte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Choix de traduction",
+     "goal": "Justifier ses choix de traduction",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      60,
+      105
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une nouvelle traduite",
+     "goal": "Traduire 5 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Relecture croisée",
+     "goal": "Relire et corriger une traduction",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner un traducteur",
+     "goal": "Accompagner des traducteurs débutants dans leur relecture",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "ecriture",
+    "lecture",
+    "creation"
+   ],
+   "competitors": [
+    "ATLF",
+    "écoles de traduction"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche savante ; budget faible et marché de la traduction contracté par l'IA.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-sous-titrage-fansub",
+   "name": "Sous-titrer une vidéo ou un film court",
+   "sector": "parole",
+   "category": "parole.mots",
+   "subcategory": "parole.mots.traduction",
+   "desc": "Traduire et caler des sous-titres : durée, lisibilité et rythme.",
+   "audience": "Jeunes 18-40 ans, fans de séries et créateurs",
+   "skills": [
+    "Traduction",
+    "Découpage",
+    "Calage",
+    "Outils"
+   ],
+   "appSkills": [
+    "traduction",
+    "montage-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers sous-titres",
+     "goal": "Sous-titrer 1 minute de vidéo",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Calage et lisibilité",
+     "goal": "Sous-titrer 5 minutes avec bons rythmes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sous-titrage complet",
+     "goal": "Sous-titrer 15 minutes de film",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Normes professionnelles",
+     "goal": "Respecter les normes de sous-titrage",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      180
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Accompagner des sous-titreurs",
+     "goal": "Accompagner des débutants sur calage, normes et outils",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      195
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "texte",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "video",
+    "tech",
+    "creation"
+   ],
+   "competitors": [
+    "Fansubbers",
+    "écoles"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intérêt de niche et marché automatisé ; revenu faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-art-de-la-formule",
+   "name": "Rhétorique : l'art de la formule",
+   "sector": "parole",
+   "category": "parole.mots",
+   "subcategory": "parole.mots.jeu-de-mots",
+   "desc": "Découvrir les figures de style et fabriquer des phrases qui marquent.",
+   "audience": "Adultes 25-60 ans, communicants, curieux",
+   "skills": [
+    "Figures de style",
+    "Formule",
+    "Rythme",
+    "Analyse de discours"
+   ],
+   "appSkills": [
+    "eloquence"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Repérer les figures",
+     "goal": "Identifier cinq figures de style dans un discours",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fabriquer une formule",
+     "goal": "Créer cinq formules marquantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Discours ciselé",
+     "goal": "Écrire un discours court avec trois figures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un style à soi",
+     "goal": "Maîtriser un style reconnaissable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de rhétorique",
+     "goal": "Animer un atelier de rhétorique avec analyse de discours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "texte",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "parole",
+    "debat",
+    "savoir"
+   ],
+   "competitors": [
+    "Cercles de rhétorique"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique plaisante, peu de demande hors communicants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "parole-etymologie-mots",
+   "name": "Étymologie et histoire des mots",
+   "sector": "parole",
+   "category": "parole.mots",
+   "subcategory": "parole.mots.jeu-de-mots",
+   "desc": "Découvrir l'histoire des mots et leur origine : de l'ancien français aux emprunts.",
+   "audience": "Curieux 25-70 ans, lecteurs, enseignants",
+   "skills": [
+    "Étymologie",
+    "Évolution",
+    "Emprunts",
+    "Jeux de mots"
+   ],
+   "appSkills": [
+    "langues-anciennes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pourquoi ce mot",
+     "goal": "Retracer l'origine de cinq mots",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Emprunts et familles",
+     "goal": "Classer des mots par origine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enquête de mots",
+     "goal": "Retracer dix mots",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Histoire du français",
+     "goal": "Raconter l'histoire du français en 10 minutes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée de mots",
+     "goal": "Animer une soirée d'étymologie avec enquêtes de mots",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "cafe",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "histoire",
+    "lecture",
+    "savoir",
+    "cafe"
+   ],
+   "competitors": [
+    "Bibliothèques",
+    "clubs de lecture"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public curieux mais pas prêt à payer ; excellent en soirée café.",
+   "confidence": "estimation"
+  }
+ ]
+}

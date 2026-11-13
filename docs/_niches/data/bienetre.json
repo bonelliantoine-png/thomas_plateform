@@ -1,0 +1,7882 @@
+{
+ "sector": "bienetre",
+ "categories": [
+  {
+   "id": "bienetre.esprit",
+   "name": "Esprit, calme et attention",
+   "desc": "Pratiques de pleine conscience, de respiration et d'expression pour apaiser l'esprit.",
+   "subcategories": [
+    {
+     "id": "bienetre.esprit.meditation",
+     "name": "Méditation et relaxation",
+     "desc": "Poser son attention, ralentir, se détendre avec ou sans guide."
+    },
+    {
+     "id": "bienetre.esprit.respiration",
+     "name": "Souffle et respiration",
+     "desc": "Exercices de respiration pour se recentrer, sans visée thérapeutique."
+    },
+    {
+     "id": "bienetre.esprit.emotions",
+     "name": "Émotions, écriture et imaginaire",
+     "desc": "Journal, couleur et visualisation pour mettre des mots et des images sur ce qu'on ressent."
+    }
+   ]
+  },
+  {
+   "id": "bienetre.corps",
+   "name": "Corps et mouvement doux",
+   "desc": "Mouvements lents et accessibles pour se sentir mieux dans son corps.",
+   "subcategories": [
+    {
+     "id": "bienetre.corps.doux",
+     "name": "Yoga, qi gong et tai-chi",
+     "desc": "Enchaînements doux de postures et de respiration."
+    },
+    {
+     "id": "bienetre.corps.posture",
+     "name": "Posture et mobilité",
+     "desc": "Routines courtes pour le quotidien, le bureau et la marche."
+    },
+    {
+     "id": "bienetre.corps.expression",
+     "name": "Expression corporelle",
+     "desc": "Danser, rire et bouger librement sans performance."
+    }
+   ]
+  },
+  {
+   "id": "bienetre.toucher",
+   "name": "Toucher, détente et rituels",
+   "desc": "Gestes de détente à soi ou entre proches, rituels de soin du quotidien.",
+   "subcategories": [
+    {
+     "id": "bienetre.toucher.automassage",
+     "name": "Auto-massage",
+     "desc": "Se détendre soi-même avec les mains, une balle ou un rouleau."
+    },
+    {
+     "id": "bienetre.toucher.proches",
+     "name": "Massage entre proches",
+     "desc": "Gestes simples de détente à partager en couple, en famille ou entre amis."
+    },
+    {
+     "id": "bienetre.toucher.rituels",
+     "name": "Rituels de détente",
+     "desc": "Bains, sons et rituels pour faire une vraie pause."
+    }
+   ]
+  },
+  {
+   "id": "bienetre.sommeil",
+   "name": "Sommeil, stress et rythmes",
+   "desc": "Mieux dormir, gérer la pression du quotidien et installer des habitudes durables.",
+   "subcategories": [
+    {
+     "id": "bienetre.sommeil.nuit",
+     "name": "Sommeil et repos",
+     "desc": "Routines du soir, siestes et réveils plus doux."
+    },
+    {
+     "id": "bienetre.sommeil.stress",
+     "name": "Stress et énergie",
+     "desc": "Boîte à outils pour retrouver son calme et son énergie."
+    },
+    {
+     "id": "bienetre.sommeil.habitudes",
+     "name": "Habitudes et organisation de soi",
+     "desc": "Routines, rythmes et petites victoires qui tiennent."
+    }
+   ]
+  },
+  {
+   "id": "bienetre.nature",
+   "name": "Plantes, nature et sens",
+   "desc": "Se ressourcer par les plantes, les odeurs, l'eau et les sorties dehors.",
+   "subcategories": [
+    {
+     "id": "bienetre.nature.plantes",
+     "name": "Plantes et senteurs",
+     "desc": "Infusions, huiles essentielles et alimentation consciente, avec prudence."
+    },
+    {
+     "id": "bienetre.nature.sens",
+     "name": "Nature et sens",
+     "desc": "Forêt, jardin, marche lente et eau froide pour se reconnecter."
+    }
+   ]
+  },
+  {
+   "id": "bienetre.vie",
+   "name": "Équilibre de vie et relations",
+   "desc": "Bien-être des parents, des seniors, des équipes et des couples.",
+   "subcategories": [
+    {
+     "id": "bienetre.vie.parents",
+     "name": "Parents, enfants et ados",
+     "desc": "Ateliers de calme, de souffle et de limites pour les familles."
+    },
+    {
+     "id": "bienetre.vie.seniors",
+     "name": "Seniors",
+     "desc": "Mémoire, rituels et lien social en douceur."
+    },
+    {
+     "id": "bienetre.vie.travail",
+     "name": "Équipes et travail",
+     "desc": "Pauses, détente collective et prévention de la fatigue au travail."
+    },
+    {
+     "id": "bienetre.vie.relations",
+     "name": "Couples et relations",
+     "desc": "Rituels simples pour se retrouver et apprécier le lien."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "bienetre-meditation-pleine-conscience",
+   "name": "Méditation de pleine conscience",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.meditation",
+   "desc": "Apprendre à poser son attention sur le souffle, le corps et les sons, assis ou allongé.",
+   "audience": "Actifs urbains 25-55 ans, débutants curieux, stressés du quotidien",
+   "skills": [
+    "S'installer",
+    "Suivre son souffle",
+    "Balayer le corps",
+    "Gérer les pensées",
+    "Tenir 10 minutes"
+   ],
+   "appSkills": [
+    "meditation",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première pause",
+     "goal": "Tenir 10 minutes d'attention au souffle",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pratique quotidienne",
+     "goal": "Installer 10 minutes par jour pendant une semaine",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 6 semaines",
+     "goal": "Pratiquer régulièrement et repérer ses automatismes",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique approfondie",
+     "goal": "Tenir 30 minutes et ajuster seul ses séances",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider d'autres personnes",
+     "goal": "Animer une séance de 20 minutes et former des animateurs",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "studio-musique",
+    "domicile",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "calme",
+    "souffle",
+    "convivial",
+    "the"
+   ],
+   "competitors": [
+    "Applications (Petit Bambou)",
+    "Centres de méditation",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande très large et stable ; format court, calme et régulier. Concurrence d'applications et de centres, mais peu d'offre de quartier à tarif accessible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-meditation-marche",
+   "name": "Méditation en marche",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.meditation",
+   "desc": "Marcher lentement et attentivement dans un parc, une rue calme ou un bois.",
+   "audience": "Actifs, marcheurs, personnes qui ne tiennent pas assises",
+   "skills": [
+    "Marche attentive",
+    "Ancrage des pieds",
+    "Écouter les sons",
+    "Pause au banc"
+   ],
+   "appSkills": [
+    "meditation-marche",
+    "bain-de-foret"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première marche attentive",
+     "goal": "Marcher 20 minutes en portant son attention sur les pas et les sons",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marche et souffle",
+     "goal": "Accorder pas et respiration sur un parcours de 30 minutes",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Balades régulières",
+     "goal": "Tenir deux marches par semaine pendant un mois et noter ses sensations",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marche en autonomie",
+     "goal": "Concevoir et tenir seul un parcours de 45 minutes adapté à son humeur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide de marches calmes",
+     "goal": "Conduire un groupe de 8 personnes en sécurité et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "service",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "balade",
+    "bien-etre",
+    "plein-air",
+    "nature",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs de marche",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Combine marche et attention, très accessible, mais dépend de la météo et du lieu. Peu d'offre structurée à tester sur quelques parcs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-meditation-esprits-agites",
+   "name": "Méditation pour esprits agités",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.meditation",
+   "desc": "Des formats courts, actifs et ludiques pour ceux qui pensent ne pas savoir méditer.",
+   "audience": "Hyperactifs, étudiants, créatifs, adultes neurodivers",
+   "skills": [
+    "Méditations courtes",
+    "Mouvements d'ancrage",
+    "Dessiner son attention",
+    "Utiliser des sons"
+   ],
+   "appSkills": [
+    "meditation",
+    "gestion-du-stress"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq minutes sans pression",
+     "goal": "Tenir 5 minutes en s'appuyant sur le son, le toucher ou le mouvement",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mes ancrages",
+     "goal": "Choisir 3 techniques d'ancrage qui conviennent à son tempérament",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine souple",
+     "goal": "Pratiquer 4 semaines sans culpabilité avec un rappel adapté",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique sur mesure",
+     "goal": "Écrire sa série personnelle de 3 séances selon la journée",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider les esprits agités",
+     "goal": "Animer une séance courte et former des hôtes à ces formats",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "neurodivers",
+    "ados"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "calme",
+    "bien-etre",
+    "defi",
+    "couleur",
+    "souffle"
+   ],
+   "competitors": [
+    "Applications",
+    "Ateliers de pleine conscience"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Niche avec un vrai besoin, public plus réduit. Bonne diversification de la méditation classique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-yoga-nidra",
+   "name": "Yoga nidra : la relaxation allongée",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.meditation",
+   "desc": "Relaxation guidée à la voix, allongé, qui détend en profondeur en 30 à 45 minutes.",
+   "audience": "Actifs fatigués, sportifs, personnes qui dorment mal",
+   "skills": [
+    "S'allonger confortablement",
+    "Suivre une voix",
+    "Parcourir le corps",
+    "Ressentir le calme"
+   ],
+   "appSkills": [
+    "yoga-nidra",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première relaxation",
+     "goal": "Suivre une séance guidée allongée de 30 minutes sans s'endormir de force",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Intention et repères",
+     "goal": "Formuler une intention simple et suivre le parcours du corps",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pratique du soir",
+     "goal": "Utiliser la séance 3 fois par semaine pendant un mois",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séances à sa façon",
+     "goal": "Adapter durée et script à son besoin du moment",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider une séance de nidra",
+     "goal": "Écrire et animer une séance de 40 minutes à la voix posée",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "studio-danse",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "calme",
+    "voix",
+    "nuit",
+    "souffle"
+   ],
+   "competitors": [
+    "Studios de yoga",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Format très simple (allongé, aucun effort), peu d'offre en dehors des studios de yoga. Public fidèle mais volume moyen.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-coherence-cardiaque",
+   "name": "Cohérence cardiaque",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.respiration",
+   "desc": "Respirer 5 secondes inspirer, 5 secondes expirer pour retrouver un rythme calme.",
+   "audience": "Actifs stressés, étudiants, parents, personnes en entreprise",
+   "skills": [
+    "Rythme 5-5",
+    "Installer le rappel",
+    "Suivre un tracker",
+    "Intégrer à la journée"
+   ],
+   "appSkills": [
+    "respiration",
+    "gestion-du-stress"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier cycle",
+     "goal": "Tenir 5 minutes de respiration 5-5 avec un repère visuel",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      12,
+      18
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trois fois par jour",
+     "goal": "Installer la routine sur une semaine avec rappels",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      17,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Respiration régulière",
+     "goal": "Tenir 4 semaines et ajuster le rythme à ses sensations",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Respirer en situation",
+     "goal": "Appliquer la technique avant une réunion ou un moment tendu",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      70,
+      105
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer la cohérence cardiaque",
+     "goal": "Conduire une séance collective de 15 minutes et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      120,
+      210
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "souffle",
+    "bien-etre",
+    "calme",
+    "defi",
+    "corps"
+   ],
+   "competitors": [
+    "Applications",
+    "Sophrologues",
+    "Associations"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Technique courte, facile à enseigner, très demandée en entreprise. Faible prix mais très forte capacité à plaire et diffuser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-respiration-apaisante",
+   "name": "Respiration apaisante au quotidien",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.respiration",
+   "desc": "Exercices de souffle simples contre la tension : respiration en carré, soupir, souffle long.",
+   "audience": "Actifs, étudiants, sportifs, parents",
+   "skills": [
+    "Respiration carrée",
+    "Soupir physiologique",
+    "Allonger l'expiration",
+    "Pratiquer en marchant"
+   ],
+   "appSkills": [
+    "respiration",
+    "sophrologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trois souffles de base",
+     "goal": "Pratiquer respiration carrée, soupir et expiration longue",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Le bon souffle au bon moment",
+     "goal": "Associer un exercice à trois situations du quotidien",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon kit de 5 exercices",
+     "goal": "Composer et tenir une routine de 4 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique autonome",
+     "goal": "Enchaîner 10 minutes sans guide et savoir arrêter en cas d'inconfort",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier souffle",
+     "goal": "Guider un groupe avec consignes de prudence",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "souffle",
+    "calme",
+    "bien-etre",
+    "corps"
+   ],
+   "competitors": [
+    "Sophrologues",
+    "Applications"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Proche de la cohérence cardiaque, utile en complément. Précaution : aucune allégation de soin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-froid-respiration",
+   "name": "Froid et respiration : la méthode Wim Hof",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.respiration",
+   "desc": "Respiration dynamique et exposition progressive au froid, dans un cadre sûr.",
+   "audience": "Sportifs, curieux de défis, 25-45 ans",
+   "skills": [
+    "Respiration en cycles",
+    "Douche froide progressive",
+    "Gérer la sécurité",
+    "Mesurer ses sensations"
+   ],
+   "appSkills": [
+    "wim-hof",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier souffle et douche froide",
+     "goal": "Pratiquer 3 cycles et 30 secondes de douche fraîche encadrés",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Exposition progressive",
+     "goal": "Tenir 2 minutes d'eau fraîche en gardant sa respiration",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel du matin",
+     "goal": "Pratiquer 3 semaines avec carnet de sensations",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie prudente",
+     "goal": "Connaître ses contre-indications et savoir renoncer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrer en sécurité",
+     "goal": "Animer un groupe avec protocole de sécurité écrit",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 2,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "defi",
+    "eau",
+    "souffle",
+    "plein-air",
+    "corps"
+   ],
+   "competitors": [
+    "Instructeurs certifiés",
+    "Clubs de baignade"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Fort effet défi et communauté en ligne ; risque médical réel, donc cadre strict, groupes réduits et information claire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-journaling-gratitude",
+   "name": "Journaling et gratitude",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.emotions",
+   "desc": "Tenir un carnet quotidien : écriture libre, gratitude et questions guides.",
+   "audience": "Actifs, étudiants, créatifs, personnes en transition",
+   "skills": [
+    "Écriture libre",
+    "Questions guides",
+    "Rituel du soir",
+    "Relire son carnet"
+   ],
+   "appSkills": [
+    "journaling-bien-etre",
+    "journal-ecriture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première page",
+     "goal": "Écrire 10 minutes sans s'arrêter à partir d'une phrase d'amorce",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trois questions guides",
+     "goal": "Tenir un carnet chaque soir pendant une semaine",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carnet vivant",
+     "goal": "Tenir 4 semaines puis relire et repérer des thèmes",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel personnel",
+     "goal": "Définir ses formats (gratitude, bilan, lettre) et son rythme",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier carnet",
+     "goal": "Guider un groupe de 8 avec cadre bienveillant",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "cafe",
+    "librairie",
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "bien-etre",
+    "papier",
+    "calme",
+    "lecture"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "Bullet journal"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Public large, matériel minimal, très convivial dans un café. Bon pour des cercles récurrents.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-gestion-emotions",
+   "name": "Nommer et traverser ses émotions",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.emotions",
+   "desc": "Reconnaître ce qu'on ressent, le dire et choisir comment réagir, sans jargon clinique.",
+   "audience": "Adultes, parents, jeunes adultes, enseignants",
+   "skills": [
+    "Nommer une émotion",
+    "Repérer les signaux du corps",
+    "Pauses de recul",
+    "Communiquer"
+   ],
+   "appSkills": [
+    "gestion-emotions",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mettre un mot dessus",
+     "goal": "Nommer 5 émotions et leurs signaux dans le corps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Corps et émotions",
+     "goal": "Relier trois situations vécues aux sensations observées",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pause avant de réagir",
+     "goal": "Appliquer une pause de 6 secondes pendant 3 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réponse choisie",
+     "goal": "Reformuler un désaccord réel avec une demande claire",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle d'émotions",
+     "goal": "Faciliter un groupe sans interpréter ni thérapeutiser",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "parole",
+    "calme",
+    "famille",
+    "ecriture"
+   ],
+   "competitors": [
+    "Psychologues",
+    "Ateliers CNV"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin fort mais frontière avec le soin psychologique : intitulé et posture doivent rester pédagogiques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-visualisation-autohypnose",
+   "name": "Visualisation et relaxation imagée",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.emotions",
+   "desc": "Utiliser son imaginaire pour se détendre : lieu calme, voyage intérieur, objectifs.",
+   "audience": "Curieux, sportifs, étudiants, adultes stressés",
+   "skills": [
+    "S'installer",
+    "Créer un lieu calme",
+    "Guider son imaginaire",
+    "Terminer en douceur"
+   ],
+   "appSkills": [
+    "autohypnose",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon lieu calme",
+     "goal": "Suivre une visualisation guidée de 15 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Images qui détendent",
+     "goal": "Construire son scénario personnel de détente",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Préparer un événement",
+     "goal": "Utiliser la visualisation avant un examen ou une prise de parole",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séances en autonomie",
+     "goal": "Se guider seul 3 fois par semaine",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guider une visualisation",
+     "goal": "Écrire et animer une séance sans promesse thérapeutique",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "calme",
+    "bien-etre",
+    "voix",
+    "nuit",
+    "recit"
+   ],
+   "competitors": [
+    "Hypnothérapeutes",
+    "Applications"
+   ],
+   "regulated": "sante",
+   "verdict": "ecarter",
+   "why": "Le terme « hypnose » attire des dérives et touche au soin psychique. Rester sur des séances de relaxation guidée déjà couvertes ailleurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-coloriage-mandalas",
+   "name": "Coloriage et mandalas pour décompresser",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.emotions",
+   "desc": "Colorier, dessiner des motifs répétitifs et jouer avec les couleurs pour se poser.",
+   "audience": "Adultes stressés, seniors, parents, enfants",
+   "skills": [
+    "Choisir ses couleurs",
+    "Dessiner un mandala",
+    "Respirer en dessinant",
+    "Terminer une pièce"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mandala",
+     "goal": "Terminer un mandala de 20 cm en 1 heure",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs et rythmes",
+     "goal": "Associer palettes et ambiances sur 3 petites pièces",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Motifs personnels",
+     "goal": "Dessiner ses propres motifs répétitifs au compas et au feutre",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série cohérente",
+     "goal": "Réaliser 5 pièces d'une même palette à exposer",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier créatif calme",
+     "goal": "Guider un groupe et former des hôtes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "couleur",
+    "calme",
+    "papier",
+    "convivial"
+   ],
+   "competitors": [
+    "Ateliers créatifs",
+    "Cafés créatifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Accessible à tous, peu coûteux, convivial. Le prix reste faible : à vendre en cercle ou en cadeau groupé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-sophrologie-detente",
+   "name": "Sophrologie : exercices de détente",
+   "sector": "bienetre",
+   "category": "bienetre.esprit",
+   "subcategory": "bienetre.esprit.emotions",
+   "desc": "Exercices corporels et mentaux simples inspirés de la sophrologie, sans soin.",
+   "audience": "Actifs, étudiants, parents, sportifs",
+   "skills": [
+    "Respirer",
+    "Détendre le corps",
+    "Visualiser",
+    "Terminer en douceur"
+   ],
+   "appSkills": [
+    "sophrologie",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir les exercices",
+     "goal": "Enchaîner respiration, mouvement et détente en 40 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séance complète",
+     "goal": "Pratiquer une séance guidée de A à Z",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine de 3 semaines",
+     "goal": "Faire 10 minutes par jour chez soi avec carnet",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Choisir ses séquences",
+     "goal": "Composer 3 séances selon l'objectif du jour",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier détente",
+     "goal": "Guider avec limites claires, sans promesse de soin",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "souffle",
+    "calme",
+    "corps",
+    "nuit"
+   ],
+   "competitors": [
+    "Sophrologues certifiés",
+    "Cabinets"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Terme encadré par des professionnels ; préférer « exercices de détente » et rester pédagogique. Offre établie en cabinet.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-yoga-debutant",
+   "name": "Yoga pour débutants",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.doux",
+   "desc": "Postures de base, respiration et enchaînement court pour débuter avec confiance.",
+   "audience": "Actifs, débutants complets, reprise douce, étudiants",
+   "skills": [
+    "Postures fondamentales",
+    "Respiration",
+    "Enchaînement court",
+    "Relaxation finale"
+   ],
+   "appSkills": [
+    "yoga-hatha",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Réaliser 10 postures de base avec respiration",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon enchaînement court",
+     "goal": "Refaire seul 15 minutes de postures dans l'ordre",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pratique hebdomadaire",
+     "goal": "Tenir un cours par semaine pendant 6 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séances sur mesure",
+     "goal": "Adapter sa séance à son énergie et ses raideurs",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le yoga",
+     "goal": "Animer un cours d'initiation et sécuriser les postures",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "parc",
+    "salle-sport",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "corps",
+    "souffle",
+    "mouvement",
+    "bien-etre",
+    "calme"
+   ],
+   "competitors": [
+    "Studios de yoga",
+    "ClassPass",
+    "Salles de sport"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Marché très large mais saturé de studios et d'abonnements. À tester sur des créneaux de quartier à petit prix, avec un hôte qualifié (enseignement sportif encadré).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-yoga-chaise",
+   "name": "Yoga sur chaise",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.doux",
+   "desc": "Mouvements assis et debout avec appui, adaptés aux seniors et à la mobilité réduite.",
+   "audience": "Seniors, personnes à mobilité réduite, employés de bureau",
+   "skills": [
+    "S'asseoir correctement",
+    "Étirements doux",
+    "Respiration",
+    "Relaxation"
+   ],
+   "appSkills": [
+    "yoga-hatha",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers mouvements assis",
+     "goal": "Réaliser 8 mouvements sur chaise en toute sécurité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séquence de 20 minutes",
+     "goal": "Enchaîner étirements, respiration et relaxation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rendez-vous hebdomadaire",
+     "goal": "Tenir 6 semaines avec un petit cercle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique à la maison",
+     "goal": "Se guider seul avec une fiche personnelle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier seniors",
+     "goal": "Conduire un groupe avec adaptations et prudence",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "mouvement",
+    "bien-etre",
+    "calme",
+    "famille"
+   ],
+   "competitors": [
+    "Résidences seniors",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Besoin croissant, offre faible par rapport à la demande des 65+. Public fidèle, groupe soudé, très adapté au quartier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-qi-gong",
+   "name": "Qi gong : le mouvement lent",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.doux",
+   "desc": "Enchaînements fluides et respirations lentes pour retrouver souplesse et calme.",
+   "audience": "Adultes 35-75 ans, seniors actifs, sportifs en récupération",
+   "skills": [
+    "Posture d'ancrage",
+    "Mouvements fluides",
+    "Respiration lente",
+    "Enchaînement court"
+   ],
+   "appSkills": [
+    "respiration",
+    "meditation-marche"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers mouvements",
+     "goal": "Apprendre 5 mouvements lents en respirant",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Enchaînement de 10 minutes",
+     "goal": "Mémoriser une séquence courte",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 8 semaines",
+     "goal": "Tenir un rendez-vous hebdomadaire et une routine quotidienne",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Qualité du geste",
+     "goal": "Affiner posture, lenteur et respiration",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer le qi gong",
+     "goal": "Transmettre une forme courte à un groupe",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mouvement",
+    "corps",
+    "souffle",
+    "plein-air",
+    "calme"
+   ],
+   "competitors": [
+    "Associations",
+    "Parcs"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Public fidèle et plutôt senior, très adapté à l'extérieur. Offre en clubs mais peu de formules courtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-tai-chi-initiation",
+   "name": "Tai-chi : initiation",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.doux",
+   "desc": "Enchaînement lent, équilibre et attention, souvent en plein air.",
+   "audience": "Seniors, adultes actifs, curieux d'arts martiaux doux",
+   "skills": [
+    "Poids du corps",
+    "Pas et transferts",
+    "Enchaînement court",
+    "Respiration"
+   ],
+   "appSkills": [
+    "respiration",
+    "yoga-hatha"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas du tai-chi",
+     "goal": "Apprendre 5 mouvements et le transfert du poids",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mini-enchaînement",
+     "goal": "Réaliser 8 mouvements enchaînés",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 10 semaines",
+     "goal": "Compléter une forme courte en groupe",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fluidité et équilibre",
+     "goal": "Affiner l'enracinement et la continuité",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le tai-chi",
+     "goal": "Animer en parc et corriger avec pédagogie",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "mouvement",
+    "corps",
+    "souffle",
+    "plein-air",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs de tai-chi",
+    "Écoles d'arts martiaux"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique exigeante à apprendre, public de niche très fidèle. Faible rotation, bon potentiel en parc.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-posture-pauses-bureau",
+   "name": "Pauses actives au bureau",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.posture",
+   "desc": "Quelques mouvements et étirements discrets pour casser la journée assise.",
+   "audience": "Salariés, télétravailleurs, étudiants",
+   "skills": [
+    "Régler son poste",
+    "Étirements courts",
+    "Respiration",
+    "Marcher en réunion"
+   ],
+   "appSkills": [
+    "automassage",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq minutes pour bouger",
+     "goal": "Enchaîner 6 mouvements discrets au poste de travail",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poste de travail réglé",
+     "goal": "Ajuster siège, écran et lumière",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rythme de pauses",
+     "goal": "Installer des pauses toutes les 90 minutes pendant 3 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Équipe en mouvement",
+     "goal": "Mettre en place un rituel collectif de 5 minutes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des pauses actives",
+     "goal": "Former des relais en entreprise",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "corps",
+    "mouvement",
+    "ent",
+    "argent"
+   ],
+   "competitors": [
+    "Médecine du travail",
+    "Prestataires QVT"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel financé par les entreprises, mais ventes B2B lentes et prestataires QVT déjà établis.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-mobilite-dos-10-minutes",
+   "name": "Routine mobilité de 10 minutes",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.posture",
+   "desc": "Mobiliser dos, hanches et épaules chaque jour, sans équipement.",
+   "audience": "Actifs sédentaires, sportifs occasionnels, seniors actifs",
+   "skills": [
+    "Échauffement articulaire",
+    "Mobilité de colonne",
+    "Étirements",
+    "Construire sa routine"
+   ],
+   "appSkills": [
+    "automassage",
+    "yoga-hatha"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes dix minutes",
+     "goal": "Réaliser 6 mouvements de mobilité sans matériel",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine du matin",
+     "goal": "Tenir la séquence 5 jours de suite",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un mois de routine",
+     "goal": "Pratiquer 5 fois par semaine avec suivi des sensations",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine adaptée",
+     "goal": "Ajuster la séquence selon fatigue et activité",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer la mobilité",
+     "goal": "Guider un groupe avec consignes de prudence",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "salle-sport",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "corps",
+    "mouvement",
+    "bien-etre",
+    "defi",
+    "calme"
+   ],
+   "competitors": [
+    "Applications",
+    "Salles de sport",
+    "Kinés"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin quotidien répandu, beaucoup de contenus gratuits. À présenter comme confort et mobilité, jamais comme prise en charge de douleur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-marche-pieds-nus",
+   "name": "Pieds et marche : se reconnecter au sol",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.posture",
+   "desc": "Pratiquer la marche pieds nus ou en chaussures souples, sentir ses appuis.",
+   "audience": "Marcheurs, sportifs, curieux de bien-être",
+   "skills": [
+    "Observer ses appuis",
+    "Marcher doux",
+    "Étirer les pieds",
+    "Choisir des chaussures souples"
+   ],
+   "appSkills": [
+    "automassage",
+    "meditation-marche"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes pieds, mon sol",
+     "goal": "Marcher 20 minutes en observant ses appuis",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Appuis et allure",
+     "goal": "Repérer et ajuster deux habitudes de pas",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine des pieds",
+     "goal": "Pratiquer exercices et auto-massages 4 semaines",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marche sur terrains variés",
+     "goal": "Marcher 1 heure sur 3 types de sol",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une marche pieds nus",
+     "goal": "Guider en sécurité sur un parcours reconnu",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "tiers-lieu",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "balade",
+    "corps",
+    "nature",
+    "plein-air",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Clubs de marche",
+    "Magasins de running"
+   ],
+   "regulated": "sante",
+   "verdict": "ecarter",
+   "why": "Niche saisonnière sans demande avérée, mieux traitée comme variante d'une balade en conscience.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-danse-libre-expression",
+   "name": "Danse libre et expression corporelle",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.expression",
+   "desc": "Bouger sans chorégraphie, écouter sa musique et se laisser aller en groupe.",
+   "audience": "Adultes, personnes sédentaires, amis, EVJF et équipes",
+   "skills": [
+    "S'échauffer",
+    "Écouter la musique",
+    "Improviser",
+    "Partager"
+   ],
+   "appSkills": [
+    "danse-contemporaine",
+    "improvisation-theatrale"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier laisser-aller",
+     "goal": "Danser 45 minutes sans chorégraphie ni jugement",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Consignes ludiques",
+     "goal": "Explorer 5 thèmes de mouvement avec musique",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 6 semaines",
+     "goal": "Développer sa gestuelle et danser en duo ou en groupe",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Danse personnelle",
+     "goal": "Improviser seul 10 minutes avec confiance",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une danse libre",
+     "goal": "Guider un groupe avec un cadre bienveillant",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-danse",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "danse",
+    "mouvement",
+    "musique",
+    "convivial",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Studios de danse",
+    "Ateliers 5 rythmes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très fédérateur et peu technique, mais dépend d'un lieu avec de l'espace et d'une bonne animation. À tester avant d'investir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-yoga-du-rire",
+   "name": "Yoga du rire",
+   "sector": "bienetre",
+   "category": "bienetre.corps",
+   "subcategory": "bienetre.corps.expression",
+   "desc": "Rire sans raison en groupe, avec exercices de respiration et d'étirement.",
+   "audience": "Équipes, seniors, amis, associations",
+   "skills": [
+    "S'échauffer",
+    "Rire volontaire",
+    "Jeux de groupe",
+    "Relaxation"
+   ],
+   "appSkills": [
+    "respiration",
+    "clown-burlesque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rire pour de rire",
+     "goal": "Participer à une séance complète de 1 heure",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      12,
+      18
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeux et respirations",
+     "goal": "Enchaîner 6 exercices de rire et d'étirement",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      17,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle régulier",
+     "goal": "Participer à un cercle mensuel pendant 3 mois",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Premier animateur",
+     "goal": "Mener 15 minutes devant un petit groupe",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      70,
+      105
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des séances de rire",
+     "goal": "Concevoir et conduire un atelier complet",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      120,
+      210
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "parc",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "entreprises",
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "humour",
+    "convivial",
+    "souffle",
+    "bien-etre",
+    "fete"
+   ],
+   "competitors": [
+    "Clubs de rire",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Concept agréable mais niche étroite. Intéressant en équipe ou en association, peu de volonté de payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-automassage",
+   "name": "Auto-massage",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.automassage",
+   "desc": "Gestes simples pour détendre nuque, épaules, mains et pieds, seul ou en cours collectif.",
+   "audience": "Actifs sédentaires, sportifs, parents, seniors",
+   "skills": [
+    "Cartographier ses tensions",
+    "Gestes de pétrissage",
+    "Pressions douces",
+    "Routine du soir"
+   ],
+   "appSkills": [
+    "automassage",
+    "massage-bien-etre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers gestes",
+     "goal": "Pratiquer 8 gestes de détente de la nuque aux mains",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Zones de tension",
+     "goal": "Adapter les gestes à sa journée de travail",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine du soir",
+     "goal": "Tenir 10 minutes pendant 3 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séance sur mesure",
+     "goal": "Composer sa séance selon la fatigue du jour",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier d'auto-massage",
+     "goal": "Guider un groupe avec prudence",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "soin",
+    "calme",
+    "bien-etre",
+    "geste"
+   ],
+   "competitors": [
+    "Instituts",
+    "Naturopathes",
+    "Applications"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Très accessible, matériel presque nul, résultat ressenti en 1 h ; bon potentiel en entreprise. Rester dans le registre détente.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-balles-rouleau-fascias",
+   "name": "Balles et rouleau : relâcher les tensions",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.automassage",
+   "desc": "Utiliser balle, rouleau et bâton de massage pour détendre muscles et fascias.",
+   "audience": "Sportifs, actifs sédentaires, coureurs",
+   "skills": [
+    "Choisir un outil",
+    "Pressions glissées",
+    "Respirer",
+    "Routine de récupération"
+   ],
+   "appSkills": [
+    "automassage",
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rouler pour relâcher",
+     "goal": "Utiliser balle et rouleau sur les zones clés",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séquence après sport",
+     "goal": "Enchaîner 15 minutes de détente musculaire",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine régulière",
+     "goal": "Pratiquer 3 fois par semaine pendant un mois",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine personnelle",
+     "goal": "Adapter outils et pression à ses besoins",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer en club",
+     "goal": "Guider un groupe sportif avec limites claires",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-sport",
+    "salle-polyvalente",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "corps",
+    "sport",
+    "bien-etre",
+    "geste",
+    "calme"
+   ],
+   "competitors": [
+    "Salles de sport",
+    "Kinés",
+    "YouTube"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Public sportif réceptif et prêt à acheter du matériel. Risque : éviter tout langage de traitement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-massage-visage",
+   "name": "Auto-massage du visage",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.automassage",
+   "desc": "Gestes de détente du visage et du cou, pour décontracter les traits.",
+   "audience": "Adultes 30-65 ans, personnes en télétravail, soins maison",
+   "skills": [
+    "Lire ses tensions",
+    "Lissage doux",
+    "Gestes du cou",
+    "Routine de 5 minutes"
+   ],
+   "appSkills": [
+    "automassage",
+    "soins-visage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers gestes",
+     "goal": "Pratiquer 6 gestes de détente du visage et du cou",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine complète",
+     "goal": "Enchaîner 10 minutes sans tirer sur la peau",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel du soir",
+     "goal": "Pratiquer 3 semaines avec carnet de sensations",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine personnelle",
+     "goal": "Adapter la séquence à la fatigue du jour",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier visage",
+     "goal": "Guider un groupe avec précautions",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile",
+    "en-ligne",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "corps",
+    "calme",
+    "bien-etre",
+    "mode"
+   ],
+   "competitors": [
+    "Instituts",
+    "Applications beauté"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt fort lié au visage et au bien-être. Offre de soin professionnelle existante ; l'atelier se place sur la pratique à domicile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-reflexologie-partager",
+   "name": "Réflexologie plantaire à partager",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.automassage",
+   "desc": "Gestes de pression sur les pieds pour détendre, sans prétendre soigner.",
+   "audience": "Couples, amis, personnes sédentaires",
+   "skills": [
+    "Positionner le pied",
+    "Pressions douces",
+    "Détendre",
+    "Respecter les limites"
+   ],
+   "appSkills": [
+    "reflexologie-plantaire",
+    "massage-bien-etre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers gestes",
+     "goal": "Pratiquer 6 gestes de pression douce sur un pied",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séquence de 20 minutes",
+     "goal": "Enchaîner détente et respiration en duo",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séances entre proches",
+     "goal": "Pratiquer 3 fois en un mois",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gestes adaptés",
+     "goal": "Ajuster pression et durée selon la personne",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier pieds",
+     "goal": "Guider avec limites claires et sans promesse de soin",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "corps",
+    "calme",
+    "couple",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Instituts",
+    "Praticiens de réflexologie"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Pratique qui se prête à une pratique entre proches. Zone grise « soin » : insister sur détente, aucune promesse de santé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-massage-duo",
+   "name": "Massage en duo bien-être",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.proches",
+   "desc": "Apprendre quelques gestes de détente pour offrir un massage dos et mains à son partenaire.",
+   "audience": "Couples, amis, jeunes parents, cadeaux",
+   "skills": [
+    "S'installer",
+    "Gestes d'effleurage",
+    "Pétrissage doux",
+    "Respecter la limite"
+   ],
+   "appSkills": [
+    "massage-bien-etre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers gestes",
+     "goal": "Offrir 20 minutes de massage du dos à son partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mains et nuque",
+     "goal": "Compléter par deux séquences de détente",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel de couple",
+     "goal": "Pratiquer 4 fois en un mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Toucher ajusté",
+     "goal": "Adapter pression et rythme à la personne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier duo",
+     "goal": "Guider un groupe dans un cadre respectueux",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couple",
+    "soin",
+    "calme",
+    "cadeau",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Spas",
+    "Instituts",
+    "Ateliers en ligne"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Cadeau très demandé, produit simple à comprendre, bonne propension à payer. Cadre clair : détente entre proches.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-massage-bebe-parents",
+   "name": "Massage bébé pour parents",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.proches",
+   "desc": "Gestes doux pour détendre bébé et renforcer le lien, en petit groupe de parents.",
+   "audience": "Parents de bébés 0-12 mois, grands-parents",
+   "skills": [
+    "Préparer bébé",
+    "Gestes doux",
+    "Respecter les signaux",
+    "Routine du bain"
+   ],
+   "appSkills": [
+    "massage-bebe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers gestes",
+     "goal": "Réaliser 6 gestes doux sur poupée puis sur bébé",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine complète",
+     "goal": "Pratiquer 15 minutes après le bain",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel quotidien",
+     "goal": "Installer le moment 3 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gestes adaptés à l'âge",
+     "goal": "Ajuster selon les signaux de bébé",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier parent-bébé",
+     "goal": "Guider un groupe avec prudence et formation reconnue",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "soin",
+    "calme",
+    "bien-etre",
+    "geste"
+   ],
+   "competitors": [
+    "Maternités",
+    "Associations parents",
+    "Instructeurs agréés"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Public très motivé, forte propension à payer et bouche-à-oreille. Respecter les consignes de sécurité et la formation reconnue.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-massage-assis",
+   "name": "Massage assis habillé en entreprise",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.proches",
+   "desc": "Séances courtes de détente assise, sans huile, sur chaise ergonomique.",
+   "audience": "Entreprises, salons professionnels, associations",
+   "skills": [
+    "Position assise",
+    "Gestes d'appui",
+    "Durée courte",
+    "Hygiène"
+   ],
+   "appSkills": [
+    "massage-bien-etre",
+    "automassage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découvrir la détente assise",
+     "goal": "Recevoir 15 minutes de massage assis habillé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mes premiers gestes",
+     "goal": "Pratiquer 6 gestes sur un collègue",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séance d'équipe",
+     "goal": "Réaliser des séances de 20 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Intervenant en entreprise",
+     "goal": "Gérer planning, hygiène et cadre légal",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des intervenants",
+     "goal": "Animer et encadrer des praticiens",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "ent",
+    "argent",
+    "soin",
+    "geste"
+   ],
+   "competitors": [
+    "Prestataires QVT",
+    "Salons de massage"
+   ],
+   "regulated": "sante",
+   "verdict": "ecarter",
+   "why": "Marché B2B déjà occupé par des praticiens professionnels et cadre légal du massage flou. À écarter pour une plateforme entre particuliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-pressions-etirements-japonais",
+   "name": "Pressions et étirements japonais (initiation)",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.proches",
+   "desc": "Pressions douces et étirements inspirés du shiatsu, pratiqués à deux ou seul.",
+   "audience": "Curieux, couples, pratiquants d'arts martiaux",
+   "skills": [
+    "Points de pression",
+    "Étirements",
+    "Respiration",
+    "Travail en binôme"
+   ],
+   "appSkills": [
+    "shiatsu",
+    "massage-bien-etre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Initiation",
+     "goal": "Pratiquer 5 pressions de détente et 3 étirements",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pressions guidées",
+     "goal": "Combiner pressions et étirements en binôme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cycle de 6 séances",
+     "goal": "Pratiquer régulièrement en duo",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique personnelle",
+     "goal": "Composer une séance selon le besoin du jour",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une initiation",
+     "goal": "Guider avec prudence et sans allégation",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "soin",
+    "calme",
+    "bien-etre",
+    "geste"
+   ],
+   "competitors": [
+    "Praticiens de shiatsu",
+    "Écoles"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Terme professionnel encadré ; audience étroite. À proposer en simple découverte et sans allégation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-spa-maison",
+   "name": "Spa à la maison",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.rituels",
+   "desc": "Créer un rituel de spa chez soi : masque, bain, gommage et détente avec des produits simples.",
+   "audience": "Femmes et hommes 25-55 ans, amies, jeunes mamans, cadeaux",
+   "skills": [
+    "Préparer son espace",
+    "Gommages et masques maison",
+    "Rituel du bain",
+    "Respiration"
+   ],
+   "appSkills": [
+    "spa-maison",
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma soirée spa",
+     "goal": "Réaliser un rituel complet de 1 h 30 avec produits maison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Produits maison",
+     "goal": "Préparer 3 soins simples (masque, gommage, bain)",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Spa mensuel",
+     "goal": "Tenir un rituel par mois pendant 3 mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spa de saison",
+     "goal": "Concevoir un rituel adapté à chaque saison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier spa",
+     "goal": "Concevoir et conduire un atelier pour 6 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "parents"
+   ],
+   "senses": [
+    "odorat",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "bien-etre",
+    "cadeau",
+    "calme",
+    "couple"
+   ],
+   "competitors": [
+    "Spas",
+    "Marques cosmétiques",
+    "Ateliers créatifs"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon potentiel cadeau et groupe d'amies, rendu agréable, produit en bonus. Accessible et attractif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-bain-sonore",
+   "name": "Bain sonore et bols chantants",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.rituels",
+   "desc": "Séance allongée au son de bols, gongs et carillons pour déconnecter.",
+   "audience": "Adultes stressés, groupes d'amis, entreprises",
+   "skills": [
+    "S'allonger",
+    "Écouter",
+    "Respirer",
+    "Revenir doucement"
+   ],
+   "appSkills": [
+    "bain-sonore",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première séance",
+     "goal": "Vivre un bain sonore de 45 minutes allongé",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter autrement",
+     "goal": "Explorer timbres et silences sur 3 instruments",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer des bols",
+     "goal": "Manipuler bols et carillons avec justesse",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      85,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Construire une séance",
+     "goal": "Concevoir un bain sonore de 30 minutes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      125,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des bains sonores",
+     "goal": "Conduire des séances pour 10 personnes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "studio-musique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "calme",
+    "bien-etre",
+    "nuit",
+    "son"
+   ],
+   "competitors": [
+    "Studios de yoga",
+    "Praticiens indépendants"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Attrait fort et saisonnalité modérée. Concurrence de praticiens indépendants ; investissement matériel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-bain-gommage-rituel",
+   "name": "Rituels de bain, gommage et hammam maison",
+   "sector": "bienetre",
+   "category": "bienetre.toucher",
+   "subcategory": "bienetre.toucher.rituels",
+   "desc": "Aménager un rituel de soin du corps avec bains, sels et gommages.",
+   "audience": "Adultes, amies, couples",
+   "skills": [
+    "Préparer un bain",
+    "Gommage",
+    "Hydratation",
+    "Respiration"
+   ],
+   "appSkills": [
+    "spa-maison",
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon bain rituel",
+     "goal": "Réaliser un rituel de bain de 40 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gommage maison",
+     "goal": "Préparer 2 gommages et les utiliser",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel du dimanche",
+     "goal": "Installer une routine pendant un mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel de saison",
+     "goal": "Adapter ingrédients et durée aux saisons",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier rituels",
+     "goal": "Guider une petite équipe",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "odorat",
+    "toucher"
+   ],
+   "outputs": [
+    "service",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "bien-etre",
+    "cadeau",
+    "calme",
+    "maison"
+   ],
+   "competitors": [
+    "Spas",
+    "Boutiques bien-être"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Proche du spa maison, déclinaison possible. Moins différenciant à lui seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-sommeil-routines",
+   "name": "Sommeil : routines du soir",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.nuit",
+   "desc": "Rituel du soir, gestion des écrans et préparation de la chambre pour dormir mieux.",
+   "audience": "Actifs, étudiants, parents, jeunes adultes",
+   "skills": [
+    "Rythme du coucher",
+    "Écrans",
+    "Chambre propice",
+    "Détente du soir"
+   ],
+   "appSkills": [
+    "sommeil",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma soirée idéale",
+     "goal": "Construire une routine de 30 minutes sans écran",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chambre propice",
+     "goal": "Ajuster lumière, bruit et température",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un mois de routine",
+     "goal": "Tenir 4 semaines avec carnet de sommeil",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rythme personnel",
+     "goal": "Ajuster selon agenda et saisons",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier sommeil",
+     "goal": "Guider un groupe sans diagnostic ni conseil médical",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nuit",
+    "bien-etre",
+    "calme",
+    "defi",
+    "maison"
+   ],
+   "competitors": [
+    "Applications",
+    "Cliniques du sommeil",
+    "Magazines"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Préoccupation massive, demande récurrente en entreprise et chez les parents. Rester sur l'hygiène de vie, sans soigner l'insomnie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-sieste-micropauses",
+   "name": "Sieste et micro-pauses",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.nuit",
+   "desc": "Apprendre la sieste courte, les pauses de 5 minutes et le repos qui recharge.",
+   "audience": "Salariés, étudiants, télétravailleurs",
+   "skills": [
+    "Durée idéale",
+    "Lieu et lumière",
+    "Réveil doux",
+    "Pause sans écran"
+   ],
+   "appSkills": [
+    "sommeil",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première sieste",
+     "goal": "Faire une sieste de 20 minutes sans culpabilité",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pauses utiles",
+     "goal": "Intégrer 3 micro-pauses de 5 minutes dans la journée",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rythme de l'après-midi",
+     "goal": "Tenir une semaine avec un rituel fixe",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Repos sur mesure",
+     "goal": "Adapter durée et lieu à sa journée",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des pauses repos",
+     "goal": "Guider un groupe en entreprise",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nuit",
+    "calme",
+    "bien-etre",
+    "defi",
+    "ent"
+   ],
+   "competitors": [
+    "Espaces de sieste",
+    "Entreprises"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Concept sympathique, mais peu de lieux adaptés et durée courte. À associer à un événement ou à l'entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-routine-matin",
+   "name": "Routine du matin qui tient",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.nuit",
+   "desc": "Construire un matin simple : réveil, lumière, mouvement et petit-déjeuner.",
+   "audience": "Actifs, étudiants, parents",
+   "skills": [
+    "Réveil doux",
+    "Mouvement matinal",
+    "Petit-déjeuner",
+    "Planifier"
+   ],
+   "appSkills": [
+    "routines-matin",
+    "sommeil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon matin idéal",
+     "goal": "Définir 3 gestes de départ réalisables",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine de 20 minutes",
+     "goal": "Tester la séquence 1 semaine",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine tenue",
+     "goal": "Tenir 4 semaines avec suivi simple",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Matin adapté",
+     "goal": "Ajuster selon saison et planning",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier routines",
+     "goal": "Guider un groupe de 8 personnes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "defi",
+    "calme",
+    "cafe",
+    "maison"
+   ],
+   "competitors": [
+    "Applications",
+    "Coachs de vie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Beaucoup de contenu gratuit ; l'atelier gagne s'il est en cercle de suivi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-stress-boite-outils",
+   "name": "Gestion du stress : boîte à outils",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.stress",
+   "desc": "Respiration, mouvement, pauses et organisation pour garder la tête froide.",
+   "audience": "Actifs, étudiants, parents, aidants",
+   "skills": [
+    "Repérer ses signaux",
+    "Respirer",
+    "Bouger",
+    "Poser des limites"
+   ],
+   "appSkills": [
+    "gestion-du-stress",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma boîte à outils",
+     "goal": "Choisir 3 techniques de calme et les essayer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Situations de stress",
+     "goal": "Appliquer ses outils à deux cas réels",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de 4 semaines",
+     "goal": "Tenir un plan personnel avec bilan hebdomadaire",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie face à la pression",
+     "goal": "Gérer seul une journée à fort stress",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier stress",
+     "goal": "Guider un groupe avec un cadre clair",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "calme",
+    "souffle",
+    "defi",
+    "parole"
+   ],
+   "competitors": [
+    "Psychologues",
+    "Sophrologues",
+    "Entreprises"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Sujet universel, demande B2B et B2C. Rester sur des outils pratiques, hors soin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-energie-rythmes",
+   "name": "Énergie et rythmes : se connaître",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.stress",
+   "desc": "Observer ses pics d'énergie, planifier son temps et mieux récupérer.",
+   "audience": "Actifs, indépendants, étudiants",
+   "skills": [
+    "Observer son énergie",
+    "Planifier",
+    "Récupérer",
+    "Dire non"
+   ],
+   "appSkills": [
+    "routines-matin",
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Carte de mon énergie",
+     "goal": "Noter 7 jours d'énergie et de fatigue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Planning sur mes pics",
+     "goal": "Placer ses tâches selon son rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rythme durable",
+     "goal": "Tenir 4 semaines avec pauses prévues",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rythme maîtrisé",
+     "goal": "Ajuster selon saisons et périodes chargées",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier énergie",
+     "goal": "Guider des pairs avec méthode",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "entreprise",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "argent",
+    "calme",
+    "defi",
+    "maison"
+   ],
+   "competitors": [
+    "Coachs",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Voisin du coaching personnel, marché concurrentiel. À tester auprès des indépendants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-habitudes-bonnes-resolutions",
+   "name": "Habitudes : tenir ses bonnes résolutions",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.habitudes",
+   "desc": "Méthode pour installer une petite habitude et la tenir.",
+   "audience": "Actifs, étudiants, parents",
+   "skills": [
+    "Choisir une habitude",
+    "La rendre simple",
+    "Suivre",
+    "Se réajuster"
+   ],
+   "appSkills": [
+    "routines-matin",
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon habitude cible",
+     "goal": "Choisir une micro-habitude et la planifier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rituel déclencheur",
+     "goal": "Associer l'habitude à un signal quotidien",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défi de 21 jours",
+     "goal": "Tenir 3 semaines avec suivi",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Système durable",
+     "goal": "Ajouter une seconde habitude sans abandonner la première",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle d'habitudes",
+     "goal": "Faciliter un groupe de suivi",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "defi",
+    "calme",
+    "argent",
+    "maison"
+   ],
+   "competitors": [
+    "Applications",
+    "Coachs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Beaucoup de contenus gratuits ; format cercle récurrent pour garantir le suivi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-digital-rituels-soir",
+   "name": "Rituels de déconnexion du soir",
+   "sector": "bienetre",
+   "category": "bienetre.sommeil",
+   "subcategory": "bienetre.sommeil.habitudes",
+   "desc": "Remplacer les écrans du soir par des activités qui apaisent.",
+   "audience": "Actifs, parents, jeunes adultes",
+   "skills": [
+    "Ranger les écrans",
+    "Choisir une activité",
+    "Éclairage doux",
+    "Écrire"
+   ],
+   "appSkills": [
+    "detox-numerique",
+    "sommeil"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Éteindre en douceur",
+     "goal": "Instaurer 1 heure sans écran le soir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Activités du soir",
+     "goal": "Tester 5 activités calmes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel tenu",
+     "goal": "Tenir 3 semaines avec suivi",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel ajusté",
+     "goal": "Adapter selon l'agenda et la famille",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle déconnexion",
+     "goal": "Faciliter un groupe de suivi",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nuit",
+    "calme",
+    "bien-etre",
+    "defi",
+    "tech"
+   ],
+   "competitors": [
+    "Applications",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Recouvre sommeil et détox numérique ; à fusionner dans ces ateliers plutôt qu'à proposer seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-tisanes-plantes",
+   "name": "Tisanes et plantes du quotidien",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.plantes",
+   "desc": "Composer ses tisanes, reconnaître quelques plantes et en connaître les usages simples.",
+   "audience": "Adultes curieux, amateurs de thé, jardiniers",
+   "skills": [
+    "Reconnaître les plantes",
+    "Doser une infusion",
+    "Composer un mélange",
+    "Conserver"
+   ],
+   "appSkills": [
+    "tisanes-plantes",
+    "the-infusions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première tisane",
+     "goal": "Composer et déguster un mélange de 3 plantes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plantes du quotidien",
+     "goal": "Reconnaître et utiliser 8 plantes courantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tisanes de saison",
+     "goal": "Créer 4 mélanges adaptés à la saison",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mélanges personnels",
+     "goal": "Composer selon goûts et précautions d'usage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier plantes",
+     "goal": "Guider avec prudence et sans allégation santé",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "cafe",
+    "boutique",
+    "tiers-lieu",
+    "jardin-partage",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "boisson",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "the",
+    "plante",
+    "gourmand",
+    "calme",
+    "nature"
+   ],
+   "competitors": [
+    "Herboristeries",
+    "Boutiques de thé"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Public large, produit à emporter, belle compatibilité avec cafés et boutiques de thé. Pas d'allégation santé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-huiles-essentielles-prudence",
+   "name": "Huiles essentielles : usages prudents",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.plantes",
+   "desc": "Connaître les précautions, diffuser et mélanger simplement pour l'ambiance.",
+   "audience": "Adultes, parents, curieux",
+   "skills": [
+    "Précautions",
+    "Diffuser",
+    "Mélanger",
+    "Conserver"
+   ],
+   "appSkills": [
+    "aromatherapie",
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découverte des senteurs",
+     "goal": "Reconnaître 6 odeurs et savoir les ranger",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Précautions d'usage",
+     "goal": "Savoir qui doit s'abstenir et pourquoi",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mélanges d'ambiance",
+     "goal": "Composer 3 mélanges pour diffuser",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Usage éclairé",
+     "goal": "Concevoir des routines d'ambiance prudentes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier prudent",
+     "goal": "Guider avec règles de sécurité écrites",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "parents"
+   ],
+   "senses": [
+    "odorat",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "odorat",
+    "maison",
+    "bien-etre",
+    "cadeau"
+   ],
+   "competitors": [
+    "Pharmacies",
+    "Aromathérapeutes"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Forte demande mais risque réel (enfants, grossesse). À limiter à l'ambiance et à la prudence, sans conseil de soin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-alimentation-consciente",
+   "name": "Manger en pleine conscience",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.plantes",
+   "desc": "Ralentir, savourer et écouter sa faim à travers un repas ou une dégustation guidée.",
+   "audience": "Adultes pressés, étudiants, groupes d'amis",
+   "skills": [
+    "Savourer",
+    "Repérer la faim",
+    "Manger sans écran",
+    "Choisir"
+   ],
+   "appSkills": [
+    "alimentation-consciente",
+    "meditation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un raisin, un repas",
+     "goal": "Déguster en pleine conscience pendant 20 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Faim et satiété",
+     "goal": "Repérer ses signaux sur trois repas",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Repas sans écran",
+     "goal": "Tenir une semaine de repas attentifs",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      85,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rythme de repas",
+     "goal": "Adapter à sa vie et à ses contraintes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      125,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un repas en conscience",
+     "goal": "Guider un repas collectif",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "restaurant",
+    "cafe",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "calme",
+    "bien-etre",
+    "cuisine-du-monde",
+    "convivial"
+   ],
+   "competitors": [
+    "Nutritionnistes",
+    "Associations"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Mix gourmand et calme, sensible au registre nutrition. Pas de conseil diététique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-bain-de-foret",
+   "name": "Bain de forêt",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.sens",
+   "desc": "Marcher lentement en forêt, s'arrêter, observer, écouter, respirer.",
+   "audience": "Citadins, couples, familles, entreprises",
+   "skills": [
+    "Marcher lentement",
+    "Observer",
+    "Respirer",
+    "S'asseoir en silence"
+   ],
+   "appSkills": [
+    "bain-de-foret",
+    "meditation-marche"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première immersion",
+     "goal": "Marcher 2 heures en conscience dans un bois",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Forêt et sens",
+     "goal": "Pratiquer 6 exercices sensoriels guidés",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sorties régulières",
+     "goal": "Faire 3 sorties dans la saison",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      95,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sorties personnelles",
+     "goal": "Concevoir sa propre balade",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      145,
+      225
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un bain de forêt",
+     "goal": "Guider un groupe en forêt avec repères de sécurité",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      255,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "odorat",
+    "ouie"
+   ],
+   "outputs": [
+    "service",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "balade",
+    "plein-air",
+    "bien-etre",
+    "calme"
+   ],
+   "competitors": [
+    "Guides de forêt",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Fort attrait des citadins, besoin de transport mais saison longue. Peu de concurrence structurée en Île-de-France.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-promenade-sensorielle-ville",
+   "name": "Promenade sensorielle en ville",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.sens",
+   "desc": "Redécouvrir son quartier par les sons, odeurs, textures et lumières.",
+   "audience": "Citadins, touristes, couples, groupes d'amis",
+   "skills": [
+    "Écouter",
+    "Observer",
+    "Toucher",
+    "Noter"
+   ],
+   "appSkills": [
+    "bain-de-foret",
+    "meditation-marche"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon quartier autrement",
+     "goal": "Marcher 1 heure en attention aux sons et odeurs",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cinq sens en ville",
+     "goal": "Explorer sons, odeurs, textures et lumières",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carnet sensoriel",
+     "goal": "Noter 4 sorties dans un carnet",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Parcours personnel",
+     "goal": "Concevoir un circuit de 1 h 30",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une promenade",
+     "goal": "Conduire un groupe sur un circuit préparé",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "touristes",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "vue"
+   ],
+   "outputs": [
+    "carte",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ville",
+    "balade",
+    "bien-etre",
+    "patrimoine",
+    "calme"
+   ],
+   "competitors": [
+    "Guides urbains",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Idée sympathique, peu d'offre. Fort potentiel pour touristes et équipes mais prix modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-jardinage-detente",
+   "name": "Jardiner pour se détendre",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.sens",
+   "desc": "Semis, rempotage et soin des plantes comme pause active et apaisante.",
+   "audience": "Citadins, seniors, bureaux, familles",
+   "skills": [
+    "Rempoter",
+    "Semer",
+    "Arroser",
+    "Observer"
+   ],
+   "appSkills": [
+    "plantes-interieur",
+    "semis-boutures",
+    "potager-balcon"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes mains dans la terre",
+     "goal": "Rempoter 3 plantes en un atelier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Semer et observer",
+     "goal": "Semer et suivre 4 semaines de pousse",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petit potager de balcon",
+     "goal": "Cultiver 4 variétés sur un balcon",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      85,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jardin personnel",
+     "goal": "Concevoir et entretenir son coin vert",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      125,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier jardin",
+     "goal": "Guider un groupe de 8 personnes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      225,
+      390
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "jardin-partage",
+    "tiers-lieu",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "plante",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "jardin",
+    "calme",
+    "nature",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Jardineries",
+    "Jardins partagés"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large et saison longue, mais forte dépendance au lieu (jardin partagé, terrasse). À tester en partenariat.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-eau-froide-premiers-bains",
+   "name": "Eau froide : douche et premiers bains",
+   "sector": "bienetre",
+   "category": "bienetre.nature",
+   "subcategory": "bienetre.nature.sens",
+   "desc": "Découvrir l'eau fraîche avec progressivité, sécurité et respect de ses limites.",
+   "audience": "Sportifs, curieux de défis, nageurs en eau libre",
+   "skills": [
+    "Respirer",
+    "Entrer progressivement",
+    "Observer ses signaux",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "wim-hof",
+    "respiration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première douche fraîche",
+     "goal": "Tenir 1 minute en confort et en sécurité",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premiers bains",
+     "goal": "Entrer et sortir de l'eau avec un encadrant",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel régulier",
+     "goal": "Tenir 4 semaines avec suivi de sensations",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie prudente",
+     "goal": "Connaître ses limites et savoir renoncer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer en sécurité",
+     "goal": "Encadrer avec protocole de sécurité écrit",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 2,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "bateau"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "eau",
+    "defi",
+    "plein-air",
+    "souffle",
+    "corps"
+   ],
+   "competitors": [
+    "Clubs de nage",
+    "Instructeurs"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Risque physique réel (froid, noyade) et assurance lourde ; la méthode froid et respiration couvre déjà l'essentiel du besoin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-parents-souffler-bebe",
+   "name": "Souffler avec bébé : relaxation pour parents",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.parents",
+   "desc": "Exercices de détente à faire avec bébé et pendant les micro-pauses.",
+   "audience": "Parents de bébés 0-18 mois",
+   "skills": [
+    "Respiration",
+    "Mouvements doux",
+    "Pause avec bébé",
+    "Soutien entre parents"
+   ],
+   "appSkills": [
+    "respiration",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une pause à deux",
+     "goal": "Pratiquer 15 minutes de détente avec bébé",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routines courtes",
+     "goal": "Utiliser 3 exercices en micro-pauses",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle de parents",
+     "goal": "Participer à un cercle mensuel",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Soutien entre pairs",
+     "goal": "Partager ses outils avec un autre parent",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier parents",
+     "goal": "Guider un cercle de parents",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "calme",
+    "bien-etre",
+    "souffle",
+    "parole"
+   ],
+   "competitors": [
+    "Maternités",
+    "Associations"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Public très demandeur mais disponibilité limitée, budget modeste. Le lien social est le principal attrait.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-enfants-calme-respiration",
+   "name": "Calme et respiration pour enfants",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.parents",
+   "desc": "Jeux de souffle, relaxation en histoires et mouvements doux pour enfants de 5 à 11 ans.",
+   "audience": "Enfants 5-11 ans, parents, écoles",
+   "skills": [
+    "Jeux de respiration",
+    "Relaxation en histoire",
+    "Mouvements doux",
+    "Retour au calme"
+   ],
+   "appSkills": [
+    "respiration",
+    "relaxation-guidee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer à respirer",
+     "goal": "Pratiquer 5 jeux de respiration en groupe",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Histoires de détente",
+     "goal": "Relaxer en récit pendant 15 minutes",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel familial",
+     "goal": "Pratiquer à la maison pendant 3 semaines",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Choisir son exercice",
+     "goal": "Aider l'enfant à choisir seul son outil de calme",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer auprès d'enfants",
+     "goal": "Guider un groupe avec cadre et encadrement adaptés",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "ecole",
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "enfants",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "enfants",
+    "calme",
+    "souffle",
+    "recit"
+   ],
+   "competitors": [
+    "Écoles",
+    "Associations"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin des parents et enseignants ; cadre enfants exigeant (encadrement, assurance). Prix modeste.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-ados-stress-examens",
+   "name": "Gérer le stress des examens (ados)",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.parents",
+   "desc": "Techniques de calme, organisation et sommeil avant bac et brevet.",
+   "audience": "Ados 14-18 ans, parents, établissements",
+   "skills": [
+    "Respirer",
+    "Organiser ses révisions",
+    "Sommeil",
+    "Parler à ses parents"
+   ],
+   "appSkills": [
+    "gestion-du-stress",
+    "apprendre-a-apprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon plan anti-stress",
+     "goal": "Choisir 3 outils de calme et un planning",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Révisions et pauses",
+     "goal": "Planifier 2 semaines de révisions avec pauses",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jour J",
+     "goal": "Préparer la veille et le matin d'un examen",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie",
+     "goal": "Gérer seul un oral blanc",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier entre pairs",
+     "goal": "Former des ados relais",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "ecole",
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "ados",
+    "parents",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "calme",
+    "souffle",
+    "defi",
+    "ecole"
+   ],
+   "competitors": [
+    "Coachs scolaires",
+    "Établissements"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Forte demande saisonnière des parents, avec prix acceptable. Public captif (avant juin).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-seniors-memoire-attention",
+   "name": "Mémoire et attention : exercices ludiques",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.seniors",
+   "desc": "Jeux de mémoire, observation et concentration, sans visée de soin.",
+   "audience": "Seniors 60-85 ans, aidants, résidences",
+   "skills": [
+    "Jeux de mémoire",
+    "Observation",
+    "Attention",
+    "Routines"
+   ],
+   "appSkills": [
+    "memoire-techniques",
+    "sudoku-logique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers exercices",
+     "goal": "Pratiquer 6 jeux de mémoire en groupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      12,
+      18
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine de 20 minutes",
+     "goal": "Tenir une séance hebdomadaire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      17,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle mensuel",
+     "goal": "Participer régulièrement pendant 3 mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exercices personnels",
+     "goal": "Créer ses propres jeux de mémoire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      70,
+      105
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier mémoire",
+     "goal": "Guider un groupe de seniors",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      120,
+      210
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "calme",
+    "famille",
+    "reflexion"
+   ],
+   "competitors": [
+    "Associations de seniors",
+    "CCAS"
+   ],
+   "regulated": "sante",
+   "verdict": "prioritaire",
+   "why": "Demande en forte croissance, public disponible en journée, petit budget mais très fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-seniors-rituels-quotidien",
+   "name": "Rituels du quotidien pour bien vieillir",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.seniors",
+   "desc": "Routine simple de mouvement, respiration, repas et lien social.",
+   "audience": "Seniors actifs 65-85 ans, aidants",
+   "skills": [
+    "Rituel du matin",
+    "Respiration",
+    "Mouvement doux",
+    "Contacts"
+   ],
+   "appSkills": [
+    "respiration",
+    "yoga-hatha"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon rituel",
+     "goal": "Choisir 3 gestes de bien-être quotidien",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      12,
+      18
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine hebdomadaire",
+     "goal": "Tenir 4 semaines avec un petit groupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      17,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituels partagés",
+     "goal": "Pratiquer en groupe avec un voisin",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituels adaptés",
+     "goal": "Ajuster selon forme et saison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      70,
+      105
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Faciliter un groupe de seniors",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      120,
+      210
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "calme",
+    "famille",
+    "mouvement",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "CCAS",
+    "Mairies"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin fort, financements locaux, prix individuel faible ; intérêt surtout pour animer des rencontres.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-pro-pause-bien-etre",
+   "name": "Pause bien-être en entreprise",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.travail",
+   "desc": "Une séance de 45 minutes pour décompresser : souffle, étirements et auto-massage.",
+   "audience": "Équipes de PME, grandes entreprises, associations, coworkings",
+   "skills": [
+    "Respirer",
+    "Étirer",
+    "Auto-massage",
+    "Reprendre"
+   ],
+   "appSkills": [
+    "respiration",
+    "automassage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pause découverte",
+     "goal": "Pratiquer 45 minutes de souffle, d'étirements et d'auto-massage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      65,
+      95
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routines d'équipe",
+     "goal": "Choisir 3 pauses adaptées aux postes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      90,
+      130
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel collectif",
+     "goal": "Tenir 4 semaines avec l'équipe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      240,
+      335
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ambassadeur bien-être",
+     "goal": "Animer une pause en interne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      360,
+      560
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des relais",
+     "goal": "Former des collègues à animer",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      640,
+      1120
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "ent",
+    "souffle",
+    "corps",
+    "calme"
+   ],
+   "competitors": [
+    "Prestataires QVT",
+    "Salles de sport"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Budget QVT existant, besoin récurrent des entreprises. Prix élevé par rapport au B2C.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-pro-atelier-anti-stress-equipe",
+   "name": "Atelier anti-stress pour équipes",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.travail",
+   "desc": "Demi-journée de pratique pour réduire la tension collective et mieux travailler ensemble.",
+   "audience": "Équipes, managers, services RH",
+   "skills": [
+    "Respirer",
+    "Communiquer",
+    "Pauses",
+    "Règles d'équipe"
+   ],
+   "appSkills": [
+    "gestion-du-stress",
+    "animation-de-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découverte en équipe",
+     "goal": "Pratiquer 3 outils de calme ensemble",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pratiques d'équipe",
+     "goal": "Instaurer 2 rituels de calme partagés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      100,
+      145
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Règles communes",
+     "goal": "Rédiger un cadre d'équipe pour la charge et les pauses",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      270,
+      380
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivi du climat",
+     "goal": "Suivre l'évolution sur 2 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      405,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des référents",
+     "goal": "Animer en interne",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      720,
+      1260
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "journee",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "ent",
+    "debat",
+    "souffle",
+    "convivial"
+   ],
+   "competitors": [
+    "Cabinets QVT",
+    "Coachs"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Fortes attentes RH ; marché concurrentiel de cabinets. Cadrer en prévention, jamais en soin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-pro-prevenir-epuisement",
+   "name": "Prévenir l'épuisement : signaux et limites",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.travail",
+   "desc": "Repérer ses limites, poser des priorités et s'accorder de vraies pauses.",
+   "audience": "Cadres, indépendants, aidants, soignants",
+   "skills": [
+    "Repérer les signaux",
+    "Poser des limites",
+    "Prioriser",
+    "Demander de l'aide"
+   ],
+   "appSkills": [
+    "gestion-du-stress",
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes signaux",
+     "goal": "Repérer 5 signes d'alerte personnels",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mes limites",
+     "goal": "Poser 3 limites réalistes dans sa semaine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de récupération",
+     "goal": "Tenir 4 semaines avec bilans",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie",
+     "goal": "Ajuster son rythme et savoir demander de l'aide",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Faciliter sans soigner et orienter vers un professionnel",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "argent",
+    "calme",
+    "parole",
+    "defi"
+   ],
+   "competitors": [
+    "Psychologues du travail",
+    "Coachs"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin réel mais frontière avec le soin psychologique ; à rediriger vers des professionnels en cas de besoin.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-couple-rituels-retrouvailles",
+   "name": "Rituels de couple : se retrouver",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.relations",
+   "desc": "Soirée guidée : respiration, toucher, écoute, jeux et rituels pour se reconnecter.",
+   "audience": "Couples 28-55 ans, jeunes parents",
+   "skills": [
+    "Écouter",
+    "Toucher",
+    "Jouer",
+    "Rituels"
+   ],
+   "appSkills": [
+    "massage-bien-etre",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Soirée à deux",
+     "goal": "Vivre un rituel complet de 2 heures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écoute et gestes",
+     "goal": "Pratiquer 3 exercices d'écoute et de toucher",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituels de couple",
+     "goal": "Installer 2 rituels sur un mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituels personnalisés",
+     "goal": "Concevoir un rituel à son image",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée de couples",
+     "goal": "Guider un groupe de 4 couples",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "domicile",
+    "restaurant"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couple",
+    "bien-etre",
+    "calme",
+    "convivial",
+    "cadeau"
+   ],
+   "competitors": [
+    "Thérapeutes de couple",
+    "Spas"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Cadeau et soirée en demande, forte capacité à payer. Pas de thérapie de couple : cadre ludique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-gratitude-famille-diner",
+   "name": "Gratitude en famille : le rituel du dîner",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.relations",
+   "desc": "Petits rituels à table pour parler de sa journée et s'écouter.",
+   "audience": "Familles, couples, grands-parents",
+   "skills": [
+    "Poser une question",
+    "Écouter",
+    "Remercier",
+    "Garder un carnet"
+   ],
+   "appSkills": [
+    "journaling-bien-etre",
+    "ecoute-active"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier rituel",
+     "goal": "Pratiquer 3 dîners avec une question du jour",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Questions de table",
+     "goal": "Choisir 10 questions qui marchent",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel du mois",
+     "goal": "Tenir 4 semaines avec un carnet",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel de famille",
+     "goal": "Adapter aux âges des enfants",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier",
+     "goal": "Guider un groupe de familles",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "calme",
+    "convivial",
+    "recit",
+    "gourmand"
+   ],
+   "competitors": [
+    "Associations",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Valeur affective, peu de volonté de payer. Intérêt surtout comme complément à un atelier parents.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-solitude-choisie",
+   "name": "Apprivoiser la solitude choisie",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.relations",
+   "desc": "Apprendre à passer du temps seul sans s'isoler : rituels, sorties, projets.",
+   "audience": "Adultes en transition, jeunes actifs, retraités, nouveaux arrivants",
+   "skills": [
+    "Passer un moment seul",
+    "Sorties en solo",
+    "Projets personnels",
+    "Créer du lien"
+   ],
+   "appSkills": [
+    "journaling-bien-etre",
+    "meditation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un moment pour moi",
+     "goal": "Planifier 2 heures seul sans écran",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sorties en solo",
+     "goal": "Tester 3 activités en solitaire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituels de solitude",
+     "goal": "Tenir 4 semaines avec carnet",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Équilibre",
+     "goal": "Alterner temps seul et temps partagés",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle",
+     "goal": "Faciliter sans faire de thérapie",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "parole",
+    "calme",
+    "ville",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations",
+    "Thérapeutes"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Sujet très présent mais frontière avec le soin psychique. Idéal en cercle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "bienetre-estime-de-soi-ancrage",
+   "name": "Estime de soi : exercices d'ancrage",
+   "sector": "bienetre",
+   "category": "bienetre.vie",
+   "subcategory": "bienetre.vie.relations",
+   "desc": "Exercices de posture, de voix et d'écriture pour se sentir plus solide.",
+   "audience": "Adultes en transition, jeunes actifs, étudiants",
+   "skills": [
+    "Posture",
+    "Voix",
+    "Écriture",
+    "Petites actions"
+   ],
+   "appSkills": [
+    "gestion-emotions",
+    "journaling-bien-etre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon point de départ",
+     "goal": "Pratiquer 3 exercices de posture et d'écriture",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Posture et voix",
+     "goal": "Pratiquer 6 exercices devant un groupe",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défis de confiance",
+     "goal": "Tenir 4 semaines de petits défis",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie",
+     "goal": "Concevoir son plan personnel",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier",
+     "goal": "Guider sans promesse thérapeutique",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "parole",
+    "voix",
+    "defi",
+    "calme"
+   ],
+   "competitors": [
+    "Coachs",
+    "Ateliers de théâtre"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin fort mais marché saturé de coachs ; rester sur un cadre pratique.",
+   "confidence": "estimation"
+  }
+ ]
+}

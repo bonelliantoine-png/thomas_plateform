@@ -1,0 +1,8628 @@
+{
+ "sector": "sport",
+ "categories": [
+  {
+   "id": "sport.course",
+   "name": "Course et marche",
+   "desc": "Courir et marcher régulièrement, seul ou en groupe, du premier kilomètre au trail.",
+   "subcategories": [
+    {
+     "id": "sport.course.course",
+     "name": "Course à pied",
+     "desc": "Du premier 10 km au semi, sur route ou en sentier."
+    },
+    {
+     "id": "sport.course.marche",
+     "name": "Marche",
+     "desc": "Marche active, nordique et rapide."
+    }
+   ]
+  },
+  {
+   "id": "sport.fitness",
+   "name": "Renforcement et souplesse",
+   "desc": "Se muscler, s'assouplir et se dépenser sans matériel lourd.",
+   "subcategories": [
+    {
+     "id": "sport.fitness.renfo",
+     "name": "Renforcement",
+     "desc": "Poids du corps, salle, kettlebell et dos."
+    },
+    {
+     "id": "sport.fitness.mobilite",
+     "name": "Mobilité et souplesse",
+     "desc": "Étirements, yoga et pilates."
+    },
+    {
+     "id": "sport.fitness.cardio",
+     "name": "Cardio",
+     "desc": "HIIT, corde à sauter et séances en plein air."
+    }
+   ]
+  },
+  {
+   "id": "sport.jeux",
+   "name": "Raquettes et sports collectifs",
+   "desc": "Jouer en équipe ou à deux, entre amis ou en club.",
+   "subcategories": [
+    {
+     "id": "sport.jeux.raquettes",
+     "name": "Raquettes",
+     "desc": "Padel, tennis, badminton, pickleball, ping-pong."
+    },
+    {
+     "id": "sport.jeux.collectif",
+     "name": "Sports collectifs",
+     "desc": "Foot, volley, ultimate, basket, touch rugby."
+    },
+    {
+     "id": "sport.jeux.organiser",
+     "name": "Organiser et arbitrer",
+     "desc": "Les volets non sportifs : tournois, arbitrage."
+    }
+   ]
+  },
+  {
+   "id": "sport.combat",
+   "name": "Combat et défense",
+   "desc": "Percussion, saisies, armes et prévention.",
+   "subcategories": [
+    {
+     "id": "sport.combat.percussion",
+     "name": "Percussion",
+     "desc": "Boxe et boxe thaï."
+    },
+    {
+     "id": "sport.combat.saisies",
+     "name": "Saisies et sol",
+     "desc": "Judo et jujitsu."
+    },
+    {
+     "id": "sport.combat.armes",
+     "name": "Escrime et tir",
+     "desc": "Épée, sabre et arc."
+    },
+    {
+     "id": "sport.combat.defense",
+     "name": "Défense",
+     "desc": "Prévention, réflexes et chutes."
+    }
+   ]
+  },
+  {
+   "id": "sport.eau",
+   "name": "Natation et sports d'eau",
+   "desc": "Nager, respirer et se sentir à l'aise dans l'eau.",
+   "subcategories": [
+    {
+     "id": "sport.eau.natation",
+     "name": "Natation",
+     "desc": "Apprendre à nager et progresser."
+    },
+    {
+     "id": "sport.eau.eau-libre",
+     "name": "Apnée et eau libre",
+     "desc": "Pratiques en milieu naturel ou en apnée."
+    }
+   ]
+  },
+  {
+   "id": "sport.urbain",
+   "name": "Glisse, acrobatie et vélo",
+   "desc": "Rouler, glisser et jouer avec l'équilibre en ville.",
+   "subcategories": [
+    {
+     "id": "sport.urbain.glisse",
+     "name": "Glisse",
+     "desc": "Skate, roller, longboard."
+    },
+    {
+     "id": "sport.urbain.acro",
+     "name": "Acrobatie et équilibre",
+     "desc": "Parkour, slackline, acrobaties."
+    },
+    {
+     "id": "sport.urbain.velo",
+     "name": "Cyclisme",
+     "desc": "Sorties à vélo, sécurité urbaine."
+    }
+   ]
+  },
+  {
+   "id": "sport.preparation",
+   "name": "Préparation, matériel et récupération",
+   "desc": "Les volets non sportifs qui aident à pratiquer mieux et plus longtemps.",
+   "subcategories": [
+    {
+     "id": "sport.preparation.nutrition",
+     "name": "Alimentation du sportif",
+     "desc": "Manger et boire autour de l'effort."
+    },
+    {
+     "id": "sport.preparation.recup",
+     "name": "Récupération",
+     "desc": "Massage, sommeil et repos."
+    },
+    {
+     "id": "sport.preparation.materiel",
+     "name": "Matériel et données",
+     "desc": "Choisir, entretenir, mesurer et planifier."
+    }
+   ]
+  },
+  {
+   "id": "sport.publics",
+   "name": "Sport pour tous les publics",
+   "desc": "Adapter la pratique aux seniors, aux enfants, aux entreprises et aux handicaps.",
+   "subcategories": [
+    {
+     "id": "sport.publics.seniors",
+     "name": "Seniors",
+     "desc": "Gym douce et équilibre."
+    },
+    {
+     "id": "sport.publics.familles",
+     "name": "Enfants et familles",
+     "desc": "Éveil moteur et jeux sportifs."
+    },
+    {
+     "id": "sport.publics.groupes",
+     "name": "Entreprises et publics spécifiques",
+     "desc": "Séances de groupe et sport adapté."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "sport-course-premier-10km",
+   "name": "Courir son premier 10 km",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.course",
+   "desc": "Passer de la marche-course à 10 km sans se blesser, en groupe de niveau.",
+   "audience": "Débutants 25-50 ans",
+   "skills": [
+    "Alterner marche et course",
+    "Construire un plan",
+    "Gérer son allure",
+    "Récupérer"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier footing",
+     "goal": "Courir 20 minutes en alternant marche et course",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courir 5 km",
+     "goal": "Courir 5 km sans s'arrêter",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Préparer un 10 km",
+     "goal": "Suivre un plan de 8 semaines",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Courir 10 km à son rythme",
+     "goal": "Courir 10 km en gérant allure et ravitaillement",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîneur de pairs",
+     "goal": "Encadrer un groupe avec un coach diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "defi",
+    "balade",
+    "corps",
+    "plein-air"
+   ],
+   "competitors": [
+    "Run clubs",
+    "Applications",
+    "Clubs d'athlétisme"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Demande massive et peu coûteuse. L'entraînement payant relève d'un éducateur diplômé : la plateforme organise des sorties entre pairs et des stages avec coachs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-course-run-club-social",
+   "name": "Run club social de quartier",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.course",
+   "desc": "Courir à allure conversationnelle en groupe puis boire un verre.",
+   "audience": "Jeunes actifs 25-40 ans, nouveaux arrivants",
+   "skills": [
+    "Échauffement",
+    "Allure conversationnelle",
+    "Itinéraire",
+    "Convivialité"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Rejoindre le groupe",
+     "goal": "Courir 5 km à allure douce avec le groupe",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courir régulier",
+     "goal": "Venir chaque semaine",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Capitaine de groupe",
+     "goal": "Choisir parcours et rythme",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Run club thématique",
+     "goal": "Organiser des sorties à thème",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de run club",
+     "goal": "Former des capitaines avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 5,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "cafe",
+    "bar"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "ville",
+    "apero",
+    "balade"
+   ],
+   "competitors": [
+    "Run clubs",
+    "Strava"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Format entre pairs en pleine croissance (Paris, Lyon), gratuit côté participants mais fort potentiel de partenariat avec bars et marques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-course-trail-initiation",
+   "name": "Trail : initiation en sentiers",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.course",
+   "desc": "Courir en sentier, gérer les côtes, les descentes et l'équipement.",
+   "audience": "Coureurs réguliers 28-50 ans",
+   "skills": [
+    "Gérer les côtes",
+    "Descendre en sécurité",
+    "Choisir son équipement",
+    "Lire un parcours"
+   ],
+   "appSkills": [
+    "trail-running"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier sentier",
+     "goal": "Courir 8 km en sentier",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Côtes et descentes",
+     "goal": "Courir en gérant dénivelé",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trail de 15 km",
+     "goal": "Courir 15 km avec 500 m de dénivelé",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Trail long",
+     "goal": "Courir 30 km avec ravitaillement",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine trail",
+     "goal": "Encadrer avec un guide diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "nature",
+    "defi",
+    "plein-air",
+    "balade"
+   ],
+   "competitors": [
+    "Clubs de trail",
+    "Marques",
+    "Organisateurs"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande forte, accès aux sentiers depuis Paris à 1 h. Sorties payantes possibles en stage avec accompagnateur diplômé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-course-semi-marathon",
+   "name": "Préparer un semi-marathon",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.course",
+   "desc": "Plan en 12 semaines, sorties longues, nutrition et récupération.",
+   "audience": "Coureurs réguliers 28-55 ans",
+   "skills": [
+    "Plan de 12 semaines",
+    "Sortie longue",
+    "Allure spécifique",
+    "Récupérer"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Courir 10 km",
+     "goal": "Courir 10 km sans douleur",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fractionné et allure",
+     "goal": "Découvrir un fractionné adapté",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie longue",
+     "goal": "Courir 18 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Semi réussi",
+     "goal": "Courir un semi à son rythme",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      50,
+      115
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîneur de pairs",
+     "goal": "Encadrer avec un coach diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "defi",
+    "ville",
+    "plein-air"
+   ],
+   "competitors": [
+    "Clubs d'athlétisme",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Cible engagée, demande d'accompagnement individuel mais encadrement payant réservé aux diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-course-technique-foulee",
+   "name": "Technique de course et prévention des blessures",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.course",
+   "desc": "Améliorer sa foulée, ses appuis et son échauffement pour courir sans se blesser.",
+   "audience": "Coureurs réguliers",
+   "skills": [
+    "Cadence et appuis",
+    "Échauffement",
+    "Renforcement de course",
+    "Identifier une alerte"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Courir plus léger",
+     "goal": "Observer sa foulée sur vidéo",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Appuis et cadence",
+     "goal": "Régler sa cadence",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Renforcement spécifique",
+     "goal": "Pratiquer 4 exercices clés",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      65,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Foulée efficace",
+     "goal": "Corriger ses défauts",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent technique",
+     "goal": "Accompagner avec un coach diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "corps",
+    "science",
+    "ville",
+    "mouvement"
+   ],
+   "competitors": [
+    "Coachs",
+    "Podologues"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande réelle, enseignement payant réservé aux diplômés. Bon complément pour clubs et magasins de running.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-marche-nordique",
+   "name": "Marche nordique",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.marche",
+   "desc": "Technique des bâtons, rythme et sorties collectives en parc ou en forêt.",
+   "audience": "Seniors actifs, adultes 40-70 ans",
+   "skills": [
+    "Technique des bâtons",
+    "Cadence",
+    "Posture",
+    "Choisir son matériel"
+   ],
+   "appSkills": [
+    "marche-nordique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas avec bâtons",
+     "goal": "Marcher avec bâtons 45 minutes",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      5
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Technique fluide",
+     "goal": "Coordonner bras et jambes",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie de 2 h",
+     "goal": "Marcher 10 km en dénivelé",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marche performante",
+     "goal": "Améliorer allure et distance",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      30,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Guide de sorties",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "nature",
+    "balade",
+    "plein-air",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Clubs FFA",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique bien implantée mais vieillissante, rémunération modeste. Se prête à des sorties entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-marche-rapide-sante",
+   "name": "Marche rapide pour la forme",
+   "sector": "sport",
+   "category": "sport.course",
+   "subcategory": "sport.course.marche",
+   "desc": "Marcher vite en ville ou en parc, avec routines et objectifs de pas réalistes.",
+   "audience": "Actifs sédentaires, seniors, entreprises",
+   "skills": [
+    "Allure de marche",
+    "Posture",
+    "Parcours urbains",
+    "Motivation"
+   ],
+   "appSkills": [
+    "marche-nordique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas actifs",
+     "goal": "Marcher 30 minutes à bonne allure",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      5
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Régularité",
+     "goal": "Tenir 3 sorties par semaine",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Marcher plus loin",
+     "goal": "Marcher 10 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marche santé",
+     "goal": "Intégrer la marche au quotidien",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      30,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine de marche",
+     "goal": "Animer des sorties",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 1,
+    "space": 4,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "ville",
+    "balade",
+    "bien-etre",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très accessible et sans diplôme requis, mais faible disposition à payer. À proposer en entreprise ou en pause déjeuner.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-renfo-poids-du-corps",
+   "name": "Renforcement au poids du corps",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.renfo",
+   "desc": "Pompes, squats, gainage et circuits sans matériel, en intérieur ou en parc.",
+   "audience": "Actifs 25-50 ans, étudiants",
+   "skills": [
+    "Technique des mouvements de base",
+    "Gainage",
+    "Progressions",
+    "Programme court"
+   ],
+   "appSkills": [
+    "calisthenics"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers mouvements",
+     "goal": "Réaliser 5 exercices de base",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Circuit simple",
+     "goal": "Enchaîner 20 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Progresser",
+     "goal": "Passer aux variantes",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme personnel",
+     "goal": "Construire son programme",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent séance",
+     "goal": "Animer en pair avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "corps",
+    "sport",
+    "plein-air",
+    "bien-etre",
+    "defi"
+   ],
+   "competitors": [
+    "Coachs",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Pratique la plus accessible, matériel nul. L'enseignement payant relève de diplômés, la plateforme s'appuie sur des coachs agréés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-calisthenics-bases",
+   "name": "Calisthénie : tractions, dips, équilibre",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.renfo",
+   "desc": "Progresser vers tractions, dips et appuis sur barres.",
+   "audience": "Jeunes actifs 20-40 ans",
+   "skills": [
+    "Progression pompes et tractions",
+    "Technique des dips",
+    "Gainage avancé",
+    "Programme"
+   ],
+   "appSkills": [
+    "calisthenics"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première traction assistée",
+     "goal": "Réaliser des tractions avec élastique",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dips et pompes lestées",
+     "goal": "Réaliser 5 dips",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Muscle-up en préparation",
+     "goal": "Construire sa force",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Figures statiques",
+     "goal": "Tenir front lever ou planche",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent calisthénie",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "sport",
+    "plein-air",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Parcs de street workout",
+    "Coachs"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Communauté active en plein air. Séances de groupe très économiques, peu de paiement direct.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-musculation-salle-debutant",
+   "name": "Musculation en salle pour débutants",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.renfo",
+   "desc": "Apprendre les mouvements de base et construire un programme sur machines et haltères.",
+   "audience": "Débutants 18-45 ans",
+   "skills": [
+    "Technique des mouvements",
+    "Charges",
+    "Programme",
+    "Récupération"
+   ],
+   "appSkills": [
+    "musculation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier jour en salle",
+     "goal": "Réaliser 8 exercices en sécurité",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Programme de base",
+     "goal": "Suivre un programme de 3 séances",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Progression de charge",
+     "goal": "Adapter les charges",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      65,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme personnel",
+     "goal": "Concevoir son plan",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Pratique entre pairs",
+     "goal": "Encadrer avec un coach diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "sport",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Salles de sport",
+    "Coachs"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Très forte demande mais marché saturé de salles et coachs. Valeur surtout dans l'accompagnement ponctuel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-kettlebell-initiation",
+   "name": "Kettlebell : initiation",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.renfo",
+   "desc": "Swing, goblet squat, get-up : les gestes de base du kettlebell en sécurité.",
+   "audience": "Sportifs 25-45 ans",
+   "skills": [
+    "Swing",
+    "Goblet squat",
+    "Développé",
+    "Get-up"
+   ],
+   "appSkills": [
+    "calisthenics"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers swings",
+     "goal": "Exécuter 10 swings techniques",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mouvements variés",
+     "goal": "Maîtriser 4 mouvements",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séance complète",
+     "goal": "Enchaîner 20 minutes",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme progressif",
+     "goal": "Charger à bon escient",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent kettlebell",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "corps",
+    "sport",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Salles de sport",
+    "Coachs"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Niche sportive, forte image fitness mais encadrement pro nécessaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-gainage-dos-sain",
+   "name": "Renforcement du dos et posture au bureau",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.renfo",
+   "desc": "Routine pour soulager le dos du télétravail : gainage, mobilité et postures.",
+   "audience": "Télétravailleurs 28-55 ans",
+   "skills": [
+    "Mobilité du dos",
+    "Gainage",
+    "Posture de travail",
+    "Routines courtes"
+   ],
+   "appSkills": [
+    "pilates"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pause active",
+     "goal": "Pratiquer 10 minutes de mobilité",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dos solide",
+     "goal": "Réaliser une routine de 20 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Poste de travail",
+     "goal": "Aménager son bureau",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Habitudes durables",
+     "goal": "Installer une routine quotidienne",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      70,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent posture",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "entreprise",
+    "domicile",
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "bien-etre",
+    "sport",
+    "maison",
+    "soin"
+   ],
+   "competitors": [
+    "Coachs",
+    "Kinésithérapeutes"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin large, forte demande entreprise, offre hétérogène. La frontière santé impose un encadrement diplômé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-mobilite-etirements",
+   "name": "Mobilité et étirements",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.mobilite",
+   "desc": "Retrouver de la souplesse articulaire avec une routine quotidienne de 15 minutes.",
+   "audience": "Actifs sédentaires, sportifs 25-60 ans",
+   "skills": [
+    "Mobilité des hanches",
+    "Étirement actif",
+    "Respiration",
+    "Routine courte"
+   ],
+   "appSkills": [
+    "pilates"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes 10 minutes",
+     "goal": "Réaliser une routine matinale",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Souplesse accessible",
+     "goal": "Gagner en amplitude",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine complète",
+     "goal": "Pratiquer 30 minutes",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mobilité de sportif",
+     "goal": "Adapter à son sport",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mobilité",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "bien-etre",
+    "souffle",
+    "mouvement",
+    "sport"
+   ],
+   "competitors": [
+    "Coachs",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande large, peu de volonté de payer sur des routines. Bon complément de cours.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-yoga-hatha",
+   "name": "Yoga : séances hatha et vinyasa",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.mobilite",
+   "desc": "Découvrir postures, respiration et enchaînements en cours collectif.",
+   "audience": "Actifs 25-55 ans",
+   "skills": [
+    "Postures de base",
+    "Respiration",
+    "Enchaînement",
+    "Relaxation"
+   ],
+   "appSkills": [
+    "yoga-hatha"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Pratiquer 8 postures de base",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Enchaînement simple",
+     "goal": "Suivre une séance de 60 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pratique régulière",
+     "goal": "Pratiquer 3 fois par semaine",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pratique autonome",
+     "goal": "Construire sa séance",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      65,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Pratique entre pairs",
+     "goal": "Encadrer avec un professeur diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      175,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "studio-danse",
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "corps",
+    "souffle",
+    "mouvement",
+    "calme"
+   ],
+   "competitors": [
+    "Studios de yoga",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Marché saturé de studios, forte concurrence ; l'enseignement est réservé aux professeurs diplômés. Position possible : sorties yoga en plein air entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-pilates-tapis",
+   "name": "Pilates au sol",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.mobilite",
+   "desc": "Renfort profond, respiration et alignement sur tapis.",
+   "audience": "Actifs, seniors",
+   "skills": [
+    "Respiration latérale",
+    "Centre",
+    "Alignement",
+    "Enchaînements"
+   ],
+   "appSkills": [
+    "pilates"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Pratiquer 6 mouvements de base",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Contrôle du centre",
+     "goal": "Tenir un enchaînement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pratique régulière",
+     "goal": "Suivre 3 séances par semaine",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Variations avancées",
+     "goal": "Progresser sur 12 mouvements",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      65,
+      120
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Pratique entre pairs",
+     "goal": "Encadrer avec un professeur diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      175,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 2,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "studio-danse",
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "corps",
+    "souffle",
+    "mouvement",
+    "calme"
+   ],
+   "competitors": [
+    "Studios de pilates",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande forte, forte concurrence de studios et coach, réservé aux diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-hiit-circuit",
+   "name": "HIIT et circuit training",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.cardio",
+   "desc": "Séances courtes à haute intensité, circuits et progressions adaptées.",
+   "audience": "Actifs pressés 25-45 ans",
+   "skills": [
+    "Intervalles",
+    "Technique sous fatigue",
+    "Circuits",
+    "Récupération"
+   ],
+   "appSkills": [
+    "hiit-circuit"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier circuit",
+     "goal": "Réaliser 20 minutes en intervalles",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Intensité maîtrisée",
+     "goal": "Gérer l'effort",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Programme régulier",
+     "goal": "Tenir 3 séances par semaine",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Charge personnelle",
+     "goal": "Adapter l'effort",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Pratique entre pairs",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "plein-air"
+   ],
+   "competitors": [
+    "Salles de sport",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Marché de studios de fitness boutique, forte concurrence. Intérêt dans les séances entre amis en plein air.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-corde-a-sauter",
+   "name": "Corde à sauter : initiation et enchaînements",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.cardio",
+   "desc": "Rythme, coordination et enchaînements simples pour le cardio et la boxe.",
+   "audience": "Sportifs, adultes 25-45 ans, ados",
+   "skills": [
+    "Rythme de base",
+    "Double saut",
+    "Enchaînements",
+    "Récupérer"
+   ],
+   "appSkills": [
+    "hiit-circuit"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sauts",
+     "goal": "Sauter 1 minute sans accroc",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et pieds",
+     "goal": "Enchaîner 3 pas de base",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enchaînements",
+     "goal": "Réaliser un enchaînement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Double saut",
+     "goal": "Maîtriser le double saut",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent corde",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "rythme",
+    "geste"
+   ],
+   "competitors": [
+    "Salles de boxe",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Geste simple, matériel peu cher, ateliers possibles sans diplôme car pas d'enseignement d'un sport réglementé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-bootcamp-plein-air",
+   "name": "Bootcamp et séances en plein air",
+   "sector": "sport",
+   "category": "sport.fitness",
+   "subcategory": "sport.fitness.cardio",
+   "desc": "Séances collectives en parc : cardio, renfo et défis en équipe.",
+   "audience": "Actifs 25-45 ans",
+   "skills": [
+    "Échauffement",
+    "Circuit",
+    "Travail en équipe",
+    "Récupération"
+   ],
+   "appSkills": [
+    "hiit-circuit"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première séance",
+     "goal": "Réaliser 45 minutes en groupe",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Intensité équilibrée",
+     "goal": "Tenir un circuit complet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défi d'équipe",
+     "goal": "Participer à des challenges",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dépassement",
+     "goal": "Se fixer un objectif trimestriel",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine d'équipe",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "plein-air",
+    "convivial",
+    "defi",
+    "corps"
+   ],
+   "competitors": [
+    "Coachs en plein air",
+    "Salles"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique visible, très concurrencée par coachs indépendants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-padel-initiation",
+   "name": "Padel : initiation",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.raquettes",
+   "desc": "Coups de base, jeu avec les vitres et placement en double.",
+   "audience": "Jeunes actifs 25-45 ans, entreprises",
+   "skills": [
+    "Coups de base",
+    "Jeu aux vitres",
+    "Placement",
+    "Règles"
+   ],
+   "appSkills": [
+    "padel"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers échanges",
+     "goal": "Jouer 10 points avec les vitres",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeu en double",
+     "goal": "Comprendre le placement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matchs réguliers",
+     "goal": "Jouer 3 matchs",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Stratégie et variations",
+     "goal": "Varier lobs et smashs",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      70,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine de tournoi",
+     "goal": "Organiser un tournoi",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "defi",
+    "ville",
+    "couple"
+   ],
+   "competitors": [
+    "Clubs de padel",
+    "Applications de réservation"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Croissance spectaculaire, clubs surchargés. L'enseignement est réservé aux moniteurs diplômés, la plateforme peut organiser des matchs et des tournois entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-tennis-adulte-debutant",
+   "name": "Tennis pour adultes débutants",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.raquettes",
+   "desc": "Reprendre ou découvrir le tennis : coups de base, mini-tennis, matchs.",
+   "audience": "Adultes 30-60 ans",
+   "skills": [
+    "Coups de base",
+    "Service",
+    "Placement",
+    "Matchs"
+   ],
+   "appSkills": [
+    "tennis"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières balles",
+     "goal": "Échanger 20 balles",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coups et service",
+     "goal": "Jouer un set",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matchs de club",
+     "goal": "Jouer en match",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition loisir",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine d'équipe",
+     "goal": "Organiser et animer",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "ville",
+    "plein-air",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de tennis",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Marché mature de clubs. La plateforme apporte surtout la mise en relation entre joueurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-badminton-loisir",
+   "name": "Badminton loisir",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.raquettes",
+   "desc": "Service, volants et placement pour jouer en double.",
+   "audience": "Jeunes actifs 22-45 ans, familles",
+   "skills": [
+    "Service",
+    "Clear et smash",
+    "Placement",
+    "Règles"
+   ],
+   "appSkills": [
+    "badminton"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers volants",
+     "goal": "Échanger 20 volants",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Service et dégagements",
+     "goal": "Jouer un match",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matchs de double",
+     "goal": "Placer en double",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu offensif",
+     "goal": "Varier les coups",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de tournois",
+     "goal": "Organiser un tournoi",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "defi",
+    "couple"
+   ],
+   "competitors": [
+    "Clubs de badminton",
+    "Mairies"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique très accessible, salles municipales nombreuses, prix plafonné.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-pickleball-initiation",
+   "name": "Pickleball : jeu de raquette à la mode",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.raquettes",
+   "desc": "Règles, coups et jeu en double sur petit terrain.",
+   "audience": "Seniors actifs, couples, familles",
+   "skills": [
+    "Règles",
+    "Service",
+    "Zone de cuisine",
+    "Placement"
+   ],
+   "appSkills": [
+    "tennis"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers échanges",
+     "goal": "Jouer un set court",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Règles et placement",
+     "goal": "Jouer des matchs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matchs réguliers",
+     "goal": "Jouer en double",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Stratégie",
+     "goal": "Varier les coups",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de tournois",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "defi",
+    "couple"
+   ],
+   "competitors": [
+    "Clubs",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Tendance venue des États-Unis, peu de terrains à Paris mais communauté qui monte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-tennis-de-table-bar",
+   "name": "Ping-pong de bar et tournoi amical",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.raquettes",
+   "desc": "Service, effets et tournoi amical dans un bar ou une salle.",
+   "audience": "Jeunes actifs, étudiants",
+   "skills": [
+    "Service",
+    "Effets",
+    "Déplacements",
+    "Règles"
+   ],
+   "appSkills": [
+    "tennis-de-table"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers échanges",
+     "goal": "Réussir 10 échanges",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Effets et services",
+     "goal": "Jouer un match",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tournoi amical",
+     "goal": "Jouer un tournoi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu offensif",
+     "goal": "Varier les effets",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de tournois",
+     "goal": "Animer un événement",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "apero",
+    "jeu",
+    "defi"
+   ],
+   "competitors": [
+    "Bars de ping-pong",
+    "Clubs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Format social très compatible avec les bars, sans enseignement : jeu libre et tournoi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-foot-5-entre-amis",
+   "name": "Football à 5 entre amis",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.collectif",
+   "desc": "Jouer régulièrement à 5 entre amis, constituer des équipes et gérer le calendrier.",
+   "audience": "Jeunes actifs 20-45 ans",
+   "skills": [
+    "Constituer des équipes",
+    "Placement",
+    "Organisation",
+    "Arbitrage amical"
+   ],
+   "appSkills": [
+    "football-5"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier match",
+     "goal": "Jouer un match à 5",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeu collectif",
+     "goal": "Comprendre les rôles",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équipe régulière",
+     "goal": "Constituer une équipe",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ligue amicale",
+     "goal": "Organiser un championnat",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de ligue",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 1,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "defi",
+    "ville"
+   ],
+   "competitors": [
+    "Urban Soccer",
+    "Footeux",
+    "Mairies"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Demande énorme, marché structuré de complexes à 5. Intérêt dans la mise en relation et les formats mixtes ou débutants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-volley-ball-loisir",
+   "name": "Volley-ball loisir",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.collectif",
+   "desc": "Passes, manchettes et jeu en équipe, indoor ou sur herbe.",
+   "audience": "Jeunes actifs, étudiants, couples",
+   "skills": [
+    "Passes et manchettes",
+    "Service",
+    "Placement",
+    "Règles"
+   ],
+   "appSkills": [
+    "volley-ball"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers échanges",
+     "goal": "Réussir 10 passes",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Service et réception",
+     "goal": "Jouer un match",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Match en équipe",
+     "goal": "Jouer en 6",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu offensif",
+     "goal": "Smasher et bloquer",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de tournois",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "plein-air",
+    "ville"
+   ],
+   "competitors": [
+    "Clubs",
+    "Beach volley"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique sociale en parc ou sur plage, communauté existante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-ultimate-frisbee",
+   "name": "Ultimate frisbee",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.collectif",
+   "desc": "Passes, démarquage et jeu sans arbitre : le sport collectif fair-play.",
+   "audience": "Jeunes actifs, étudiants, familles",
+   "skills": [
+    "Lancer un disque",
+    "Démarquage",
+    "Spirit of the game",
+    "Placement"
+   ],
+   "appSkills": [
+    "ultimate-frisbee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers lancers",
+     "goal": "Réussir 5 passes consécutives",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeu à 7",
+     "goal": "Jouer un match",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Stratégie collective",
+     "goal": "Comprendre les zones",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition loisir",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine d'équipe",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "plein-air",
+    "jeu",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'ultimate",
+    "Fédération"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Sport collectif peu cher, communauté soudée, faible concurrence payante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-basket-3x3",
+   "name": "Basket 3x3 en playground",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.collectif",
+   "desc": "Règles du 3x3, tirs et jeu en équipe sur playground.",
+   "audience": "Jeunes actifs, ados",
+   "skills": [
+    "Règles du 3x3",
+    "Tirs",
+    "Défense",
+    "Jeu à trois"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers tirs",
+     "goal": "Marquer 10 tirs",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeu à trois",
+     "goal": "Jouer un match de 10 minutes",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Match régulier",
+     "goal": "Jouer en équipe",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tournoi 3x3",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur de tournois",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "ville",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs",
+    "Playgrounds"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Sport urbain facile à organiser, très visible en été.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-touch-rugby",
+   "name": "Touch rugby",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.collectif",
+   "desc": "Passes, placement et règles sans plaquages : le rugby accessible.",
+   "audience": "Jeunes actifs, mixte",
+   "skills": [
+    "Passes",
+    "Placement",
+    "Règles",
+    "Esprit d'équipe"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières passes",
+     "goal": "Réussir 10 passes",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeu à 6",
+     "goal": "Jouer un match",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équipe régulière",
+     "goal": "Constituer une équipe",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tournoi mixte",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organisateur",
+     "goal": "Animer",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "plein-air",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs de rugby",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Niche intéressante en mixte, communauté restreinte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-organiser-tournoi-amis",
+   "name": "Organiser un tournoi entre amis",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.organiser",
+   "desc": "Choisir format, tableau, règles, arbitrage et logistique d'un petit tournoi.",
+   "audience": "Organisateurs de groupes d'amis, associations",
+   "skills": [
+    "Choisir un format",
+    "Faire un tableau",
+    "Gérer le planning",
+    "Animer"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un tournoi en 2 h",
+     "goal": "Organiser un mini-tournoi",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tableaux et règles",
+     "goal": "Choisir poules ou élimination",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tournoi de 40 personnes",
+     "goal": "Gérer logistique et lots",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Événement sportif",
+     "goal": "Concevoir un événement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent organisation",
+     "goal": "Former des organisateurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "convivial",
+    "defi",
+    "jeu",
+    "fete"
+   ],
+   "competitors": [
+    "Clubs",
+    "Plateformes de tournois"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Volet organisationnel non réglementé, adaptable à tous sports et très demandé en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-arbitrage-bases",
+   "name": "Arbitrer un match amateur",
+   "sector": "sport",
+   "category": "sport.jeux",
+   "subcategory": "sport.jeux.organiser",
+   "desc": "Connaître règles, signes et gestion de conflit pour arbitrer un match amical.",
+   "audience": "Sportifs amateurs, parents d'enfants sportifs",
+   "skills": [
+    "Règles de base",
+    "Signes et sifflet",
+    "Gestion de conflit",
+    "Posture"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier sifflet",
+     "goal": "Arbitrer un match amical",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Règles précises",
+     "goal": "Appliquer les règles en direct",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Match tendu",
+     "goal": "Gérer les conflits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arbitrage régulier",
+     "goal": "Arbitrer en compétition loisir",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur d'arbitres",
+     "goal": "Animer avec une fédération",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "jeu",
+    "strategie",
+    "ville"
+   ],
+   "competitors": [
+    "Fédérations",
+    "Clubs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais très encadré par les fédérations qui forment gratuitement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-boxe-loisir",
+   "name": "Boxe loisir sans contact",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.percussion",
+   "desc": "Garde, directs, crochets et déplacements, travail sur sac et pattes d'ours.",
+   "audience": "Adultes 20-45 ans, femmes",
+   "skills": [
+    "Garde et déplacements",
+    "Directs",
+    "Crochets",
+    "Travail au sac"
+   ],
+   "appSkills": [
+    "boxe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Maîtriser garde et directs",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Combinaisons",
+     "goal": "Enchaîner 4 coups",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cardio-boxe",
+     "goal": "Tenir 3 rounds au sac",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Assauts légers",
+     "goal": "Boxer sans contact en sécurité",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine de groupe",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Salles de boxe",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Forte demande, marché de salles bien installé. Encadrement obligatoirement diplômé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-boxe-thai-initiation",
+   "name": "Boxe thaï et kickboxing : initiation",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.percussion",
+   "desc": "Coups de poing, de pied et de genou sur sacs et pattes d'ours.",
+   "audience": "Adultes sportifs 22-40 ans",
+   "skills": [
+    "Garde",
+    "Coups de pied",
+    "Genoux et coudes",
+    "Condition physique"
+   ],
+   "appSkills": [
+    "boxe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Frapper correctement poing et pied",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Combinaisons",
+     "goal": "Enchaîner 6 coups",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rounds de pattes",
+     "goal": "Tenir 3 rounds",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Assauts légers",
+     "goal": "Boxer avec protection",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Salles de boxe thaï",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Niche de salles spécialisées, enseignement réservé à des diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-judo-adulte",
+   "name": "Judo pour adultes débutants",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.saisies",
+   "desc": "Chutes, saisies, projections de base et respect du code moral.",
+   "audience": "Adultes 25-50 ans, parents",
+   "skills": [
+    "Chutes",
+    "Saisies",
+    "Projections de base",
+    "Étiquette"
+   ],
+   "appSkills": [
+    "judo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers tatamis",
+     "goal": "Pratiquer 3 chutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Saisies et déséquilibres",
+     "goal": "Réaliser 3 projections",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Randoris légers",
+     "goal": "Pratiquer au sol et debout",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ceinture de niveau",
+     "goal": "Passer un grade",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs de judo",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Marché de clubs associatifs, prix très bas, rien à vendre en plus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-jujitsu-bresilien",
+   "name": "Jiu-jitsu brésilien : initiation",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.saisies",
+   "desc": "Techniques de sol : gardes, passages et soumissions simples.",
+   "audience": "Adultes sportifs 22-45 ans",
+   "skills": [
+    "Gardes",
+    "Passages",
+    "Soumissions simples",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "judo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers cours",
+     "goal": "Pratiquer 5 techniques",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gardes et passages",
+     "goal": "Maîtriser l'enchaînement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Roulage léger",
+     "goal": "Pratiquer en sécurité",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      65,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition amicale",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs de BJJ",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Communauté en croissance, enseignement réservé aux diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-escrime-loisir",
+   "name": "Escrime loisir : épée et sabre",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.armes",
+   "desc": "Bases de l'escrime : garde, fente, touche, en salle d'armes.",
+   "audience": "Adultes 20-50 ans, curieux",
+   "skills": [
+    "Garde et fente",
+    "Touche",
+    "Sécurité",
+    "Règles"
+   ],
+   "appSkills": [
+    "escrime"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première touche",
+     "goal": "Réaliser garde et fente",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assaut dirigé",
+     "goal": "Faire un assaut simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Assaut libre",
+     "goal": "Pratiquer en assaut",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition loisir",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "jeu",
+    "strategie",
+    "scene",
+    "histoire"
+   ],
+   "competitors": [
+    "Salles d'armes",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Niche élégante, offre en salle d'armes. Piste : initiations avec un club.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-tir-arc-loisir",
+   "name": "Tir à l'arc : initiation",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.armes",
+   "desc": "Position, visée et tir sur cible en salle ou en extérieur.",
+   "audience": "Adultes, familles, ados",
+   "skills": [
+    "Position",
+    "Encochage",
+    "Visée",
+    "Sécurité"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières flèches",
+     "goal": "Tirer 30 flèches en sécurité",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Régularité",
+     "goal": "Grouper ses tirs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tir en distance",
+     "goal": "Tirer à 18 m",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      70,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition loisir",
+     "goal": "Participer à un tournoi",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      85,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport",
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "ados"
+   ],
+   "senses": [
+    "mouvement",
+    "reflexion"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "nature",
+    "jeu",
+    "calme",
+    "plein-air"
+   ],
+   "competitors": [
+    "Clubs d'arc",
+    "Fédérations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Calme, accessible, prisé en famille. Encadrement par un diplômé obligatoire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-self-defense-prevention",
+   "name": "Self-défense : réflexes et prévention",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.defense",
+   "desc": "Postures, dégagements et gestion du stress, avec une approche de prévention.",
+   "audience": "Femmes et hommes 18-60 ans",
+   "skills": [
+    "Posture de sécurité",
+    "Dégagements",
+    "Gestion du stress",
+    "Prévention"
+   ],
+   "appSkills": [
+    "self-defense"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Réflexes de base",
+     "goal": "Pratiquer 5 gestes de dégagement",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scénarios simples",
+     "goal": "Enchaîner postures et sorties",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pression réaliste",
+     "goal": "Réagir sous stress",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      65,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mises en situation",
+     "goal": "Pratiquer scénarios complets",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste",
+    "solidarite"
+   ],
+   "competitors": [
+    "Clubs de krav maga",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande forte surtout chez les femmes, offre dispersée. Ateliers de prévention et de sensibilisation possibles, enseignement technique réservé aux diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-apprendre-a-tomber",
+   "name": "Apprendre à tomber sans se blesser",
+   "sector": "sport",
+   "category": "sport.combat",
+   "subcategory": "sport.combat.defense",
+   "desc": "Chutes avant, arrière et latérale pour limiter les risques en cas de glissade.",
+   "audience": "Seniors, cyclistes, skateurs, parents",
+   "skills": [
+    "Chute arrière",
+    "Chute avant",
+    "Chute latérale",
+    "Se relever"
+   ],
+   "appSkills": [
+    "judo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première chute",
+     "goal": "Réaliser 3 chutes de base",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chutes en situation",
+     "goal": "Chuter à vélo ou à skate",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Se relever en sécurité",
+     "goal": "Se relever après une chute",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Prévention des chutes",
+     "goal": "Intégrer à une routine",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "corps",
+    "securite",
+    "geste",
+    "prevention"
+   ],
+   "competitors": [
+    "Clubs de judo",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Besoin réel pour seniors et cyclistes, mais peu connu et peu rentable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-apprendre-a-nager-adulte",
+   "name": "Apprendre à nager à l'âge adulte",
+   "sector": "sport",
+   "category": "sport.eau",
+   "subcategory": "sport.eau.natation",
+   "desc": "Se sentir à l'aise dans l'eau, flotter, respirer et nager sa première longueur.",
+   "audience": "Adultes 25-60 ans non nageurs",
+   "skills": [
+    "Flottaison",
+    "Respiration",
+    "Propulsion",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "natation-crawl"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je me mets à l'eau",
+     "goal": "Flotter et respirer dans l'eau",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Première longueur",
+     "goal": "Nager 25 m",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Nager 100 m",
+     "goal": "Nager 100 m sans s'arrêter",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Crawl et dos",
+     "goal": "Enchaîner deux nages",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un maître-nageur diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "eau",
+    "corps",
+    "souffle",
+    "defi"
+   ],
+   "competitors": [
+    "Piscines municipales",
+    "Écoles de natation"
+   ],
+   "regulated": "sport",
+   "verdict": "prioritaire",
+   "why": "Besoin fort et gênant, très peu de cours adultes disponibles. Maîtres-nageurs diplômés requis, partenariat avec piscines.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-crawl-respiration",
+   "name": "Crawl : technique et respiration",
+   "sector": "sport",
+   "category": "sport.eau",
+   "subcategory": "sport.eau.natation",
+   "desc": "Améliorer glisse, respiration bilatérale et efficacité en crawl.",
+   "audience": "Nageurs 25-55 ans",
+   "skills": [
+    "Glisse",
+    "Respiration bilatérale",
+    "Battements",
+    "Coordination"
+   ],
+   "appSkills": [
+    "natation-crawl"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Crawl fluide",
+     "goal": "Nager 100 m en crawl",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Respiration bilatérale",
+     "goal": "Respirer des deux côtés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Endurance",
+     "goal": "Nager 400 m",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      70,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Technique affinée",
+     "goal": "Optimiser sa nage",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      85,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "eau",
+    "corps",
+    "souffle",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs de natation",
+    "Piscines"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande régulière, clubs peu ouverts aux adultes, cours collectifs à prix faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-aquagym-douce",
+   "name": "Aquagym douce",
+   "sector": "sport",
+   "category": "sport.eau",
+   "subcategory": "sport.eau.natation",
+   "desc": "Exercices doux en piscine pour mobilité, cardio et rééducation douce.",
+   "audience": "Seniors, personnes en reprise d'activité",
+   "skills": [
+    "Mouvements dans l'eau",
+    "Rythme",
+    "Respiration",
+    "Étirements"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Pratiquer 30 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme régulier",
+     "goal": "Suivre une séance de 45 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cardio doux",
+     "goal": "Tenir 8 séances",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Séance variée",
+     "goal": "Alterner ateliers",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "eau",
+    "bien-etre",
+    "corps",
+    "calme"
+   ],
+   "competitors": [
+    "Piscines",
+    "Clubs"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Public senior important, prix très bas des piscines municipales.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-apnee-initiation",
+   "name": "Apnée : initiation en piscine",
+   "sector": "sport",
+   "category": "sport.eau",
+   "subcategory": "sport.eau.eau-libre",
+   "desc": "Respiration, relaxation et apnée statique et dynamique en sécurité.",
+   "audience": "Adultes sportifs, curieux de souffle",
+   "skills": [
+    "Respiration",
+    "Relaxation",
+    "Apnée statique",
+    "Sécurité en binôme"
+   ],
+   "appSkills": [
+    "apnee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières apnées",
+     "goal": "Tenir 1 minute en statique",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Dynamique en binôme",
+     "goal": "Nager 25 m en apnée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Profondeur douce",
+     "goal": "Descendre à 5 m",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Perfectionnement",
+     "goal": "Atteindre 2 minutes",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      95,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un moniteur diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      255,
+      510
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 1,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-sport",
+    "bateau"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "eau",
+    "souffle",
+    "bien-etre",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'apnée",
+    "Fédérations"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique très encadrée par les moniteurs fédéraux. La sécurité impose de la formation et du binôme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-nage-eau-libre",
+   "name": "Nage en eau libre",
+   "sector": "sport",
+   "category": "sport.eau",
+   "subcategory": "sport.eau.eau-libre",
+   "desc": "Nager en lac ou en rivière : sécurité, orientation et équipement.",
+   "audience": "Nageurs 28-55 ans",
+   "skills": [
+    "Sécurité en eau libre",
+    "Orientation",
+    "Combinaison",
+    "Températures"
+   ],
+   "appSkills": [
+    "natation-crawl",
+    "apnee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bain",
+     "goal": "Nager 200 m en lac",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Orientation",
+     "goal": "Viser et respirer",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Distance",
+     "goal": "Nager 1 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Traversée",
+     "goal": "Nager 3 km",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      50,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Encadrant",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "eau",
+    "nature",
+    "plein-air",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs de nage",
+    "Organisateurs de swimrun"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Pratique en forte croissance, risque lié à l'eau libre. Sorties entre pairs avec règles de sécurité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-skate-adulte",
+   "name": "Skateboard pour adultes débutants",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.glisse",
+   "desc": "Équilibre, poussée, freinage et chute, en skatepark ou en rue.",
+   "audience": "Adultes 25-40 ans",
+   "skills": [
+    "Équilibre",
+    "Pousser",
+    "Freiner",
+    "Chuter"
+   ],
+   "appSkills": [
+    "skateboard-roller"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier tour de planche",
+     "goal": "Rouler et freiner",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Virages et ollie",
+     "goal": "Réussir un ollie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Skatepark",
+     "goal": "Rouler en bowl",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Figures",
+     "goal": "Réaliser 3 tricks",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      70,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "ville",
+    "plein-air",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Skateparks",
+    "Marques"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Public de niche en croissance, offre de moniteurs diplômés limitée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-roller-balade",
+   "name": "Roller : balade urbaine",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.glisse",
+   "desc": "Freiner, tourner et rouler en groupe dans les rues de Paris.",
+   "audience": "Adultes 25-55 ans, familles",
+   "skills": [
+    "Freiner",
+    "Virages",
+    "Rouler en groupe",
+    "Sécurité"
+   ],
+   "appSkills": [
+    "skateboard-roller"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas",
+     "goal": "Rouler et freiner",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rouler en groupe",
+     "goal": "Rouler 5 km en groupe",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Balade de 15 km",
+     "goal": "Rouler 15 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Roller sportif",
+     "goal": "Maîtriser les descentes",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      45,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine de balade",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      175,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "ville",
+    "balade",
+    "plein-air",
+    "convivial"
+   ],
+   "competitors": [
+    "Pari Roller",
+    "Associations"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Communauté parisienne historique (balades gratuites), position complémentaire d'initiation payée par un diplômé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-longboard-cruising",
+   "name": "Longboard : cruising et freinage",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.glisse",
+   "desc": "Rouler en longboard, freiner et gérer les pentes en sécurité.",
+   "audience": "Jeunes actifs, étudiants",
+   "skills": [
+    "Équilibre",
+    "Pousser",
+    "Freiner",
+    "Gérer une pente"
+   ],
+   "appSkills": [
+    "skateboard-roller"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers pas",
+     "goal": "Rouler et freiner",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Carving",
+     "goal": "Enchaîner des virages",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Balade urbaine",
+     "goal": "Rouler 10 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Descente",
+     "goal": "Maîtriser une pente",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "ville",
+    "plein-air",
+    "balade",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs",
+    "Marques"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Niche faible demande, balades entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-parkour-initiation",
+   "name": "Parkour : initiation",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.acro",
+   "desc": "Réception, sauts, franchissements et progression sécurisée.",
+   "audience": "Jeunes actifs, ados 14-35 ans",
+   "skills": [
+    "Réception",
+    "Sauts",
+    "Franchissements",
+    "Progression"
+   ],
+   "appSkills": [
+    "parkour"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sauts",
+     "goal": "Réaliser 3 réceptions",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Franchissements",
+     "goal": "Maîtriser 4 obstacles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcours",
+     "goal": "Enchaîner un parcours",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      65,
+      115
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Précision",
+     "goal": "Réussir des sauts de précision",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      80,
+      145
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      210,
+      415
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-sport"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "ville",
+    "plein-air",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs de parkour",
+    "Salles"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Pratique spectaculaire, encadrement spécifique. Public principalement jeune.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-slackline",
+   "name": "Slackline et équilibre",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.acro",
+   "desc": "Monter une sangle, marcher dessus et progresser en équilibre en parc.",
+   "audience": "Sportifs, familles, ados",
+   "skills": [
+    "Monter une ligne",
+    "Équilibre",
+    "Marcher",
+    "Chuter"
+   ],
+   "appSkills": [
+    "slackline"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première ligne",
+     "goal": "Monter et marcher 3 pas",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      5
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marcher sur la ligne",
+     "goal": "Traverser 5 m",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Techniques variées",
+     "goal": "Faire demi-tour",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Highline en sécurité",
+     "goal": "Pratiquer au sol",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      30,
+      70
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine",
+     "goal": "Animer sans diplôme requis",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "ados"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "plein-air",
+    "convivial",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs de slackline",
+    "Marques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pratique libre en parc, matériel peu cher (50 à 150 €), possible hors cadre diplômé tant qu'on ne vend pas d'enseignement de pratique à risque.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-acrobaties-sol",
+   "name": "Acrobaties au sol : roues, roulades et flips de base",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.acro",
+   "desc": "Roues, roulades, équilibre sur les mains et premiers flips au sol sur tapis.",
+   "audience": "Adultes sportifs, ados, familles",
+   "skills": [
+    "Roulades",
+    "Roue",
+    "Équilibre sur les mains",
+    "Sécurité"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières roulades",
+     "goal": "Réaliser 3 roulades",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Roue et appui",
+     "goal": "Réaliser une roue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équilibre renversé",
+     "goal": "Tenir 5 s en appui",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Premier salto",
+     "goal": "Réaliser un salto groupé",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      70,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      190,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "corps",
+    "defi",
+    "geste"
+   ],
+   "competitors": [
+    "Gymnases",
+    "Clubs d'acrosport"
+   ],
+   "regulated": "sport",
+   "verdict": "plus-tard",
+   "why": "Public de niche, infrastructures spécialisées et encadrement obligatoire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-velo-route-sortie-club",
+   "name": "Vélo de route : sorties entre pairs",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.velo",
+   "desc": "Rouler en groupe, rouler dans la roue et gérer ses sorties.",
+   "audience": "Cyclistes 28-60 ans",
+   "skills": [
+    "Rouler en peloton",
+    "Signaux",
+    "Choisir un itinéraire",
+    "Gérer son effort"
+   ],
+   "appSkills": [
+    "velo-route"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première sortie",
+     "goal": "Rouler 30 km en groupe",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rouler dans la roue",
+     "goal": "Maîtriser l'aspiration",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sortie de 80 km",
+     "goal": "Rouler 80 km",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sortie longue",
+     "goal": "Rouler 150 km",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      40,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Capitaine de sortie",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "sport",
+    "plein-air",
+    "velo",
+    "balade",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs cyclistes",
+    "Strava"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Communauté très active (clubs, Strava), pratique encadrée par les clubs. Sorties entre pairs possibles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-velo-urbain-securite",
+   "name": "Rouler à vélo en ville en sécurité",
+   "sector": "sport",
+   "category": "sport.urbain",
+   "subcategory": "sport.urbain.velo",
+   "desc": "Lire la circulation, choisir son itinéraire et rouler avec assurance en ville.",
+   "audience": "Nouveaux cyclistes, parents, entreprises",
+   "skills": [
+    "Lire la circulation",
+    "Choisir un itinéraire",
+    "Se positionner",
+    "Éviter les angles morts"
+   ],
+   "appSkills": [
+    "reparation-velo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers trajets",
+     "goal": "Rouler 5 km en sécurité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Positionnement",
+     "goal": "Prendre sa place",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trajets complexes",
+     "goal": "Gérer carrefours et giratoires",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vélo-taf",
+     "goal": "Rouler au quotidien",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mobilité",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "ecole",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ville",
+    "velo",
+    "securite",
+    "famille",
+    "plein-air"
+   ],
+   "competitors": [
+    "Mon Vélo est Une Vie",
+    "Associations",
+    "Collectivités"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Fort besoin urbain avec financement public et entreprises possible. Volet sécurité routière à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-nutrition-sportif-amateur",
+   "name": "Nutrition du sportif amateur",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.nutrition",
+   "desc": "Repas avant, pendant et après l'effort : principes et idées sans régime ni promesse santé.",
+   "audience": "Sportifs amateurs 25-55 ans",
+   "skills": [
+    "Repas avant l'effort",
+    "Hydratation",
+    "Récupération",
+    "Lire une étiquette"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Manger avant de courir",
+     "goal": "Préparer 3 repas pour une sortie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hydratation",
+     "goal": "Planifier boisson et sels",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Semaine type",
+     "goal": "Construire une semaine",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Objectif d'épreuve",
+     "goal": "Préparer une course",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent nutrition",
+     "goal": "Animer des ateliers avec un diététicien",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "cuisine-pro",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "sport",
+    "cuisine",
+    "corps",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Diététiciens",
+    "Applications"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Pas d'enseignement du sport, donc ouvert. Éviter tout conseil diététique individualisé, réservé aux diététiciens.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-ravitaillement-sortie-longue",
+   "name": "Ravitaillement : sorties longues, trail et vélo",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.nutrition",
+   "desc": "Préparer boissons, barres et gels maison pour tenir sur une sortie de plusieurs heures.",
+   "audience": "Coureurs, cyclistes, randonneurs",
+   "skills": [
+    "Barres maison",
+    "Boissons d'effort",
+    "Planifier les prises",
+    "Tester avant l'épreuve"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première barre",
+     "goal": "Préparer des barres maison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boissons d'effort",
+     "goal": "Composer sa boisson",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de ravitaillement",
+     "goal": "Planifier une sortie de 4 h",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Épreuve longue",
+     "goal": "Planifier un ultra",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent ravitaillement",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "cuisine-pro",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "gout",
+    "geste"
+   ],
+   "outputs": [
+    "plat",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "sport",
+    "cuisine",
+    "plein-air",
+    "geste"
+   ],
+   "competitors": [
+    "Marques d'énergétique",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier cuisine très concret et sans réglementation, double public cuisine et sport.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-auto-massage-foam-roller",
+   "name": "Auto-massage et foam roller",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.recup",
+   "desc": "Routines avec rouleau, balle et élastique pour détendre les muscles après l'effort.",
+   "audience": "Sportifs, actifs sédentaires",
+   "skills": [
+    "Rouleau",
+    "Balle de massage",
+    "Élastiques",
+    "Routines courtes"
+   ],
+   "appSkills": [
+    "pilates"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier roulage",
+     "goal": "Réaliser 8 gestes avec le rouleau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Routine après effort",
+     "goal": "Suivre une routine de 15 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Auto-massage ciblé",
+     "goal": "Adapter à ses zones de tension",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme régulier",
+     "goal": "Intégrer au quotidien",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent récupération",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "salle-sport",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "corps",
+    "bien-etre",
+    "soin",
+    "sport",
+    "calme"
+   ],
+   "competitors": [
+    "Kinésithérapeutes",
+    "Applications"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Geste simple, limite santé à respecter. Valeur proche des contenus gratuits.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-sommeil-recuperation",
+   "name": "Sommeil et récupération du sportif",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.recup",
+   "desc": "Comprendre cycles de sommeil, charge d'entraînement et rituels de récupération.",
+   "audience": "Sportifs réguliers, actifs",
+   "skills": [
+    "Cycles du sommeil",
+    "Charge d'entraînement",
+    "Rituels du soir",
+    "Repos actif"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon sommeil",
+     "goal": "Tenir un journal de sommeil",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rituels du soir",
+     "goal": "Installer une routine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charge et repos",
+     "goal": "Alterner effort et récupération",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Planning annuel",
+     "goal": "Planifier ses phases de repos",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent récupération",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "sport",
+    "corps",
+    "calme",
+    "science"
+   ],
+   "competitors": [
+    "Applications",
+    "Podcasts"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Sujet de santé, forte concurrence de contenus gratuits.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-choix-chaussures-running",
+   "name": "Choisir ses chaussures de running",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.materiel",
+   "desc": "Comprendre amorti, drop et usure, et essayer sans se laisser guider par le marketing.",
+   "audience": "Coureurs débutants et réguliers",
+   "skills": [
+    "Lire une chaussure",
+    "Tester",
+    "Comprendre l'usure",
+    "Alterner les paires"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Bonne chaussure",
+     "goal": "Choisir selon sa foulée et son budget",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Essai et usure",
+     "goal": "Reconnaître l'usure",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Alterner les paires",
+     "goal": "Gérer 2 paires",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chaussures de trail",
+     "goal": "Choisir pour le sentier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent matériel",
+     "goal": "Conseiller des coureurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "argent",
+    "ville",
+    "geste"
+   ],
+   "competitors": [
+    "Magasins de running",
+    "Podologues"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Conseil gratuit en magasin de running, volonté de payer très faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-entretien-raquettes-cordage",
+   "name": "Entretenir ses raquettes et son matériel",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.materiel",
+   "desc": "Changer grip, cordage et entretenir raquettes, vélos et équipements.",
+   "audience": "Joueurs de padel, tennis, badminton",
+   "skills": [
+    "Changer un grip",
+    "Encorder",
+    "Nettoyer",
+    "Ranger"
+   ],
+   "appSkills": [
+    "tennis"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Grip neuf",
+     "goal": "Changer un grip",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cordage de base",
+     "goal": "Encorder une raquette",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réglages",
+     "goal": "Choisir tension et cordage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Matériel complet",
+     "goal": "Entretenir sa panoplie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent matériel",
+     "goal": "Animer un atelier",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "geste",
+    "fabrication",
+    "reparation"
+   ],
+   "competitors": [
+    "Cordeurs",
+    "Clubs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile aux joueurs réguliers, marché de services de cordage.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-montre-gps-donnees",
+   "name": "Montre GPS et données d'entraînement",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.materiel",
+   "desc": "Comprendre fréquence cardiaque, allure et données pour s'entraîner sans se disperser.",
+   "audience": "Coureurs et cyclistes connectés",
+   "skills": [
+    "Régler sa montre",
+    "Lire ses données",
+    "Analyser une sortie",
+    "Éviter la sur-analyse"
+   ],
+   "appSkills": [
+    "course-10km"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma montre en main",
+     "goal": "Régler et lire ses données",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Zones et allures",
+     "goal": "Utiliser zones d'effort",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Analyse de sortie",
+     "goal": "Analyser une sortie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan connecté",
+     "goal": "Piloter son plan",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent données",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "sport",
+    "science",
+    "code"
+   ],
+   "competitors": [
+    "Marques",
+    "Blogs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Marché de contenus gratuit, mais attirance forte pour la tech sportive.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-planifier-programme-perso",
+   "name": "Planifier son programme d'entraînement",
+   "sector": "sport",
+   "category": "sport.preparation",
+   "subcategory": "sport.preparation.materiel",
+   "desc": "Définir un objectif, répartir charge et repos, ajuster selon la fatigue.",
+   "audience": "Sportifs réguliers 25-55 ans",
+   "skills": [
+    "Définir un objectif",
+    "Répartir la charge",
+    "Prévoir le repos",
+    "Ajuster"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon objectif",
+     "goal": "Définir un objectif réaliste",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plan de 8 semaines",
+     "goal": "Construire un plan",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan flexible",
+     "goal": "Ajuster selon la fatigue",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan annuel",
+     "goal": "Planifier une saison",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent planification",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "defi",
+    "science",
+    "corps"
+   ],
+   "competitors": [
+    "Coachs",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais dilué dans l'offre de coaching, pas d'enseignement sportif direct.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-gym-douce-seniors",
+   "name": "Gym douce pour seniors",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.seniors",
+   "desc": "Mobilité, équilibre et renforcement doux en groupe, en salle ou en parc.",
+   "audience": "Seniors 60-85 ans",
+   "skills": [
+    "Mobilité",
+    "Équilibre",
+    "Renforcement doux",
+    "Respiration"
+   ],
+   "appSkills": [
+    "pilates"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cours",
+     "goal": "Pratiquer 30 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équilibre",
+     "goal": "Tenir 10 s sur un pied",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séances régulières",
+     "goal": "Tenir 3 mois",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie",
+     "goal": "Pratiquer à domicile",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "bien-etre",
+    "corps",
+    "solidarite",
+    "calme"
+   ],
+   "competitors": [
+    "Mairies",
+    "Associations de seniors"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande forte et solvable, offre dominée par associations et mairies, enseignement réservé aux diplômés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-equilibre-prevention-chutes",
+   "name": "Équilibre et prévention des chutes",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.seniors",
+   "desc": "Exercices d'équilibre, force des jambes et aménagements pour prévenir les chutes.",
+   "audience": "Seniors, aidants",
+   "skills": [
+    "Équilibre statique",
+    "Marche",
+    "Force des jambes",
+    "Aménagements"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon équilibre",
+     "goal": "Tester son équilibre",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Exercices quotidiens",
+     "goal": "Pratiquer 5 exercices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Marche sûre",
+     "goal": "Marcher en sécurité",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Prévention complète",
+     "goal": "Adapter son logement",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      50,
+      90
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      130,
+      255
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi"
+   ],
+   "publics": [
+    "seniors"
+   ],
+   "senses": [
+    "mouvement"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "bien-etre",
+    "corps",
+    "solidarite",
+    "prevention"
+   ],
+   "competitors": [
+    "Mairies",
+    "CARSAT"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Besoin majeur de santé publique, financement par collectivités et caisses. Conception avec professionnels de santé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-eveil-moteur-enfants",
+   "name": "Éveil moteur des 3-6 ans",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.familles",
+   "desc": "Jeux de motricité pour enfants : équilibre, lancer, sauts, parcours.",
+   "audience": "Parents d'enfants 3-6 ans, crèches",
+   "skills": [
+    "Parcours moteurs",
+    "Jeux d'équilibre",
+    "Lancer et rattraper",
+    "Jeux de groupe"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers jeux",
+     "goal": "Participer à un parcours",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Parcours variés",
+     "goal": "Enchaîner 5 ateliers",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux collectifs",
+     "goal": "Jouer à plusieurs",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mini-olympiades",
+     "goal": "Participer à un événement",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "parc",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "enfants",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "toucher"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "famille",
+    "enfant",
+    "jeu",
+    "mouvement"
+   ],
+   "competitors": [
+    "Gymboree",
+    "Associations"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande très forte, encadrement enfants et sport réglementé, public solvable.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-sport-poussette-parents",
+   "name": "Sport avec bébé en poussette",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.familles",
+   "desc": "Séances de marche, renforcement et jeux avec bébé en poussette en parc.",
+   "audience": "Jeunes parents 28-40 ans",
+   "skills": [
+    "Marche dynamique",
+    "Renforcement",
+    "Jeux avec bébé",
+    "Sécurité"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première sortie",
+     "goal": "Marcher 45 minutes avec bébé",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Renforcement léger",
+     "goal": "Pratiquer 4 exercices",
+     "format": "sortie",
+     "duration": "1 h 30",
+     "group": "6-15",
+     "price": [
+      0,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séance complète",
+     "goal": "Enchaîner 1 h",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-10",
+     "price": [
+      0,
+      30
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Groupe de parents",
+     "goal": "Constituer un groupe régulier",
+     "format": "stage",
+     "duration": "demi-journée avec un diplômé",
+     "group": "4-8",
+     "price": [
+      60,
+      135
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h avec un coach diplômé",
+     "group": "1-3",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "famille",
+    "balade",
+    "bien-etre",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations de parents",
+    "Coachs"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Demande réelle des jeunes parents, lien social fort et sorties entre pairs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-olympiades-familiales",
+   "name": "Olympiades et jeux sportifs en famille",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.familles",
+   "desc": "Organiser des jeux d'équipe adaptés à tous les âges pour fêtes, anniversaires et réunions.",
+   "audience": "Familles, organisateurs d'événements",
+   "skills": [
+    "Choisir des jeux",
+    "Constituer des équipes",
+    "Gérer le matériel",
+    "Animer"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier jeu",
+     "goal": "Animer 5 jeux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Olympiades de 2 h",
+     "goal": "Organiser une olympiade",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Événement famille",
+     "goal": "Organiser pour 30 personnes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Format personnalisé",
+     "goal": "Concevoir un format",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent animation",
+     "goal": "Former des animateurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "famille",
+    "jeu",
+    "fete",
+    "convivial"
+   ],
+   "competitors": [
+    "Animateurs",
+    "Clubs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pas d'enseignement sportif, forte demande en famille et en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-sport-entreprise-pause",
+   "name": "Pause sportive en entreprise",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.groupes",
+   "desc": "Séances courtes de mobilité, étirements et jeux pour équipes au bureau.",
+   "audience": "Entreprises, équipes RH",
+   "skills": [
+    "Mobilité",
+    "Étirements",
+    "Jeux",
+    "Cohésion"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Pause active",
+     "goal": "Pratiquer 15 minutes",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séance d'équipe",
+     "goal": "Suivre 30 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défi d'entreprise",
+     "goal": "Participer à un challenge",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Programme annuel",
+     "goal": "Intégrer un programme",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur",
+     "goal": "Animer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "sport",
+    "bien-etre",
+    "entreprise",
+    "convivial",
+    "mouvement"
+   ],
+   "competitors": [
+    "Prestataires bien-être",
+    "Applications"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Entreprises prêtes à payer, enseignement par diplômés. Marché concurrentiel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "sport-sport-adapte-handicap",
+   "name": "Sport adapté et activités accessibles",
+   "sector": "sport",
+   "category": "sport.publics",
+   "subcategory": "sport.publics.groupes",
+   "desc": "Activités accessibles à des publics en situation de handicap, avec associations spécialisées.",
+   "audience": "Personnes en situation de handicap, associations",
+   "skills": [
+    "Adapter une activité",
+    "Accessibilité",
+    "Sécurité",
+    "Communication"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découverte",
+     "goal": "Découvrir une activité adaptée",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pratique régulière",
+     "goal": "Pratiquer chaque semaine",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autonomie",
+     "goal": "Gagner en autonomie",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Événement inclusif",
+     "goal": "Participer à un événement",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      55,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Initiateur",
+     "goal": "Encadrer avec un diplômé",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      290
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-sport",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "neurodivers",
+    "seniors"
+   ],
+   "senses": [
+    "mouvement",
+    "parole"
+   ],
+   "outputs": [
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "sport",
+    "solidarite",
+    "bien-etre",
+    "famille",
+    "mouvement"
+   ],
+   "competitors": [
+    "Handisport",
+    "Associations"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Besoin réel, cadre très spécialisé nécessitant partenaires. Niche à construire avec associations.",
+   "confidence": "estimation"
+  }
+ ]
+}

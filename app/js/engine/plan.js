@@ -1,10 +1,11 @@
 /* Plan d'apprentissage, où apprendre, recherches préparées, défi 30 jours, synthèses du bilan.
-   heures = hoursToBasics × (facteur(cible) − facteur(niveau actuel)) ; semaines = heures / temps dispo par envie. */
+   heures = hoursToBasics × (facteur(cible) − facteur(niveau actuel)) ; semaines = heures / temps dispo par envie.
+   Le plan est découpé en paliers : le palier k (atelier de niveau k) amène du niveau k-1 au niveau k, animé par un hôte de niveau k+1. */
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
-  // hoursToBasics mène au niveau 2 : facteur relatif par niveau
-  C.LEVEL_FACTOR = [0, 0.3, 1, 3, 7];
+  // hoursToBasics mène au niveau 2 (bases acquises) : facteur relatif par niveau 0 à 5
+  C.LEVEL_FACTOR = [0, 0.1, 1, 2.5, 6, 12];
   C.COST_RANGE = [[0, 20], [20, 50], [50, 300], [300, 900]];
   C.FORMAT_DEFAULT_PRICES = { cours: [25, 50], atelier: [25, 55], stage: [80, 220], prestation: [150, 500], coaching: [45, 95], entreprise: [350, 1200], evenement: [10, 30], contenu: [8, 40], produit: [15, 70], communaute: [8, 30] };
 
@@ -31,15 +32,16 @@
     var s = C.data.sById[id]; if (!s) return null;
     var d = (st.desires && st.desires[id]) || {};
     var ctx = st.context || {};
-    var cur = U.clamp((st.skills && st.skills[id] && st.skills[id].level) || 0, 0, 4);
-    var target = U.clamp(d.target || 2, 1, 4);
-    if (target <= cur) target = Math.min(4, cur + 1);
+    var MX = C.LEVEL_MAX;
+    var cur = U.clamp((st.skills && st.skills[id] && st.skills[id].level) || 0, 0, MX);
+    var target = U.clamp(d.target || 2, 2, MX);
+    if (target <= cur) target = Math.min(MX, cur + 1);
     var nb = Math.max(1, C.yesDesires(st).length);
     var hpw = Math.max(0.5, U.num(ctx.hoursPerWeek, 3) / Math.min(nb, 3));
     // l'envie prioritaire reçoit plus de temps
     if (d.priority === 1 && nb > 1) hpw *= 1.4;
-    var hours = Math.round(s.attrs.hoursToBasics * (C.LEVEL_FACTOR[target] - C.LEVEL_FACTOR[cur]));
-    hours = Math.max(2, hours);
+    var F = C.LEVEL_FACTOR;
+    var hours = Math.max(2, Math.round(s.attrs.hoursToBasics * (F[target] - F[cur])));
     var weeks = Math.ceil(hours / hpw);
     var horizonW = { '1m': 4, '3m': 13, '12m': 52 }[d.horizon || '3m'] || 13;
     var fits = weeks <= horizonW;
@@ -51,19 +53,33 @@
     var lessonsPerMonth = lessonFmt === 'stage' ? 0.34 : lessonFmt === 'communaute' ? 1 : lessonFmt ? 2 : 0;
     var monthly = Math.round(lessonsPerMonth * (lesson.lo + lesson.hi) / 2);
     var months = Math.max(1, Math.round(weeks / 4.33));
-    var total = Math.round(monthly * months + (mat[0] + mat[1]) / 2);
+    // paliers : un atelier par niveau à franchir, son temps, son coût et le niveau de l'hôte qui l'anime
+    var steps = [], matMid = Math.round((mat[0] + mat[1]) / 2);
+    for (var k = cur + 1; k <= target; k++) {
+      var h = Math.max(1, Math.round(s.attrs.hoursToBasics * (F[k] - F[k - 1])));
+      var wk = Math.max(1, Math.ceil(h / hpw));
+      var cost = lessonFmt ? Math.max(Math.round((lesson.lo + lesson.hi) / 2), Math.round(monthly * wk / 4.33)) : 0;
+      if (k === cur + 1) cost += matMid;
+      steps.push({ k: k, label: C.LEVELS[k], from: C.LEVELS[k - 1], milestone: C.milestone(s, k), hours: h, weeks: wk, cost: cost,
+        workshop: (k === 1 ? 'Atelier découverte' : 'Atelier de niveau ' + k) + ' · ' + C.LEVELS[k], host: C.hostLevel(k), hostExact: C.TEACH_RULE !== 'below' });
+    }
+    var total = steps.reduce(function (a, x) { return a + x.cost; }, 0);
     var now = new Date();
     var reach = function (n) { return U.addDays(now, n); };
     var first = C.firstStep(st, s, d);
+    var M = function (k) { return C.milestone(s, k); };
+    var goal = M(target), next = M(cur + 1);
+    var mid = target - 1 > cur ? M(target - 1) : 'À mi-chemin : ' + U.lc(goal) + ', avec de l\u2019aide';
     var milestones = [
-      { id: id + ':h1', when: reach(7), label: '1re heure', text: s.attrs.oneHourResult ? s.levels[0] : 'Découvrir le geste de base et repartir avec une liste de questions' },
-      { id: id + ':m1', when: reach(30), label: '1er mois', text: cur >= 1 ? s.levels[Math.min(3, cur)] : (s.attrs.oneHourResult ? 'Refaire seul « ' + U.lc(s.levels[0]) + ' », sans aide' : s.levels[0]) },
-      { id: id + ':m3', when: reach(Math.min(90, Math.max(45, weeks * 7))), label: weeks * 7 <= 90 ? 'Objectif' : '3 mois', text: weeks * 7 <= 90 ? s.levels[target - 1] : (target - 2 > cur && target - 2 >= 1 ? s.levels[target - 2] : 'À mi-chemin : ' + U.lc(s.levels[target - 1]) + ', avec de l\u2019aide') }
+      { id: id + ':h1', when: reach(7), label: '1re heure', text: cur >= 1 ? 'Reprendre avec un hôte de niveau ' + C.hostLevel(cur + 1) + ' et fixer l’objectif « ' + U.lc(next) + ' »' : (s.attrs.oneHourResult ? M(1) + ', avec un premier résultat visible' : 'Découvrir le geste de base et repartir avec une liste de questions') },
+      { id: id + ':m1', when: reach(30), label: '1er mois', text: next },
+      { id: id + ':m3', when: reach(Math.min(90, Math.max(45, weeks * 7))), label: weeks * 7 <= 90 ? 'Objectif' : '3 mois', text: weeks * 7 <= 90 ? goal : mid }
     ];
-    if (weeks * 7 > 90) milestones.push({ id: id + ':goal', when: reach(weeks * 7), label: 'Objectif', text: s.levels[target - 1] });
+    if (milestones[1].text === milestones[2].text) milestones[1].text = cur >= 1 ? 'Pratiquer chaque semaine entre deux séances, noter ce qui progresse' : M(1);
+    if (weeks * 7 > 90) milestones.push({ id: id + ':goal', when: reach(weeks * 7), label: 'Objectif', text: goal });
     return {
       s: s, d: d, cur: cur, target: target, hours: hours, hpw: Math.round(hpw * 10) / 10, weeks: weeks, fits: fits, horizonW: horizonW,
-      material: mat, lessonFmt: lessonFmt, lesson: lesson, monthly: monthly, total: total, months: months,
+      material: mat, lessonFmt: lessonFmt, lesson: lesson, monthly: monthly, total: total, months: months, steps: steps, goal: goal,
       overBudget: monthly > U.num(ctx.budgetPerMonth, 50) * 1.05,
       first: first, milestones: milestones, where: C.whereToLearn(st, s, d)
     };
@@ -133,7 +149,7 @@
   /* ---------- défi 30 jours ---------- */
   C.challenge30 = function (st, id) {
     var s = C.data.sById[id]; if (!s) return [];
-    var L = s.levels, t = s.tags, mins = s.attrs.hoursToBasics > 60 ? 25 : 15;
+    var L = [C.milestone(s, 2), C.milestone(s, 3)], t = s.tags, mins = s.attrs.hoursToBasics > 60 ? 25 : 15;
     var app = C.appsFor(s)[0];
     var T = [
       'Regarder 2 démonstrations ' + C.de(s) + ' et noter le geste qui revient',
@@ -211,15 +227,16 @@
     return list;
   };
 
+  // passerelle demandeur → offreur : compétences au niveau 2 ou plus, qui permettent d'animer au moins un palier
   C.shareable = function (st) {
-    return Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id] && st.skills[id].level >= 3; })
+    return Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id] && C.topPalier(st.skills[id].level) >= 1; })
       .map(function (id) {
-        var s = C.data.sById[id];
+        var s = C.data.sById[id], lvl = st.skills[id].level;
         var fmt = s.formats.indexOf('atelier') >= 0 ? 'atelier' : s.formats.indexOf('cours') >= 0 ? 'cours' : s.formats[0];
         var r = C.priceRange(s.universe, fmt);
         var demandScore = s.attrs.demand * 0.5 + s.attrs.teachable * 0.3 + s.attrs.monetization * 0.2;
-        return { s: s, level: st.skills[id].level, fmt: fmt, range: r, score: demandScore };
-      }).sort(function (a, b) { return b.score - a.score || b.level - a.level; });
+        return { s: s, level: lvl, palier: C.topPalier(lvl), paliers: C.animatedPaliers(lvl), fmt: fmt, range: r, score: demandScore };
+      }).sort(function (a, b) { return b.level - a.level || b.score - a.score; });
   };
 
   C.cvSection = function (st) {
@@ -234,7 +251,7 @@
     if (top.length) lines.push('Centres d’intérêt et savoir-faire : ' + top.join(' · ') + '.');
     if (soft.length) lines.push('Compétences transverses développées par ces pratiques : ' + soft.join(', ') + '.');
     if (learning.length) lines.push('En apprentissage : ' + learning.join(', ') + '.');
-    var teach = Object.keys(st.skills || {}).filter(function (id) { return st.skills[id].teach || st.skills[id].level >= 4; }).map(function (id) { return C.data.sById[id] && C.nm(C.data.sById[id]); }).filter(Boolean);
+    var teach = Object.keys(st.skills || {}).filter(function (id) { return st.skills[id].teach || C.topPalier(st.skills[id].level) >= 2; }).map(function (id) { return C.data.sById[id] && C.nm(C.data.sById[id]); }).filter(Boolean);
     if (teach.length) lines.push('Transmission : anime ou peut animer des séances de ' + teach.slice(0, 3).join(', ') + '.');
     return lines;
   };

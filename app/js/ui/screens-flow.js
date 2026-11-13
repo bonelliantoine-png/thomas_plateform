@@ -53,25 +53,32 @@
   };
 
   /* ---------- 2. maîtrise ---------- */
-  ui.cycleLevel = function (id) {
-    var cur = (ui.st.skills[id] && ui.st.skills[id].level) || 0, nx = (cur + 1) % 5;
+  // un appui monte d'un cran (0 → 5), le sixième remet à zéro ; au clavier, les touches 0 à 5 choisissent directement
+  ui.setLevel = function (id, nx) {
+    nx = U.clamp(nx, 0, C.LEVEL_MAX);
     if (nx === 0) { if (ui.st.skills[id]) ui.st.skills[id].level = 0; }
     else ui.st.skills[id] = Object.assign({ love: 2 }, ui.st.skills[id] || {}, { level: nx });
     ui.save();
     return nx;
   };
+  ui.cycleLevel = function (id) {
+    var cur = (ui.st.skills[id] && ui.st.skills[id].level) || 0;
+    return ui.setLevel(id, (cur + 1) % (C.LEVEL_MAX + 1));
+  };
+  function chipLabel(s, lv) { return s.name + ' : niveau ' + lv + ', ' + C.LEVELS[lv] + '. Appuyer pour monter d’un niveau, ou taper un chiffre de 0 à 5'; }
+  function chipInner(s, lv) { return '<span class="nm">' + E(s.name) + '</span>' + ui.dots(lv, C.LEVEL_MAX, C.LEVELS[lv]) + (lv ? '<span class="lv">' + lv + ' · ' + E(C.LEVELS_SHORT[lv]) + '</span>' : ''); }
   function schip(s, st) {
     var lv = (st.skills[s.id] && st.skills[s.id].level) || 0;
-    return '<button type="button" class="schip l' + lv + '" id="sc-' + E(s.id) + '" data-act="cycle" data-id="' + E(s.id) + '" title="' + E(s.desc) + '" aria-label="' + E(s.name) + ' : ' + E(C.LEVELS[lv]) + '. Appuyer pour changer de niveau">' +
-      '<span class="nm">' + E(s.name) + '</span>' + ui.dots(lv, 4, C.LEVELS[lv]) + (lv ? '<span class="lv">' + E(C.LEVELS_SHORT[lv]) + '</span>' : '') + '</button>';
+    return '<button type="button" class="schip l' + lv + '" id="sc-' + E(s.id) + '" data-act="cycle" data-id="' + E(s.id) + '" title="' + E(s.desc) + '" aria-label="' + E(chipLabel(s, lv)) + '">' + chipInner(s, lv) + '</button>';
   }
-  ui.actions.cycle = function (el) {
-    var id = el.getAttribute('data-id'), nx = ui.cycleLevel(id), s = C.data.sById[id];
+  function paintChip(el, id, nx) {
+    var s = C.data.sById[id];
     el.className = 'schip l' + nx;
-    el.innerHTML = '<span class="nm">' + E(s.name) + '</span>' + ui.dots(nx, 4, C.LEVELS[nx]) + (nx ? '<span class="lv">' + E(C.LEVELS_SHORT[nx]) + '</span>' : '');
-    el.setAttribute('aria-label', s.name + ' : ' + C.LEVELS[nx] + '. Appuyer pour changer de niveau');
+    el.innerHTML = chipInner(s, nx);
+    el.setAttribute('aria-label', chipLabel(s, nx));
     updateMastery();
-  };
+  }
+  ui.actions.cycle = function (el) { var id = el.getAttribute('data-id'); paintChip(el, id, ui.cycleLevel(id)); };
   function knownCount(st) { return Object.keys(st.skills).filter(function (id) { return st.skills[id] && st.skills[id].level > 0; }).length + (st.custom || []).filter(function (c) { return c.level > 0; }).length; }
   function updateMastery() {
     var n = knownCount(ui.st), info = ui.$('.flowbar .info');
@@ -85,8 +92,9 @@
     var open = ui._openUni || null, q = ui._mq || '';
     var n = knownCount(st);
     var html = '<div class="flow">' + stepper('maitrise') + head('Étape 2 · 2 à 3 minutes', 'Ce que vous savez déjà faire',
-      'Touchez une compétence pour indiquer votre niveau. Chaque appui monte d’un cran, le cinquième remet à zéro. Notez large : la cuisine du quotidien compte autant qu’un diplôme.') +
-      '<div class="legend" style="margin:14px 0 16px">' + C.LEVELS.slice(1).map(function (l, i) { return '<span>' + ui.dots(i + 1) + ' ' + E(l) + '</span>'; }).join('') + '</div>' +
+      'Touchez une compétence pour indiquer votre niveau de 1 à 5. Chaque appui monte d’un cran, le sixième remet à zéro. Notez large : la cuisine du quotidien compte autant qu’un diplôme.') +
+      ui.levelLegend() +
+      '<p class="help rulehelp">' + ui.icon('info') + ' <span>Un niveau anime l’atelier du niveau juste en dessous : au niveau 3, vous animez les ateliers de niveau 2. Le niveau 1 n’anime pas encore.</span></p>' +
       '<div class="searchbox"><input class="input" id="mq" data-search placeholder="Rechercher une compétence : guitare, couture, échecs…" value="' + E(q) + '" aria-label="Rechercher une compétence" autocomplete="off">' + ui.icon('search') + '<kbd class="kbdhint">/</kbd></div>' +
       '<div id="mres" style="margin-top:12px">' + searchResults(st, q) + '</div>' +
       '<div class="lbl" style="margin:22px 0 10px">Parcourir les 17 univers</div><div class="unigrid">' + C.data.universes.map(function (u) {
@@ -97,8 +105,8 @@
     var custom = st.custom || [];
     html += '<details class="panel" style="margin-top:18px"' + (custom.length ? ' open' : '') + '><summary class="ph" style="cursor:pointer;border:0"><span class="t">Ajouter une compétence hors catalogue</span><span class="hint">' + custom.length + ' ajoutée' + (custom.length > 1 ? 's' : '') + '</span></summary><div class="pb">' +
       '<div class="grid2"><input class="input" id="cname" placeholder="Nom, par exemple : sculpture sur glace" maxlength="60" aria-label="Nom de la compétence"><select class="input" id="cuni" aria-label="Univers">' + C.data.universes.map(function (u) { return '<option value="' + u.id + '">' + E(u.name) + '</option>'; }).join('') + '</select></div>' +
-      '<div class="row" style="margin-top:10px">' + ui.seg('_tmp', [[1, 'Un peu'], [2, 'Débrouille'], [3, 'Maîtrise'], [4, 'Enseigne']], ui._cl || 2, 'Niveau', ' data-act="clvl"').replace(/data-act="set" /g, '') + '<button class="btn" data-act="addCustom">' + ui.icon('plus') + ' Ajouter</button></div>' +
-      (custom.length ? '<div class="skillchips" style="margin-top:14px">' + custom.map(function (c, i) { return '<span class="schip l' + c.level + '"><span class="nm">' + E(c.name) + '</span>' + ui.dots(c.level) + '<button class="btn ghost sm" data-act="delCustom" data-i="' + i + '" aria-label="Retirer ' + E(c.name) + '">' + ui.icon('x') + '</button></span>'; }).join('') + '</div>' : '') +
+      '<div class="row" style="margin-top:10px">' + ui.seg('_tmp', [1, 2, 3, 4, 5].map(function (k) { return [k, k + ' · ' + C.LEVELS_SHORT[k]]; }), ui._cl || 2, 'Niveau', ' data-act="clvl"').replace(/data-act="set" /g, '') + '<button class="btn" data-act="addCustom">' + ui.icon('plus') + ' Ajouter</button></div>' +
+      (custom.length ? '<div class="skillchips" style="margin-top:14px">' + custom.map(function (c, i) { return '<span class="schip l' + c.level + '"><span class="nm">' + E(c.name) + '</span>' + ui.dots(c.level, C.LEVEL_MAX, C.LEVELS[c.level]) + '<button class="btn ghost sm" data-act="delCustom" data-i="' + i + '" aria-label="Retirer ' + E(c.name) + '">' + ui.icon('x') + '</button></span>'; }).join('') + '</div>' : '') +
       '</div></details>';
     html += '</div>' + flowbar('maitrise', n + ' compétence' + (n > 1 ? 's' : '') + ' notée' + (n > 1 ? 's' : '') + (n < 3 ? ' · visez au moins 3' : ''), 'Continuer');
     return html;
@@ -129,6 +137,15 @@
     var inp = ui.$('#mq', root);
     inp.addEventListener('input', function () { ui._mq = inp.value; ui.$('#mres').innerHTML = searchResults(ui.st, inp.value); });
     inp.addEventListener('keydown', function (ev) { if (ev.key === 'Enter') { var b = ui.$('#mres .schip'); if (b) { ev.preventDefault(); b.click(); b.focus(); } } });
+    // sélection directe au clavier : 0 à 5 sur une compétence qui a le focus
+    root.addEventListener('keydown', function (ev) {
+      var el = ev.target && ev.target.closest && ev.target.closest('.schip[data-act="cycle"]');
+      if (!el || ev.ctrlKey || ev.metaKey || ev.altKey) return;
+      var k = /^[0-5]$/.test(ev.key) ? +ev.key : (ev.key === 'Delete' || ev.key === 'Backspace') ? 0 : null;
+      if (k == null) return;
+      ev.preventDefault(); ev.stopPropagation();
+      var id = el.getAttribute('data-id'); paintChip(el, id, ui.setLevel(id, k));
+    });
   };
   ui.actions.openUni = function (el) {
     var u = el.getAttribute('data-u'); ui._openUni = ui._openUni === u ? null : u; ui.render();
@@ -171,9 +188,9 @@
       '<div class="uni">' + ui.uniTag(s.universe) + '<span class="faint" style="font-size:11px">' + E((C.data.dById[s.domain] || {}).name || '') + '</span></div>' +
       '<h2 class="name">' + E(s.name) + '</h2><p class="desc">' + E(s.desc) + '</p>' +
       '<div class="reasons">' + c.reasons.slice(0, 3).map(function (r, i) { return ui.pill(r.t, i === 0 ? '' : r.k === 'tendance' ? 'wait' : r.k === 'nouveau' ? 'sent' : 'idle'); }).join('') + '</div>' +
-      '<div class="facts"><div><span class="lbl">Pour se débrouiller</span><b>≈ ' + a.hoursToBasics + ' h</b></div><div><span class="lbl">Budget de départ</span><b>' + (mat[1] <= 20 ? '≈ 0 €' : mat[0] >= 300 ? '300 € et +' : '< ' + mat[1] + ' €') + '</b></div>' +
+      '<div class="facts"><div><span class="lbl">Bases acquises</span><b>≈ ' + a.hoursToBasics + ' h</b></div><div><span class="lbl">Budget de départ</span><b>' + (mat[1] <= 20 ? '≈ 0 €' : mat[0] >= 300 ? '300 € et +' : '< ' + mat[1] + ' €') + '</b></div>' +
       '<div><span class="lbl">1re heure</span><b>' + (a.oneHourResult ? 'Résultat visible' : 'Découverte') + '</b></div><div><span class="lbl">En ligne</span><b>' + ['Impossible', 'Difficile', 'Possible', 'Idéal'][Math.round(a.online)] + '</b></div></div>' +
-      '<div class="ladder">' + s.levels.slice(0, 2).map(function (l, i) { return '<div><span>N' + (i + 1) + '</span>' + E(l) + '</div>'; }).join('') + '</div>' +
+      '<div class="ladder">' + [2, 3].map(function (k) { return '<div><span>N' + k + '</span>' + E(C.milestone(s, k)) + '</div>'; }).join('') + '</div>' +
       (c.reasons[0] && c.reasons[0].why ? '<p class="faint" style="margin-top:10px;font-size:11px">Proximité : ' + E(c.reasons[0].why) + '</p>' : '') +
       '</article>';
   }
@@ -240,12 +257,14 @@
     ys.forEach(function (id, i) {
       var s = C.data.sById[id], d = st.desires[id], p = 'desires.' + id;
       var cur = (st.skills[id] && st.skills[id].level) || 0;
-      var t = U.clamp(d.target || 2, 1, 4);
+      var t = U.clamp(d.target || 2, 2, C.LEVEL_MAX); if (t <= cur) t = Math.min(C.LEVEL_MAX, cur + 1);
+      var opts = [2, 3, 4, 5].filter(function (k) { return k > cur; }).map(function (k) { return [k, k + ' · ' + C.LEVELS[k]]; });
       html += '<section class="panel' + (i >= 5 ? ' dim' : '') + '" style="margin-top:16px' + (i >= 5 ? ';opacity:.6' : '') + '"><div class="ph"><div class="row"><span class="prio">' + (i + 1) + '</span><span class="h3">' + E(s.name) + '</span>' + ui.uniTag(s.universe) + '</div>' +
         '<div class="row"><button class="btn ghost sm" data-act="prioUp" data-id="' + E(id) + '" aria-label="Monter ' + E(s.name) + '"' + (i === 0 ? ' disabled' : '') + '>' + ui.icon('up') + '</button><button class="btn ghost sm" data-act="prioDown" data-id="' + E(id) + '" aria-label="Descendre ' + E(s.name) + '"' + (i === ys.length - 1 ? ' disabled' : '') + '>' + ui.icon('down') + '</button><button class="btn ghost sm" data-act="dropDesire" data-id="' + E(id) + '" aria-label="Retirer ' + E(s.name) + '">' + ui.icon('x') + '</button></div></div><div class="pb">' +
         '<div class="lbl">Pourquoi</div><div style="margin-top:8px">' + ui.chips(p + '.motive', C.MOTIVES, d.motive, 'Motivation') + '</div>' +
-        '<div class="lbl" style="margin-top:18px">Jusqu’où' + (cur ? ' (vous êtes au niveau ' + cur + ')' : '') + '</div><div style="margin-top:8px">' + ui.seg(p + '.target', [[1, '1 · découvrir'], [2, '2 · se débrouiller'], [3, '3 · maîtriser'], [4, '4 · enseigner']].filter(function (o) { return o[0] > cur; }), t, 'Niveau visé') + '</div>' +
-        '<p class="sp" style="margin-top:8px">Objectif concret : <span style="color:var(--fg)">' + E(s.levels[t - 1]) + '</span></p>' +
+        '<div class="lbl" style="margin-top:18px">Niveau visé' + (cur ? ' (vous êtes au niveau ' + cur + ', ' + E(C.LEVELS[cur].toLowerCase()) + ')' : '') + '</div><div style="margin-top:8px">' + (opts.length ? ui.seg(p + '.target', opts, t, 'Niveau visé') : '<p class="sp">Vous êtes déjà référent : rien à viser au-delà.</p>') + '</div>' +
+        '<p class="sp" style="margin-top:8px">Objectif concret : <span style="color:var(--fg)">' + E(C.milestone(s, t)) + '</span></p>' +
+        ui.palierPath(s, cur, t) +
         '<div class="lbl" style="margin-top:18px">Horizon</div><div style="margin-top:8px">' + ui.seg(p + '.horizon', [['1m', '1 mois'], ['3m', '3 mois'], ['12m', '1 an']], d.horizon || '3m', 'Horizon') + '</div>' +
         '<div class="lbl" style="margin-top:18px">Format préféré</div><div style="margin-top:8px">' + ui.chips(p + '.formats', C.LEARN_FORMATS, d.formats, 'Formats') + '</div>' +
         '</div></section>';
@@ -292,13 +311,13 @@
       .sort(function (a, b) { return st.skills[b].level - st.skills[a].level; });
     if (!o.strong || !o.strong.length) { o.strong = cands.filter(function (id) { return st.skills[id].level >= 3; }).slice(0, 4); ui.save(); }
     var strong = o.strong.filter(function (id) { return C.data.sById[id]; });
-    var html = '<div class="flow">' + stepper('forces') + head('Transmettre · 1', 'Vos compétences fortes', 'Choisissez 3 à 6 compétences que vous pourriez transmettre. Les années de pratique, les preuves et votre expérience de transmission ajustent le prix conseillé.');
-    html += '<div class="lbl" style="margin-top:20px">Choisir parmi vos compétences notées</div><div class="chips" style="margin-top:8px">' + (cands.length ? cands.map(function (id) { var on = strong.indexOf(id) >= 0; return '<button class="chip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="toggleStrong" data-id="' + E(id) + '"><i></i>' + E(C.data.sById[id].name) + ' · ' + st.skills[id].level + '/4</button>'; }).join('') : '<p class="empty">Aucune compétence au niveau 2 ou plus. <a href="#/bilan/maitrise">Noter mes compétences</a></p>') + '</div>';
+    var html = '<div class="flow">' + stepper('forces') + head('Transmettre · 1', 'Vos compétences fortes', 'Choisissez 3 à 6 compétences que vous pourriez transmettre. Votre niveau fixe le palier que vous animez (niveau n : ateliers de niveau n-1) ; les années de pratique, les preuves et votre expérience de transmission ajustent le prix conseillé.');
+    html += '<div class="lbl" style="margin-top:20px">Choisir parmi vos compétences notées</div><div class="chips" style="margin-top:8px">' + (cands.length ? cands.map(function (id) { var on = strong.indexOf(id) >= 0; return '<button class="chip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="toggleStrong" data-id="' + E(id) + '"><i></i>' + E(C.data.sById[id].name) + ' · ' + st.skills[id].level + '/5</button>'; }).join('') : '<p class="empty">Aucune compétence au niveau 2 ou plus : c’est le niveau qui permet d’animer la découverte. <a href="#/bilan/maitrise">Noter mes compétences</a></p>') + '</div>';
     html += '<div class="searchbox" style="margin-top:14px"><input class="input" id="fq" data-search placeholder="Ajouter une autre compétence" aria-label="Ajouter une compétence forte" autocomplete="off">' + ui.icon('search') + '<kbd class="kbdhint">/</kbd></div><div id="fres" style="margin-top:8px"></div>';
     strong.forEach(function (id) {
       var s = C.data.sById[id], v = st.skills[id] || {}, p = 'skills.' + id;
       html += '<section class="panel" style="margin-top:16px"><div class="ph"><div class="row"><span class="h3">' + E(s.name) + '</span>' + ui.uniTag(s.universe) + (s.regulated ? ui.pill('Activité encadrée', 'wait') : '') + '</div><button class="btn ghost sm" data-act="toggleStrong" data-id="' + E(id) + '" aria-label="Retirer ' + E(s.name) + '">' + ui.icon('x') + '</button></div><div class="pb">' +
-        '<div class="grid2"><div><div class="lbl">Niveau</div><div style="margin-top:8px">' + ui.seg(p + '.level', [[2, 'Débrouille'], [3, 'Maîtrise'], [4, 'Enseigne']], v.level, 'Niveau') + '</div></div>' +
+        '<div class="grid2"><div><div class="lbl">Niveau</div><div style="margin-top:8px">' + ui.seg(p + '.level', [2, 3, 4, 5].map(function (k) { return [k, k + ' · ' + C.LEVELS_SHORT[k]]; }), v.level, 'Niveau') + '</div><p class="sp animtext" style="margin-top:8px">' + E(C.animateText(v.level).replace(/^v/, 'V')) + '.</p></div>' +
         '<label><span class="lbl">Années de pratique</span><input class="input" type="number" min="0" max="60" id="y-' + E(id) + '" data-bind="' + p + '.years" value="' + U.num(v.years, 0) + '" style="margin-top:8px"></label></div>' +
         '<div class="lbl" style="margin-top:16px">Preuves</div><div style="margin-top:8px">' + ui.chips(p + '.proof', C.PROOFS, v.proof, 'Preuves') + '</div>' +
         '<div class="grid2" style="margin-top:14px"><label class="toggle"><input type="checkbox" data-bind="' + p + '.teach"' + (v.teach ? ' checked' : '') + '> J’ai déjà transmis cette compétence</label>' +
@@ -323,7 +342,7 @@
   ui.actions.toggleStrong = function (el) {
     var id = el.getAttribute('data-id'), arr = ui.st.offer.strong = U.arr(ui.st.offer.strong), i = arr.indexOf(id);
     if (i >= 0 && !el.getAttribute('data-add')) arr.splice(i, 1);
-    else if (i < 0) { if (arr.length >= 6) { ui.toast('6 compétences au plus', 'wait'); return; } arr.push(id); if (!ui.st.skills[id] || ui.st.skills[id].level < 3) ui.st.skills[id] = Object.assign({ love: 2 }, ui.st.skills[id] || {}, { level: 3 }); }
+    else if (i < 0) { if (arr.length >= 6) { ui.toast('6 compétences au plus', 'wait'); return; } arr.push(id); if (!ui.st.skills[id] || ui.st.skills[id].level < 2) ui.st.skills[id] = Object.assign({ love: 2 }, ui.st.skills[id] || {}, { level: 3 }); }
     ui.save(); ui.render();
   };
 

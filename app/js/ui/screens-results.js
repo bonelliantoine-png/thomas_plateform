@@ -19,7 +19,7 @@
       var c = st.context, ys = C.yesDesires(st).slice(0, 5);
       var plans = ys.map(function (id) { return C.learnPlan(st, id); }).filter(Boolean);
       var nk = Object.keys(st.skills).filter(function (id) { return st.skills[id] && st.skills[id].level > 0; }).length + (st.custom || []).filter(function (x) { return x.level > 0; }).length;
-      var nm = Object.keys(st.skills).filter(function (id) { return st.skills[id] && st.skills[id].level >= 3; }).length;
+      var nm = Object.keys(st.skills).filter(function (id) { return st.skills[id] && st.skills[id].level >= 4; }).length;
       var hours = plans.reduce(function (a, p) { return a + p.hours; }, 0), monthly = plans.reduce(function (a, p) { return a + p.monthly; }, 0);
       var arch = C.computeArchetype(st.style.answers);
       var html = '<div class="wrap">';
@@ -47,11 +47,11 @@
       var sh = C.shareable(st);
       html += '<div class="section-h" id="partager" tabindex="-1"><span class="kicker">Transmettre</span><h2 class="h2">Ce que vous pourriez partager</h2></div>';
       if (sh.length) {
-        html += '<section class="panel"><div class="pb"><p class="prose">Vous maîtrisez ' + sh.length + ' compétence' + (sh.length > 1 ? 's' : '') + ' que d’autres veulent apprendre. Une séance d’une heure en petit groupe suffit pour commencer : c’est ainsi qu’un apprenant devient hôte.</p></div><div class="gtable">' +
+        html += '<section class="panel"><div class="pb"><p class="prose">Dans ' + sh.length + ' compétence' + (sh.length > 1 ? 's' : '') + ', votre niveau vous permet déjà d’animer un atelier : une personne de niveau n anime les ateliers de niveau n-1. Une séance d’une heure en petit groupe suffit pour commencer : c’est ainsi qu’un apprenant devient hôte.</p></div><div class="gtable">' +
           sh.slice(0, 5).map(function (x) {
-            return '<div class="gtr" style="grid-template-columns:minmax(0,1fr) auto"><div><div class="nm" style="font:400 16px var(--f-display)">' + E(x.s.name) + '</div><div class="faint" style="font-size:11.5px">' + E(C.FORMATS[x.fmt]) + ' · demande ' + x.s.attrs.demand + '/3 · facile à transmettre ' + x.s.attrs.teachable + '/3</div></div><span class="pill int">' + U.eur(x.range.lo) + ' à ' + U.eur(x.range.hi) + '</span></div>';
+            return '<div class="gtr" style="grid-template-columns:minmax(0,1fr) auto"><div><div class="nm" style="font:400 16px var(--f-display)">' + E(x.s.name) + '</div><div style="font-size:12px;color:var(--int);margin-top:2px">Niveau ' + x.level + ' (' + E(C.LEVELS[x.level].toLowerCase()) + ') : ' + E(C.animateText(x.level)) + '</div><div class="faint" style="font-size:11.5px">' + E(C.FORMATS[x.fmt]) + ' · demande ' + x.s.attrs.demand + '/3 · facile à transmettre ' + x.s.attrs.teachable + '/3</div></div><span class="pill int">' + U.eur(x.range.lo) + ' à ' + U.eur(x.range.hi) + '</span></div>';
           }).join('') + '</div><div class="pb noprint"><button class="btn primary" data-act="toOffer">Construire mon offre ' + ui.icon('arrowR') + '</button></div></section>';
-      } else html += '<p class="empty">Aucune compétence au niveau « je maîtrise » pour l’instant. Le jour venu, le parcours « Je transmets » vous aidera à lancer une première séance.</p>';
+      } else html += '<p class="empty">Aucune compétence au niveau 2 (bases acquises) pour l’instant : c’est le niveau qui permet d’animer la découverte. Le jour venu, le parcours « Je transmets » vous aidera à lancer une première séance.</p>';
 
       // utilisations directes
       html += '<div class="section-h noprint" id="usages" tabindex="-1"><span class="kicker">Utiliser</span><h2 class="h2">Douze façons d’utiliser votre bilan</h2></div><div class="tiles noprint">' +
@@ -106,15 +106,16 @@
   function planPanel(st, p, i) {
     var id = p.s.id, d = p.d;
     var need = Math.ceil(p.hours / p.horizonW * 10) / 10;
-    var html = '<details class="panel desire"' + (i === 0 ? ' open' : '') + ' id="plan-' + E(id) + '"><summary><span class="prio">' + (i + 1) + '</span><div><div class="nm">' + E(p.s.name) + '</div><div class="meta">' + ui.uniTag(p.s.universe) + ' · objectif niveau ' + p.target + ' · ≈ ' + p.hours + ' h · ' + p.weeks + ' sem. · ' + U.eur(p.monthly) + ' / mois</div></div><span class="chev">' + ui.icon('arrowR') + '</span></summary>';
+    var html = '<details class="panel desire"' + (i === 0 ? ' open' : '') + ' id="plan-' + E(id) + '"><summary><span class="prio">' + (i + 1) + '</span><div><div class="nm">' + E(p.s.name) + '</div><div class="meta">' + ui.uniTag(p.s.universe) + ' · niveau ' + p.cur + ' → ' + p.target + ' (' + E(C.LEVELS[p.target].toLowerCase()) + ') · ≈ ' + p.hours + ' h · ' + p.weeks + ' sem. · ' + U.eur(p.monthly) + ' / mois</div></div><span class="chev">' + ui.icon('arrowR') + '</span></summary>';
     html += '<div class="tabs" role="tablist" aria-label="Plan de ' + E(p.s.name) + '">' + [['plan', 'Plan'], ['ou', 'Où apprendre'], ['autour', 'Autour de moi'], ['rech', 'Recherches']].map(function (t, k) { return '<button role="tab" id="tab-' + E(id) + '-' + t[0] + '" aria-controls="tp-' + E(id) + '-' + t[0] + '" aria-selected="' + (k === 0) + '" data-tab="' + t[0] + '">' + E(t[1]) + '</button>'; }).join('') + '</div>';
     // plan
     html += '<div class="pb tabpanel" role="tabpanel" id="tp-' + E(id) + '-plan" aria-labelledby="tab-' + E(id) + '-plan"><div class="grid2"><div>' +
       '<div class="note int"><span class="lbl">Premier pas cette semaine</span><span class="sp" style="color:var(--fg)">' + E(p.first.text) + '</span>' + (p.first.link ? ' ' + ui.extLink(p.first.link, p.first.label) : '') + '</div>' +
-      '<div class="timeline" style="margin-top:14px">' + p.milestones.map(function (m, k) { return '<div class="tl' + (k === p.milestones.length - 1 ? ' int' : '') + '"><div class="when">' + E(U.dateShort(m.when)) + ' · ' + E(m.label) + '</div><div class="what">' + E(m.text) + '</div></div>'; }).join('') + '</div></div>' +
+      '<div class="timeline" style="margin-top:14px">' + p.milestones.map(function (m, k) { return '<div class="tl' + (k === p.milestones.length - 1 ? ' int' : '') + '"><div class="when">' + E(U.dateShort(m.when)) + ' · ' + E(m.label) + '</div><div class="what">' + E(m.text) + '</div></div>'; }).join('') + '</div>' +
+      '<div class="lbl" style="margin-top:16px">Paliers à franchir</div>' + ui.palierPath(p.s, p.cur, p.target, p.steps) + '</div>' +
       '<div><div class="counters" style="grid-template-columns:1fr 1fr">' + counter('Heures', p.hours + '<small> h</small>', 'du niveau ' + p.cur + ' au niveau ' + p.target) + counter('Rythme', String(p.hpw).replace('.', ',') + '<small> h/sem</small>', p.weeks + ' semaines', p.fits ? 'int' : 'wait') +
       counter('Matériel', p.material[1] <= 20 ? '≈ 0<small> €</small>' : U.fmt(p.material[0]) + '–' + U.fmt(p.material[1]) + '<small> €</small>', 'budget de départ') + counter('Séances', U.fmt(p.monthly) + '<small> €/mois</small>', p.lessonFmt ? E(C.FORMATS[p.lessonFmt]).toLowerCase() : 'en autonomie', p.overBudget ? 'wait' : '') + '</div>' +
-      (!p.fits ? '<div class="note wait" style="margin-top:12px"><span class="lbl">Horizon serré</span><span class="sp">À ' + String(p.hpw).replace('.', ',') + ' h par semaine, il faut ' + p.weeks + ' semaines. Pour tenir ' + ({ '1m': '1 mois', '3m': '3 mois', '12m': '1 an' }[d.horizon || '3m']) + ', prévoir ' + String(need).replace('.', ',') + ' h par semaine, ou viser le niveau ' + Math.max(1, p.target - 1) + ' d’abord.</span></div>' : '') +
+      (!p.fits ? '<div class="note wait" style="margin-top:12px"><span class="lbl">Horizon serré</span><span class="sp">À ' + String(p.hpw).replace('.', ',') + ' h par semaine, il faut ' + p.weeks + ' semaines. Pour tenir ' + ({ '1m': '1 mois', '3m': '3 mois', '12m': '1 an' }[d.horizon || '3m']) + ', prévoir ' + String(need).replace('.', ',') + ' h par semaine, ' + (p.target - 1 > p.cur ? 'ou viser le niveau ' + (p.target - 1) + ' d’abord' : 'ou allonger l’horizon') + '.</span></div>' : '') +
       (p.overBudget ? '<div class="note wait" style="margin-top:12px"><span class="lbl">Budget</span><span class="sp">Les séances encadrées dépassent votre budget mensuel. Alterner une séance par mois avec la pratique en autonomie, ou passer par un club associatif.</span></div>' : '') +
       (p.s.regulated === 'sport' ? '<p class="faint" style="margin-top:10px;font-size:11.5px">Activité sportive : choisissez un encadrant diplômé (carte professionnelle) ou un club fédéré.</p>' : '') +
       '</div></div></div>';

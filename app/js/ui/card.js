@@ -83,7 +83,7 @@
       if (!items.length) { x.fillStyle = T.fg3; x.font = '300 28px ' + F.body; x.fillText('à compléter', lx, y); y += 54; }
       items.forEach(function (it) {
         if (desire) { x.strokeStyle = T.int; x.lineWidth = 3; x.beginPath(); x.arc(lx + 10, y - 10, 9, 0, 7); x.stroke(); }
-        else for (var k = 0; k < 4; k++) { x.fillStyle = k < it.level ? T.accent : T.line2; rr(x, lx + k * 15, y - 18, 11, 11, 2.5); x.fill(); }
+        else for (var k = 0; k < C.LEVEL_MAX; k++) { x.fillStyle = k < it.level ? T.accent : T.line2; rr(x, lx + k * 12.5, y - 17, 9.5, 9.5, 2.2); x.fill(); }
         x.fillStyle = T.fg; x.font = '400 ' + (story ? 40 : 31) + 'px ' + F.display;
         var ls = lines(it.s.short || it.s.name, lw - (desire ? 40 : 78));
         ls.forEach(function (t, k) { x.fillText(t, lx + (desire ? 36 : 74), y + k * (story ? 46 : 36)); });

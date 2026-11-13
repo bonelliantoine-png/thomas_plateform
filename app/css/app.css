@@ -201,14 +201,36 @@ input[type=range]{width:100%;accent-color:var(--accent);height:28px}
 .schip{display:inline-flex;align-items:center;gap:9px;min-height:40px;padding:6px 12px 6px 13px;border:1px solid var(--line-2);border-radius:999px;background:var(--panel);color:var(--fg-2);cursor:pointer;font:12.5px var(--f-mono);text-align:left;max-width:100%}
 .schip:hover{background:var(--hover);color:var(--fg)}
 .schip .nm{overflow:hidden;text-overflow:ellipsis}
-.schip.l1{border-color:color-mix(in srgb,var(--accent) 30%,var(--line-2));color:var(--fg)}
-.schip.l2{border-color:color-mix(in srgb,var(--accent) 55%,var(--line-2));color:var(--fg)}
-.schip.l3,.schip.l4{border-color:var(--accent);color:var(--fg);background:var(--panel-2)}
-.schip.l4 .lv{color:var(--int)}
+.schip.l1{border-color:color-mix(in srgb,var(--accent) 25%,var(--line-2));color:var(--fg)}
+.schip.l2{border-color:color-mix(in srgb,var(--accent) 45%,var(--line-2));color:var(--fg)}
+.schip.l3{border-color:color-mix(in srgb,var(--accent) 70%,var(--line-2));color:var(--fg)}
+.schip.l4,.schip.l5{border-color:var(--accent);color:var(--fg);background:var(--panel-2)}
+.schip.l2 .lv,.schip.l3 .lv,.schip.l4 .lv{color:var(--fg-2)}
+.schip.l5 .lv{color:var(--int)}
+.schip.l5 .dots i.on{background:var(--int)}
 .schip .lv{font-size:10px;color:var(--fg-3);white-space:nowrap}
 .dots{display:inline-flex;gap:3px;flex:none}
 .dots i{width:7px;height:7px;border-radius:2px;background:var(--line-2)}
 .dots i.on{background:var(--accent)}
+/* échelle de maîtrise et paliers */
+.lvlegend{list-style:none;margin:14px 0 8px;padding:0;display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+@media (min-width:720px){.lvlegend{grid-template-columns:repeat(5,1fr)}}
+.lvlegend li{background:var(--panel);display:grid;grid-template-columns:18px auto 1fr;grid-template-areas:"n d t" "n d a";gap:0 9px;align-items:center;padding:7px 11px;min-width:0}
+@media (min-width:720px){.lvlegend li{grid-template-columns:auto 1fr;grid-template-areas:"n d" "t t" "a a";gap:4px 8px;padding:9px 11px}}
+.lvlegend .n{grid-area:n;font:500 12px var(--f-mono);color:var(--accent)}.lvlegend .dots{grid-area:d}
+.lvlegend .t{grid-area:t;font:400 15px/1.2 var(--f-display);color:var(--fg)}.lvlegend .a{grid-area:a;font-size:10.5px;color:var(--fg-3)}
+.lvlegend li.l5 .dots i.on{background:var(--int)}
+.rulehelp{display:flex;gap:8px;align-items:flex-start;margin:0 0 16px;color:var(--fg-2);font-size:12px}.rulehelp .ic{flex:none;margin-top:1px;color:var(--accent)}
+.palpath{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:0;border-left:1px solid var(--line-2)}
+.palpath li{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:8px 0 8px 0;position:relative}
+.palpath li .k{width:22px;height:22px;margin-left:-11px;border-radius:6px;background:var(--panel-2);border:1px solid var(--accent);color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font:500 11px var(--f-mono)}
+.palpath .pt{font:500 12.5px var(--f-mono);color:var(--fg)}.palpath .pm{font:300 14.5px/1.45 var(--f-body);color:var(--fg-2)}.palpath .pw{font-size:11.5px;color:var(--int);margin-top:2px}
+.ladder5{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;grid-template-columns:1fr}
+@media (min-width:860px){.ladder5{grid-template-columns:repeat(5,1fr)}}
+.ladder5 div{background:var(--panel);padding:9px 11px;min-width:0}.ladder5 .lv{font:500 11px var(--f-mono);color:var(--fg-3)}.ladder5 .nm{font:400 14px/1.25 var(--f-display);color:var(--fg-2);margin-top:2px}.ladder5 .an{font-size:10.5px;color:var(--fg-3);margin-top:3px}
+.ladder5 .done .lv{color:var(--accent)}.ladder5 .cur{background:var(--panel-2);box-shadow:inset 0 0 0 1px var(--accent)}.ladder5 .cur .lv,.ladder5 .cur .nm{color:var(--fg)}.ladder5 .cur .an{color:var(--int)}
+.animline{margin-top:8px;display:flex;flex-direction:column;gap:2px;font-size:11.5px;color:var(--fg-3)}.animline b{font-weight:500;color:var(--int)}
+.animnote{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12px;color:var(--fg-2)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--fg-3);font-size:11.5px}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .dompanel{margin-top:12px}

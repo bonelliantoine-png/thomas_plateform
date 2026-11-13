@@ -1,0 +1,7817 @@
+{
+ "sector": "jeux",
+ "categories": [
+  {
+   "id": "jeux.reflexion",
+   "name": "Jeux de réflexion",
+   "desc": "Échecs, jeux d'Orient et casse-têtes qui se jouent à l'esprit.",
+   "subcategories": [
+    {
+     "id": "jeux.reflexion.echecs",
+     "name": "Échecs",
+     "desc": "Du premier coup au club : ouvertures, tactique, blitz et transmission aux enfants."
+    },
+    {
+     "id": "jeux.reflexion.abstraits",
+     "name": "Jeux d'Orient et jeux abstraits",
+     "desc": "Go, mahjong, backgammon et autres jeux de plateau sans hasard ou presque."
+    },
+    {
+     "id": "jeux.reflexion.logique",
+     "name": "Logique et casse-têtes",
+     "desc": "Speedcubing, énigmes mécaniques et logique pure."
+    }
+   ]
+  },
+  {
+   "id": "jeux.cartes",
+   "name": "Cartes, bluff et jeux de cartes à collectionner",
+   "desc": "Jeux de levées, poker, bluff et jeux de cartes évolutifs.",
+   "subcategories": [
+    {
+     "id": "jeux.cartes.classiques",
+     "name": "Jeux de cartes classiques",
+     "desc": "Belote, tarot et bridge : plis, enchères et partenaires."
+    },
+    {
+     "id": "jeux.cartes.bluff",
+     "name": "Poker et jeux de bluff",
+     "desc": "Lecture des autres, bluff et probabilités."
+    },
+    {
+     "id": "jeux.cartes.jcc",
+     "name": "Jeux de cartes à collectionner",
+     "desc": "Magic, Pokémon et autres jeux évolutifs."
+    }
+   ]
+  },
+  {
+   "id": "jeux.societe",
+   "name": "Jeux de société",
+   "desc": "Découvrir, animer et créer des jeux de plateau et de cartes.",
+   "subcategories": [
+    {
+     "id": "jeux.societe.decouverte",
+     "name": "Découvrir et animer",
+     "desc": "Jeux experts, coopératifs, explication de règles et soirées."
+    },
+    {
+     "id": "jeux.societe.creation",
+     "name": "Créer un jeu de société",
+     "desc": "Concevoir, prototyper, illustrer et publier."
+    }
+   ]
+  },
+  {
+   "id": "jeux.role",
+   "name": "Jeux de rôle, figurines et grandeur nature",
+   "desc": "Incarner des personnages, mener des parties et peindre des armées.",
+   "subcategories": [
+    {
+     "id": "jeux.role.jdr",
+     "name": "Jeux de rôle sur table",
+     "desc": "Jouer, mener et écrire des parties de jeu de rôle."
+    },
+    {
+     "id": "jeux.role.gn",
+     "name": "Grandeur nature et enquêtes jouées",
+     "desc": "Incarner un rôle en costume, en direct et en groupe."
+    },
+    {
+     "id": "jeux.role.figurines",
+     "name": "Figurines et wargame",
+     "desc": "Peindre, jouer et décorer."
+    }
+   ]
+  },
+  {
+   "id": "jeux.enquete",
+   "name": "Énigmes, escape et enquêtes",
+   "desc": "Créer et jouer des énigmes, des escape games et des chasses au trésor.",
+   "subcategories": [
+    {
+     "id": "jeux.enquete.escape",
+     "name": "Escape game",
+     "desc": "Jouer et concevoir des escape games."
+    },
+    {
+     "id": "jeux.enquete.enquetes",
+     "name": "Enquêtes et pistes",
+     "desc": "Murder party, chasses au trésor et jeux de piste."
+    },
+    {
+     "id": "jeux.enquete.enigmes",
+     "name": "Énigmes et codes",
+     "desc": "Concevoir et résoudre des énigmes, de la cryptographie ludique."
+    }
+   ]
+  },
+  {
+   "id": "jeux.mots",
+   "name": "Quiz, mémoire et mots",
+   "desc": "Animer des quiz, entraîner sa mémoire et jouer avec les mots.",
+   "subcategories": [
+    {
+     "id": "jeux.mots.quiz",
+     "name": "Quiz et animations",
+     "desc": "Concevoir et animer des quiz, des blind-tests et des soirées jeux."
+    },
+    {
+     "id": "jeux.mots.memoire",
+     "name": "Mémoire",
+     "desc": "Techniques et entraînement de la mémoire."
+    },
+    {
+     "id": "jeux.mots.mots",
+     "name": "Mots et lettres",
+     "desc": "Scrabble, mots croisés et jeux de lettres."
+    }
+   ]
+  },
+  {
+   "id": "jeux.video",
+   "name": "Jeux vidéo",
+   "desc": "Jouer à haut niveau, créer et rejouer les classiques.",
+   "subcategories": [
+    {
+     "id": "jeux.video.competitif",
+     "name": "Compétition et rétrogaming",
+     "desc": "Jeux vidéo compétitifs, speedrun et classiques."
+    },
+    {
+     "id": "jeux.video.creation",
+     "name": "Créer un jeu vidéo",
+     "desc": "Concevoir et programmer un petit jeu."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "jeux-echecs-ouvertures",
+   "name": "Échecs : ouvertures",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.echecs",
+   "desc": "Maîtriser trois ouvertures solides pour bien démarrer ses parties, avec les idées plutôt que la mémoire.",
+   "audience": "Adultes 20-60 ans, joueurs en ligne, parents",
+   "skills": [
+    "Contrôle du centre",
+    "Développement des pièces",
+    "Roque et sécurité du roi",
+    "Pièges classiques"
+   ],
+   "appSkills": [
+    "echecs"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les premiers coups",
+     "goal": "Jouer dix coups sans perdre de pièce en suivant trois règles d'ouverture",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une ouverture à soi",
+     "goal": "Jouer une ouverture complète (italienne ou espagnole) avec les idées clés",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répertoire blancs et noirs",
+     "goal": "Constituer un répertoire de trois ouvertures et répondre aux déviations",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ouvertures et plans",
+     "goal": "Expliquer le plan du milieu de jeu de chaque ouverture jouée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîner un club",
+     "goal": "Concevoir un cursus d'ouvertures pour un groupe de joueurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "mediatheque",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "cafe",
+    "calme",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'échecs",
+    "Chess.com",
+    "Lichess",
+    "cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande très forte et tendance soutenue depuis 2020, mais la plupart des ressources sont gratuites et les clubs peu chers ; l'offre incarnée en petit groupe en café reste rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-echecs-tactique-finales",
+   "name": "Échecs : tactique et finales",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.echecs",
+   "desc": "Repérer fourchettes, clouages et mats en deux coups, puis convertir une finale gagnée.",
+   "audience": "Joueurs 15-50 ans de niveau 1000 à 1600 Elo",
+   "skills": [
+    "Fourchettes et clouages",
+    "Mats élémentaires",
+    "Finales de pions",
+    "Calcul de variantes"
+   ],
+   "appSkills": [
+    "echecs"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Voir les motifs",
+     "goal": "Résoudre dix problèmes de tactique de niveau débutant en moins de 20 minutes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mats en deux coups",
+     "goal": "Trouver un mat en deux coups dans neuf cas sur dix",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Finales de base",
+     "goal": "Convertir une finale roi et pion contre roi",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Calculer en profondeur",
+     "goal": "Calculer une variante de cinq coups sans déplacer les pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher la tactique",
+     "goal": "Bâtir un entraînement personnalisé à un joueur de club",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "calme",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs",
+    "Chessable",
+    "Lichess"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public déjà autonome grâce aux plateformes en ligne, peu disposé à payer pour des cours courts.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-echecs-blitz-club",
+   "name": "Échecs : blitz, tournoi et jeu en club",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.echecs",
+   "desc": "Jouer sereinement en tournoi ou en blitz : horloge, notation, règles et gestion du temps.",
+   "audience": "Joueurs 18-60 ans, nouveaux adhérents de clubs",
+   "skills": [
+    "Gestion de l'horloge",
+    "Notation",
+    "Règles de tournoi",
+    "Blitz"
+   ],
+   "appSkills": [
+    "echecs"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier blitz",
+     "goal": "Jouer cinq parties de 5 minutes sans tomber au temps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Notation et règles",
+     "goal": "Noter une partie complète et connaître les règles du touché-joué",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon premier tournoi",
+     "goal": "Jouer cinq rondes en cadence rapide",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gérer le temps",
+     "goal": "Répartir 30 minutes sur une partie sans zeitnot",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      50
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un tournoi",
+     "goal": "Organiser et arbitrer un tournoi de 16 joueurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      65
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "convivial",
+    "cafe",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'échecs",
+    "bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "La soirée blitz en bar fonctionne socialement mais rapporte peu ; surtout un format d'acquisition.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-echecs-enfants-parents",
+   "name": "Échecs : les apprendre à son enfant",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.echecs",
+   "desc": "Apprendre les règles et premières idées pour jouer avec son enfant sans l'écraser.",
+   "audience": "Parents d'enfants 5-12 ans",
+   "skills": [
+    "Règles du jeu",
+    "Mats simples",
+    "Jeux de pédagogie",
+    "Jouer avec un enfant"
+   ],
+   "appSkills": [
+    "echecs"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les règles en 1 heure",
+     "goal": "Expliquer les mouvements et le mat simple à un enfant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premières parties",
+     "goal": "Jouer cinq parties avec un enfant en le laissant réfléchir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux d'apprentissage",
+     "goal": "Utiliser trois mini-jeux d'échecs pour progresser",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Partie en famille",
+     "goal": "Jouer une partie complète à égalité avec un enfant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un club enfants",
+     "goal": "Concevoir un atelier échecs pour des enfants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "domicile",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "enfants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "famille",
+    "strategie",
+    "enfants",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs d'échecs",
+    "écoles",
+    "applications"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Parents motivés et solvables pour l'éducation ; l'offre associative est dense et peu chère.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-go-initiation",
+   "name": "Jeu de go : de la capture à la vie",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.abstraits",
+   "desc": "Apprendre le go : poser des pierres, capturer, former des yeux et comprendre le territoire.",
+   "audience": "Curieux 18-60 ans, amateurs de stratégie",
+   "skills": [
+    "Capture",
+    "Yeux et vie",
+    "Territoire",
+    "Ouvertures simples"
+   ],
+   "appSkills": [
+    "go-jeu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les règles du go",
+     "goal": "Jouer une partie 9x9 complète en respectant les règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Capturer et vivre",
+     "goal": "Résoudre dix problèmes de vie et mort simples",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Territoire",
+     "goal": "Compter une partie 13x13 et expliquer ses choix",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Stratégie globale",
+     "goal": "Jouer une partie 19x19 avec un plan",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Enseigner le go",
+     "goal": "Initier des débutants et animer un petit tournoi",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "calme",
+    "culture-asiatique"
+   ],
+   "competitors": [
+    "Clubs de go",
+    "Kiseido",
+    "Online-go"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public enthousiaste mais très petit ; très peu de budget, un marché qui reste associatif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-mahjong",
+   "name": "Mahjong : tuiles, combinaisons et parties",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.abstraits",
+   "desc": "Apprendre le mahjong (variante riichi ou hongkongaise) : tuiles, combinaisons et premiers tours.",
+   "audience": "Adultes 25-65 ans, familles asiatiques, joueurs de société",
+   "skills": [
+    "Tuiles et combinaisons",
+    "Tour de jeu",
+    "Défense",
+    "Comptage"
+   ],
+   "appSkills": [
+    "mahjong"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières tuiles",
+     "goal": "Compléter une main avec aide et finir une partie à quatre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jouer sans aide",
+     "goal": "Jouer une partie complète sans consulter l'aide-mémoire",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Attaque et défense",
+     "goal": "Choisir ses défausses en lisant la table et éviter de donner la main gagnante",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Riichi et comptage",
+     "goal": "Compter ses points et ceux des autres sans erreur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une table",
+     "goal": "Animer une soirée de mahjong et initier quatre débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "culture-asiatique",
+    "convivial"
+   ],
+   "competitors": [
+    "Associations",
+    "bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt croissant (culture asiatique), mais peu d'animateurs ; matériel à fournir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-backgammon",
+   "name": "Backgammon : stratégie et cube",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.abstraits",
+   "desc": "Apprendre le backgammon : déplacements, blocages, stratégie de course et usage du videau.",
+   "audience": "Adultes 25-65 ans, joueurs de société",
+   "skills": [
+    "Déplacement",
+    "Blocage",
+    "Course",
+    "Videau"
+   ],
+   "appSkills": [
+    "backgammon"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers pions",
+     "goal": "Jouer une partie complète en respectant déplacements et prises",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Blocages et courses",
+     "goal": "Choisir entre jeu de course et jeu de blocage selon la position",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Le videau",
+     "goal": "Doubler et accepter ou refuser un double au bon moment",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Probabilités",
+     "goal": "Calculer les chances de touche et de sortie en deux lancers",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un tournoi",
+     "goal": "Organiser un petit tournoi de backgammon et arbitrer les parties",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "cafe",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de backgammon",
+    "cafés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public faible, mais ambiance de café agréable ; faible valeur monétaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-abstraits-modernes",
+   "name": "Jeux abstraits et duels modernes",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.abstraits",
+   "desc": "Découvrir des jeux de duel à règles courtes : Hive, Azul, Santorini, Patchwork.",
+   "audience": "Couples, amis 22-45 ans",
+   "skills": [
+    "Règles courtes",
+    "Tactique",
+    "Lecture de l'adversaire",
+    "Gestion de ressources"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Cinq duels en une soirée",
+     "goal": "Jouer cinq jeux de duel après explication et en comprendre la stratégie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un duel à fond",
+     "goal": "Gagner trois parties d'affilée sur un même jeu de duel",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire l'adversaire",
+     "goal": "Expliquer les plans clés d'un jeu et en tirer une stratégie d'ouverture",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mini-tournoi",
+     "goal": "Organiser un mini-tournoi de duels et arbitrer les questions de règles",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer des soirées de duels",
+     "goal": "Animer une soirée de découverte pour des couples débutants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "couple",
+    "convivial"
+   ],
+   "competitors": [
+    "Bars à jeux",
+    "Boardgamearena"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Format léger et très vendeur en couple, mais les bars à jeux le couvrent déjà.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-speedcubing",
+   "name": "Speedcubing : résoudre le Rubik's cube",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.logique",
+   "desc": "Apprendre à résoudre un Rubik's cube 3x3 en méthode débutant, puis chronométrer.",
+   "audience": "Ados, étudiants, parents 10-40 ans",
+   "skills": [
+    "Croix",
+    "Premières faces",
+    "Dernière couche",
+    "Chronométrage"
+   ],
+   "appSkills": [
+    "speedcubing"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier cube résolu",
+     "goal": "Résoudre un 3x3 en moins de 10 minutes avec une méthode débutant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vers 1 minute 30",
+     "goal": "Résoudre un 3x3 en moins de 1 minute 30 avec une méthode en couches",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Méthode CFOP",
+     "goal": "Résoudre un 3x3 en moins de 45 secondes avec croix, F2L et dernière couche",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition",
+     "goal": "Résoudre un 3x3 en moins de 25 secondes et participer à une compétition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Entraîner des speedcubers",
+     "goal": "Former des débutants et planifier leur progression sur plusieurs semaines",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      65,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "ecole"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "defi",
+    "geste",
+    "enigme",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs de speedcubing",
+    "WCA",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Résultat visible très vite, matériel peu coûteux, bonne communauté ; très adapté aux ados et familles, avec un fort effet démonstration.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-casse-tetes-mecaniques",
+   "name": "Casse-têtes mécaniques et puzzles en bois",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.logique",
+   "desc": "Résoudre et comprendre des casse-têtes (burrs, anneaux chinois, cubes) avec méthode.",
+   "audience": "Curieux 15-60 ans, collectionneurs",
+   "skills": [
+    "Lecture de mécanismes",
+    "Essais méthodiques",
+    "Patience",
+    "Démontage"
+   ],
+   "appSkills": [
+    "puzzles-casse-tetes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier casse-tête",
+     "goal": "Résoudre trois casse-têtes simples en bois ou en métal",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Casse-têtes moyens",
+     "goal": "Résoudre un burr de niveau moyen en moins de 30 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Méthode d'analyse",
+     "goal": "Expliquer sa méthode de résolution et la transmettre à quelqu'un d'autre",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Collection soignée",
+     "goal": "Constituer et classer une collection de 20 casse-têtes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier",
+     "goal": "Animer un atelier de casse-têtes pour 8 participants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "collection",
+    "bois",
+    "geste"
+   ],
+   "competitors": [
+    "Boutiques de casse-têtes",
+    "collectionneurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche affectueuse et petite ; potentiel de collectionneur surtout.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-logique-sudoku-kakuro",
+   "name": "Logique pure : sudoku, kakuro, hitori",
+   "sector": "jeux",
+   "category": "jeux.reflexion",
+   "subcategory": "jeux.reflexion.logique",
+   "desc": "Apprendre les techniques de résolution des grilles de logique, au-delà de l'essai-erreur.",
+   "audience": "Adultes 25-75 ans, retraités, amateurs de grilles",
+   "skills": [
+    "Candidats",
+    "Techniques avancées",
+    "Raisonnement",
+    "Rapidité"
+   ],
+   "appSkills": [
+    "sudoku-logique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Sudoku sans deviner",
+     "goal": "Résoudre un sudoku facile en 15 minutes sans essai-erreur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Techniques moyennes",
+     "goal": "Résoudre un sudoku moyen avec paires nues et pointantes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Grilles variées",
+     "goal": "Résoudre un kakuro et un hitori de niveau facile",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grilles difficiles",
+     "goal": "Résoudre un sudoku difficile en utilisant des chaînes de candidats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un club de logique",
+     "goal": "Animer une séance de logique et expliquer chaque technique",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      65
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "calme",
+    "logique",
+    "cafe"
+   ],
+   "competitors": [
+    "Grilles de journaux",
+    "applications"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Pratique solitaire très bien servie par les journaux et applis ; aucune raison de se réunir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-belote-coinche",
+   "name": "Belote et coinche : jouer et compter",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.classiques",
+   "desc": "Apprendre la belote et la coinche : annonces, plis, comptage et mémoire des cartes.",
+   "audience": "Adultes 25-75 ans, familles, retraités",
+   "skills": [
+    "Annonces",
+    "Mémoire des cartes",
+    "Comptage",
+    "Coinche"
+   ],
+   "appSkills": [
+    "belote-tarot"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers plis",
+     "goal": "Jouer une partie de belote en respectant les règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Annonces et comptage",
+     "goal": "Annoncer ses combinaisons et compter une manche sans erreur",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coinche",
+     "goal": "Annoncer et coincher à bon escient en lisant les enchères",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mémoire des cartes",
+     "goal": "Déduire les cartes restantes et choisir la carte qui fait gagner",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un tournoi",
+     "goal": "Organiser et arbitrer un tournoi de belote de 16 joueurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      55
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "bar",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "famille",
+    "cafe",
+    "strategie"
+   ],
+   "competitors": [
+    "Clubs de belote",
+    "cafés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très populaire mais gratuit et entre soi ; la plateforme ne peut apporter qu'un cadre d'initiation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-tarot-plis",
+   "name": "Tarot à 4 et à 5 : enchères et plis",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.classiques",
+   "desc": "Découvrir le tarot français : enchères, appel du roi, poignées et petit au bout.",
+   "audience": "Adultes 28-70 ans, familles",
+   "skills": [
+    "Enchères",
+    "Appel du roi",
+    "Mémoire",
+    "Poignées"
+   ],
+   "appSkills": [
+    "belote-tarot"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières donnes",
+     "goal": "Jouer une partie à quatre avec les règles de base",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les enchères",
+     "goal": "Choisir son enchère selon sa main et le nombre d'atouts",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Appel du roi",
+     "goal": "Jouer en équipe à cinq en cachant ou révélant son partenaire",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compter les atouts",
+     "goal": "Compter atouts et honneurs et en tirer une stratégie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de tarot",
+     "goal": "Initier des débutants et arbitrer les litiges",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      30,
+      55
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "famille",
+    "strategie"
+   ],
+   "competitors": [
+    "Clubs de tarot",
+    "FFT"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public vieillissant, peu de nouveaux entrants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-bridge-debutant",
+   "name": "Bridge : premières levées et enchères",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.classiques",
+   "desc": "Découvrir le bridge : levées, enchères simples et jeu de la carte.",
+   "audience": "Adultes 40-75 ans, curieux de jeux de réflexion",
+   "skills": [
+    "Levées",
+    "Enchères",
+    "Jeu de la carte",
+    "Défense"
+   ],
+   "appSkills": [
+    "bridge"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les levées",
+     "goal": "Jouer une donne en respectant couleur, atout et levées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premières enchères",
+     "goal": "Ouvrir et répondre avec un système simple",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer un contrat",
+     "goal": "Réaliser un contrat de 3 sans-atout et planifier le jeu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Défendre",
+     "goal": "Défendre en lisant les signaux du partenaire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une table",
+     "goal": "Initier quatre débutants et arbitrer une donne",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "cafe",
+    "calme"
+   ],
+   "competitors": [
+    "Clubs de bridge",
+    "FFB"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Jeu profond mais public vieillissant, déjà pris en charge par les clubs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-poker-strategie",
+   "name": "Poker stratégique sans mise",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.bluff",
+   "desc": "Apprendre le poker (Texas hold'em) : mains, position, probabilités et lecture des adversaires, sans argent.",
+   "audience": "Adultes 22-45 ans, curieux de stratégie et de psychologie",
+   "skills": [
+    "Valeur des mains",
+    "Position",
+    "Probabilités",
+    "Lecture adverse"
+   ],
+   "appSkills": [
+    "poker"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les règles du hold'em",
+     "goal": "Jouer une partie complète sans erreur de règle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Position et mains de départ",
+     "goal": "Choisir ses mains de départ selon sa position à la table",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Probabilités et cotes",
+     "goal": "Calculer outs et cotes de pot sur une main en cours",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Bluff et lecture",
+     "goal": "Construire un bluff cohérent et lire un adversaire sur trois tours",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée sans mise",
+     "goal": "Animer une soirée de poker pédagogique sans mise ni gain",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "argent",
+    "convivial",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs de poker",
+    "apps",
+    "Winamax"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public étendu, mais attention au cadre légal des jeux d'argent ; un format strictement pédagogique et sans mise est nécessaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-loup-garou-bluff",
+   "name": "Loup-garou, Skull, Coup : jeux de bluff",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.bluff",
+   "desc": "Maîtriser les jeux de bluff en groupe : mentir, déduire, convaincre.",
+   "audience": "Amis, groupes 18-45 ans",
+   "skills": [
+    "Déduction",
+    "Mensonge",
+    "Persuasion",
+    "Lecture du groupe"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bluff",
+     "goal": "Jouer trois parties en comprenant le rôle de chacun",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Déduire",
+     "goal": "Identifier un menteur avec des indices argumentés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Convaincre",
+     "goal": "Défendre sa position et retourner un vote",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mener le jeu",
+     "goal": "Animer une partie de loup-garou de 12 joueurs",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des narrateurs",
+     "goal": "Former des animateurs de jeux de bluff à tenir une table de 12",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "parole",
+    "humour",
+    "fete"
+   ],
+   "competitors": [
+    "Bars à jeux",
+    "Loups-garous"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très social ; peu payant mais très bon en mix avec un verre ou un événement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-mentir-deduire-cartes",
+   "name": "Jeux de déduction et d'enquête",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.bluff",
+   "desc": "Résoudre des mystères par déduction : Cluedo, Mysterium, Unlock.",
+   "audience": "Familles, couples 20-60 ans",
+   "skills": [
+    "Déduction",
+    "Indices",
+    "Coopération",
+    "Notes"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon enquête",
+     "goal": "Résoudre une enquête simple avec les indices donnés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Prendre des notes",
+     "goal": "Utiliser une grille de déduction pour exclure des pistes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enquêter en équipe",
+     "goal": "Résoudre une enquête coopérative en partageant ses indices",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Créer une enquête",
+     "goal": "Concevoir une enquête de 5 indices sur le modèle de Cluedo",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée enquête",
+     "goal": "Animer une soirée d'enquête pour 8 joueurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "famille",
+    "convivial"
+   ],
+   "competitors": [
+    "Bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Proche des jeux de bluff et d'enquête ; manque de différenciation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-magic-draft",
+   "name": "Magic : draft et deckbuilding",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.jcc",
+   "desc": "Apprendre Magic : règles, construction de deck équilibré et premiers tournois en draft.",
+   "audience": "Joueurs 16-40 ans, collectionneurs",
+   "skills": [
+    "Règles",
+    "Construction de deck",
+    "Draft",
+    "Courbe de mana"
+   ],
+   "appSkills": [
+    "magic-tcg"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première partie",
+     "goal": "Jouer une partie complète de Magic en comprenant les phases",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier deck",
+     "goal": "Construire un deck de 40 cartes cohérent avec 17 terrains",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Draft complet",
+     "goal": "Participer à une draft de 8 joueurs et construire un deck gagnant",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Adapter son deck",
+     "goal": "Ajuster son deck face à trois adversaires différents",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une draft",
+     "goal": "Animer une soirée de draft et initier des débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "boutique",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "carte",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "collection",
+    "defi",
+    "geek"
+   ],
+   "competitors": [
+    "Boutiques de jeux",
+    "Wizards of the Coast",
+    "Cardmarket"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté de boutiques existante, mais très consumériste ; la plateforme apporte surtout un entrée pour les débutants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-pokemon-jcc",
+   "name": "Pokémon JCC : jouer et collectionner",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.jcc",
+   "desc": "Jouer au jeu de cartes Pokémon : règles, deck simple, échanges et premier tournoi.",
+   "audience": "Enfants, ados, parents 8-40 ans",
+   "skills": [
+    "Règles",
+    "Construction",
+    "Énergies",
+    "Tournoi"
+   ],
+   "appSkills": [
+    "magic-tcg"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier combat",
+     "goal": "Jouer une partie de Pokémon JCC avec l'aide d'un adulte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier deck",
+     "goal": "Construire un deck de 60 cartes et expliquer ses choix",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tournoi local",
+     "goal": "Participer à un tournoi de boutique et jouer cinq parties",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meilleur stratège",
+     "goal": "Adapter son deck au jeu des autres",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer parent-enfant",
+     "goal": "Animer une initiation pour des parents et leurs enfants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "enfants",
+    "ados",
+    "parents"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "collection",
+    "famille",
+    "enfants",
+    "geek"
+   ],
+   "competitors": [
+    "Boutiques",
+    "Pokémon Company"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Très grosse base de joueurs, mais déjà très encadrée par les boutiques ; l'atelier « initiation parent-enfant » est un angle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-cartes-evolutifs",
+   "name": "Nouveaux jeux de cartes : Lorcana, Flesh and Blood",
+   "sector": "jeux",
+   "category": "jeux.cartes",
+   "subcategory": "jeux.cartes.jcc",
+   "desc": "Découvrir des jeux de cartes récents et accessibles : règles et premiers decks.",
+   "audience": "Joueurs 15-40 ans",
+   "skills": [
+    "Règles",
+    "Decks",
+    "Tactique",
+    "Collection"
+   ],
+   "appSkills": [
+    "magic-tcg"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une première partie",
+     "goal": "Jouer une partie complète et comprendre les règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mon premier deck",
+     "goal": "Construire un deck jouable avec la collection de départ",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tournoi de découverte",
+     "goal": "Jouer un petit tournoi de 4 rondes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meilleur deck",
+     "goal": "Optimiser son deck selon le méta du moment",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée",
+     "goal": "Animer une soirée de découverte pour des joueurs novices",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "collection",
+    "strategie",
+    "geek"
+   ],
+   "competitors": [
+    "Boutiques",
+    "éditeurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché mouvant, intéressant mais saturé par les boutiques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-experts-decouverte",
+   "name": "Découverte de jeux de société experts",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.decouverte",
+   "desc": "Jouer à trois jeux de stratégie récents (Catan, Terraforming Mars, Wingspan) avec explication guidée.",
+   "audience": "Jeunes actifs 25-40 ans, amateurs de jeux de plateau",
+   "skills": [
+    "Règles clés",
+    "Stratégie d'ouverture",
+    "Gestion des ressources",
+    "Interaction"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une soirée, trois jeux",
+     "goal": "Jouer trois jeux de stratégie après explication guidée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un jeu à fond",
+     "goal": "Jouer trois fois le même jeu et améliorer son score",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Choisir ses stratégies",
+     "goal": "Comparer deux stratégies sur un même jeu et expliquer l'écart",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeux lourds",
+     "goal": "Jouer un jeu de 3 heures sans perdre le fil des règles",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée",
+     "goal": "Animer une soirée de découverte de jeux experts",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      40,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "convivial",
+    "cafe",
+    "defi"
+   ],
+   "competitors": [
+    "Bars à jeux",
+    "Ludotechs",
+    "Philibert"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Marché des bars à jeux actif, mais payant faiblement ; un hôte compétent qui explique bien reste précieux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-cooperatifs",
+   "name": "Jeux coopératifs : gagner ensemble",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.decouverte",
+   "desc": "Jouer à des jeux où l'on gagne ou perd ensemble : Pandemic, Spirit Island, Hanabi.",
+   "audience": "Familles, amis, équipes 15-60 ans",
+   "skills": [
+    "Coordination",
+    "Communication",
+    "Planification",
+    "Gestion de crise"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gagner ensemble",
+     "goal": "Jouer deux jeux coopératifs de bout en bout",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Coordination",
+     "goal": "Réussir une partie en planifiant à plusieurs sans qu'une personne décide pour tous",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Éviter l'effet leader",
+     "goal": "Mener un jeu coopératif en laissant chacun jouer",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Niveau difficile",
+     "goal": "Gagner à difficulté élevée en optimisant les actions",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer en équipe",
+     "goal": "Animer une séance de jeux coopératifs pour une équipe d'entreprise",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      40,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "famille",
+    "collectif",
+    "convivial",
+    "entreprise"
+   ],
+   "competitors": [
+    "Bars à jeux",
+    "Ludotechs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Bon pour la famille et l'entreprise (cohésion), avec un usage de team building possible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-explication-regles-animation",
+   "name": "Expliquer des règles et animer une table",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.decouverte",
+   "desc": "Expliquer un jeu en 5 minutes, gérer une table et rendre chaque partie fluide.",
+   "audience": "Animateurs, libraires, bénévoles 20-50 ans",
+   "skills": [
+    "Résumer des règles",
+    "Gérer le rythme",
+    "Accueillir",
+    "Arbitrage"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Expliquer en 5 minutes",
+     "goal": "Expliquer un jeu de plateau en 5 minutes sans oublier de règle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une table fluide",
+     "goal": "Gérer une table de quatre joueurs et arbitrer une question de règle",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plusieurs tables",
+     "goal": "Animer trois tables en parallèle avec des jeux différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animation de salon",
+     "goal": "Animer un stand de jeux pendant 4 heures",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      85
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs",
+     "goal": "Former des animateurs à expliquer les règles et à gérer les tables",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      110
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "service",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "parole",
+    "convivial",
+    "animation"
+   ],
+   "competitors": [
+    "Ludothèques",
+    "bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Compétence recherchée par bars et boutiques, peu formée : un vivier d'hôtes rémunérés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-soiree-jeux-organiser",
+   "name": "Organiser une soirée jeux entre amis",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.decouverte",
+   "desc": "Choisir les jeux, accueillir le groupe et faire tourner une soirée de 4 heures sans temps mort.",
+   "audience": "Hôtes de soirée 25-45 ans",
+   "skills": [
+    "Choix des jeux",
+    "Accueil",
+    "Rythme",
+    "Ambiance"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première soirée",
+     "goal": "Organiser une soirée jeux pour 6 invités avec trois jeux au choix",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bons jeux, bon groupe",
+     "goal": "Choisir les jeux selon le groupe et le temps disponible",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soirées régulières",
+     "goal": "Organiser quatre soirées jeux sur deux mois",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Soirée à thème",
+     "goal": "Concevoir une soirée à thème avec décor, jeux et ambiance",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer en équipe",
+     "goal": "Animer une soirée jeux dans un lieu public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "bar"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "rencontre",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "convivial",
+    "apero",
+    "fete",
+    "maison"
+   ],
+   "competitors": [
+    "Bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile mais trop proche du domestique pour être vendu seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-creer-jeu-societe",
+   "name": "Créer un jeu de société",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.creation",
+   "desc": "Imaginer un jeu de A à Z : mécanique, prototype, playtests et règles claires.",
+   "audience": "Créatifs 22-50 ans, enseignants, auteurs en herbe",
+   "skills": [
+    "Idée et mécanique",
+    "Prototype",
+    "Playtest",
+    "Règles"
+   ],
+   "appSkills": [
+    "jeux-de-societe-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon idée de jeu",
+     "goal": "Concevoir un jeu en une page avec but, tour de jeu et conditions de victoire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un prototype jouable",
+     "goal": "Fabriquer un prototype en carton jouable en 30 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Playtests",
+     "goal": "Faire jouer le prototype à cinq groupes et noter les retours",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Des règles claires",
+     "goal": "Écrire des règles de 2 pages comprises sans aide",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des auteurs",
+     "goal": "Accompagner d'autres auteurs de l'idée au prototype final",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "creation",
+    "fabrication",
+    "papier",
+    "strategie"
+   ],
+   "competitors": [
+    "Ludovox",
+    "Festival de Cannes",
+    "Cocktail Games"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public créatif et croissant, avec un attrait pour le concret ; budget variable mais un livrable physique rend l'atelier vendeur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-prototyper-jeu-cartes",
+   "name": "Prototyper un jeu de cartes en une journée",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.creation",
+   "desc": "Réaliser un prototype jouable de jeu de cartes : cartes, règles, impression, première partie.",
+   "audience": "Auteurs, étudiants, illustrateurs 20-40 ans",
+   "skills": [
+    "Cartes",
+    "Impression",
+    "Règles courtes",
+    "Test"
+   ],
+   "appSkills": [
+    "jeux-de-societe-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières cartes",
+     "goal": "Créer 20 cartes avec texte, illustration et icônes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jouer le prototype",
+     "goal": "Faire jouer le prototype à quatre joueurs en 20 minutes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      205
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Itérer",
+     "goal": "Réviser les cartes et règles après trois tests",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      120,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un jeu fini",
+     "goal": "Finaliser un jeu de 60 cartes prêt à imprimer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      150,
+      260
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Accompagner un auteur de jeu de cartes sur un projet complet",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      195,
+      335
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "objet",
+    "carte"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "creation",
+    "papier",
+    "fabrication"
+   ],
+   "competitors": [
+    "Fablabs",
+    "ateliers de création"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Doublon de la création de jeu ; à proposer en stage court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-publier-financer-jeu",
+   "name": "Publier et financer son jeu (crowdfunding)",
+   "sector": "jeux",
+   "category": "jeux.societe",
+   "subcategory": "jeux.societe.creation",
+   "desc": "Préparer une campagne de financement participatif et trouver un éditeur pour son jeu.",
+   "audience": "Auteurs de jeux 25-50 ans",
+   "skills": [
+    "Étude de marché",
+    "Page de campagne",
+    "Contacts éditeurs",
+    "Prix de revient"
+   ],
+   "appSkills": [
+    "jeux-de-societe-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon projet éditorial",
+     "goal": "Définir public, prix cible et concurrents de son jeu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une page de campagne",
+     "goal": "Écrire une page de crowdfunding avec vidéo et récompenses",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      320
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chiffrer son jeu",
+     "goal": "Calculer coût de fabrication, prix de vente et seuil de rentabilité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      365
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lancer la campagne",
+     "goal": "Lancer et suivre une campagne de financement participatif",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      205,
+      405
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des auteurs",
+     "goal": "Accompagner des auteurs dans leur campagne et leur recherche d'éditeur",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "argent",
+    "creation",
+    "entreprise"
+   ],
+   "competitors": [
+    "Ulule",
+    "Game On Tabletop"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché très étroit et exigeant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jdr-maitre-du-jeu",
+   "name": "Maître du jeu de rôle",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.jdr",
+   "desc": "Mener sa première partie de jeu de rôle : préparer, improviser, arbitrer et tenir le rythme.",
+   "audience": "Joueurs de jeu de rôle 20-45 ans, enseignants, animateurs",
+   "skills": [
+    "Préparer une aventure",
+    "Improviser",
+    "Arbitrer les règles",
+    "Gérer les joueurs"
+   ],
+   "appSkills": [
+    "jdr-maitre-du-jeu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première table",
+     "goal": "Mener un scénario clé en main de 2 heures pour 3 joueurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un scénario à moi",
+     "goal": "Écrire et mener un scénario original de 3 heures",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer la table",
+     "goal": "Gérer un joueur envahissant et relancer une scène plate",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Campagne",
+     "goal": "Mener une campagne de 5 séances avec fil rouge",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des maîtres du jeu",
+     "goal": "Coacher de nouveaux meneurs et débriefer leurs parties",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "boutique",
+    "bar",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "recit",
+    "scene",
+    "strategie",
+    "convivial"
+   ],
+   "competitors": [
+    "Clubs de JDR",
+    "Studio Agate",
+    "boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Pratique en forte croissance depuis Critical Role et Stranger Things ; la barrière est de trouver un maître du jeu, ce qui crée un besoin clair.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jdr-joueur-debutant",
+   "name": "Jeu de rôle : jouer un personnage",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.jdr",
+   "desc": "Découvrir le jeu de rôle : créer un personnage, jouer une scène, résoudre un défi en équipe.",
+   "audience": "Curieux 18-45 ans, amis, couples",
+   "skills": [
+    "Créer un personnage",
+    "Jouer une scène",
+    "Règles de base",
+    "Coopération"
+   ],
+   "appSkills": [
+    "jdr-joueur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier personnage",
+     "goal": "Créer un personnage et jouer une aventure d'une soirée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jouer en équipe",
+     "goal": "Jouer trois scènes en coopérant avec les autres personnages",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un personnage vivant",
+     "goal": "Incarner un personnage avec une voix, une histoire et des choix cohérents",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rôle principal",
+     "goal": "Mener une scène forte en dialogue avec les autres joueurs",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Parrainer des débutants",
+     "goal": "Accueillir des débutants autour d'une table et les aider à jouer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      95
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "boutique",
+    "librairie",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "recit",
+    "scene",
+    "convivial",
+    "humour"
+   ],
+   "competitors": [
+    "Clubs de JDR",
+    "bars à JDR",
+    "boutiques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Grande curiosité du grand public et format très propice au soir ; l'attrait est fort, mais la barrière d'accès (trouver une table) justifie un acteur dédié.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jdr-one-shot-sans-prep",
+   "name": "Jeux narratifs sans préparation",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.jdr",
+   "desc": "Jouer des jeux d'histoire légers sans maître du jeu (Fiasco, Microscope, Wanderhome).",
+   "audience": "Amis, équipes, couples 20-45 ans",
+   "skills": [
+    "Narration partagée",
+    "Improvisation",
+    "Règles légères",
+    "Compromis créatif"
+   ],
+   "appSkills": [
+    "jdr-joueur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une histoire en 2 heures",
+     "goal": "Jouer un jeu narratif complet sans maître du jeu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Construire ensemble",
+     "goal": "Proposer des idées sans bloquer le groupe et accepter celles des autres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Alterner narration et rôle",
+     "goal": "Alterner narration et incarnation dans une même partie",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Expliquer un jeu narratif",
+     "goal": "Expliquer un jeu à des débutants en 10 minutes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée narrative",
+     "goal": "Animer une soirée de jeux narratifs pour 8 joueurs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      50,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "domicile",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "recit",
+    "scene",
+    "humour",
+    "convivial"
+   ],
+   "competitors": [
+    "Ludistes",
+    "éditeurs de jeux narratifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Excellent pour initier sans préparation ; cible plus étroite que le JDR classique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-ecrire-scenario-jdr",
+   "name": "Écrire un scénario de jeu de rôle",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.jdr",
+   "desc": "Concevoir un scénario jouable de 3 heures : accroche, pnj, indices et fin ouverte.",
+   "audience": "Maîtres du jeu confirmés 20-45 ans",
+   "skills": [
+    "Accroche",
+    "Personnages non-joueurs",
+    "Indices",
+    "Fins multiples"
+   ],
+   "appSkills": [
+    "jdr-maitre-du-jeu"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon accroche",
+     "goal": "Écrire une accroche, trois personnages non joueurs et un lieu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure d'aventure",
+     "goal": "Construire un scénario en trois actes avec indices et fins possibles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      45,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Test en table",
+     "goal": "Faire jouer le scénario à quatre joueurs et corriger les points faibles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un scénario publiable",
+     "goal": "Mettre en page un scénario publiable avec cartes et aides de jeu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      65,
+      130
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des auteurs",
+     "goal": "Accompagner d'autres auteurs de scénario jusqu'à publication",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "ecriture",
+    "creation",
+    "recit"
+   ],
+   "competitors": [
+    "Studios de JDR",
+    "Ludovox",
+    "forums"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public d'initiés et peu payant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-gn-grandeur-nature",
+   "name": "Jeu de rôle grandeur nature",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.gn",
+   "desc": "Participer à un jeu de rôle en costume : incarner un rôle, suivre un scénario collectif.",
+   "audience": "Joueurs 18-45 ans, cosplayeurs, amis",
+   "skills": [
+    "Incarnation",
+    "Costume",
+    "Règles de jeu",
+    "Lâcher-prise"
+   ],
+   "appSkills": [
+    "jeu-de-role-gn"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier GN",
+     "goal": "Jouer un scénario d'une demi-journée avec un rôle fourni",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un rôle fort",
+     "goal": "Incarner un personnage complexe avec ses relations et secrets",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "GN long",
+     "goal": "Participer à un GN de 24 heures en restant dans le rôle",
+     "format": "chantier",
+     "duration": "5 × 3 h",
+     "group": "4-6",
+     "price": [
+      155,
+      310
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écrire un rôle",
+     "goal": "Écrire une fiche de personnage pour un GN avec objectifs et liens",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      260
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organiser un GN",
+     "goal": "Organiser un GN de 20 joueurs avec lieu, règles et logistique",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      335
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "journee",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "performance",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "scene",
+    "recit",
+    "deguisement",
+    "collectif"
+   ],
+   "competitors": [
+    "Associations de GN",
+    "Mad Mage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Expérience marquante, mais organisation lourde et coûts de salle ; format ponctuel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-murder-party-jouer-animer",
+   "name": "Murder party : jouer et animer",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.gn",
+   "desc": "Jouer ou animer une soirée d'enquête avec personnages, indices et révélations.",
+   "audience": "Amis, équipes 22-50 ans",
+   "skills": [
+    "Incarnation",
+    "Enquête",
+    "Indices",
+    "Animation"
+   ],
+   "appSkills": [
+    "murder-party"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première enquête",
+     "goal": "Jouer une murder party en endossant un personnage fourni",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un rôle d'enquêteur",
+     "goal": "Mener une enquête en questionnant les autres joueurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animer une soirée",
+     "goal": "Animer une murder party de 3 heures pour 10 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Adapter à ses joueurs",
+     "goal": "Adapter rôles et indices selon le groupe en cours de partie",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      35,
+      75
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs",
+     "goal": "Former d'autres personnes à animer une murder party",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      240
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "scene",
+    "fete",
+    "convivial"
+   ],
+   "competitors": [
+    "Agences d'événements",
+    "kits en boutique"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon format social, adapté aux anniversaires, aux équipes et aux couples ; budget correct et hôtes simples à former.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jdr-en-ligne",
+   "name": "Jeu de rôle en ligne : tables virtuelles",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.gn",
+   "desc": "Jouer et mener en ligne avec Discord et Roll20 : tables, cartes et ambiance.",
+   "audience": "Joueurs éloignés 20-45 ans",
+   "skills": [
+    "Discord",
+    "Table virtuelle",
+    "Ambiance sonore",
+    "Gestion de table"
+   ],
+   "appSkills": [
+    "jdr-joueur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première table en ligne",
+     "goal": "Jouer une partie complète à distance avec micro et table virtuelle",
+     "format": "enligne",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      5,
+      10
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mener en ligne",
+     "goal": "Mener une partie de 2 heures sur Discord et un outil de table",
+     "format": "enligne",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      5,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Table soignée",
+     "goal": "Soigner ambiance sonore, cartes et jetons numériques",
+     "format": "enligne",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Campagne en ligne",
+     "goal": "Organiser une campagne de six séances avec des joueurs éloignés",
+     "format": "enligne",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Coacher un maître du jeu débutant sur ses premières parties en ligne",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "tech",
+    "recit",
+    "en-ligne"
+   ],
+   "competitors": [
+    "Roll20",
+    "Foundry",
+    "Discord"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique solide mais sans besoin d'un lieu ; peu différenciant pour une plateforme de proximité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-peindre-figurines",
+   "name": "Peindre des figurines",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.figurines",
+   "desc": "Peindre sa première figurine : apprêt, couches, lavis et finitions.",
+   "audience": "Joueurs et passionnés 15-55 ans, loisirs créatifs",
+   "skills": [
+    "Apprêt",
+    "Sous-couche",
+    "Lavis",
+    "Brossage à sec"
+   ],
+   "appSkills": [
+    "wargame-figurines"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première figurine",
+     "goal": "Peindre une figurine avec trois couleurs et un lavis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lavis et brossage",
+     "goal": "Obtenir des ombres et des rehauts propres sur une figurine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une unité cohérente",
+     "goal": "Peindre cinq figurines avec un rendu uniforme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Figurine d'exposition",
+     "goal": "Réaliser des dégradés lisses et des détails fins",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre",
+     "goal": "Animer un atelier de peinture pour des débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "collection",
+    "geek",
+    "geste",
+    "couleur",
+    "creation"
+   ],
+   "competitors": [
+    "Games Workshop",
+    "boutiques",
+    "Citadel"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public de passionnés avec un vrai budget matériel ; atelier calme apprécié.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-wargame-initiation",
+   "name": "Wargame : initiation",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.figurines",
+   "desc": "Jouer à un wargame de figurines : règles de base, mouvement, tirs et corps à corps.",
+   "audience": "Joueurs 15-50 ans, amateurs de stratégie",
+   "skills": [
+    "Règles de base",
+    "Mouvement",
+    "Combat",
+    "Stratégie"
+   ],
+   "appSkills": [
+    "wargame-figurines"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tour",
+     "goal": "Jouer un tour complet avec mouvement, tir et corps à corps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une partie complète",
+     "goal": "Jouer une partie de 90 minutes avec deux petites armées",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ma liste d'armée",
+     "goal": "Construire une liste d'armée équilibrée de 500 points",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tournoi",
+     "goal": "Jouer un petit tournoi de trois parties avec décors",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une initiation",
+     "goal": "Animer une initiation pour quatre débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "geek",
+    "collection"
+   ],
+   "competitors": [
+    "Games Workshop",
+    "clubs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Un public passionné et solide, mais en boutiques et clubs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-decors-de-table",
+   "name": "Décors de table pour jeux de figurines",
+   "sector": "jeux",
+   "category": "jeux.role",
+   "subcategory": "jeux.role.figurines",
+   "desc": "Fabriquer des décors (ruines, forêts, rivières) pour jouer en 3D.",
+   "audience": "Bricoleurs 20-55 ans, passionnés de jeux",
+   "skills": [
+    "Découpe",
+    "Texture",
+    "Peinture",
+    "Végétation"
+   ],
+   "appSkills": [
+    "wargame-figurines"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première ruine",
+     "goal": "Fabriquer une ruine en carton mousse et la peindre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un décor complet",
+     "goal": "Fabriquer un décor de 30 par 30 cm avec relief",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Table thématique",
+     "goal": "Constituer un ensemble de décors cohérent pour une table de jeu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exposition",
+     "goal": "Exposer une table de décors lors d'un événement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Transmettre",
+     "goal": "Animer un atelier de décors pour des débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "fabrication",
+    "recup",
+    "deco",
+    "geek",
+    "creation"
+   ],
+   "competitors": [
+    "Fablabs",
+    "forums"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche étroite ; peu de demande hors passionnés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-escape-game-a-creer",
+   "name": "Escape game à créer soi-même",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.escape",
+   "desc": "Concevoir un escape game maison : scénario, énigmes, cadenas et mise en scène.",
+   "audience": "Parents, enseignants, entreprises 25-50 ans",
+   "skills": [
+    "Scénario",
+    "Énigmes",
+    "Cadenas",
+    "Mise en scène"
+   ],
+   "appSkills": [
+    "escape-game-conception"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier escape de salon",
+     "goal": "Jouer et analyser un escape de salon en repérant les astuces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mes premières énigmes",
+     "goal": "Concevoir trois énigmes cohérentes avec un fil narratif",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      90,
+      180
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un escape complet",
+     "goal": "Créer un escape de 45 minutes avec scénario, cadenas et mise en scène",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      115,
+      235
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Escape testé",
+     "goal": "Tester l'escape avec trois groupes et l'améliorer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      115,
+      225
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des concepteurs",
+     "goal": "Accompagner d'autres créateurs de l'idée à l'escape jouable",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      335
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "parents",
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "creation",
+    "fabrication",
+    "famille"
+   ],
+   "competitors": [
+    "Escape games",
+    "kits en ligne"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Forte attraction, matériel peu coûteux et un produit à réutiliser (anniversaire, classe, équipe) ; peu d'ateliers de conception existent.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-escape-game-coffret",
+   "name": "Escape game à domicile : kit et coffret",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.escape",
+   "desc": "Fabriquer un coffret d'énigmes à offrir : boîte, cadenas, mission et indices.",
+   "audience": "Couples, familles 25-50 ans",
+   "skills": [
+    "Coffret",
+    "Indices",
+    "Cadenas",
+    "Histoire"
+   ],
+   "appSkills": [
+    "creation-enigmes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon coffret",
+     "goal": "Fabriquer un coffret avec trois cadenas et un fil narratif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Histoire et énigmes",
+     "goal": "Écrire cinq énigmes cohérentes avec l'histoire du coffret",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Test en situation",
+     "goal": "Faire tester le coffret par un groupe et l'ajuster",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      100,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Coffret cadeau",
+     "goal": "Livrer un coffret abouti avec notice, accessoires et finitions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      130,
+      215
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Accompagner d'autres créateurs de coffrets",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      170,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "cadeau",
+    "fabrication",
+    "papier"
+   ],
+   "competitors": [
+    "Coffrets en boutique",
+    "Unlock"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Un produit cadeau très tendance, avec un fort effet « fait main ».",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-escape-game-entreprise",
+   "name": "Escape game pour équipes",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.escape",
+   "desc": "Concevoir un escape game sur mesure pour une équipe : thèmes, compétences et débrief.",
+   "audience": "RH, managers 28-50 ans",
+   "skills": [
+    "Scénario sur mesure",
+    "Débrief",
+    "Gestion du temps",
+    "Matériel mobile"
+   ],
+   "appSkills": [
+    "escape-game-conception"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer en équipe",
+     "goal": "Jouer un escape d'entreprise et observer les rôles dans l'équipe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animer un escape",
+     "goal": "Animer un escape de 60 minutes et gérer les indices",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      140,
+      275
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Concevoir sur mesure",
+     "goal": "Concevoir un escape pour une équipe donnée avec objectifs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Adapter à l'équipe",
+     "goal": "Adapter énigmes et débrief aux enjeux de l'équipe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      175,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des animateurs",
+     "goal": "Former des animateurs d'escape en entreprise",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      225,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "journee"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "entreprise",
+    "enigme",
+    "collectif"
+   ],
+   "competitors": [
+    "Team building",
+    "agences"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Entreprises solvables ; marché très concurrentiel et professionnalisé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-murder-party-ecrire",
+   "name": "Écrire sa murder party",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.enquetes",
+   "desc": "Écrire un scénario de murder party : personnages, secrets, indices et dénouement.",
+   "audience": "Maîtres de soirée 22-50 ans, auteurs",
+   "skills": [
+    "Intrigue",
+    "Personnages",
+    "Indices",
+    "Dénouement"
+   ],
+   "appSkills": [
+    "murder-party"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première intrigue",
+     "goal": "Écrire un meurtre, un mobile et trois suspects",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages et secrets",
+     "goal": "Écrire six personnages avec secrets et liens",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Test en table",
+     "goal": "Faire tester l'intrigue à huit joueurs et corriger",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      85,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Scénario publié",
+     "goal": "Finaliser un kit complet avec fiches et indices",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      110,
+      195
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Accompagner d'autres auteurs de murder party",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "texte",
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "ecriture",
+    "creation",
+    "scene"
+   ],
+   "competitors": [
+    "Éditeurs de kits",
+    "ateliers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Plus de joueurs que d'auteurs ; marché petit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-chasse-au-tresor",
+   "name": "Chasse au trésor et jeu de piste",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.enquetes",
+   "desc": "Concevoir une chasse au trésor pour enfants ou adultes : parcours, indices et trésor.",
+   "audience": "Parents, animateurs, organisateurs 25-50 ans",
+   "skills": [
+    "Parcours",
+    "Indices",
+    "Décors",
+    "Gestion de groupe"
+   ],
+   "appSkills": [
+    "creation-enigmes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chasse",
+     "goal": "Concevoir une chasse au trésor de 10 indices pour enfants",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chasse en extérieur",
+     "goal": "Concevoir une chasse dans un parc avec parcours balisé",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chasse thématique",
+     "goal": "Organiser une chasse thématique avec décors et costumes",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un événement",
+     "goal": "Organiser une chasse pour 30 personnes avec équipes",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des organisateurs",
+     "goal": "Former des organisateurs à concevoir leurs chasses",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      240
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "jeu",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "famille",
+    "plein-air",
+    "balade"
+   ],
+   "competitors": [
+    "Organisateurs d'événements",
+    "jeux de piste"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande familiale régulière (anniversaires), avec une organisation simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeu-de-piste-urbain",
+   "name": "Jeu de piste urbain et enquête dans Paris",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.enquetes",
+   "desc": "Concevoir un jeu de piste dans un quartier : lieux, indices, énigmes et récit.",
+   "audience": "Habitants, guides, touristes 22-50 ans",
+   "skills": [
+    "Repérage",
+    "Énigmes",
+    "Récit",
+    "Parcours"
+   ],
+   "appSkills": [
+    "creation-enigmes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier parcours",
+     "goal": "Concevoir un parcours de 5 étapes dans un quartier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un quartier jouable",
+     "goal": "Repérer des lieux et écrire des énigmes liées au quartier",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un jeu de piste complet",
+     "goal": "Concevoir un jeu de piste de 90 minutes avec récit",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      35,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un événement urbain",
+     "goal": "Organiser une sortie pour 20 personnes avec chronomètre",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "6-12",
+     "price": [
+      40,
+      80
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des concepteurs",
+     "goal": "Former d'autres concepteurs de jeux de piste",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      240
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "touristes",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "ville",
+    "enigme",
+    "patrimoine",
+    "balade"
+   ],
+   "competitors": [
+    "Fugue",
+    "Explor Games",
+    "Hidden Paris"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public touristique et local, avec un attrait patrimoine ; le produit se vend bien aux entreprises.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-creation-enigmes",
+   "name": "Créer des énigmes",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.enigmes",
+   "desc": "Concevoir des énigmes variées : logiques, de mots, de codes, de manipulation.",
+   "audience": "Créatifs 20-50 ans, enseignants",
+   "skills": [
+    "Types d'énigmes",
+    "Logique",
+    "Indices",
+    "Test"
+   ],
+   "appSkills": [
+    "creation-enigmes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières énigmes",
+     "goal": "Concevoir trois énigmes (logique, mots, code) et les tester",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Une série d'énigmes",
+     "goal": "Concevoir dix énigmes de difficulté croissante",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une enquête",
+     "goal": "Construire une enquête en 5 étapes avec indices liés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Énigmes sur mesure",
+     "goal": "Concevoir des énigmes adaptées à un public et à un lieu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Accompagner d'autres créateurs dans leurs énigmes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "creation",
+    "ecriture"
+   ],
+   "competitors": [
+    "Escape games",
+    "livres d'énigmes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Un moteur de nombreuses activités (escape, chasse, murder).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-cryptographie-ludique",
+   "name": "Codes secrets et cryptographie ludique",
+   "sector": "jeux",
+   "category": "jeux.enquete",
+   "subcategory": "jeux.enquete.enigmes",
+   "desc": "Chiffrer et déchiffrer : César, Vigenère, Enigma, et fabriquer ses messages secrets.",
+   "audience": "Familles, curieux 12-60 ans",
+   "skills": [
+    "Chiffre de César",
+    "Vigenère",
+    "Enigma",
+    "Cryptanalyse simple"
+   ],
+   "appSkills": [
+    "creation-enigmes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier code",
+     "goal": "Chiffrer un message avec le code de César et le déchiffrer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Codes plus forts",
+     "goal": "Utiliser Vigenère pour chiffrer et déchiffrer un message",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Casser un code",
+     "goal": "Casser un message codé par analyse de fréquences",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Énigmes codées",
+     "goal": "Concevoir une énigme à base de code pour un escape game",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      115
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer",
+     "goal": "Animer un atelier de cryptographie pour des familles",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "enigme",
+    "science",
+    "histoire",
+    "tech"
+   ],
+   "competitors": [
+    "Médiathèques",
+    "musées"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique attractive, avec un faible budget.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-quiz-pub-animer",
+   "name": "Pub quiz : écrire et animer un quiz",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.quiz",
+   "desc": "Écrire 40 questions de culture générale équilibrées et animer un quiz de bar.",
+   "audience": "Animateurs, bénévoles, barmen 22-45 ans",
+   "skills": [
+    "Écriture de questions",
+    "Équilibrage",
+    "Animation",
+    "Calcul des scores"
+   ],
+   "appSkills": [
+    "quiz-animation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier quiz",
+     "goal": "Écrire 20 questions équilibrées avec réponses vérifiées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un quiz de 90 minutes",
+     "goal": "Animer un quiz de 90 minutes pour 6 équipes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Quiz à thème",
+     "goal": "Écrire un quiz à thème avec variété de formats de question",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Quiz en bar",
+     "goal": "Animer un quiz en bar avec sono, scores et ambiance",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs de quiz",
+     "goal": "Former d'autres animateurs à écrire et animer un quiz en bar",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "parole",
+    "convivial",
+    "bar",
+    "animation"
+   ],
+   "competitors": [
+    "Pub Quiz",
+    "Quiz Room"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Débouché réel : les bars paient des animateurs ; très bon vivier d'hôtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-blind-test-musical",
+   "name": "Blind test : concevoir et animer",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.quiz",
+   "desc": "Construire une playlist de blind test, animer et gérer les équipes.",
+   "audience": "Animateurs, DJ amateurs 22-45 ans",
+   "skills": [
+    "Playlist",
+    "Animation",
+    "Rythme",
+    "Règles"
+   ],
+   "appSkills": [
+    "quiz-animation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première playlist",
+     "goal": "Constituer une playlist de 30 extraits équilibrée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un blind test complet",
+     "goal": "Animer un blind test de 60 minutes avec scores",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Blind test à thème",
+     "goal": "Créer un blind test à thème (années, films, rap)",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      50
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Blind test en bar",
+     "goal": "Animer un blind test en bar avec 8 équipes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      100,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des animateurs de blind test",
+     "goal": "Former d'autres animateurs à construire playlists et scores",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      95,
+      190
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "parole"
+   ],
+   "outputs": [
+    "jeu",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "musique",
+    "convivial",
+    "fete",
+    "animation"
+   ],
+   "competitors": [
+    "Blind test",
+    "bars"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très répandu, avec un vivier d'animateurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-quiz-thematique-creation",
+   "name": "Concevoir un quiz sur mesure",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.quiz",
+   "desc": "Concevoir un quiz pour un événement : mariage, entreprise, anniversaire, avec thèmes et décor.",
+   "audience": "Organisateurs 25-50 ans",
+   "skills": [
+    "Thème",
+    "Questions",
+    "Format",
+    "Mise en scène"
+   ],
+   "appSkills": [
+    "quiz-animation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon quiz",
+     "goal": "Concevoir un quiz de 20 questions pour un événement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un quiz sur mesure",
+     "goal": "Concevoir un quiz pour un mariage ou une entreprise",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un quiz en soirée",
+     "goal": "Animer un quiz de 60 minutes devant 30 personnes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      60
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Quiz professionnel",
+     "goal": "Concevoir un quiz avec décor et animation soignés",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      125,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des créateurs de quiz",
+     "goal": "Accompagner d'autres créateurs de quiz sur formats et difficulté",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      120,
+      215
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "weekend-soir"
+   ],
+   "publics": [
+    "couples",
+    "entreprises",
+    "familles"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "fete",
+    "entreprise",
+    "animation"
+   ],
+   "competitors": [
+    "Organisateurs d'événements"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Proche du pub quiz ; sert d'argument en mix.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-techniques-memoire",
+   "name": "Techniques de mémoire : palais et associations",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.memoire",
+   "desc": "Mémoriser une liste de 20 mots, un discours ou des noms avec le palais de mémoire.",
+   "audience": "Étudiants, actifs 18-60 ans",
+   "skills": [
+    "Palais de mémoire",
+    "Associations",
+    "Répétition espacée",
+    "Noms et visages"
+   ],
+   "appSkills": [
+    "memoire-techniques"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers mots",
+     "goal": "Retenir 10 mots dans l'ordre grâce à la méthode des associations",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un palais de mémoire",
+     "goal": "Retenir 20 mots dans l'ordre à l'aide d'un palais de mémoire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mémoriser un discours",
+     "goal": "Mémoriser un discours de 3 minutes avec la méthode des lieux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      70,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Noms et chiffres",
+     "goal": "Retenir dix prénoms et dix chiffres en une soirée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      85,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des mémorisateurs",
+     "goal": "Entraîner d'autres personnes aux techniques de mémoire",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      110,
+      225
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "memoire",
+    "reflexion",
+    "defi",
+    "jeu",
+    "savoir"
+   ],
+   "competitors": [
+    "Champions de mémoire",
+    "cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt large (étudiants, seniors), avec un résultat spectaculaire en 1 heure.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-memoire-entrainement-seniors",
+   "name": "Entraîner sa mémoire au quotidien",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.memoire",
+   "desc": "Mettre en place des exercices de mémoire quotidiens et jouer pour entretenir sa mémoire.",
+   "audience": "Seniors 60-85 ans, aidants",
+   "skills": [
+    "Exercices",
+    "Routines",
+    "Jeux de mémoire",
+    "Attention"
+   ],
+   "appSkills": [
+    "memoire-techniques"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers exercices",
+     "goal": "Pratiquer quatre exercices de mémoire quotidiens",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mémoire du quotidien",
+     "goal": "Utiliser trois astuces pour ne plus oublier courses et rendez-vous",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux collectifs",
+     "goal": "Jouer à trois jeux de mémoire en groupe",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Routine d'entraînement",
+     "goal": "Tenir une routine de mémoire sur un mois",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une séance",
+     "goal": "Animer une séance de mémoire pour des seniors",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "memoire",
+    "jeu",
+    "calme",
+    "famille"
+   ],
+   "competitors": [
+    "CCAS",
+    "clubs seniors"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle et en croissance, avec des financeurs ; peu rentable seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-apprendre-par-coeur",
+   "name": "Apprendre un texte par cœur",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.memoire",
+   "desc": "Apprendre un poème, une pièce ou un discours par cœur avec des techniques efficaces.",
+   "audience": "Comédiens, étudiants 18-60 ans",
+   "skills": [
+    "Découpage",
+    "Répétition",
+    "Associations",
+    "Récitation"
+   ],
+   "appSkills": [
+    "memoire-techniques"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier poème",
+     "goal": "Réciter un poème de 8 vers sans faute",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un texte plus long",
+     "goal": "Réciter un texte de 2 minutes en continu",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Texte de 5 minutes",
+     "goal": "Réciter un texte de 5 minutes avec intentions",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Texte sous stress",
+     "goal": "Réciter devant un public en gardant le fil",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Aider d'autres personnes à mémoriser un rôle",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "memoire",
+    "scene",
+    "voix",
+    "lecture"
+   ],
+   "competitors": [
+    "Cours de théâtre"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile en soutien du théâtre ; peu de demande autonome.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-scrabble-mots",
+   "name": "Scrabble : jouer plus fort",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.mots",
+   "desc": "Apprendre les mots utiles du Scrabble : bingos, mots de deux et trois lettres, placements.",
+   "audience": "Joueurs 20-75 ans, amateurs de mots",
+   "skills": [
+    "Mots de 2 et 3 lettres",
+    "Bingos",
+    "Placement",
+    "Comptage"
+   ],
+   "appSkills": [
+    "scrabble-mots"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers mots",
+     "goal": "Jouer une partie complète en respectant les règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les mots courts",
+     "goal": "Connaître 100 mots de deux et trois lettres",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Les bingos",
+     "goal": "Trouver un bingo sur trois tirages",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compétition",
+     "goal": "Jouer cinq parties de tournoi en duplicate",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      35,
+      65
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un club",
+     "goal": "Animer une séance et initier des débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      45,
+      85
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "cafe",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "lecture",
+    "ecriture",
+    "strategie",
+    "cafe"
+   ],
+   "competitors": [
+    "Clubs de Scrabble",
+    "FFSc"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique associative, vieillissante, et gratuite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-mots-croises-creer",
+   "name": "Créer des mots croisés et jeux de mots",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.mots",
+   "desc": "Concevoir sa grille de mots croisés ou un jeu de mots pour un cadeau ou un événement.",
+   "audience": "Créatifs 25-70 ans, enseignants",
+   "skills": [
+    "Grille",
+    "Définitions",
+    "Thème",
+    "Mise en page"
+   ],
+   "appSkills": [
+    "scrabble-mots"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première grille",
+     "goal": "Créer une petite grille 7x7 avec définitions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Grille à thème",
+     "goal": "Créer une grille à thème de 13x13",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeu de mots",
+     "goal": "Concevoir un jeu de mots pour une occasion",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grille aboutie",
+     "goal": "Équilibrer difficulté et mise en page",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des créateurs de grilles",
+     "goal": "Accompagner des créateurs de grilles sur définitions et équilibre",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "ecriture",
+    "papier",
+    "cadeau",
+    "creation"
+   ],
+   "competitors": [
+    "Éditeurs de mots croisés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche savante et peu demandée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-de-lettres-devinettes",
+   "name": "Jeux de mots et devinettes en groupe",
+   "sector": "jeux",
+   "category": "jeux.mots",
+   "subcategory": "jeux.mots.mots",
+   "desc": "Jouer à Codenames, Dixit, Time's Up : indices, associations et créativité verbale.",
+   "audience": "Amis, familles, équipes 15-60 ans",
+   "skills": [
+    "Associations",
+    "Indices",
+    "Créativité",
+    "Écoute"
+   ],
+   "appSkills": [
+    "jeux-de-societe-regles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une soirée de mots",
+     "goal": "Jouer trois jeux de mots en une soirée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jeux d'associations",
+     "goal": "Gagner une partie de jeu d'indices",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Meneur de partie",
+     "goal": "Expliquer un jeu de mots en 5 minutes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tournoi de mots",
+     "goal": "Organiser un tournoi de jeux de mots",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      10,
+      20
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée de mots",
+     "goal": "Animer une soirée de jeux de mots avec trois jeux de rythme différent",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      40,
+      70
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "parole",
+    "convivial",
+    "famille",
+    "humour"
+   ],
+   "competitors": [
+    "Bars à jeux"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très bon pour l'ambiance, avec un faible potentiel de paiement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-jeux-video-competitif",
+   "name": "Jeux vidéo compétitifs : progresser",
+   "sector": "jeux",
+   "category": "jeux.video",
+   "subcategory": "jeux.video.competitif",
+   "desc": "Progresser sur un jeu compétitif (Rocket League, Valorant, FIFA) : analyse de replays et entraînement.",
+   "audience": "Joueurs 14-30 ans",
+   "skills": [
+    "Analyse de replays",
+    "Entraînement ciblé",
+    "Communication",
+    "Gestion du tilt"
+   ],
+   "appSkills": [
+    "jeux-video-competitif"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières parties",
+     "goal": "Jouer dix parties classées en suivant un plan d'entraînement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Analyser mon jeu",
+     "goal": "Analyser trois replays et corriger trois erreurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer en équipe",
+     "goal": "Jouer en équipe avec communication claire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      50,
+      100
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un tournoi amateur",
+     "goal": "Participer à un tournoi amateur et analyser ses matchs ensuite",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      75,
+      150
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher un joueur",
+     "goal": "Coacher un joueur débutant avec un plan d'entraînement sur 4 semaines",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      170
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "strategie",
+    "defi",
+    "tech",
+    "esport"
+   ],
+   "competitors": [
+    "Bars esport",
+    "coachs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune très large, mais déjà servi en ligne, avec peu de volonté de payer pour des cours.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-speedrun",
+   "name": "Speedrun : finir un jeu le plus vite possible",
+   "sector": "jeux",
+   "category": "jeux.video",
+   "subcategory": "jeux.video.competitif",
+   "desc": "Apprendre le speedrun : routes, glitchs, enregistrement et soumission d'un run.",
+   "audience": "Joueurs 16-35 ans",
+   "skills": [
+    "Route",
+    "Glitchs",
+    "Enregistrement",
+    "Soumission"
+   ],
+   "appSkills": [
+    "speedrun"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier run",
+     "goal": "Finir un jeu court sans chercher la vitesse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Optimiser",
+     "goal": "Améliorer son temps de 10 % avec une route",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un run soumis",
+     "goal": "Enregistrer un run complet et le soumettre à un classement",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Record personnel",
+     "goal": "Battre son record avec une route optimisée et sans erreur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      55,
+      115
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher",
+     "goal": "Aider un débutant à préparer son premier run",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      70,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "defi",
+    "tech",
+    "video",
+    "geek"
+   ],
+   "competitors": [
+    "Speedrun.com",
+    "GDQ"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche passionnée et très en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-retrogaming",
+   "name": "Rétrogaming : jouer aux classiques",
+   "sector": "jeux",
+   "category": "jeux.video",
+   "subcategory": "jeux.video.competitif",
+   "desc": "Jouer aux classiques des années 80-90 : consoles, arcades, histoire.",
+   "audience": "Adultes 28-50 ans, nostalgiques",
+   "skills": [
+    "Consoles",
+    "Arcade",
+    "Histoire",
+    "Collection"
+   ],
+   "appSkills": [
+    "jeux-video-competitif"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Soirée rétro",
+     "goal": "Jouer à cinq classiques sur consoles d'époque",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      15,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Histoire du jeu vidéo",
+     "goal": "Raconter l'histoire d'une console en 10 minutes",
+     "format": "cercle",
+     "duration": "2 h",
+     "group": "6-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ma collection",
+     "goal": "Constituer une collection de dix jeux",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réparer une console",
+     "goal": "Réparer et nettoyer une console simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "4-8",
+     "price": [
+      20,
+      35
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une soirée rétro",
+     "goal": "Animer une soirée rétro avec tournoi et histoire des consoles",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      85,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "collection",
+    "geek",
+    "convivial",
+    "histoire"
+   ],
+   "competitors": [
+    "Bars rétro",
+    "Arcades"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Nostalgie forte et ambiance conviviale ; un lieu équipé est nécessaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-creer-jeu-video-simple",
+   "name": "Créer un petit jeu vidéo",
+   "sector": "jeux",
+   "category": "jeux.video",
+   "subcategory": "jeux.video.creation",
+   "desc": "Créer un petit jeu vidéo jouable : idée, moteur Godot ou Scratch, personnages et niveau.",
+   "audience": "Ados, jeunes adultes 12-40 ans, parents",
+   "skills": [
+    "Game design",
+    "Moteur de jeu",
+    "Sprites",
+    "Niveaux"
+   ],
+   "appSkills": [
+    "creation-jeu-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier jeu",
+     "goal": "Créer un petit jeu jouable en 2 heures avec Scratch ou Godot",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un jeu complet",
+     "goal": "Créer un jeu avec score et fin de partie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un jeu avec niveaux",
+     "goal": "Créer un jeu avec trois niveaux et une difficulté croissante",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      100,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un jeu publié",
+     "goal": "Publier son jeu en ligne avec page de présentation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      95,
+      170
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coacher des créateurs",
+     "goal": "Coacher un autre créateur de l'idée jusqu'au jeu publié",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      140,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "parents",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "code",
+    "creation",
+    "tech",
+    "geek"
+   ],
+   "competitors": [
+    "Codecademy",
+    "Godot",
+    "écoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Attrait massif chez les jeunes et leurs parents ; compétition de cours en ligne mais le format atelier, avec un jeu à repartir, est vendeur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "jeux-game-jam",
+   "name": "Game jam : un jeu en 48 heures",
+   "sector": "jeux",
+   "category": "jeux.video",
+   "subcategory": "jeux.video.creation",
+   "desc": "Participer à une game jam : constituer une équipe, créer un jeu en un week-end.",
+   "audience": "Développeurs, designers 18-40 ans",
+   "skills": [
+    "Équipe",
+    "Prototype",
+    "Gestion du temps",
+    "Présentation"
+   ],
+   "appSkills": [
+    "creation-jeu-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première jam",
+     "goal": "Participer à une game jam de 48 heures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un rôle en équipe",
+     "goal": "Tenir un rôle précis (code, art, son) dans une équipe de jam",
+     "format": "chantier",
+     "duration": "5 × 3 h",
+     "group": "4-6",
+     "price": [
+      45,
+      115
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un jeu abouti",
+     "goal": "Publier un jeu jouable à la fin de la jam",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "4-8",
+     "price": [
+      35,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Diriger une équipe",
+     "goal": "Gérer une équipe et le planning pendant la jam",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      45,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Organiser une mini-jam",
+     "goal": "Organiser une mini-jam avec thème, équipes et jury",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      55,
+      140
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "jeu",
+    "code",
+    "creation",
+    "tech",
+    "collectif"
+   ],
+   "competitors": [
+    "Global Game Jam",
+    "Ludum Dare"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Pratique de passionnés, mieux organisée par des communautés.",
+   "confidence": "estimation"
+  }
+ ]
+}

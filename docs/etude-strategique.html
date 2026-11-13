@@ -1198,6 +1198,12 @@ kbd{font:500 10.5px/1 var(--f-mono);border:1px solid var(--line-2);border-bottom
 <script>
 /* ===== Modèle financier (identique au calcul de l'étude) ===== */
 var CORDES_MODEL = (function(){
+  function ramp(t, from, a12, a24, a36){
+    if (t < from) return 0;
+    if (t <= 12) return a12 * (t - from + 1) / Math.max(1, 12 - from + 1);
+    if (t <= 24) return a12 + (a24 - a12) * (t - 12) / 12;
+    return a24 + (a36 - a24) * (t - 24) / 12;
+  }
   function model(p){
     var M = p.M || 36, out = [];
     var S = 0, cumIns = 0, A = 0, cash = p.apport, prevZ = 0, rolling = [], tvaOn = false;
@@ -1205,7 +1211,10 @@ var CORDES_MODEL = (function(){
     for (var t = 1; t <= M; t++){
       var g = t <= 12 ? p.g1 : (t <= 24 ? p.g2 : p.g3);
       var B = t === 1 ? p.b0 : out[t-2].B * (1 + g);
-      var I = B * p.rIns;
+      var gc = t <= 12 ? p.gc1 : (t <= 24 ? p.gc2 : p.gc3);
+      var V = t === 1 ? p.cv0 : out[t-2].V * (1 + gc);
+      var Icur = V * p.cIns;
+      var I = B * p.rIns + Icur;
       var z = t < p.open ? 0 : (t < p.zone2At ? p.z1 : (t < p.zone3At ? p.z2 : p.z3));
       var newOpen = I * z;
       var unlock = (z > prevZ && t >= p.open) ? (z - prevZ) * cumIns * 0.5 : 0;
@@ -1226,30 +1235,38 @@ var CORDES_MODEL = (function(){
         else E = p.e24 + (p.e36 - p.e24) * (t - 24) / 12;
       }
       var entHT = E * p.pEnt;
+      var G = ramp(t, p.grpFrom, p.g12, p.g24, p.g36);
+      var grpTTC = G * p.pGrp;
+      var VP = ramp(t, p.vpFrom, p.vp12, p.vp24, p.vp36), FE = ramp(t, p.featFrom, p.f12, p.f24, p.f36);
+      var venueHT = VP * p.pVp + FE * p.pFeat;
+      var affHT = t >= p.affFrom ? V * p.aff : 0;
       var collHT = t >= 13 ? ((t <= 24 ? p.coll2 : p.coll3) / 3) * p.pColl : 0;
       var hosts = (S * ((1 - p.mix) + 2 * p.mix) * p.use + places) / 3 / 2;
       var proHT = t >= p.proFrom ? hosts * p.proShare * p.pPro : 0;
       var partHT = t >= 13 ? (t <= 24 ? p.part2 : p.part3) : 0;
-      var caMonth = subTTC + placesTTC + entHT + collHT + proHT + partHT;
+      var caMonth = subTTC + placesTTC + grpTTC + entHT + collHT + proHT + partHT + venueHT + affHT;
       var roll = rolling.slice(-11).reduce(function(a,b){return a+b;}, 0) + caMonth;
       if (!tvaOn && roll > p.tvaSeuil) tvaOn = true;
       rolling.push(caMonth);
       var k = tvaOn ? 1/1.2 : 1;
-      var rev = (subTTC + placesTTC) * k + entHT + collHT + proHT + partHT;
+      var rev = (subTTC + placesTTC + grpTTC) * k + entHT + collHT + proHT + partHT + venueHT + affHT;
       var credits = S * ((1 - p.mix) * 1 + p.mix * 2) * p.use * p.placeCost;
       var fees = S * 0.25 + subTTC * 0.015 + places * (0.25 + p.pPlace * 0.015);
       var hostPlaces = places * p.hostPay;
       var entCost = E * p.entCost, collCost = collHT * 0.4;
-      var varCost = credits + fees + hostPlaces + entCost + collCost;
+      var seatsPaid = S * ((1 - p.mix) * 1 + p.mix * 2) * p.use + places;
+      var studioShare = seatsPaid * p.shareRate * p.shareFee;
+      var grpCost = G * p.grpCost + grpTTC * 0.015 + G * 0.25, venueCost = VP * p.vpCost + FE * p.featCost;
+      var varCost = credits + fees + hostPlaces + entCost + collCost + studioShare + grpCost + venueCost;
       var fm = p.fixMult == null ? 1 : p.fixMult, mm = p.mkMult == null ? 1 : p.mkMult;
       var fixed = (t <= 9 ? p.fix1 : (t <= 18 ? p.fix2 : p.fix3)) * fm;
-      var mkt = (t <= 3 ? p.mk0 : (t <= 9 ? p.mk1 : (t <= 18 ? p.mk2 : p.mk3))) * mm;
+      var mkt = ((t <= 3 ? p.mk0 : (t <= 9 ? p.mk1 : (t <= 18 ? p.mk2 : p.mk3))) + (t <= 3 ? p.mc0 : (t <= 18 ? p.mc1 : p.mc2))) * mm;
       var oneOff = p.oneOff[t] || 0;
       var staff = (t >= p.salFrom ? p.sal : 0) + (t >= p.sal2From ? p.sal : 0) + (t >= p.helpFrom ? p.help : 0);
       var res = rev - varCost - fixed - mkt - oneOff - staff;
       cash += res;
       if (cash < minCash){ minCash = cash; minCashM = t; }
-      out.push({t:t,B:B,I:I,z:z,N:N,S:S,rev:rev,subHT:subTTC*k,placesHT:placesTTC*k,entHT:entHT,collHT:collHT,otherHT:proHT+partHT,
+      out.push({t:t,B:B,V:V,Icur:Icur,I:I,z:z,N:N,S:S,rev:rev,subHT:subTTC*k,placesHT:placesTTC*k,grpHT:grpTTC*k,venueHT:venueHT,entHT:entHT,collHT:collHT,otherHT:proHT+partHT+affHT,affHT:affHT,G:G,VP:VP,FE:FE,
         varCost:varCost,fixed:fixed,mkt:mkt,oneOff:oneOff,staff:staff,res:res,cash:cash,tvaOn:tvaOn,E:E,hosts:hosts});
     }
     return {rows:out, minCash:minCash, minCashM:minCashM};
@@ -1260,12 +1277,15 @@ var CORDES_MODEL = (function(){
     entFrom:6,e12:2,e24:4,e36:6,pEnt:450,entCost:190,coll2:1,coll3:2,pColl:3000,
     proFrom:10,proShare:0.15,pPro:9,part2:200,part3:500,tvaSeuil:37500,
     fix1:700,fix2:1500,fix3:2500,mk0:200,mk1:600,mk2:1000,mk3:2500,oneOff:{2:2000,8:1000,13:1500},
-    salFrom:28,sal2From:99,sal:4200,helpFrom:16,help:900,fixMult:1,mkMult:1};
+    salFrom:28,sal2From:99,sal:4200,helpFrom:16,help:900,fixMult:1,mkMult:1,
+    cv0:800,gc1:0.14,gc2:0.05,gc3:0.025,cIns:0.03,affFrom:4,aff:0.017,mc0:150,mc1:200,mc2:400,
+    grpFrom:4,g12:6,g24:12,g36:20,pGrp:210,grpCost:120,
+    vpFrom:7,vp12:1,vp24:3,vp36:6,pVp:200,vpCost:115,featFrom:10,f12:3,f24:12,f36:25,pFeat:39,featCost:5,shareRate:0.15,shareFee:4};
   function ext(o, a){ var r = {}, k; for (k in o) r[k] = o[k]; for (k in a) r[k] = a[k]; return r; }
   var presets = {
-    prudent: ext(base, {b0:300,g1:0.14,g2:0.05,g3:0.025,conv:0.07,churn:0.11,mix:0.2,ref:0.01,field:4,e12:1,e24:2,e36:3,coll2:0,coll3:1,part2:0,part3:200,salFrom:99,helpFrom:99,mk2:600,mk3:800,fix2:1200,fix3:1500}),
+    prudent: ext(base, {b0:300,g1:0.14,g2:0.05,g3:0.025,conv:0.07,churn:0.11,mix:0.2,ref:0.01,field:4,e12:1,e24:2,e36:3,coll2:0,coll3:1,part2:0,part3:200,salFrom:99,helpFrom:99,mk2:600,mk3:800,fix2:1200,fix3:1500,cv0:500,gc1:0.10,gc2:0.04,gc3:0.02,cIns:0.02,aff:0.01,mc0:100,mc1:150,mc2:250,g12:3,g24:6,g36:10,vp12:0.5,vp24:1.5,vp36:3,f12:1,f24:5,f36:12}),
     central: ext(base, {}),
-    ambitieux: ext(base, {b0:500,g1:0.2,g2:0.07,g3:0.035,conv:0.13,churn:0.06,mix:0.35,ref:0.03,field:10,e12:3,e24:6,e36:10,coll2:2,coll3:4,part2:400,part3:1000,salFrom:19,sal2From:28,helpFrom:13,mk3:4000,fix3:3000})
+    ambitieux: ext(base, {b0:500,g1:0.2,g2:0.07,g3:0.035,conv:0.13,churn:0.06,mix:0.35,ref:0.03,field:10,e12:3,e24:6,e36:10,coll2:2,coll3:4,part2:400,part3:1000,salFrom:19,sal2From:28,helpFrom:13,mk3:4000,fix3:3000,cv0:1200,gc1:0.16,gc2:0.06,gc3:0.03,cIns:0.045,aff:0.025,mc0:200,mc1:300,mc2:600,g12:8,g24:16,g36:30,vp12:2,vp24:5,vp36:10,f12:5,f24:20,f36:45})
   };
   function summary(r){
     var R = r.rows, i, j, ok;

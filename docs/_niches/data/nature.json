@@ -1,0 +1,8139 @@
+{
+ "sector": "nature",
+ "categories": [
+  {
+   "id": "nature.jardin",
+   "name": "Jardin et potager",
+   "desc": "Cultiver, tailler et accueillir la vie au jardin, en pleine terre ou en pots.",
+   "subcategories": [
+    {
+     "id": "nature.jardin.potager",
+     "name": "Potager",
+     "desc": "Légumes en pleine terre, en pots ou en carrés."
+    },
+    {
+     "id": "nature.jardin.sol",
+     "name": "Sol et compost",
+     "desc": "Nourrir le sol et valoriser les déchets verts."
+    },
+    {
+     "id": "nature.jardin.arbres",
+     "name": "Arbres et arbustes",
+     "desc": "Tailler, greffer, planter."
+    },
+    {
+     "id": "nature.jardin.biodiversite",
+     "name": "Biodiversité au jardin",
+     "desc": "Accueillir insectes, oiseaux et batraciens."
+    }
+   ]
+  },
+  {
+   "id": "nature.plantes",
+   "name": "Plantes d'intérieur et art végétal",
+   "desc": "Soigner les plantes de la maison et créer avec le végétal.",
+   "subcategories": [
+    {
+     "id": "nature.plantes.interieur",
+     "name": "Plantes d'intérieur",
+     "desc": "Soins, multiplication et plantes exigeantes."
+    },
+    {
+     "id": "nature.plantes.art-vegetal",
+     "name": "Art végétal",
+     "desc": "Kokedama, terrarium, bonsaï, bouquets et fleurs séchées."
+    }
+   ]
+  },
+  {
+   "id": "nature.sauvage",
+   "name": "Plantes sauvages et champignons",
+   "desc": "Reconnaître, cueillir et cuisiner le vivant sauvage en sécurité.",
+   "subcategories": [
+    {
+     "id": "nature.sauvage.cueillette",
+     "name": "Cueillette et usages",
+     "desc": "Plantes comestibles, tisanes et teintures."
+    },
+    {
+     "id": "nature.sauvage.champignons",
+     "name": "Champignons",
+     "desc": "Reconnaître et cultiver."
+    },
+    {
+     "id": "nature.sauvage.botanique",
+     "name": "Botanique de terrain",
+     "desc": "Apprendre à nommer arbres, fleurs et lichens."
+    }
+   ]
+  },
+  {
+   "id": "nature.faune",
+   "name": "Observation de la faune",
+   "desc": "Voir, entendre et suivre la vie sauvage, de la ville à la forêt.",
+   "subcategories": [
+    {
+     "id": "nature.faune.oiseaux",
+     "name": "Oiseaux",
+     "desc": "Reconnaître à la vue et au chant."
+    },
+    {
+     "id": "nature.faune.insectes-nuit",
+     "name": "Insectes et vie nocturne",
+     "desc": "Pollinisateurs, chauves-souris et sorties de nuit."
+    },
+    {
+     "id": "nature.faune.traces",
+     "name": "Traces et pistage",
+     "desc": "Indices de présence et caméras."
+    },
+    {
+     "id": "nature.faune.participatif",
+     "name": "Sciences participatives",
+     "desc": "Relevés et inventaires citoyens."
+    }
+   ]
+  },
+  {
+   "id": "nature.animaux",
+   "name": "Animaux de compagnie",
+   "desc": "Éduquer, soigner et comprendre chiens, chats et autres compagnons.",
+   "subcategories": [
+    {
+     "id": "nature.animaux.chien",
+     "name": "Chien",
+     "desc": "Éducation, toilettage et comportement."
+    },
+    {
+     "id": "nature.animaux.chat",
+     "name": "Chat",
+     "desc": "Comprendre et enrichir la vie d'un chat."
+    },
+    {
+     "id": "nature.animaux.nac",
+     "name": "Poissons et petits animaux",
+     "desc": "Aquariophilie, lapins et cobayes."
+    }
+   ]
+  },
+  {
+   "id": "nature.elevage",
+   "name": "Petit élevage et ferme",
+   "desc": "Abeilles, poules, chevaux et animaux de ferme de loisir.",
+   "subcategories": [
+    {
+     "id": "nature.elevage.ruche",
+     "name": "Abeilles",
+     "desc": "Apiculture de loisir et abeilles sauvages."
+    },
+    {
+     "id": "nature.elevage.basse-cour",
+     "name": "Basse-cour",
+     "desc": "Poules, canards, lapins."
+    },
+    {
+     "id": "nature.elevage.cheval",
+     "name": "Cheval",
+     "desc": "Soins, pansage et premiers contacts."
+    }
+   ]
+  },
+  {
+   "id": "nature.terre",
+   "name": "Terre, eau et paysage",
+   "desc": "Lire un paysage, un cours d'eau, un sol ou une pierre.",
+   "subcategories": [
+    {
+     "id": "nature.terre.geologie",
+     "name": "Géologie",
+     "desc": "Roches, minéraux et fossiles."
+    },
+    {
+     "id": "nature.terre.eau",
+     "name": "Eau et rivière",
+     "desc": "Vie des milieux aquatiques et gestion de l'eau."
+    },
+    {
+     "id": "nature.terre.paysage",
+     "name": "Paysage et forêt",
+     "desc": "Comprendre la vie d'une forêt et d'un paysage."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "nature-potager-legumes",
+   "name": "Potager de légumes pour débutants",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.potager",
+   "desc": "Semer, planter, arroser et récolter ses premiers légumes en jardin partagé ou en carré.",
+   "audience": "Citadins 28-60 ans, familles, retraités",
+   "skills": [
+    "Choisir l'emplacement",
+    "Semer et repiquer",
+    "Arroser et pailler",
+    "Récolter et conserver"
+   ],
+   "appSkills": [
+    "potager-legumes"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers semis",
+     "goal": "Semer et repiquer 5 légumes faciles",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un carré fécond",
+     "goal": "Planifier un carré de 4 m² sur la saison",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rotations et associations",
+     "goal": "Associer légumes et planifier l'année",
+     "format": "arc",
+     "duration": "4 sorties saisonnières",
+     "group": "4-8",
+     "price": [
+      70,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un potager autonome",
+     "goal": "Produire toute l'année avec peu d'arrosage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      60,
+      110
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent jardin",
+     "goal": "Animer un jardin partagé et former",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      150,
+      300
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors",
+    "enfants"
+   ],
+   "senses": [
+    "geste",
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "famille",
+    "cuisine-du-monde",
+    "plante"
+   ],
+   "competitors": [
+    "Jardins partagés",
+    "Pépinières",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte envie, mais consentement à payer faible, offre associative et municipale abondante. À combiner avec de la cuisine et de la récolte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-potager-balcon",
+   "name": "Jardiner en pots : balcon et fenêtre",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.potager",
+   "desc": "Choisir contenants, terreau, plantes et exposition pour un potager de balcon.",
+   "audience": "Citadins en appartement 25-45 ans",
+   "skills": [
+    "Choisir les contenants",
+    "Mélanger un terreau",
+    "Semer en pots",
+    "Arroser avec économie"
+   ],
+   "appSkills": [
+    "potager-balcon"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un pot de basilic",
+     "goal": "Planter et réussir un premier pot",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Balcon productif",
+     "goal": "Planifier 6 contenants selon l'exposition",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récolter toute l'année",
+     "goal": "Succession de cultures en pots",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mini-potager vertical",
+     "goal": "Concevoir une culture en hauteur",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent balcon",
+     "goal": "Animer et conseiller",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "jardin-partage",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "plante",
+    "maison",
+    "nature",
+    "cuisine-du-monde"
+   ],
+   "competitors": [
+    "Jardineries",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte demande urbaine et format court avec un résultat qui repart à la maison. Prix de 25 à 40 € déjà pratiqués par jardineries et boutiques de plantes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-semis-calendrier",
+   "name": "Semis et calendrier de culture",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.potager",
+   "desc": "Réussir ses semis, les repiquer et caler son calendrier de culture sur le climat francilien.",
+   "audience": "Jardiniers débutants",
+   "skills": [
+    "Choisir les graines",
+    "Semer sous abri",
+    "Repiquer",
+    "Durcir les plants"
+   ],
+   "appSkills": [
+    "semis-boutures"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers semis",
+     "goal": "Réussir 10 semis sur un rebord de fenêtre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Calendrier du potager",
+     "goal": "Planifier mois par mois",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Semis difficiles",
+     "goal": "Réussir tomates, poivrons et aromatiques",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie de plants",
+     "goal": "Produire ses plants et ses semences",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent semis",
+     "goal": "Organiser une troc-graines",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "jardin-partage",
+    "domicile",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "plante",
+    "nature",
+    "geste",
+    "famille"
+   ],
+   "competitors": [
+    "Jardineries",
+    "Grainothèques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile, saisonnier, souvent proposé gratuitement par les grainothèques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-potager-lasagne-buttes",
+   "name": "Potager en lasagne et en buttes",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.potager",
+   "desc": "Monter des buttes ou lasagnes de cartons, branches et compost pour cultiver sans bêcher.",
+   "audience": "Jardiniers amateurs, écolo curieux",
+   "skills": [
+    "Superposer les couches",
+    "Monter une butte",
+    "Planter à la volée",
+    "Entretenir sans bêcher"
+   ],
+   "appSkills": [
+    "permaculture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Une butte en 2 h",
+     "goal": "Monter une petite butte",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couches et eau",
+     "goal": "Gérer apport d'eau et décomposition",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      40,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Potager au sol vivant",
+     "goal": "Planifier les cultures",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      85,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Retour d'expérience",
+     "goal": "Corriger les défauts d'une année",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      175,
+      295
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent permaculture",
+     "goal": "Animer des chantiers",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      140,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "fabrication",
+    "recup",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Permaculteurs",
+    "Fermes pédagogiques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Séance concrète et motivante pour les jardiniers, mais cible déjà équipée en vidéo et groupes locaux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-compost-bac",
+   "name": "Compostage : bien démarrer son bac",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.sol",
+   "desc": "Équilibrer matières, surveiller humidité et utiliser le compost au jardin.",
+   "audience": "Foyers avec jardin, copropriétés, jardins partagés",
+   "skills": [
+    "Équilibre carbone et azote",
+    "Monter un bac",
+    "Gérer humidité et odeurs",
+    "Utiliser le compost"
+   ],
+   "appSkills": [
+    "compost"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bac",
+     "goal": "Démarrer un bac de compost",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Compost équilibré",
+     "goal": "Corriger odeurs, humidité et mouches",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Compost de quartier",
+     "goal": "Animer un site de compostage partagé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Compost en grand volume",
+     "goal": "Gérer des tas et du broyat",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      90,
+      160
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent composteur",
+     "goal": "Former guides composteurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      180,
+      335
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "domicile",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "odorat"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "jardin",
+    "nature",
+    "solidarite"
+   ],
+   "competitors": [
+    "Mairies",
+    "Guides composteurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Formation largement financée par les collectivités, gratuite pour le public. À proposer plutôt aux entreprises et aux copropriétés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-lombricompost",
+   "name": "Lombricompostage en appartement",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.sol",
+   "desc": "Installer et entretenir un lombricomposteur sans odeurs, même sans jardin.",
+   "audience": "Citadins sensibles au zéro déchet 25-45 ans",
+   "skills": [
+    "Choisir un lombricomposteur",
+    "Alimenter les vers",
+    "Gérer humidité",
+    "Récolter le thé de compost"
+   ],
+   "appSkills": [
+    "compost"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon lombricomposteur",
+     "goal": "Installer et démarrer sa colonie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vers heureux",
+     "goal": "Équilibrer alimentation et humidité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récolter et utiliser",
+     "goal": "Récolter compost et lixiviat",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Collectif d'immeuble",
+     "goal": "Mettre en place un site partagé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent lombricompost",
+     "goal": "Former des voisins",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "boutique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "jardin",
+    "maison",
+    "nature"
+   ],
+   "competitors": [
+    "Associations",
+    "Marques de lombricomposteurs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Niche très parisienne à fort attrait, avec des produits à vendre en soutien du format.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-permaculture-initiation",
+   "name": "Initiation à la permaculture",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.sol",
+   "desc": "Observer un site, comprendre les principes et concevoir un petit jardin en permaculture.",
+   "audience": "Citadins curieux 28-55 ans",
+   "skills": [
+    "Observer un site",
+    "Associer les plantes",
+    "Capter l'eau",
+    "Dessiner un plan"
+   ],
+   "appSkills": [
+    "permaculture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Principes en pratique",
+     "goal": "Comprendre 5 principes sur un jardin",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Observer un lieu",
+     "goal": "Lire un site et ses micro-climats",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan d'un petit jardin",
+     "goal": "Concevoir un plan complet",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un site en action",
+     "goal": "Mettre en œuvre un design sur 6 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      140,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent permaculture",
+     "goal": "Former et accompagner des projets",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      500
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "zero-dechet",
+    "plante",
+    "fabrication"
+   ],
+   "competitors": [
+    "Fermes",
+    "Écoles de permaculture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Vocabulaire à la mode et grand attrait, offres variées souvent à prix élevés en stage long.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-paillage-sol-vivant",
+   "name": "Pailler et nourrir un sol vivant",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.sol",
+   "desc": "Comprendre sol et paillage, choisir ses amendements et éviter bêchage et désherbage chimique.",
+   "audience": "Jardiniers amateurs",
+   "skills": [
+    "Lire son sol",
+    "Choisir un paillage",
+    "Préparer un engrais vert",
+    "Entretenir sans produits"
+   ],
+   "appSkills": [
+    "permaculture",
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon sol",
+     "goal": "Faire un test de sol simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Paillage utile",
+     "goal": "Choisir et poser un paillage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Engrais verts",
+     "goal": "Semer une couverture de sol",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sol régénéré",
+     "goal": "Planifier une amélioration sur 3 ans",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent sol",
+     "goal": "Conseiller et former",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "zero-dechet",
+    "plante"
+   ],
+   "competitors": [
+    "Jardineries",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Sujet de fond, peu vendeur seul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-taille-fruitiers",
+   "name": "Tailler les arbres fruitiers",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.arbres",
+   "desc": "Reconnaître les branches, tailler pommiers, poiriers et petits fruits en saison.",
+   "audience": "Propriétaires de jardin, retraités, vergers partagés",
+   "skills": [
+    "Reconnaître les rameaux",
+    "Choisir ses outils",
+    "Tailler de formation",
+    "Tailler de fructification"
+   ],
+   "appSkills": [
+    "taille-fruitiers"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier arbre",
+     "goal": "Reconnaître les branches utiles",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Taille d'hiver",
+     "goal": "Tailler un jeune fruitier",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Arbres adultes",
+     "goal": "Rééquilibrer un arbre ancien",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Formes fruitières",
+     "goal": "Conduire un arbre en palmette",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent verger",
+     "goal": "Animer un chantier collectif",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "geste",
+    "plante"
+   ],
+   "competitors": [
+    "Associations de croqueurs",
+    "Pépiniéristes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Savoir-faire précieux, saisonnier (hiver), peu d'offre en Île-de-France. Public engagé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-greffe-arbres",
+   "name": "Greffer ses arbres fruitiers",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.arbres",
+   "desc": "Greffer en fente ou en couronne et choisir porte-greffes et variétés anciennes.",
+   "audience": "Passionnés de vergers, croqueurs de pommes",
+   "skills": [
+    "Récolter des greffons",
+    "Préparer le porte-greffe",
+    "Greffer en fente",
+    "Soigner la greffe"
+   ],
+   "appSkills": [
+    "taille-fruitiers"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première greffe",
+     "goal": "Réaliser une greffe en fente",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Greffes variées",
+     "goal": "Maîtriser fente, couronne et écusson",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Choisir les variétés",
+     "goal": "Choisir porte-greffes adaptés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Verger complet",
+     "goal": "Planifier un verger de variétés anciennes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent greffe",
+     "goal": "Former d'autres greffeurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jardin",
+    "plante",
+    "nature",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Associations de croqueurs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public passionné mais restreint et saison très courte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-taille-haies-rosiers",
+   "name": "Tailler haies, arbustes et rosiers",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.arbres",
+   "desc": "Tailler au bon moment avec les bons outils sans abîmer les plantes.",
+   "audience": "Propriétaires de jardin",
+   "skills": [
+    "Choisir ses outils",
+    "Tailler un rosier",
+    "Tailler une haie",
+    "Affûter et entretenir"
+   ],
+   "appSkills": [
+    "taille-fruitiers"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers coups de sécateur",
+     "goal": "Tailler un arbuste sans le blesser",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rosiers et grimpantes",
+     "goal": "Tailler ses rosiers",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Haies saines",
+     "goal": "Tailler haie et brise-vent",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jardin entretenu",
+     "goal": "Planifier la taille sur l'année",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent taille",
+     "goal": "Animer une démonstration",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "geste",
+    "plante"
+   ],
+   "competitors": [
+    "Jardiniers paysagistes",
+    "Pépinières"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande réelle mais satisfaite par les jardineries et jardiniers pros.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-jardin-refuge",
+   "name": "Jardin refuge pour la biodiversité",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.biodiversite",
+   "desc": "Créer abris, points d'eau et plantations pour accueillir insectes, oiseaux et hérissons.",
+   "audience": "Propriétaires de jardin, copropriétés, écoles",
+   "skills": [
+    "Observer la faune",
+    "Planter des indigènes",
+    "Créer un abri",
+    "Réduire les produits"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jardin accueillant",
+     "goal": "Repérer 5 aménagements simples",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plantes mellifères",
+     "goal": "Choisir plantes sauvages et indigènes",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Abris et points d'eau",
+     "goal": "Construire abris et mares",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan de biodiversité",
+     "goal": "Concevoir un projet pour un lieu",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent biodiversité",
+     "goal": "Former écoles et collectivités",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "jardin",
+    "famille",
+    "animaux",
+    "plante"
+   ],
+   "competitors": [
+    "LPO",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Fort intérêt associatif et collectivités, peu de monétisation hors écoles et entreprises.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-nichoirs-hotel-insectes",
+   "name": "Fabriquer nichoirs et hôtels à insectes",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.biodiversite",
+   "desc": "Construire nichoirs, abris à chauves-souris et hôtels à insectes efficaces.",
+   "audience": "Familles, écoles, bricoleurs",
+   "skills": [
+    "Choisir le bon trou",
+    "Découper et assembler",
+    "Installer au bon endroit",
+    "Entretenir"
+   ],
+   "appSkills": [
+    "jardin-biodiversite",
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un nichoir",
+     "goal": "Fabriquer un nichoir à mésanges",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hôtel à insectes",
+     "goal": "Construire un hôtel efficace",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Abris variés",
+     "goal": "Réaliser abris à chauves-souris et hérissons",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan d'équipement",
+     "goal": "Équiper un jardin",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent animation",
+     "goal": "Animer des ateliers en famille",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "atelier-artisan",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "fabrication",
+    "bois",
+    "famille",
+    "animaux"
+   ],
+   "competitors": [
+    "LPO",
+    "Mairies",
+    "Magasins de bricolage"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Atelier familial plébiscité, résultat à emporter. Prix plutôt bas, forte demande en périscolaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-mare-prairie-fleurie",
+   "name": "Créer une mare et une prairie fleurie",
+   "sector": "nature",
+   "category": "nature.jardin",
+   "subcategory": "nature.jardin.biodiversite",
+   "desc": "Dessiner, creuser et planter une petite mare ou une prairie fleurie.",
+   "audience": "Propriétaires de jardin, collectivités",
+   "skills": [
+    "Choisir l'emplacement",
+    "Creuser et bâcher",
+    "Planter des aquatiques",
+    "Semer une prairie"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan d'une mare",
+     "goal": "Concevoir un projet",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Creuser et bâcher",
+     "goal": "Réaliser une mini-mare",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plantes et faune",
+     "goal": "Planter et suivre la colonisation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      95,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Prairie fleurie",
+     "goal": "Semer et entretenir",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      200,
+      335
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent écologie",
+     "goal": "Former et conduire des projets",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "plante"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jardin",
+    "nature",
+    "eau",
+    "animaux"
+   ],
+   "competitors": [
+    "Associations",
+    "Pépiniéristes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Chantier de printemps, public très restreint.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-plantes-interieur-soins",
+   "name": "Plantes d'intérieur : soins, lumière et arrosage",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.interieur",
+   "desc": "Diagnostiquer ses plantes, rempoter et choisir une plante adaptée à son logement.",
+   "audience": "Citadins 22-45 ans",
+   "skills": [
+    "Lire la lumière",
+    "Arroser juste",
+    "Rempoter",
+    "Diagnostiquer un problème"
+   ],
+   "appSkills": [
+    "plantes-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma jungle sans stress",
+     "goal": "Choisir 3 plantes adaptées à sa lumière",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rempotage réussi",
+     "goal": "Rempoter et arroser juste une plante",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plantes malades",
+     "goal": "Diagnostiquer et traiter parasites et carences",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Intérieur végétal",
+     "goal": "Concevoir une composition de plantes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent plantes",
+     "goal": "Animer une session en boutique ou à domicile",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 5
+   },
+   "venues": [
+    "boutique",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "etudiants"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "odorat"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "maison",
+    "deco",
+    "nature",
+    "calme"
+   ],
+   "competitors": [
+    "Boutiques de plantes",
+    "Jardineries"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte demande portée par les réseaux sociaux. Ateliers de 35 à 60 € déjà vendus en boutiques de plantes, lieux partenaires nombreux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-bouturage-multiplication",
+   "name": "Bouturer et multiplier ses plantes",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.interieur",
+   "desc": "Prélever, bouturer, marcotter et diviser pour renouveler et partager ses plantes.",
+   "audience": "Amateurs de plantes, troc entre voisins",
+   "skills": [
+    "Prélever une bouture",
+    "Bouturer dans l'eau et la terre",
+    "Diviser une touffe",
+    "Marcotter"
+   ],
+   "appSkills": [
+    "semis-boutures"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première bouture",
+     "goal": "Réussir 3 boutures faciles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Division et marcottage",
+     "goal": "Multiplier plantes d'intérieur courantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Production régulière",
+     "goal": "Planifier la multiplication sur l'année",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plantes rares",
+     "goal": "Bouturer des espèces délicates",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent multiplication",
+     "goal": "Animer un troc de plantes",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "boutique",
+    "domicile",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "jardin",
+    "nature",
+    "zero-dechet",
+    "cadeau"
+   ],
+   "competitors": [
+    "Boutiques de plantes",
+    "Troc de plantes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier court avec repartir avec ses plants, bonne combinaison avec le rempotage et la déco.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-orchidees-plantes-exigeantes",
+   "name": "Orchidées et plantes carnivores",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.interieur",
+   "desc": "Réussir les plantes réputées difficiles : orchidées, plantes carnivores, fougères.",
+   "audience": "Collectionneurs 30-65 ans",
+   "skills": [
+    "Comprendre leurs besoins",
+    "Choisir le substrat",
+    "Arroser et nourrir",
+    "Faire refleurir"
+   ],
+   "appSkills": [
+    "plantes-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon orchidée refleurit",
+     "goal": "Prendre soin d'une orchidée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rempotage spécifique",
+     "goal": "Choisir écorces et substrats",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Collection variée",
+     "goal": "Entretenir 10 espèces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Hybridation et semis",
+     "goal": "Produire ses plantes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent collection",
+     "goal": "Animer un club",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "plante",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "collection",
+    "maison",
+    "nature",
+    "calme"
+   ],
+   "competitors": [
+    "Orchidophiles",
+    "Boutiques spécialisées"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public passionné mais restreint, pertinent dans un cercle de collectionneurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-kokedama",
+   "name": "Kokedama : plante en boule de mousse",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.art-vegetal",
+   "desc": "Façonner une boule de terre et mousse suspendue autour d'une plante.",
+   "audience": "Amateurs de DIY et de plantes 25-50 ans, cadeaux",
+   "skills": [
+    "Choisir la plante",
+    "Préparer le substrat",
+    "Ficeler la mousse",
+    "Entretenir un kokedama"
+   ],
+   "appSkills": [
+    "kokedama"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier kokedama",
+     "goal": "Réaliser un kokedama et le suspendre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Compositions",
+     "goal": "Associer plusieurs plantes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Grand format",
+     "goal": "Réaliser des pièces de 25 cm",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mur végétal",
+     "goal": "Créer une composition murale",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent kokedama",
+     "goal": "Animer et vendre ses créations",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "cafe",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "deco",
+    "fabrication",
+    "cadeau",
+    "nature"
+   ],
+   "competitors": [
+    "Boutiques de plantes",
+    "Ateliers DIY"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Atelier de 90 minutes avec objet à emporter, prix courant de 40 à 60 €, rendu photogénique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-terrarium-ferme",
+   "name": "Terrarium fermé et mini-jardin",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.art-vegetal",
+   "desc": "Monter un terrarium fermé avec drainage, substrat, mousse et plantes miniatures.",
+   "audience": "25-45 ans, cadeaux, bureaux",
+   "skills": [
+    "Choisir le contenant",
+    "Stratifier le fond",
+    "Planter en petit",
+    "Entretenir l'humidité"
+   ],
+   "appSkills": [
+    "plantes-interieur"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier terrarium",
+     "goal": "Monter un terrarium autonome",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Paysage miniature",
+     "goal": "Composer relief et chemin",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Grand terrarium",
+     "goal": "Réaliser un terrarium de 30 cm",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Paludarium",
+     "goal": "Intégrer l'eau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent terrarium",
+     "goal": "Animer et vendre",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "cafe",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "deco",
+    "fabrication",
+    "cadeau",
+    "calme"
+   ],
+   "competitors": [
+    "Ateliers terrarium",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très prisé en cadeau et entreprise, marché déjà occupé à Paris. Les prix atteignent 45 à 70 € grâce au matériel inclus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-bonsai",
+   "name": "Bonsaï : formation et entretien",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.art-vegetal",
+   "desc": "Choisir, tailler, ligaturer et rempoter un jeune arbre en miniature.",
+   "audience": "Amateurs 30-65 ans",
+   "skills": [
+    "Choisir un arbre",
+    "Tailler",
+    "Ligaturer",
+    "Rempoter"
+   ],
+   "appSkills": [
+    "bonsai"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier arbre",
+     "goal": "Choisir et prendre soin d'un bonsaï",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Taille de formation",
+     "goal": "Tailler et ligaturer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      115,
+      195
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rempotage et racines",
+     "goal": "Rempoter en saison",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      310
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création d'un style",
+     "goal": "Définir un design et le conduire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      180,
+      310
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bonsaï",
+     "goal": "Animer un club",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      365,
+      650
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "boutique",
+    "jardin-partage",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "nature",
+    "calme",
+    "collection",
+    "geste"
+   ],
+   "competitors": [
+    "Clubs de bonsaï",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle et prêt à payer le matériel, mais niche étroite et offre associative établie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-art-floral-bouquet",
+   "name": "Composer un bouquet de saison",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.art-vegetal",
+   "desc": "Choisir fleurs, structure et couleurs pour un bouquet rond ou en spirale.",
+   "audience": "Jeunes actifs, cadeaux, entreprises",
+   "skills": [
+    "Choisir et conditionner les fleurs",
+    "Technique de la spirale",
+    "Harmoniser les couleurs",
+    "Faire durer"
+   ],
+   "appSkills": [
+    "art-floral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bouquet",
+     "goal": "Composer un bouquet de saison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équilibre et couleurs",
+     "goal": "Maîtriser formes et harmonies",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Compositions variées",
+     "goal": "Réaliser couronnes et centres de table",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Événementiel",
+     "goal": "Concevoir fleurs d'événement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      195,
+      345
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent floral",
+     "goal": "Animer des ateliers de fleuriste",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      390,
+      720
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "cafe",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "deco",
+    "couleur",
+    "cadeau",
+    "fete"
+   ],
+   "competitors": [
+    "Fleuristes",
+    "Ateliers floraux"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Atelier très prisé (60 à 90 €) avec marque et fidélité. Fleuristes nombreux et capacité d'accueil limitée par les matières périssables.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-fleurs-sechees-herbier",
+   "name": "Fleurs séchées et herbier",
+   "sector": "nature",
+   "category": "nature.plantes",
+   "subcategory": "nature.plantes.art-vegetal",
+   "desc": "Sécher, presser et composer cadres, couronnes et herbiers.",
+   "audience": "Amateurs de DIY 25-60 ans",
+   "skills": [
+    "Cueillir et sécher",
+    "Presser",
+    "Composer un cadre",
+    "Conserver"
+   ],
+   "appSkills": [
+    "art-floral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier séchage",
+     "goal": "Sécher et presser 5 espèces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Composition",
+     "goal": "Réaliser un cadre ou une couronne",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Herbier personnel",
+     "goal": "Constituer un herbier documenté",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Décoration pro",
+     "goal": "Réaliser des pièces vendables",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent végétal",
+     "goal": "Animer et vendre",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "cafe",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "deco",
+    "papier",
+    "nature",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers DIY"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier calme, résultat décoratif, matériel peu coûteux. Marché concurrentiel d'ateliers floraux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-cueillette-comestibles",
+   "name": "Cueillette de plantes sauvages comestibles",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.cueillette",
+   "desc": "Reconnaître les plantes sauvages comestibles courantes, cueillir légalement et cuisiner.",
+   "audience": "Randonneurs, curieux de cuisine 30-60 ans",
+   "skills": [
+    "Reconnaître 20 plantes",
+    "Éviter les confusions toxiques",
+    "Cueillir en respectant la loi",
+    "Préparer et cuisiner"
+   ],
+   "appSkills": [
+    "cueillette-comestibles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix plantes faciles",
+     "goal": "Reconnaître 10 plantes comestibles sûres",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Saison et milieu",
+     "goal": "Lire un milieu et prévoir sa cueillette",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Confusions à éviter",
+     "goal": "Distinguer comestibles et toxiques",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cuisine et conservation",
+     "goal": "Cuisiner et conserver une récolte",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent botanique",
+     "goal": "Encadrer des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "gout",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "balade",
+    "gourmand",
+    "cuisine-du-monde",
+    "plante"
+   ],
+   "competitors": [
+    "Associations de botanique",
+    "Guides nature"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "prioritaire",
+   "why": "Forte envie des urbains, sorties payantes à 30 à 50 €. Risque de confusion à encadrer par une liste de plantes sûres et un diplômé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-tisanes-herboristerie",
+   "name": "Tisanes et plantes aromatiques maison",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.cueillette",
+   "desc": "Cultiver, cueillir, sécher et composer ses tisanes et aromates, sans allégation de santé.",
+   "audience": "Amateurs de bien-être 25-60 ans",
+   "skills": [
+    "Reconnaître les plantes",
+    "Sécher et conserver",
+    "Composer une tisane",
+    "Respecter les limites"
+   ],
+   "appSkills": [
+    "herboristerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première tisane",
+     "goal": "Composer et préparer une tisane de saison",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Séchage et conservation",
+     "goal": "Sécher et stocker une récolte",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mélanges personnels",
+     "goal": "Composer des mélanges équilibrés",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jardin d'aromatiques",
+     "goal": "Planifier un jardin de plantes à tisane",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent plantes",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "domicile",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "odorat",
+    "gout"
+   ],
+   "outputs": [
+    "objet",
+    "savoir",
+    "plante"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "the",
+    "nature",
+    "bien-etre",
+    "cadeau",
+    "gourmand"
+   ],
+   "competitors": [
+    "Herboristes",
+    "Boutiques bio"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Demande large mais la vente de plantes médicinales est encadrée : on reste sur l'usage alimentaire et aromatique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-cuisiner-plantes-sauvages",
+   "name": "Cuisiner les plantes sauvages",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.cueillette",
+   "desc": "Transformer ortie, ail des ours et fleurs sauvages en plats, pestos et conserves.",
+   "audience": "Gourmets curieux, locavores",
+   "skills": [
+    "Préparer les plantes",
+    "Cuisiner et assaisonner",
+    "Conserver",
+    "Associer"
+   ],
+   "appSkills": [
+    "cueillette-comestibles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première recette",
+     "goal": "Cuisiner 3 plantes sauvages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Saveurs de saison",
+     "goal": "Composer un menu de saison",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Conserves et sirops",
+     "goal": "Conserver pestos et sirops",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Menu sauvage",
+     "goal": "Réaliser un repas complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cuisine sauvage",
+     "goal": "Animer des ateliers et des repas",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "cuisine-pro",
+    "restaurant",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "gout",
+    "odorat"
+   ],
+   "outputs": [
+    "plat",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "gourmand",
+    "nature",
+    "cuisine-du-monde",
+    "convivial",
+    "plante"
+   ],
+   "competitors": [
+    "Chefs cueilleurs",
+    "Guides"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Mix cuisine et nature, très photogénique, à intégrer à des sorties de cueillette plutôt qu'en atelier séparé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-teintures-vegetales",
+   "name": "Teintures végétales",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.cueillette",
+   "desc": "Teindre tissu et laine avec plantes, fleurs et épluchures, mordançage compris.",
+   "audience": "Créatifs, amateurs de textile 25-55 ans",
+   "skills": [
+    "Choisir les plantes",
+    "Mordancer",
+    "Teindre",
+    "Fixer et laver"
+   ],
+   "appSkills": [
+    "herboristerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première couleur",
+     "goal": "Teindre un tissu avec une plante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nuances et mordants",
+     "goal": "Obtenir une gamme de couleurs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Teinture de laine",
+     "goal": "Teindre une écharpe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Palette personnelle",
+     "goal": "Constituer sa palette",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent teinture",
+     "goal": "Animer et vendre",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "textile",
+    "couleur",
+    "nature",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers textiles",
+    "Teinturiers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Résultat très esthétique, niche de plus en plus visible. Ateliers existants à 60 à 90 €.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-mycologie-reconnaitre",
+   "name": "Reconnaître les champignons en sortie",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.champignons",
+   "desc": "Reconnaître les champignons communs, éviter les confusions mortelles et contrôler en pharmacie.",
+   "audience": "Randonneurs, cueilleurs 35-65 ans",
+   "skills": [
+    "Reconnaître 15 espèces",
+    "Examiner un champignon",
+    "Connaître les toxiques",
+    "Cueillir proprement"
+   ],
+   "appSkills": [
+    "mycologie-cueillette"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix champignons sûrs",
+     "goal": "Reconnaître 10 espèces communes",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Familles et caractères",
+     "goal": "Utiliser une clé simple",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Confusions mortelles",
+     "goal": "Éviter amanites et cortinaires",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mycologie fine",
+     "goal": "Utiliser microscope et clés",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent mycologique",
+     "goal": "Encadrer des sorties avec contrôle",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "journee",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "odorat"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "balade",
+    "gourmand",
+    "science",
+    "plante"
+   ],
+   "competitors": [
+    "Sociétés mycologiques",
+    "Pharmaciens"
+   ],
+   "regulated": "alimentaire",
+   "verdict": "a-tester",
+   "why": "Fortes saisons et risque réel, encadré par les sociétés mycologiques et pharmaciens. Valeur du format sortie à confirmer, probablement plus utile en cercle associatif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-culture-champignons",
+   "name": "Cultiver des champignons à la maison",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.champignons",
+   "desc": "Cultiver pleurotes, shiitakés ou champignons de café sur substrat et kits.",
+   "audience": "Citadins curieux 25-50 ans, familles",
+   "skills": [
+    "Choisir un substrat",
+    "Inoculer",
+    "Gérer humidité",
+    "Récolter"
+   ],
+   "appSkills": [
+    "champignons-culture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier kit",
+     "goal": "Démarrer et récolter un kit de pleurotes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Substrat maison",
+     "goal": "Préparer du marc de café ou de la paille",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plusieurs espèces",
+     "goal": "Cultiver shiitaké et pleurote",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      110,
+      175
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mini-production",
+     "goal": "Produire pour un cercle de voisins",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      145,
+      255
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent culture",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      285,
+      530
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "boutique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "plante",
+    "plat"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "gourmand",
+    "zero-dechet",
+    "plante",
+    "science"
+   ],
+   "competitors": [
+    "Fermes urbaines",
+    "Marques de kits"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Atelier court avec résultat visible en 10 jours, fort potentiel cadeau et entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-botanique-terrain",
+   "name": "Botanique de terrain : plantes de la ville et des bois",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.botanique",
+   "desc": "Reconnaître les fleurs et plantes communes avec une flore simplifiée et une application.",
+   "audience": "Promeneurs curieux 30-70 ans",
+   "skills": [
+    "Lire une flore",
+    "Reconnaître les familles",
+    "Utiliser une loupe",
+    "Tenir un carnet"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix plantes de mon quartier",
+     "goal": "Nommer 10 plantes communes",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Clé et familles",
+     "goal": "Utiliser une flore",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un milieu en détail",
+     "goal": "Inventorier un site",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Botaniste amateur",
+     "goal": "Rédiger un inventaire",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent botanique",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "odorat",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "balade",
+    "science",
+    "plante",
+    "ville"
+   ],
+   "competitors": [
+    "Associations de botanique",
+    "Guides"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte offre associative gratuite, valeur surtout éducative. Bon pour mixer avec balade urbaine ou ateliers scolaires.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-reconnaitre-arbres",
+   "name": "Reconnaître les arbres en toutes saisons",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.botanique",
+   "desc": "Identifier les arbres de Paris et des forêts grâce aux feuilles, écorces et bourgeons.",
+   "audience": "Promeneurs, familles",
+   "skills": [
+    "Feuilles et écorces",
+    "Bourgeons en hiver",
+    "Fruits et graines",
+    "Arbres remarquables"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix arbres de ma rue",
+     "goal": "Nommer 10 arbres de la ville",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Toutes saisons",
+     "goal": "Reconnaître écorces et bourgeons",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Forêts et sols",
+     "goal": "Lire une essence selon son milieu",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dendrologie",
+     "goal": "Identifier 60 espèces",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent arbres",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "jeunes-actifs",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "balade",
+    "ville",
+    "famille",
+    "science"
+   ],
+   "competitors": [
+    "Associations",
+    "Parcs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sortie accessible et pédagogique, très demandée par les familles. Prix bas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-lichens-mousses",
+   "name": "Lichens, mousses et petite botanique",
+   "sector": "nature",
+   "category": "nature.sauvage",
+   "subcategory": "nature.sauvage.botanique",
+   "desc": "Observer à la loupe lichens, mousses et petites plantes pour comprendre qualité de l'air et milieux.",
+   "audience": "Amateurs de sciences naturelles",
+   "skills": [
+    "Utiliser une loupe",
+    "Reconnaître les groupes",
+    "Lire un milieu",
+    "Photographier"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Le monde sous la loupe",
+     "goal": "Observer et décrire 5 mousses",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lichens indicateurs",
+     "goal": "Lire la qualité de l'air",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Macro et identification",
+     "goal": "Identifier au genre",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Naturaliste de terrain",
+     "goal": "Tenir un carnet scientifique",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent naturaliste",
+     "goal": "Encadrer sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "science",
+    "photo",
+    "calme",
+    "balade"
+   ],
+   "competitors": [
+    "Associations naturalistes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche très savante, public réduit mais captivant. Utilisable dans des programmes éducatifs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-ornithologie-ville",
+   "name": "Oiseaux des parcs et des villes",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.oiseaux",
+   "desc": "Reconnaître 20 oiseaux de la ville, utiliser jumelles et applications.",
+   "audience": "Promeneurs, familles, retraités",
+   "skills": [
+    "Régler des jumelles",
+    "Reconnaître 20 espèces",
+    "Utiliser un guide",
+    "Noter ses observations"
+   ],
+   "appSkills": [
+    "ornithologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix oiseaux familiers",
+     "goal": "Nommer 10 oiseaux de son quartier",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Silhouettes et comportements",
+     "goal": "Reconnaître à la silhouette",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Parcs et zones humides",
+     "goal": "Observer 40 espèces",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sciences naturelles",
+     "goal": "Rédiger un carnet de terrain",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent ornithologue",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "balade",
+    "animaux",
+    "photo",
+    "famille"
+   ],
+   "competitors": [
+    "LPO",
+    "Parcs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte attirance, nombreuses sorties gratuites associatives. Marché payant surtout pour guides locaux et familles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-chants-oiseaux",
+   "name": "Chants d'oiseaux : apprendre à écouter",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.oiseaux",
+   "desc": "Reconnaître 20 chants et cris d'oiseaux au printemps, avec applications et enregistrements.",
+   "audience": "Curieux de nature, musiciens, familles",
+   "skills": [
+    "Écouter attentivement",
+    "Reconnaître 20 chants",
+    "Utiliser une application",
+    "Enregistrer"
+   ],
+   "appSkills": [
+    "ornithologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écouter l'aube",
+     "goal": "Reconnaître 5 chants",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mémoriser les chants",
+     "goal": "Reconnaître 20 chants",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enregistrer et identifier",
+     "goal": "Enregistrer et analyser",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Paysage sonore",
+     "goal": "Cartographier un territoire",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent écoute",
+     "goal": "Animer des sorties sonores",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie"
+   ],
+   "outputs": [
+    "savoir",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "musique",
+    "ouie",
+    "calme",
+    "balade"
+   ],
+   "competitors": [
+    "LPO",
+    "Applications"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sortie à l'aube très différenciante, avec lien musique et bien-être. Audience de niche.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-abeilles-sauvages-papillons",
+   "name": "Abeilles sauvages, papillons et pollinisateurs",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.insectes-nuit",
+   "desc": "Identifier pollinisateurs et construire des abris dans un jardin ou un parc.",
+   "audience": "Familles, jardiniers, écoles",
+   "skills": [
+    "Reconnaître les pollinisateurs",
+    "Observer sans déranger",
+    "Planter pour eux",
+    "Participer à un suivi"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes pollinisateurs",
+     "goal": "Reconnaître 8 insectes à fleurs",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Familles d'abeilles",
+     "goal": "Distinguer abeilles, guêpes et mouches",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Papillons et chenilles",
+     "goal": "Identifier 20 espèces",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivi scientifique",
+     "goal": "Participer à un protocole",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pollinisateurs",
+     "goal": "Guider une sortie",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "animaux",
+    "photo",
+    "science",
+    "famille"
+   ],
+   "competitors": [
+    "Spipoll",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sorties pédagogiques demandées par familles et écoles, peu de volonté de payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-sortie-nocturne-chauves-souris",
+   "name": "Sortie de nuit : chauves-souris et rapaces nocturnes",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.insectes-nuit",
+   "desc": "Écouter chauves-souris et chouettes avec détecteur à ultrasons à la tombée de la nuit.",
+   "audience": "Familles, couples, curieux de nuit",
+   "skills": [
+    "Utiliser un détecteur",
+    "Reconnaître chouettes et chauves-souris",
+    "Observer sans lumière",
+    "Se déplacer de nuit"
+   ],
+   "appSkills": [
+    "ornithologie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Soirée à l'écoute",
+     "goal": "Entendre 3 espèces avec détecteur",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reconnaître les espèces",
+     "goal": "Distinguer pipistrelles et sérotines",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Nuit du hibou",
+     "goal": "Identifier les chants de rapaces",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Inventaire nocturne",
+     "goal": "Réaliser un relevé simple",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent nocturne",
+     "goal": "Guider des sorties de nuit",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "nuit",
+    "animaux",
+    "balade",
+    "famille"
+   ],
+   "competitors": [
+    "Associations naturalistes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Format nocturne très attractif et peu proposé. Fort potentiel sorties famille et entreprise, avec contraintes de sécurité de nuit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-pistage-traces",
+   "name": "Pistage et lecture des traces",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.traces",
+   "desc": "Lire empreintes, fèces, poils et indices de présence des animaux dans les bois.",
+   "audience": "Familles, randonneurs, amateurs de bushcraft",
+   "skills": [
+    "Reconnaître 10 empreintes",
+    "Lire les indices",
+    "Suivre une piste",
+    "Noter et photographier"
+   ],
+   "appSkills": [
+    "pistage-observation-faune"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières empreintes",
+     "goal": "Identifier 6 empreintes",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Indices de vie",
+     "goal": "Lire gîtes, coulées et reliefs de repas",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivre une piste",
+     "goal": "Suivre un animal sur 200 m",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      60,
+      120
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pistage fin",
+     "goal": "Déduire âge et comportement",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      150,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent pistage",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      240,
+      450
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "balade",
+    "animaux",
+    "famille",
+    "science"
+   ],
+   "competitors": [
+    "Écoles de nature",
+    "Guides"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très attractif en famille, offre peu structurée, mais clientèle limitée en Île-de-France.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-piege-photo-faune",
+   "name": "Pièges photographiques : voir la faune cachée",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.traces",
+   "desc": "Installer une caméra de chasse photo, la régler et interpréter les images.",
+   "audience": "Photographes naturalistes, familles",
+   "skills": [
+    "Choisir une caméra",
+    "Choisir un emplacement",
+    "Régler les paramètres",
+    "Trier les images"
+   ],
+   "appSkills": [
+    "pistage-observation-faune"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première caméra",
+     "goal": "Poser une caméra et récupérer ses images",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bon emplacement",
+     "goal": "Choisir selon les traces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivi d'un site",
+     "goal": "Suivre une espèce sur 3 mois",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Analyse et partage",
+     "goal": "Trier et publier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent faune",
+     "goal": "Conseiller des projets",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "domicile",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "video",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "photo",
+    "tech",
+    "animaux",
+    "science"
+   ],
+   "competitors": [
+    "Associations naturalistes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public réduit, matériel à acquérir (60 à 150 €), mais projet motivant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-sciences-participatives",
+   "name": "Sciences participatives : relevés d'espèces",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.participatif",
+   "desc": "Contribuer à des suivis d'oiseaux, d'insectes ou de plantes avec protocoles standardisés.",
+   "audience": "Curieux de nature, familles, entreprises",
+   "skills": [
+    "Choisir un protocole",
+    "Identifier une espèce",
+    "Saisir ses données",
+    "Contribuer en continu"
+   ],
+   "appSkills": [
+    "sciences-participatives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première donnée",
+     "goal": "Contribuer à un comptage simple",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      5,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Protocole rigoureux",
+     "goal": "Suivre un protocole standardisé",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivi régulier",
+     "goal": "Tenir un suivi sur un an",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      40,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animation de groupe",
+     "goal": "Conduire une sortie participative",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      105,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent science citoyenne",
+     "goal": "Former des contributeurs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      170,
+      315
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "enfants",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "science",
+    "solidarite",
+    "balade",
+    "famille"
+   ],
+   "competitors": [
+    "Vigie-Nature",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très prisé par les entreprises pour la RSE, faible paiement du grand public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-bioblitz-inventaire",
+   "name": "Bioblitz : inventaire de 24 h d'un parc",
+   "sector": "nature",
+   "category": "nature.faune",
+   "subcategory": "nature.faune.participatif",
+   "desc": "Organiser un inventaire collectif d'espèces d'un site avec des amateurs et experts.",
+   "audience": "Associations, collectivités, entreprises",
+   "skills": [
+    "Planifier un inventaire",
+    "Constituer des équipes",
+    "Utiliser iNaturalist",
+    "Restituer"
+   ],
+   "appSkills": [
+    "sciences-participatives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Dix espèces par groupe",
+     "goal": "Participer à un mini-inventaire",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Équipes thématiques",
+     "goal": "Participer à plusieurs ateliers",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Co-animation",
+     "goal": "Co-animer un groupe",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Organisation d'un bioblitz",
+     "goal": "Piloter l'événement",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent inventaire",
+     "goal": "Former des organisateurs",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "science",
+    "solidarite",
+    "balade",
+    "famille"
+   ],
+   "competitors": [
+    "Associations naturalistes",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Format événementiel, plutôt associatif ou entreprise que billetterie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-education-chiot",
+   "name": "Éducation canine du chiot",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chien",
+   "desc": "Socialiser, apprendre le propre, le rappel et la marche en laisse sans contrainte.",
+   "audience": "Nouveaux propriétaires de chiots 25-45 ans",
+   "skills": [
+    "Socialisation",
+    "Apprendre le propre",
+    "Marche en laisse",
+    "Rappel de base"
+   ],
+   "appSkills": [
+    "education-canine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon chiot à l'école",
+     "goal": "Premiers ordres et socialisation",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Marche et rappel",
+     "goal": "Marcher en laisse sans tirer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chiot en ville",
+     "goal": "Gérer croisements et bruits",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chien équilibré",
+     "goal": "Corriger les problèmes courants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      140,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent canin",
+     "goal": "Encadrer des séances de socialisation",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      500
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "animaux",
+    "ville",
+    "famille",
+    "geste",
+    "nature"
+   ],
+   "competitors": [
+    "Clubs canins",
+    "Éducateurs"
+   ],
+   "regulated": "animaux",
+   "verdict": "prioritaire",
+   "why": "Marché établi et très demandé, l'éducation professionnelle relève d'un éducateur canin certifié. L'animation entre pairs reste possible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-rappel-marche-laisse",
+   "name": "Rappel et marche en laisse du chien adulte",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chien",
+   "desc": "Obtenir un rappel fiable et une marche détendue avec un chien adulte.",
+   "audience": "Propriétaires de chiens adultes",
+   "skills": [
+    "Renforcer le rappel",
+    "Marcher sans tirer",
+    "Gérer les distractions",
+    "Choisir le matériel"
+   ],
+   "appSkills": [
+    "education-canine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Marche détendue",
+     "goal": "Marcher sans tirer 10 minutes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rappel fiable",
+     "goal": "Obtenir un rappel en milieu calme",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      150
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rappel en milieu difficile",
+     "goal": "Obtenir un rappel malgré distractions",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      240
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chien de balade",
+     "goal": "Gérer le hors-laisse",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      140,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent canin",
+     "goal": "Encadrer des balades éducatives",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      500
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "animaux",
+    "ville",
+    "balade",
+    "geste",
+    "nature"
+   ],
+   "competitors": [
+    "Éducateurs canins",
+    "Clubs"
+   ],
+   "regulated": "animaux",
+   "verdict": "a-tester",
+   "why": "Demande réelle, marché pro d'éducateurs diplômés. Cadre de balades sociales possible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-toilettage-chien",
+   "name": "Toilettage canin à la maison",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chien",
+   "desc": "Brosser, démêler, laver et couper les griffes de son chien à la maison.",
+   "audience": "Propriétaires de chiens, adopteurs",
+   "skills": [
+    "Choisir brosses et outils",
+    "Brosser et démêler",
+    "Laver et sécher",
+    "Couper les griffes"
+   ],
+   "appSkills": [
+    "toilettage-chien"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Brossage doux",
+     "goal": "Brosser son chien sans stress",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bain et séchage",
+     "goal": "Laver et sécher correctement",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tonte légère",
+     "goal": "Faire les finitions courantes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Standard de race",
+     "goal": "Appliquer les coupes de race",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent toilettage",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "soin",
+    "geste",
+    "famille"
+   ],
+   "competitors": [
+    "Salons de toilettage"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Marché de toiletteurs établis, atelier surtout utile pour entretien courant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-chien-reactif-anxieux",
+   "name": "Comprendre un chien anxieux ou réactif",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chien",
+   "desc": "Lire le langage du chien, repérer les signaux de stress et réduire les situations difficiles.",
+   "audience": "Propriétaires de chiens difficiles",
+   "skills": [
+    "Lire les signaux d'apaisement",
+    "Repérer les déclencheurs",
+    "Aménager l'environnement",
+    "Choisir un professionnel"
+   ],
+   "appSkills": [
+    "education-canine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre son chien",
+     "goal": "Reconnaître 10 signaux de stress",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Éviter les déclencheurs",
+     "goal": "Aménager promenades et espaces",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Désensibiliser",
+     "goal": "Appliquer un protocole simple",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      130,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Plan de séances",
+     "goal": "Construire un plan personnalisé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      170,
+      300
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent comportement",
+     "goal": "Orienter vers les professionnels",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      340,
+      625
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "emotion",
+    "bien-etre",
+    "ville",
+    "nature"
+   ],
+   "competitors": [
+    "Comportementalistes",
+    "Vétérinaires"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Besoin fort mais accompagnement relevant d'un comportementaliste. L'atelier se limite à la sensibilisation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-premiers-secours-animaux",
+   "name": "Premiers secours pour chien et chat",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chien",
+   "desc": "Reconnaître une urgence, faire les gestes de base et savoir quand appeler le vétérinaire.",
+   "audience": "Propriétaires de chiens et chats",
+   "skills": [
+    "Reconnaître une urgence",
+    "Gestes de base",
+    "Trousse de secours",
+    "Appeler à temps"
+   ],
+   "appSkills": [
+    "education-canine",
+    "comportement-chat"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les bons réflexes",
+     "goal": "Reconnaître 5 urgences",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gestes de base",
+     "goal": "Pratiquer sur mannequin",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trousse adaptée",
+     "goal": "Constituer sa trousse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas pratiques",
+     "goal": "Réagir à 8 situations",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent secours",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "soin",
+    "famille",
+    "geste"
+   ],
+   "competitors": [
+    "Vétérinaires",
+    "Croix-Rouge"
+   ],
+   "regulated": "animaux",
+   "verdict": "a-tester",
+   "why": "Demande réelle, peu d'offre, mais il faut un vétérinaire ou formateur reconnu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-comportement-chat",
+   "name": "Comprendre et enrichir la vie de son chat",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chat",
+   "desc": "Lire les postures, aménager le territoire et enrichir le quotidien d'un chat d'appartement.",
+   "audience": "Propriétaires de chats 25-55 ans",
+   "skills": [
+    "Lire les postures",
+    "Aménager un territoire",
+    "Enrichir le quotidien",
+    "Gérer la litière"
+   ],
+   "appSkills": [
+    "comportement-chat"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon chat expliqué",
+     "goal": "Lire 10 comportements",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Territoire aménagé",
+     "goal": "Équiper un appartement",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chat heureux",
+     "goal": "Créer jeux et enrichissements",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cas difficiles",
+     "goal": "Réduire griffades et malpropreté",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent félin",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "boutique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "maison",
+    "famille",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Comportementalistes",
+    "Cat cafés"
+   ],
+   "regulated": "animaux",
+   "verdict": "a-tester",
+   "why": "Population de propriétaires de chats très importante, peu d'ateliers payants structurés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-arbre-a-chat-jeux",
+   "name": "Fabriquer jouets et arbre à chat",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.chat",
+   "desc": "Construire jouets, griffoirs et arbre à chat avec matériaux de récupération.",
+   "audience": "Propriétaires de chats, familles",
+   "skills": [
+    "Choisir des matériaux sûrs",
+    "Découper et assembler",
+    "Habiller en sisal",
+    "Tester avec son chat"
+   ],
+   "appSkills": [
+    "comportement-chat"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un jouet maison",
+     "goal": "Fabriquer 3 jouets",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un griffoir",
+     "goal": "Construire un griffoir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un arbre à chat",
+     "goal": "Concevoir et monter",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un aménagement complet",
+     "goal": "Équiper un logement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent fabrication",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "fabrication",
+    "recup",
+    "bois",
+    "famille"
+   ],
+   "competitors": [
+    "Boutiques animalières",
+    "Cat cafés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Atelier original, demande modeste, matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-aquariophilie",
+   "name": "Aquariophilie : monter et entretenir un aquarium",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.nac",
+   "desc": "Cycler, planter et entretenir un aquarium d'eau douce équilibré.",
+   "audience": "Amateurs 25-60 ans, familles",
+   "skills": [
+    "Cycler un aquarium",
+    "Choisir poissons et plantes",
+    "Entretenir l'eau",
+    "Lire les paramètres"
+   ],
+   "appSkills": [
+    "aquariophilie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier aquarium",
+     "goal": "Monter et lancer un aquarium",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Eau équilibrée",
+     "goal": "Maîtriser les tests",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plantes et décor",
+     "goal": "Concevoir un aquascape",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Biotopes",
+     "goal": "Reproduire un biotope",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent aquarium",
+     "goal": "Animer des clubs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "eau",
+    "deco",
+    "collection",
+    "calme"
+   ],
+   "competitors": [
+    "Aquariophiles",
+    "Animaleries"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Public fidèle mais restreint, offre en animalerie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-lapin-cobaye-accueil",
+   "name": "Accueillir un lapin ou un cochon d'inde",
+   "sector": "nature",
+   "category": "nature.animaux",
+   "subcategory": "nature.animaux.nac",
+   "desc": "Logement, alimentation, soins et comportement des petits mammifères de compagnie.",
+   "audience": "Familles avec enfants, adoptants",
+   "skills": [
+    "Choisir le logement",
+    "Alimentation adaptée",
+    "Soins et santé",
+    "Comprendre le comportement"
+   ],
+   "appSkills": [
+    "comportement-chat"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Bien accueillir",
+     "goal": "Préparer logement et alimentation",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Santé et hygiène",
+     "goal": "Surveiller les signes de maladie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enrichissement",
+     "goal": "Créer des jeux et espaces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Reproduction et sevrage",
+     "goal": "Gérer une portée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      205
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent NAC",
+     "goal": "Conseiller des familles",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      235,
+      430
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants"
+   ],
+   "senses": [
+    "reflexion",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "famille",
+    "soin",
+    "nature"
+   ],
+   "competitors": [
+    "Animaleries",
+    "Vétérinaires"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Public familial important, conseil déjà dispensé par animaleries et vétérinaires.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-apiculture-loisir",
+   "name": "Apiculture de loisir",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.ruche",
+   "desc": "Visiter une ruche, suivre les saisons, récolter le miel et reconnaître les maladies.",
+   "audience": "Amateurs de nature 30-65 ans",
+   "skills": [
+    "Équipement de l'apiculteur",
+    "Visiter une ruche",
+    "Récolter",
+    "Suivre les saisons"
+   ],
+   "appSkills": [
+    "apiculture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première visite",
+     "goal": "Visiter une ruche en sécurité",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      75
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Saison apicole",
+     "goal": "Suivre le calendrier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      225
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récolte et miel",
+     "goal": "Extraire et conditionner",
+     "format": "arc",
+     "duration": "5 × 2 h",
+     "group": "3-6",
+     "price": [
+      225,
+      360
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Santé des colonies",
+     "goal": "Reconnaître varroa et maladies",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      210,
+      360
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent apicole",
+     "goal": "Former et conduire un rucher",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      420,
+      750
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "odorat"
+   ],
+   "outputs": [
+    "savoir",
+    "plante"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "animaux",
+    "gourmand",
+    "jardin"
+   ],
+   "competitors": [
+    "Écoles d'apiculture",
+    "Apiculteurs"
+   ],
+   "regulated": "animaux",
+   "verdict": "a-tester",
+   "why": "Passion en croissance, besoin de ruchers pédagogiques, formation sérieuse sur toute une saison. Risque d'allergie et de sécurité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-abeilles-solitaires-hotel",
+   "name": "Abeilles solitaires : abris et observation",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.ruche",
+   "desc": "Accueillir des abeilles solitaires avec abris et observer leur cycle.",
+   "audience": "Familles, jardiniers",
+   "skills": [
+    "Reconnaître les abeilles solitaires",
+    "Fabriquer un abri",
+    "Observer",
+    "Planter"
+   ],
+   "appSkills": [
+    "jardin-biodiversite"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières abeilles",
+     "goal": "Reconnaître 5 espèces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Abri efficace",
+     "goal": "Fabriquer un abri adapté",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Suivi saisonnier",
+     "goal": "Observer le cycle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet collectif",
+     "goal": "Équiper un site",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      105,
+      185
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent abeilles",
+     "goal": "Animer des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      210,
+      385
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "animaux",
+    "famille",
+    "fabrication",
+    "jardin"
+   ],
+   "competitors": [
+    "Associations",
+    "Collectivités"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Recoupe fortement les nichoirs et hôtels à insectes : à fusionner en cas de rationalisation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-poules-basse-cour",
+   "name": "Poules et petite basse-cour",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.basse-cour",
+   "desc": "Accueillir des poules : abri, alimentation, soins et ponte, y compris en jardin partagé.",
+   "audience": "Propriétaires de jardin, familles, jardins partagés",
+   "skills": [
+    "Aménager un poulailler",
+    "Nourrir et soigner",
+    "Gérer les nuisibles",
+    "Récolter les œufs"
+   ],
+   "appSkills": [
+    "poules-basse-cour"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Accueillir deux poules",
+     "goal": "Connaître besoins et réglementation",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Poulailler équipé",
+     "goal": "Aménager abri, perchoirs et pondoirs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Santé du troupeau",
+     "goal": "Reconnaître parasites et maladies",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Basse-cour variée",
+     "goal": "Ajouter canards et lapins",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent basse-cour",
+     "goal": "Conseiller des projets",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      310,
+      575
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "vue"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "animaux",
+    "jardin",
+    "famille",
+    "gourmand",
+    "nature"
+   ],
+   "competitors": [
+    "Fermes pédagogiques",
+    "Associations"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Attrait romantique mais pratique réservée aux propriétaires de jardin. Demande francilienne limitée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-poulailler-construction",
+   "name": "Construire un poulailler",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.basse-cour",
+   "desc": "Construire un poulailler solide, sûr contre les prédateurs et facile à nettoyer.",
+   "audience": "Propriétaires de jardin 35-65 ans",
+   "skills": [
+    "Dimensionner",
+    "Sécuriser contre les prédateurs",
+    "Ventiler et isoler",
+    "Nettoyer facilement"
+   ],
+   "appSkills": [
+    "cabane-terrasse",
+    "menuiserie-assemblages"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Plan d'un poulailler",
+     "goal": "Dessiner et chiffrer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      80
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Structure",
+     "goal": "Monter un abri",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      80,
+      130
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Équipement",
+     "goal": "Poser perchoirs et pondoirs",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      155,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien",
+     "goal": "Planifier le nettoyage",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      325,
+      545
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent construction",
+     "goal": "Former et conseiller",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      520
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "nature"
+   ],
+   "moments": [
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "animaux",
+    "jardin",
+    "nature"
+   ],
+   "competitors": [
+    "Fabricants de poulaillers"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Chantier de week-end rare, intérêt mitigé hors zone rurale.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-soins-cheval",
+   "name": "Soins et pansage du cheval",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.cheval",
+   "desc": "Approcher, panser, curer les pieds et comprendre le langage du cheval au pré ou à la ferme.",
+   "audience": "Débutants, enfants, familles",
+   "skills": [
+    "Approcher en sécurité",
+    "Panser et curer",
+    "Lire le comportement",
+    "Préparer à la sortie"
+   ],
+   "appSkills": [
+    "equitation-soins-cheval"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier contact",
+     "goal": "Approcher et panser un cheval",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Soins quotidiens",
+     "goal": "Curer, brosser et préparer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      25,
+      45
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Langage du cheval",
+     "goal": "Lire postures et émotions",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      75,
+      135
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Cheval au quotidien",
+     "goal": "Gérer alimentation et soins",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      90,
+      165
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent cheval",
+     "goal": "Encadrer des découvertes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      240,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "emotion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "animaux",
+    "nature",
+    "famille",
+    "soin",
+    "emotion"
+   ],
+   "competitors": [
+    "Poneys-clubs",
+    "Fermes équestres"
+   ],
+   "regulated": "animaux",
+   "verdict": "a-tester",
+   "why": "Demande réelle (familles, enfants), avec lieu et animaux fournis par des centres équestres. Cadre de sécurité à respecter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-equitation-premiers-pas",
+   "name": "Équitation : premiers pas",
+   "sector": "nature",
+   "category": "nature.elevage",
+   "subcategory": "nature.elevage.cheval",
+   "desc": "Monter au pas et au trot en balade encadrée par un moniteur diplômé.",
+   "audience": "Adultes débutants, familles, touristes",
+   "skills": [
+    "Se tenir en selle",
+    "Guider au pas",
+    "Trotter assis",
+    "Descendre en sécurité"
+   ],
+   "appSkills": [
+    "equitation-soins-cheval"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Monter au pas",
+     "goal": "Se tenir en selle au pas",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "6-12",
+     "price": [
+      30,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Trot et équilibre",
+     "goal": "Trotter assis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "6-12",
+     "price": [
+      40,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Balade en nature",
+     "goal": "Parcourir 2 h en terrain varié",
+     "format": "arc",
+     "duration": "3 × 1 h 30",
+     "group": "4-10",
+     "price": [
+      125,
+      225
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Perfectionnement",
+     "goal": "Utiliser aides et transitions",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-8",
+     "price": [
+      150,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Autonomie en balade",
+     "goal": "Gérer sa monture sans moniteur",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      400,
+      800
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "mouvement",
+    "emotion",
+    "toucher"
+   ],
+   "outputs": [
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "animaux",
+    "nature",
+    "balade",
+    "corps",
+    "sport"
+   ],
+   "competitors": [
+    "Centres équestres"
+   ],
+   "regulated": "sport",
+   "verdict": "a-tester",
+   "why": "Activité d'initiation encadrée par un diplômé, hors de portée d'un échange entre particuliers. La plateforme peut organiser des sorties avec un centre équestre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-roches-fossiles",
+   "name": "Roches, minéraux et fossiles : lire le sol",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.geologie",
+   "desc": "Identifier roches et fossiles du Bassin parisien et comprendre une carte géologique.",
+   "audience": "Familles, promeneurs, curieux de sciences",
+   "skills": [
+    "Reconnaître 10 roches",
+    "Chercher des fossiles",
+    "Lire une carte géologique",
+    "Respecter la réglementation"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers fossiles",
+     "goal": "Reconnaître 5 fossiles",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Roches du quartier",
+     "goal": "Identifier 10 roches",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un paysage",
+     "goal": "Utiliser une carte géologique",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Géologie de terrain",
+     "goal": "Dresser une coupe",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent géologie",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "science",
+    "balade",
+    "collection",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs de géologie",
+    "Musées"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sorties très appréciées des familles, forte composante éducative, prix doux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-minerais-collection",
+   "name": "Minéraux : identifier et collectionner",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.geologie",
+   "desc": "Reconnaître, nettoyer et ranger une collection de minéraux et de cristaux.",
+   "audience": "Collectionneurs, familles",
+   "skills": [
+    "Identifier un minéral",
+    "Tester dureté et densité",
+    "Nettoyer",
+    "Ranger et étiqueter"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers minéraux",
+     "goal": "Identifier 8 minéraux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Tests simples",
+     "goal": "Utiliser la dureté et la trace",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Collection organisée",
+     "goal": "Documenter une collection",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      100,
+      160
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Minéralogie",
+     "goal": "Identifier à la loupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      130,
+      230
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent collection",
+     "goal": "Animer un club",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      260,
+      480
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "boutique"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "toucher"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "collection",
+    "nature",
+    "science",
+    "calme",
+    "famille"
+   ],
+   "competitors": [
+    "Clubs minéralogie",
+    "Boutiques"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public de passionnés, peu d'offre, mais besoin de collection et achats.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-vie-riviere",
+   "name": "La vie d'une rivière : petites bêtes d'eau douce",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.eau",
+   "desc": "Pêcher à l'épuisette et identifier insectes aquatiques pour estimer la qualité d'une rivière.",
+   "audience": "Familles, écoles, curieux de sciences",
+   "skills": [
+    "Échantillonner",
+    "Identifier les invertébrés",
+    "Estimer la qualité de l'eau",
+    "Observer sans déranger"
+   ],
+   "appSkills": [
+    "sciences-participatives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Petites bêtes de la mare",
+     "goal": "Capturer et nommer 8 invertébrés",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Qualité de l'eau",
+     "goal": "Calculer un indice biotique",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Protocole complet",
+     "goal": "Réaliser un relevé",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivi long terme",
+     "goal": "Participer à un suivi",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent rivière",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "eau",
+    "science",
+    "famille",
+    "balade"
+   ],
+   "competitors": [
+    "Associations de rivière"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte valeur éducative, saisonnier, peu de paiement mais écoles et entreprises intéressées.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-recuperation-eau-pluie",
+   "name": "Récupérer et économiser l'eau de pluie",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.eau",
+   "desc": "Installer une cuve ou un récupérateur, choisir filtres et usages autorisés.",
+   "audience": "Propriétaires de jardin, copropriétés",
+   "skills": [
+    "Dimensionner",
+    "Installer un récupérateur",
+    "Filtrer et utiliser",
+    "Connaître la réglementation"
+   ],
+   "appSkills": [
+    "jardin-biodiversite",
+    "plomberie-basique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier récupérateur",
+     "goal": "Installer un récupérateur sur une gouttière",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Usages et règles",
+     "goal": "Connaître les usages autorisés",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "3-6",
+     "price": [
+      50,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cuve enterrée",
+     "goal": "Planifier un système complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      95,
+      150
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jardin résilient",
+     "goal": "Piloter l'eau d'un jardin",
+     "format": "chantier",
+     "duration": "5 semaines, 1 séance par semaine",
+     "group": "3-5",
+     "price": [
+      200,
+      335
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent eau",
+     "goal": "Former à la gestion de l'eau",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      160,
+      320
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "eau",
+    "jardin",
+    "maison",
+    "nature",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Agences de l'eau",
+    "Bricolage"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Utile pour propriétaires de jardin, peu d'occasions d'atelier en ville.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-lecture-paysage",
+   "name": "Lire un paysage",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.paysage",
+   "desc": "Comprendre relief, sols, usages et histoire d'un paysage en sortie.",
+   "audience": "Randonneurs, curieux 30-70 ans",
+   "skills": [
+    "Lire un relief",
+    "Reconnaître les sols",
+    "Dater les usages",
+    "Croiser carte et terrain"
+   ],
+   "appSkills": [
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier panorama",
+     "goal": "Lire un paysage simple",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Relief et eau",
+     "goal": "Expliquer l'origine d'une vallée",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      15,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Usage des sols",
+     "goal": "Dater haies, murs et parcelles",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      50,
+      95
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Géographie du terrain",
+     "goal": "Reconstituer l'évolution d'un paysage",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      120,
+      240
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent paysage",
+     "goal": "Guider des sorties",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      190,
+      360
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "balade",
+    "histoire",
+    "science",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Guides nature",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Sortie intellectuelle et accessible, très complémentaire aux balades patrimoine.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-foret-vie-complete",
+   "name": "Forêt : comprendre la vie d'un bois",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.paysage",
+   "desc": "Comprendre forêts gérées, sols, arbres et sylviculture lors d'une sortie en forêt.",
+   "audience": "Familles, randonneurs, entreprises",
+   "skills": [
+    "Lire les essences",
+    "Comprendre la gestion forestière",
+    "Observer les sols",
+    "Reconnaître les habitats"
+   ],
+   "appSkills": [
+    "botanique-terrain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Entrer en forêt",
+     "goal": "Reconnaître 5 essences",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      10,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gestion et usages",
+     "goal": "Comprendre coupes et plantations",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      20,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écosystème complet",
+     "goal": "Relier faune, flore et sol",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      55,
+      110
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Naturaliste forestier",
+     "goal": "Réaliser un diagnostic",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      135,
+      270
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent forêt",
+     "goal": "Guider",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      215,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "enfants",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "nature",
+    "balade",
+    "famille",
+    "science",
+    "plein-air"
+   ],
+   "competitors": [
+    "ONF",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé en famille, formats entreprises (déconnexion), forte compétition d'offre gratuite ONF.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "nature-bains-de-foret",
+   "name": "Bain de forêt : marche lente et attention",
+   "sector": "nature",
+   "category": "nature.terre",
+   "subcategory": "nature.terre.paysage",
+   "desc": "Marche lente, attention sensorielle et pauses guidées dans un bois pour se reposer de la ville.",
+   "audience": "Actifs stressés, entreprises, seniors",
+   "skills": [
+    "Marcher lentement",
+    "Attention sensorielle",
+    "Pauses guidées",
+    "Journal de sortie"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première marche lente",
+     "goal": "Pratiquer 1 h de marche lente",
+     "format": "sortie",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      15,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sens en éveil",
+     "goal": "Pratiquer exercices sensoriels",
+     "format": "sortie",
+     "duration": "1 journée",
+     "group": "4-10",
+     "price": [
+      25,
+      60
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel régulier",
+     "goal": "Installer une pratique mensuelle",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      80,
+      155
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Journal et paysage",
+     "goal": "Documenter ses séances",
+     "format": "stage",
+     "duration": "week-end",
+     "group": "4-8",
+     "price": [
+      195,
+      390
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Référent bains de forêt",
+     "goal": "Animer des marches",
+     "format": "coaching",
+     "duration": "4 × 3 h",
+     "group": "1-3",
+     "price": [
+      310,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "odorat",
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "bien-etre",
+    "souffle",
+    "calme",
+    "plein-air"
+   ],
+   "competitors": [
+    "Guides nature",
+    "Sylvothérapeutes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très demandé et bien rémunéré en entreprise, grand public sensible au prix. Sans allégation de soin.",
+   "confidence": "estimation"
+  }
+ ]
+}

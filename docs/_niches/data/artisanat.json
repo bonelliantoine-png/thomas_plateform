@@ -1,0 +1,7891 @@
+{
+ "sector": "artisanat",
+ "categories": [
+  {
+   "id": "artisanat.textile",
+   "name": "Textile et fibres",
+   "desc": "Crochet, tricot, couture, broderie, tissage, teinture.",
+   "subcategories": [
+    {
+     "id": "artisanat.textile.fil",
+     "name": "Crochet et tricot",
+     "desc": "Mailles, amigurumi, pulls et chaussettes."
+    },
+    {
+     "id": "artisanat.textile.couture",
+     "name": "Couture et réparation",
+     "desc": "Machine à coudre, vêtements, raccommodage, emballages."
+    },
+    {
+     "id": "artisanat.textile.broderie-tufting",
+     "name": "Broderie et tufting",
+     "desc": "Points de broderie, punch needle, tapis tufté."
+    },
+    {
+     "id": "artisanat.textile.fibres",
+     "name": "Tissage, teinture et feutrage",
+     "desc": "Macramé, tissage, teinture naturelle, feutrage."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.terre-verre",
+   "name": "Céramique et verre",
+   "desc": "Argile, émail, vitrail, mosaïque.",
+   "subcategories": [
+    {
+     "id": "artisanat.terre-verre.argile",
+     "name": "Argile et céramique",
+     "desc": "Modelage, tournage, émaillage."
+    },
+    {
+     "id": "artisanat.terre-verre.verre",
+     "name": "Verre et mosaïque",
+     "desc": "Vitrail, fusing, mosaïque."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.bois",
+   "name": "Bois et matières végétales",
+   "desc": "Sculpture, tournage, menuiserie, vannerie.",
+   "subcategories": [
+    {
+     "id": "artisanat.bois.bois-sculpte",
+     "name": "Sculpture et tournage du bois",
+     "desc": "Cuillère, tournage, pyrogravure, marqueterie."
+    },
+    {
+     "id": "artisanat.bois.menuiserie",
+     "name": "Menuiserie et petit mobilier",
+     "desc": "Fabriquer des objets en bois simples."
+    },
+    {
+     "id": "artisanat.bois.vannerie",
+     "name": "Vannerie et fibres naturelles",
+     "desc": "Osier, paille, plantes."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.cuir-metal",
+   "name": "Cuir, métal et bijoux",
+   "desc": "Maroquinerie, bijoux, forge.",
+   "subcategories": [
+    {
+     "id": "artisanat.cuir-metal.cuir",
+     "name": "Cuir et maroquinerie",
+     "desc": "Porte-cartes, ceintures, estampage."
+    },
+    {
+     "id": "artisanat.cuir-metal.bijoux",
+     "name": "Bijoux",
+     "desc": "Perles, fil, métal, argile, résine."
+    },
+    {
+     "id": "artisanat.cuir-metal.forge",
+     "name": "Métal et forge",
+     "desc": "Forge d'initiation, étain, soudure."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.papier",
+   "name": "Papier et reliure",
+   "desc": "Reliure, pliage, pop-up, cartes, papier.",
+   "subcategories": [
+    {
+     "id": "artisanat.papier.reliure",
+     "name": "Reliure et cartonnage",
+     "desc": "Carnets, livres, boîtes."
+    },
+    {
+     "id": "artisanat.papier.pliage",
+     "name": "Pliage et sculpture de papier",
+     "desc": "Origami, kirigami, pop-up, fleurs."
+    },
+    {
+     "id": "artisanat.papier.cartes",
+     "name": "Cartes et loisirs créatifs papier",
+     "desc": "Cartes, scrapbooking, papier fait main."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.soin-parfum",
+   "name": "Savon, bougie et parfum",
+   "desc": "Savons, cosmétiques, bougies, parfums naturels.",
+   "subcategories": [
+    {
+     "id": "artisanat.soin-parfum.savon",
+     "name": "Savons et cosmétiques",
+     "desc": "Savon à froid, baumes, soins solides."
+    },
+    {
+     "id": "artisanat.soin-parfum.parfum",
+     "name": "Bougies et parfums",
+     "desc": "Bougies, parfums naturels, diffuseurs."
+    }
+   ]
+  },
+  {
+   "id": "artisanat.recup",
+   "name": "Upcycling et récup",
+   "desc": "Donner une seconde vie aux meubles, vêtements et objets.",
+   "subcategories": [
+    {
+     "id": "artisanat.recup.upcycling",
+     "name": "Meubles, vêtements et objets",
+     "desc": "Customiser, restaurer, détourner."
+    },
+    {
+     "id": "artisanat.recup.deco",
+     "name": "Décoration faite main",
+     "desc": "Lampes, string art, objets décoratifs."
+    },
+    {
+     "id": "artisanat.recup.enfants",
+     "name": "Créations manuelles avec les enfants",
+     "desc": "Bricolages et mini-projets en famille."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "artisanat-crochet-amigurumi",
+   "name": "Crochet amigurumi",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fil",
+   "desc": "Crocheter une petite peluche : maille serrée, augmentations, assemblage.",
+   "audience": "Femmes 20-45 ans, parents, cadeaux",
+   "skills": [
+    "Maille serrée",
+    "Augmentations et diminutions",
+    "Assemblage",
+    "Lire un patron"
+   ],
+   "appSkills": [
+    "crochet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première peluche",
+     "goal": "Crocheter une petite peluche de 10 cm",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formes et couleurs",
+     "goal": "Réaliser 3 formes différentes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Patron",
+     "goal": "Suivre un patron complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Création originale",
+     "goal": "Créer son propre patron",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte crochet",
+     "goal": "Former des hôtes crochet",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "cadeau",
+    "famille",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers crochet",
+    "Funbooker",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande très forte, résultat adorable en 2 h, matériel à 5 €, nombreuses hôtes possibles. Concurrence en ligne importante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-tricot-debutant",
+   "name": "Tricot pour débutants",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fil",
+   "desc": "Monter des mailles, tricoter à l'endroit et à l'envers, finir un snood.",
+   "audience": "Adultes 25-65 ans, seniors, couples",
+   "skills": [
+    "Montage",
+    "Maille endroit et envers",
+    "Rabattre",
+    "Lire un patron"
+   ],
+   "appSkills": [
+    "tricot"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières mailles",
+     "goal": "Tricoter un rang régulier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un snood",
+     "goal": "Tricoter un snood",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un bonnet",
+     "goal": "Tricoter un bonnet en rond",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un pull",
+     "goal": "Tricoter un pull",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte tricot",
+     "goal": "Former des hôtes tricot",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "calme",
+    "convivial",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Cafés tricot",
+    "Boutiques de laine"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte communauté, cafés tricot déjà gratuits, consentement à payer limité. Fort potentiel en cercle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-tricot-chaussettes",
+   "name": "Tricoter ses chaussettes",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fil",
+   "desc": "Tricoter des chaussettes en rond sur aiguilles double pointe ou circulaires.",
+   "audience": "Tricoteuses intermédiaires, seniors",
+   "skills": [
+    "Aiguilles courtes",
+    "Talon",
+    "Pointe",
+    "Jacquard"
+   ],
+   "appSkills": [
+    "tricot"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier rang en rond",
+     "goal": "Tricoter un tube",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Talon",
+     "goal": "Tricoter un talon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Chaussette complète",
+     "goal": "Terminer une chaussette",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jacquard",
+     "goal": "Réaliser un motif",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach tricot",
+     "goal": "Accompagner des tricoteuses",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "calme",
+    "cadeau",
+    "objet",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers laine"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public de tricoteuses déjà actives, bon pour des stages fidèles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-crochet-vetements",
+   "name": "Crochet de vêtements et accessoires",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fil",
+   "desc": "Crocheter un top, un cardigan ou un sac avec des motifs simples.",
+   "audience": "Crocheteuses 25-45 ans, mode éthique",
+   "skills": [
+    "Motifs",
+    "Granny square",
+    "Assemblage",
+    "Tailles"
+   ],
+   "appSkills": [
+    "crochet"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier granny square",
+     "goal": "Réaliser un carré",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assemblage",
+     "goal": "Assembler 6 carrés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un top",
+     "goal": "Réaliser un top",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Un vêtement",
+     "goal": "Réaliser un cardigan",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach crochet",
+     "goal": "Accompagner des crocheteuses",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "mode",
+    "couleur",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers crochet"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance mode lente forte chez les 20-35 ans, assez peu d'offre guidée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-couture-debutant",
+   "name": "Couture : prendre en main la machine",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.couture",
+   "desc": "Enfiler, coudre droit, faire un tote bag ou une trousse.",
+   "audience": "Adultes, jeunes, parents",
+   "skills": [
+    "Enfilage",
+    "Coutures droites",
+    "Ourlets",
+    "Fermeture éclair"
+   ],
+   "appSkills": [
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première couture",
+     "goal": "Réaliser un tote bag",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ourlets et finitions",
+     "goal": "Réaliser une trousse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Patron simple",
+     "goal": "Coudre une jupe ou un haut",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Vêtement",
+     "goal": "Réaliser un vêtement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte couture",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "fabrication",
+    "mode",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers couture",
+    "Machines à louer"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande large et soutenue, besoin d'une machine par personne : lieu équipé nécessaire. Bon panier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-couture-creation-vetement",
+   "name": "Créer et coudre son vêtement",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.couture",
+   "desc": "Choisir un patron, couper et coudre un vêtement à ses mesures.",
+   "audience": "Couturières intermédiaires, 25-50 ans",
+   "skills": [
+    "Prise de mesures",
+    "Patron",
+    "Coupe",
+    "Montage"
+   ],
+   "appSkills": [
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mesures et patron",
+     "goal": "Prendre ses mesures et lire un patron",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un haut",
+     "goal": "Coudre un haut",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Une jupe",
+     "goal": "Coudre une jupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Une pièce complexe",
+     "goal": "Réaliser un vêtement doublé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach couture",
+     "goal": "Accompagner des couturières",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "mode",
+    "fabrication",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Écoles de couture"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Long et matériel coûteux, public réduit. Bon panier mais gros engagement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-raccommodage-visible",
+   "name": "Raccommodage et réparation visible",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.couture",
+   "desc": "Réparer un vêtement troué ou usé avec des points décoratifs.",
+   "audience": "Écoresponsables, jeunes actifs, tous publics",
+   "skills": [
+    "Reprisage",
+    "Points de réparation",
+    "Patchs",
+    "Visible mending"
+   ],
+   "appSkills": [
+    "couture-creation",
+    "customisation-vetements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier trou réparé",
+     "goal": "Réparer un trou avec un point",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Patchs et broderie",
+     "goal": "Réaliser un patch",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jean et pull",
+     "goal": "Réparer un jean",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Garde-robe",
+     "goal": "Réparer 3 vêtements",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur réparation",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "reparation",
+    "zero-dechet",
+    "mode",
+    "geste"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Ateliers couture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très tendance, forte valeur d'usage, mais les gens attendent la gratuité des repair cafés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-furoshiki-emballages",
+   "name": "Furoshiki et emballages réutilisables",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.couture",
+   "desc": "Coudre sacs à vrac, bee wraps et pochons réutilisables.",
+   "audience": "Écoresponsables, familles, cadeaux",
+   "skills": [
+    "Nœuds",
+    "Couture droite",
+    "Tissu enduit",
+    "Pochons"
+   ],
+   "appSkills": [
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers nœuds",
+     "goal": "Emballer un cadeau en furoshiki",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pochons",
+     "goal": "Coudre 3 pochons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Bee wrap",
+     "goal": "Fabriquer 3 emballages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte zéro déchet",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "vetement",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "textile",
+    "cadeau",
+    "recup",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers zéro déchet"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Intéressant en famille et en entreprise, prix limité, faible différenciation.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-broderie-main",
+   "name": "Broderie à la main",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.broderie-tufting",
+   "desc": "Broder des motifs avec fils et aiguille : points de base, lettres, fleurs.",
+   "audience": "Femmes 25-55 ans, seniors, cadeaux",
+   "skills": [
+    "Points de base",
+    "Reproduire un motif",
+    "Lettres",
+    "Finition"
+   ],
+   "appSkills": [
+    "broderie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Broder une fleur avec 3 points",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lettres",
+     "goal": "Broder un prénom",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Motifs",
+     "goal": "Broder une composition",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser un tableau brodé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte broderie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "calme",
+    "cadeau",
+    "deco",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers broderie",
+    "Boutiques de loisirs créatifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large, matériel très peu cher, bien-être. Offre en boutique de loisirs créatifs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-punch-needle",
+   "name": "Punch needle",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.broderie-tufting",
+   "desc": "Piquer le fil avec une aiguille creuse pour des motifs en relief.",
+   "audience": "Créatifs 25-45 ans, cadeaux, décoration",
+   "skills": [
+    "Dessin et tension",
+    "Tracé",
+    "Remplissage",
+    "Finition"
+   ],
+   "appSkills": [
+    "broderie",
+    "tufting"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Réaliser un motif 10 cm",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Remplissage",
+     "goal": "Maîtriser 3 textures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coussin",
+     "goal": "Réaliser un coussin",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableau",
+     "goal": "Réaliser un tableau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte punch",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "deco",
+    "cadeau",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers punch needle"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très tendance, peu d'ateliers, matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-tufting",
+   "name": "Tufting : tapis à la tufting gun",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.broderie-tufting",
+   "desc": "Fabriquer un tapis ou un petit objet avec un pistolet à tufter.",
+   "audience": "Jeunes actifs, décoration, créatifs",
+   "skills": [
+    "Dessin",
+    "Tension",
+    "Tufting",
+    "Finitions"
+   ],
+   "appSkills": [
+    "tufting"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tapis",
+     "goal": "Réaliser un tapis de 30 cm",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs",
+     "goal": "Réaliser un motif en 3 couleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Formes",
+     "goal": "Réaliser une forme découpée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser une grande pièce",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach tufting",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 4,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "deco",
+    "couleur",
+    "fabrication",
+    "cadeau"
+   ],
+   "competitors": [
+    "Studios de tufting"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Tendance explosive, matériel coûteux, peu d'offre, prix élevé accepté.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-macrame",
+   "name": "Macramé",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fibres",
+   "desc": "Nouer cordes et fils pour réaliser suspensions, tentures, porte-plantes.",
+   "audience": "Femmes 20-45 ans, décoration, cadeaux",
+   "skills": [
+    "Nœuds de base",
+    "Lire un motif",
+    "Suspension",
+    "Finition"
+   ],
+   "appSkills": [
+    "macrame"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier nœud",
+     "goal": "Réaliser un porte-plante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nœuds variés",
+     "goal": "Maîtriser 5 nœuds",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tenture murale",
+     "goal": "Réaliser une tenture",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce originale",
+     "goal": "Concevoir une pièce",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte macramé",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "deco",
+    "plante",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers macramé",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Matériel peu coûteux, résultat net en 2 h, tendance qui retombe un peu. Offre déjà présente.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-tissage-metier-cadre",
+   "name": "Tissage sur cadre",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fibres",
+   "desc": "Tisser un petit tapis ou tableau sur un métier à cadre.",
+   "audience": "Créatifs, seniors, décoration",
+   "skills": [
+    "Montage de la chaîne",
+    "Armures",
+    "Couleurs",
+    "Finitions"
+   ],
+   "appSkills": [
+    "macrame"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tissage",
+     "goal": "Réaliser un petit tissage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs",
+     "goal": "Maîtriser 3 armures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser un tableau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grande pièce",
+     "goal": "Réaliser une pièce de 50 cm",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte tissage",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "deco",
+    "calme",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers de tissage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Peu d'offre à Paris, résultat esthétique, public calme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-teinture-indigo",
+   "name": "Teinture naturelle et indigo",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fibres",
+   "desc": "Teindre tissus avec plantes, indigo, shibori.",
+   "audience": "Créatifs, écoresponsables, jardiniers",
+   "skills": [
+    "Mordançage",
+    "Teinture végétale",
+    "Indigo",
+    "Shibori"
+   ],
+   "appSkills": [
+    "teinture-naturelle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bain",
+     "goal": "Teindre un tissu avec plante",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Indigo et shibori",
+     "goal": "Réaliser un motif shibori",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Couleurs de saison",
+     "goal": "Teindre 3 couleurs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte teinture",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "jardin-partage",
+    "atelier-artisan",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "nature",
+    "couleur",
+    "plante",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers teinture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Résultat spectaculaire, peu d'offre, mais plein air et matières à gérer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-feutrage-laine",
+   "name": "Feutrage de la laine",
+   "sector": "artisanat",
+   "category": "artisanat.textile",
+   "subcategory": "artisanat.textile.fibres",
+   "desc": "Feutrer à l'aiguille ou à l'eau : figurines, bijoux, objets.",
+   "audience": "Familles, enfants, seniors, créatifs",
+   "skills": [
+    "Aiguille",
+    "Eau savonneuse",
+    "Formes",
+    "Finitions"
+   ],
+   "appSkills": [
+    "feutrage-laine"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première boule",
+     "goal": "Feutrer une boule",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Figurine",
+     "goal": "Feutrer une figurine",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Objet",
+     "goal": "Feutrer un objet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte feutrage",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "textile",
+    "famille",
+    "calme",
+    "nature",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers de feutrage"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Public de niche, famille appréciée, aiguilles à gérer pour les enfants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-modelage-plaque",
+   "name": "Modelage et céramique sans tour",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.argile",
+   "desc": "Façonner assiette, tasse ou vase à la plaque et au colombin.",
+   "audience": "Adultes, couples, familles, cadeaux",
+   "skills": [
+    "Colombin",
+    "Plaque",
+    "Assemblage",
+    "Cuisson"
+   ],
+   "appSkills": [
+    "modelage-ceramique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première pièce",
+     "goal": "Réaliser un bol",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plaque et colombin",
+     "goal": "Réaliser 2 pièces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Émaillage",
+     "goal": "Émailler une pièce",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser un service",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte céramique",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ceramique",
+    "objet",
+    "cadeau",
+    "couple",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de céramique",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande très élevée et prix élevé, tendance durable. Offre présente mais pas saturée, nécessite four et lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-poterie-tournage",
+   "name": "Poterie au tour",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.argile",
+   "desc": "Centrer, ouvrir et monter un cylindre sur le tour de potier.",
+   "audience": "Adultes 25-50 ans, couples, cadeaux",
+   "skills": [
+    "Centrage",
+    "Ouverture",
+    "Montée",
+    "Tournassage"
+   ],
+   "appSkills": [
+    "poterie-tournage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier cylindre",
+     "goal": "Centrer et ouvrir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bol",
+     "goal": "Tourner un bol",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Tourner 3 pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce complexe",
+     "goal": "Tourner un vase",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte poterie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ceramique",
+    "geste",
+    "objet",
+    "cadeau",
+    "calme"
+   ],
+   "competitors": [
+    "Ateliers de poterie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte demande mais coûteux en tours et en lieux. Place limitée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-peinture-sur-ceramique",
+   "name": "Peinture sur céramique",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.argile",
+   "desc": "Décorer tasses et assiettes à la peinture avec cuisson.",
+   "audience": "Familles, EVJF, anniversaires",
+   "skills": [
+    "Dessin",
+    "Peinture",
+    "Détails",
+    "Cuisson"
+   ],
+   "appSkills": [
+    "modelage-ceramique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma tasse décorée",
+     "goal": "Peindre une tasse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs",
+     "goal": "Réaliser un décor",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Service",
+     "goal": "Peindre un service",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser un cadeau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte peinture",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ceramique",
+    "couleur",
+    "fete",
+    "famille",
+    "cadeau"
+   ],
+   "competitors": [
+    "Cafés céramique",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très accessible, format fête, fort potentiel anniversaire. Peu de profondeur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-argile-autodurcissante",
+   "name": "Argile autodurcissante et pâte polymère",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.argile",
+   "desc": "Fabriquer bijoux, magnets et mini-objets sans four.",
+   "audience": "Familles, enfants, cadeaux",
+   "skills": [
+    "Modelage",
+    "Texture",
+    "Peinture",
+    "Vernis"
+   ],
+   "appSkills": [
+    "modelage-ceramique",
+    "bijoux-perles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Réaliser un magnet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bijoux",
+     "goal": "Réaliser une paire de boucles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 6 objets",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte argile",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "famille",
+    "cadeau",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très accessible, prix bas, cadeau, matériel peu cher.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-vitrail-fusing",
+   "name": "Vitrail et fusing",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.verre",
+   "desc": "Assembler du verre coloré avec du plomb, du cuivre ou par fusion.",
+   "audience": "Adultes, couples, créatifs",
+   "skills": [
+    "Découpe du verre",
+    "Montage",
+    "Soudure",
+    "Cuisson"
+   ],
+   "appSkills": [
+    "vitrail-fusing"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier vitrail",
+     "goal": "Réaliser un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Découpe",
+     "goal": "Découper 3 formes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser un panneau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Grande pièce",
+     "goal": "Réaliser une grande pièce en 6 h sans aide",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte vitrail",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "verre",
+    "couleur",
+    "objet",
+    "deco",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers vitrail"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Très peu d'offre et prix élevé, matériel et sécurité (verre) à gérer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-vitrail-tiffany",
+   "name": "Mosaïque et pâte de verre",
+   "sector": "artisanat",
+   "category": "artisanat.terre-verre",
+   "subcategory": "artisanat.terre-verre.verre",
+   "desc": "Composer une mosaïque murale, miroir ou table.",
+   "audience": "Familles, seniors, décoration",
+   "skills": [
+    "Découpe",
+    "Composition",
+    "Collage",
+    "Joints"
+   ],
+   "appSkills": [
+    "vitrail-fusing"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première mosaïque",
+     "goal": "Réaliser un sous-verre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs",
+     "goal": "Réaliser un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Miroir",
+     "goal": "Réaliser un cadre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser une table",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte mosaïque",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "deco",
+    "objet",
+    "recup",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de mosaïque"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Public stable, moins tendance, matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-spoon-carving",
+   "name": "Cuillère sculptée (spoon carving)",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.bois-sculpte",
+   "desc": "Tailler une cuillère en bois vert à la hachette et au couteau croche.",
+   "audience": "Adultes 25-55 ans, nature, bricoleurs",
+   "skills": [
+    "Hachette",
+    "Couteau",
+    "Couteau croche",
+    "Finition"
+   ],
+   "appSkills": [
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première cuillère",
+     "goal": "Tailler une cuillère",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Courbes",
+     "goal": "Tailler 2 formes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plateau",
+     "goal": "Tailler un plateau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Tailler 6 pièces",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte bois vert",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "nature",
+    "jardin-partage",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "odorat"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "nature",
+    "fabrication",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers bois",
+    "Stages nature"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Niche très tendance, très peu d'offre à Paris, outils tranchants (sécurité).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-tournage-sur-bois",
+   "name": "Tournage sur bois",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.bois-sculpte",
+   "desc": "Tourner un bol ou un stylo sur un tour à bois.",
+   "audience": "Bricoleurs, retraités, amateurs",
+   "skills": [
+    "Sécurité",
+    "Outils",
+    "Bol",
+    "Finition"
+   ],
+   "appSkills": [
+    "tournage-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Tourner un bol",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formes",
+     "goal": "Tourner 3 pièces",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Tourner une pièce",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Tourner 6 pièces",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte tournage",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 1,
+    "local": 3,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "odorat"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "geste",
+    "objet",
+    "fabrication",
+    "calme"
+   ],
+   "competitors": [
+    "Ateliers bois"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Machine coûteuse et dangereuse, audience étroite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-pyrogravure",
+   "name": "Pyrogravure",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.bois-sculpte",
+   "desc": "Dessiner au fer à pyrograver sur bois : sous-verres, planches, tableaux.",
+   "audience": "Familles, créatifs, cadeaux",
+   "skills": [
+    "Dessin",
+    "Tracés",
+    "Ombres",
+    "Finition"
+   ],
+   "appSkills": [
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier dessin",
+     "goal": "Réaliser un sous-verre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ombres",
+     "goal": "Réaliser un dégradé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Planche",
+     "goal": "Réaliser une planche",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableau",
+     "goal": "Réaliser un tableau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte pyrogravure",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "ados",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "odorat"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "dessin",
+    "cadeau",
+    "objet",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Accessible, bon cadeau, brûlures à encadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-marqueterie",
+   "name": "Marqueterie et petits objets en bois",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.bois-sculpte",
+   "desc": "Assembler des placages colorés pour décorer un objet.",
+   "audience": "Passionnés, retraités",
+   "skills": [
+    "Découpe",
+    "Placage",
+    "Assemblage",
+    "Ponçage"
+   ],
+   "appSkills": [
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Réaliser un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Découpe",
+     "goal": "Réaliser 3 découpes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Objet",
+     "goal": "Réaliser un plateau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte marqueterie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 1,
+    "trend": 1,
+    "wtp": 1,
+    "space": 5,
+    "community": 2,
+    "format": 2,
+    "supply": 1,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "odorat"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "calme",
+    "objet",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers d'ébénisterie"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Très peu de public, temps long, coût élevé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-petit-mobilier",
+   "name": "Petit mobilier en bois",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.menuiserie",
+   "desc": "Construire une étagère, un tabouret ou un nichoir en bois.",
+   "audience": "Parents, couples, bricoleurs",
+   "skills": [
+    "Mesure",
+    "Coupe",
+    "Assemblage",
+    "Finition"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier assemblage",
+     "goal": "Réaliser un nichoir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Étagère",
+     "goal": "Réaliser une étagère",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tabouret",
+     "goal": "Réaliser un tabouret",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meuble",
+     "goal": "Réaliser un meuble",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte menuiserie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "fablab",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "maison",
+    "deco",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de menuiserie",
+    "Fablabs"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Demande élevée, matériel et machines à prévoir, bon panier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-menuiserie-machines",
+   "name": "Menuiserie sur machines",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.menuiserie",
+   "desc": "Utiliser scie, défonceuse et raboteuse en sécurité.",
+   "audience": "Bricoleurs, couples",
+   "skills": [
+    "Sécurité",
+    "Scie",
+    "Défonceuse",
+    "Assemblage"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Machine en sécurité",
+     "goal": "Utiliser 3 machines",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Débit",
+     "goal": "Débiter des planches",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Assemblage",
+     "goal": "Assembler un coffret",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Meuble",
+     "goal": "Réaliser un meuble",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte machine",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 2,
+    "cost": 1,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "fablab",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "bois",
+    "fabrication",
+    "securite",
+    "maison",
+    "geste"
+   ],
+   "competitors": [
+    "Fablabs",
+    "Ateliers partagés"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Réglementation et assurance contraignantes, coût du parc machine élevé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-vannerie-osier",
+   "name": "Vannerie d'osier et de fibres",
+   "sector": "artisanat",
+   "category": "artisanat.bois",
+   "subcategory": "artisanat.bois.vannerie",
+   "desc": "Tresser un panier en osier ou en plantes sauvages.",
+   "audience": "Seniors, jardiniers, familles",
+   "skills": [
+    "Fibres",
+    "Fond",
+    "Montants",
+    "Rebord"
+   ],
+   "appSkills": [
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier panier",
+     "goal": "Tresser un petit panier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fond et montants",
+     "goal": "Tresser un fond",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Panier complet",
+     "goal": "Réaliser un panier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte vannerie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "jardin-partage",
+    "nature"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "nature",
+    "plante",
+    "fabrication",
+    "objet",
+    "geste"
+   ],
+   "competitors": [
+    "Associations de vanniers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très peu de public, savoir-faire précieux, peu d'enseignants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-maroquinerie-porte-cartes",
+   "name": "Maroquinerie : porte-cartes et ceintures",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.cuir",
+   "desc": "Découper, coudre au point sellier et finir un petit article en cuir.",
+   "audience": "Hommes et femmes 25-50 ans, cadeaux",
+   "skills": [
+    "Coupe",
+    "Point sellier",
+    "Teinture",
+    "Finition"
+   ],
+   "appSkills": [
+    "maroquinerie-cuir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon porte-cartes",
+     "goal": "Réaliser un porte-cartes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Point sellier",
+     "goal": "Réaliser 2 coutures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ceinture",
+     "goal": "Réaliser une ceinture",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sac",
+     "goal": "Réaliser un sac",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cuir",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "geste",
+    "mode",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de maroquinerie",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Beau cadeau, tarif élevé accepté, matériel de poinçons à prévoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-cuir-estampage",
+   "name": "Estampage et décoration du cuir",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.cuir",
+   "desc": "Décorer du cuir avec outils d'estampage et teintures.",
+   "audience": "Créatifs, cadeaux",
+   "skills": [
+    "Mouillage",
+    "Estampes",
+    "Teinture",
+    "Finition"
+   ],
+   "appSkills": [
+    "maroquinerie-cuir"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Estamper un sous-verre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs",
+     "goal": "Réaliser 3 motifs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser un portefeuille",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce d'auteur",
+     "goal": "Concevoir une pièce personnelle et justifier ses choix",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte estampage",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "geste",
+    "mode",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de maroquinerie"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très niche, faible public.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-bijoux-perles",
+   "name": "Bijoux en perles et fil",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.bijoux",
+   "desc": "Monter colliers, bracelets et boucles avec des perles.",
+   "audience": "Familles, ados, cadeaux, EVJF",
+   "skills": [
+    "Perles",
+    "Fil",
+    "Fermoirs",
+    "Composition"
+   ],
+   "appSkills": [
+    "bijoux-perles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bracelet",
+     "goal": "Réaliser un bracelet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Collier",
+     "goal": "Réaliser un collier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Boucles",
+     "goal": "Réaliser des boucles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Collection",
+     "goal": "Réaliser une collection",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte bijoux",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "mode",
+    "couleur",
+    "fete"
+   ],
+   "competitors": [
+    "Ateliers EVJF",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très accessible, parfait pour EVJF et anniversaires, concurrence marquée, prix bas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-bijoux-metal",
+   "name": "Bijoux en métal (argent, laiton)",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.bijoux",
+   "desc": "Découper, limer et souder pour fabriquer une bague ou un pendentif.",
+   "audience": "Adultes, couples, cadeaux",
+   "skills": [
+    "Découpe",
+    "Limage",
+    "Soudure",
+    "Polissage"
+   ],
+   "appSkills": [
+    "bijoux-metal"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première bague",
+     "goal": "Réaliser une bague",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pendentif",
+     "goal": "Réaliser un pendentif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soudure",
+     "goal": "Réaliser 3 soudures",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser un bijou",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte bijoux",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 1,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "mode",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de bijouterie"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Résultat très valorisant, prix élevé, matériel et chauffe à encadrer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-bijoux-resine",
+   "name": "Bijoux et objets en résine",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.bijoux",
+   "desc": "Couler de la résine colorée pour réaliser bijoux et petits objets.",
+   "audience": "Créatifs 20-40 ans, cadeaux",
+   "skills": [
+    "Moules",
+    "Mélange",
+    "Pigments",
+    "Finition"
+   ],
+   "appSkills": [
+    "bijoux-perles"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bijou",
+     "goal": "Couler un pendentif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pigments",
+     "goal": "Réaliser 3 couleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Objet",
+     "goal": "Réaliser un plateau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte résine",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "objet",
+    "cadeau",
+    "couleur",
+    "fabrication",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de résine"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Produits chimiques à ventiler, tendance sans suite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-forge-couteau",
+   "name": "Forge d'initiation et couteau",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.forge",
+   "desc": "Chauffer et forger un petit objet en acier à la forge.",
+   "audience": "Hommes 25-50 ans, bricoleurs, cadeaux",
+   "skills": [
+    "Chauffe",
+    "Martelage",
+    "Trempe",
+    "Finition"
+   ],
+   "appSkills": [
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Forger un crochet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Forge",
+     "goal": "Forger un petit couteau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trempe",
+     "goal": "Tremper et affûter",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Forger un couteau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte forge",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 4,
+    "space": 5,
+    "community": 2,
+    "format": 2,
+    "supply": 1,
+    "hostIncome": 4,
+    "regulatory": 2,
+    "cost": 1,
+    "local": 3,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "fabrication",
+    "geste",
+    "objet",
+    "defi",
+    "bois"
+   ],
+   "competitors": [
+    "Ateliers de forge"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Valeur forte mais risques et coûts élevés, peu d'hôtes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-soudure-etain",
+   "name": "Soudure à l'étain et petits objets en métal",
+   "sector": "artisanat",
+   "category": "artisanat.cuir-metal",
+   "subcategory": "artisanat.cuir-metal.forge",
+   "desc": "Souder à l'étain pour fabriquer des objets en métal et vitrail.",
+   "audience": "Bricoleurs, créatifs",
+   "skills": [
+    "Soudure",
+    "Découpe",
+    "Assemblage",
+    "Finitions"
+   ],
+   "appSkills": [
+    "vitrail-fusing"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Première soudure",
+     "goal": "Réaliser une soudure",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assemblage",
+     "goal": "Réaliser un petit objet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Objet utile",
+     "goal": "Réaliser un objet fonctionnel complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce originale",
+     "goal": "Concevoir une pièce personnelle et la mener à terme",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte soudure",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 1,
+    "trend": 1,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "fabrication",
+    "geste",
+    "objet",
+    "reparation",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers de soudure"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Public très étroit, aucune demande claire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-reliure-carnets",
+   "name": "Reliure japonaise et carnets",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.reliure",
+   "desc": "Coudre un carnet à la main : plier, perforer, relier.",
+   "audience": "Créatifs, écrivains, cadeaux",
+   "skills": [
+    "Pliage",
+    "Perforation",
+    "Couture",
+    "Couverture"
+   ],
+   "appSkills": [
+    "reliure-carnets"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier carnet",
+     "goal": "Relier un carnet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Reliure japonaise",
+     "goal": "Réaliser une reliure japonaise",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Couverture",
+     "goal": "Réaliser un cartonnage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Livre",
+     "goal": "Relier un livre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte reliure",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "objet",
+    "cadeau",
+    "ecriture",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de reliure",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Joli résultat, bon cadeau, offre limitée à Paris. Bon rapport demande/concurrence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-cartonnage-boites",
+   "name": "Cartonnage et boîtes en papier",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.reliure",
+   "desc": "Construire une boîte en carton recouverte de papier.",
+   "audience": "Créatifs, cadeaux, décoration",
+   "skills": [
+    "Découpe",
+    "Colle",
+    "Revêtement",
+    "Finition"
+   ],
+   "appSkills": [
+    "reliure-carnets"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première boîte",
+     "goal": "Réaliser une boîte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Revêtement",
+     "goal": "Réaliser un cartonnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Coffret",
+     "goal": "Réaliser un coffret",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cartonnage",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "objet",
+    "deco",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de reliure"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Peu de public, bon complément à la reliure.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-papier-marbre",
+   "name": "Papier marbré et papiers décorés",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.reliure",
+   "desc": "Marbrer, teinter et décorer des papiers pour reliure et cartes.",
+   "audience": "Créatifs, relieurs",
+   "skills": [
+    "Marbrure",
+    "Pigments",
+    "Séchage",
+    "Utilisation"
+   ],
+   "appSkills": [
+    "reliure-carnets"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première marbrure",
+     "goal": "Réaliser 3 papiers",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs",
+     "goal": "Réaliser 3 motifs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 10 feuilles",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet",
+     "goal": "Utiliser en reliure",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte marbrure",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 1,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "librairie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "couleur",
+    "objet",
+    "geste",
+    "calme"
+   ],
+   "competitors": [
+    "Ateliers de reliure"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Très peu de public mais très belle découverte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-origami-modulaire",
+   "name": "Origami et pliage modulaire",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.pliage",
+   "desc": "Plier des formes en papier, des animaux aux étoiles modulaires.",
+   "audience": "Familles, enfants, seniors, curieux",
+   "skills": [
+    "Plis de base",
+    "Animaux",
+    "Modulaire",
+    "Lire un diagramme"
+   ],
+   "appSkills": [
+    "origami-modulaire"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier pli",
+     "goal": "Réaliser 3 pliages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Animaux",
+     "goal": "Réaliser 5 animaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Modulaire",
+     "goal": "Réaliser une étoile",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce complexe",
+     "goal": "Réaliser une pièce à plusieurs étapes sans aide",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte origami",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "famille",
+    "calme",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Associations d'origami",
+    "Médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large, très peu cher, bonne audience familiale, faible disposition à payer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-pop-up-kirigami",
+   "name": "Cartes pop-up et kirigami",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.pliage",
+   "desc": "Fabriquer des cartes qui se déplient en volume.",
+   "audience": "Familles, créatifs, cadeaux",
+   "skills": [
+    "Découpe",
+    "Pliage",
+    "Mécanismes",
+    "Illustration"
+   ],
+   "appSkills": [
+    "pop-up-kirigami"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première carte",
+     "goal": "Réaliser une carte pop-up",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mécanismes",
+     "goal": "Réaliser 3 mécanismes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Livre",
+     "goal": "Réaliser un livre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte pop-up",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "cadeau",
+    "famille",
+    "deco",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers créatifs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Peu d'offre, bon cadeau, bon complément à la carterie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-fleurs-papier",
+   "name": "Fleurs et sculptures en papier",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.pliage",
+   "desc": "Réaliser des fleurs en papier crépon ou en papier découpé.",
+   "audience": "Mariages, décoration, créatifs",
+   "skills": [
+    "Découpe",
+    "Façonnage",
+    "Assemblage",
+    "Couleurs"
+   ],
+   "appSkills": [
+    "pop-up-kirigami"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première fleur",
+     "goal": "Réaliser une fleur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bouquet",
+     "goal": "Réaliser 5 fleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Décor",
+     "goal": "Réaliser une couronne",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser une installation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte fleurs",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "plante",
+    "deco",
+    "fete",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers créatifs"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché mariage et fêtes, intéressant en événement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-carterie-creative",
+   "name": "Carterie créative",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.cartes",
+   "desc": "Fabriquer des cartes de vœux et faire-part avec techniques mixtes.",
+   "audience": "Familles, seniors, cadeaux",
+   "skills": [
+    "Papiers",
+    "Découpe",
+    "Tampons",
+    "Aquarelle"
+   ],
+   "appSkills": [
+    "pop-up-kirigami"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première carte",
+     "goal": "Réaliser une carte",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Techniques",
+     "goal": "Maîtriser 3 techniques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 6 cartes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte carterie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "librairie",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "cadeau",
+    "famille",
+    "calme",
+    "geste"
+   ],
+   "competitors": [
+    "Boutiques créatives"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public fidèle, faible prix, forte saisonnalité de fin d'année.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-scrapbooking",
+   "name": "Scrapbooking et album souvenir",
+   "sector": "artisanat",
+   "category": "artisanat.papier",
+   "subcategory": "artisanat.papier.cartes",
+   "desc": "Mettre en scène ses photos et souvenirs dans un album décoré.",
+   "audience": "Femmes 30-60 ans, familles",
+   "skills": [
+    "Photos",
+    "Mise en page",
+    "Décorations",
+    "Journaling"
+   ],
+   "appSkills": [
+    "pop-up-kirigami",
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première page",
+     "goal": "Réaliser une page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Composition",
+     "goal": "Réaliser 3 pages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Album",
+     "goal": "Réaliser un album",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte scrapbook",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "librairie",
+    "boutique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "photo",
+    "cadeau",
+    "famille",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Boutiques créatives"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public fidèle mais en recul, peu de renouvellement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-savonnerie",
+   "name": "Savon saponifié à froid",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.savon",
+   "desc": "Fabriquer son savon : huiles, soude, parfum, moulage et découpe.",
+   "audience": "Familles, écoresponsables, cadeaux",
+   "skills": [
+    "Huiles",
+    "Soude et sécurité",
+    "Moulage",
+    "Séchage"
+   ],
+   "appSkills": [
+    "savonnerie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier savon",
+     "goal": "Fabriquer un savon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Recettes",
+     "goal": "Réaliser 3 recettes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Motifs",
+     "goal": "Réaliser un savon marbré",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte savonnerie",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "cuisine-pro",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "odorat",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "zero-dechet",
+    "cadeau",
+    "objet",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers savon",
+    "Funbooker"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Beau cadeau, résultat en deux temps (séchage), soude à manipuler en sécurité, réglementation si vente.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-cosmetiques-maison",
+   "name": "Cosmétiques maison",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.savon",
+   "desc": "Fabriquer crèmes, baumes et déodorants naturels.",
+   "audience": "Femmes 25-50 ans, écoresponsables",
+   "skills": [
+    "Émulsions",
+    "Baumes",
+    "Hygiène",
+    "Conservation"
+   ],
+   "appSkills": [
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier baume",
+     "goal": "Fabriquer un baume",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Crème",
+     "goal": "Réaliser une crème",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gamme",
+     "goal": "Réaliser 3 produits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conservation",
+     "goal": "Comprendre l'hygiène",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte cosmétiques",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "cuisine-pro",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "zero-dechet",
+    "cadeau",
+    "bien-etre",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers cosmétiques"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Forte demande, hygiène et réglementation sur la vente, peu de concurrents sérieux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-soins-solides",
+   "name": "Shampoings solides et soins zéro déchet",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.savon",
+   "desc": "Fabriquer shampoing, dentifrice et déodorant solides.",
+   "audience": "Écoresponsables, familles",
+   "skills": [
+    "Tensioactifs",
+    "Moules",
+    "Pâtes",
+    "Conservation"
+   ],
+   "appSkills": [
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon shampoing solide",
+     "goal": "Fabriquer un shampoing",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Déodorant",
+     "goal": "Réaliser un déodorant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gamme",
+     "goal": "Réaliser 3 produits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Salle de bain",
+     "goal": "Équiper sa salle de bain",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte zéro déchet",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "cuisine-pro",
+    "domicile"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "zero-dechet",
+    "soin",
+    "maison",
+    "bien-etre",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers zéro déchet"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Intérêt écologique, faible disposition à payer, sécurité des produits à expliquer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-bougies",
+   "name": "Bougies et parfums d'intérieur",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.parfum",
+   "desc": "Couler une bougie parfumée : cire, mèche, parfum, contenant.",
+   "audience": "Femmes 25-45 ans, cadeaux, entreprises",
+   "skills": [
+    "Cire",
+    "Mèche",
+    "Parfum",
+    "Coulage"
+   ],
+   "appSkills": [
+    "bougies"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma bougie",
+     "goal": "Couler une bougie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Parfums",
+     "goal": "Composer un parfum",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Contenants",
+     "goal": "Réaliser 3 bougies",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte bougies",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 2,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "odorat",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "cadeau",
+    "maison",
+    "deco",
+    "odorat"
+   ],
+   "competitors": [
+    "Ateliers bougie",
+    "Funbooker"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Très populaire, très concurrentiel, bonne marge, parfait pour EVJF et team building.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-parfum-naturel",
+   "name": "Parfum naturel et huiles essentielles",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.parfum",
+   "desc": "Composer son parfum avec notes de tête, de cœur et de fond.",
+   "audience": "Femmes 25-50 ans, cadeaux",
+   "skills": [
+    "Notes",
+    "Alcool",
+    "Dosage",
+    "Flacons"
+   ],
+   "appSkills": [
+    "cosmetiques-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier parfum",
+     "goal": "Composer un parfum",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Notes",
+     "goal": "Réaliser 3 accords",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gamme",
+     "goal": "Réaliser 3 parfums",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Signature",
+     "goal": "Réaliser un parfum",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte parfumeur",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "cadeau",
+    "odorat",
+    "couleur",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers de parfumeurs"
+   ],
+   "regulated": "sante",
+   "verdict": "a-tester",
+   "why": "Très forte valeur perçue, prix élevé, matières premières coûteuses.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-encens-diffuseurs",
+   "name": "Encens, brumes et diffuseurs",
+   "sector": "artisanat",
+   "category": "artisanat.soin-parfum",
+   "subcategory": "artisanat.soin-parfum.parfum",
+   "desc": "Fabriquer encens, brumes d'oreiller et diffuseurs.",
+   "audience": "Familles, bien-être",
+   "skills": [
+    "Plantes",
+    "Huiles",
+    "Brumes",
+    "Diffuseurs"
+   ],
+   "appSkills": [
+    "cosmetiques-maison",
+    "bougies"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier encens",
+     "goal": "Fabriquer un encens",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Brumes",
+     "goal": "Réaliser une brume",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Diffuseur",
+     "goal": "Réaliser un diffuseur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte parfum",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "boutique",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "odorat",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "soin",
+    "calme",
+    "cadeau",
+    "odorat",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers bien-être"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit, complément de la bougie.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-upcycling-mobilier",
+   "name": "Upcycling de mobilier",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.upcycling",
+   "desc": "Poncer, peindre et transformer un meuble en pièce unique.",
+   "audience": "Jeunes actifs, familles, couples",
+   "skills": [
+    "Ponçage",
+    "Peinture",
+    "Patine",
+    "Poignées"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier relooking",
+     "goal": "Réaliser une chaise",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Peinture",
+     "goal": "Réaliser une patine",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Meuble",
+     "goal": "Réaliser un meuble",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte upcycling",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "fablab",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "deco",
+    "maison",
+    "bois",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers de relooking"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Forte demande locale, matériel et lieu à prévoir, longue durée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-customisation-vetements",
+   "name": "Customisation de vêtements",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.upcycling",
+   "desc": "Transformer un vêtement : patchs, teinture, broderie, découpes.",
+   "audience": "Ados, jeunes actifs, mode",
+   "skills": [
+    "Patchs",
+    "Teinture",
+    "Broderie",
+    "Découpes"
+   ],
+   "appSkills": [
+    "customisation-vetements"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier vêtement",
+     "goal": "Réaliser un patch",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Teinture",
+     "goal": "Réaliser une teinture",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Broderie",
+     "goal": "Réaliser une broderie",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte customisation",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "mode",
+    "recup",
+    "textile",
+    "zero-dechet",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers de customisation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune, peu coûteux, tendance seconde main.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-mobilier-carton",
+   "name": "Mobilier et objets en carton",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.upcycling",
+   "desc": "Construire des meubles et objets en carton avec patrons et colle.",
+   "audience": "Familles, bricoleurs écoresponsables",
+   "skills": [
+    "Découpe",
+    "Assemblage",
+    "Renforts",
+    "Finition"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Réaliser un objet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Meuble",
+     "goal": "Réaliser une étagère",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser une chaise",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce d'auteur",
+     "goal": "Concevoir une pièce personnelle et justifier ses choix",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte carton",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "fabrication",
+    "maison",
+    "famille",
+    "deco"
+   ],
+   "competitors": [
+    "Ateliers de carton"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Peu connu, très peu cher, faible demande.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-sacs-recup",
+   "name": "Sacs et accessoires en matières récupérées",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.upcycling",
+   "desc": "Coudre des sacs avec bâches, chambres à air ou jeans usés.",
+   "audience": "Écoresponsables, jeunes actifs",
+   "skills": [
+    "Découpe",
+    "Couture",
+    "Finitions",
+    "Assemblage"
+   ],
+   "appSkills": [
+    "couture-creation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier sac",
+     "goal": "Réaliser une pochette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sac",
+     "goal": "Réaliser un sac",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser un cabas",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte récup",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "textile",
+    "mode",
+    "zero-dechet",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers de couture"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché de niche, plaisir réel, peu de monde.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-lampes-recup",
+   "name": "Lampes et luminaires faits main",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.deco",
+   "desc": "Câbler une lampe et fabriquer un abat-jour original.",
+   "audience": "Couples, décorateurs amateurs",
+   "skills": [
+    "Câblage",
+    "Abat-jour",
+    "Récup",
+    "Finition"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première lampe",
+     "goal": "Réaliser une lampe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Abat-jour",
+     "goal": "Réaliser un abat-jour",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser un luminaire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte luminaire",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "recup",
+    "maison",
+    "objet",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de bricolage"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Sécurité électrique à encadrer, public étroit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-string-art",
+   "name": "String art et tableaux de fil",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.deco",
+   "desc": "Planter des clous, tendre un fil et obtenir un motif graphique.",
+   "audience": "Familles, créatifs, cadeaux",
+   "skills": [
+    "Motifs",
+    "Clous",
+    "Fil",
+    "Finitions"
+   ],
+   "appSkills": [
+    "broderie",
+    "macrame"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier motif",
+     "goal": "Réaliser un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fil",
+     "goal": "Réaliser un dégradé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tableau",
+     "goal": "Réaliser un tableau",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce signature",
+     "goal": "Concevoir et réaliser sa propre pièce du croquis à la finition",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte string art",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 1,
+    "wtp": 2,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "deco",
+    "couleur",
+    "cadeau",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers créatifs"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Effet de mode passé, très faible valeur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-terrarium-plantes",
+   "name": "Terrariums et décorations végétales",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.deco",
+   "desc": "Créer un terrarium fermé ou une suspension de plantes.",
+   "audience": "Citadins, bureaux, cadeaux",
+   "skills": [
+    "Substrat",
+    "Plantes",
+    "Équilibre",
+    "Entretien"
+   ],
+   "appSkills": [],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier terrarium",
+     "goal": "Réaliser un terrarium",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plantes",
+     "goal": "Choisir 5 plantes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièce",
+     "goal": "Réaliser une suspension",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte plantes",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "atelier-artisan",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "plante",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "plante",
+    "deco",
+    "nature",
+    "cadeau",
+    "maison"
+   ],
+   "competitors": [
+    "Ateliers plantes",
+    "Fleuristes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très tendance en ville, peu de concurrence en atelier, produit idéal à offrir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-bricolage-enfants",
+   "name": "Bricolages créatifs avec les enfants",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.enfants",
+   "desc": "Fabriquer des objets simples avec des enfants de 4 à 10 ans.",
+   "audience": "Parents, enfants, centres de loisirs",
+   "skills": [
+    "Découpe",
+    "Colle",
+    "Peinture",
+    "Récup"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier bricolage",
+     "goal": "Réaliser 2 objets",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Récup",
+     "goal": "Réaliser 3 objets",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet",
+     "goal": "Réaliser un projet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fête",
+     "goal": "Organiser un anniversaire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur créatif",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "recup",
+    "fete",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Centres de loisirs",
+    "Ateliers Mercredi"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Besoin récurrent, prix bas, encadrement d'enfants.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-cabanes-jouets-bois",
+   "name": "Jouets et cabanes en bois et récup",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.enfants",
+   "desc": "Construire des petits jouets et une cabane avec des enfants.",
+   "audience": "Parents, enfants 6-12 ans",
+   "skills": [
+    "Mesure",
+    "Clou",
+    "Peinture",
+    "Jeu"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier jouet",
+     "goal": "Réaliser un jouet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cabane",
+     "goal": "Réaliser une cabane",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet",
+     "goal": "Réaliser un projet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu",
+     "goal": "Réaliser un jeu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur bois",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "bois",
+    "fabrication",
+    "jeu",
+    "recup"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": "enfants",
+   "verdict": "plus-tard",
+   "why": "Intéressant mais demande de matériel et de surveillance.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "artisanat-kits-creatifs-anniversaire",
+   "name": "Ateliers créatifs pour anniversaires",
+   "sector": "artisanat",
+   "category": "artisanat.recup",
+   "subcategory": "artisanat.recup.enfants",
+   "desc": "Animer un atelier créatif de 2 h pour un anniversaire d'enfant.",
+   "audience": "Parents, enfants 5-10 ans",
+   "skills": [
+    "Choix du thème",
+    "Fabrication",
+    "Animation",
+    "Gestion du temps"
+   ],
+   "appSkills": [
+    "upcycling-mobilier"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier atelier",
+     "goal": "Animer 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Thèmes",
+     "goal": "Réaliser 3 thèmes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animation",
+     "goal": "Animer 2 h",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme cohérente",
+     "goal": "Réaliser trois pièces assorties avec la même technique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte anniversaire",
+     "goal": "Animer un atelier découverte et former de nouveaux hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "parents",
+    "enfants",
+    "familles"
+   ],
+   "senses": [
+    "toucher",
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "famille",
+    "fete",
+    "deco",
+    "couleur",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers anniversaire"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande très régulière et bonne marge, mais forte dépendance de la saison.",
+   "confidence": "estimation"
+  }
+ ]
+}

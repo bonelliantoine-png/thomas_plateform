@@ -25,7 +25,7 @@
       var fmt = common.length / Math.max(1, U.uniq(a.formats.concat(b.formats)).length);
       // une paire trop éloignée est peu crédible : on exige un minimum de proximité ou de format commun
       var plaus = simab > 0.18 || common.length >= 2 ? 1 : 0.7;
-      var lvl = (Math.min(la, 4) + Math.min(lb, 4)) / 8;
+      var lvl = (Math.min(la, 5) + Math.min(lb, 5)) / 10;
       var score = (W.comp * comp + W.demand * demand + W.monet * monet + W.rare * rare + W.fmt * fmt) * (0.6 + 0.4 * lvl) * plaus;
       var lead = (a.attrs.demand + a.attrs.monetization) >= (b.attrs.demand + b.attrs.monetization) ? a : b;
       var other = lead === a ? b : a;
@@ -40,14 +40,14 @@
   C.nicheConcept = function (a, b, f) {
     var fl = (C.FORMATS[f] || f).toLowerCase();
     var tagsB = b.tags.slice(0, 2).join(' et ');
-    return 'Un ' + fl + ' où « ' + a.levels[0].toLowerCase() + ' » sert de porte d’entrée, enrichi par votre pratique ' + C.de(b) +
+    return 'Un ' + fl + ' où « ' + U.lc(C.milestone(a, 2)) + ' » sert de porte d’entrée, enrichi par votre pratique ' + C.de(b) +
       (tagsB ? ' (' + tagsB + ')' : '') + '. Peu de personnes maîtrisent les deux : vous attirez deux publics et sortez de la comparaison de prix.';
   };
   // matrice « j'aime / je maîtrise / ça se demande / ça se paie »
   C.niceMatrix = function (st) {
     return Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 2; }).map(function (id) {
       var s = C.data.sById[id], v = st.skills[id];
-      var love = U.num(v.love, 2) / 3, lvl = v.level / 4, dem = s.attrs.demand / 3, mon = s.attrs.monetization / 3;
+      var love = U.num(v.love, 2) / 3, lvl = v.level / 5, dem = s.attrs.demand / 3, mon = s.attrs.monetization / 3;
       return { s: s, love: love, level: lvl, demand: dem, monet: mon, sweet: love >= 0.66 && lvl >= 0.75 && dem >= 0.66 && mon >= 0.66, total: love + lvl + dem + mon };
     }).sort(function (a, b) { return b.total - a.total; });
   };

@@ -1,5 +1,6 @@
 /* État persistant (localStorage `cordes.v1`) et encodage compact du bilan pour le lien de partage `#b=`.
-   Format : préfixe « z » = JSON compact compressé deflate-raw (CompressionStream), « j » = JSON compact, puis base64url. */
+   Format : préfixe « z » = JSON compact compressé deflate-raw (CompressionStream), « j » = JSON compact, puis base64url.
+   Schéma 2 : échelle de maîtrise 0 à 5. Les bilans et liens du schéma 1 (échelle 0 à 4) sont convertis à la lecture. */
 (function (W) {
   'use strict';
   var C = W.Cordes, U = C.util;
@@ -9,7 +10,7 @@
   C.defaultState = function () {
     var now = new Date().toISOString();
     return {
-      version: 1, mode: null, createdAt: now, updatedAt: now, step: null,
+      version: C.SCHEMA_VERSION, mode: null, createdAt: now, updatedAt: now, step: null,
       context: { firstName: '', city: '', lat: null, lon: null, radiusKm: 5, hoursPerWeek: 3, budgetPerMonth: 50, presence: 'both', ageBand: '' },
       intents: [], skills: {}, custom: [], desires: {}, style: { answers: {}, archetype: null },
       offer: { strong: [], goals: [], incomeTarget: 500, hoursPerWeek: 4, audiences: [], formats: [], assets: { material: false, venue: false, audience: 0, teachExp: 1 }, entrepreneur: {}, presence: 'both' },
@@ -26,7 +27,23 @@
     out.desires = s.desires && typeof s.desires === 'object' ? s.desires : {};
     out.custom = Array.isArray(s.custom) ? s.custom : [];
     out.intents = Array.isArray(s.intents) ? s.intents : [];
-    return out;
+    return C.migrateState(out, s.version);
+  };
+  /* Migration de l'échelle 0-4 (schéma 1) vers 0-5 (schéma 2) : 1→1, 2→2, 3→4, 4→4 avec teach: true.
+     Les niveaux visés suivent la même table, bornés à 2 au moins (l'échelle des envies va de 2 à 5). */
+  C.migrateState = function (st, fromVersion) {
+    var v = U.num(fromVersion, 1);
+    if (v >= 2) { st.version = Math.max(v, C.SCHEMA_VERSION); return st; }
+    Object.keys(st.skills || {}).forEach(function (id) {
+      var x = st.skills[id]; if (!x || typeof x !== 'object') return;
+      var old = U.num(x.level, 0);
+      x.level = C.migrateLevel(old);
+      if (Math.round(old) >= 4) x.teach = true;
+    });
+    Object.keys(st.desires || {}).forEach(function (id) { var d = st.desires[id]; if (d && d.target != null) d.target = C.migrateTarget(d.target); });
+    (st.custom || []).forEach(function (c) { if (c && c.level != null) c.level = C.migrateLevel(c.level); });
+    st.version = C.SCHEMA_VERSION; st.migratedFrom = v;
+    return st;
   };
   C.loadState = function () {
     try { var raw = W.localStorage && W.localStorage.getItem(KEY); return raw ? C.mergeState(JSON.parse(raw)) : null; }
@@ -41,7 +58,7 @@
   /* ---------- encodage compact ---------- */
   var HZ = ['1m', '3m', '12m'];
   C.compact = function (st) {
-    var o = { v: 1, m: st.mode || 'learn', n: (st.context && st.context.firstName) || '', c: (st.context && st.context.city) || '' };
+    var o = { v: C.SCHEMA_VERSION, m: st.mode || 'learn', n: (st.context && st.context.firstName) || '', c: (st.context && st.context.city) || '' };
     o.s = Object.keys(st.skills || {}).filter(function (id) { return st.skills[id] && st.skills[id].level > 0; }).map(function (id) { var v = st.skills[id]; return [id, v.level, v.teach ? 1 : 0, U.num(v.love, 1)]; });
     o.d = Object.keys(st.desires || {}).filter(function (id) { return st.desires[id] && st.desires[id].verdict === 'yes'; }).map(function (id) { var d = st.desires[id]; return [id, d.target || 2, d.priority || 9, Math.max(0, HZ.indexOf(d.horizon || '3m'))]; });
     if (st.style && st.style.archetype) o.a = st.style.archetype;
@@ -52,12 +69,17 @@
   C.expand = function (o) {
     var st = C.defaultState();
     if (!o || typeof o !== 'object') return st;
+    // liens du schéma 1 (sans « v » ou v = 1) : niveaux sur l'ancienne échelle 0 à 4
+    var legacy = !(U.num(o.v, 1) >= 2);
+    var lv = function (x) { return legacy ? C.migrateLevel(x) : U.clamp(x, 0, C.LEVEL_MAX); };
+    var tg = function (x) { return legacy ? C.migrateTarget(x) : U.clamp(x, 1, C.LEVEL_MAX); };
     st.mode = o.m || 'learn';
     st.context.firstName = String(o.n || '').slice(0, 40); st.context.city = String(o.c || '').slice(0, 60);
-    U.arr(o.s).forEach(function (r) { if (Array.isArray(r) && C.data.sById[r[0]]) st.skills[r[0]] = { level: U.clamp(r[1], 0, 4), teach: !!r[2], love: U.clamp(r[3] == null ? 1 : r[3], 0, 3) }; });
-    U.arr(o.d).forEach(function (r) { if (Array.isArray(r) && C.data.sById[r[0]]) st.desires[r[0]] = { verdict: 'yes', target: U.clamp(r[1], 1, 4), priority: U.num(r[2], 9), horizon: HZ[r[3]] || '3m', motive: [], formats: [] }; });
+    U.arr(o.s).forEach(function (r) { if (Array.isArray(r) && C.data.sById[r[0]]) st.skills[r[0]] = { level: lv(r[1]), teach: !!r[2] || (legacy && Math.round(U.num(r[1])) >= 4), love: U.clamp(r[3] == null ? 1 : r[3], 0, 3) }; });
+    U.arr(o.d).forEach(function (r) { if (Array.isArray(r) && C.data.sById[r[0]]) st.desires[r[0]] = { verdict: 'yes', target: tg(r[1]), priority: U.num(r[2], 9), horizon: HZ[r[3]] || '3m', motive: [], formats: [] }; });
     if (o.a) st.style.archetype = String(o.a);
-    U.arr(o.k).forEach(function (r) { if (Array.isArray(r)) st.custom.push({ id: 'x-' + U.norm(r[0]).replace(/ /g, '-'), name: String(r[0]).slice(0, 60), universe: C.data.uById[r[1]] ? r[1] : 'savoirs', level: U.clamp(r[2], 0, 4) }); });
+    U.arr(o.k).forEach(function (r) { if (Array.isArray(r)) st.custom.push({ id: 'x-' + U.norm(r[0]).replace(/ /g, '-'), name: String(r[0]).slice(0, 60), universe: C.data.uById[r[1]] ? r[1] : 'savoirs', level: lv(r[2]) }); });
+    if (legacy) st.migratedFrom = 1;
     if (o.o) { st.offer.goals = U.arr(o.o.g); st.offer.formats = U.arr(o.o.f); st.offer.strong = U.arr(o.o.st).filter(function (id) { return C.data.sById[id]; }); }
     return st;
   };

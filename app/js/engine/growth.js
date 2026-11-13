@@ -42,10 +42,10 @@
   C.ROLES = { apprendre: 'Apprendre', transmettre: 'Transmettre', lieu: 'Lieu partenaire' };
   C.waitlist = {
     list: function () { var l = LS.get(C.KEYS.waitlist, []); return Array.isArray(l) ? l : []; },
-    // compétences pré-remplies : envies retenues et compétences de niveau 3 ou plus
+    // compétences pré-remplies : envies retenues et compétences de niveau 2 ou plus (de quoi animer au moins la découverte)
     prefill: function (st) {
       var wants = C.yesDesires(st || {}).slice(0, 8);
-      var offers = Object.keys((st && st.skills) || {}).filter(function (id) { return st.skills[id] && st.skills[id].level >= 3 && C.data.sById[id]; })
+      var offers = Object.keys((st && st.skills) || {}).filter(function (id) { return st.skills[id] && C.topPalier(st.skills[id].level) >= 1 && C.data.sById[id]; })
         .sort(function (x, y) { return st.skills[y].level - st.skills[x].level; }).slice(0, 8);
       return { wants: wants, offers: offers };
     },
@@ -247,12 +247,13 @@
   C.snapshot = function (st, label) {
     var skills = {}, desires = {}, done = [];
     Object.keys(st.skills || {}).forEach(function (id) { var v = st.skills[id]; if (v && v.level > 0) skills[id] = v.level; });
-    Object.keys(st.desires || {}).forEach(function (id) { var d = st.desires[id]; if (!d) return; if (d.verdict === 'yes') desires[id] = U.clamp(d.target || 2, 1, 4); else if (d.verdict === 'done') done.push(id); });
+    Object.keys(st.desires || {}).forEach(function (id) { var d = st.desires[id]; if (!d) return; if (d.verdict === 'yes') desires[id] = U.clamp(d.target || 2, 1, C.LEVEL_MAX); else if (d.verdict === 'done') done.push(id); });
     var d0 = new Date();
-    return { id: uid(), at: d0.toISOString(), label: label || ('Bilan du ' + U.dateShort(d0) + ' ' + d0.getFullYear()), mode: st.mode, name: (st.context && st.context.firstName) || '', skills: skills, desires: desires, done: done, arch: (st.style && st.style.archetype) || null };
+    return { id: uid(), v: C.SCHEMA_VERSION, at: d0.toISOString(), label: label || ('Bilan du ' + U.dateShort(d0) + ' ' + d0.getFullYear()), mode: st.mode, name: (st.context && st.context.firstName) || '', skills: skills, desires: desires, done: done, arch: (st.style && st.style.archetype) || null };
   };
   C.history = {
-    list: function () { var l = LS.get(C.KEYS.history, []); return Array.isArray(l) ? l.sort(function (a, b) { return a.at < b.at ? -1 : 1; }) : []; },
+    // les instantanés du schéma 1 (échelle 0 à 4) sont convertis à la lecture
+    list: function () { var l = LS.get(C.KEYS.history, []); return Array.isArray(l) ? l.map(C.migrateSnapshot).sort(function (a, b) { return a.at < b.at ? -1 : 1; }) : []; },
     add: function (snap) { var l = C.history.list(); l.push(snap); LS.set(C.KEYS.history, l); return snap; },
     // un instantané par jour au plus : celui du jour est remplacé
     upsertToday: function (st) {
@@ -262,6 +263,12 @@
     },
     remove: function (id) { LS.set(C.KEYS.history, C.history.list().filter(function (x) { return x.id !== id; })); },
     clear: function () { LS.del(C.KEYS.history); }
+  };
+  C.migrateSnapshot = function (x) {
+    if (!x || typeof x !== 'object' || U.num(x.v, 1) >= 2) return x;
+    Object.keys(x.skills || {}).forEach(function (id) { x.skills[id] = C.migrateLevel(x.skills[id]); });
+    Object.keys(x.desires || {}).forEach(function (id) { x.desires[id] = C.migrateTarget(x.desires[id]); });
+    x.v = C.SCHEMA_VERSION; return x;
   };
   // instantané fictif « il y a 3 mois » pour les profils de démonstration, clairement marqué
   C.demoPastSnapshot = function (st) {
@@ -313,37 +320,45 @@
       });
       return Object.keys(o).filter(function (id) { return o[id].length >= 2; }).map(function (id) { return { id: id, who: o[id] }; }).sort(function (a, b) { return b.who.length - a.who.length; });
     };
-    // qui anime quoi : pour chaque envie, le membre le plus qualifié du groupe
-    var hosts = {};
+    // qui anime quoi : pour chaque envie, le membre qui peut animer un palier pour le plus de membres (règle d'animation),
+    // à égalité celui qui pratique la compétence exacte, puis le niveau le plus haut
+    var cand = {};
     for (i = 0; i < n; i++) for (j = 0; j < n; j++) if (M[i][j]) M[i][j].forEach(function (x) {
-      var h = hosts[x.want] = hosts[x.want] || { want: x.want, learners: [], teacher: null, via: null, level: 0, exact: false };
-      if (h.learners.indexOf(j) < 0) h.learners.push(j);
-      var better = x.level > h.level || (x.level === h.level && x.exact && !h.exact);
-      if (better) { h.teacher = i; h.via = x.via; h.level = x.level; h.exact = x.exact; }
+      var w = cand[x.want] = cand[x.want] || {};
+      var c = w[i] = w[i] || { want: x.want, teacher: i, via: x.via, level: x.level, exact: x.exact, learners: [], paliers: {} };
+      if (c.learners.indexOf(j) < 0) c.learners.push(j);
+      c.paliers[j] = x.palier;
+      if (x.exact && !c.exact) { c.exact = true; c.via = x.via; c.level = x.level; }
     });
-    var hostList = Object.keys(hosts).map(function (k) { return hosts[k]; }).sort(function (a, b) { return b.learners.length - a.learners.length || b.level - a.level; });
+    var hostList = Object.keys(cand).map(function (w) {
+      return Object.keys(cand[w]).map(function (k) { return cand[w][k]; }).sort(function (a, b) { return b.learners.length - a.learners.length || (b.exact - a.exact) || b.level - a.level; })[0];
+    }).map(function (h) {
+      var pals = U.uniq(h.learners.map(function (j) { return h.paliers[j]; })).sort();
+      h.palier = pals[pals.length - 1]; h.paliersList = pals; return h;
+    }).sort(function (a, b) { return b.learners.length - a.learners.length || b.level - a.level; });
     var commonSkills = count('skills', 2), commonWants = count('wants');
     var links = 0; for (i = 0; i < n; i++) for (j = 0; j < n; j++) if (M[i][j] && M[i][j].length) links++;
     var pool = commonWants.map(function (x) { return C.data.sById[x.id]; }).concat(hostList.slice(0, 4).map(function (h) { return C.data.sById[h.via]; }), commonSkills.map(function (x) { return C.data.sById[x.id]; }));
     var projects = C.projectsFor(pool.length ? pool : [].concat.apply([], members.map(function (m) { return Object.keys(m.st.skills).map(function (id) { return C.data.sById[id]; }); })).filter(Boolean), 4);
     var ideas = [];
-    hostList.slice(0, 3).forEach(function (h) { ideas.push(members[h.teacher].name + ' anime une séance ' + C.de(C.data.sById[h.via]) + ' pour ' + h.learners.map(function (k) { return members[k].name; }).join(', ')); });
+    hostList.slice(0, 3).forEach(function (h) { ideas.push(members[h.teacher].name + ' (niveau ' + h.level + ') anime l’atelier de niveau ' + h.paliersList.join(' et ') + ' ' + C.de(C.data.sById[h.via]) + ' pour ' + h.learners.map(function (k) { return members[k].name; }).join(', ')); });
     commonWants.slice(0, 2).forEach(function (x) { ideas.push('Réserver à ' + x.who.length + ' un atelier découverte ' + C.de(C.data.sById[x.id]) + ' : ' + x.who.map(function (k) { return members[k].name; }).join(', ')); });
     if (hostList.length >= 3) ideas.push('Un cercle mensuel tournant : chaque mois, un membre transmet pendant une heure');
     return { n: n, matrix: M, links: links, density: n > 1 ? links / (n * (n - 1)) : 0, hosts: hostList, commonSkills: commonSkills, commonWants: commonWants, projects: projects, ideas: ideas };
   };
 
   // deux amis fictifs qui complètent les trois profils de démonstration pour la comparaison de groupe
+  // niveaux sur l'échelle 0 à 5, choisis pour illustrer la règle (niveau n → ateliers de niveau n-1)
   C.GROUP_FRIENDS = [
-    { id: 'yanis', name: 'Yanis', city: 'Lyon', skills: [['escalade-bloc', 4], ['chant-technique', 3], ['podcast', 3], ['randonnee-journee', 3]], desires: [['dj-mix', 2], ['patisserie-francaise', 2], ['photo-smartphone', 2]] },
-    { id: 'lea', name: 'Léa', city: 'Lyon', skills: [['poterie-tournage', 4], ['latte-art', 3], ['fermentation-lacto', 3], ['dessin-illustration', 3]], desires: [['eloquence', 2], ['beatmaking', 2], ['anglais-conversation', 2], ['escalade-bloc', 2]] }
+    { id: 'yanis', name: 'Yanis', city: 'Lyon', skills: [['escalade-bloc', 3], ['chant-technique', 3], ['podcast', 4], ['randonnee-journee', 3]], desires: [['live-electronique', 2], ['pain-levain', 2], ['photo-smartphone', 2]] },
+    { id: 'lea', name: 'Léa', city: 'Lyon', skills: [['poterie-tournage', 3], ['latte-art', 3], ['fermentation-lacto', 3], ['dessin-illustration', 4], ['eloquence', 3], ['anglais-conversation', 2]], desires: [['eloquence', 4], ['beatmaking', 3], ['anglais-conversation', 3], ['escalade-bloc', 2]] }
   ];
   C.buildFriend = function (id) {
     var f = C.GROUP_FRIENDS.filter(function (x) { return x.id === id; })[0]; if (!f) return null;
     var st = C.defaultState(); st.mode = 'both'; st.demo = 'ami-' + f.id; st.step = 'done';
     st.context.firstName = f.name; st.context.city = f.city;
     f.skills.forEach(function (r) { var id2 = C.resolve([r[0]]); if (id2) st.skills[id2] = { level: r[1], love: 2 }; });
-    f.desires.forEach(function (r, i) { var id2 = C.resolve([r[0]]); if (id2 && !st.skills[id2]) st.desires[id2] = { verdict: 'yes', target: r[1], priority: i + 1, horizon: '3m', formats: ['atelier'], motive: [] }; });
+    f.desires.forEach(function (r, i) { var id2 = C.resolve([r[0]]); if (id2 && (!st.skills[id2] || st.skills[id2].level < r[1])) st.desires[id2] = { verdict: 'yes', target: r[1], priority: i + 1, horizon: '3m', formats: ['atelier'], motive: [] }; });
     return st;
   };
 

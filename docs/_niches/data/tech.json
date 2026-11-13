@@ -1,0 +1,9016 @@
+{
+ "sector": "tech",
+ "categories": [
+  {
+   "id": "tech.ia",
+   "name": "IA au quotidien et créative",
+   "desc": "Utiliser, créer et comprendre les outils d'intelligence artificielle sans jargon.",
+   "subcategories": [
+    {
+     "id": "tech.ia.quotidien",
+     "name": "Usages du quotidien",
+     "desc": "Gagner du temps dans les tâches de tous les jours avec un assistant IA."
+    },
+    {
+     "id": "tech.ia.creation",
+     "name": "Créer avec l'IA",
+     "desc": "Images, musique, voix, vidéo et textes produits avec des outils génératifs."
+    },
+    {
+     "id": "tech.ia.comprendre",
+     "name": "Comprendre et maîtriser l'IA",
+     "desc": "Esprit critique, fonctionnement, outils locaux et assistants sur mesure."
+    }
+   ]
+  },
+  {
+   "id": "tech.web",
+   "name": "Web, no-code et code",
+   "desc": "Publier en ligne, organiser ses outils et apprendre à programmer à son rythme.",
+   "subcategories": [
+    {
+     "id": "tech.web.sites",
+     "name": "Sites et boutiques",
+     "desc": "Mettre en ligne un site, un blog ou une boutique sans compétence technique."
+    },
+    {
+     "id": "tech.web.nocode",
+     "name": "No-code et organisation",
+     "desc": "Outils visuels, tableurs et automatisations pour s'organiser."
+    },
+    {
+     "id": "tech.web.code",
+     "name": "Programmer pour débutants",
+     "desc": "HTML, Python, JavaScript et Scratch avec des projets concrets."
+    }
+   ]
+  },
+  {
+   "id": "tech.media",
+   "name": "Vidéo, image et live",
+   "desc": "Produire et diffuser des contenus numériques soignés.",
+   "subcategories": [
+    {
+     "id": "tech.media.video",
+     "name": "Montage vidéo",
+     "desc": "Du clip vertical aux films de famille, avec titres animés."
+    },
+    {
+     "id": "tech.media.visuel",
+     "name": "Visuels et retouche",
+     "desc": "Affiches, retouche photo et identité visuelle avec des outils accessibles."
+    },
+    {
+     "id": "tech.media.live",
+     "name": "Streaming et home studio",
+     "desc": "Lancer une chaîne et soigner son image et son son à la maison."
+    }
+   ]
+  },
+  {
+   "id": "tech.maker",
+   "name": "Fabrication numérique et électronique",
+   "desc": "Imprimer, souder, programmer et faire voler des objets.",
+   "subcategories": [
+    {
+     "id": "tech.maker.impression3d",
+     "name": "Impression et modélisation 3D",
+     "desc": "Concevoir puis imprimer des objets utiles."
+    },
+    {
+     "id": "tech.maker.electronique",
+     "name": "Électronique et objets connectés",
+     "desc": "Arduino, Raspberry Pi, soudure et domotique simple."
+    },
+    {
+     "id": "tech.maker.machines",
+     "name": "Robots, drones et découpe",
+     "desc": "Machines de fablab, kits robotiques et pilotage de drone."
+    }
+   ]
+  },
+  {
+   "id": "tech.securite",
+   "name": "Vie numérique, sécurité et sobriété",
+   "desc": "Protéger ses données, déjouer les pièges et reprendre la main sur ses écrans.",
+   "subcategories": [
+    {
+     "id": "tech.securite.protection",
+     "name": "Protéger sa vie numérique",
+     "desc": "Mots de passe, arnaques, sauvegardes et traces en ligne."
+    },
+    {
+     "id": "tech.securite.sobriete",
+     "name": "Sobriété numérique",
+     "desc": "Mieux utiliser ses écrans, allonger la vie de ses appareils."
+    },
+    {
+     "id": "tech.securite.libre",
+     "name": "Logiciels libres",
+     "desc": "Alternatives ouvertes et respectueuses de la vie privée."
+    }
+   ]
+  },
+  {
+   "id": "tech.tous",
+   "name": "Le numérique pour tous les publics",
+   "desc": "Ateliers pensés pour seniors, parents, ados et équipes.",
+   "subcategories": [
+    {
+     "id": "tech.tous.seniors",
+     "name": "Seniors et numérique",
+     "desc": "Smartphone, démarches en ligne, visio et photos à son rythme."
+    },
+    {
+     "id": "tech.tous.familles",
+     "name": "Parents et ados",
+     "desc": "Accompagner les usages numériques des plus jeunes."
+    },
+    {
+     "id": "tech.tous.pro",
+     "name": "Équipes et indépendants",
+     "desc": "Productivité et IA pour le travail, en petit groupe."
+    }
+   ]
+  },
+  {
+   "id": "tech.data",
+   "name": "Données, jeu vidéo et cartes",
+   "desc": "Raconter avec des données, créer des jeux et cartographier son quartier.",
+   "subcategories": [
+    {
+     "id": "tech.data.donnees",
+     "name": "Données et vérification",
+     "desc": "Graphiques lisibles et vérification d'information."
+    },
+    {
+     "id": "tech.data.jeuvideo",
+     "name": "Création de jeux vidéo",
+     "desc": "Concevoir et modder un jeu, seul ou en équipe."
+    },
+    {
+     "id": "tech.data.cartes",
+     "name": "Cartographie collaborative",
+     "desc": "Contribuer à des cartes ouvertes et en créer de personnelles."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "tech-ia-automatiser-quotidien",
+   "name": "Automatiser son quotidien avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.quotidien",
+   "desc": "Déléguer mails, agenda, listes et résumés à un assistant IA, avec méthode et prudence.",
+   "audience": "Actifs 30-55 ans, indépendants, parents débordés, curieux de productivité",
+   "skills": [
+    "Écrire une consigne claire",
+    "Résumer un document",
+    "Trier ses mails",
+    "Créer un modèle réutilisable",
+    "Vérifier une réponse"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "no-code-automatisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier assistant",
+     "goal": "Obtenir un résumé et un brouillon de mail utiles en une séance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Consignes qui marchent",
+     "goal": "Rédiger 5 consignes réutilisables pour ses tâches de la semaine",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ma semaine automatisée",
+     "goal": "Mettre en place 3 routines IA suivies pendant trois semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Assistants sur mesure",
+     "goal": "Concevoir un assistant spécialisé avec sources et garde-fous",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'IA du quotidien",
+     "goal": "Animer un atelier et écrire un guide pratique pour des débutants",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "entreprise",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "parents",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "convivial",
+    "tech",
+    "maison",
+    "argent"
+   ],
+   "competitors": [
+    "Cours en ligne",
+    "YouTube",
+    "Udemy"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande forte et large, résultat visible en 1 h (un mail ou un résumé prêt). L'offre en ligne est abondante mais peu locale ni accompagnée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-courriers-demarches",
+   "name": "Courriers et démarches avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.quotidien",
+   "desc": "Rédiger lettres, réclamations et candidatures avec un appui IA, en gardant le contrôle.",
+   "audience": "Actifs, seniors autonomes, étudiants, expatriés",
+   "skills": [
+    "Cadrer sa demande",
+    "Relire et corriger",
+    "Adapter le ton",
+    "Protéger ses données personnelles"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "demarches-administratives"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première lettre",
+     "goal": "Obtenir une lettre claire et vérifiée à partir de ses faits",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réclamations efficaces",
+     "goal": "Rédiger une réclamation et sa relance avec preuves et délais",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Dossier complet",
+     "goal": "Constituer un dossier (CV, lettre, justificatifs) avec relecture critique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style personnel",
+     "goal": "Garder sa voix en réécrivant avec l'IA, sans texte générique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier courriers",
+     "goal": "Guider un groupe et reconnaître les erreurs juridiques à éviter",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants",
+    "expatries"
+   ],
+   "senses": [
+    "reflexion"
+   ],
+   "outputs": [
+    "texte",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "ia",
+    "argent",
+    "maison"
+   ],
+   "competitors": [
+    "Écrivains publics",
+    "Assistants IA grand public"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin réel, mais l'usage se fait seul à la maison et la propension à payer est modérée. À combiner avec les démarches pour seniors.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-tuteur-langue",
+   "name": "Apprendre et réviser avec un tuteur IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.quotidien",
+   "desc": "Utiliser un assistant IA comme partenaire de conversation, de correction et de révision.",
+   "audience": "Étudiants, adultes en reconversion, expatriés, lycéens",
+   "skills": [
+    "Dialoguer dans une langue cible",
+    "Faire corriger ses textes",
+    "Créer des fiches",
+    "Planifier ses révisions"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "apprendre-a-apprendre"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier tuteur IA",
+     "goal": "Tenir une conversation de 10 minutes dans une langue et la faire corriger",
+     "format": "enligne",
+     "duration": "1 h",
+     "group": "4-10",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fiches et quiz",
+     "goal": "Générer des fiches de révision justes et vérifiées",
+     "format": "enligne",
+     "duration": "1 h 30",
+     "group": "4-8",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de révision",
+     "goal": "Bâtir un planning de 4 semaines avec points de contrôle",
+     "format": "enligne",
+     "duration": "4 × 1 h",
+     "group": "3-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Apprendre sans tricher",
+     "goal": "Combiner IA, sources et mémorisation pour un examen réel",
+     "format": "enligne",
+     "duration": "2 × 3 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach d'apprentissage",
+     "goal": "Accompagner un apprenant et évaluer la fiabilité de ses outils",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "en-ligne",
+    "ecole",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "ados",
+    "jeunes-actifs",
+    "expatries"
+   ],
+   "senses": [
+    "parole",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "langue",
+    "ia",
+    "ecriture",
+    "science"
+   ],
+   "competitors": [
+    "Duolingo",
+    "Chatbots",
+    "Soutien scolaire en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt fort des étudiants mais faible budget. Plus intéressant en complément d'un cours de langue qu'en atelier isolé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-repas-voyages",
+   "name": "Planifier repas et voyages avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.quotidien",
+   "desc": "Composer menus, listes de courses, itinéraires et budgets avec un assistant IA.",
+   "audience": "Familles, couples, voyageurs, actifs pressés",
+   "skills": [
+    "Formuler des contraintes",
+    "Croiser avec des sources fiables",
+    "Construire un budget",
+    "Exporter vers son agenda"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "organisation-voyage",
+    "batch-cooking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Menu de la semaine",
+     "goal": "Obtenir un menu et une liste de courses adaptés à son foyer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Itinéraire de week-end",
+     "goal": "Construire un voyage de 2 jours avec horaires vérifiés",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Budget et alternatives",
+     "goal": "Comparer 3 scénarios chiffrés et choisir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Planificateur personnel",
+     "goal": "Réutiliser ses consignes pour chaque départ ou semaine",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier planning",
+     "goal": "Former d'autres foyers et corriger les erreurs typiques de l'IA",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service",
+    "carte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "cuisine-du-monde",
+    "voyage",
+    "famille",
+    "argent"
+   ],
+   "competitors": [
+    "Applications de voyage",
+    "ChatGPT"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Utile et concret mais substituable par l'usage seul. Fonctionne mieux sous forme de soirée à thème entre amis ou en famille.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-images",
+   "name": "Créer des images avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.creation",
+   "desc": "Écrire des consignes visuelles, choisir un style et affiner des images avec des outils génératifs.",
+   "audience": "Créatifs, étudiants, indépendants, curieux 20-50 ans",
+   "skills": [
+    "Écrire une consigne visuelle",
+    "Choisir un style",
+    "Retoucher par zones",
+    "Garder des droits clairs",
+    "Imprimer un visuel"
+   ],
+   "appSkills": [
+    "ia-images",
+    "design-graphique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première image",
+     "goal": "Produire 3 images cohérentes à partir d'une idée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Style et cohérence",
+     "goal": "Créer une série de 5 images avec un style constant",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon projet visuel",
+     "goal": "Réaliser une affiche ou une couverture prête à imprimer",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Direction artistique IA",
+     "goal": "Combiner génération, retouche et photo réelle avec droits maîtrisés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'image IA",
+     "goal": "Construire une méthode transmissible et animer un atelier",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne",
+    "galerie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "dessin",
+    "couleur",
+    "photo",
+    "defi"
+   ],
+   "competitors": [
+    "Ateliers de studios IA",
+    "YouTube",
+    "Midjourney Academy"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Effet « waouh » immédiat, très partageable, tendance forte. Offre locale encore rare en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-musique",
+   "name": "Composer des chansons avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.creation",
+   "desc": "Écrire des paroles, générer une musique et la finaliser avec des outils musicaux.",
+   "audience": "Amateurs de musique non instrumentistes, créatifs, ados",
+   "skills": [
+    "Écrire un brief musical",
+    "Générer et trier des versions",
+    "Structurer un couplet et un refrain",
+    "Exporter et partager"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "composition-chansons"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chanson",
+     "goal": "Générer un morceau complet à partir d'un thème personnel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Paroles et structure",
+     "goal": "Écrire des paroles et choisir une structure refrain",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Version finalisée",
+     "goal": "Assembler, couper et mixer un titre de 2 minutes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Univers musical",
+     "goal": "Créer un mini-EP cohérent avec droits et mentions clarifiés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier IA musicale",
+     "goal": "Transmettre une méthode et situer les débats éthiques",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "studio-musique",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "ia",
+    "ecriture",
+    "voix",
+    "fete"
+   ],
+   "competitors": [
+    "Studios de musique",
+    "Plateformes IA"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Curiosité forte, mais cadre juridique et débat des artistes encore mouvants. À tester en soirée courte avant d'investir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-video",
+   "name": "Vidéo et animation assistées par IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.creation",
+   "desc": "Produire un court clip avec scénario, images et voix générés puis monté.",
+   "audience": "Créateurs de contenu, indépendants, enseignants, ados",
+   "skills": [
+    "Écrire un script",
+    "Générer des plans",
+    "Monter et sous-titrer",
+    "Ajouter une voix"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "montage-video",
+    "ia-images"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier clip IA",
+     "goal": "Produire un clip de 15 secondes à partir d'un script",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plans cohérents",
+     "goal": "Garder un personnage et un décor constants sur 5 plans",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mini-film",
+     "goal": "Monter un film de 1 minute avec voix et musique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Production régulière",
+     "goal": "Tenir un flux de 4 vidéos avec un style reconnaissable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Atelier vidéo IA",
+     "goal": "Former des créateurs et auditer la qualité éthique",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ia",
+    "video",
+    "recit",
+    "scene",
+    "tech"
+   ],
+   "competitors": [
+    "Formations de créateurs",
+    "Outils IA vidéo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Outils instables et vite obsolètes ; le format doit rester centré sur la méthode, pas sur un logiciel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-ecriture-histoire",
+   "name": "Écrire une histoire avec l'IA",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.creation",
+   "desc": "Co-écrire nouvelle, conte ou scénario avec un assistant en gardant son style.",
+   "audience": "Écrivains en herbe, parents, enseignants, seniors créatifs",
+   "skills": [
+    "Imaginer un personnage",
+    "Dialoguer avec l'IA",
+    "Réécrire à sa façon",
+    "Mettre en forme un livret"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "ecriture-creative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première histoire",
+     "goal": "Écrire une nouvelle de 1 page avec l'IA comme partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages et intrigue",
+     "goal": "Construire un récit en trois actes avec des personnages cohérents",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récit abouti",
+     "goal": "Mener un texte de 5 pages jusqu'à une relecture finale",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Voix d'auteur",
+     "goal": "Distinguer ce qui vient de soi et de l'IA dans un texte",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier d'écriture IA",
+     "goal": "Encadrer un groupe et poser un cadre éthique clair",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "mediatheque",
+    "librairie",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "ados",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "recit",
+    "ia",
+    "lecture",
+    "enigme"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "Wattpad"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Complète un atelier d'écriture classique, mais l'IA divise les amateurs d'écriture. Public de niche fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-voix-doublage",
+   "name": "Voix de synthèse et doublage",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.creation",
+   "desc": "Générer, cloner avec accord et monter des voix pour podcasts, vidéos et audiolivres.",
+   "audience": "Podcasteurs, créateurs, enseignants, associations",
+   "skills": [
+    "Écrire pour l'oral",
+    "Choisir une voix",
+    "Respecter le consentement",
+    "Monter une piste audio"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "voix-off"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première voix",
+     "goal": "Produire une narration de 1 minute avec une voix de synthèse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Texte à dire",
+     "goal": "Adapter un texte à l'oral et régler le rythme",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Podcast court",
+     "goal": "Monter un épisode de 5 minutes avec musique et voix",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Droits et consentement",
+     "goal": "Cadrer l'usage de voix réelles avec accord écrit",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier voix et IA",
+     "goal": "Montrer risques et usages responsables à un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "studio-musique",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "parole"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voix",
+    "ia",
+    "musique",
+    "recit",
+    "son"
+   ],
+   "competitors": [
+    "Formations audio"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Usages encore flous, enjeux éthiques et juridiques (voix, consentement). Demande modeste, à n'intégrer que comme module d'autres ateliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-comprendre",
+   "name": "Comprendre l'IA sans jargon",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.comprendre",
+   "desc": "Saisir ce que fait un modèle, ses limites, ses biais et ses usages sensés.",
+   "audience": "Tous publics curieux, seniors, parents, enseignants",
+   "skills": [
+    "Expliquer un modèle de langage",
+    "Repérer une erreur",
+    "Comprendre les données",
+    "Choisir un outil adapté"
+   ],
+   "appSkills": [
+    "ia-generative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "L'IA en 90 minutes",
+     "goal": "Expliquer avec ses mots ce que fait un assistant et ses limites",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bons réflexes",
+     "goal": "Appliquer 5 réflexes de vérification sur des cas réels",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Choisir ses outils",
+     "goal": "Comparer 3 outils et justifier son choix",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Débat éclairé",
+     "goal": "Argumenter sur les usages, risques et enjeux de société",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un café IA",
+     "goal": "Vulgariser pour un groupe mixte sans jargon",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie",
+    "cafe",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "science",
+    "debat",
+    "recit",
+    "lecture"
+   ],
+   "competitors": [
+    "Conférences gratuites",
+    "MOOC",
+    "Médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très forte demande de compréhension, notamment chez les 45+. Public large et rassurant, mais le prix psychologique reste bas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-fausses-images",
+   "name": "Repérer deepfakes et fausses images",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.comprendre",
+   "desc": "Reconnaître images, voix et vidéos truquées et vérifier une source.",
+   "audience": "Parents, seniors, enseignants, journalistes amateurs",
+   "skills": [
+    "Analyser une image",
+    "Rechercher la source",
+    "Repérer une voix clonée",
+    "Parler de désinformation en famille"
+   ],
+   "appSkills": [
+    "osint-verification",
+    "ia-images"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Vrai ou faux ?",
+     "goal": "Repérer 3 indices sur 5 images et vidéos truquées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Vérifier une source",
+     "goal": "Remonter à l'origine d'une image avec 2 outils",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enquête courte",
+     "goal": "Vérifier un fait viral et écrire une fiche de preuve",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Méthode de vérification",
+     "goal": "Mener une vérification complète et la documenter",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier esprit critique",
+     "goal": "Former des groupes et gérer les débats sensibles",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "mediatheque",
+    "ecole",
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "ia",
+    "ville",
+    "enigme",
+    "debat"
+   ],
+   "competitors": [
+    "Médias d'éducation",
+    "Associations d'éducation aux médias"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public sensibilisé mais budget faible (souvent gratuit en médiathèque). Fort potentiel en entreprise et école.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-locale",
+   "name": "IA en local sur son ordinateur",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.comprendre",
+   "desc": "Installer et tester des modèles ouverts sur sa machine, sans envoyer ses données.",
+   "audience": "Bidouilleurs, développeurs amateurs, juristes soucieux de confidentialité",
+   "skills": [
+    "Installer un modèle",
+    "Choisir sa taille de modèle",
+    "Interroger ses documents",
+    "Évaluer la qualité"
+   ],
+   "appSkills": [
+    "ia-locale",
+    "linux-open-source"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier modèle local",
+     "goal": "Faire tourner un modèle ouvert et poser 5 questions",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Documents privés",
+     "goal": "Interroger ses propres PDF sans cloud",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Comparer les modèles",
+     "goal": "Mesurer vitesse et qualité de 3 modèles",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pipeline personnel",
+     "goal": "Construire un petit assistant local fiable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'IA locale",
+     "goal": "Animer un atelier technique et guider les installations",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 2,
+    "cost": 3,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "en-ligne",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "code",
+    "tech",
+    "fabrication",
+    "science"
+   ],
+   "competitors": [
+    "Communautés open source",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public très pointu et déjà autodidacte, matériel exigeant. Intérêt réel mais audience limitée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-ia-assistant-perso",
+   "name": "Créer son assistant IA personnalisé",
+   "sector": "tech",
+   "category": "tech.ia",
+   "subcategory": "tech.ia.comprendre",
+   "desc": "Bâtir un assistant spécialisé avec consignes, sources et exemples pour un usage précis.",
+   "audience": "Indépendants, enseignants, petites équipes, créateurs",
+   "skills": [
+    "Définir un rôle",
+    "Fournir des sources",
+    "Tester et corriger",
+    "Partager un assistant"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "no-code-automatisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon assistant d'une page",
+     "goal": "Créer un assistant avec rôle et consignes testés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sources et exemples",
+     "goal": "Ajouter des documents et vérifier la pertinence",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Évaluer son assistant",
+     "goal": "Bâtir un jeu de tests de 10 questions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Assistant d'équipe",
+     "goal": "Déployer et documenter un assistant partagé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Concepteur d'assistants",
+     "goal": "Former d'autres concepteurs et auditer des assistants",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "tech",
+    "argent",
+    "code",
+    "maison"
+   ],
+   "competitors": [
+    "Agences IA",
+    "Webinaires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intérêt pro réel, concurrence de formations en ligne. Cible entreprises et indépendants à prioriser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-web-site-vitrine",
+   "name": "Site vitrine sans coder",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.sites",
+   "desc": "Créer et publier un site simple pour son activité, une association ou un projet.",
+   "audience": "Indépendants, artisans, associations, retraités actifs",
+   "skills": [
+    "Choisir un outil",
+    "Structurer ses pages",
+    "Rédiger pour le web",
+    "Publier avec un nom de domaine",
+    "Mesurer les visites"
+   ],
+   "appSkills": [
+    "creation-site-web",
+    "no-code-automatisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma page en ligne",
+     "goal": "Publier une page d'accueil claire avec ses coordonnées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Site de 4 pages",
+     "goal": "Construire un site de 4 pages avec formulaire de contact",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Référencement de base",
+     "goal": "Soigner titres, images et vitesse pour être trouvé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Site durable",
+     "goal": "Gérer domaine, sauvegardes, RGPD et évolutions",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la création de site",
+     "goal": "Animer un atelier et accompagner des projets d'autrui",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "ecriture",
+    "couleur",
+    "argent"
+   ],
+   "competitors": [
+    "Wix Academy",
+    "Freelances web",
+    "Agences"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin concret avec résultat montrable, publics variés (artisans, assos). Prix acceptable car l'alternative est un prestataire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-web-portfolio-createurs",
+   "name": "Portfolio en ligne pour créatifs",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.sites",
+   "desc": "Présenter ses créations dans un portfolio soigné et facile à mettre à jour.",
+   "audience": "Photographes, illustrateurs, artisans, étudiants en art",
+   "skills": [
+    "Choisir une mise en page",
+    "Préparer ses images",
+    "Rédiger une bio",
+    "Optimiser pour mobile"
+   ],
+   "appSkills": [
+    "creation-site-web",
+    "design-graphique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première vitrine",
+     "goal": "Mettre en ligne 6 œuvres avec une mise en page propre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Récit visuel",
+     "goal": "Organiser son portfolio autour d'une histoire claire",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Portfolio professionnel",
+     "goal": "Ajouter bio, contact, vente et statistiques",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marque personnelle",
+     "goal": "Soigner une identité cohérente et mesurer l'impact",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des créatifs",
+     "goal": "Accompagner d'autres artistes et auditer leurs portfolios",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "galerie",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "photo",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "photo",
+    "couleur",
+    "argent",
+    "tech"
+   ],
+   "competitors": [
+    "Behance",
+    "Freelances"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Cible précise et motivée, mais volume limité. Idéal en duo avec un atelier créatif.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-web-boutique-premier-produit",
+   "name": "Boutique en ligne : premier produit",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.sites",
+   "desc": "Ouvrir une boutique simple, photographier, décrire et vendre un premier produit.",
+   "audience": "Artisans, créateurs, étudiants entrepreneurs",
+   "skills": [
+    "Choisir une plateforme",
+    "Photographier un produit",
+    "Fixer un prix",
+    "Gérer paiements et livraison"
+   ],
+   "appSkills": [
+    "creation-site-web",
+    "vente-occasion"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma fiche produit",
+     "goal": "Publier un produit avec photos, texte et prix",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boutique complète",
+     "goal": "Ouvrir une boutique de 5 produits avec paiement",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Livraison et service client",
+     "goal": "Organiser expédition, retours et mentions légales",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Première vente suivie",
+     "goal": "Atteindre 10 ventes et lire ses statistiques",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des vendeurs en ligne",
+     "goal": "Transmettre sa méthode et alerter sur les obligations",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "argent",
+    "tech",
+    "objet-souvenir",
+    "mode",
+    "cadeau"
+   ],
+   "competitors": [
+    "Shopify Academy",
+    "Chambres de commerce"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public motivé mais cadre légal complexe (TVA, droit de rétractation). Ateliers utiles surtout en suivi.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-web-blog-newsletter",
+   "name": "Lancer un blog ou une newsletter",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.sites",
+   "desc": "Choisir un sujet, une plateforme et un rythme pour publier régulièrement.",
+   "audience": "Passionnés, experts, retraités, indépendants",
+   "skills": [
+    "Choisir un angle",
+    "Écrire un premier article",
+    "Choisir un outil",
+    "Collecter des abonnés"
+   ],
+   "appSkills": [
+    "blog-newsletter",
+    "creation-site-web"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier billet",
+     "goal": "Écrire et publier un article de 400 mots",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ligne éditoriale",
+     "goal": "Planifier 6 articles autour d'un angle clair",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Audience et rythme",
+     "goal": "Tenir un rythme de 4 semaines et suivre ses lecteurs",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Newsletter fidèle",
+     "goal": "Atteindre un taux d'ouverture mesuré et ajuster",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'édition en ligne",
+     "goal": "Animer un atelier et coacher des auteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "en-ligne",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "lecture",
+    "recit",
+    "tech"
+   ],
+   "competitors": [
+    "Substack",
+    "Ateliers d'écriture"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Motivation forte au début, abandon fréquent ensuite. Intéressant en cercle récurrent.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-nocode-notion",
+   "name": "Organiser sa vie avec Notion",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.nocode",
+   "desc": "Bâtir un tableau de bord personnel pour tâches, projets, finances et idées.",
+   "audience": "Étudiants, actifs, freelances, parents organisés",
+   "skills": [
+    "Créer des bases de données",
+    "Relier des pages",
+    "Gérer ses tâches",
+    "Suivre un projet"
+   ],
+   "appSkills": [
+    "no-code-automatisation",
+    "organisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tableau de bord",
+     "goal": "Monter une page tâches et notes utilisable dès le soir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bases et relations",
+     "goal": "Relier projets, tâches et personnes dans une base",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mon système complet",
+     "goal": "Faire vivre son système 3 semaines avec revue hebdomadaire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Modèles partageables",
+     "goal": "Concevoir un modèle clair pour d'autres",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'organisation numérique",
+     "goal": "Animer et dépanner des utilisateurs de tous niveaux",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "entreprise",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "maison",
+    "defi",
+    "ia"
+   ],
+   "competitors": [
+    "YouTube",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune et engagé, mais la concurrence gratuite en ligne est dense. Intérêt réel en cercle d'entraide.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-nocode-automatisations",
+   "name": "Automatisations no-code (Make, Zapier)",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.nocode",
+   "desc": "Relier ses applications pour que formulaires, mails et feuilles se mettent à jour seuls.",
+   "audience": "Indépendants, petites équipes, associations",
+   "skills": [
+    "Déclencheurs et actions",
+    "Tester un scénario",
+    "Gérer les erreurs",
+    "Documenter"
+   ],
+   "appSkills": [
+    "no-code-automatisation",
+    "tableur-avance"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première automatisation",
+     "goal": "Relier deux applications pour un gain de temps réel",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scénarios à plusieurs étapes",
+     "goal": "Construire un scénario avec condition et notification",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      60,
+      90
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Fiabiliser ses automatisations",
+     "goal": "Gérer erreurs, quotas et journaux",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      165,
+      230
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Système d'entreprise",
+     "goal": "Documenter un parcours complet pour une équipe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      250,
+      385
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Concevoir pour d'autres",
+     "goal": "Auditer des flux et former des utilisateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      440,
+      770
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "journee"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "code",
+    "ia",
+    "maison"
+   ],
+   "competitors": [
+    "Agences no-code",
+    "Make Academy"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Valeur claire pour indépendants et PME, mais public plus étroit. Prix acceptable en B2B.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-nocode-tableur",
+   "name": "Tableur : formules utiles",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.nocode",
+   "desc": "Maîtriser les formules, tableaux croisés et graphiques pour budgets, listes et suivis.",
+   "audience": "Actifs, associations, trésoriers, étudiants",
+   "skills": [
+    "Formules de base",
+    "Tableaux croisés",
+    "Mise en forme conditionnelle",
+    "Graphiques"
+   ],
+   "appSkills": [
+    "tableur-avance",
+    "data-visualisation",
+    "budget-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier tableau utile",
+     "goal": "Construire un tableau de budget avec 3 formules",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Formules à connaître",
+     "goal": "Maîtriser SI, RECHERCHEX et somme conditionnelle",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tableaux croisés",
+     "goal": "Analyser 500 lignes et produire un graphique",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableaux fiables",
+     "goal": "Protéger, valider et documenter un classeur partagé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au tableur",
+     "goal": "Animer un atelier et corriger des classeurs d'autrui",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "science",
+    "maison",
+    "defi"
+   ],
+   "competitors": [
+    "Formations bureautique",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin massif mais tourné vers des formations pro classiques, concurrence installée sur le CPF.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-nocode-appli-mobile",
+   "name": "Créer une appli mobile sans coder",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.nocode",
+   "desc": "Concevoir une application simple pour un événement, une association ou un petit service.",
+   "audience": "Associations, indépendants, étudiants, commerçants",
+   "skills": [
+    "Dessiner des écrans",
+    "Brancher des données",
+    "Tester sur téléphone",
+    "Publier"
+   ],
+   "appSkills": [
+    "no-code-automatisation",
+    "creation-site-web"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première appli",
+     "goal": "Créer 3 écrans fonctionnels reliés à des données",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Appli utile",
+     "goal": "Construire une appli avec formulaire et liste",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tests et retours",
+     "goal": "Tester auprès de 5 utilisateurs et corriger",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Appli publiée",
+     "goal": "Publier, mettre à jour et sécuriser",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'appli no-code",
+     "goal": "Accompagner des porteurs de projets",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "code",
+    "argent",
+    "ia",
+    "solidarite"
+   ],
+   "competitors": [
+    "Bubble Academy",
+    "Agences"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Courbe d'apprentissage plus raide qu'annoncé, public restreint. À proposer après les sites et automatisations.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-code-html-css",
+   "name": "Premier site en HTML et CSS",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.code",
+   "desc": "Écrire une page web à la main : structure, mise en forme et mise en ligne.",
+   "audience": "Étudiants, reconversions, ados curieux, adultes autodidactes",
+   "skills": [
+    "Structure HTML",
+    "Mise en forme CSS",
+    "Images et liens",
+    "Mise en ligne"
+   ],
+   "appSkills": [
+    "code-web",
+    "creation-site-web"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma page à la main",
+     "goal": "Écrire une page avec titre, texte et image qui s'affiche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mise en page",
+     "goal": "Mettre en forme une page de 3 sections adaptée au mobile",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Site complet",
+     "goal": "Construire un site de 4 pages avec navigation",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Code propre",
+     "goal": "Structurer, valider et rendre accessible un site",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à HTML et CSS",
+     "goal": "Animer un atelier et relire le code d'autrui",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "ados",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "code",
+    "tech",
+    "couleur",
+    "defi",
+    "ecriture"
+   ],
+   "competitors": [
+    "OpenClassrooms",
+    "Le Wagon",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Offre de formation abondante et gratuite. Valeur de l'atelier : l'accompagnement en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-code-python",
+   "name": "Python : premiers scripts utiles",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.code",
+   "desc": "Écrire de petits programmes pour automatiser fichiers, tableurs et tâches répétitives.",
+   "audience": "Actifs, étudiants, curieux, reconvertis",
+   "skills": [
+    "Variables et boucles",
+    "Lire et écrire des fichiers",
+    "Utiliser des bibliothèques",
+    "Déboguer"
+   ],
+   "appSkills": [
+    "code-python",
+    "data-visualisation"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Hello Python",
+     "goal": "Écrire et exécuter un script qui lit et affiche des données",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Fonctions et fichiers",
+     "goal": "Traiter un dossier de fichiers avec un script",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet utile",
+     "goal": "Automatiser une tâche réelle de bout en bout",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Code robuste",
+     "goal": "Tester, structurer et partager un script",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à Python",
+     "goal": "Animer une séance et relire du code d'apprenants",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "fablab",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "code",
+    "tech",
+    "science",
+    "ia",
+    "defi"
+   ],
+   "competitors": [
+    "OpenClassrooms",
+    "Zero to Mastery",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte, mais saturée de contenus en ligne. Le groupe en présentiel et le projet personnel font la différence.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-code-javascript",
+   "name": "JavaScript : pages interactives",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.code",
+   "desc": "Faire réagir une page : boutons, formulaires, petits jeux et calculs.",
+   "audience": "Étudiants, développeurs débutants, créatifs",
+   "skills": [
+    "Variables et fonctions",
+    "Événements",
+    "Manipuler la page",
+    "Petit jeu"
+   ],
+   "appSkills": [
+    "code-web",
+    "creation-jeu-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première interaction",
+     "goal": "Faire réagir un bouton et afficher un résultat",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Petit formulaire",
+     "goal": "Valider et calculer des valeurs saisies",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mini-jeu",
+     "goal": "Programmer un jeu simple jouable dans le navigateur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet publié",
+     "goal": "Structurer, tester et publier un projet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à JavaScript",
+     "goal": "Accompagner des débutants et corriger leur code",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "fablab"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "code",
+    "tech",
+    "jeu",
+    "defi",
+    "couleur"
+   ],
+   "competitors": [
+    "Le Wagon",
+    "OpenClassrooms",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché des bootcamps très concurrentiel et orienté emploi. Peu différenciant en atelier d'un soir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-code-ados-scratch",
+   "name": "Coder avec les ados : Scratch et premiers jeux",
+   "sector": "tech",
+   "category": "tech.web",
+   "subcategory": "tech.web.code",
+   "desc": "Créer animations et jeux avec une programmation par blocs, seul ou entre parent et ado.",
+   "audience": "Ados 10-16 ans, parents, enseignants",
+   "skills": [
+    "Programmation par blocs",
+    "Imaginer un personnage",
+    "Boucles et conditions",
+    "Partager un projet"
+   ],
+   "appSkills": [
+    "creation-jeu-video",
+    "code-web"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier jeu",
+     "goal": "Créer un jeu simple avec score et personnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Histoire interactive",
+     "goal": "Programmer une scène avec dialogues et choix",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Projet à deux",
+     "goal": "Réaliser un jeu en duo parent-ado",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu partagé",
+     "goal": "Publier et améliorer selon les retours",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier jeune codeur",
+     "goal": "Guider d'autres ados avec méthode",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "ecole",
+    "mediatheque",
+    "fablab"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "ados",
+    "enfants",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "jeu",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "code",
+    "jeu",
+    "famille",
+    "tech",
+    "defi"
+   ],
+   "competitors": [
+    "CoderDojo",
+    "Stages enfants"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Demande réelle des parents, offre associative gratuite ; les stages vacances paient bien en 2026 mais attirent les acteurs établis.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-video-vertical",
+   "name": "Montage vidéo vertical au smartphone",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.video",
+   "desc": "Filmer et monter un format court vertical, sous-titres et musique inclus.",
+   "audience": "Créateurs, commerçants, ados, parents",
+   "skills": [
+    "Cadrer en vertical",
+    "Monter sur mobile",
+    "Sous-titrer",
+    "Ajouter de la musique libre",
+    "Exporter"
+   ],
+   "appSkills": [
+    "montage-video",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier court",
+     "goal": "Filmer et monter une vidéo verticale de 20 secondes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et sous-titres",
+     "goal": "Soigner le rythme, les coupes et les sous-titres",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de contenus",
+     "goal": "Produire 4 vidéos cohérentes avec une identité",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Récit court",
+     "goal": "Raconter une histoire en 45 secondes avec plan de tournage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au montage mobile",
+     "goal": "Animer un atelier et corriger des montages",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 5,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "cafe",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "photo",
+    "musique",
+    "recit",
+    "mode"
+   ],
+   "competitors": [
+    "Formations de créateurs",
+    "YouTube",
+    "Écoles de vidéo"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande massive, résultat dès la première séance, outils déjà dans la poche. Très adapté au format court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-video-souvenirs-famille",
+   "name": "Monter les souvenirs de famille",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.video",
+   "desc": "Trier, numériser et monter des vidéos et photos de famille en un film partageable.",
+   "audience": "Seniors, parents, familles",
+   "skills": [
+    "Trier ses rushes",
+    "Numériser",
+    "Monter une séquence",
+    "Ajouter titres et musique"
+   ],
+   "appSkills": [
+    "montage-video",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trier ses souvenirs",
+     "goal": "Sélectionner et ordonner 30 photos et vidéos",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier film",
+     "goal": "Monter un film de 3 minutes avec musique",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Film d'une vie",
+     "goal": "Assembler une histoire sur une année",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Transmettre",
+     "goal": "Faire un film partageable avec archivage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'héritage numérique",
+     "goal": "Guider des familles dans la conservation",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "emotion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "famille",
+    "histoire",
+    "cadeau",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Prestataires de numérisation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Valeur émotionnelle forte et cible seniors-familles, mais usage ponctuel. Idéal en cadeau ou atelier intergénérationnel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-video-motion-titres",
+   "name": "Motion design : titres animés",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.video",
+   "desc": "Animer textes et logos pour vidéos, réseaux sociaux et présentations.",
+   "audience": "Créatifs, indépendants, étudiants",
+   "skills": [
+    "Animer un texte",
+    "Gérer le temps",
+    "Exporter pour le web",
+    "Respecter une charte"
+   ],
+   "appSkills": [
+    "motion-design",
+    "design-graphique",
+    "montage-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier titre animé",
+     "goal": "Animer un texte sur 5 secondes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et courbes",
+     "goal": "Régler l'accélération pour un mouvement fluide",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Générique complet",
+     "goal": "Créer un générique de 15 secondes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Identité animée",
+     "goal": "Décliner une charte animée cohérente",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au motion design",
+     "goal": "Animer et corriger des projets d'apprenants",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "couleur",
+    "dessin",
+    "tech",
+    "musique"
+   ],
+   "competitors": [
+    "Domestika",
+    "Écoles d'animation"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Logiciels exigeants et courbe longue. Public étroit, valeur forte mais plutôt en ligne ou stage.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-design-canva",
+   "name": "Créer ses visuels avec Canva",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.visuel",
+   "desc": "Faire affiches, invitations et posts avec des modèles et des principes graphiques simples.",
+   "audience": "Associations, indépendants, parents, retraités actifs",
+   "skills": [
+    "Choisir une palette",
+    "Composer une affiche",
+    "Exporter",
+    "Respecter les droits des images"
+   ],
+   "appSkills": [
+    "design-graphique",
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première affiche",
+     "goal": "Réaliser une invitation lisible en 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hiérarchie visuelle",
+     "goal": "Appliquer polices, contrastes et alignements",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kit de communication",
+     "goal": "Créer 5 visuels cohérents pour un projet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Identité simple",
+     "goal": "Définir une charte et des modèles réutilisables",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la création visuelle",
+     "goal": "Animer un atelier et relire des visuels d'autrui",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "mediatheque",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "couleur",
+    "papier",
+    "tech",
+    "fete"
+   ],
+   "competitors": [
+    "Canva Academy",
+    "Écoles de graphisme"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin concret des associations et petits commerces, accès facile. Valeur d'accompagnement évidente.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-design-retouche-photo",
+   "name": "Retouche photo : smartphone et ordinateur",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.visuel",
+   "desc": "Corriger lumière, couleurs et recadrage pour des photos nettes et naturelles.",
+   "audience": "Photographes amateurs, parents, voyageurs, seniors",
+   "skills": [
+    "Régler lumière et contraste",
+    "Recadrer",
+    "Retirer un défaut",
+    "Organiser sa photothèque"
+   ],
+   "appSkills": [
+    "retouche-photo",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Photos plus nettes",
+     "goal": "Améliorer 5 photos en 3 réglages simples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière et couleurs",
+     "goal": "Corriger l'exposition et la balance des blancs",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style personnel",
+     "goal": "Créer un rendu cohérent sur une série",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Atelier complet",
+     "goal": "Traiter 20 photos avec flux de travail repris",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la retouche",
+     "goal": "Animer un atelier et critiquer des séries",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "couleur",
+    "voyage",
+    "famille",
+    "tech"
+   ],
+   "competitors": [
+    "Clubs photo",
+    "Adobe",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande stable et large, offre gratuite en ligne très dense. À regrouper avec un atelier photo plutôt qu'isolé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-design-logo-identite",
+   "name": "Identité visuelle : logo et charte légère",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.visuel",
+   "desc": "Dessiner un logo simple, choisir couleurs et polices pour un petit projet.",
+   "audience": "Indépendants, associations, créateurs de boutique",
+   "skills": [
+    "Définir un message",
+    "Choisir polices et couleurs",
+    "Dessiner un logo",
+    "Décliner sur supports"
+   ],
+   "appSkills": [
+    "design-graphique",
+    "lettering"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier logo",
+     "goal": "Créer un logo lisible sur fond clair et foncé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Palette et typographies",
+     "goal": "Choisir 3 couleurs et 2 polices cohérentes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charte de 1 page",
+     "goal": "Décliner l'identité sur 4 supports",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Marque cohérente",
+     "goal": "Tester la lisibilité et l'accessibilité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'identité visuelle",
+     "goal": "Animer et relire des chartes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "couleur",
+    "papier",
+    "argent",
+    "tech"
+   ],
+   "competitors": [
+    "Freelances",
+    "Plateformes de logos"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Substituable par un freelance à bas prix ; l'atelier ne vaut que pour les porteurs de projets très autonomes.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-live-streaming",
+   "name": "Streaming : lancer sa chaîne",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.live",
+   "desc": "Choisir son matériel, ses logiciels et son format pour diffuser en direct.",
+   "audience": "Jeunes joueurs, créateurs, enseignants, associations",
+   "skills": [
+    "Configurer sa scène",
+    "Régler le son",
+    "Animer un live",
+    "Connaître les règles de diffusion"
+   ],
+   "appSkills": [
+    "streaming-live",
+    "montage-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier live",
+     "goal": "Lancer un direct de 15 minutes sans accroc",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scène et son",
+     "goal": "Régler caméra, micro et lumière",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rythme d'émission",
+     "goal": "Animer un live structuré de 45 minutes",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chaîne régulière",
+     "goal": "Tenir un calendrier et un chat modéré",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au streaming",
+     "goal": "Accompagner de nouveaux streamers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne",
+    "studio-musique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "parole"
+   ],
+   "outputs": [
+    "video",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "jeu",
+    "tech",
+    "scene",
+    "voix"
+   ],
+   "competitors": [
+    "Formations de streamers",
+    "YouTube",
+    "Twitch"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché saturé et peu rémunérateur à l'échelle individuelle. Public jeune, budget faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-live-home-studio",
+   "name": "Home studio : lumière, son et décor",
+   "sector": "tech",
+   "category": "tech.media",
+   "subcategory": "tech.media.live",
+   "desc": "Installer un coin visio ou tournage avec bon son et lumière à moindre coût.",
+   "audience": "Télétravailleurs, formateurs, créateurs",
+   "skills": [
+    "Choisir un micro",
+    "Placer la lumière",
+    "Soigner le décor",
+    "Régler la caméra"
+   ],
+   "appSkills": [
+    "montage-video",
+    "enregistrement-maison",
+    "streaming-live"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon coin visio",
+     "goal": "Améliorer son image et son son avec 3 réglages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière douce",
+     "goal": "Éclairer un visage avec deux sources",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Studio complet",
+     "goal": "Installer un décor cohérent et stable",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Qualité pro",
+     "goal": "Régler une chaîne audio-vidéo fiable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au home studio",
+     "goal": "Auditer des installations d'autrui",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "son",
+    "photo",
+    "tech",
+    "maison"
+   ],
+   "competitors": [
+    "Boutiques de matériel",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel des télétravailleurs, mais budget matériel élevé et public étroit. Utile en B2B.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-3d-premier-objet",
+   "name": "Impression 3D : premier objet",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.impression3d",
+   "desc": "Choisir un modèle, régler la machine et imprimer un objet utile en une séance.",
+   "audience": "Curieux 18-60 ans, parents, bricoleurs, enseignants",
+   "skills": [
+    "Choisir un modèle",
+    "Trancher",
+    "Lancer une impression",
+    "Retirer et finir une pièce"
+   ],
+   "appSkills": [
+    "impression-3d",
+    "modelisation-3d"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier objet",
+     "goal": "Imprimer un objet simple et l'emporter",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réglages utiles",
+     "goal": "Ajuster couches, support et remplissage",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pièces fonctionnelles",
+     "goal": "Imprimer une pièce qui s'emboîte",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Imprimante fiable",
+     "goal": "Calibrer, entretenir et diagnostiquer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'impression 3D",
+     "goal": "Animer et dépanner des utilisateurs",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "mediatheque",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "familles",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fabrication",
+    "tech",
+    "science",
+    "cadeau",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Fablabs",
+    "Boutiques 3D"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Fort intérêt grand public, mais l'attente de l'impression limite le rythme ; format efficace avec un lieu équipé (fablab, tiers-lieu).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-3d-modelisation",
+   "name": "Modélisation 3D pour imprimer",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.impression3d",
+   "desc": "Dessiner ses propres pièces avec un logiciel de CAO simple, de l'idée à la pièce.",
+   "audience": "Bricoleurs, étudiants, designers amateurs",
+   "skills": [
+    "Esquisser en 2D",
+    "Extruder",
+    "Assembler des volumes",
+    "Exporter pour l'impression"
+   ],
+   "appSkills": [
+    "modelisation-3d",
+    "impression-3d",
+    "blender-3d"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première pièce",
+     "goal": "Dessiner et exporter un objet simple",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cotes et assemblages",
+     "goal": "Concevoir deux pièces qui s'emboîtent",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Objet sur mesure",
+     "goal": "Résoudre un besoin réel par un modèle personnel",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Conception paramétrique",
+     "goal": "Créer un modèle réutilisable avec variables",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la modélisation",
+     "goal": "Corriger des modèles d'apprenants",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "fabrication",
+    "tech",
+    "science",
+    "dessin",
+    "defi"
+   ],
+   "competitors": [
+    "Fablabs",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Courbe d'apprentissage assumée mais fidélisante. Complète le premier objet.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-3d-reparation",
+   "name": "Réparer et personnaliser avec l'impression 3D",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.impression3d",
+   "desc": "Fabriquer une pièce de rechange ou un accessoire qui n'existe plus.",
+   "audience": "Bricoleurs, parents, adeptes de la réparation",
+   "skills": [
+    "Mesurer une pièce",
+    "Modéliser",
+    "Choisir un matériau",
+    "Tester l'ajustement"
+   ],
+   "appSkills": [
+    "impression-3d",
+    "modelisation-3d",
+    "petit-electromenager"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "La pièce qui manque",
+     "goal": "Remplacer un bouton ou un clip cassé",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ajusté au millimètre",
+     "goal": "Mesurer, modéliser et tester une pièce",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      35,
+      50
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réparer avec méthode",
+     "goal": "Comparer matériaux et solidité",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      90,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièces durables",
+     "goal": "Documenter pour partager le modèle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      135,
+      210
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un repair atelier 3D",
+     "goal": "Accompagner des réparateurs bénévoles",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      240,
+      420
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "atelier-artisan"
+   ],
+   "moments": [
+    "weekend-matin",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "recup",
+    "reparation",
+    "fabrication",
+    "tech",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Fablabs"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public motivé par la réparation ; lien naturel avec les Repair cafés. Demande réelle mais volume moyen.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-elec-arduino",
+   "name": "Arduino : premier montage",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.electronique",
+   "desc": "Brancher une LED, un capteur et programmer un micro-contrôleur, sans connaissances préalables.",
+   "audience": "Étudiants, parents, bricoleurs, reconvertis",
+   "skills": [
+    "Lire un schéma",
+    "Câbler sur platine",
+    "Programmer une carte",
+    "Lire un capteur"
+   ],
+   "appSkills": [
+    "arduino-electronique",
+    "code-python"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma LED clignote",
+     "goal": "Câbler et programmer une LED en une séance",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Capteur et réaction",
+     "goal": "Lire un capteur et déclencher un signal",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Petit objet connecté",
+     "goal": "Réaliser un mini-projet (alarme, lampe)",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet complet",
+     "goal": "Assembler, boîtier et documentation",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'électronique",
+     "goal": "Animer un atelier et réparer des montages",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "ecole",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "etudiants",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "tech",
+    "fabrication",
+    "code",
+    "science",
+    "defi"
+   ],
+   "competitors": [
+    "Fablabs",
+    "Écoles",
+    "Kits en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public passionné et fidèle, matériel peu coûteux. La production d'un objet permet l'attachement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-elec-raspberry",
+   "name": "Raspberry Pi : mini-ordinateur maison",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.electronique",
+   "desc": "Transformer un Raspberry Pi en lecteur multimédia, serveur ou station de jeux.",
+   "audience": "Bidouilleurs, parents, seniors techniciens",
+   "skills": [
+    "Installer un système",
+    "Se connecter en réseau",
+    "Installer des applications",
+    "Sauvegarder"
+   ],
+   "appSkills": [
+    "domotique-raspberry",
+    "linux-open-source"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon Pi démarre",
+     "goal": "Installer un système et se connecter",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un usage utile",
+     "goal": "Configurer un lecteur multimédia ou un bloqueur de pubs",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Serveur à la maison",
+     "goal": "Héberger un service sécurisé",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet intégré",
+     "goal": "Concevoir un système fiable et maintenu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au Raspberry Pi",
+     "goal": "Animer et dépanner une communauté",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "code",
+    "fabrication",
+    "maison",
+    "science"
+   ],
+   "competitors": [
+    "Communautés Linux",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public pointu déjà autonome, nombreux tutoriels. Reste un bon complément du fablab.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-elec-domotique-simple",
+   "name": "Domotique maison simple",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.electronique",
+   "desc": "Automatiser éclairage, prises et capteurs avec des solutions simples et sûres.",
+   "audience": "Propriétaires, locataires techniques, seniors autonomes",
+   "skills": [
+    "Choisir un standard",
+    "Installer des prises connectées",
+    "Créer un scénario",
+    "Sécuriser"
+   ],
+   "appSkills": [
+    "domotique-maison",
+    "domotique-raspberry"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première prise connectée",
+     "goal": "Installer et programmer un équipement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scénarios simples",
+     "goal": "Automatiser lumière et chauffage",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Maison cohérente",
+     "goal": "Relier plusieurs équipements",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sécurité et vie privée",
+     "goal": "Protéger son réseau domestique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la domotique",
+     "goal": "Accompagner des foyers",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "domicile",
+    "boutique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "maison",
+    "tech",
+    "fabrication",
+    "economie",
+    "reparation"
+   ],
+   "competitors": [
+    "Enseignes de bricolage",
+    "YouTube"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin pratique, public de propriétaires prêts à payer. Dépend d'une bonne sécurité électrique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-elec-soudure-kit",
+   "name": "Soudure électronique : premier kit",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.electronique",
+   "desc": "Souder un kit simple (lampe, jeu de lumière, radio) et comprendre ses composants.",
+   "audience": "Curieux, bricoleurs, parents-enfants, étudiants",
+   "skills": [
+    "Souder proprement",
+    "Lire des composants",
+    "Tester",
+    "Entretenir son fer"
+   ],
+   "appSkills": [
+    "arduino-electronique",
+    "soudure-etain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier kit",
+     "goal": "Souder un kit de 10 composants qui fonctionne",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Soudures propres",
+     "goal": "Maîtriser fil, étain et composants",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Kit avancé",
+     "goal": "Réaliser un montage de 30 composants",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réparer une carte",
+     "goal": "Remplacer un composant défectueux",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la soudure",
+     "goal": "Animer et superviser des ateliers",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "atelier-artisan",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "ados",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fabrication",
+    "tech",
+    "reparation",
+    "science",
+    "defi"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Fablabs"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Résultat concret et rassurant, public étroit mais intéressé. Matériel peu coûteux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-robot-kit-ados",
+   "name": "Robotique pour ados et parents",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.machines",
+   "desc": "Monter et programmer un robot roulant, suivre une ligne et éviter un obstacle.",
+   "audience": "Ados 11-17 ans, parents, enseignants",
+   "skills": [
+    "Assembler un robot",
+    "Programmer des déplacements",
+    "Utiliser des capteurs",
+    "Relever un défi"
+   ],
+   "appSkills": [
+    "robotique-amateur",
+    "arduino-electronique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier robot",
+     "goal": "Assembler et faire rouler un robot",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Suiveur de ligne",
+     "goal": "Programmer un parcours simple",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défi en équipe",
+     "goal": "Résoudre un parcours en groupe",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Robot amélioré",
+     "goal": "Améliorer vitesse et fiabilité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier robotique",
+     "goal": "Encadrer d'autres ados",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "ecole",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "ados",
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "tech",
+    "fabrication",
+    "famille",
+    "defi",
+    "code"
+   ],
+   "competitors": [
+    "Stages robotique",
+    "Associations de jeunes"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Intérêt des parents pour les stages vacances ; offre établie mais chère. L'atelier parent-ado se distingue.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-drone-pilotage",
+   "name": "Drone : pilotage et prises de vue",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.machines",
+   "desc": "Piloter un petit drone, cadrer des plans aériens et connaître les règles de vol.",
+   "audience": "Photographes, voyageurs, passionnés de technologie",
+   "skills": [
+    "Régles de vol",
+    "Décollage",
+    "Cadrer",
+    "Monter des plans aériens"
+   ],
+   "appSkills": [
+    "drone-pilotage",
+    "drone-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier vol",
+     "goal": "Décoller, se stabiliser et atterrir en sécurité",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      55,
+      85
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Règles et zones",
+     "goal": "Lire une carte d'espaces aériens et déclarer",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      75,
+      110
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plans maîtrisés",
+     "goal": "Réaliser 5 plans aériens cadrés",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      210,
+      295
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Film aérien",
+     "goal": "Planifier et monter une séquence",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      315,
+      490
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au drone",
+     "goal": "Encadrer de nouveaux pilotes",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      560,
+      980
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "mouvement"
+   ],
+   "outputs": [
+    "video",
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "photo",
+    "plein-air",
+    "nature",
+    "tech"
+   ],
+   "competitors": [
+    "Clubs de drone",
+    "Écoles de pilotage"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Intérêt fort mais cadre réglementaire strict et matériel coûteux. À limiter aux drones légers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-laser-decoupe",
+   "name": "Découpe laser : projet de fablab",
+   "sector": "tech",
+   "category": "tech.maker",
+   "subcategory": "tech.maker.machines",
+   "desc": "Dessiner puis découper un objet en bois ou en carton avec une machine laser.",
+   "audience": "Créateurs, enseignants, commerçants, bricoleurs",
+   "skills": [
+    "Dessiner en vectoriel",
+    "Régler la machine",
+    "Assembler",
+    "Finir"
+   ],
+   "appSkills": [
+    "modelisation-3d",
+    "design-graphique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier découpage",
+     "goal": "Découper un porte-clés ou une carte",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Assemblage tenon-mortaise",
+     "goal": "Concevoir un objet qui s'emboîte",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de pièces",
+     "goal": "Produire un objet avec finitions",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Objet vendable",
+     "goal": "Concevoir pour la production",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la découpe laser",
+     "goal": "Animer et former aux règles de sécurité",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "fablab",
+    "tiers-lieu",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "fabrication",
+    "bois",
+    "papier",
+    "cadeau",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Fablabs",
+    "Écoles"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Besoin de machine rare et coûteux ; chaque lieu équipé le propose déjà. À associer à un fablab.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-secu-vie-numerique",
+   "name": "Protéger sa vie numérique",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.protection",
+   "desc": "Mots de passe, double authentification, mises à jour et sauvegardes en 2 h, pour tous.",
+   "audience": "Tous publics, seniors, parents, indépendants",
+   "skills": [
+    "Gestionnaire de mots de passe",
+    "Double authentification",
+    "Mises à jour",
+    "Sauvegardes"
+   ],
+   "appSkills": [
+    "cybersecurite-perso",
+    "linux-open-source"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon socle sécurisé",
+     "goal": "Activer un gestionnaire et la double authentification",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comptes en ordre",
+     "goal": "Sécuriser ses 10 comptes clés et sa messagerie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Plan de sauvegarde",
+     "goal": "Mettre en place une sauvegarde 3-2-1",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Prévention en famille",
+     "goal": "Établir des règles de sécurité pour son foyer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la sécurité",
+     "goal": "Animer un atelier et orienter vers les bons recours",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "domicile",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "jeunes-actifs",
+    "parents",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "zero-dechet",
+    "maison",
+    "famille",
+    "argent"
+   ],
+   "competitors": [
+    "Cybermalveillance",
+    "Médiathèques",
+    "Associations d'inclusion"
+   ],
+   "regulated": "securite",
+   "verdict": "prioritaire",
+   "why": "Besoin universel et urgent ; offre gratuite très présente mais peu appliquée. L'accompagnement personnalisé est le vrai manque.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-secu-arnaques",
+   "name": "Déjouer arnaques et hameçonnage",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.protection",
+   "desc": "Reconnaître faux mails, SMS frauduleux, faux conseillers et fraudes à la carte.",
+   "audience": "Seniors, familles, jeunes actifs",
+   "skills": [
+    "Reconnaître un message piégé",
+    "Vérifier un expéditeur",
+    "Réagir en cas de fraude",
+    "Parler à ses proches"
+   ],
+   "appSkills": [
+    "cybersecurite-perso",
+    "osint-verification"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Reconnaître le piège",
+     "goal": "Repérer 5 indices d'un faux message",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cas réels",
+     "goal": "Analyser 10 tentatives de fraude et agir",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réflexes d'urgence",
+     "goal": "Savoir bloquer, signaler et prévenir",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Protéger ses proches",
+     "goal": "Préparer une fiche pour sa famille",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier prévention",
+     "goal": "Former des groupes et partager des cas",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 4,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "parents",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "famille",
+    "argent",
+    "debat",
+    "solidarite"
+   ],
+   "competitors": [
+    "Cybermalveillance",
+    "Banques",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande très forte, surtout chez les 60+ et les familles. Les institutions proposent souvent le gratuit : valeur de proximité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-secu-sauvegardes-photos",
+   "name": "Sauvegardes : ne rien perdre",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.protection",
+   "desc": "Organiser photos et documents, sauvegarder automatiquement et récupérer un téléphone perdu.",
+   "audience": "Seniors, parents, familles",
+   "skills": [
+    "Trier ses fichiers",
+    "Choisir un stockage",
+    "Automatiser",
+    "Tester une restauration"
+   ],
+   "appSkills": [
+    "cybersecurite-perso",
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes photos en sécurité",
+     "goal": "Sauvegarder ses photos sur 2 supports",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rangement durable",
+     "goal": "Trier et nommer ses fichiers",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sauvegardes automatiques",
+     "goal": "Mettre en place et tester une restauration",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Archives familiales",
+     "goal": "Préserver un patrimoine numérique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'archivage",
+     "goal": "Animer et dépanner des familles",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "famille",
+    "objet-souvenir",
+    "maison",
+    "zero-dechet"
+   ],
+   "competitors": [
+    "Boutiques informatiques",
+    "Prestataires"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin latent (perte de données), public plus réceptif après un incident. Bon complément du socle de sécurité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-secu-traces-vie-privee",
+   "name": "Réduire ses traces en ligne",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.protection",
+   "desc": "Régler la confidentialité de ses comptes, navigateurs et applications.",
+   "audience": "Parents, actifs, ados, enseignants",
+   "skills": [
+    "Régler les permissions",
+    "Choisir un navigateur",
+    "Effacer ses traces",
+    "Exercer ses droits RGPD"
+   ],
+   "appSkills": [
+    "cybersecurite-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes réglages essentiels",
+     "goal": "Passer ses comptes en confidentialité maximale",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Nettoyer ses traces",
+     "goal": "Supprimer anciens comptes et données",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pistage et publicité",
+     "goal": "Réduire pistes et cookies",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Droits RGPD",
+     "goal": "Exercer une demande d'accès et de suppression",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la vie privée",
+     "goal": "Animer un atelier et orienter vers la CNIL",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "debat",
+    "famille"
+   ],
+   "competitors": [
+    "CNIL",
+    "Associations de vie privée"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Sensibilité croissante, mais thème perçu comme abstrait. Mieux vendu en famille ou en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-sobriete-detox",
+   "name": "Détox numérique : reprendre la main",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.sobriete",
+   "desc": "Mesurer son usage, réduire les notifications et installer de nouveaux rituels.",
+   "audience": "Actifs, étudiants, parents, jeunes adultes",
+   "skills": [
+    "Mesurer son temps d'écran",
+    "Régler les notifications",
+    "Instaurer des rituels",
+    "Tenir un défi"
+   ],
+   "appSkills": [
+    "detox-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Faire le point",
+     "goal": "Mesurer ses usages et fixer un objectif",
+     "format": "atelier",
+     "duration": "1 h",
+     "group": "4-12",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réglages apaisants",
+     "goal": "Désactiver notifications inutiles et limiter les apps",
+     "format": "atelier",
+     "duration": "1 h 15",
+     "group": "4-10",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Défi de 2 semaines",
+     "goal": "Tenir un défi collectif avec rituels",
+     "format": "cercle",
+     "duration": "6 × 1 h",
+     "group": "6-10",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Nouvelle routine",
+     "goal": "Remplacer des usages par des activités choisies",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "6-12",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle détox",
+     "goal": "Mener un groupe et gérer les rechutes",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "cafe",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises",
+    "parents"
+   ],
+   "senses": [
+    "reflexion",
+    "emotion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "bien-etre",
+    "defi",
+    "calme",
+    "tech",
+    "famille"
+   ],
+   "competitors": [
+    "Associations",
+    "Applications de temps d'écran"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte attente sociale mais faible volonté de payer. Meilleur potentiel en cercle ou en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-sobriete-ecrans-famille",
+   "name": "Écrans et famille : des règles qui tiennent",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.sobriete",
+   "desc": "Poser des repères d'usage adaptés à l'âge, sans conflit permanent.",
+   "audience": "Parents d'enfants et d'ados",
+   "skills": [
+    "Choisir des repères",
+    "Contrôle parental",
+    "Dialoguer",
+    "Proposer des alternatives"
+   ],
+   "appSkills": [
+    "detox-numerique",
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Faire le point en famille",
+     "goal": "Dresser l'état des usages de chaque enfant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "3-8",
+     "price": [
+      18,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Règles concrètes",
+     "goal": "Rédiger 5 règles de maison acceptables par tous",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "3-8",
+     "price": [
+      25,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Outils de contrôle",
+     "goal": "Configurer les réglages adaptés",
+     "format": "cercle",
+     "duration": "6 × 1 h 30",
+     "group": "6-10",
+     "price": [
+      65,
+      90
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tenir dans la durée",
+     "goal": "Ajuster à chaque étape de l'enfance",
+     "format": "stage",
+     "duration": "demi-journée",
+     "group": "4-10",
+     "price": [
+      100,
+      155
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de parents",
+     "goal": "Faciliter un groupe de parole",
+     "format": "coaching",
+     "duration": "3 × 1 h",
+     "group": "1-3",
+     "price": [
+      175,
+      310
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "ecole",
+    "mediatheque",
+    "tiers-lieu",
+    "en-ligne",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "tech",
+    "solidarite",
+    "calme",
+    "debat"
+   ],
+   "competitors": [
+    "Associations de parents",
+    "Écoles"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Inquiétude parentale très présente, parents prêts à payer pour des conseils concrets. À proposer via écoles et associations.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-sobriete-vie-appareils",
+   "name": "Allonger la vie de son téléphone et de son PC",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.sobriete",
+   "desc": "Nettoyer, mettre à jour, changer une batterie et choisir un reconditionné.",
+   "audience": "Étudiants, familles, personnes soucieuses d'économies",
+   "skills": [
+    "Libérer de l'espace",
+    "Changer une batterie",
+    "Mettre à jour",
+    "Choisir un reconditionné"
+   ],
+   "appSkills": [
+    "reparation-smartphone",
+    "petit-electromenager"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gagner en fluidité",
+     "goal": "Nettoyer et accélérer un appareil",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Entretien régulier",
+     "goal": "Gérer stockage, mises à jour et batterie",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réparation simple",
+     "goal": "Changer une batterie ou un écran guidé",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Acheter malin",
+     "goal": "Choisir un appareil reconditionné fiable",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un repair atelier numérique",
+     "goal": "Former des bénévoles",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 5,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "mediatheque",
+    "entreprise"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "vue"
+   ],
+   "outputs": [
+    "service",
+    "savoir"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "reparation",
+    "zero-dechet",
+    "tech",
+    "recup",
+    "economie"
+   ],
+   "competitors": [
+    "Repair cafés",
+    "Boutiques de réparation"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Thème écologique et économe attractif, mais budget réparation limité. Lien naturel avec les Repair cafés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-libre-linux",
+   "name": "Linux : essayer sans risque",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.libre",
+   "desc": "Tester une distribution sur clé USB ou ancien ordinateur et découvrir les alternatives libres.",
+   "audience": "Curieux, étudiants, associations, possesseurs de vieux PC",
+   "skills": [
+    "Créer une clé bootable",
+    "Installer Linux",
+    "Utiliser des logiciels libres",
+    "Sauvegarder"
+   ],
+   "appSkills": [
+    "linux-open-source"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Linux sur une clé",
+     "goal": "Démarrer un système Linux sans l'installer",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Installation guidée",
+     "goal": "Installer Linux sur un ancien PC",
+     "format": "atelier",
+     "duration": "3 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Vie quotidienne",
+     "goal": "Remplacer ses logiciels courants",
+     "format": "chantier",
+     "duration": "4 × 2 h",
+     "group": "4-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Administrateur de son PC",
+     "goal": "Diagnostiquer et réparer seul",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à Linux",
+     "goal": "Animer une install-party",
+     "format": "coaching",
+     "duration": "4 × 2 h",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 2,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "zero-dechet",
+    "recup",
+    "code",
+    "economie"
+   ],
+   "competitors": [
+    "Install-parties",
+    "Associations libres"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public militant et peu enclin à payer. Intérêt surtout communautaire et gratuit, à garder en cercle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-libre-degoogliser",
+   "name": "Alternatives libres au quotidien",
+   "sector": "tech",
+   "category": "tech.securite",
+   "subcategory": "tech.securite.libre",
+   "desc": "Remplacer messagerie, cloud et agenda par des services respectueux, pas à pas.",
+   "audience": "Parents, enseignants, associations, personnes sensibles à la vie privée",
+   "skills": [
+    "Choisir un service",
+    "Migrer ses données",
+    "Utiliser un cloud libre",
+    "Sécuriser"
+   ],
+   "appSkills": [
+    "linux-open-source",
+    "cybersecurite-perso"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier changement",
+     "goal": "Remplacer un service par une alternative",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Cloud et agenda libres",
+     "goal": "Migrer fichiers et agenda",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tout migrer",
+     "goal": "Compléter la bascule en 4 semaines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Hébergement collectif",
+     "goal": "Organiser un service partagé",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former au libre",
+     "goal": "Animer et accompagner des migrations",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "parents",
+    "entreprises",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "debat",
+    "solidarite",
+    "maison",
+    "code"
+   ],
+   "competitors": [
+    "Associations libres",
+    "CHATONS"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public militant limité et exigeant ; peu de volonté de payer. Intéressant en association.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-seniors-smartphone",
+   "name": "Smartphone sans stress pour seniors",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.seniors",
+   "desc": "Appels, messages, photos, appli utile : prendre en main son téléphone à son rythme.",
+   "audience": "Seniors 60-85 ans, aidants, résidences",
+   "skills": [
+    "Réglages de base",
+    "Messagerie",
+    "Photos",
+    "Applications utiles"
+   ],
+   "appSkills": [
+    "mediation-numerique",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon téléphone, mon allié",
+     "goal": "Passer un appel, envoyer un message et une photo",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Messageries et photos",
+     "goal": "Utiliser sa messagerie et ses albums seul",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Applications utiles",
+     "goal": "Installer et utiliser 3 applications du quotidien",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie confiante",
+     "goal": "Dépanner un souci courant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier entre pairs",
+     "goal": "Accompagner d'autres seniors",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 5,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "famille",
+    "solidarite",
+    "convivial",
+    "maison"
+   ],
+   "competitors": [
+    "Associations de seniors",
+    "Mairies",
+    "Banques"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande massive et croissante, public disponible et motivé. Les financements locaux existent mais bas : à combiner avec de la proximité payante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-seniors-demarches-en-ligne",
+   "name": "Démarches en ligne : impôts, santé, retraite",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.seniors",
+   "desc": "Se connecter à France Connect, impots.gouv, Ameli et gérer ses documents.",
+   "audience": "Seniors, personnes éloignées du numérique, aidants",
+   "skills": [
+    "Créer un compte",
+    "FranceConnect",
+    "Télécharger un document",
+    "Reconnaître un faux site"
+   ],
+   "appSkills": [
+    "demarches-administratives",
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier compte",
+     "goal": "Créer et utiliser un compte administratif",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Démarches fréquentes",
+     "goal": "Effectuer une déclaration en ligne",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Documents classés",
+     "goal": "Classer et retrouver ses documents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Autonomie administrative",
+     "goal": "Gérer une démarche complexe seul",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier démarches",
+     "goal": "Aider d'autres personnes en toute sécurité",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 2,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "mediatheque",
+    "tiers-lieu",
+    "salle-polyvalente",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "expatries",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "maison",
+    "solidarite"
+   ],
+   "competitors": [
+    "France Services",
+    "CCAS",
+    "Associations"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin social majeur mais mission largement assurée par des services gratuits. Intérêt : relais de proximité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-seniors-visio-messagerie",
+   "name": "Visio et messageries avec les petits-enfants",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.seniors",
+   "desc": "Rester proche à distance : appels vidéo, photos, jeux en ligne simples.",
+   "audience": "Grands-parents, familles éloignées",
+   "skills": [
+    "Lancer un appel vidéo",
+    "Partager photos",
+    "Jeux simples en ligne",
+    "Régler son et caméra"
+   ],
+   "appSkills": [
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un appel vidéo réussi",
+     "goal": "Lancer un appel vidéo en autonomie",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      14,
+      20
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Partage de photos",
+     "goal": "Envoyer albums et vidéos à la famille",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux et activités à distance",
+     "goal": "Jouer en ligne avec ses petits-enfants",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      55,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Famille connectée",
+     "goal": "Animer un rendez-vous récurrent",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      80,
+      125
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des aînés",
+     "goal": "Transmettre à d'autres grands-parents",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      145,
+      250
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "rencontre",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "tech",
+    "convivial",
+    "calme",
+    "jeu"
+   ],
+   "competitors": [
+    "Associations de seniors"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Motivation émotionnelle élevée, peu de volonté de payer. Bon pour de l'intergénérationnel.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-seniors-photos-tri",
+   "name": "Trier, retoucher et partager ses photos",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.seniors",
+   "desc": "Ranger ses photos de smartphone, créer des albums et partager avec la famille.",
+   "audience": "Seniors, parents, voyageurs",
+   "skills": [
+    "Trier",
+    "Créer un album",
+    "Partager en sécurité",
+    "Imprimer"
+   ],
+   "appSkills": [
+    "photo-smartphone",
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes photos rangées",
+     "goal": "Trier 100 photos et créer un album",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Albums partagés",
+     "goal": "Partager un album avec la famille",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Photolivre",
+     "goal": "Créer un photolivre imprimé",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mémoire familiale",
+     "goal": "Constituer des archives durables",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-6",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la photo numérique",
+     "goal": "Animer et accompagner",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "photo",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "famille",
+    "objet-souvenir",
+    "cadeau",
+    "tech"
+   ],
+   "competitors": [
+    "Clubs photo",
+    "Boutiques photo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande diffuse, produits imprimés à vendre en complément. Public disponible la journée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-parents-controle-parental",
+   "name": "Tablette et contrôle parental",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.familles",
+   "desc": "Paramétrer appareils et comptes enfants, choisir applications et horaires.",
+   "audience": "Parents d'enfants 3-13 ans",
+   "skills": [
+    "Créer un profil enfant",
+    "Régler le temps d'écran",
+    "Choisir des applications",
+    "Parler des risques"
+   ],
+   "appSkills": [
+    "mediation-numerique",
+    "detox-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Réglages de base",
+     "goal": "Créer un profil enfant sécurisé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      16,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Applications adaptées",
+     "goal": "Choisir et tester 5 applications",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Règles et limites",
+     "goal": "Configurer horaires et filtres",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      60,
+      85
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Suivi dans le temps",
+     "goal": "Adapter les réglages à la croissance",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de parents",
+     "goal": "Guider d'autres parents",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      160,
+      280
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "ecole",
+    "mediatheque",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "tech",
+    "debat",
+    "calme",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations de parents"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Public parent très motivé, en quête de solutions concrètes. Mode de distribution : école et associations.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-parents-ia-ados",
+   "name": "IA et ados : accompagner sans punir",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.familles",
+   "desc": "Comprendre ce que font les ados avec l'IA, poser des règles et encourager les bons usages.",
+   "audience": "Parents d'ados, enseignants, éducateurs",
+   "skills": [
+    "Comprendre les usages",
+    "Éviter la triche",
+    "Encourager la création",
+    "Discuter des risques"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "mediation-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon ado et l'IA",
+     "goal": "Faire le point sur les usages avec des exemples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Règles et dialogue",
+     "goal": "Définir un cadre de famille clair",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Aider sans faire à sa place",
+     "goal": "Utiliser l'IA pour apprendre vraiment",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet commun",
+     "goal": "Réaliser un projet créatif parent-ado",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un cercle de parents",
+     "goal": "Faciliter un groupe de parole et des échanges",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "ecole",
+    "mediatheque",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "ados",
+    "familles"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "famille",
+    "debat",
+    "tech",
+    "calme"
+   ],
+   "competitors": [
+    "Associations de parents",
+    "Webinaires"
+   ],
+   "regulated": "enfants",
+   "verdict": "prioritaire",
+   "why": "Sujet brûlant pour les parents, peu d'offre locale mûre. Public disponible en soirée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-pro-ia-equipe",
+   "name": "IA en équipe : atelier collectif",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.pro",
+   "desc": "Une demi-journée pour identifier des usages utiles de l'IA dans son équipe et poser des règles.",
+   "audience": "PME, associations, services RH, cabinets, collectivités",
+   "skills": [
+    "Cartographier ses tâches",
+    "Choisir des cas d'usage",
+    "Poser une charte",
+    "Mesurer le gain"
+   ],
+   "appSkills": [
+    "ia-generative",
+    "animation-fresque"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Découverte de l'IA en équipe",
+     "goal": "Tester 3 cas d'usage concrets sur ses tâches",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      70,
+      110
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Atelier d'usages",
+     "goal": "Prioriser et prototyper 3 usages utiles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      100,
+      145
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charte et règles",
+     "goal": "Rédiger une charte d'usage partagée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      270,
+      380
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Déploiement suivi",
+     "goal": "Mesurer les gains sur 2 mois",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      405,
+      630
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former les référents IA",
+     "goal": "Animer des ateliers en interne",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      720,
+      1260
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 5,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-midi",
+    "semaine-soir",
+    "journee"
+   ],
+   "publics": [
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "parole"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "tech",
+    "argent",
+    "debat",
+    "convivial"
+   ],
+   "competitors": [
+    "Cabinets de conseil",
+    "OPCO",
+    "Organismes de formation"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Budgets B2B élevés et demande soutenue, concurrence de cabinets cependant. Formule en demi-journée facile à vendre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-pro-productivite-independants",
+   "name": "Productivité numérique pour indépendants",
+   "sector": "tech",
+   "category": "tech.tous",
+   "subcategory": "tech.tous.pro",
+   "desc": "Organiser agenda, facturation, notes et emails avec des outils simples et peu chers.",
+   "audience": "Indépendants, micro-entrepreneurs, artisans",
+   "skills": [
+    "Planifier sa semaine",
+    "Automatiser la facturation",
+    "Archiver",
+    "Choisir ses outils"
+   ],
+   "appSkills": [
+    "no-code-automatisation",
+    "organisation",
+    "tableur-avance"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma semaine claire",
+     "goal": "Construire un agenda et une liste de tâches",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Facturation sans effort",
+     "goal": "Automatiser devis et factures",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Outils intégrés",
+     "goal": "Relier ses outils sans doublons",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      150,
+      210
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entreprise fluide",
+     "goal": "Documenter ses processus",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      225,
+      350
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former les indépendants",
+     "goal": "Animer et coacher des pairs",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      400,
+      700
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "entreprise",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "semaine-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "savoir",
+    "service"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "maison",
+    "ia",
+    "defi"
+   ],
+   "competitors": [
+    "Chambres de commerce",
+    "Coworkings"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Cible solvable mais déjà très sollicitée. Intéressant via les tiers-lieux et coworkings.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-data-visualisation",
+   "name": "Données : raconter avec des graphiques",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.donnees",
+   "desc": "Choisir un graphique juste, nettoyer des données et éviter les pièges de lecture.",
+   "audience": "Actifs, associations, enseignants, étudiants",
+   "skills": [
+    "Nettoyer des données",
+    "Choisir un graphique",
+    "Raconter une histoire",
+    "Éviter les biais visuels"
+   ],
+   "appSkills": [
+    "data-visualisation",
+    "tableur-avance"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier graphique",
+     "goal": "Produire un graphique lisible à partir d'un tableau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      50
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Choisir le bon type",
+     "goal": "Associer un graphique à chaque question",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Récit de données",
+     "goal": "Construire un mini-rapport de 3 graphiques",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      120,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Données fiables",
+     "goal": "Détecter et corriger des biais",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      180,
+      280
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la dataviz",
+     "goal": "Animer un atelier et critiquer des visuels",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      320,
+      560
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 2,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "mediatheque",
+    "entreprise"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "science",
+    "tech",
+    "couleur",
+    "code",
+    "argent"
+   ],
+   "competitors": [
+    "Écoles de data",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public étroit et déjà équipé en outils. Meilleur accueil en entreprise ou en association.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-data-verifier-info",
+   "name": "Vérifier une information (OSINT de base)",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.donnees",
+   "desc": "Retrouver l'origine d'une image, d'une citation ou d'un site avec des outils ouverts.",
+   "audience": "Curieux, lycéens, enseignants, bénévoles",
+   "skills": [
+    "Recherche d'image inversée",
+    "Dater une photo",
+    "Trouver une source",
+    "Archiver une page"
+   ],
+   "appSkills": [
+    "osint-verification",
+    "ia-images"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Source ou rumeur ?",
+     "goal": "Retrouver l'origine d'une image en 3 étapes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Géolocaliser",
+     "goal": "Localiser une photo grâce à des indices",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Enquête guidée",
+     "goal": "Documenter une vérification complète",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Méthode d'enquête",
+     "goal": "Produire un dossier de vérification solide",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à l'OSINT",
+     "goal": "Animer et superviser des enquêtes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "mediatheque",
+    "ecole",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados",
+    "seniors"
+   ],
+   "senses": [
+    "reflexion",
+    "vue"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "enigme",
+    "science",
+    "defi",
+    "tech",
+    "histoire"
+   ],
+   "competitors": [
+    "Médias d'éducation",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public passionné et croissant, valeur éducative. Faible disposition à payer, plus fort en milieu scolaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-jv-premier-jeu",
+   "name": "Créer son premier jeu vidéo",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.jeuvideo",
+   "desc": "Concevoir un jeu simple, de l'idée au prototype jouable, avec un moteur accessible.",
+   "audience": "Ados, étudiants, adultes créatifs, parents",
+   "skills": [
+    "Imaginer des règles",
+    "Dessiner un personnage",
+    "Programmer des mouvements",
+    "Tester avec des joueurs"
+   ],
+   "appSkills": [
+    "creation-jeu-video",
+    "code-web"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier prototype",
+     "goal": "Faire bouger un personnage et ramasser un objet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un niveau jouable",
+     "goal": "Créer un niveau avec obstacles",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      50,
+      70
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeu complet",
+     "goal": "Boucler un jeu avec début, fin et score",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      190
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jeu poli",
+     "goal": "Soigner son, retours et prise en main",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      205,
+      315
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la création de jeux",
+     "goal": "Animer un atelier et accompagner des projets",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      360,
+      630
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "ecole",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "jeunes-actifs",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "jeu"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "code",
+    "tech",
+    "dessin",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de jeu vidéo",
+    "Game jams"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Attrait fort des jeunes, offre de stages établie. Peut se différencier par des game jams courtes en équipe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-jv-modding",
+   "name": "Modder un jeu : Minecraft et au-delà",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.jeuvideo",
+   "desc": "Créer des objets, skins et niveaux pour un jeu existant avec les outils officiels.",
+   "audience": "Ados 10-16 ans, parents, étudiants",
+   "skills": [
+    "Utiliser un éditeur",
+    "Créer des textures",
+    "Programmer une règle",
+    "Partager un mod"
+   ],
+   "appSkills": [
+    "creation-jeu-video",
+    "code-python"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mod",
+     "goal": "Ajouter un objet personnalisé dans un jeu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Textures et skins",
+     "goal": "Dessiner et importer ses créations",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      40,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Règles personnalisées",
+     "goal": "Programmer une mécanique de jeu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      105,
+      145
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Monde complet",
+     "goal": "Concevoir un monde avec histoire",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer un atelier de modding",
+     "goal": "Encadrer des jeunes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      280,
+      490
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "ecole",
+    "fablab",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "ados",
+    "enfants",
+    "parents"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "jeu",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "jeu",
+    "code",
+    "tech",
+    "famille",
+    "dessin"
+   ],
+   "competitors": [
+    "Stages enfants",
+    "Clubs",
+    "YouTube"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Forte demande des parents pour du jeu « utile », mais dépend d'une licence tierce. Bon pour les stages en vacances.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-carto-osm",
+   "name": "Cartographie collaborative OpenStreetMap",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.cartes",
+   "desc": "Contribuer à la carte ouverte de son quartier : relevés, ajouts, sentiers et accessibilité.",
+   "audience": "Randonneurs, citoyens engagés, étudiants, associations",
+   "skills": [
+    "Relever sur le terrain",
+    "Éditer la carte",
+    "Étiqueter correctement",
+    "Organiser une cartopartie"
+   ],
+   "appSkills": [
+    "cartographie-osm",
+    "lecture-carte-gps"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première contribution",
+     "goal": "Ajouter un point d'intérêt à la carte du quartier",
+     "format": "sortie",
+     "duration": "2 h",
+     "group": "4-10",
+     "price": [
+      12,
+      18
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Relevés de terrain",
+     "goal": "Collecter et saisir des données sur une sortie",
+     "format": "sortie",
+     "duration": "2 h 30",
+     "group": "4-8",
+     "price": [
+      17,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cartopartie",
+     "goal": "Participer à une session collective",
+     "format": "arc",
+     "duration": "3 sorties",
+     "group": "4-8",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Contributeur régulier",
+     "goal": "Valider et corriger des données",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      70,
+      105
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animer une cartopartie",
+     "goal": "Former à la contribution et faciliter",
+     "format": "coaching",
+     "duration": "3 × 2 h",
+     "group": "1-3",
+     "price": [
+      120,
+      210
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 2,
+    "community": 5,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "tiers-lieu",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "carte",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ville",
+    "nature",
+    "balade",
+    "science",
+    "solidarite"
+   ],
+   "competitors": [
+    "Associations OSM",
+    "Mairies"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public engagé mais très gratuit. Excellent pour la communauté, peu pour le revenu direct.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "tech-carto-voyage-personnelle",
+   "name": "Cartes personnalisées de voyage",
+   "sector": "tech",
+   "category": "tech.data",
+   "subcategory": "tech.data.cartes",
+   "desc": "Créer une carte interactive de ses lieux, souvenirs et itinéraires à partager.",
+   "audience": "Voyageurs, familles, couples, enseignants",
+   "skills": [
+    "Choisir un outil",
+    "Ajouter des lieux",
+    "Inclure photos",
+    "Partager"
+   ],
+   "appSkills": [
+    "cartographie-osm",
+    "organisation-voyage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première carte",
+     "goal": "Créer une carte avec 10 lieux et photos",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Carte thématique",
+     "goal": "Ajouter itinéraires et notes",
+     "format": "atelier",
+     "duration": "2 h",
+     "group": "2-6",
+     "price": [
+      30,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carnet de voyage numérique",
+     "goal": "Intégrer photos et récits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      75,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carte partagée",
+     "goal": "Rendre une carte collaborative",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "3-8",
+     "price": [
+      115,
+      175
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former à la cartographie",
+     "goal": "Animer des ateliers cartes",
+     "format": "coaching",
+     "duration": "4 × 1 h 30",
+     "group": "1-3",
+     "price": [
+      200,
+      350
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "en-ligne",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "couples",
+    "familles",
+    "seniors",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste"
+   ],
+   "outputs": [
+    "carte",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voyage",
+    "ville",
+    "photo",
+    "objet-souvenir",
+    "tech"
+   ],
+   "competitors": [
+    "Applications de carte",
+    "Blogs voyage"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Usage agréable mais substituable par les applications grand public. Niche créative.",
+   "confidence": "estimation"
+  }
+ ]
+}

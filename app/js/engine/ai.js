@@ -87,7 +87,7 @@
     lines.push('Prénom : ' + (c.firstName || 'non précisé') + ' · ville : ' + (c.city || 'non précisée') + ' · ' + U.num(c.hoursPerWeek, 3) + ' h par semaine · budget ' + U.num(c.budgetPerMonth, 50) + ' € par mois');
     lines.push('Parcours : ' + ({ learn: 'apprendre', offer: 'transmettre', both: 'apprendre et transmettre' }[st.mode] || 'apprendre'));
     var sk = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level > 0; }).sort(function (a, b) { return st.skills[b].level - st.skills[a].level; });
-    if (sk.length) lines.push('Compétences : ' + sk.map(function (id) { var v = st.skills[id]; return C.data.sById[id].name + ' (niveau ' + v.level + '/4' + (v.years ? ', ' + v.years + ' ans' : '') + ')'; }).join(' ; '));
+    if (sk.length) lines.push('Compétences : ' + sk.map(function (id) { var v = st.skills[id]; return C.data.sById[id].name + ' (niveau ' + v.level + '/5, ' + C.LEVELS[v.level].toLowerCase() + (v.years ? ', ' + v.years + ' ans' : '') + ')'; }).join(' ; '));
     var ds = C.yesDesires(st);
     if (ds.length) lines.push('Envies : ' + ds.map(function (id) { var d = st.desires[id]; return C.data.sById[id].name + ' (cible ' + (d.target || 2) + '/4, horizon ' + (d.horizon || '3m') + ')'; }).join(' ; '));
     var a = st.style && st.style.archetype && C.ARCHETYPES.filter(function (x) { return x.id === st.style.archetype; })[0];
@@ -101,18 +101,18 @@
     var c = st.context || {}, out = [];
     var arch = st.style && st.style.archetype && C.ARCHETYPES.filter(function (x) { return x.id === st.style.archetype; })[0];
     var soft = C.softProfile(st).slice(0, 3).map(function (x) { return C.nm(x.soft); });
-    var top = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 3; }).map(function (id) { return C.nm(C.data.sById[id]); });
+    var top = Object.keys(st.skills || {}).filter(function (id) { return C.data.sById[id] && st.skills[id].level >= 2; }).map(function (id) { return C.nm(C.data.sById[id]); });
     var ds = C.yesDesires(st);
     out.push('EN BREF');
-    out.push((c.firstName ? c.firstName + ', vous' : 'Vous') + ' maîtrisez ' + (top.length ? top.slice(0, 3).join(', ') : 'déjà plusieurs choses') + (soft.length ? ', des pratiques qui développent ' + soft.join(', ') : '') + '.');
+    out.push((c.firstName ? c.firstName + ', vous' : 'Vous') + ' savez déjà faire ' + (top.length ? top.slice(0, 3).join(', ') : 'déjà plusieurs choses') + (soft.length ? ', des pratiques qui développent ' + soft.join(', ') : '') + '.');
     if (ds.length) {
       var p = C.learnPlan(st, ds[0]);
-      out.push('Votre envie prioritaire est ' + C.nm(p.s) + ' : environ ' + p.hours + ' h pour atteindre « ' + p.s.levels[p.target - 1].toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + String(p.hpw).replace('.', ',') + ' h par semaine.');
+      out.push('Votre envie prioritaire est ' + C.nm(p.s) + ' : environ ' + p.hours + ' h pour atteindre « ' + p.goal.toLowerCase() + ' », soit ' + p.weeks + ' semaines à ' + String(p.hpw).replace('.', ',') + ' h par semaine.');
       out.push('Premier pas cette semaine : ' + p.first.text.charAt(0).toLowerCase() + p.first.text.slice(1) + '.');
     }
     if (arch) out.push(arch.pref + ' Conseil : ' + arch.tips[0].charAt(0).toLowerCase() + arch.tips[0].slice(1) + '.');
     var sh = C.shareable(st);
-    if (sh.length) out.push('À partager : ' + sh.slice(0, 2).map(function (x) { return C.nm(x.s); }).join(' et ') + ' se transmettent bien en petit groupe, entre ' + U.eur(sh[0].range.lo) + ' et ' + U.eur(sh[0].range.hi) + ' la place.');
+    if (sh.length) out.push('À partager : en ' + C.nm(sh[0].s) + ', vous êtes niveau ' + sh[0].level + ' : ' + C.animateText(sh[0].level) + ', entre ' + U.eur(sh[0].range.lo) + ' et ' + U.eur(sh[0].range.hi) + ' la place.');
     return out.join('\n\n');
   };
 })(window);

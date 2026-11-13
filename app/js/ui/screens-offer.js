@@ -53,13 +53,27 @@
   function sec(id, k, title, hint) { return '<div class="section-h" id="' + id + '" tabindex="-1"><span class="kicker">' + E(k) + '</span><h2 class="h2">' + E(title) + '</h2>' + (hint ? '<span class="faint">' + hint + '</span>' : '') + '</div>'; }
 
   /* 1. offres */
+  // échelle de progression de l'hôte : ce que vous animez aujourd'hui, et le niveau à atteindre pour animer le palier suivant
+  ui.ladderPanel = function (plan) {
+    var L = plan.ladder || []; if (!L.length) return '';
+    return '<section class="panel" id="ladder" style="margin-bottom:16px"><div class="ph"><span class="t">Ce que vous pouvez animer</span><span class="hint">niveau n : ateliers de niveau n-1</span></div><div class="pb">' +
+      L.slice(0, 4).map(function (x, i) {
+        return '<div' + (i ? ' style="margin-top:16px"' : '') + '><div class="spread" style="margin-bottom:8px"><span class="h3" style="font-size:17px">' + E(x.s.name) + '</span><span class="animnote">' + ui.pill('Vous êtes niveau ' + x.level, 'int') + '</span></div>' +
+          '<p class="sp" style="margin-bottom:8px;color:var(--fg)">Vous êtes niveau ' + x.level + ' : ' + E(x.text) + '.</p>' +
+          '<div class="ladder5" role="list" aria-label="Échelle de ' + E(x.s.name) + '">' + x.rungs.map(function (r) {
+            return '<div role="listitem" class="' + (r.current ? 'cur' : r.done ? 'done' : '') + '"' + (r.current ? ' aria-current="true"' : '') + '><div class="lv">' + r.level + ' · ' + E(r.label) + '</div><div class="nm">' + E(r.milestone) + '</div><div class="an">' + (r.animates.length ? 'anime le niveau ' + r.animates.join(', ') + (r.level >= C.LEVEL_MAX ? ', forme les hôtes' : '') : 'n’anime pas') + '</div></div>';
+          }).join('') + '</div>' +
+          (x.next ? '<p class="sp" style="margin-top:8px">Pour animer le palier ' + x.next.palier + ' : monter au niveau ' + x.next.level + ' (' + E(x.next.label.toLowerCase()) + '), environ ' + x.next.hours + ' h de pratique. Objectif : « ' + E(U.lc(x.next.milestone)) + ' ».</p>' : '<p class="sp" style="margin-top:8px">Niveau référent : vous animez le niveau 4 et pouvez former les hôtes de vos ateliers.</p>') + '</div>';
+      }).join('') + '</div></section>';
+  };
   function secOffers(st, plan) {
-    return sec('s-offres', '01 · Offres', 'Vos offres prêtes à publier', plan.offers.length + ' offres, prix et trame inclus') + '<div class="offers">' + plan.offers.map(function (o, i) {
+    return sec('s-offres', '01 · Offres', 'Vos offres prêtes à publier', plan.offers.length + ' offres, prix et trame inclus') + ui.ladderPanel(plan) + '<div class="offers">' + plan.offers.map(function (o, i) {
       var reg = o.regulated && plan.regs.filter(function (r) { return r.id === o.regulated; })[0];
       ui._copyStore = ui._copyStore || {};
-      ui._copyStore['offer' + i] = o.title + '\n' + o.hook + '\n' + C.FORMATS[o.fmt] + ' · ' + C.minutes(o.duration) + ' · ' + o.size + ' personne(s) · ' + U.eur(o.price) + ' ' + o.unit.replace('€ ', '') + '\n\nDéroulé\n' + o.outline.map(function (t) { return (o.duration ? C.minutes(t.start) + ' · ' : '') + t.label + ' : ' + t.text; }).join('\n') + '\n\nMatériel\n' + o.material.map(function (m) { return '· ' + m; }).join('\n');
+      ui._copyStore['offer' + i] = o.title + '\n' + o.palierTag + ' · ' + o.animate + '\n' + o.hook + '\n' + C.FORMATS[o.fmt] + ' · ' + C.minutes(o.duration) + ' · ' + o.size + ' personne(s) · ' + U.eur(o.price) + ' ' + o.unit.replace('€ ', '') + '\n\nDéroulé\n' + o.outline.map(function (t) { return (o.duration ? C.minutes(t.start) + ' · ' : '') + t.label + ' : ' + t.text; }).join('\n') + '\n\nMatériel\n' + o.material.map(function (m) { return '· ' + m; }).join('\n');
       return '<article class="panel offer"><div class="top"><div class="spread"><span class="row">' + ui.uniTag(o.s.universe) + ui.pill(C.FORMATS[o.fmt], 'idle') + '</span>' + (reg ? ui.pill('Activité encadrée', 'wait') : '') + '</div>' +
         '<h3 class="ttl" style="margin-top:10px">' + E(o.title) + '</h3><p class="hook">' + E(o.hook) + '</p>' +
+        '<p class="animline"><b>' + E(o.palierTag) + '</b><span>' + E(o.animate) + '</span></p>' +
         '<div class="metas">' + (o.duration ? ui.pill(C.minutes(o.duration), 'idle', false) : '') + ui.pill(o.size > 1 ? o.size + ' personnes' : 'individuel', 'idle', false) + ui.pill('pour ' + o.audience, 'idle', false) + '</div></div>' +
         '<div class="pricebox"><div><div class="lbl">Prix conseillé</div><div class="p num">' + U.fmt(o.price) + ' <small>' + E(o.unit) + '</small></div></div><div class="faint" style="text-align:right;font-size:11.5px">fourchette ' + U.eur(o.pricing.lo) + ' à ' + U.eur(o.pricing.hi) + (o.pricing.fallback ? '<br>repli générique' : '') + (o.size > 1 && ['atelier', 'stage', 'evenement'].indexOf(o.fmt) >= 0 ? '<br>' + U.eur(o.price * o.size) + ' par séance complète' : '') + '</div></div>' +
         '<details class="more"><summary>Pourquoi ce prix</summary><div class="why">' + o.pricing.steps.map(function (s) { return '<div class="wr"><span>' + E(s.label) + '</span><span>' + E(s.val) + '</span></div>'; }).join('') + '<div class="wr"><span>Prix arrondi</span><span>' + U.eur(o.price) + '</span></div></div></details>' +

@@ -1,0 +1,7951 @@
+{
+ "sector": "musique",
+ "categories": [
+  {
+   "id": "musique.instruments",
+   "name": "Instruments",
+   "desc": "Cordes, claviers, percussions et vents : jouer ses premiers morceaux.",
+   "subcategories": [
+    {
+     "id": "musique.instruments.cordes",
+     "name": "Guitare, ukulélé, basse, violon",
+     "desc": "Instruments à cordes pour adultes et familles."
+    },
+    {
+     "id": "musique.instruments.claviers",
+     "name": "Piano et claviers",
+     "desc": "Piano acoustique et claviers : accords, reprise, blues."
+    },
+    {
+     "id": "musique.instruments.percussions-vents",
+     "name": "Percussions et vents",
+     "desc": "Batterie, djembé, handpan, harmonica, flûte."
+    }
+   ]
+  },
+  {
+   "id": "musique.voix",
+   "name": "Voix et chant",
+   "desc": "Chanter juste, en groupe, seul, avec ses enfants.",
+   "subcategories": [
+    {
+     "id": "musique.voix.technique",
+     "name": "Technique vocale",
+     "desc": "Justesse, souffle, voix chantée."
+    },
+    {
+     "id": "musique.voix.collectif",
+     "name": "Chant collectif",
+     "desc": "Chorales, polyphonies, gospel, chants de marins."
+    },
+    {
+     "id": "musique.voix.voix-urbaines",
+     "name": "Voix urbaines",
+     "desc": "Beatbox, rap et flow."
+    },
+    {
+     "id": "musique.voix.voix-famille",
+     "name": "Voix en famille",
+     "desc": "Berceuses, éveil musical, chant pour la mémoire."
+    }
+   ]
+  },
+  {
+   "id": "musique.composition",
+   "name": "Composition et théorie",
+   "desc": "Écrire des chansons, comprendre l'harmonie, improviser.",
+   "subcategories": [
+    {
+     "id": "musique.composition.chanson",
+     "name": "Écrire et composer des chansons",
+     "desc": "Texte, mélodie, accords."
+    },
+    {
+     "id": "musique.composition.theorie",
+     "name": "Théorie et oreille",
+     "desc": "Comprendre la musique sans solfège, lire une partition."
+    },
+    {
+     "id": "musique.composition.improvisation",
+     "name": "Improvisation",
+     "desc": "Jazz, blues et improvisation libre."
+    }
+   ]
+  },
+  {
+   "id": "musique.production",
+   "name": "Production et MAO",
+   "desc": "Boucles, beats, synthés, enregistrement, mixage et IA.",
+   "subcategories": [
+    {
+     "id": "musique.production.mao",
+     "name": "Premières productions",
+     "desc": "Logiciel, boucles, beats, enregistrement maison."
+    },
+    {
+     "id": "musique.production.son",
+     "name": "Sons et textures",
+     "desc": "Ambient, synthèse, sound design, mixage."
+    },
+    {
+     "id": "musique.production.ia-usages",
+     "name": "Musique et IA, musique pour l'image",
+     "desc": "Créer avec l'IA, bande-son de vidéo ou de jeu."
+    }
+   ]
+  },
+  {
+   "id": "musique.dj-ecoute",
+   "name": "DJ, vinyle et écoute",
+   "desc": "Mixer, chercher des disques, écouter ensemble.",
+   "subcategories": [
+    {
+     "id": "musique.dj-ecoute.dj",
+     "name": "DJ et mix",
+     "desc": "Contrôleur, set, open decks."
+    },
+    {
+     "id": "musique.dj-ecoute.vinyle-ecoute",
+     "name": "Vinyle et écoute",
+     "desc": "Digging, salons d'écoute, hi-fi, culture musicale."
+    }
+   ]
+  },
+  {
+   "id": "musique.scene",
+   "name": "Jouer ensemble et monter sur scène",
+   "desc": "Jam, groupe, batucada, premiers concerts.",
+   "subcategories": [
+    {
+     "id": "musique.scene.ensemble",
+     "name": "Jouer à plusieurs",
+     "desc": "Jam, orchestre d'ukulélés, batucada."
+    },
+    {
+     "id": "musique.scene.premiere-scene",
+     "name": "Premiers pas sur scène",
+     "desc": "Open mic, groupe, trac."
+    }
+   ]
+  },
+  {
+   "id": "musique.lutherie",
+   "name": "Lutherie et culture musicale",
+   "desc": "Régler un instrument, en fabriquer, découvrir la musique classique.",
+   "subcategories": [
+    {
+     "id": "musique.lutherie.atelier-instrument",
+     "name": "Régler et fabriquer",
+     "desc": "Réglage, cigar box, kalimba."
+    },
+    {
+     "id": "musique.lutherie.culture",
+     "name": "Culture musicale",
+     "desc": "Guides d'écoute pour découvrir le répertoire."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "musique-guitare-4-accords",
+   "name": "Guitare : 4 accords pour 50 chansons",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.cordes",
+   "desc": "Jouer des chansons célèbres avec 4 accords et un rythme simple.",
+   "audience": "Adultes 25-55 ans, parents, étudiants, bricoleurs",
+   "skills": [
+    "Accords ouverts",
+    "Changements",
+    "Rythme de main droite",
+    "Accompagner une chanson"
+   ],
+   "appSkills": [
+    "guitare-accompagnement"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chanson",
+     "goal": "Jouer une chanson complète avec quatre accords",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythmes et barrés",
+     "goal": "Enchaîner 8 accords et un rythme sans s'arrêter",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répertoire de 10 titres",
+     "goal": "Jouer dix chansons de mémoire en groupe",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      120,
+      185
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arrangements personnels",
+     "goal": "Accompagner une voix avec intro, pont et fin",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Former des hôtes guitare",
+     "goal": "Animer un cercle de guitare et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 3,
+    "supply": 5,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "convivial",
+    "scene",
+    "geste",
+    "voix"
+   ],
+   "competitors": [
+    "Cours particuliers",
+    "Guitar Hero Paris",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Demande énorme, matériel prêté, mais la progression se fait souvent seul ou en cours individuels. Cercles de jam efficaces.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-guitare-fingerstyle",
+   "name": "Guitare fingerstyle et picking",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.cordes",
+   "desc": "Jouer basse et mélodie ensemble avec les doigts : folk, blues, ballades.",
+   "audience": "Guitaristes 30-60 ans, passionnés",
+   "skills": [
+    "Pouce alterné",
+    "Arpèges",
+    "Mélodie et basse",
+    "Morceaux célèbres"
+   ],
+   "appSkills": [
+    "guitare-fingerstyle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier arpège",
+     "goal": "Jouer un arpège régulier sur une chanson",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pouce alterné",
+     "goal": "Tenir une basse alternée avec la mélodie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Morceau complet",
+     "goal": "Jouer un morceau fingerstyle en entier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Arrangement perso",
+     "goal": "Arranger un standard en fingerstyle",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach guitare",
+     "goal": "Accompagner des guitaristes en individuel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "geste",
+    "calme",
+    "voix",
+    "couleur"
+   ],
+   "competitors": [
+    "Cours particuliers",
+    "Stages guitare"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public passionné et peu nombreux, mais prêt à payer pour un stage. Se vend mieux en stage qu'en atelier court.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-ukulele-groupe",
+   "name": "Ukulélé en groupe",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.cordes",
+   "desc": "Jouer du ukulélé à plusieurs sur des chansons populaires en une séance.",
+   "audience": "Familles, seniors, collègues, groupes d'amis",
+   "skills": [
+    "Accords à 3 doigts",
+    "Strumming",
+    "Jouer ensemble",
+    "Chanter en jouant"
+   ],
+   "appSkills": [
+    "ukulele"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier ukulélé",
+     "goal": "Jouer 3 accords et accompagner un refrain",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Strumming et chant",
+     "goal": "Enchaîner un morceau en chantant",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Orchestre de ukulélés",
+     "goal": "Tenir sa partie dans un groupe de dix",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Solos et arrangements",
+     "goal": "Jouer un petit solo",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur ukulélé",
+     "goal": "Animer un groupe et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "entreprise",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "convivial",
+    "famille",
+    "voix",
+    "fete"
+   ],
+   "competitors": [
+    "Ukulele clubs",
+    "Ateliers entreprise"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Instrument peu cher, très convivial, résultat en 1 h. Idéal comme porte d'entrée collective et en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-basse-groove",
+   "name": "Basse électrique et groove",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.cordes",
+   "desc": "Tenir le rythme avec la basse : lignes simples, groove, jouer avec un batteur.",
+   "audience": "Ados, jeunes adultes, groupes amateurs",
+   "skills": [
+    "Doigts et médiators",
+    "Lignes de basse",
+    "Groove",
+    "Jouer avec un batteur"
+   ],
+   "appSkills": [
+    "basse"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières lignes",
+     "goal": "Jouer une ligne de basse sur 3 chansons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Groove et rythme",
+     "goal": "Tenir le groove un morceau entier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lire un chiffrage",
+     "goal": "Jouer sur une grille d'accords",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jouer en groupe",
+     "goal": "Tenir la basse dans un groupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach basse",
+     "goal": "Accompagner des bassistes en individuel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "rythme",
+    "scene",
+    "geste",
+    "convivial"
+   ],
+   "competitors": [
+    "Cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel dans les groupes (peu de bassistes), mais peu de demande grand public pour l'atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-violon-adulte",
+   "name": "Violon et cordes frottées pour adultes",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.cordes",
+   "desc": "Reprendre ou découvrir le violon à l'âge adulte, sans passer par le conservatoire.",
+   "audience": "Adultes 30-60 ans, anciens élèves, seniors",
+   "skills": [
+    "Tenue et archet",
+    "Justesse",
+    "Morceaux simples",
+    "Jouer à plusieurs"
+   ],
+   "appSkills": [
+    "violon"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sons",
+     "goal": "Produire un son net avec l'archet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gammes et mélodies",
+     "goal": "Jouer 5 mélodies simples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Reprendre un répertoire",
+     "goal": "Jouer un morceau en groupe",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Interprétation",
+     "goal": "Jouer avec expressivité",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach de cordes",
+     "goal": "Accompagner des élèves en individuel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 1,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "calme",
+    "geste",
+    "emotion",
+    "scene"
+   ],
+   "competitors": [
+    "Conservatoires",
+    "Écoles de musique"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Technique longue, résultat tardif. Demande faible et concurrence des conservatoires. À écarter du court terme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-piano-accords-pop",
+   "name": "Piano : accords pop et accompagnement",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.claviers",
+   "desc": "Jouer des chansons populaires à la main droite et aux accords, sans lire la partition.",
+   "audience": "Jeunes actifs, parents, amateurs",
+   "skills": [
+    "Accords et renversements",
+    "Main gauche",
+    "Rythmes",
+    "Accompagner une chanson"
+   ],
+   "appSkills": [
+    "piano"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première chanson",
+     "goal": "Jouer une chanson avec 4 accords",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Accords variés",
+     "goal": "Jouer 12 accords et leurs renversements",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style et rythme",
+     "goal": "Accompagner trois styles différents",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chanter en s'accompagnant",
+     "goal": "Jouer et chanter un titre complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte piano",
+     "goal": "Animer un atelier et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "geste",
+    "calme",
+    "voix",
+    "convivial"
+   ],
+   "competitors": [
+    "Cours particuliers",
+    "Applis piano"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Forte demande mais clavier nécessaire sur place : lieux équipés ou claviers prêtés. Mieux en petit groupe de 4.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-piano-reprise-adulte",
+   "name": "Reprendre le piano à l'âge adulte",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.claviers",
+   "desc": "Retrouver le plaisir du piano après des années d'arrêt : répertoire, mémoire, lecture.",
+   "audience": "Adultes 35-65 ans, anciens élèves",
+   "skills": [
+    "Remise en main",
+    "Lecture de partition",
+    "Mémoire",
+    "Pièces courtes"
+   ],
+   "appSkills": [
+    "piano",
+    "solfege-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Retrouver ses doigts",
+     "goal": "Rejouer une pièce courte en entier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lecture et répertoire",
+     "goal": "Déchiffrer une partition moyenne",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Interpréter",
+     "goal": "Jouer 3 pièces avec nuances",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Récital d'amis",
+     "goal": "Jouer 15 min devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach piano",
+     "goal": "Accompagner des élèves en individuel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 2,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "calme",
+    "emotion",
+    "geste",
+    "scene"
+   ],
+   "competitors": [
+    "Conservatoires",
+    "Cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande régulière, bon pouvoir d'achat des 40-60 ans, offre dispersée. Mieux en cours individuel qu'en atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-piano-blues-boogie",
+   "name": "Piano blues et boogie",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.claviers",
+   "desc": "Jouer une grille de blues et un boogie-woogie en quelques séances.",
+   "audience": "Pianistes, amateurs de jazz, seniors",
+   "skills": [
+    "Grille de blues",
+    "Boogie main gauche",
+    "Improvisation sur 5 notes",
+    "Jouer en groupe"
+   ],
+   "appSkills": [
+    "piano",
+    "improvisation-jazz-blues"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier blues",
+     "goal": "Jouer une grille de 12 mesures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boogie-woogie",
+     "goal": "Tenir la main gauche en boogie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Improviser",
+     "goal": "Improviser sur 5 notes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jouer avec un groupe",
+     "goal": "Jouer avec une section rythmique",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte blues",
+     "goal": "Animer des jams et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "parents"
+   ],
+   "senses": [
+    "ouie",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "jeu",
+    "calme",
+    "scene",
+    "geste"
+   ],
+   "competitors": [
+    "Cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public très restreint, joyeux et fidèle. Combine bien avec une soirée jam.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-batterie-debutant",
+   "name": "Batterie pour débutants",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.percussions-vents",
+   "desc": "Tenir un rythme de base à la batterie, jouer sur des chansons connues.",
+   "audience": "Ados, adultes, parents, groupes",
+   "skills": [
+    "Tenir le tempo",
+    "Rythmes de base",
+    "Roulements",
+    "Jouer sur un morceau"
+   ],
+   "appSkills": [
+    "batterie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier beat",
+     "goal": "Jouer un rythme de rock en continu",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Variations",
+     "goal": "Jouer 4 rythmes différents",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer sur un morceau",
+     "goal": "Accompagner une chanson complète",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Groove et cassures",
+     "goal": "Tenir un groove avec breaks",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach batterie",
+     "goal": "Accompagner des batteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "musique",
+    "rythme",
+    "scene",
+    "mouvement",
+    "fete"
+   ],
+   "competitors": [
+    "Cours particuliers",
+    "Studios de répétition"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Matériel lourd et bruyant, lieux rares : coût élevé pour le local. Intérêt réel mais logistique difficile.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-djembe-cajon",
+   "name": "Djembé, cajón et percussions en cercle",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.percussions-vents",
+   "desc": "Jouer des rythmes simples en cercle de percussions, jusqu'à tenir une pulsation collective.",
+   "audience": "Familles, entreprises, groupes, seniors, team building",
+   "skills": [
+    "Frappes de base",
+    "Pulsation",
+    "Rythmes africains",
+    "Dialogue rythmique"
+   ],
+   "appSkills": [
+    "djembe-percussions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier cercle",
+     "goal": "Tenir une pulsation en cercle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Frappes et rythmes",
+     "goal": "Jouer 3 rythmes avec 3 sons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Polyrythmie",
+     "goal": "Tenir sa partie sur deux rythmes superposés",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un cercle",
+     "goal": "Diriger un petit groupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur percussions",
+     "goal": "Former des hôtes de cercles",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "entreprises",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "rythme",
+    "convivial",
+    "musique",
+    "fete",
+    "defi"
+   ],
+   "competitors": [
+    "Ateliers team building",
+    "Écoles de percussion"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très bon format collectif, résultat dès la première séance, matériel prêté facilement. Fonctionne en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-handpan-tongue-drum",
+   "name": "Handpan et tongue drum",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.percussions-vents",
+   "desc": "Jouer un instrument mélodique et apaisant sans connaître la musique.",
+   "audience": "Adultes en quête de calme, seniors, bien-être",
+   "skills": [
+    "Frappes douces",
+    "Gammes de l'instrument",
+    "Pulsation",
+    "Improvisation douce"
+   ],
+   "appSkills": [
+    "djembe-percussions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers sons",
+     "goal": "Jouer une mélodie simple sur tongue drum",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gamme et improvisation",
+     "goal": "Improviser sur la gamme en 10 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Compositions courtes",
+     "goal": "Écrire une pièce de 2 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jouer en duo",
+     "goal": "Jouer avec un instrument ou une voix",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach sonore",
+     "goal": "Accompagner des élèves en individuel",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "geste"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "calme",
+    "bien-etre",
+    "musique",
+    "souffle",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers bien-être"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Beau pouvoir d'attraction, mais l'instrument coûte cher. À proposer avec des instruments prêtés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-harmonica-blues",
+   "name": "Harmonica blues",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.percussions-vents",
+   "desc": "Jouer un air et un riff de blues à l'harmonica en une séance.",
+   "audience": "Adultes, voyageurs, amateurs de blues",
+   "skills": [
+    "Respiration",
+    "Notes simples",
+    "Riffs de blues",
+    "Jouer sur une grille"
+   ],
+   "appSkills": [
+    "harmonica-blues"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier air",
+     "goal": "Jouer un air connu sur dix notes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Riffs de blues",
+     "goal": "Jouer un riff et bends de base",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer sur une grille",
+     "goal": "Accompagner un blues complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style et son",
+     "goal": "Choisir ses harmonicas",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte harmonica",
+     "goal": "Animer des jams",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "souffle",
+    "calme",
+    "geste",
+    "voyage"
+   ],
+   "competitors": [
+    "Cours particuliers"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Petit public, instrument peu cher, parfait en complément d'un atelier jam.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-flute-irlandaise",
+   "name": "Flûte et musiques traditionnelles",
+   "sector": "musique",
+   "category": "musique.instruments",
+   "subcategory": "musique.instruments.percussions-vents",
+   "desc": "Jouer des airs irlandais et bretons à la flûte ou au penny whistle.",
+   "audience": "Adultes, amateurs de folk, seniors",
+   "skills": [
+    "Souffle et doigtés",
+    "Ornements",
+    "Airs irlandais",
+    "Jouer en session"
+   ],
+   "appSkills": [
+    "instruments-a-vent"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers airs",
+     "goal": "Jouer 3 airs de danse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Ornements",
+     "goal": "Jouer avec ornements de base",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répertoire de 10 airs",
+     "goal": "Jouer dix airs de mémoire",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Session irlandaise",
+     "goal": "Jouer en session",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur session",
+     "goal": "Animer une session",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "geste"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "voyage",
+    "patrimoine",
+    "convivial",
+    "souffle"
+   ],
+   "competitors": [
+    "Écoles de musique trad"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit et passionné, réseau communautaire existant. Peu de revenus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-chant-pop-justesse",
+   "name": "Chant pop et justesse",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.technique",
+   "desc": "Chanter juste, tenir la note, chanter une chanson pop en entier.",
+   "audience": "Adultes 25-55 ans, timides, groupes",
+   "skills": [
+    "Respiration",
+    "Justesse",
+    "Posture",
+    "Interpréter"
+   ],
+   "appSkills": [
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chanter sans complexe",
+     "goal": "Chanter un refrain juste devant le groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Souffle et justesse",
+     "goal": "Tenir une phrase longue sans fausser",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Interpréter",
+     "goal": "Chanter un titre complet avec émotion",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Voix de scène",
+     "goal": "Chanter 3 titres devant public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach vocal",
+     "goal": "Accompagner des chanteurs et former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "musique",
+    "scene",
+    "emotion",
+    "souffle"
+   ],
+   "competitors": [
+    "Cours de chant",
+    "Karaokés",
+    "Chorales"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Désir de chanter très fort et très répandu, peur de la voix, mais prix plafonné. Marché de cours particuliers important.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-chant-lyrique-debutant",
+   "name": "Chant lyrique pour débutants",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.technique",
+   "desc": "Découvrir la voix lyrique : souffle, résonance, premier air.",
+   "audience": "Adultes 35-65 ans, amateurs d'opéra",
+   "skills": [
+    "Respiration",
+    "Résonance",
+    "Voyelles",
+    "Premier air"
+   ],
+   "appSkills": [
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma voix lyrique",
+     "goal": "Chanter une phrase avec résonance",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Souffle et legato",
+     "goal": "Tenir un air simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Un air d'opéra",
+     "goal": "Chanter un air complet",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Récital",
+     "goal": "Chanter devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach lyrique",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "musique",
+    "scene",
+    "emotion",
+    "calme"
+   ],
+   "competitors": [
+    "Conservatoires"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public restreint, mais rémunérateur. Besoin de piano et d'un professeur formé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-voix-et-timidite",
+   "name": "Oser sa voix : chanter sans complexe",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.technique",
+   "desc": "Se libérer de la peur de chanter en groupe : jeux vocaux, souffle, premier solo.",
+   "audience": "Timides, adultes, seniors, ateliers d'entreprise",
+   "skills": [
+    "Jeux vocaux",
+    "Respiration",
+    "Chanter en groupe",
+    "Premier solo"
+   ],
+   "appSkills": [
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières notes",
+     "goal": "Chanter un refrain devant 5 personnes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Voix libre",
+     "goal": "Chanter seul 30 secondes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jouer avec la voix",
+     "goal": "Improviser avec la voix",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chanter en public",
+     "goal": "Chanter un titre devant 20 personnes",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte voix",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "bien-etre",
+    "scene",
+    "emotion",
+    "souffle"
+   ],
+   "competitors": [
+    "Ateliers d'expression",
+    "Cours de chant"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Besoin fort et peu servi. Offre atelier court sans prérequis, utile aussi en entreprise.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-chorale-ephemere",
+   "name": "Chorale éphémère de quartier",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.collectif",
+   "desc": "Chanter à plusieurs voix en une séance, sans solfège ni audition.",
+   "audience": "Voisins, familles, seniors, entreprises",
+   "skills": [
+    "Échauffement",
+    "Chant à 2 voix",
+    "Écoute",
+    "Interprétation"
+   ],
+   "appSkills": [
+    "chant-choral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chanter ensemble",
+     "goal": "Chanter un chant à 3 voix en 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Harmonies à 3 voix",
+     "goal": "Tenir sa voix sans soutien",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle de chant",
+     "goal": "Tenir un répertoire de 6 chants",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Direction de chœur",
+     "goal": "Diriger un groupe de 20",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef de chœur hôte",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 1,
+    "space": 3,
+    "community": 5,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 1,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "musique",
+    "convivial",
+    "solidarite",
+    "emotion"
+   ],
+   "competitors": [
+    "Chorales",
+    "Choeurs éphémères"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Très attractif et social, mais prix très bas et attente de gratuité. Gros potentiel de lien, faible monétisation. Parade à concevoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-polyphonies-du-monde",
+   "name": "Polyphonies du monde",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.collectif",
+   "desc": "Chanter des polyphonies corses, géorgiennes ou bulgares en petit groupe.",
+   "audience": "Curieux de voix, amateurs de chants traditionnels",
+   "skills": [
+    "Chant sans partition",
+    "Harmonies serrées",
+    "Posture",
+    "Chants de tradition"
+   ],
+   "appSkills": [
+    "chant-choral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier chant",
+     "goal": "Chanter un chant à 3 voix",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Timbre et justesse",
+     "goal": "Tenir sa voix en harmonies serrées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répertoire de 5 chants",
+     "goal": "Chanter cinq chants de mémoire",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Spectacle",
+     "goal": "Chanter 20 min devant public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef de groupe",
+     "goal": "Animer un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "musique",
+    "voyage",
+    "patrimoine",
+    "emotion"
+   ],
+   "competitors": [
+    "Associations de chant traditionnel"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit, communautaire, peu rémunérateur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-gospel",
+   "name": "Gospel et chants soul",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.collectif",
+   "desc": "Chanter en chœur gospel et soul avec rythme et énergie.",
+   "audience": "Groupes d'amis, entreprises, familles",
+   "skills": [
+    "Rythme",
+    "Voix de poitrine",
+    "Harmonies",
+    "Mouvement"
+   ],
+   "appSkills": [
+    "chant-choral",
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier gospel",
+     "goal": "Chanter un classique en groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et voix",
+     "goal": "Chanter avec clap et pas de danse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Solos",
+     "goal": "Chanter un petit solo",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert",
+     "goal": "Chanter 20 min en concert",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef gospel",
+     "goal": "Diriger un chœur",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "musique",
+    "scene",
+    "emotion",
+    "convivial"
+   ],
+   "competitors": [
+    "Chorales gospel"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Demande régulière, offre réelle en chorales. Peu de revenus pour l'hôte.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-chants-marins",
+   "name": "Chants de marins et chants à boire",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.collectif",
+   "desc": "Chanter des shanties et chansons à reprendre en chœur, pour la fête.",
+   "audience": "Amis, entreprises, plaisanciers, fêtes",
+   "skills": [
+    "Appel et réponse",
+    "Rythme de travail",
+    "Refrains",
+    "Animer un public"
+   ],
+   "appSkills": [
+    "chant-choral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier shanty",
+     "goal": "Chanter un refrain en réponse à un soliste",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Répertoire de 8 chants",
+     "goal": "Chanter huit chants de mémoire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Soliste",
+     "goal": "Mener un chant devant le groupe",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Soirée",
+     "goal": "Animer 1 h de chants",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte chants",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "bateau",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "fete",
+    "convivial",
+    "voyage",
+    "eau"
+   ],
+   "competitors": [
+    "Groupes de chants de marins"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Univers festif mais très restreint, peu de disposition à payer. Complète une offre de soirée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-beatbox",
+   "name": "Beatbox",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.voix-urbaines",
+   "desc": "Produire des sons percussifs avec la bouche : kick, snare, hi-hat et premiers beats.",
+   "audience": "Ados, jeunes adultes, enfants dès 8 ans",
+   "skills": [
+    "Sons de base",
+    "Rythmes",
+    "Enchaînements",
+    "Boucle vocale"
+   ],
+   "appSkills": [
+    "beatbox"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers sons",
+     "goal": "Produire kick, hi-hat et snare",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premiers beats",
+     "goal": "Enchaîner un beat de 4 temps",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Loops et basses",
+     "goal": "Créer une boucle avec basse",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Freestyle",
+     "goal": "Jouer 2 min en public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach beatbox",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "parole",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "rythme",
+    "musique",
+    "scene",
+    "defi"
+   ],
+   "competitors": [
+    "Écoles de beatbox"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Résultat immédiat et visuel, matériel nul, très bon pour ados. Faible prix mais coût de lieu nul.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-rap-flow",
+   "name": "Rap : flow et écriture",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.voix-urbaines",
+   "desc": "Poser un texte sur une instru : rythme, rimes, flow.",
+   "audience": "Ados, jeunes adultes, étudiants",
+   "skills": [
+    "Rimes",
+    "Rythme du texte",
+    "Flow",
+    "Enregistrement"
+   ],
+   "appSkills": [
+    "composition-chansons",
+    "beatbox"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier flow",
+     "goal": "Poser 8 mesures sur une instru",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rimes et images",
+     "goal": "Écrire 16 mesures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Flow varié",
+     "goal": "Jouer 3 flows",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Enregistrer",
+     "goal": "Poser et enregistrer un morceau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach rap",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "voix",
+    "ecriture",
+    "musique",
+    "rythme",
+    "scene"
+   ],
+   "competitors": [
+    "Ateliers de rap",
+    "Studios"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune important mais peu prêt à payer. Fort potentiel avec des structures jeunesse.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-berceuses-comptines",
+   "name": "Berceuses et comptines pour tout-petits",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.voix-famille",
+   "desc": "Chanter des berceuses et comptines à son bébé avec justesse et plaisir.",
+   "audience": "Parents de nourrissons, assistantes maternelles",
+   "skills": [
+    "Voix douce",
+    "Répertoire de berceuses",
+    "Gestes et mouvements",
+    "Jeux de doigts"
+   ],
+   "appSkills": [
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma berceuse",
+     "goal": "Chanter une berceuse à son bébé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Comptines à gestes",
+     "goal": "Chanter 8 comptines avec gestes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Jeux musicaux",
+     "goal": "Animer un éveil musical",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rituel de coucher",
+     "goal": "Construire un rituel sonore",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur éveil",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "parents",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "toucher"
+   ],
+   "outputs": [
+    "son",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "voix",
+    "calme",
+    "musique",
+    "soin"
+   ],
+   "competitors": [
+    "Ateliers parents-bébés",
+    "PMI"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Public captif et sensible, mais attention : encadrement de très jeunes enfants. Revenu faible mais audience régulière.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-chant-seniors-memoire",
+   "name": "Chanter pour garder la mémoire",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.voix-famille",
+   "desc": "Chanter des chansons de sa jeunesse pour stimuler mémoire et lien social.",
+   "audience": "Seniors, résidences, aidants",
+   "skills": [
+    "Chansons d'époque",
+    "Respiration",
+    "Mémoire",
+    "Parole"
+   ],
+   "appSkills": [
+    "chant-choral"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Chansons d'hier",
+     "goal": "Chanter 5 chansons connues",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mémoire et rythme",
+     "goal": "Se rappeler paroles et rythme",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cercle régulier",
+     "goal": "Animer un cercle de chant",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert de résidence",
+     "goal": "Chanter devant des proches",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte résidence",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 0,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-midi",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voix",
+    "solidarite",
+    "musique",
+    "calme",
+    "famille"
+   ],
+   "competitors": [
+    "Associations de seniors"
+   ],
+   "regulated": "sante",
+   "verdict": "plus-tard",
+   "why": "Utilité sociale forte, financements publics plutôt que particuliers. Prix très bas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-eveil-musical-parents",
+   "name": "Éveil musical parents et enfants",
+   "sector": "musique",
+   "category": "musique.voix",
+   "subcategory": "musique.voix.voix-famille",
+   "desc": "Découvrir rythmes, instruments simples et chansons avec ses enfants de 2 à 6 ans.",
+   "audience": "Parents, enfants 2-6 ans, assistantes maternelles",
+   "skills": [
+    "Instruments simples",
+    "Rythmes",
+    "Jeux musicaux",
+    "Chansons"
+   ],
+   "appSkills": [
+    "chant-technique",
+    "djembe-percussions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier éveil",
+     "goal": "Jouer 3 jeux musicaux en famille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Instruments et rythmes",
+     "goal": "Utiliser 5 instruments simples",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Histoires musicales",
+     "goal": "Raconter avec des sons",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert de famille",
+     "goal": "Jouer devant la famille",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur éveil",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "domicile",
+    "salle-polyvalente",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-matin",
+    "vacances"
+   ],
+   "publics": [
+    "parents",
+    "enfants",
+    "familles"
+   ],
+   "senses": [
+    "ouie",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "famille",
+    "rythme",
+    "musique",
+    "fete",
+    "enfant"
+   ],
+   "competitors": [
+    "Ateliers éveil musical"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Forte demande des parents, mais encadrement d'enfants et agrément. Réseau de crèches à visiter.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-ecrire-chanson-fr",
+   "name": "Écrire une chanson en français",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.chanson",
+   "desc": "Écrire un couplet et un refrain qui tiennent debout, puis les chanter.",
+   "audience": "Auteurs amateurs, 25-60 ans, poètes",
+   "skills": [
+    "Thème et angle",
+    "Rimes et métrique",
+    "Couplet-refrain",
+    "Chanter son texte"
+   ],
+   "appSkills": [
+    "composition-chansons"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier refrain",
+     "goal": "Écrire un refrain de 4 vers",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couplets et pont",
+     "goal": "Écrire une chanson complète",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mélodie et chant",
+     "goal": "Poser sa chanson",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Réécriture",
+     "goal": "Améliorer son texte",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach auteur",
+     "goal": "Accompagner des auteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ecriture",
+    "musique",
+    "voix",
+    "scene",
+    "recit"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "Cours de chanson"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Intéressant pour les adultes créatifs, concurrence faible, public petit mais engagé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-topline-melodie",
+   "name": "Topline : inventer une mélodie sur des accords",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.chanson",
+   "desc": "Inventer une mélodie qui accroche sur une grille d'accords.",
+   "audience": "Musiciens amateurs, auteurs, producteurs",
+   "skills": [
+    "Intervalles",
+    "Phrases courtes",
+    "Hook",
+    "Variations"
+   ],
+   "appSkills": [
+    "composition-chansons",
+    "oreille-relative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première mélodie",
+     "goal": "Trouver une mélodie sur 4 accords",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Hook et refrain",
+     "goal": "Écrire un refrain mémorable",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Variations",
+     "goal": "Varier 3 couplets",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mélodie sur instru",
+     "goal": "Écrire une topline sur un morceau enregistré",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach topline",
+     "goal": "Accompagner des auteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "ecriture",
+    "voix",
+    "scene",
+    "reflexion"
+   ],
+   "competitors": [
+    "Ateliers de composition"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche musicale, peu d'offre, demande restreinte. Surtout pour des musiciens déjà équipés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-harmonie-pop",
+   "name": "Progressions d'accords et harmonie pop",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.chanson",
+   "desc": "Comprendre pourquoi certains accords s'enchaînent et en écrire.",
+   "audience": "Guitaristes, pianistes, auteurs",
+   "skills": [
+    "Degrés",
+    "Progressions",
+    "Cadences",
+    "Modulations"
+   ],
+   "appSkills": [
+    "solfege-lecture",
+    "composition-chansons"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les 4 accords",
+     "goal": "Reconnaître 4 progressions pop",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Degrés et fonctions",
+     "goal": "Transposer une progression",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Cadences et couleurs",
+     "goal": "Ajouter 7e et 9e",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écrire sa grille",
+     "goal": "Composer une grille originale",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur harmonie",
+     "goal": "Animer un cours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "parole",
+    "emotion"
+   ],
+   "outputs": [
+    "son",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "science",
+    "reflexion",
+    "ecriture",
+    "geste"
+   ],
+   "competitors": [
+    "Cours de théorie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public musicien sensible à l'explication, complément utile à d'autres niches.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-theorie-sans-solfege",
+   "name": "Théorie musicale sans solfège",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.theorie",
+   "desc": "Comprendre gammes, accords et rythmes avec des cartes et des jeux.",
+   "audience": "Adultes, musiciens autodidactes",
+   "skills": [
+    "Gammes",
+    "Accords",
+    "Rythmes",
+    "Écoute"
+   ],
+   "appSkills": [
+    "solfege-lecture",
+    "oreille-relative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre la musique",
+     "goal": "Nommer notes, gammes et accords",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter avec méthode",
+     "goal": "Repérer la structure d'un morceau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écrire une grille",
+     "goal": "Noter une chanson",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Analyse",
+     "goal": "Analyser un morceau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur de théorie",
+     "goal": "Animer un atelier",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "reflexion",
+    "jeu",
+    "science",
+    "ecriture"
+   ],
+   "competitors": [
+    "Cours de solfège",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel des autodidactes, ludique avec jeux de cartes. Prix modéré, rejouable en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-solfege-lecture",
+   "name": "Lire une partition",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.theorie",
+   "desc": "Déchiffrer une partition simple, avec ou sans instrument.",
+   "audience": "Adultes, anciens élèves, chanteurs",
+   "skills": [
+    "Notes sur la portée",
+    "Rythmes",
+    "Clés",
+    "Déchiffrage"
+   ],
+   "appSkills": [
+    "solfege-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premières notes",
+     "goal": "Lire 5 notes sur la portée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythmes écrits",
+     "goal": "Lire une partition simple",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Déchiffrer",
+     "goal": "Déchiffrer une pièce",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Lire à vue",
+     "goal": "Jouer à vue",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Formateur lecture",
+     "goal": "Animer un cours",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 3,
+    "community": 2,
+    "format": 3,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "reflexion",
+    "calme",
+    "ecriture",
+    "geste"
+   ],
+   "competitors": [
+    "Conservatoires",
+    "Cours de solfège"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin ponctuel, peu de désir. À vendre en complément d'un instrument.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-oreille-relative",
+   "name": "Entraîner son oreille",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.theorie",
+   "desc": "Reconnaître intervalles, accords et mélodies à l'oreille.",
+   "audience": "Musiciens, chanteurs, curieux",
+   "skills": [
+    "Intervalles",
+    "Accords",
+    "Relevé de mélodie",
+    "Dictée"
+   ],
+   "appSkills": [
+    "oreille-relative"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier relevé",
+     "goal": "Retrouver une mélodie simple à l'oreille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Intervalles",
+     "goal": "Reconnaître 6 intervalles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Accords",
+     "goal": "Reconnaître 4 types d'accords",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Relever un morceau",
+     "goal": "Relever un morceau en entier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach oreille",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 1,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "studio-musique",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "reflexion",
+    "jeu",
+    "ouie",
+    "calme"
+   ],
+   "competitors": [
+    "Applis d'oreille"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Beaucoup d'applis gratuites, très faible disposition à payer. Peu adapté à l'atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-improvisation-jazz-blues",
+   "name": "Improvisation blues et jazz",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.improvisation",
+   "desc": "Improviser sur une grille de blues puis sur des standards simples.",
+   "audience": "Instrumentistes intermédiaires, seniors",
+   "skills": [
+    "Gamme pentatonique",
+    "Grille de blues",
+    "Phrasé",
+    "Écoute"
+   ],
+   "appSkills": [
+    "improvisation-jazz-blues"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier chorus",
+     "goal": "Improviser 12 mesures de blues",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Gammes et phrases",
+     "goal": "Utiliser 3 gammes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Standards",
+     "goal": "Improviser sur un standard",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      120,
+      185
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jam",
+     "goal": "Jouer en jam",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach jazz",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "jeu",
+    "scene",
+    "geste",
+    "reflexion"
+   ],
+   "competitors": [
+    "Écoles de jazz",
+    "Clubs de jazz"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit, souvent déjà instrumentiste, bonne communauté de clubs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-improvisation-libre",
+   "name": "Improvisation libre et musique collective",
+   "sector": "musique",
+   "category": "musique.composition",
+   "subcategory": "musique.composition.improvisation",
+   "desc": "Improviser sans partition en groupe, avec voix, objets et instruments simples.",
+   "audience": "Adultes, groupes, entreprises créatives",
+   "skills": [
+    "Écoute",
+    "Jeux sonores",
+    "Dialogue",
+    "Construction collective"
+   ],
+   "appSkills": [
+    "improvisation-jazz-blues"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Jouer sans notes",
+     "goal": "Improviser 5 min en groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Écouter et répondre",
+     "goal": "Répondre à un partenaire",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Formes libres",
+     "goal": "Structurer une impro de 10 min",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert d'impro",
+     "goal": "Jouer devant un public",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur d'impro",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "studio-musique",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "jeu",
+    "scene",
+    "convivial",
+    "defi"
+   ],
+   "competitors": [
+    "Collectifs d'impro"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très accessible sans prérequis, original, adapté aux équipes. Moins de revenus.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-mao-premiere-boucle",
+   "name": "Première boucle en MAO",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.mao",
+   "desc": "Créer une boucle de 8 mesures dans Ableton ou GarageBand.",
+   "audience": "Étudiants, jeunes adultes, ados",
+   "skills": [
+    "Interface",
+    "Samples",
+    "Rythme",
+    "Basse et accord"
+   ],
+   "appSkills": [
+    "mixage-mastering",
+    "enregistrement-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première boucle",
+     "goal": "Créer une boucle de 8 mesures",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Arrangement",
+     "goal": "Construire un morceau d'1 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Sons et effets",
+     "goal": "Utiliser 3 effets",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Finir un morceau",
+     "goal": "Terminer un morceau de 3 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach prod",
+     "goal": "Accompagner des producteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "tech",
+    "rythme",
+    "geste",
+    "ia"
+   ],
+   "competitors": [
+    "Cours de MAO",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte, mais beaucoup de contenu gratuit. L'atelier se justifie par l'accompagnement et le matériel prêté.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-beatmaking-sampling",
+   "name": "Beatmaking et sampling",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.mao",
+   "desc": "Créer un beat hip-hop à partir d'un échantillon.",
+   "audience": "Ados, jeunes adultes, passionnés de hip-hop",
+   "skills": [
+    "Samples",
+    "Découpe",
+    "Batterie",
+    "Arrangement"
+   ],
+   "appSkills": [
+    "beatmaking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier beat",
+     "goal": "Découper un sample et créer un beat",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Boucles et variations",
+     "goal": "Faire 3 beats",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mixage de base",
+     "goal": "Équilibrer batterie et sample",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Beat complet",
+     "goal": "Produire un beat de 3 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach beat",
+     "goal": "Accompagner des producteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 3,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "rythme",
+    "musique",
+    "tech",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Studios",
+    "Ateliers MAO"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Public jeune, tendance hip-hop, droit des samples à expliquer. Matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-enregistrement-maison",
+   "name": "Enregistrement et prise de son à la maison",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.mao",
+   "desc": "Enregistrer voix et guitare proprement avec un micro et une interface.",
+   "audience": "Musiciens amateurs, chanteurs, jeunes",
+   "skills": [
+    "Micro et interface",
+    "Placement",
+    "Niveaux",
+    "Prise de voix"
+   ],
+   "appSkills": [
+    "enregistrement-maison",
+    "mixage-mastering"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première prise",
+     "goal": "Enregistrer une voix propre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Guitare et voix",
+     "goal": "Enregistrer deux pistes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Acoustique du lieu",
+     "goal": "Traiter une pièce",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Maquette complète",
+     "goal": "Enregistrer un morceau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach enregistrement",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "tiers-lieu",
+    "domicile"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "etudiants",
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "geste"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "tech",
+    "son",
+    "voix",
+    "geste"
+   ],
+   "competitors": [
+    "Home studio",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel des musiciens, matériel à prévoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-ambient-electronica",
+   "name": "Ambient et electronica",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.son",
+   "desc": "Composer des textures et nappes évolutives avec synthé et logiciel.",
+   "audience": "Producteurs amateurs, amateurs d'électro, curieux",
+   "skills": [
+    "Nappes",
+    "Synthèse",
+    "Effets",
+    "Structure"
+   ],
+   "appSkills": [
+    "ambient-electronica",
+    "sound-design"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier drone",
+     "goal": "Créer une nappe évolutive",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Textures",
+     "goal": "Superposer 3 couches",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Effets",
+     "goal": "Utiliser réverbération et delay",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce de 5 min",
+     "goal": "Composer une pièce ambient",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach ambient",
+     "goal": "Accompagner des producteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "studio-musique",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "neurodivers"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "calme",
+    "tech",
+    "science",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers MAO",
+    "Modulaire"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Niche fidèle, demande modeste, concurrence quasi absente. Très peu de professeurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-synthese-modulaire",
+   "name": "Synthèse sonore et modulaire",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.son",
+   "desc": "Comprendre oscillateurs, filtres et enveloppes avec un synthé ou un modulaire.",
+   "audience": "Passionnés d'électronique, producteurs",
+   "skills": [
+    "Oscillateurs",
+    "Filtres",
+    "Enveloppes",
+    "Patch"
+   ],
+   "appSkills": [
+    "sound-design",
+    "live-electronique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier son",
+     "goal": "Créer un son de basse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Patch de base",
+     "goal": "Créer un patch complet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Séquences",
+     "goal": "Créer une séquence",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Performance",
+     "goal": "Jouer 10 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach modulaire",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 1,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "neurodivers"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "tech",
+    "science",
+    "fabrication",
+    "reflexion"
+   ],
+   "competitors": [
+    "Ateliers modulaires"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Public très restreint, matériel coûteux. Peu adapté à du court terme.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-paysages-sonores",
+   "name": "Paysages sonores et field recording",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.son",
+   "desc": "Enregistrer son quartier et en faire une pièce sonore.",
+   "audience": "Curieux, photographes, balades",
+   "skills": [
+    "Micro",
+    "Écoute attentive",
+    "Montage",
+    "Cartes sonores"
+   ],
+   "appSkills": [
+    "enregistrement-maison"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écoute du quartier",
+     "goal": "Enregistrer 5 sons",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Montage",
+     "goal": "Monter une pièce de 2 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carte sonore",
+     "goal": "Créer une carte sonore",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce finie",
+     "goal": "Réaliser une pièce de 5 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach sonore",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 2,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "neurodivers"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion",
+    "mouvement"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ville",
+    "nature",
+    "balade",
+    "musique",
+    "calme"
+   ],
+   "competitors": [
+    "Ateliers de sound walk"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très original, public petit, très peu d'offre. À combiner avec des balades.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-mixage-mastering",
+   "name": "Mixage et mastering",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.son",
+   "desc": "Équilibrer, égaliser et finaliser un morceau.",
+   "audience": "Producteurs amateurs, chanteurs",
+   "skills": [
+    "Équilibre",
+    "Égalisation",
+    "Compression",
+    "Mastering"
+   ],
+   "appSkills": [
+    "mixage-mastering"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Équilibrer",
+     "goal": "Équilibrer 4 pistes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Égalisation",
+     "goal": "Corriger 3 problèmes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Compression",
+     "goal": "Utiliser un compresseur",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Mix complet",
+     "goal": "Mixer un morceau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach mix",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "studio-musique",
+    "en-ligne",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "neurodivers"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "tech",
+    "geste",
+    "science",
+    "fabrication"
+   ],
+   "competitors": [
+    "Cours de MAO"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public intermédiaire plus enclin à payer, valeur claire, pas d'espace local particulier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-musique-ia",
+   "name": "Créer de la musique avec l'IA",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.ia-usages",
+   "desc": "Utiliser des outils d'IA pour composer, arranger et retoucher des morceaux.",
+   "audience": "Créatifs, jeunes, producteurs",
+   "skills": [
+    "Prompts musicaux",
+    "Édition",
+    "Droits",
+    "Retouche"
+   ],
+   "appSkills": [
+    "ambient-electronica",
+    "composition-chansons"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier morceau IA",
+     "goal": "Générer un morceau et le trier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Prompts précis",
+     "goal": "Obtenir 3 styles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Édition",
+     "goal": "Retoucher un morceau IA",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet complet",
+     "goal": "Créer un titre de 3 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach IA",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 5,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "studio-musique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "ia",
+    "musique",
+    "tech",
+    "ecriture",
+    "fabrication"
+   ],
+   "competitors": [
+    "Tutos YouTube"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Forte curiosité, droits flous et outils changeants. Contenu qui vieillit vite.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-musique-pour-video",
+   "name": "Musique pour ses vidéos",
+   "sector": "musique",
+   "category": "musique.production",
+   "subcategory": "musique.production.ia-usages",
+   "desc": "Choisir ou créer la bande-son de ses vidéos, sans risque de droits.",
+   "audience": "Créateurs de contenu, associations, petits commerces",
+   "skills": [
+    "Choix de la musique",
+    "Droits",
+    "Montage",
+    "Boucles"
+   ],
+   "appSkills": [
+    "mixage-mastering"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première bande-son",
+     "goal": "Choisir une musique libre",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Droits",
+     "goal": "Éviter les problèmes de droits",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Création simple",
+     "goal": "Créer une boucle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Bande-son complète",
+     "goal": "Composer 1 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach créateurs",
+     "goal": "Accompagner des vidéastes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "en-ligne",
+    "studio-musique"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "entreprises"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "son",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "musique",
+    "tech",
+    "droit",
+    "fabrication"
+   ],
+   "competitors": [
+    "Formations YouTube"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Besoin pragmatique pour les créateurs de contenu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-dj-controleur",
+   "name": "Initiation DJ sur contrôleur",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.dj",
+   "desc": "Mixer deux morceaux, caler les tempos, enchaîner un petit set.",
+   "audience": "Jeunes adultes, étudiants, amis, fêtes",
+   "skills": [
+    "Écoute",
+    "Caler les tempos",
+    "Transitions",
+    "Effets"
+   ],
+   "appSkills": [
+    "dj-mix"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier mix",
+     "goal": "Enchaîner 2 morceaux en beatmatch",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Transitions",
+     "goal": "Faire 5 transitions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Set de 20 min",
+     "goal": "Jouer un set",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style propre",
+     "goal": "Construire un style",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach DJ",
+     "goal": "Accompagner des DJ",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "studio-musique",
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "rythme",
+    "fete",
+    "ville",
+    "scene"
+   ],
+   "competitors": [
+    "DJ schools",
+    "Ateliers de club"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande élevée, concurrence des écoles de DJ, matériel de location à prévoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-set-et-transitions",
+   "name": "Construire un set et enchaîner",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.dj",
+   "desc": "Préparer un set de 1 h avec fil rouge, transitions et énergie.",
+   "audience": "DJ amateurs, organisateurs de soirées",
+   "skills": [
+    "Narration du set",
+    "Énergie",
+    "Transitions",
+    "Playlist"
+   ],
+   "appSkills": [
+    "dj-mix"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier set",
+     "goal": "Planifier un set de 30 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Narration",
+     "goal": "Construire un fil rouge",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Énergie",
+     "goal": "Gérer l'énergie d'une soirée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Set de 1 h",
+     "goal": "Jouer 1 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach DJ",
+     "goal": "Accompagner des DJ",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 3,
+    "online": 3
+   },
+   "venues": [
+    "studio-musique",
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "fete",
+    "ville",
+    "scene",
+    "rythme"
+   ],
+   "competitors": [
+    "DJ schools"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public restreint, complément d'un atelier DJ.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-open-decks",
+   "name": "Open decks de quartier",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.dj",
+   "desc": "Soirées de mix ouvertes à tous : jouer ses disques devant du public.",
+   "audience": "Passionnés de disques, jeunes adultes",
+   "skills": [
+    "Choisir ses morceaux",
+    "Mixer en direct",
+    "Parler au public",
+    "Gérer le trac"
+   ],
+   "appSkills": [
+    "dj-mix",
+    "digging-vinyle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier open deck",
+     "goal": "Mixer 15 min devant le public",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Sélection",
+     "goal": "Choisir 10 disques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Lecture du public",
+     "goal": "Adapter son set",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Résidence",
+     "goal": "Jouer 1 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte open decks",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement"
+   ],
+   "outputs": [
+    "son",
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "fete",
+    "ville",
+    "scene",
+    "vinyle"
+   ],
+   "competitors": [
+    "Bars",
+    "Open decks existants"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Format très communautaire, prix bas, intérêt pour des lieux partenaires. Peu rémunérateur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-vinyle-digging",
+   "name": "Vinyle et digging",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.vinyle-ecoute",
+   "desc": "Apprendre à chercher, écouter et ranger des disques.",
+   "audience": "Amateurs de vinyles, jeunes actifs, couples",
+   "skills": [
+    "Chercher en bac",
+    "Qualité des disques",
+    "Entretien",
+    "Choisir une platine"
+   ],
+   "appSkills": [
+    "digging-vinyle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier bac",
+     "goal": "Trouver 3 disques en 1 h",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lire une pochette",
+     "goal": "Évaluer l'état d'un disque",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ma collection",
+     "goal": "Organiser 30 disques",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Chasse aux trésors",
+     "goal": "Dénicher 10 raretés",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte digging",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "boutique",
+    "librairie",
+    "bar"
+   ],
+   "moments": [
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "toucher",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "vinyle",
+    "collection",
+    "musique",
+    "ville",
+    "balade"
+   ],
+   "competitors": [
+    "Disquaires",
+    "Brocantes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Culture vivante et très ancrée à Paris, bon couplage balade.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-salon-ecoute",
+   "name": "Salon d'écoute commentée d'un genre",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.vinyle-ecoute",
+   "desc": "Écouter ensemble un album ou un genre avec explications et discussions.",
+   "audience": "Curieux, adultes 30-60 ans, couples",
+   "skills": [
+    "Contexte",
+    "Écoute attentive",
+    "Vocabulaire",
+    "Discussion"
+   ],
+   "appSkills": [
+    "digging-vinyle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Écouter un album",
+     "goal": "Écouter et commenter un album",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Un genre",
+     "goal": "Situer 5 artistes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Histoire d'un style",
+     "goal": "Retracer une histoire",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      45,
+      65
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Animer un salon",
+     "goal": "Animer une soirée",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte salon",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "librairie",
+    "bar",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "convivial",
+    "langue",
+    "calme",
+    "reflexion"
+   ],
+   "competitors": [
+    "Clubs d'écoute",
+    "Médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Rejouable, très peu coûteux, mais faible prix. Fort lien communautaire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-hifi-debutant",
+   "name": "Hi-fi et bon son chez soi",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.vinyle-ecoute",
+   "desc": "Choisir enceintes, ampli et platine, régler son écoute.",
+   "audience": "Audiophiles débutants, couples",
+   "skills": [
+    "Placement",
+    "Matériel",
+    "Câblage",
+    "Écoute"
+   ],
+   "appSkills": [
+    "digging-vinyle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Bien écouter",
+     "goal": "Placer ses enceintes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Choisir",
+     "goal": "Choisir un système",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régler",
+     "goal": "Régler une platine",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Salon d'écoute",
+     "goal": "Écouter 5 morceaux de référence",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte hi-fi",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "boutique",
+    "bar",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "tech",
+    "maison",
+    "vinyle",
+    "reflexion"
+   ],
+   "competitors": [
+    "Boutiques hi-fi"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit mais aisé, offre existante en boutique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-histoire-hiphop",
+   "name": "Histoire du hip-hop en écoute",
+   "sector": "musique",
+   "category": "musique.dj-ecoute",
+   "subcategory": "musique.dj-ecoute.vinyle-ecoute",
+   "desc": "Parcourir la culture hip-hop : DJ, MC, danse et graff, avec des extraits.",
+   "audience": "Jeunes, curieux, familles",
+   "skills": [
+    "Origines",
+    "Quatre éléments",
+    "Écoute",
+    "Culture"
+   ],
+   "appSkills": [
+    "digging-vinyle",
+    "beatmaking"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Les origines",
+     "goal": "Situer 5 dates et artistes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Les quatre éléments",
+     "goal": "Relier DJ, MC, danse et graff",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Écoute",
+     "goal": "Comparer trois époques",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exposé",
+     "goal": "Présenter une époque",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte culture",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "librairie",
+    "boutique",
+    "bar",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir",
+    "rencontre"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "histoire",
+    "danse",
+    "patrimoine",
+    "rythme"
+   ],
+   "competitors": [
+    "Musées",
+    "Associations hip-hop"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public ciblé, parfait pour médiathèques et écoles.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-jam-session-groupe",
+   "name": "Jam session de groupe",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.ensemble",
+   "desc": "Jouer en groupe avec d'autres musiciens : écoute, rythme, grille.",
+   "audience": "Musiciens amateurs, jeunes actifs",
+   "skills": [
+    "Grille et rythme",
+    "Écoute",
+    "Prendre la parole",
+    "Lâcher prise"
+   ],
+   "appSkills": [
+    "jam-session-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première jam",
+     "goal": "Participer à une jam",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et grille",
+     "goal": "Tenir sa place",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mener une jam",
+     "goal": "Lancer 3 morceaux",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jam à thème",
+     "goal": "Animer une jam",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte jam",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 3,
+    "community": 5,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "studio-musique",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "convivial",
+    "scene",
+    "jeu",
+    "rythme"
+   ],
+   "competitors": [
+    "Bars",
+    "Jams existantes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public existant et auto-organisé, peu de dépense. Bon pour fidéliser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-orchestre-ukulele",
+   "name": "Orchestre de ukulélés",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.ensemble",
+   "desc": "Jouer en orchestre de ukulélés des chansons populaires.",
+   "audience": "Familles, seniors, entreprises",
+   "skills": [
+    "Rythme collectif",
+    "Chanter",
+    "Arrangements",
+    "Concert"
+   ],
+   "appSkills": [
+    "ukulele"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier orchestre",
+     "goal": "Jouer 3 chansons en groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Chants à plusieurs",
+     "goal": "Chanter et jouer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Arrangements",
+     "goal": "Jouer à 3 parties",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert",
+     "goal": "Jouer 20 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef d'orchestre",
+     "goal": "Diriger un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "salle-polyvalente",
+    "studio-musique",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "convivial",
+    "scene",
+    "famille",
+    "voix"
+   ],
+   "competitors": [
+    "Orchestres de ukulélés"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Bon format collectif, peu rémunérateur.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-batucada",
+   "name": "Batucada et percussions de rue",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.ensemble",
+   "desc": "Jouer des rythmes brésiliens à plusieurs en extérieur.",
+   "audience": "Groupes, associations, entreprises",
+   "skills": [
+    "Rythmes de base",
+    "Écoute",
+    "Signaux",
+    "Défilé"
+   ],
+   "appSkills": [
+    "djembe-percussions"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier rythme",
+     "goal": "Jouer un rythme en groupe",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Samba",
+     "goal": "Tenir une partie",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Signaux",
+     "goal": "Suivre un chef",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Défilé",
+     "goal": "Jouer en marchant",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef de batucada",
+     "goal": "Diriger un groupe",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "parc",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "ouie",
+    "mouvement",
+    "emotion"
+   ],
+   "outputs": [
+    "performance",
+    "rencontre"
+   ],
+   "energy": "intense",
+   "mixTags": [
+    "rythme",
+    "musique",
+    "fete",
+    "convivial",
+    "mouvement"
+   ],
+   "competitors": [
+    "Batucadas associatives"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Bruit en extérieur, bon potentiel festif, faible revenu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-open-mic",
+   "name": "Open mic : première scène",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.premiere-scene",
+   "desc": "Monter sur scène pour 5 minutes lors d'une soirée ouverte.",
+   "audience": "Musiciens débutants, jeunes actifs",
+   "skills": [
+    "Choisir un titre",
+    "Répéter",
+    "Trac",
+    "Présenter"
+   ],
+   "appSkills": [
+    "jam-session-groupe",
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier open mic",
+     "goal": "Jouer 1 titre devant du public",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Plan de set",
+     "goal": "Construire 10 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Gérer le trac",
+     "goal": "Contrôler sa respiration",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Concert complet",
+     "goal": "Jouer 30 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach scène",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "studio-musique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "musique",
+    "voix",
+    "defi",
+    "convivial"
+   ],
+   "competitors": [
+    "Bars",
+    "Open mic"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Attractif mais très communautaire, peu de revenus directs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-monter-groupe",
+   "name": "Monter son premier groupe",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.premiere-scene",
+   "desc": "Trouver des musiciens, choisir un répertoire et jouer ensemble.",
+   "audience": "Amateurs, jeunes adultes",
+   "skills": [
+    "Trouver un groupe",
+    "Répertoire",
+    "Répétition",
+    "Communication"
+   ],
+   "appSkills": [
+    "jam-session-groupe"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Trouver ses musiciens",
+     "goal": "Constituer un groupe de 4",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Répertoire",
+     "goal": "Préparer 5 titres",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Répétition",
+     "goal": "Répéter efficacement",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Premier concert",
+     "goal": "Jouer 30 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach de groupe",
+     "goal": "Accompagner des groupes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "studio-musique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "musique",
+    "scene",
+    "convivial",
+    "defi",
+    "rythme"
+   ],
+   "competitors": [
+    "Studios de répétition"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Besoin réel mais processus long, peu adapté au court format.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-trac-scene",
+   "name": "Maîtriser le trac sur scène",
+   "sector": "musique",
+   "category": "musique.scene",
+   "subcategory": "musique.scene.premiere-scene",
+   "desc": "Respirer, se préparer et jouer sans se laisser dominer par le trac.",
+   "audience": "Musiciens, chanteurs, orateurs",
+   "skills": [
+    "Respiration",
+    "Visualisation",
+    "Routine",
+    "Gestes"
+   ],
+   "appSkills": [
+    "chant-technique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Comprendre mon trac",
+     "goal": "Repérer 3 signes de trac",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Souffle",
+     "goal": "Pratiquer 3 exercices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Routine",
+     "goal": "Mettre en place une routine",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Performance",
+     "goal": "Jouer sans blocage",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach trac",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "bar",
+    "studio-musique",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados"
+   ],
+   "senses": [
+    "ouie",
+    "emotion",
+    "parole"
+   ],
+   "outputs": [
+    "performance"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "scene",
+    "souffle",
+    "bien-etre",
+    "voix",
+    "defi"
+   ],
+   "competitors": [
+    "Coachs de scène"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel et transversal (musique, théâtre, parole).",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-reglage-guitare",
+   "name": "Régler et entretenir sa guitare",
+   "sector": "musique",
+   "category": "musique.lutherie",
+   "subcategory": "musique.lutherie.atelier-instrument",
+   "desc": "Changer les cordes, régler le manche et la hauteur des cordes.",
+   "audience": "Guitaristes, parents de jeunes musiciens",
+   "skills": [
+    "Changer les cordes",
+    "Réglage du manche",
+    "Hauteur",
+    "Nettoyage"
+   ],
+   "appSkills": [
+    "lutherie-entretien"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Changer mes cordes",
+     "goal": "Changer 6 cordes proprement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réglage de base",
+     "goal": "Régler la hauteur des cordes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Frettes et sillet",
+     "goal": "Diagnostiquer un problème",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Entretien complet",
+     "goal": "Faire un réglage complet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte lutherie",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "couples"
+   ],
+   "senses": [
+    "ouie",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "fabrication",
+    "reparation",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Luthiers"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin réel et peu servi, utile pour les magasins de musique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-cigar-box-guitar",
+   "name": "Fabriquer sa guitare cigar box",
+   "sector": "musique",
+   "category": "musique.lutherie",
+   "subcategory": "musique.lutherie.atelier-instrument",
+   "desc": "Construire une guitare à 3 cordes à partir d'une boîte à cigares.",
+   "audience": "Bricoleurs, familles, ados",
+   "skills": [
+    "Découpe du bois",
+    "Cordes et sillet",
+    "Montage",
+    "Premier son"
+   ],
+   "appSkills": [
+    "lutherie-entretien",
+    "sculpture-sur-bois"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma guitare à 3 cordes",
+     "goal": "Fabriquer et jouer sa guitare",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Soudure et câblage",
+     "goal": "Ajouter un micro",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réglage",
+     "goal": "Régler la justesse",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jouer un blues",
+     "goal": "Jouer un blues",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte lutherie",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "fablab",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "ados",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "fabrication",
+    "musique",
+    "bois",
+    "recup",
+    "geste"
+   ],
+   "competitors": [
+    "Ateliers de fabrication"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Atelier familial et ludique, très original, matériel de bricolage à prévoir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-kalimba-maison",
+   "name": "Fabriquer son kalimba",
+   "sector": "musique",
+   "category": "musique.lutherie",
+   "subcategory": "musique.lutherie.atelier-instrument",
+   "desc": "Fabriquer un petit instrument en bois, accordé et prêt à jouer.",
+   "audience": "Familles, enfants, bricoleurs",
+   "skills": [
+    "Découpe",
+    "Lames",
+    "Accord",
+    "Premiers airs"
+   ],
+   "appSkills": [
+    "lutherie-entretien"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon kalimba",
+     "goal": "Fabriquer et accorder son kalimba",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Jouer 3 airs",
+     "goal": "Jouer 3 mélodies",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Autre instrument",
+     "goal": "Fabriquer un second instrument",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Jouer en groupe",
+     "goal": "Jouer en groupe",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte fabrication",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "weekend-matin"
+   ],
+   "publics": [
+    "familles",
+    "enfants"
+   ],
+   "senses": [
+    "ouie",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "son"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "fabrication",
+    "musique",
+    "famille",
+    "objet",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Idée cadeau, famille et enfants, matériel peu coûteux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "musique-ecouter-classique",
+   "name": "Écouter la musique classique : guide d'écoute",
+   "sector": "musique",
+   "category": "musique.lutherie",
+   "subcategory": "musique.lutherie.culture",
+   "desc": "Découvrir quatre siècles de musique classique avec des clés d'écoute simples.",
+   "audience": "Curieux, seniors, débutants",
+   "skills": [
+    "Époques",
+    "Formes",
+    "Instruments",
+    "Écoute attentive"
+   ],
+   "appSkills": [
+    "solfege-lecture"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers concerts",
+     "goal": "Reconnaître 5 instruments",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Époques",
+     "goal": "Situer 5 compositeurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Formes",
+     "goal": "Comprendre sonate et symphonie",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Écouter en concert",
+     "goal": "Préparer une sortie au concert",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte écoute",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "mediatheque",
+    "librairie",
+    "salle-polyvalente"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "couples",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "musique",
+    "histoire",
+    "calme",
+    "patrimoine",
+    "ville"
+   ],
+   "competitors": [
+    "Philharmonie",
+    "Conservatoires"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public senior attentif, très encadré par les institutions.",
+   "confidence": "estimation"
+  }
+ ]
+}

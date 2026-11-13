@@ -1,5 +1,5 @@
 /* Prix conseillé et simulateur de revenus.
-   prix = bas + p·(haut − bas), p = 0,45 + niveau + années + preuves + expérience de transmission (borné 0..1),
+   prix = bas + p·(haut − bas), p = 0,35 + palier animé + années + preuves + expérience de transmission (borné 0,05..0,9),
    × ville (Paris +15 %, grandes villes +5 %) × jauge (atelier : −3 % par place au-delà de 6), arrondi à 5 €. */
 (function (W) {
   'use strict';
@@ -14,16 +14,19 @@
     return { f: 1, label: '' };
   };
 
-  C.suggestPrice = function (st, id, fmt, size) {
+  // ajustement selon le palier animé : la découverte se vend moins cher que l'atelier de niveau 4
+  C.PALIER_PRICE = [0, -0.16, -0.05, 0.05, 0.13];
+  C.suggestPrice = function (st, id, fmt, size, palier) {
     var s = C.data.sById[id]; if (!s) return null;
     var v = (st.skills && st.skills[id]) || {};
     var r = C.priceRange(s.universe, fmt);
     var steps = [];
     var p = 0.35;
     steps.push({ label: 'Fourchette observée ' + C.universe(s.universe).short + ' · ' + (C.FORMATS[fmt] || fmt).toLowerCase(), val: U.eur(r.lo) + ' à ' + U.eur(r.hi) + (r.fallback ? ' (repli générique)' : '') });
-    var lvl = U.num(v.level, 3);
-    var dl = lvl >= 4 ? 0.12 : lvl <= 2 ? -0.18 : 0;
-    if (dl) steps.push({ label: 'Niveau ' + C.LEVELS[lvl].toLowerCase(), val: (dl > 0 ? '+' : '') + Math.round(dl * 100) + ' pts' });
+    var lvl = U.clamp(U.num(v.level, 3), 0, C.LEVEL_MAX);
+    var pal = U.clamp(palier == null ? C.topPalier(lvl) : palier, 1, C.LEVEL_MAX - 1);
+    var dl = C.PALIER_PRICE[pal] || 0;
+    steps.push({ label: 'Palier animé : niveau ' + pal + ' (' + C.LEVELS[pal].toLowerCase() + '), vous êtes niveau ' + lvl, val: (dl > 0 ? '+' : dl < 0 ? '−' : '') + Math.abs(Math.round(dl * 100)) + ' pts' });
     p += dl;
     var yrs = U.num(v.years, 0);
     var dy = Math.min(yrs, 12) / 12 * 0.15;
@@ -46,7 +49,7 @@
     if (fmt === 'atelier' && size > 6) { var g = Math.max(0.8, 1 - 0.03 * (size - 6)); steps.push({ label: 'Jauge de ' + size + ' places', val: '−' + Math.round((1 - g) * 100) + ' %' }); base *= g; }
     if (fmt === 'entreprise' && size > 12) { base *= 1 + Math.min(0.4, (size - 12) * 0.03); steps.push({ label: 'Groupe de ' + size + ' personnes', val: 'majoration' }); }
     var price = U.round5(base);
-    return { price: price, lo: U.round5(r.lo * cf.f), hi: U.round5(r.hi * cf.f), p: p, steps: steps, unit: (C.res.pricingUnits && C.res.pricingUnits[fmt] ? C.res.pricingUnits[fmt].replace('€/', '€ / ') : C.UNITS[fmt]) || '€', fallback: r.fallback };
+    return { price: price, palier: pal, level: lvl, lo: U.round5(r.lo * cf.f), hi: U.round5(r.hi * cf.f), p: p, steps: steps, unit: (C.res.pricingUnits && C.res.pricingUnits[fmt] ? C.res.pricingUnits[fmt].replace('€/', '€ / ') : C.UNITS[fmt]) || '€', fallback: r.fallback };
   };
 
   /* ---------- frais et cotisations ---------- */

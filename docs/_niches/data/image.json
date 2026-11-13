@@ -1,0 +1,7786 @@
+{
+ "sector": "image",
+ "categories": [
+  {
+   "id": "image.photo",
+   "name": "Photographie",
+   "desc": "Smartphone, appareil, argentique, retouche et albums.",
+   "subcategories": [
+    {
+     "id": "image.photo.smartphone",
+     "name": "Photo au smartphone",
+     "desc": "Cadrer, éclairer et raconter avec son téléphone."
+    },
+    {
+     "id": "image.photo.nature-ville",
+     "name": "Nature, nuit et ville",
+     "desc": "Macro, ciel étoilé, architecture, animaux."
+    },
+    {
+     "id": "image.photo.appareil",
+     "name": "Photo à l'appareil",
+     "desc": "Portrait, paysage, argentique, événement."
+    },
+    {
+     "id": "image.photo.suite-photo",
+     "name": "Retouche et albums",
+     "desc": "Retoucher, trier, imprimer, raconter."
+    }
+   ]
+  },
+  {
+   "id": "image.video",
+   "name": "Vidéo et animation",
+   "desc": "Filmer, monter, animer, piloter un drone.",
+   "subcategories": [
+    {
+     "id": "image.video.film",
+     "name": "Filmer et monter",
+     "desc": "Montage vertical, court métrage, souvenirs, documentaire."
+    },
+    {
+     "id": "image.video.animation",
+     "name": "Animation et drone",
+     "desc": "Stop motion, animation 2D, drone."
+    }
+   ]
+  },
+  {
+   "id": "image.dessin",
+   "name": "Dessin et illustration",
+   "desc": "Observation, portrait, BD, tablette, carnet.",
+   "subcategories": [
+    {
+     "id": "image.dessin.observation",
+     "name": "Dessin d'observation",
+     "desc": "Dessiner ce qu'on voit : portrait, nature, figure."
+    },
+    {
+     "id": "image.dessin.illustration",
+     "name": "Illustration et bande dessinée",
+     "desc": "BD, manga, personnages, tablette."
+    },
+    {
+     "id": "image.dessin.carnet",
+     "name": "Carnets et sketchnotes",
+     "desc": "Carnet de voyage, journal créatif, sketchnotes."
+    }
+   ]
+  },
+  {
+   "id": "image.peinture",
+   "name": "Peinture",
+   "desc": "Aquarelle, acrylique, huile, gouache, encre.",
+   "subcategories": [
+    {
+     "id": "image.peinture.eau-gouache",
+     "name": "Aquarelle, gouache et encre",
+     "desc": "Peintures à l'eau."
+    },
+    {
+     "id": "image.peinture.toile",
+     "name": "Acrylique, huile et peinture intuitive",
+     "desc": "Peindre sur toile."
+    }
+   ]
+  },
+  {
+   "id": "image.gravure",
+   "name": "Gravure, lettrage et édition",
+   "desc": "Gravure, sérigraphie, calligraphie, lettering, fanzine.",
+   "subcategories": [
+    {
+     "id": "image.gravure.gravure",
+     "name": "Gravure et impression",
+     "desc": "Linogravure, sérigraphie, risographie."
+    },
+    {
+     "id": "image.gravure.lettres",
+     "name": "Calligraphie et lettering",
+     "desc": "Belles lettres à la plume, au pinceau et à l'iPad."
+    },
+    {
+     "id": "image.gravure.edition",
+     "name": "Fanzine et micro-édition",
+     "desc": "Faire et diffuser son propre fanzine."
+    }
+   ]
+  },
+  {
+   "id": "image.numerique",
+   "name": "Graphisme et 3D",
+   "desc": "Affiche, identité visuelle, pixel art, 3D.",
+   "subcategories": [
+    {
+     "id": "image.numerique.graphisme",
+     "name": "Graphisme et identité",
+     "desc": "Affiche, logo, supports d'association."
+    },
+    {
+     "id": "image.numerique.numerique-3d",
+     "name": "Pixel art et 3D",
+     "desc": "Pixel art, modélisation 3D."
+    }
+   ]
+  },
+  {
+   "id": "image.urbain",
+   "name": "Arts urbains et collage",
+   "desc": "Pochoir, graffiti, collage, fresque.",
+   "subcategories": [
+    {
+     "id": "image.urbain.street",
+     "name": "Street art et fresque",
+     "desc": "Pochoir, graffiti, fresque participative."
+    },
+    {
+     "id": "image.urbain.collage",
+     "name": "Collage",
+     "desc": "Composer avec des papiers et des matières."
+    }
+   ]
+  }
+ ],
+ "niches": [
+  {
+   "id": "image-photo-smartphone",
+   "name": "Photo au smartphone",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.smartphone",
+   "desc": "Cadrer, éclairer et réussir de belles photos avec son téléphone.",
+   "audience": "Tous publics, parents, seniors, voyageurs",
+   "skills": [
+    "Cadrage et règle des tiers",
+    "Lumière naturelle",
+    "Réglages du téléphone",
+    "Choisir ses meilleures photos"
+   ],
+   "appSkills": [
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières belles photos",
+     "goal": "Réussir 5 photos nettes et bien cadrées",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière et cadrage",
+     "goal": "Maîtriser lumière naturelle et composition",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série cohérente",
+     "goal": "Produire une série de 10 photos",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style photographique",
+     "goal": "Développer un style personnel",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach photo",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 1,
+    "space": 3,
+    "community": 4,
+    "format": 5,
+    "supply": 5,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "ville",
+    "balade",
+    "geste",
+    "voyage"
+   ],
+   "competitors": [
+    "Funbooker",
+    "Cours photo",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin gigantesque, mais très faible consentement à payer (contenu gratuit partout). À proposer en sortie ou en cadeau.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-de-rue",
+   "name": "Photo de rue au smartphone",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.smartphone",
+   "desc": "Capter des scènes de rue avec discrétion : cadrage, instant, éthique.",
+   "audience": "Citadins, curieux, 25-55 ans",
+   "skills": [
+    "Anticiper",
+    "Cadrer",
+    "Éthique et droit à l'image",
+    "Éditer"
+   ],
+   "appSkills": [
+    "photo-de-rue",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première sortie",
+     "goal": "Photographier 10 scènes de rue",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Anticiper l'instant",
+     "goal": "Composer 3 images fortes",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série urbaine",
+     "goal": "Réaliser une série de 12 photos",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exposition",
+     "goal": "Sélectionner 15 images",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach photo de rue",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "tiers-lieu",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "ville",
+    "balade",
+    "patrimoine",
+    "geste"
+   ],
+   "competitors": [
+    "Sorties photo",
+    "Collectifs photo"
+   ],
+   "regulated": "droit",
+   "verdict": "a-tester",
+   "why": "Bonne dynamique sur Paris, clubs actifs, droit à l'image à expliquer. Sortie plutôt qu'atelier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-produit",
+   "name": "Photo de produit pour vendre en ligne",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.smartphone",
+   "desc": "Photographier ses objets pour Vinted, Etsy ou un site avec un téléphone.",
+   "audience": "Artisans, vendeurs en ligne, petits commerces",
+   "skills": [
+    "Fond et lumière",
+    "Cadrage",
+    "Retouche légère",
+    "Cohérence"
+   ],
+   "appSkills": [
+    "photo-smartphone",
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier shooting",
+     "goal": "Photographier 5 produits proprement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière douce",
+     "goal": "Éclairer sans reflet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série cohérente",
+     "goal": "Photographier 20 produits",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Catalogue",
+     "goal": "Produire un catalogue",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach photo produit",
+     "goal": "Accompagner des artisans",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 4,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "cafe",
+    "parc"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "service"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "objet",
+    "argent",
+    "tech",
+    "cadeau"
+   ],
+   "competitors": [
+    "Formations e-commerce",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Valeur économique directe pour des vendeurs en ligne, donc meilleur consentement à payer que la photo de loisir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-portrait-lumiere",
+   "name": "Portrait et lumière",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.appareil",
+   "desc": "Photographier un visage : pose, lumière naturelle, regard, retouche légère.",
+   "audience": "Couples, familles, jeunes actifs, photographes amateurs",
+   "skills": [
+    "Lumière naturelle",
+    "Pose et regard",
+    "Cadrer un visage",
+    "Retouche légère"
+   ],
+   "appSkills": [
+    "photo-portrait"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un beau portrait",
+     "goal": "Réaliser un portrait net avec lumière douce",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière et pose",
+     "goal": "Maîtriser lumière et direction",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de portraits",
+     "goal": "Produire une série de 10",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Style de portrait",
+     "goal": "Développer un style",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach portrait",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "geste",
+    "emotion",
+    "couple",
+    "famille"
+   ],
+   "competitors": [
+    "Cours photo",
+    "Funbooker"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande régulière, prix correct, modèles faciles à trouver. Concurrence moyenne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-paysage",
+   "name": "Photo de paysage et golden hour",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.appareil",
+   "desc": "Photographier un paysage aux bonnes heures avec cadrage et réglages.",
+   "audience": "Randonneurs, voyageurs, retraités",
+   "skills": [
+    "Composition",
+    "Heure dorée",
+    "Trépied",
+    "Filtres"
+   ],
+   "appSkills": [
+    "photo-paysage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier paysage",
+     "goal": "Réaliser 3 paysages bien cadrés",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière et heure",
+     "goal": "Choisir l'heure et la lumière",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série paysage",
+     "goal": "Réaliser une série de 10",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tirage",
+     "goal": "Imprimer et présenter",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach paysage",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "nature",
+    "plein-air",
+    "balade",
+    "voyage"
+   ],
+   "competitors": [
+    "Stages photo nature"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public existant mais déjà servi par les stages en nature. Longues sorties.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-argentique",
+   "name": "Photo argentique et développement",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.appareil",
+   "desc": "Shooter en pellicule et développer son noir et blanc en labo.",
+   "audience": "Curieux, 20-40 ans, artistes, collectionneurs",
+   "skills": [
+    "Fonctionnement d'un boîtier",
+    "Exposition",
+    "Développement N&B",
+    "Scan"
+   ],
+   "appSkills": [
+    "photo-argentique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première pellicule",
+     "goal": "Charger, shooter et développer un film",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Exposer juste",
+     "goal": "Maîtriser l'exposition",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tirage",
+     "goal": "Réaliser un tirage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série noir et blanc",
+     "goal": "Réaliser une série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte labo",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 4,
+    "online": 0
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "vinyle",
+    "objet",
+    "geste",
+    "fabrication"
+   ],
+   "competitors": [
+    "Labos photo",
+    "Cours Paris"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Tendance forte chez les jeunes, très peu d'offre sur Paris, matériel et produits chimiques à gérer.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-macro-nature",
+   "name": "Photo macro et nature",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.nature-ville",
+   "desc": "Photographier fleurs, insectes et détails avec un objectif macro ou un téléphone.",
+   "audience": "Jardiniers, naturalistes, seniors",
+   "skills": [
+    "Objectif macro",
+    "Lumière douce",
+    "Mise au point",
+    "Approche"
+   ],
+   "appSkills": [
+    "photo-paysage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Le monde en petit",
+     "goal": "Photographier 5 détails de nature",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Netteté",
+     "goal": "Maîtriser la mise au point",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de saison",
+     "goal": "Réaliser 10 macro",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tirage",
+     "goal": "Imprimer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach nature",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "nature",
+    "jardin",
+    "plante",
+    "calme"
+   ],
+   "competitors": [
+    "Naturalistes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public de niche, bon couplage avec jardin et nature.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-nuit-astro",
+   "name": "Photo de nuit et ciel étoilé",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.nature-ville",
+   "desc": "Photographier la ville la nuit et le ciel : trépied, longue pose, étoiles.",
+   "audience": "Passionnés de ciel, jeunes adultes",
+   "skills": [
+    "Trépied",
+    "Longue pose",
+    "Ciel étoilé",
+    "Retouche"
+   ],
+   "appSkills": [
+    "photo-paysage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Photo de nuit",
+     "goal": "Réaliser 3 photos nettes la nuit",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Longue pose",
+     "goal": "Maîtriser les poses longues",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Voie lactée",
+     "goal": "Photographier le ciel",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série nocturne",
+     "goal": "Réaliser une série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach nuit",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "montagne"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "nuit",
+    "ciel",
+    "nature",
+    "defi"
+   ],
+   "competitors": [
+    "Clubs d'astronomie"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Passion croissante, sorties nocturnes à organiser, offre faible.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-architecture",
+   "name": "Photo d'architecture et de patrimoine",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.nature-ville",
+   "desc": "Photographier bâtiments, lignes et détails dans la ville.",
+   "audience": "Citadins, touristes, amateurs d'histoire",
+   "skills": [
+    "Lignes",
+    "Perspective",
+    "Lumière",
+    "Série"
+   ],
+   "appSkills": [
+    "photo-paysage",
+    "photo-de-rue"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Regarder la ville",
+     "goal": "Réaliser 5 photos architecturales",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Perspective",
+     "goal": "Corriger les lignes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série d'un quartier",
+     "goal": "Réaliser une série",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Exposition",
+     "goal": "Présenter 12 images",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach architecture",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "touristes",
+    "jeunes-actifs",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "ville",
+    "patrimoine",
+    "balade",
+    "histoire"
+   ],
+   "competitors": [
+    "Visites guidées",
+    "Balades photo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public de touristes et de curieux, très bien adapté à une balade.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-animaux",
+   "name": "Photo d'animaux et d'oiseaux",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.nature-ville",
+   "desc": "Photographier animaux, oiseaux et animaux de compagnie.",
+   "audience": "Propriétaires d'animaux, naturalistes",
+   "skills": [
+    "Approche",
+    "Vitesse",
+    "Cadrage",
+    "Respect"
+   ],
+   "appSkills": [
+    "photo-paysage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon animal en photo",
+     "goal": "Réaliser 5 portraits d'animaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Action",
+     "goal": "Figer le mouvement",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Affût",
+     "goal": "Photographier des oiseaux",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser une série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach faune",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "parc",
+    "nature",
+    "jardin-partage"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "nature",
+    "animaux",
+    "plein-air",
+    "geste"
+   ],
+   "competitors": [
+    "Associations naturalistes"
+   ],
+   "regulated": "animaux",
+   "verdict": "plus-tard",
+   "why": "Public passionné, matériel coûteux, sorties.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-retouche-photo",
+   "name": "Retouche photo (Lightroom et mobile)",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.suite-photo",
+   "desc": "Trier, retoucher et exporter ses photos avec méthode.",
+   "audience": "Photographes amateurs, voyageurs, blogueurs",
+   "skills": [
+    "Tri",
+    "Exposition et couleur",
+    "Presets",
+    "Export"
+   ],
+   "appSkills": [
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières retouches",
+     "goal": "Retoucher 5 photos",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleur et lumière",
+     "goal": "Maîtriser exposition et couleur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Style cohérent",
+     "goal": "Créer un preset",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Flux complet",
+     "goal": "Gérer 500 photos",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach retouche",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "tech",
+    "couleur",
+    "geste",
+    "ia"
+   ],
+   "competitors": [
+    "YouTube",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin récurrent, nombreux tutoriels gratuits, mais vraie progression en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-livre-photo",
+   "name": "Faire un livre photo ou un album",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.suite-photo",
+   "desc": "Trier, séquencer et mettre en page un livre photo à imprimer.",
+   "audience": "Familles, voyageurs, cadeaux",
+   "skills": [
+    "Tri",
+    "Séquence",
+    "Mise en page",
+    "Impression"
+   ],
+   "appSkills": [
+    "retouche-photo"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier album",
+     "goal": "Sélectionner 30 photos et un fil",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mise en page",
+     "goal": "Concevoir un livre de 20 pages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Impression",
+     "goal": "Préparer un fichier d'impression",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Livre d'auteur",
+     "goal": "Réaliser un livre de 40 pages",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte album",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "photo"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "cadeau",
+    "objet-souvenir",
+    "famille",
+    "papier"
+   ],
+   "competitors": [
+    "Services d'impression"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Beau cadeau, forte saisonnalité de fin d'année, peu de concurrence en atelier, bon panier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-enfants-famille",
+   "name": "Photographier ses enfants et sa famille",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.suite-photo",
+   "desc": "Réussir des photos naturelles de ses enfants et de moments de famille.",
+   "audience": "Parents, grands-parents",
+   "skills": [
+    "Lumière",
+    "Instants vrais",
+    "Cadrage",
+    "Retouche légère"
+   ],
+   "appSkills": [
+    "photo-portrait",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Instants vrais",
+     "goal": "Réaliser 5 photos naturelles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Lumière à la maison",
+     "goal": "Photographier en intérieur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de famille",
+     "goal": "Réaliser une série",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Album de l'année",
+     "goal": "Réaliser un album",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte photo de famille",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "parents",
+    "familles",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo",
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "photo",
+    "famille",
+    "emotion",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Cours photo"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin très réel des parents, plus gratuit qu'une séance pro, bon volume.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-montage-video-vertical",
+   "name": "Montage vidéo vertical (Reels, TikTok)",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.film",
+   "desc": "Monter une vidéo courte avec CapCut : rythme, texte, musique, sous-titres.",
+   "audience": "Jeunes actifs, créateurs, petits commerces",
+   "skills": [
+    "Rythme",
+    "Texte et sous-titres",
+    "Musique",
+    "Export"
+   ],
+   "appSkills": [
+    "tournage-court-metrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première vidéo",
+     "goal": "Monter une vidéo de 30 s",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme et coupes",
+     "goal": "Maîtriser 3 types de coupes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série de vidéos",
+     "goal": "Produire 5 vidéos cohérentes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Ligne éditoriale",
+     "goal": "Créer une chaîne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach vidéo",
+     "goal": "Accompagner des créateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "tech",
+    "ia",
+    "scene",
+    "geste"
+   ],
+   "competitors": [
+    "Écoles de réseaux sociaux",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande massive, mais un nombre énorme de tutoriels gratuits. Intéressant pour petits commerces.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-court-metrage",
+   "name": "Court métrage : du scénario au montage",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.film",
+   "desc": "Écrire, tourner et monter un court métrage de 3 minutes avec un petit groupe.",
+   "audience": "Cinéphiles, étudiants, groupes d'amis",
+   "skills": [
+    "Scénario court",
+    "Plan et cadrage",
+    "Son",
+    "Montage"
+   ],
+   "appSkills": [
+    "tournage-court-metrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier plan",
+     "goal": "Tourner une séquence de 30 s",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scénario et découpage",
+     "goal": "Écrire un scénario d'1 page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Tournage",
+     "goal": "Tourner 5 plans",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Court métrage",
+     "goal": "Finaliser 3 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Réalisateur hôte",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "parc",
+    "mediatheque"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "journee"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "recit",
+    "ecriture",
+    "scene",
+    "fabrication"
+   ],
+   "competitors": [
+    "Écoles de cinéma",
+    "Associations"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Projet collectif durable, bon pour fidéliser, long et exigeant à organiser.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-video-souvenirs",
+   "name": "Film de vacances en 3 minutes",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.film",
+   "desc": "Monter ses images de voyage en un court film soigné.",
+   "audience": "Voyageurs, familles, seniors",
+   "skills": [
+    "Tri des rushes",
+    "Montage",
+    "Musique",
+    "Texte"
+   ],
+   "appSkills": [
+    "tournage-court-metrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes rushes",
+     "goal": "Trier et monter 1 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Rythme",
+     "goal": "Monter 3 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Musique et titre",
+     "goal": "Ajouter musique et titre",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Film d'année",
+     "goal": "Faire un film de 5 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte souvenir",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "voyage",
+    "famille",
+    "cadeau",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Applis de montage"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin ponctuel, bon cadeau, matériel léger.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-mini-documentaire",
+   "name": "Mini-documentaire de quartier",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.film",
+   "desc": "Filmer un portrait de voisin ou de lieu et le monter en 5 minutes.",
+   "audience": "Associations, étudiants, curieux",
+   "skills": [
+    "Interview",
+    "Cadrage",
+    "Son",
+    "Montage"
+   ],
+   "appSkills": [
+    "tournage-court-metrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier portrait",
+     "goal": "Filmer une interview de 3 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Questions et son",
+     "goal": "Préparer et enregistrer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Montage",
+     "goal": "Monter 5 min",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projection",
+     "goal": "Projeter un film",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte documentaire",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 2,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "ecole"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "ville",
+    "recit",
+    "solidarite",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Collectifs de vidéastes"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit, projet valorisant pour associations et mairies, faible paiement.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-video-chaine",
+   "name": "Lancer sa chaîne vidéo",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.film",
+   "desc": "Choisir un sujet, tourner, monter et publier régulièrement.",
+   "audience": "Créateurs débutants, passionnés",
+   "skills": [
+    "Sujet",
+    "Tournage",
+    "Montage",
+    "Publication"
+   ],
+   "appSkills": [
+    "tournage-court-metrage"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon idée de chaîne",
+     "goal": "Définir un sujet et un format",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Premier épisode",
+     "goal": "Tourner et monter 1 épisode",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Régularité",
+     "goal": "Publier 4 épisodes",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Audience",
+     "goal": "Analyser et améliorer",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach chaîne",
+     "goal": "Accompagner des créateurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 2,
+    "wtp": 1,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "domicile",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "ados",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "ouie",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "tech",
+    "scene",
+    "argent",
+    "defi"
+   ],
+   "competitors": [
+    "Formations YouTube"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Marché saturé de promesses, faible différenciation, résultats incertains.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-stop-motion",
+   "name": "Stop motion",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.animation",
+   "desc": "Animer des objets image par image pour réaliser un court film.",
+   "audience": "Familles, enfants, ados, entreprises créatives",
+   "skills": [
+    "Décor et lumière",
+    "Photographier image par image",
+    "Animation",
+    "Montage"
+   ],
+   "appSkills": [
+    "stop-motion"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier film animé",
+     "goal": "Réaliser 15 s en stop motion",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages",
+     "goal": "Animer un personnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Scénario",
+     "goal": "Réaliser 1 min",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Court film",
+     "goal": "Finaliser 3 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte animation",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 2,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "famille",
+    "fabrication",
+    "fete",
+    "jeu"
+   ],
+   "competitors": [
+    "Ateliers famille",
+    "Médiathèques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très bon format familial, résultat visible, peu cher. Un peu long à produire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-animation-2d",
+   "name": "Animation 2D simple",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.animation",
+   "desc": "Animer un personnage dessiné avec une appli simple.",
+   "audience": "Illustrateurs, ados",
+   "skills": [
+    "Cycle de marche",
+    "Timing",
+    "Décor",
+    "Export"
+   ],
+   "appSkills": [
+    "dessin-numerique",
+    "stop-motion"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier cycle",
+     "goal": "Animer un cycle de 8 images",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnage",
+     "goal": "Animer un personnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Courte scène",
+     "goal": "Réaliser 20 s",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Court film",
+     "goal": "Réaliser 1 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach animation",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "ados",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "video",
+    "dessin",
+    "tech",
+    "recit",
+    "fabrication"
+   ],
+   "competitors": [
+    "Écoles d'animation"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public petit, apprentissage long. Intéressant pour des ados créatifs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-drone-video",
+   "name": "Drone et prise de vue aérienne",
+   "sector": "image",
+   "category": "image.video",
+   "subcategory": "image.video.animation",
+   "desc": "Piloter un petit drone en sécurité et filmer légalement.",
+   "audience": "Passionnés de technique, voyageurs, professionnels",
+   "skills": [
+    "Réglementation",
+    "Pilotage",
+    "Plans aériens",
+    "Montage"
+   ],
+   "appSkills": [
+    "drone-video"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier vol",
+     "goal": "Voler en sécurité",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réglementation",
+     "goal": "Connaître les zones",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Prise de vue",
+     "goal": "Réaliser 5 plans",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Film aérien",
+     "goal": "Réaliser un film",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach drone",
+     "goal": "Accompagner des pilotes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 2,
+    "cost": 2,
+    "local": 3,
+    "online": 2
+   },
+   "venues": [
+    "nature",
+    "parc"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "vacances"
+   ],
+   "publics": [
+    "familles",
+    "ados",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "video"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "video",
+    "nature",
+    "tech",
+    "plein-air",
+    "voyage"
+   ],
+   "competitors": [
+    "Écoles de drone"
+   ],
+   "regulated": "securite",
+   "verdict": "ecarter",
+   "why": "Réglementation lourde, matériel coûteux, zones interdites à Paris. Peu adapté.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-dessin-observation",
+   "name": "Dessin d'observation",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner ce qu'on voit : formes, proportions, valeurs, ombres.",
+   "audience": "Adultes, enfants, seniors, débutants complets",
+   "skills": [
+    "Formes simples",
+    "Proportions",
+    "Valeurs et ombres",
+    "Perspective"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Je sais dessiner",
+     "goal": "Réaliser un dessin d'observation reconnaissable",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Proportions et valeurs",
+     "goal": "Maîtriser 3 valeurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Nature morte",
+     "goal": "Réaliser une nature morte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dessin abouti",
+     "goal": "Réaliser un dessin de 5 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach dessin",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "galerie",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "geste",
+    "calme",
+    "couleur",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Cours de dessin",
+    "Ateliers d'art",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Désir massif de savoir dessiner, accès facile, bon prix en petit groupe.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-portrait-realiste",
+   "name": "Portrait dessiné",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner un visage ressemblant : proportions, traits, ombres.",
+   "audience": "Adultes, amateurs, cadeaux",
+   "skills": [
+    "Proportions",
+    "Traits",
+    "Ombres",
+    "Ressemblance"
+   ],
+   "appSkills": [
+    "portrait-realiste"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Un visage simple",
+     "goal": "Dessiner un visage en proportions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Traits",
+     "goal": "Dessiner yeux, nez et bouche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Ressemblance",
+     "goal": "Réaliser un portrait ressemblant",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Portrait d'auteur",
+     "goal": "Réaliser un portrait en 3 h",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach portrait",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "galerie",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "emotion",
+    "couple",
+    "cadeau",
+    "geste"
+   ],
+   "competitors": [
+    "Cours de dessin"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public motivé, cadeaux possibles, complexité réelle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-croquis-urbain",
+   "name": "Croquis urbain",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner la ville sur le vif, en 10 minutes, dans un carnet.",
+   "audience": "Citadins, touristes, retraités",
+   "skills": [
+    "Croquis rapides",
+    "Perspective",
+    "Mise en page",
+    "Carnet"
+   ],
+   "appSkills": [
+    "croquis-urbain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier croquis",
+     "goal": "Réaliser 3 croquis en extérieur",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Perspective",
+     "goal": "Dessiner une rue",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carnet de ville",
+     "goal": "Remplir 5 pages",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      45,
+      70
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Sortie",
+     "goal": "Animer une sortie",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte croquis",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "parc",
+    "galerie",
+    "nature"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "ville",
+    "balade",
+    "patrimoine",
+    "geste"
+   ],
+   "competitors": [
+    "Urban Sketchers",
+    "Visites guidées"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Communauté active (urban sketchers), format sortie unique, public fidèle.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-dessin-botanique",
+   "name": "Dessin botanique et naturaliste",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner plantes, feuilles et oiseaux avec précision.",
+   "audience": "Jardiniers, naturalistes, seniors",
+   "skills": [
+    "Observation",
+    "Aquarelle légère",
+    "Planche",
+    "Légende"
+   ],
+   "appSkills": [
+    "dessin-illustration",
+    "aquarelle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première plante",
+     "goal": "Dessiner une feuille",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Planche botanique",
+     "goal": "Réaliser une planche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Aquarelle",
+     "goal": "Colorer en aquarelle",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Herbier dessiné",
+     "goal": "Réaliser 10 planches",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach botanique",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "jardin-partage",
+    "parc",
+    "nature"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "nature",
+    "plante",
+    "calme",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Jardins botaniques"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public calme et fidèle, parfait en jardin botanique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-dessin-figure",
+   "name": "Dessin de figure vivante",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner le corps humain d'après modèle vivant en poses courtes.",
+   "audience": "Artistes amateurs, étudiants",
+   "skills": [
+    "Gestes rapides",
+    "Anatomie",
+    "Poses",
+    "Proportions"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Gestes rapides",
+     "goal": "Réaliser 10 croquis de 2 min",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Proportions",
+     "goal": "Maîtriser les proportions",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Anatomie",
+     "goal": "Dessiner un nu",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pose longue",
+     "goal": "Réaliser un dessin de 20 min",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach figure",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "galerie",
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "corps",
+    "geste",
+    "calme",
+    "couleur"
+   ],
+   "competitors": [
+    "Ateliers de modèle vivant"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public de niche, modèle à rémunérer, pratique solitaire dans la plupart des cas.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-illustration-tablette",
+   "name": "Illustration sur tablette",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.illustration",
+   "desc": "Dessiner sur iPad avec Procreate : calques, pinceaux, couleurs.",
+   "audience": "Jeunes actifs, créatifs, étudiants",
+   "skills": [
+    "Interface",
+    "Calques",
+    "Pinceaux",
+    "Couleurs"
+   ],
+   "appSkills": [
+    "dessin-numerique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier dessin",
+     "goal": "Réaliser un dessin avec calques",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Pinceaux",
+     "goal": "Maîtriser 3 pinceaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Illustration finie",
+     "goal": "Réaliser une illustration",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser une série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach tablette",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "tech",
+    "couleur",
+    "geste",
+    "ia"
+   ],
+   "competitors": [
+    "Cours Procreate",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande forte et accessible à tous, mais très concurrencé en ligne.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-bande-dessinee",
+   "name": "Bande dessinée : écrire et dessiner une planche",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.illustration",
+   "desc": "Créer une planche de BD avec scénario, cases et dialogues.",
+   "audience": "Ados, adultes créatifs, parents",
+   "skills": [
+    "Découpage",
+    "Personnages",
+    "Cases",
+    "Dialogues"
+   ],
+   "appSkills": [
+    "bande-dessinee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première planche",
+     "goal": "Réaliser une planche de 6 cases",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages",
+     "goal": "Créer un personnage récurrent",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Histoire courte",
+     "goal": "Réaliser 4 pages",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      110,
+      170
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Album",
+     "goal": "Réaliser 12 pages",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach BD",
+     "goal": "Accompagner des auteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "recit",
+    "ecriture",
+    "jeu",
+    "fabrication"
+   ],
+   "competitors": [
+    "Écoles de BD",
+    "Festivals"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public engagé, projet de 5 semaines motivant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-manga-dessin",
+   "name": "Dessin manga",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.illustration",
+   "desc": "Dessiner personnages et planches dans l'esprit manga.",
+   "audience": "Ados, jeunes adultes, fans de manga",
+   "skills": [
+    "Visages",
+    "Corps",
+    "Expressions",
+    "Planche"
+   ],
+   "appSkills": [
+    "bande-dessinee",
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier visage",
+     "goal": "Dessiner un visage manga",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Corps et poses",
+     "goal": "Dessiner un personnage entier",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Expressions",
+     "goal": "Dessiner 6 expressions",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Planche",
+     "goal": "Réaliser une planche",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach manga",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 5,
+    "online": 4
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "jeu",
+    "recit",
+    "fabrication",
+    "couleur"
+   ],
+   "competitors": [
+    "Cours de manga"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très forte base de fans, ados peu solvables, parents prescripteurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-dessin-enfants-parents",
+   "name": "Dessiner avec ses enfants",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.illustration",
+   "desc": "Jeux de dessin à faire en famille : personnages, histoires, cartes.",
+   "audience": "Parents, enfants 5-10 ans",
+   "skills": [
+    "Jeux de formes",
+    "Histoires",
+    "Couleurs",
+    "Cartes"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers jeux",
+     "goal": "Réaliser 3 jeux de dessin",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Personnages",
+     "goal": "Dessiner un personnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Histoire",
+     "goal": "Réaliser une histoire dessinée",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carnet de famille",
+     "goal": "Remplir un carnet",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur famille",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 5,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "familles",
+    "parents",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "famille",
+    "jeu",
+    "couleur",
+    "enfant"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": "enfants",
+   "verdict": "a-tester",
+   "why": "Bon volume, peu rémunérateur, adapté aux bibliothèques.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-illustration-livre-enfant",
+   "name": "Illustrer un livre pour enfants",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.illustration",
+   "desc": "Concevoir personnages, pages et histoire d'un album illustré.",
+   "audience": "Parents créatifs, illustrateurs",
+   "skills": [
+    "Personnages",
+    "Mise en page",
+    "Couleurs",
+    "Récit"
+   ],
+   "appSkills": [
+    "dessin-illustration",
+    "bande-dessinee"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon héros",
+     "goal": "Créer un personnage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Scènes",
+     "goal": "Dessiner 3 scènes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Album court",
+     "goal": "Réaliser 8 pages",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Dossier d'éditeur",
+     "goal": "Préparer un dossier",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach album",
+     "goal": "Accompagner des auteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "tiers-lieu",
+    "mediatheque",
+    "librairie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "recit",
+    "famille",
+    "ecriture",
+    "objet"
+   ],
+   "competitors": [
+    "Écoles d'illustration"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Peu de monde, mais très valorisant.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-carnet-voyage",
+   "name": "Carnet de voyage",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.carnet",
+   "desc": "Raconter un voyage en dessins, textes et collages.",
+   "audience": "Voyageurs, seniors, familles",
+   "skills": [
+    "Mise en page",
+    "Croquis rapides",
+    "Texte",
+    "Collage"
+   ],
+   "appSkills": [
+    "croquis-urbain"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première page",
+     "goal": "Réaliser une page de carnet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Croquis rapides",
+     "goal": "Dessiner 5 croquis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Mise en page",
+     "goal": "Concevoir 5 pages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Carnet complet",
+     "goal": "Réaliser un carnet de 20 pages",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte carnet",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "cafe",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "seniors",
+    "couples",
+    "familles",
+    "touristes"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "voyage",
+    "dessin",
+    "ecriture",
+    "papier",
+    "objet-souvenir"
+   ],
+   "competitors": [
+    "Urban Sketchers",
+    "Ateliers carnet"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Beau lien avec le voyage, peu de concurrence, bon cadeau.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-journal-creatif",
+   "name": "Journal créatif et collage",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.carnet",
+   "desc": "Tenir un journal avec dessin, mots et collages, sans pression.",
+   "audience": "Adultes, bien-être, ados",
+   "skills": [
+    "Collage",
+    "Écriture libre",
+    "Couleurs",
+    "Rituels"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première page",
+     "goal": "Réaliser une page de journal",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Matières",
+     "goal": "Utiliser 5 matériaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Rituel",
+     "goal": "Tenir 7 jours",
+     "format": "cercle",
+     "duration": "6 séances de 2 h",
+     "group": "6-10",
+     "price": [
+      85,
+      125
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Journal complet",
+     "goal": "Réaliser un journal",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur journal",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "cafe",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "ecriture",
+    "bien-etre",
+    "calme",
+    "papier"
+   ],
+   "competitors": [
+    "Ateliers bien-être"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance bien-être, public féminin prêt à payer un peu, matériel simple.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-sketchnotes",
+   "name": "Sketchnotes : prendre des notes en dessin",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.carnet",
+   "desc": "Illustrer ses idées et réunions avec des symboles simples.",
+   "audience": "Salariés, étudiants, formateurs",
+   "skills": [
+    "Symboles",
+    "Hiérarchie",
+    "Titres dessinés",
+    "Mise en page"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premiers symboles",
+     "goal": "Dessiner 20 icônes",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Notes visuelles",
+     "goal": "Réaliser une page",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Réunion",
+     "goal": "Noter une réunion",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Facilitation",
+     "goal": "Animer visuellement",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach visuel",
+     "goal": "Accompagner des équipes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 4,
+    "space": 5,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "entreprise",
+    "tiers-lieu",
+    "en-ligne"
+   ],
+   "moments": [
+    "weekend-matin",
+    "semaine-soir"
+   ],
+   "publics": [
+    "entreprises",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "savoir"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "savoir",
+    "tech",
+    "reflexion",
+    "papier"
+   ],
+   "competitors": [
+    "Formations d'entreprise"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Valeur pro réelle, très peu d'offre qualifiée, prix d'entreprise plus élevé que le loisir.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-aquarelle",
+   "name": "Aquarelle",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.eau-gouache",
+   "desc": "Peindre à l'aquarelle : eau, pigments, lavis, paysages simples.",
+   "audience": "Adultes, seniors, débutants",
+   "skills": [
+    "Mouillé sur mouillé",
+    "Lavis",
+    "Mélanges",
+    "Paysage"
+   ],
+   "appSkills": [
+    "aquarelle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers lavis",
+     "goal": "Réaliser 3 lavis",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Paysages",
+     "goal": "Peindre un paysage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Couleurs",
+     "goal": "Mélanger sans boue",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableau fini",
+     "goal": "Réaliser un tableau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach aquarelle",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 4,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "galerie",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "couleur",
+    "calme",
+    "nature",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Ateliers d'art",
+    "Cours en ligne"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public large et fidèle, matériel peu coûteux, concurrence classique.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-acrylique-paint-sip",
+   "name": "Peinture acrylique façon paint and sip",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.toile",
+   "desc": "Peindre un tableau guidé avec un verre à la main.",
+   "audience": "Amis, EVJF, entreprises, couples",
+   "skills": [
+    "Fond",
+    "Formes simples",
+    "Couleurs",
+    "Finition"
+   ],
+   "appSkills": [
+    "peinture-acrylique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon tableau",
+     "goal": "Peindre un tableau guidé",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs",
+     "goal": "Mélanger 3 couleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Technique",
+     "goal": "Utiliser 3 techniques",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Œuvre perso",
+     "goal": "Réaliser une toile",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur paint and sip",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 5,
+    "trend": 3,
+    "wtp": 4,
+    "space": 1,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 1
+   },
+   "venues": [
+    "bar",
+    "tiers-lieu",
+    "galerie"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "convivial",
+    "fete",
+    "apero",
+    "dessin"
+   ],
+   "competitors": [
+    "Wine and Paint",
+    "Funbooker",
+    "Paint and Sip"
+   ],
+   "regulated": "alcool",
+   "verdict": "prioritaire",
+   "why": "Très populaire en soirée et en entreprise, marché très concurrentiel, bon panier.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-huile-debutant",
+   "name": "Peinture à l'huile pour débutants",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.toile",
+   "desc": "Découvrir la peinture à l'huile : mélanges, glacis, premier tableau.",
+   "audience": "Adultes, amateurs d'art",
+   "skills": [
+    "Pigments",
+    "Mélanges",
+    "Glacis",
+    "Nettoyage"
+   ],
+   "appSkills": [
+    "peinture-acrylique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier tableau",
+     "goal": "Peindre un fruit à l'huile",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mélanges",
+     "goal": "Maîtriser 3 mélanges",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Glacis",
+     "goal": "Réaliser un glacis",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableau abouti",
+     "goal": "Réaliser un tableau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach huile",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 1,
+    "trend": 1,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 2,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "galerie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "calme",
+    "dessin",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers d'art"
+   ],
+   "regulated": null,
+   "verdict": "ecarter",
+   "why": "Technique longue, produits et ventilation à gérer. Peu de demande.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-gouache-illustration",
+   "name": "Gouache et illustration colorée",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.eau-gouache",
+   "desc": "Peindre en aplats colorés pour des illustrations modernes.",
+   "audience": "Illustrateurs, jeunes adultes",
+   "skills": [
+    "Aplats",
+    "Palette",
+    "Motifs",
+    "Illustration"
+   ],
+   "appSkills": [
+    "peinture-acrylique",
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premiers aplats",
+     "goal": "Peindre 3 aplats",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Palette",
+     "goal": "Choisir une palette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Motifs",
+     "goal": "Réaliser un motif",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Illustration",
+     "goal": "Réaliser une illustration",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach gouache",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "galerie",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "dessin",
+    "deco",
+    "geste",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers d'art"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance forte chez les jeunes, très peu d'ateliers dédiés.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-peinture-intuitive",
+   "name": "Peinture abstraite intuitive",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.toile",
+   "desc": "Peindre sans modèle pour exprimer une émotion : couleurs, gestes, matières.",
+   "audience": "Adultes en bien-être, timides, entreprises",
+   "skills": [
+    "Gestes libres",
+    "Couleurs",
+    "Matières",
+    "Lâcher prise"
+   ],
+   "appSkills": [
+    "peinture-acrylique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier geste",
+     "goal": "Peindre une toile sans modèle",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs",
+     "goal": "Choisir une palette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Matières",
+     "goal": "Utiliser 3 matières",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser une série",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur peinture",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "galerie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "entreprises"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "bien-etre",
+    "calme",
+    "dessin",
+    "emotion"
+   ],
+   "competitors": [
+    "Ateliers bien-être"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Tendance bien-être, pas besoin de savoir dessiner, bonne accessibilité.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-encre-sumie",
+   "name": "Encre de Chine et peinture sumi-e",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.eau-gouache",
+   "desc": "Peindre à l'encre, au pinceau, des bambous, montagnes et fleurs.",
+   "audience": "Adultes, amateurs de culture asiatique",
+   "skills": [
+    "Pinceau",
+    "Encre",
+    "Bambou",
+    "Paysage"
+   ],
+   "appSkills": [
+    "calligraphie",
+    "aquarelle"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Premier trait",
+     "goal": "Réaliser 10 traits de pinceau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Bambou",
+     "goal": "Peindre un bambou",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Paysage",
+     "goal": "Peindre un paysage",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Tableau",
+     "goal": "Réaliser un tableau",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach sumi-e",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 2,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "galerie",
+    "tiers-lieu",
+    "parc"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "calme",
+    "voyage",
+    "geste",
+    "souffle"
+   ],
+   "competitors": [
+    "Ateliers d'art asiatique"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Niche très calme, peu de demande, peu d'offre.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-linogravure",
+   "name": "Linogravure en deux couleurs",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.gravure",
+   "desc": "Graver un lino, l'encrer et imprimer en deux passages.",
+   "audience": "Créatifs, 25-45 ans, cadeaux",
+   "skills": [
+    "Dessin et transfert",
+    "Gouges",
+    "Encrage",
+    "Impression"
+   ],
+   "appSkills": [
+    "linogravure"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tampon",
+     "goal": "Graver et imprimer un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Deux couleurs",
+     "goal": "Réaliser deux passages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série limitée",
+     "goal": "Imprimer 10 exemplaires",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gravure d'auteur",
+     "goal": "Réaliser une gravure",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte gravure",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 3,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "couleur",
+    "geste",
+    "objet",
+    "fabrication"
+   ],
+   "competitors": [
+    "Ateliers de gravure",
+    "Funbooker"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Beau résultat, tendance, peu d'offre. Gouges et sécurité des mains.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-serigraphie",
+   "name": "Sérigraphie artisanale",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.gravure",
+   "desc": "Imprimer ses motifs sur papier et tissu avec un écran.",
+   "audience": "Créatifs, jeunes actifs, cadeaux",
+   "skills": [
+    "Écran",
+    "Insolation",
+    "Impression",
+    "Séchage"
+   ],
+   "appSkills": [
+    "serigraphie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tote bag",
+     "goal": "Imprimer un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Deux couleurs",
+     "goal": "Réaliser deux passages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Imprimer 10 pièces",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme",
+     "goal": "Réaliser une gamme",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte sérigraphie",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 2,
+    "hostIncome": 3,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "fablab",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet",
+    "vetement"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "textile",
+    "couleur",
+    "fabrication",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers de sérigraphie"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Résultat sur objets utiles, matériel spécialisé, coût de lieu.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-risographie",
+   "name": "Risographie et impression low-tech",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.gravure",
+   "desc": "Imprimer en riso : couleurs, trames, petits tirages.",
+   "audience": "Illustrateurs, jeunes artistes",
+   "skills": [
+    "Séparation de couleurs",
+    "Trames",
+    "Impression",
+    "Reliure"
+   ],
+   "appSkills": [
+    "serigraphie",
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tirage",
+     "goal": "Imprimer une affiche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      40,
+      60
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Couleurs",
+     "goal": "Séparer 2 couleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-4",
+     "price": [
+      55,
+      80
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Trames",
+     "goal": "Utiliser des trames",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      195,
+      300
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Imprimer un livret",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      265,
+      400
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach riso",
+     "goal": "Accompagner des artistes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      385,
+      585
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 4,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 3,
+    "supply": 1,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 1,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "couleur",
+    "fabrication",
+    "objet",
+    "tech"
+   ],
+   "competitors": [
+    "Studios riso"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Peu d'ateliers, très peu de monde, matériel rare.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-calligraphie",
+   "name": "Calligraphie à la plume",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.lettres",
+   "desc": "Écrire à la plume et à l'encre : gestes, alphabet, mise en page.",
+   "audience": "Adultes, cadeaux, mariages",
+   "skills": [
+    "Plume et encre",
+    "Alphabet",
+    "Mise en page",
+    "Finitions"
+   ],
+   "appSkills": [
+    "calligraphie"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon prénom en belles lettres",
+     "goal": "Écrire son prénom à la plume",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Alphabet",
+     "goal": "Maîtriser un alphabet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Carte",
+     "goal": "Réaliser une carte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Pièce",
+     "goal": "Réaliser une œuvre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach calligraphie",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "librairie",
+    "tiers-lieu",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "geste",
+    "calme",
+    "cadeau",
+    "ecriture"
+   ],
+   "competitors": [
+    "Ateliers d'écriture",
+    "Papeteries"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public fidèle, mariages, cadeaux, peu d'offre qualifiée.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-lettering",
+   "name": "Lettering au pinceau et à l'iPad",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.lettres",
+   "desc": "Dessiner des lettres expressives avec feutre pinceau ou tablette.",
+   "audience": "Jeunes actifs, étudiants, créatifs",
+   "skills": [
+    "Lettres",
+    "Pinceau",
+    "Compositions",
+    "Digitalisation"
+   ],
+   "appSkills": [
+    "lettering"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mes premières lettres",
+     "goal": "Écrire 10 mots au pinceau",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Alphabet",
+     "goal": "Maîtriser un alphabet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Composition",
+     "goal": "Réaliser une carte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Projet",
+     "goal": "Réaliser une affiche",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach lettering",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 4
+   },
+   "venues": [
+    "librairie",
+    "tiers-lieu",
+    "cafe"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-matin"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "couleur",
+    "geste",
+    "dessin",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers de lettering"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Public jeune, facile à démarrer, concurrence en ligne importante.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-fanzine",
+   "name": "Fanzine et micro-édition",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.edition",
+   "desc": "Concevoir, plier et photocopier son propre fanzine.",
+   "audience": "Illustrateurs, étudiants, collectifs",
+   "skills": [
+    "Maquette",
+    "Pliage",
+    "Texte et image",
+    "Diffusion"
+   ],
+   "appSkills": [
+    "bande-dessinee",
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier zine",
+     "goal": "Fabriquer un zine de 8 pages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Mise en page",
+     "goal": "Concevoir une maquette",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 3 zines",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Distribution",
+     "goal": "Diffuser",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte zine",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 4,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 3
+   },
+   "venues": [
+    "librairie",
+    "mediatheque",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "etudiants",
+    "ados"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "texte"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "ecriture",
+    "dessin",
+    "fabrication",
+    "collection"
+   ],
+   "competitors": [
+    "Librairies indépendantes"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Culture vivante, peu coûteux, faible prix, bon outil de lien.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-affiche-graphisme",
+   "name": "Affiche et graphisme",
+   "sector": "image",
+   "category": "image.numerique",
+   "subcategory": "image.numerique.graphisme",
+   "desc": "Créer une affiche : hiérarchie, typographie, couleurs.",
+   "audience": "Associations, jeunes actifs, étudiants",
+   "skills": [
+    "Hiérarchie",
+    "Typographie",
+    "Couleurs",
+    "Export"
+   ],
+   "appSkills": [
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon affiche",
+     "goal": "Réaliser une affiche",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Typographie",
+     "goal": "Choisir 2 polices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Couleurs",
+     "goal": "Choisir une palette",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Série",
+     "goal": "Réaliser 3 affiches",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach graphisme",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 3,
+    "wtp": 4,
+    "space": 3,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "entreprises",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "couleur",
+    "dessin",
+    "argent",
+    "papier"
+   ],
+   "competitors": [
+    "Formations Canva",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Besoin pratique des associations et petits commerces, beaucoup de gratuit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-identite-visuelle",
+   "name": "Créer son identité visuelle",
+   "sector": "image",
+   "category": "image.numerique",
+   "subcategory": "image.numerique.graphisme",
+   "desc": "Concevoir logo, couleurs et typographie pour un projet.",
+   "audience": "Entrepreneurs, associations, créateurs",
+   "skills": [
+    "Logo",
+    "Palette",
+    "Typographies",
+    "Charte"
+   ],
+   "appSkills": [
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon logo",
+     "goal": "Réaliser un logo",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Palette",
+     "goal": "Choisir couleurs et polices",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charte",
+     "goal": "Rédiger une charte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Supports",
+     "goal": "Décliner 3 supports",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach identité",
+     "goal": "Accompagner des porteurs",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 5,
+    "space": 4,
+    "community": 2,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "couleur",
+    "dessin",
+    "papier"
+   ],
+   "competitors": [
+    "Studios de design",
+    "Freelances"
+   ],
+   "regulated": null,
+   "verdict": "prioritaire",
+   "why": "Valeur économique directe pour les porteurs de projet, prix plus élevé.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-canva-association",
+   "name": "Supports de communication pour associations",
+   "sector": "image",
+   "category": "image.numerique",
+   "subcategory": "image.numerique.graphisme",
+   "desc": "Concevoir flyers, posts et affiches avec des outils simples.",
+   "audience": "Associations, bénévoles, petits commerces",
+   "skills": [
+    "Canva",
+    "Hiérarchie",
+    "Réseaux sociaux",
+    "Impression"
+   ],
+   "appSkills": [
+    "affiche-graphisme"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier flyer",
+     "goal": "Réaliser un flyer",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Réseaux",
+     "goal": "Réaliser 3 posts",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Charte",
+     "goal": "Créer une charte",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Campagne",
+     "goal": "Réaliser une campagne",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte communication",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 4,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "entreprises",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "argent",
+    "papier",
+    "solidarite",
+    "couleur"
+   ],
+   "competitors": [
+    "Formations bénévoles"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande des associations, financements possibles, beaucoup de gratuit.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-pixel-art",
+   "name": "Pixel art",
+   "sector": "image",
+   "category": "image.numerique",
+   "subcategory": "image.numerique.numerique-3d",
+   "desc": "Créer des personnages et décors en pixels.",
+   "audience": "Ados, joueurs, étudiants",
+   "skills": [
+    "Palette",
+    "Personnages",
+    "Animation",
+    "Décor"
+   ],
+   "appSkills": [
+    "pixel-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier sprite",
+     "goal": "Créer un sprite 16 par 16",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Palette",
+     "goal": "Choisir 8 couleurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Animation",
+     "goal": "Animer 4 images",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Décor",
+     "goal": "Créer un décor",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach pixel",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "enfants",
+    "etudiants"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "jeu",
+    "tech",
+    "dessin",
+    "code",
+    "couleur"
+   ],
+   "competitors": [
+    "Clubs de jeu vidéo"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Public jeune peu solvable, parfait en médiathèque.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-blender-3d",
+   "name": "Modélisation 3D avec Blender",
+   "sector": "image",
+   "category": "image.numerique",
+   "subcategory": "image.numerique.numerique-3d",
+   "desc": "Modéliser un objet et le rendre dans Blender.",
+   "audience": "Étudiants, passionnés, créatifs",
+   "skills": [
+    "Interface",
+    "Modélisation",
+    "Matériaux",
+    "Rendu"
+   ],
+   "appSkills": [
+    "blender-3d"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première forme",
+     "goal": "Modéliser un objet",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Matières",
+     "goal": "Appliquer 3 matériaux",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Scène",
+     "goal": "Réaliser une scène",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      135,
+      205
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Rendu",
+     "goal": "Réaliser un rendu",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach 3D",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 3,
+    "local": 3,
+    "online": 5
+   },
+   "venues": [
+    "tiers-lieu",
+    "fablab",
+    "en-ligne"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "ados",
+    "etudiants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet",
+    "video"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "tech",
+    "jeu",
+    "fabrication",
+    "code",
+    "couleur"
+   ],
+   "competitors": [
+    "Écoles 3D",
+    "YouTube"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Demande croissante, apprentissage long, tutos gratuits nombreux.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-street-art-pochoir",
+   "name": "Pochoir et street art",
+   "sector": "image",
+   "category": "image.urbain",
+   "subcategory": "image.urbain.street",
+   "desc": "Dessiner, découper et appliquer un pochoir sur support légal.",
+   "audience": "Ados, jeunes adultes, entreprises",
+   "skills": [
+    "Dessin",
+    "Découpe",
+    "Application",
+    "Couleurs"
+   ],
+   "appSkills": [
+    "street-art"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier pochoir",
+     "goal": "Découper et appliquer un pochoir",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Deux couleurs",
+     "goal": "Réaliser 2 passages",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Support",
+     "goal": "Peindre un tote bag",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fresque",
+     "goal": "Réaliser une fresque",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte street art",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "tiers-lieu",
+    "parc",
+    "galerie"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "journee"
+   ],
+   "publics": [
+    "ados",
+    "jeunes-actifs",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "couleur",
+    "ville",
+    "fete",
+    "fabrication",
+    "dessin"
+   ],
+   "competitors": [
+    "Ateliers de street art",
+    "Funbooker"
+   ],
+   "regulated": "securite",
+   "verdict": "a-tester",
+   "why": "Attrait fort et visuel, peu d'offre légale, support autorisé obligatoire.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-collage-mixed-media",
+   "name": "Collage et mixed media",
+   "sector": "image",
+   "category": "image.urbain",
+   "subcategory": "image.urbain.collage",
+   "desc": "Composer des images à partir de papiers, photos et matières.",
+   "audience": "Adultes, créatifs, bien-être",
+   "skills": [
+    "Découpe",
+    "Composition",
+    "Colle",
+    "Matières"
+   ],
+   "appSkills": [
+    "dessin-illustration"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier collage",
+     "goal": "Réaliser un collage",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Composition",
+     "goal": "Maîtriser 3 règles",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 3 collages",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Œuvre",
+     "goal": "Réaliser une œuvre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur collage",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 4,
+    "trend": 4,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "tiers-lieu",
+    "galerie",
+    "mediatheque"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "familles"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "toucher"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "couleur",
+    "recup",
+    "dessin",
+    "bien-etre"
+   ],
+   "competitors": [
+    "Ateliers d'art"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Très facile, très accessible, faible prix, matériaux de récupération.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-fresque-participative",
+   "name": "Fresque murale participative",
+   "sector": "image",
+   "category": "image.urbain",
+   "subcategory": "image.urbain.street",
+   "desc": "Concevoir et peindre une fresque collective avec des habitants.",
+   "audience": "Associations, mairies, écoles, entreprises",
+   "skills": [
+    "Esquisse",
+    "Quadrillage",
+    "Peinture",
+    "Collectif"
+   ],
+   "appSkills": [
+    "street-art",
+    "peinture-acrylique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Esquisse",
+     "goal": "Concevoir une esquisse",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Quadrillage",
+     "goal": "Reporter une image",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Peinture",
+     "goal": "Peindre 1 m2",
+     "format": "chantier",
+     "duration": "5 semaines",
+     "group": "4-6",
+     "price": [
+      160,
+      245
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Fresque",
+     "goal": "Finaliser une fresque",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Chef de projet",
+     "goal": "Piloter un projet collectif",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 2,
+    "trend": 3,
+    "wtp": 3,
+    "space": 5,
+    "community": 3,
+    "format": 2,
+    "supply": 2,
+    "hostIncome": 4,
+    "regulatory": 3,
+    "cost": 2,
+    "local": 5,
+    "online": 0
+   },
+   "venues": [
+    "ecole",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "journee"
+   ],
+   "publics": [
+    "familles",
+    "entreprises",
+    "enfants"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "mouvement"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "ville",
+    "solidarite",
+    "couleur",
+    "fete",
+    "patrimoine"
+   ],
+   "competitors": [
+    "Collectifs d'artistes"
+   ],
+   "regulated": "securite",
+   "verdict": "plus-tard",
+   "why": "Projet à financer par mairies et bailleurs, pas par des particuliers.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-photo-evenement",
+   "name": "Photo d'événement et de soirée",
+   "sector": "image",
+   "category": "image.photo",
+   "subcategory": "image.photo.appareil",
+   "desc": "Photographier une fête, un anniversaire ou un concert avec peu de lumière.",
+   "audience": "Organisateurs, familles, jeunes actifs",
+   "skills": [
+    "Peu de lumière",
+    "Flash",
+    "Instants",
+    "Tri rapide"
+   ],
+   "appSkills": [
+    "photo-portrait",
+    "photo-smartphone"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Ma première soirée",
+     "goal": "Réaliser 10 photos nettes de soirée",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      30,
+      45
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Peu de lumière",
+     "goal": "Maîtriser le flash",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      35,
+      55
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Reportage",
+     "goal": "Couvrir un événement",
+     "format": "sortie",
+     "duration": "3 h",
+     "group": "4-10",
+     "price": [
+      65,
+      105
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Livraison",
+     "goal": "Livrer 50 photos",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      180,
+      275
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach événement",
+     "goal": "Accompagner des photographes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      265,
+      405
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 3,
+    "supply": 3,
+    "hostIncome": 4,
+    "regulatory": 4,
+    "cost": 3,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "salle-polyvalente",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-soir",
+    "semaine-soir"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "couples",
+    "seniors"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "photo"
+   ],
+   "energy": "modere",
+   "mixTags": [
+    "photo",
+    "fete",
+    "convivial",
+    "scene",
+    "geste"
+   ],
+   "competitors": [
+    "Photographes professionnels"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Marché de professionnels bien en place, intérêt pour des bénévoles et organisateurs.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-fusain-pastel",
+   "name": "Fusain et pastel sec",
+   "sector": "image",
+   "category": "image.dessin",
+   "subcategory": "image.dessin.observation",
+   "desc": "Dessiner en noir et blanc au fusain, ou en couleur au pastel, pour des ambiances fortes.",
+   "audience": "Adultes, amateurs d'art, seniors",
+   "skills": [
+    "Fusain",
+    "Estompe",
+    "Pastel",
+    "Fixatif"
+   ],
+   "appSkills": [
+    "dessin-illustration",
+    "portrait-realiste"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier fusain",
+     "goal": "Réaliser un dessin au fusain",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      20,
+      30
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Valeurs",
+     "goal": "Maîtriser 5 valeurs",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      25,
+      40
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Pastel",
+     "goal": "Réaliser un pastel",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      90,
+      140
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Œuvre",
+     "goal": "Réaliser une œuvre",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      125,
+      190
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Coach fusain",
+     "goal": "Accompagner des élèves",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      180,
+      275
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 2,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 4,
+    "supply": 3,
+    "hostIncome": 3,
+    "regulatory": 5,
+    "cost": 4,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "galerie",
+    "parc",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "jeunes-actifs",
+    "seniors",
+    "couples"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "reflexion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "dessin",
+    "couleur",
+    "calme",
+    "geste",
+    "emotion"
+   ],
+   "competitors": [
+    "Ateliers d'art"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Technique classique, demande modeste, concurrence des cours traditionnels.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-mandalas-points",
+   "name": "Peinture de mandalas à points",
+   "sector": "image",
+   "category": "image.peinture",
+   "subcategory": "image.peinture.toile",
+   "desc": "Peindre des mandalas sur galets ou toiles avec la technique des points.",
+   "audience": "Adultes en bien-être, familles, seniors",
+   "skills": [
+    "Points",
+    "Symétrie",
+    "Couleurs",
+    "Galets"
+   ],
+   "appSkills": [
+    "peinture-acrylique"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier galet",
+     "goal": "Peindre un galet en points",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Symétrie",
+     "goal": "Réaliser un mandala",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Série",
+     "goal": "Réaliser 3 galets",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Toile",
+     "goal": "Réaliser une toile",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Animateur mandala",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 2,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 5,
+    "cost": 5,
+    "local": 4,
+    "online": 2
+   },
+   "venues": [
+    "bar",
+    "galerie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "semaine-soir",
+    "weekend-apres-midi"
+   ],
+   "publics": [
+    "seniors",
+    "familles",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "geste",
+    "emotion"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "couleur",
+    "bien-etre",
+    "calme",
+    "famille",
+    "cadeau"
+   ],
+   "competitors": [
+    "Ateliers bien-être"
+   ],
+   "regulated": null,
+   "verdict": "plus-tard",
+   "why": "Accessible, très calme, faible prix, bien-être.",
+   "confidence": "estimation"
+  },
+  {
+   "id": "image-tampons-graves",
+   "name": "Tampons gravés et impression",
+   "sector": "image",
+   "category": "image.gravure",
+   "subcategory": "image.gravure.gravure",
+   "desc": "Graver des tampons en gomme pour imprimer cartes, tissus et papiers cadeaux.",
+   "audience": "Familles, créatifs, cadeaux",
+   "skills": [
+    "Dessin",
+    "Gravure en gomme",
+    "Encrage",
+    "Motifs répétés"
+   ],
+   "appSkills": [
+    "linogravure"
+   ],
+   "levels": [
+    {
+     "n": 1,
+     "title": "Mon premier tampon",
+     "goal": "Graver et imprimer un tampon",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      10,
+      15
+     ]
+    },
+    {
+     "n": 2,
+     "title": "Motifs répétés",
+     "goal": "Réaliser un motif",
+     "format": "atelier",
+     "duration": "1 h 30",
+     "group": "2-6",
+     "price": [
+      15,
+      20
+     ]
+    },
+    {
+     "n": 3,
+     "title": "Papier cadeau",
+     "goal": "Imprimer un papier",
+     "format": "arc",
+     "duration": "3 × 2 h",
+     "group": "3-6",
+     "price": [
+      50,
+      75
+     ]
+    },
+    {
+     "n": 4,
+     "title": "Gamme",
+     "goal": "Réaliser une gamme",
+     "format": "stage",
+     "duration": "1 journée",
+     "group": "4-8",
+     "price": [
+      65,
+      100
+     ]
+    },
+    {
+     "n": 5,
+     "title": "Hôte tampons",
+     "goal": "Former des hôtes",
+     "format": "coaching",
+     "duration": "4 × 1 h",
+     "group": "1-2",
+     "price": [
+      95,
+      145
+     ]
+    }
+   ],
+   "scores": {
+    "demand": 3,
+    "trend": 3,
+    "wtp": 3,
+    "space": 4,
+    "community": 3,
+    "format": 5,
+    "supply": 4,
+    "hostIncome": 2,
+    "regulatory": 4,
+    "cost": 4,
+    "local": 4,
+    "online": 1
+   },
+   "venues": [
+    "atelier-artisan",
+    "galerie",
+    "tiers-lieu"
+   ],
+   "moments": [
+    "weekend-apres-midi",
+    "semaine-soir"
+   ],
+   "publics": [
+    "familles",
+    "enfants",
+    "jeunes-actifs"
+   ],
+   "senses": [
+    "vue",
+    "toucher",
+    "geste"
+   ],
+   "outputs": [
+    "objet"
+   ],
+   "energy": "calme",
+   "mixTags": [
+    "papier",
+    "cadeau",
+    "famille",
+    "geste",
+    "objet"
+   ],
+   "competitors": [
+    "Ateliers famille"
+   ],
+   "regulated": null,
+   "verdict": "a-tester",
+   "why": "Entrée douce vers la gravure, très accessible, coûteux seulement en petits outils.",
+   "confidence": "estimation"
+  }
+ ]
+}
