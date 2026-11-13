@@ -23,6 +23,8 @@ E.KEYS = E.CRIT.map(function (c) { return c[0]; });
 E.W0 = E.CRIT.map(function (c) { return c[3]; });
 E.score = function (s, W) { var t = 0, sw = 0; for (var i = 0; i < E.KEYS.length; i++) { t += W[i] * s[E.KEYS[i]] / 5; sw += W[i]; } return sw ? t * 100 / sw : 0; };
 E.scoreNoWtp = function (s, W) { var w = W.slice(); w[2] = 0; return E.score(s, w); };
+/* La parade compte pour moitié : propension effective = propension + 0,5 × (portée de la parade - propension), risque d'exécution oblige. */
+E.effWtp = function (wtp, lift) { return lift > wtp ? wtp + 0.5 * (lift - wtp) : wtp; };
 E.scoreWith = function (s, W, wtp) { var o = {}; for (var k in s) o[k] = s[k]; o.wtp = Math.max(s.wtp, wtp); return E.score(o, W); };
 
 E.LEVELS = [
@@ -71,25 +73,25 @@ var CULTURE = ['image', 'musique', 'scene', 'parole', 'savoirs', 'artisanat', 't
 function has(a, b) { return inter(a || [], b).length > 0; }
 function lvMax(n, from) { var m = 0; for (var i = from - 1; i < 5; i++) m = Math.max(m, n.levels[i].price[1]); return m; }
 E.FIT = {
-  'duo-premium': function (n, ctx) { return ctx && ctx.premium ? Math.min(1, 0.35 + ctx.premium.s / 120) : 0.3; },
-  'pass-saison': function (n) { var s = n.scores; return Math.min(1, (s.community + s.format + s.local) / 15 + (n.levels[0].format === 'cercle' ? 0.1 : 0)); },
-  'echelle-freemium': function (n) { var hi = lvMax(n, 3); return hi >= 90 ? Math.min(1, 0.45 + hi / 600 + n.scores.hostIncome / 20) : 0.2; },
+  'duo-premium': function (n, ctx) { return ctx && ctx.premium ? Math.max(0, Math.min(1, (ctx.premium.s - 70) / 25)) : 0.2; },
+  'pass-saison': function (n) { var s = n.scores; return 0.15 + (s.community + s.format + s.local) / 30 + (n.levels.some(function (l) { return l.format === 'cercle'; }) ? 0.1 : 0); },
+  'echelle-freemium': function (n) { var hi = lvMax(n, 3); return hi >= 90 ? 0.25 + Math.min(0.25, hi / 1000) + n.scores.hostIncome * 0.05 : 0.15; },
   'entreprise-cse': function (n) { var e = n.publics.indexOf('entreprises') >= 0 || n.venues.indexOf('entreprise') >= 0; var soc = has(n.outputs, ['rencontre', 'jeu', 'performance', 'plat', 'boisson', 'objet']); return (e ? 0.7 : 0.25) + (soc ? 0.15 : 0) + (n.scores.format >= 4 ? 0.1 : 0) - (n.regulated === 'alcool' ? 0.1 : 0); },
   'lieu-payeur': function (n) { return has(n.venues, COMPTOIR) ? 0.75 + (has(n.outputs, ['boisson', 'plat', 'rencontre', 'jeu']) ? 0.2 : 0) : 0.1; },
   'sortie-atelier': function (n) { return has(n.venues, DEHORS) || has(n.mixTags, ['balade', 'ville', 'quartier', 'dehors', 'patrimoine', 'nature']) ? 0.7 + (has(n.moments, ['weekend-matin', 'weekend-apres-midi', 'journee']) ? 0.2 : 0) : 0.15; },
   'kit-objet': function (n) { return has(n.outputs, ['objet', 'plante', 'vetement', 'jeu', 'plat', 'boisson']) ? 0.6 + (5 - n.scores.cost) * 0.07 : 0.1; },
   'marque-partenaire': function (n) { var s = ['maison', 'artisanat', 'nature', 'sport', 'pleinair', 'style', 'tech', 'image', 'cuisine'].indexOf(n.sector) >= 0; return (s ? 0.5 : 0.2) + (has(n.outputs, ['objet', 'vetement', 'plante', 'photo']) ? 0.2 : 0) + (n.scores.cost <= 3 ? 0.15 : 0); },
-  'programmation-publique': function (n) { return (has(n.venues, PUBLIC_LIEUX) ? 0.5 : 0.15) + (['savoirs', 'parole', 'social', 'tech', 'jeux', 'pratique', 'nature'].indexOf(n.sector) >= 0 ? 0.3 : 0.1) + (n.regulated ? -0.1 : 0.1); },
+  'programmation-publique': function (n) { return (has(n.venues, PUBLIC_LIEUX) ? 0.4 : 0.15) + (['savoirs', 'parole', 'social', 'tech', 'jeux', 'pratique', 'nature'].indexOf(n.sector) >= 0 ? 0.25 : 0.1) + (n.regulated ? -0.1 : 0.05); },
   'pass-culture': function (n) { var c = CULTURE.indexOf(n.sector) >= 0; var y = has(n.publics, ['ados', 'enfants', 'etudiants']); return c ? (y ? 0.85 : 0.5) : (y ? 0.3 : 0.05); },
   'prevention-sante': function (n) { var s = ['bienetre', 'sport', 'nature', 'jeux', 'pratique', 'cuisine', 'social', 'tech'].indexOf(n.sector) >= 0; var sen = n.publics.indexOf('seniors') >= 0; return (sen ? 0.55 : 0.15) + (s ? 0.3 : 0) - (n.scores.regulatory <= 2 ? 0.2 : 0) - (n.energy === 'intense' ? 0.15 : 0); },
-  'bailleur-residence': function (n) { var s = ['social', 'pratique', 'maison', 'nature', 'jeux', 'cuisine', 'artisanat'].indexOf(n.sector) >= 0; return (s ? 0.45 : 0.15) + (has(n.publics, ['familles', 'seniors', 'enfants', 'parents']) ? 0.3 : 0) + (n.scores.local >= 4 ? 0.15 : 0); },
+  'bailleur-residence': function (n) { var s = ['social', 'pratique', 'maison', 'nature', 'jeux', 'cuisine', 'artisanat'].indexOf(n.sector) >= 0; return (s ? 0.35 : 0.1) + (has(n.publics, ['familles', 'seniors', 'enfants', 'parents']) ? 0.25 : 0) + (n.scores.local >= 4 ? 0.1 : 0); },
   'prix-libre': function (n) { var s = n.scores; return (s.community >= 3 ? 0.35 : 0.15) + (s.cost >= 3 ? 0.25 : 0) + (s.regulatory >= 4 ? 0.15 : 0) + (has(n.mixTags, ['reemploi', 'reparation', 'engagement', 'quartier', 'entraide', 'solidaire']) ? 0.2 : 0); },
-  'temps-acces': function (n) { var s = n.scores; return (s.supply >= 4 ? 0.5 : 0.2) + (s.community >= 3 ? 0.2 : 0) + (s.cost >= 3 ? 0.15 : 0); },
+  'temps-acces': function (n) { var s = n.scores; return (s.supply >= 4 ? 0.35 : 0.15) + (s.community >= 4 ? 0.15 : 0) + (s.cost >= 4 ? 0.1 : 0); },
   'preventes-restitution': function (n) { var f = n.levels.some(function (l) { return l.format === 'chantier' || l.format === 'cercle'; }); return (has(n.outputs, ['performance', 'objet', 'texte', 'video', 'son', 'plante']) ? 0.45 : 0.1) + (f ? 0.3 : 0) + (n.scores.community >= 3 ? 0.1 : 0); },
   'bon-cadeau': function (n) { return (has(n.publics, ['couples', 'touristes', 'expatries', 'jeunes-actifs']) ? 0.45 : 0.15) + (has(n.outputs, ['objet', 'boisson', 'photo', 'plat', 'vetement']) ? 0.25 : 0) + (n.scores.trend >= 3 ? 0.15 : 0); }
 };
 /* Niche à faible propension mais intéressante : wtp ≤ 2 et score hors propension ≥ seuil. */
-E.LOW_WTP = 2; E.LOW_MIN = 58;
+E.LOW_WTP = 2; E.LOW_MIN = 70; /* recalé par build.js sur la médiane du catalogue */
 E.isLow = function (n, W) { return n.scores.wtp <= E.LOW_WTP && E.scoreNoWtp(n.scores, W || E.W0) >= E.LOW_MIN; };
 
 /* Simulateur : revenu, hôte, marge plateforme pour une séance. */

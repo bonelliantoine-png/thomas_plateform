@@ -29,6 +29,20 @@ sectors.forEach(({ s, d }) => {
 const byId = {}; niches.forEach(n => byId[n.id] = n);
 (STR.fixes || []).forEach(([id, field, val, note]) => { const n = byId[id]; if (!n) return; const ks = field.split('.'); let o = n; while (ks.length > 1) o = o[ks.shift()]; o[ks[0]] = val; console.log('correction', id, field, '·', note); });
 
+/* 1 bis. harmonisation du calibrage entre lots (documentée dans la méthode)
+   a) cohérence réglementaire : le score « regulatory » est plafonné selon le champ « regulated »
+   b) recentrage partiel par secteur (50 %) des quatre critères de jugement les plus sensibles au lot :
+      format, supply, community, hostIncome. L'ordre interne d'un secteur est conservé, la moitié de l'écart entre secteurs aussi. */
+const REGCAP = { sport: 2, sante: 3, alcool: 3, enfants: 3, securite: 3, droit: 3, alimentaire: 4, animaux: 4 };
+const HARM = ['format', 'supply', 'community', 'hostIncome'], SHRINK = 0.5;
+const harm = { reg: 0, shift: {} };
+niches.forEach(n => { n.raw = Object.assign({}, n.scores); const c = REGCAP[n.regulated]; if (c != null && n.scores.regulatory > c) { n.scores.regulatory = c; harm.reg++; } });
+HARM.forEach(k => {
+  const g = niches.reduce((a, n) => a + n.scores[k], 0) / niches.length; harm.shift[k] = {};
+  SEC.forEach(s => { const L = niches.filter(n => n.sector === s.id); if (!L.length) return; const m = L.reduce((a, n) => a + n.scores[k], 0) / L.length; const d = -SHRINK * (m - g); harm.shift[k][s.id] = +d.toFixed(2);
+    L.forEach(n => { n.scores[k] = Math.max(0, Math.min(5, Math.round((n.scores[k] + d) * 10) / 10)); }); });
+});
+console.log('harmonisation : regulatory plafonné sur', harm.reg, 'niches · décalages', JSON.stringify(harm.shift));
 /* 2. scores */
 const W = E.W0;
 niches.forEach(n => { n.s0 = E.score(n.scores, W); n.sx = E.scoreNoWtp(n.scores, W); });
@@ -37,6 +51,8 @@ rank.forEach((n, i) => n.r0 = i + 1);
 const sOf = n => n.s0;
 
 /* 3. parades */
+const sxs = niches.map(n => n.sx).sort((a, b) => a - b); E.LOW_MIN = Math.round(sxs[Math.floor(sxs.length / 2)]);
+console.log('seuil hors propension (médiane)', E.LOW_MIN);
 const low = niches.filter(n => E.isLow(n, W));
 const premiums = niches.filter(n => n.scores.wtp >= 4);
 const parIds = PAR.parades.map(p => p.id), parById = {}; PAR.parades.forEach(p => parById[p.id] = p);
@@ -50,7 +66,7 @@ low.forEach(n => {
   if (manual[n.id]) { rec = manual[n.id].p.slice(); n.pm = manual[n.id].why; }
   n.par = rec; n.pfit = fits.slice(0, 6).map(f => [f[0], Math.round(f[1] * 100)]);
   if (best) n.prem = [best.b.id, Math.round(best.s)];
-  n.wEff = Math.max(n.scores.wtp, ...rec.map(id => parById[id].lift));
+  n.wEff = E.effWtp(n.scores.wtp, Math.max(...rec.map(id => parById[id].lift)));
 });
 niches.forEach(n => { n.s1 = n.par ? E.scoreWith(n.scores, W, n.wEff) : n.s0; });
 const rank1 = niches.slice().sort((a, b) => b.s1 - a.s1 || a.name.localeCompare(b.name));
@@ -126,13 +142,13 @@ const lvl = l => [l.title, l.goal, l.format, l.duration, l.group, l.price[0], l.
 const NI = niches.map(n => ({
   id: n.id, name: n.name, sector: n.sector, category: n.category, subcategory: n.subcategory, desc: n.desc, audience: n.audience, skills: n.skills, appSkills: n.appSkills || [],
   L: n.levels.map(lvl), scores: n.scores, venues: n.venues, moments: n.moments, publics: n.publics, senses: n.senses, outputs: n.outputs, energy: n.energy, mixTags: n.mixTags,
-  competitors: n.competitors || [], regulated: n.regulated, verdict: n.verdict, why: n.why, confidence: n.confidence,
+  raw: HARM.concat(['regulatory']).some(k => n.raw[k] !== n.scores[k]) ? n.raw : undefined, competitors: n.competitors || [], regulated: n.regulated, verdict: n.verdict, why: n.why, confidence: n.confidence,
   par: n.par, pfit: n.pfit, prem: n.prem, pm: n.pm, wEff: n.wEff
 }));
 const data = {
-  updated: '13 nov. 2026', fixtures: fixtureSectors,
+  updated: '13 nov. 2026', lowMin: E.LOW_MIN, fixtures: fixtureSectors,
   sectors: SEC.map(s => ({ id: s.id, n: s.n, g: s.g, diag: s.diag, ch: s.ch.map(c => [c[0], c[1], c[2].map(k => { if (!srcIdx[k]) err('source ' + k); return srcIdx[k]; })]), b: s.b, sig: s.sig, opp: s.opp, dm: s.dm, dmN: s.dmN })),
-  cats, subs, niches: NI, secStats, catStats, top, top0, low: low.map(n => n.id), parCount,
+  cats, subs, niches: NI, harm, secStats, catStats, top, top0, low: low.map(n => n.id), parCount,
   parades: PAR.parades.map(p => Object.assign({}, p, { refs: p.refs.map(r => [r[0], r[1], r[2] ? (srcIdx[r[2]] || err('source parade ' + r[2])) : 0]) })),
   packages: PAR.packages, editorial: edit, families: E.FAMILIES, topPairs, portfolios: pf, geo, villes: STR.villes, limits: STR.limits, takeaways: STR.takeaways,
   sources: SRC.map((s, i) => ({ i: i + 1, k: s[0], t: s[1], e: s[2], u: s[3], v: s[4] ? 1 : 0 }))
@@ -140,7 +156,7 @@ const data = {
 const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 const json = JSON.stringify(data).replace(/</g, '\\u003c');
 const eng = fs.readFileSync(path.join(__dirname, 'lib', 'engine.js'), 'utf8');
-const out = tpl.replace('/*__DATA__*/', () => json).replace('/*__ENGINE__*/', () => eng)
+const out = tpl.replace('/*__DATA__*/', () => json).replace('/*__ENGINE__*/', () => eng).replace('/*__APP__*/', () => fs.readFileSync(path.join(__dirname, 'lib', 'app.js'), 'utf8'))
   .replace(/__NNICHES__/g, String(niches.length)).replace(/__NSOURCES__/g, String(SRC.length)).replace(/__NCATS__/g, String(cats.length)).replace(/__NSUBS__/g, String(subs.length)).replace(/__NLOW__/g, String(low.length)).replace(/__NPAR__/g, String(PAR.parades.length)).replace(/__NMIX__/g, String(edit.length));
 if (/fondateur|antoine/i.test(json.replace(/biais fondateur|critère fondateur|Aucun critère fondateur/gi, ''))) console.warn('ATTENTION : mention fondateur dans les données');
 fs.writeFileSync(OUT, out);
