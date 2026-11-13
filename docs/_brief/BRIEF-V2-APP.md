@@ -209,4 +209,117 @@ Nouvelle clé `cordes.quiz` : `{ answers, result, picksSeen, defiDone, at }`. Aj
 
 ## 2. Donner envie aux lieux : parcours `#/lieu` et mise en avant
 
-*Section rédigée dans un second temps, après l'analyse des formules lieux de l'étude (§ 06c).*
+Source : étude § 06c. Le parcours `#/lieu` (A10) existe : type, créneaux, capacité, équipements, trois formules, compétences compatibles, estimation de fréquentation, fiche texte, inscription. Ce lot le transforme en **outil de prospection** que le fondateur ouvre sur téléphone devant un gérant, et en **vitrine** des lieux dans l'app.
+
+### 2.1 Données (`js/engine/growth.js`, extension, et `js/data/venues.js`, nouveau)
+
+**Types de lieux** : remplacer les 6 types par 19, groupés en 6 familles (affichage en chips groupées). Garder les identifiants existants (`cafe`, `bar`, `studio`, `atelier`, `librairie`, `autre`) pour la compatibilité des fiches déjà enregistrées ; migration douce : `studio` → `studio-musique` si `sono` ou `piano`, sinon `studio-danse` ; `atelier` → `atelier-artisan`.
+
+| Famille | Types (id) | Ticket moyen par défaut (estimation, modifiable) | Formule recommandée |
+|---|---|---|---|
+| Boire et manger | `cafe` 6 €, `coffee` 6 €, `bar` 10 €, `cave` 15 €, `restaurant` 12 € | entre parenthèses | 1 (+ 2 pour coffee et cave, + 6 pour bar) |
+| Livres, disques, art | `librairie` 5 € (si café), `disquaire` 0, `galerie` 0 | | 2, 6 |
+| Faire et bouger | `atelier-artisan`, `studio-musique`, `studio-danse`, `salle-sport`, `fablab` | 0 | 3 |
+| Commerces | `boutique-materiel` (panier lié 30 €) | | 2 |
+| Accueillir | `hotel`, `coworking`, `entreprise` | 0 | 4 |
+| Lieux publics et associatifs | `tiers-lieu` 5 €, `mediatheque`, `mjc` | 0 | 7 (+ 1 et 6 pour tiers-lieu) |
+
+`C.VENUE_TYPES = [[id, label, famille, ticket, formulesRecommandées, pitch]]` : le **pitch en trois phrases** de chaque type est celui du tableau de l'étude (§ 06c, « Par type de lieu »), copié tel quel.
+
+**Formules** : `C.VENUE_FORMULAS` passe de 3 à 7 objets :
+
+```js
+{ id: 'creuse', n: 1, label: 'Heure creuse contre consommation', gives: '…', gets: '…', platform: 'Ne paie rien, ne touche rien', engagement: 'Aucun, créneau fermable sous 7 jours', kpis: ['remplissage', 'consommations par participant', 'premières visites'], paid: false, from: 1 }
+{ id: 'membre',    n: 2, label: 'Avantage membre et ventes liées', … , from: 1 }
+{ id: 'recette',   n: 3, label: 'Partage de recette', shareSeat: 4, shareMin: 15, from: 1 }
+{ id: 'programme', n: 4, label: 'Programme commandé', priceHT: 200, from: 7, paid: true }
+{ id: 'une',       n: 5, label: 'Lieu à la une', priceHT: 39, from: 10, paid: true }
+{ id: 'soiree',    n: 6, label: 'Soirée découverte co-organisée', ticketTTC: 12, people: 30, barPerHead: 10, from: 4 }
+{ id: 'public',    n: 7, label: 'Programme public', priceHT: 3000, per: 'trimestre', sessions: 6, from: 13 }
+```
+
+Textes `gives`, `gets`, `platform`, `engagement` : ceux des cartes de l'étude (§ 06c, « Sept formules »). Une fiche peut cocher **plusieurs formules** (`v.formulas: []`, migration depuis `v.formula`).
+
+**Lieux de démonstration** (`js/data/venues.js`) : 6 lieux **fictifs**, marqués `demo: true` et toujours libellés « lieu fictif de démonstration » (un café du 11e, un bar du 10e, un studio de musique du 20e, une librairie-café du 3e, une boutique de loisirs créatifs du 18e, une médiathèque du 12e), avec type, créneaux, équipements, formules, coordonnées approximatives d'arrondissement. Aucun nom de commerce réel.
+
+### 2.2 Simulateur de gain (`C.venueGain(v, f)`, pur)
+
+Remplace `C.venueEstimate` (garder l'ancien nom comme alias). Entrées éditables dans l'écran, avec valeurs par défaut issues du type :
+
+- créneaux par semaine (depuis la grille, plafonné à 10), participants par séance (2 à 8, défaut 4), hôte compté comme consommateur (oui par défaut), ticket moyen, marge brute (70 % boissons, 35 % ventes de matériel, défaut selon le type), part de premières visites (35 %), taux de retour des nouveaux (défaut 20 %, « à mesurer »), visites par mois d'un client revenu (2).
+
+Sorties par formule cochée, sur un mois (4,33 semaines) :
+
+| Formule | Calcul |
+|---|---|
+| 1 | CA = séances × (participants + hôte) × ticket ; marge = CA × marge brute |
+| 2 | CA ventes liées = séances × participants × 25 % × panier |
+| 3 | versement = séances × max(4 € × participants, 15 €) |
+| 4 | coût pour le lieu = séances commandées × 200 € HT (affiché en coût, avec « ce que vous recevez » en texte) |
+| 5 | coût 39 € HT par mois ; seuil de rentabilité affiché : « rentable si 1 client fidèle par mois » |
+| 6 | CA bar = 30 × 10 € par soirée (1 par mois par défaut) |
+| 7 | coût 3 000 € HT par trimestre, 6 ateliers, public estimé = 6 × jauge × remplissage |
+
+Plus une ligne **« valeur des nouveaux clients sur 6 mois »** = premières visites × taux de retour × visites par mois × 6 × ticket, clairement marquée « hypothèse à mesurer ». Toutes les valeurs par défaut portent un badge `estimation` (sable) ou `hypothèse` (cobalt), comme dans l'étude.
+
+Affichage : rangée de compteurs (séances, participants, CA additionnel, marge), puis un **graphique de barres horizontales** CA et marge par formule cochée (SVG, `charts.js`), puis un tableau « Hypothèses » repliable. Un bouton « Comparer les formules » affiche les 7 côte à côte pour ce lieu (barres grisées pour celles qui ne s'appliquent pas au type).
+
+### 2.3 Écran `#/lieu` réorganisé en 4 étapes
+
+Garder une seule page avec une barre d'étapes (comme le bilan), pour que le gérant voie tout :
+
+1. **Votre lieu** : nom, ville, arrondissement, type (19 chips en 6 familles), capacité, équipements. Dès que le type est choisi, encart « Pourquoi des séances chez vous » avec le pitch en trois phrases du type.
+2. **Vos heures creuses** : grille 7 × 3 existante, plus « nombre de séances par créneau » (1 par défaut).
+3. **Ce que vous y gagnez** : formule recommandée cochée par défaut (`formulesRecommandées[0]`), cartes des 7 formules (cochables, celles qui ne démarrent pas encore portent « à partir de M10 » etc.), simulateur de gain (2.2), compétences compatibles (`C.venueMatch` existant, 10 au plus, avec « en 1 h : levels[0] »).
+4. **Devenir partenaire** : aperçu de la **fiche partenaire enrichie** (2.4), de la **charte** (2.5), du **kit** (2.6), e-mail facultatif, consentement non coché, « Inscrire mon lieu » (inchangé : `C.waitlist.add` rôle `lieu`, avec `venue.formulas` et `venue.gain` résumé).
+
+**Mode présentation** : `#/lieu/pitch` affiche les mêmes données en plein écran, 4 diapositives (le principe, ce que vous gagnez avec ses chiffres, comment ça marche en 5 étapes, la charte), navigation ← → et balayage, gros caractères (Marcellus 32 px pour les titres, chiffres mono 40 px). Sert au fondateur sur tablette ou téléphone pendant la prospection. Bouton « Présenter » dans l'étape 3.
+
+### 2.4 Fiche partenaire enrichie
+
+- **Aperçu à l'écran** (panneau) : nom, type, quartier, badge formule(s), créneaux en clair (« mar. après-midi, jeu. soir »), équipements, 6 séances possibles avec résultat en une heure, « Ce que les participants s'engagent à faire » (consommation minimale, ponctualité, rangement), mention « lieu fictif de démonstration » si `demo`.
+- **Téléchargement** : page HTML autonome d'un seul fichier (même technique que le passeport, `js/engine/export.js`), imprimable en A4, et la version texte actuelle. Nom de fichier `cordes-lieu-<slug>.html`.
+
+### 2.5 Charte partenaire
+
+`C.venueCharter(v) → texte` : les 10 clauses de l'étude (§ 06c, « Le contrat : une charte d'une page »), remplies avec les créneaux, la ou les formules et leurs montants, date du jour, durée 12 mois. Téléchargeable en `.txt` et en HTML imprimable avec deux zones de signature vides. Mention en pied : « Modèle indicatif, à faire relire par un juriste avant usage. »
+
+### 2.6 Kit de communication du lieu
+
+Généré par gabarits (IA facultative via `window.claude.use('sample')` ou la clé, bouton « Réécrire », repli gabarit) :
+
+- **Affiche A4** et **chevalet de table A6** (Canvas → PNG, et HTML imprimable) : « Ici, on apprend en une heure », 3 séances compatibles, créneaux, lien court du lieu (`C.PUBLIC_URL + '#/l/' + slug`, ou texte « cordes · <nom du lieu> » si la constante est vide). QR code : seulement si un encodeur local sans dépendance est ajouté dans `app/js/vendor/` (licence MIT, < 25 ko) ; sinon pas de QR, aucun appel réseau.
+- **3 posts** pour ses réseaux (annonce, coulisses d'une séance, résultat), **1 story** (Canvas 1080 × 1920), **1 message** à ses clients habitués.
+- Bouton « Tout télécharger » : enchaîne les téléchargements via `C.download` (une archive n'est pas nécessaire).
+
+### 2.7 Mise en avant des lieux dans l'app
+
+- **Idées à vivre** (section 1) : pour une idée `out`, si un lieu (de démo ou inscrit sur l'appareil) a l'équipement et l'univers compatibles (`C.venueMatch` inversé : `C.venuesFor(skillId, zone)`), afficher « À faire chez Café des Volontaires · 11e · lieu fictif de démonstration » sous l'idée, avec ouverture de la fiche.
+- **Résultats du bilan** : dans « Où apprendre », bloc « Lieux partenaires près de chez vous » (au plus 3, démo signalée).
+- **Liste d'attente et compteur de quartier** : « 2 lieux prêts dans le 11e » à côté du compteur d'inscrits, rappel du seuil d'ouverture (150 inscrits, 8 hôtes, 2 lieux, 3 envies récurrentes, étude § 05).
+- **Accueil** : la tuile « Proposer un lieu » devient « Votre lieu, vos heures creuses · simuler le gain ».
+- **Route publique** `#/l/<slug>` : fiche d'un lieu (démo ou local), cible des liens du kit.
+
+### 2.8 Mesure
+
+`venue_type {t}`, `venue_formula {f}`, `venue_sim_edit {k}`, `venue_compare`, `venue_pitch_open`, `venue_pitch_slide {n}`, `venue_sheet_dl {fmt}`, `venue_charter_dl`, `venue_kit_dl {item}`, `venue_join {formulas}`, `venue_card_click {id, from}`. Entonnoir lieu dans `#/admin/metrics` : type choisi → créneaux → simulateur vu → kit ou charte téléchargé → inscription.
+
+### 2.9 Tests à prévoir
+
+**Moteur**
+- `C.venueGain` : valeurs de l'étude retrouvées avec les défauts (café 1 créneau : CA 130 €, marge 91 € ; bar 217 € et 152 € ; cave 325 € et 227 € ; studio 69 € ; boutique 130 € et 45 € ; soirée 300 € et 210 €), arrondis à l'euro ; 0 créneau → 0 partout sans erreur ; participants bornés à 2-8.
+- Migration : une fiche v1 (`type: 'studio'`, `formula: 'recette'`) se charge en `studio-musique` ou `studio-danse` et `formulas: ['recette']`.
+- `C.venueCharter` : contient les 10 clauses, les créneaux et les montants ; aucun `undefined`.
+- Chaque type a un pitch de trois phrases (compter les points), une formule recommandée valide, un ticket numérique.
+- `C.venuesFor` : ne renvoie jamais un lieu dont l'équipement exclut la compétence (règles de `C.venueMatch`), signale `demo`.
+
+**Bout en bout (375 et 1440 px, `file://`, 0 erreur console)**
+- Parcours complet d'un bar : type, 3 créneaux, formules 1 et 6, simulateur (modifier le ticket met à jour CA et graphique), comparer, présenter (4 diapositives au clavier), télécharger fiche HTML, charte, affiche PNG, inscription.
+- Mode page publiée : téléchargements routés par `window.claude.use('downloads')`, aucun `fetch`.
+- Idées à vivre « amis » : au moins une idée affiche « À faire chez … · lieu fictif de démonstration ».
+- Aucun débordement horizontal à 375 px dans le mode présentation et le simulateur.
+
+### 2.10 Hors périmètre
+
+Signature électronique, paiement des formules 4, 5 et 7, versements de la formule 3, rapport mensuel automatique : ils supposent un service central (plateforme, temps 2). Le prototype produit les documents et la fiche, pas les flux d'argent.
+
