@@ -36,7 +36,10 @@
   // constellation : compétences connues (pleines, plus proches du centre si maîtrisées) et envies (anneaux) par secteur d'univers
   CH.constellationSVG = function (st, o) {
     o = o || {};
-    var S = o.size || 420, cx = S / 2, cy = S / 2, R = S / 2 - 58;
+    // sur petit écran : figure plus compacte et libellés plus gros, pour rester lisible une fois réduite
+    var small = o.small != null ? o.small : ((W.innerWidth || 1024) < 600);
+    var S = small ? 330 : (o.size || 420), cx = S / 2, cy = S / 2, R = S / 2 - (small ? 30 : 58);
+    var FS = small ? 10.5 : 9.5, CW = small ? 6.3 : 5.6, MAXC = small ? 14 : 18;
     var unis = C.data.universes, nU = unis.length;
     var nodes = [];
     Object.keys(st.skills || {}).forEach(function (id) { var s = C.data.sById[id], v = st.skills[id]; if (s && v && v.level > 0) nodes.push({ s: s, level: v.level, desire: false }); });
@@ -53,13 +56,15 @@
         n.x = cx + Math.cos(a) * R * r; n.y = cy + Math.sin(a) * R * r;
       });
     });
-    var s = '<svg viewBox="0 0 ' + S + ' ' + S + '" width="' + S + '" height="' + S + '" role="img" aria-label="Constellation de ' + nodes.length + ' compétences et envies" class="constel">';
+    var uniBoxes = [];
+    var PADX = small ? 16 : 70, s = '<svg viewBox="' + (-PADX) + ' 0 ' + (S + 2 * PADX) + ' ' + S + '" width="' + (S + 2 * PADX) + '" height="' + S + '" role="img" aria-label="Constellation de ' + nodes.length + ' compétences et envies" class="constel">';
     [0.33, 0.63, 0.93].forEach(function (r) { s += '<circle cx="' + cx + '" cy="' + cy + '" r="' + f(R * r) + '" style="fill:none;stroke:var(--line)" />'; });
     unis.forEach(function (u, ui) {
       var a = -Math.PI / 2 + ui * 2 * Math.PI / nU;
       s += '<line x1="' + f(cx + Math.cos(a) * R * 0.2) + '" y1="' + f(cy + Math.sin(a) * R * 0.2) + '" x2="' + f(cx + Math.cos(a) * R) + '" y2="' + f(cy + Math.sin(a) * R) + '" style="stroke:var(--grid)" />';
-      var am = a + Math.PI / nU, lx = cx + Math.cos(am) * (R + 22), ly = cy + Math.sin(am) * (R + 22);
-      var has = !!bySec[u.id];
+      var am = a + Math.PI / nU, lx = cx + Math.cos(am) * (R + (small ? 14 : 22)), ly = cy + Math.sin(am) * (R + (small ? 14 : 22));
+      var has = !!bySec[u.id], uw = u.short.length * 5.4;
+      uniBoxes.push({ x0: lx - uw / 2, x1: lx + uw / 2, y0: ly - 4, y1: ly + 5 });
       s += '<text x="' + f(lx) + '" y="' + f(ly + 3) + '" text-anchor="middle" style="font:9px var(--f-mono);fill:' + (has ? 'var(--fg-2)' : 'var(--idle)') + '">' + E(u.short) + '</text>';
     });
     // arêtes : deux plus proches voisins de chaque nœud
@@ -72,20 +77,32 @@
       var e = edges[k], bridge = e.a.desire !== e.b.desire;
       s += '<line x1="' + f(e.a.x) + '" y1="' + f(e.a.y) + '" x2="' + f(e.b.x) + '" y2="' + f(e.b.y) + '" style="stroke:' + (bridge ? 'var(--int)' : 'var(--line-2)') + ';stroke-width:' + (bridge ? 1.2 : 1) + (bridge ? ';stroke-dasharray:3 3' : '') + ';opacity:' + (0.4 + e.v * 0.6).toFixed(2) + '" />';
     });
-    var labelAll = nodes.length <= 22;
+    var labelAll = nodes.length <= 22, placed = uniBoxes, labels = '';
+    // libellés : placement glouton avec évitement des chevauchements (décalage vertical, sinon infobulle seule)
+    function hit(b) { return placed.some(function (q) { return b.x0 < q.x1 && b.x1 > q.x0 && b.y0 < q.y1 && b.y1 > q.y0; }); }
+    nodes.slice().sort(function (a, b) { return (b.desire ? 5 : b.level) - (a.desire ? 5 : a.level); }).forEach(function (n) {
+      var r = n.desire ? 5 : 3 + n.level * 1.4;
+      if (!(labelAll || n.level >= 3 || n.desire)) return;
+      var nm0 = n.s.short || n.s.name; var name = nm0.length > MAXC ? nm0.slice(0, MAXC - 1) + '…' : nm0;
+      var right = n.x >= cx, w = name.length * CW + 2;
+      // bascule de côté si le libellé sortirait du cadre
+      if (right && n.x + r + 3 + w > S + PADX - 2) right = false; else if (!right && n.x - r - 3 - w < -PADX + 2) right = true;
+      var x0 = right ? n.x + r + 3 : n.x - r - 3 - w;
+      var offs = [0, -9, 9, -17, 17], box = null;
+      for (var k = 0; k < offs.length; k++) { var b = { x0: x0, x1: x0 + w, y0: n.y - 5 + offs[k], y1: n.y + 5 + offs[k] }; if (!hit(b)) { box = b; break; } }
+      if (!box) return;
+      placed.push(box);
+      labels += '<text x="' + f(right ? box.x0 : box.x1) + '" y="' + f(box.y0 + 8.5) + '" text-anchor="' + (right ? 'start' : 'end') + '" style="font:' + FS + 'px var(--f-mono);fill:' + (n.desire ? 'var(--int)' : 'var(--fg)') + ';paint-order:stroke;stroke:var(--panel);stroke-width:3px">' + E(name) + '</text>';
+    });
     nodes.forEach(function (n) {
       var r = n.desire ? 5 : 3 + n.level * 1.4;
       var col = 'hsl(' + C.universe(n.s.universe).hue + ' 38% 62%)';
       s += '<g><title>' + E(n.s.name) + (n.desire ? ' · envie' : ' · ' + C.LEVELS[n.level]) + '</title>';
       s += n.desire ? '<circle cx="' + f(n.x) + '" cy="' + f(n.y) + '" r="' + r + '" style="fill:var(--bg);stroke:var(--int);stroke-width:1.6" />'
         : '<circle cx="' + f(n.x) + '" cy="' + f(n.y) + '" r="' + f(r) + '" style="fill:' + col + ';stroke:var(--bg);stroke-width:1" />';
-      if (labelAll || n.level >= 3 || n.desire) {
-        var nm0 = n.s.short || n.s.name; var name = nm0.length > 16 ? nm0.slice(0, 15) + '…' : nm0;
-        var right = n.x >= cx;
-        s += '<text x="' + f(n.x + (right ? r + 3 : -r - 3)) + '" y="' + f(n.y + 3) + '" text-anchor="' + (right ? 'start' : 'end') + '" style="font:9px var(--f-mono);fill:' + (n.desire ? 'var(--int)' : 'var(--fg)') + '">' + E(name) + '</text>';
-      }
       s += '</g>';
     });
+    s += labels;
     s += '</svg>';
     return s;
   };
@@ -117,8 +134,13 @@
     o = o || {};
     var S = o.size || 360, c = S / 2, R = S / 2 - 18;
     var kx = 111.32 * Math.cos(lat * Math.PI / 180), ky = 110.57;
+    // échelle ajustée au lieu le plus éloigné (zoom automatique), bornée par le rayon demandé
+    var far = 0; items.forEach(function (it) { var d = Math.sqrt(Math.pow((it.lon - lon) * kx, 2) + Math.pow((it.lat - lat) * ky, 2)); if (d > far) far = d; });
+    var steps = [0.5, 1, 2, 2.5, 5, 10, 20]; var view = radiusKm;
+    for (var k = 0; k < steps.length; k++) if (steps[k] >= far * 1.12 && steps[k] <= radiusKm) { view = steps[k]; break; }
+    radiusKm = view;
     var s = '<svg viewBox="0 0 ' + S + ' ' + S + '" width="' + S + '" height="' + S + '" role="img" aria-label="Carte des ' + items.length + ' lieux trouvés" class="osmmap">';
-    var rings = radiusKm <= 2 ? [0.5, 1, 2] : radiusKm <= 5 ? [1, 2.5, 5] : [2, 5, 10, 20].filter(function (x) { return x <= radiusKm * 1.01; });
+    var rings = radiusKm <= 0.5 ? [0.25, 0.5] : radiusKm <= 1 ? [0.25, 0.5, 1] : radiusKm <= 2.5 ? [0.5, 1, radiusKm] : radiusKm <= 5 ? [1, 2.5, 5] : [2, 5, 10, 20].filter(function (x) { return x <= radiusKm * 1.01; });
     rings.forEach(function (rk) { var rr = R * rk / radiusKm; s += '<circle cx="' + c + '" cy="' + c + '" r="' + f(rr) + '" style="fill:none;stroke:var(--line)" /><text x="' + (c + 3) + '" y="' + f(c - rr - 3) + '" style="font:9px var(--f-mono);fill:var(--fg-3)">' + String(rk).replace('.', ',') + ' km</text>'; });
     s += '<line x1="' + (c - 6) + '" x2="' + (c + 6) + '" y1="' + c + '" y2="' + c + '" style="stroke:var(--accent)" /><line y1="' + (c - 6) + '" y2="' + (c + 6) + '" x1="' + c + '" x2="' + c + '" style="stroke:var(--accent)" />';
     items.forEach(function (it, i) {

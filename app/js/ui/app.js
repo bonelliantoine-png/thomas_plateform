@@ -27,12 +27,14 @@
   };
 
   /* ---------- état ---------- */
-  var saveT;
+  var saveT = null;
   ui.save = function (now) {
-    clearTimeout(saveT);
-    var go = function () { var ok = C.saveState(ui.st); ui.savedAt = new Date(); ui.updateSaveBadge(ok); };
+    clearTimeout(saveT); saveT = null;
+    var go = function () { saveT = null; var ok = C.saveState(ui.st); ui.savedAt = new Date(); ui.updateSaveBadge(ok); };
     if (now) go(); else saveT = setTimeout(go, 250);
   };
+  // écrit tout de suite un enregistrement différé encore en attente (onglet fermé ou masqué)
+  ui.flushSave = function () { if (saveT) ui.save(true); };
   ui.updateSaveBadge = function (ok) {
     var b = ui.$('#savebadge'); if (!b) return;
     if (!ui.st || !ui.st.mode) { b.innerHTML = '<i class="idle"></i>Aucun bilan'; return; }
@@ -172,8 +174,8 @@
     W.addEventListener('hashchange', function () { ui.closeDrawer(); ui.render({ keepFocus: false }); W.scrollTo(0, 0); var h = ui.$('#view h1'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); } });
     ui.$('#veil').addEventListener('click', ui.closeDrawer);
     // enregistrer tout de suite si l'onglet se ferme ou passe en arrière-plan
-    W.addEventListener('pagehide', function () { if (ui.st && ui.st.mode) ui.save(true); });
-    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden' && ui.st && ui.st.mode) ui.save(true); });
+    W.addEventListener('pagehide', ui.flushSave);
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') ui.flushSave(); });
     if ('ontouchstart' in W || navigator.maxTouchPoints > 0) document.documentElement.classList.add('touch');
     ui.updateSaveBadge();
     ui.render();

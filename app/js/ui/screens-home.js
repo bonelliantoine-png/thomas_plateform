@@ -30,7 +30,7 @@
     }
   };
   function demoCard(d) {
-    return '<section class="panel democard"><div class="pb"><div class="lbl">' + E({ learn: 'J’apprends', offer: 'Je transmets', both: 'Les deux' }[d.mode]) + '</div><div class="h3" style="margin-top:6px">' + E(d.name) + ' · ' + E(d.tag) + '</div><p class="sp" style="margin-top:6px">' + E(d.blurb) + '</p><button class="btn" style="margin-top:12px" data-act="loadDemo" data-id="' + d.id + '">Voir le résultat ' + ui.icon('arrowR') + '</button></div></section>';
+    return '<section class="panel democard"><div class="pb"><div class="lbl">' + E({ learn: 'J’apprends', offer: 'Je transmets', both: 'Les deux' }[d.mode]) + '</div><div class="h3" style="margin-top:6px">' + E(d.name) + ' · ' + E(d.tag) + '</div><p class="sp" style="margin-top:6px">' + E(d.blurb) + '</p><button class="btn dc-go" data-act="loadDemo" data-id="' + d.id + '">Voir le résultat ' + ui.icon('arrowR') + '</button></div></section>';
   }
   ui.actions.loadDemo = function (el) {
     var id = el.getAttribute('data-id');
